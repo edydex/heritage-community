@@ -4,7 +4,7 @@ Product brief · 2026-09-12 · Accepted direction, expanded for the shared repos
 
 Heritage should be the congregation's home for Bible reading, church songs, passage-linked sermon material, live translation, and personal reading continuity. A church prepares its material once, presents it in SyncShow, and makes the appropriate resources available in Heritage.
 
-This brief is the shared starting point for work across Heritage, SyncShow, and Multilinguum. It defines the intended experience; it does not claim that the integration is finished. See the [current audit](initial-audit.md) for what was actually inspected.
+This brief is the shared starting point for work across Heritage, SyncShow, and Multilinguum. It defines the intended experience; it does not claim that the integration is finished. See the [current delivery status](../STATUS.md) for what is usable and what remains to be verified.
 
 ## Confirmed requirements
 
