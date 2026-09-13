@@ -14,6 +14,10 @@ Integration is in development. Pinned source setup, combined server commands, an
 
 The [desktop preview guide](docs/desktop-preview.md) covers the retained Mac installer, church connection, live translation and tablet teaching. Exact source and package checks are recorded in the [Preview 27 verification](docs/verification/2026-09-13-service-translation-plans.md).
 
+## Install the Android preview
+
+The [Android preview guide](docs/android-preview.md) links to the published Heritage 1.1.33-preview.1 APK and explains updating the existing app, connecting WOTBC, and the remaining phone checks.
+
 ## Open the complete development workspace
 
 Prerequisites: Node.js 24+, Git, and GitHub access to the component repositories.

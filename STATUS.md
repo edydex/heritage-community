@@ -1,6 +1,6 @@
 # Heritage Community delivery status
 
-Updated 2026-09-13. The shared repository, deployed church server and desktop preview are usable for preparation and rehearsal. The integrated live-service release is not finished: provider setup, mobile/venue acceptance and public desktop packaging remain open.
+Updated 2026-09-13. The shared repository, deployed church server and desktop preview support preparation and rehearsal. The Android preview is published for phone testing. The integrated live-service release is not finished: provider setup, mobile/venue acceptance and public desktop packaging remain open.
 
 ## What you can use now
 
@@ -13,6 +13,7 @@ Updated 2026-09-13. The shared repository, deployed church server and desktop pr
 | Watch or follow translation | WOTBC has `/live` for YouTube with translation choices and `/translate` without video. Floating text and measured broadcast-delay playback are implemented. The supplied church channel is configured; no current service video has been selected. | [Live service](https://wotbc.heritage.faith/live), [translation](https://wotbc.heritage.faith/translate), [timing evidence](docs/verification/2026-09-13-broadcast-timing.md) |
 | Prepare and present | SyncShow Preview 27 retains Prepare → Load → Show, shared Community service preparation, English/Russian/stage outputs and loaded-service offline continuation. Translation screens can open without a slide presentation. | [Desktop preview](docs/desktop-preview.md), [saved service settings](docs/service-translation-plans.md) |
 | Control translation | Community and SyncShow share one manager console with English ↔ Russian, Quality/Economy, saved service choices, optional sermon notes and generated-speech controls. Speech-off stops new voice work while captions continue. | [Translation controls](docs/verification/2026-09-13-service-translation-plans.md) |
+| Android reader preview | Published v1.1.33-preview.1 passes native offline screens, encrypted storage, signer/update compatibility and visual inspection. The published download matches the tested package. Physical-phone acceptance remains pending. | [Install Android preview](docs/android-preview.md), [package evidence](docs/verification/2026-09-13-android-preview.json) |
 | Teach from a tablet | Paired pen/highlighter, colors, per-slide ink, Undo and Clear are packaged. Stylus-only input is optional and off by default. Physical-tablet acceptance remains pending. | [Teaching evidence](docs/verification/2026-09-13-teaching-and-notes.md) |
 
 Public and synthetic-content rehearsals do not prove actual WOTBC sermon publication, paid bilingual translation quality, phone playback or a church service on physical screens. Personal-sync sign-in, church membership and manager access are separate.
@@ -31,13 +32,12 @@ The exact values used by the tools are in [components.lock.json](components.lock
 
 ## Work being finished
 
-- **Android Community preview:** the APK remains unpublished while screenshot freshness and reliable emulator offline setup are checked. Native storage and signer/update checks have passed; one green CI run was rejected after image inspection found a stale capture. The current run addresses the identified emulator Wi-Fi race. [Current runner and verification record](docs/verification/2026-09-13-android-runner.md).
 - **SyncShow public packaging:** source `5b3da20` adds the exact upstream libvips notice index. Source CI and all four native package jobs passed; the downloaded Mac package's actual notice and installer hashes were inspected. Complete dependency source/license/replacement materials and the protected release configuration remain unfinished. [Evidence and concrete remaining work](docs/verification/2026-09-13-native-release-inputs.md).
 - **Live WOTBC acceptance:** manager sign-in and translation provider keys are still needed. The latest provider-configuration check found no configured API keys. No actual microphone or paid translation session has been started.
 
 ## What remains before calling the integration complete
 
-1. Finish the verified Android preview and public desktop release materials, then update the compatible installation set and retain its exact packages.
+1. Finish public desktop release materials, then update the compatible installation set. The accepted Android preview and its native evidence are retained.
 2. Complete WOTBC manager setup and configure provider credentials. Economy needs an explicit sharing-project/overage choice; the app does not verify complimentary-usage eligibility or guarantee zero charges. Sermon-note sharing remains a per-session choice.
 3. Run a representative English ↔ Russian service through the real mixer, both controller entry points, captions and optional speech. Check voice-off, stop/reconnect, video alignment, phone listening, tablet ink, physical congregation/stage screens and offline presentation continuation.
 4. Complete real-phone sign-in/update/sharing and remaining reading-plan/offline sync coverage. Verify actual church publication and resource access with the intended manager/member accounts.

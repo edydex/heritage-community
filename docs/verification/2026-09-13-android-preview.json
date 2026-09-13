@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-09-13",
+  "run": 34775207954,
+  "runUrl": "https://github.com/edydex/heritage_study_bible/actions/runs/34775207954",
+  "runStatus": "completed",
+  "runConclusion": "success",
+  "sourceRevision": "782535d41e870e12983f807d7f8dda2e217e2c56",
+  "release": {
+    "assets": [
+      {
+        "browser_download_url": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.33-preview.1/android-build.json",
+        "digest": "sha256:f1dece8f6ca052aa40d0536e5e2ab1b2c7522b8bed307c7c6a1acb667d7d5c81",
+        "name": "android-build.json",
+        "size": 1086
+      },
+      {
+        "browser_download_url": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.33-preview.1/heritage-study-bible-1.1.33-preview.1-debug.apk",
+        "digest": "sha256:34acf2da1c7f4e09146ad707e0b5a0d1fd44ea9e611b8387a8a69c9f70d1134d",
+        "name": "heritage-study-bible-1.1.33-preview.1-debug.apk",
+        "size": 54398124
+      },
+      {
+        "browser_download_url": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.33-preview.1/SHA256SUMS",
+        "digest": "sha256:96af6572c2059975d89e52608861e4889d4dc98922c8bf6b0e41bacba0e44b42",
+        "name": "SHA256SUMS",
+        "size": 199
+      }
+    ],
+    "draft": false,
+    "html_url": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.33-preview.1",
+    "id": 387997725,
+    "prerelease": true,
+    "published_at": "2026-09-13T18:46:37Z",
+    "tag_name": "v1.1.33-preview.1"
+  },
+  "stableLatestTagAfterPublication": "v1.1.32",
+  "downloadedReleaseBytesMatchAcceptedArtifact": true,
+  "nativeTests": {
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "manualImageInspection": {
+    "community-home.png": "Community Home with Find a church; no obscuring dialog",
+    "sermon-archive.png": "Published Sermons and no installed sources; distinct from previous frame",
+    "member-sign-in.png": "Community sign-in required for synthetic member song; no private lyrics"
+  },
+  "evidenceFiles": {
+    "outputs/androidTest-results/connected/debug/TEST-emulator-5554 - 15-_app-.xml": {
+      "bytes": 959,
+      "sha256": "257a1313e5e6a934202c9e96189709fbe6dcffe29029c6440ab1d44fce0aaab9"
+    },
+    "native-acceptance/screenshots/community-home.png": {
+      "bytes": 143620,
+      "sha256": "9c8ee5138738fb4e09c799e7f9c92d5be898400d5ca14bae261f67eade4129b6"
+    },
+    "native-acceptance/screenshots/member-sign-in.png": {
+      "bytes": 70800,
+      "sha256": "3bf3b338baa6f28818979ea07a8cf14dd4610ea7c15d9644e9b6f7489b6f976c"
+    },
+    "native-acceptance/screenshots/sermon-archive.png": {
+      "bytes": 78458,
+      "sha256": "8bcb6b2314198f1cfa2150367c1f781fef281272a0986d4016d76653c5d4a7da"
+    }
+  },
+  "package": {
+    "schemaVersion": 1,
+    "sourceRevision": "782535d41e870e12983f807d7f8dda2e217e2c56",
+    "applicationId": "faith.heritage.app",
+    "versionCode": 35,
+    "versionName": "1.1.33-preview.1",
+    "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+    "apk": {
+      "name": "heritage-study-bible-1.1.33-preview.1-debug.apk",
+      "size": 54398124,
+      "sha256": "34acf2da1c7f4e09146ad707e0b5a0d1fd44ea9e611b8387a8a69c9f70d1134d"
+    },
+    "previousRelease": {
+      "versionName": "1.1.32",
+      "versionCode": 34,
+      "sha256": "9107e7e64a35a5a0495caec08fa7bda1261679bfd9fbc7ab91145a02a4ba88cf"
+    },
+    "webAssets": {
+      "count": 531,
+      "manifestSha256": "fd7ef8bc5482a79389c8cc5ee7a321bab46a9a6323075c2008ba2eb625fc6645"
+    },
+    "websiteOnlyMetadata": {
+      ".well-known/assetlinks.json": "4394fc5dee8e1e71c0e678ab5272f92b7f6ee4236300ac9113c0678bf242c7f9"
+    },
+    "nativeTests": [
+      "encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+      "packagedCommunityScreensAndMemberLinkWorkOffline",
+      "secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+    ]
+  },
+  "limits": [
+    "Emulator only; real phone update and email return pending",
+    "No real member song, microphone or provider API used",
+    "Same runtime APK bytes as previously rejected screenshot run; current source includes corrected native test and runner evidence"
+  ]
+}
