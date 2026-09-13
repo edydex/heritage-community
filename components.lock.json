@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "channel": "development",
-  "description": "Inspected starting revisions. This set is not yet an accepted integrated release.",
+  "description": "Development integration revisions with local verification. This set is not yet an accepted integrated release.",
   "components": [
     {
       "id": "heritage",
       "name": "Heritage Bible and Community server",
       "repository": "https://github.com/edydex/heritage_study_bible.git",
-      "revision": "ef9574d5227b41c1450f6ece86a1d3fa902b8045"
+      "revision": "18b69a84e6a753b6c9f01ea4155498ed1768fb82"
     },
     {
       "id": "syncshow",

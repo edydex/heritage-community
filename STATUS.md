@@ -11,10 +11,11 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 ## Implemented in component branches
 
 - Multilinguum `9b8b09d458cc5863fb25ab823f44033dce8e5711`: captions publish independently of speech; operator speech switch cancels pending requests and queued audio; direct speech translation closes and continues as text through the cascade; public text/audio availability is separate; listener playback honors audio-off; cloud operation no longer requires the GPU worker. See [verification](docs/verification/2026-09-12-translation-core.md).
+- Heritage `18b69a84e6a753b6c9f01ea4155498ed1768fb82`: editable church settings for channel, current service video, listener URL, and broadcast delay; an explicitly shaped public `/live/settings.json`; database migration and access validation. Three parser tests, a real PostgreSQL/Payload round-trip/access test, type checks, and the production build passed. The combined player is not connected yet.
 
 ## In progress
 
-- The clean WOTBC deployment (`5f66b647f050ad45bf596a19a62c308ff65d8294`) was fetched directly into the isolated Heritage implementation checkout. Its four-line service-document fix is preserved. The integration lock still references the earlier public feature ref until the Heritage changes are published.
+- The Heritage integration branch is based on the clean WOTBC deployment (`5f66b647f050ad45bf596a19a62c308ff65d8294`), fetched directly from that server. Its service-document fix is preserved. The church deployment has not been changed by this implementation run.
 - Heritage church settings, `/live`, `/translate`, and cohosting the processor beside Community.
 
 ## Required before completion
