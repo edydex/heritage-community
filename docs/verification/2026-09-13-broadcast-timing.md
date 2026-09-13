@@ -29,7 +29,7 @@ Community [CI 34757541168](https://github.com/edydex/heritage_study_bible/action
 
 The YouTube iframe remained blank in this internal browser and reached the explicit timeout state, as in the earlier rehearsal. This is not proof of working embedded video or measured broadcast audio synchronization. Native phone/tablet/Picture-in-Picture behavior, a real mixer, EN→RU and RU→EN generated speech, actual source-to-video delay and long-service listening still need a venue/provider rehearsal. Listener counts currently come from LiveKit and do not count buffered HTTP listeners. This is a development feature, not an accepted integrated release.
 
-Follow-up `a9d4cc8` clarifies the late-speech notice: skipped audio is reported without implying that extra audio delay can fix a faster video. The listener build/typecheck passed after this wording change. The operator timing guide distinguishes calibration from generation latency.
+Follow-up `a9d4cc8` clarifies the late-speech notice: skipped audio is reported without implying that extra audio delay can fix a faster video. The listener build/typecheck passed after this wording change, and all three jobs passed in [CI 34758822200](https://github.com/edydex/multilinguum/actions/runs/34758822200). The operator timing guide distinguishes calibration from generation latency.
 
 Provider-test spending remains $0 of the authorized $20.
 
