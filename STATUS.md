@@ -28,14 +28,20 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 
 ## In progress
 
-- The Heritage integration branch is based on the clean WOTBC deployment (`5f66b647f050ad45bf596a19a62c308ff65d8294`), fetched directly from that server. Its service-document fix is preserved. The church deployment has not been changed by this implementation run.
+- The Heritage integration branch preserves the prior WOTBC deployment's service-document fix (`5f66b647f050ad45bf596a19a62c308ff65d8294`). WOTBC is now deployed to the published companion checkpoint using its supported backup/update/setup commands; see the deployment record below.
 - Heritage church settings, `/live`, `/translate`, and cohosting the processor beside Community. The public client, proxy, Community operator, and companion lifecycle are published; full paired installation and SyncShow control wiring are next.
 
 ## Latest published companion checkpoint
 
 - Heritage `e191c151114f688d3197dd37edf6676396490668` and Multilinguum `6f00fb5d77b55029592d31f06f91f13250e39792` add private companion setup, pinned-source validation, guarded updates/backups, prepared-session cancellation, graceful archive shutdown, and fresh-volume translation restore. The lock now pins these revisions; SyncShow remains at `9c616b8`.
 - Local deployment checks and 74 Multilinguum tests across the full check and focused follow-up passed. The final processor Docker image built on the verified WOTBC host. A separate disposable Compose project passed packaged-client, maintenance, clean-shutdown, synthetic EN/RU archive, SQLite integrity, and fresh-volume retrieval checks. Its containers, volumes, and networks were removed. See [verification](docs/verification/2026-09-12-companion-storage.md).
-- The existing church app and PostgreSQL remained healthy at clean source revision `5f66b647f050ad45bf596a19a62c308ff65d8294`. This was a real Docker rehearsal, not a WOTBC application deployment or a complete database/media restore. Provider spend remains $0; the key location has been requested from the user.
+- During the isolated rehearsal, the existing church app and PostgreSQL remained healthy at clean source revision `5f66b647f050ad45bf596a19a62c308ff65d8294`. The separate WOTBC deployment subsequently completed as recorded below. Provider spend remains $0; the key location has been requested from the user.
+
+## Deployed at WOTBC
+
+- Community `e191c15` and companion `6f00fb5` are installed together. Supported updates, migrations, companion startup, local/public checks, and the first format 3 backup succeeded. Existing church recording objects remain covered by the verified inventory.
+- The real `/live` and `/translate` pages connect to the companion. The supplied YouTube channel is configured, floating translation works, and manager controls require sign-in. No current video is selected; no translation service or microphone has been started.
+- Provider credentials are still absent. This is a deployed foundation, not complete live-service acceptance. See [deployment evidence and remaining checks](docs/verification/2026-09-12-wotbc-deployment.md).
 
 ## Required before completion
 
