@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "workflowRun": 34770759899,
+  "publishedSourceRevision": "5b3da20224e2d74d150f54e8a85dc97fce4d54d0",
+  "artifactBuildRevision": "891fb4ecb99fbb93effd13ecfa4602a7c7032dac",
+  "identicalGitTree": "d36834f032358de8c841c61281f5193a23294d54",
+  "target": "darwin-arm64",
+  "artifacts": [
+    {
+      "path": "SyncShow-1.4.0-preview.27-arm64.dmg",
+      "size": 158606983,
+      "sha256": "5a6afbf1e36cfd334c412cad836588ac934e8e7365c904e53f7592635a1ca700"
+    },
+    {
+      "path": "SyncShow-1.4.0-preview.27-arm64.zip",
+      "size": 158763385,
+      "sha256": "0dbad8f93afffe1fd3f5dd96f39db2fbaada0de6c25d6d659b206ae8c2b4ff49"
+    }
+  ],
+  "bundledNotice": {
+    "path": "notices/sharp-libvips-1.3.2/THIRD-PARTY-NOTICES.md",
+    "size": 4230,
+    "sha256": "25ffcfa69e28b1913ced27ec778b90f24911a1bb3021253577e8b0af55db0d49"
+  },
+  "releaseLegalStatus": "blocked",
+  "scope": "Downloaded Mac ZIP/DMG hashes and actual ZIP notice inspected. All four target jobs passed the package legal-evidence verifier; this is not public-release clearance."
+}
