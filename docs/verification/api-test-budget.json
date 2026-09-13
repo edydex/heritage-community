@@ -1,0 +1,10 @@
+{
+  "authorizedBy": "User: feel free to use my tokens/money to test it (up to $20)",
+  "authorizedAt": "2026-09-12",
+  "currency": "USD",
+  "maximum": 20,
+  "chargedOrConservativelyEstimated": 0,
+  "reservedForPendingRequests": 0,
+  "requests": [],
+  "policy": "Reserve a conservative maximum before each paid test. Count failed or uncertain requests until usage is reconciled. Stop before the cumulative maximum can exceed $20. No data-sharing opt-in is changed by this authorization."
+}
