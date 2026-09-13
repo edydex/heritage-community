@@ -55,7 +55,7 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 ## Published translation-profile checkpoint
 
 - Multilinguum `fa1aa3a` and Heritage `f44037b` add Quality and Economy selection, session model locking, archive provenance, separate text-project credentials, and companion setup support. The current version lock includes them; all three pinned sources bootstrap successfully.
-- Economy defaults to blocked. An administrator must confirm the separate sharing project's setup and explicitly allow possible billed overage; account/model eligibility and remaining allowance are not automatically verified. Private sermon-note attachments are rejected, and provider failures never silently change projects.
+- Economy defaults to blocked. An administrator must confirm the separate sharing project's setup and explicitly allow possible billed overage; account/model eligibility and remaining allowance are not automatically verified. At this checkpoint private sermon-note attachments were rejected; the later optional-notes checkpoint below replaces that restriction. Provider failures never silently change projects.
 - 82 Multilinguum tests, all builds/type checks, the Heritage deployment suite, and five umbrella tests passed. Actual SDK/processor checks with synthetic responses verified separate text/audio keys and zero further voice requests after speech-off. Real browser selection/start/lock/stop checks passed without opening a microphone.
 - The supported WOTBC update completed; all three services are healthy, both seven-artifact backups passed checksum checks, and the public browser reconnects in idle state. Deployed preflight confirms absent API keys, unconfirmed sharing and blocked Economy overage. See [verification and outstanding acceptance](docs/verification/2026-09-13-translation-profiles.md). Real bilingual model evaluation and guaranteed zero-charge usage remain unfinished; paid-test spend is still $0 / $20.
 
@@ -83,3 +83,11 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 The original public audit verified an inactive listener embedded at WOTBC `/live`; `/translate` was absent. A server identity check confirmed Debian 13 on `heritage-community`, with a clean Git checkout and healthy Community/PostgreSQL containers. The public checks do not prove live audio, SMTP delivery, or two-device synchronization.
 
 The configured `vr-mayos` connection currently requires renewed Cloudflare Access authentication. Its identity and current deployment have not been verified in this implementation run. No change to that host or authentication policy has been made.
+
+## Published tablet teaching and optional notes
+
+- SyncShow `cf7f0c6` adds paired tablet pen/highlighter teaching, with per-slide/per-output ink, Undo, Clear ink, and optional stylus-only input. Source-app browser-to-projector checks pass; this has not yet been packaged or tested on a physical tablet.
+- Multilinguum `9c2c38b` and Heritage `2c98f7e` add selectable sermon-note uploads in the shared operator console. Economy requires an explicit per-service note-sharing choice. The scoped manager/device lease can list and upload translation reference notes; anonymous callers are denied. Existing archive, replay and voice-profile restrictions remain.
+- 83 Multilinguum tests and builds passed. SyncShow: 2,217 passed, two skipped; syntax checks and real Electron teaching rehearsal passed. Heritage production build and actual local proxy listing/upload/access checks passed. The real browser verified Economy selection, consent reset, locked live settings and Stop with no microphone or provider request.
+- [Musician-screen follow-up](docs/future-musician-screen.md) records instrument-specific chord views, current/next song-section following, manual hold/resume and offline charts.
+- See [verification and limitations](docs/verification/2026-09-13-teaching-and-notes.md). Paid-provider testing remains $0 / $20.
