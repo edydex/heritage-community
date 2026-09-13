@@ -61,6 +61,8 @@ Status checks exact installed source compatibility and the existing service/back
 
 Restore requires an explicit absolute backup directory and delegates checksum/structure verification, the safety backup, and typed confirmation to Community's restore command. `--non-interactive --yes` explicitly skips that typed confirmation. No partial-data, skip-backup, destructive cleanup or automatic rollback flags are exposed by the unified wrapper.
 
+After checking the recovered content, run `server backup` again. Restore preserves the pre-restore safety backup as `latest`; that older state may intentionally lack recordings you just recovered. A new backup covers the recovered state and lets the normal status check verify its current recording inventory. Both the selected restoration backup and the safety backup remain available.
+
 If the computer holding this workspace is unavailable, the existing `heritage-community status`, `backup` and `restore` commands remain available directly on the server. Use a workspace matching the installed set for unified status/backup/restore; inspect and deliberately apply a new set with `server update` when versions differ.
 
 ## Verification boundary

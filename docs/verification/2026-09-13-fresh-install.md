@@ -1,5 +1,7 @@
 # Fresh Debian installation and recovery — 2026-09-13
 
+**Passed:** [run 34754270792](https://github.com/edydex/heritage-community/actions/runs/34754270792), umbrella `59f973b68b6ef748ff41d41213c061e632bd7297`, completed at `2026-09-13T11:34:18.555Z`. It installed Heritage `79128ae481c04cf931be7aa9a27a629ac70e4f1f` and Multilinguum `9c2c38b1d9974fab59296c96af97122e3c581d8a` on a fresh Debian 13 VM, then recovered every tested database/media/archive fixture. A fresh backup of the recovered state passed all seven checksums and exactly covered the restored private object. All services and the scheduled backup timer were healthy.
+
 The full VM rehearsal runs the actual unified SSH commands and Community installers on a new Debian 13 system. It uses a verified official cloud image, a private temporary disk, systemd, Docker and a generated SSH host key pinned before connection. The [scenario](../installation-rehearsal.md) describes the fixtures and boundaries.
 
 ## Installation fixes
@@ -25,3 +27,5 @@ The restore must recover the installer-created administrator's display name, a p
 The private object is a synthetic storage fixture, not playable recording media or an actual SyncShow upload. The translation archive uses deterministic replay with provider credentials absent. This scenario does not prove email delivery, public tunnel setup, real provider translation, physical devices or video/audio alignment. No paid provider test is performed.
 
 [Run 34753154666](https://github.com/edydex/heritage-community/actions/runs/34753154666) completed fresh installation and the actual combined restore at Heritage `0fb64de42028b2fb09b80d77fae007a5069e4783`. Application API verification recovered the administrator row and public notes bytes; storage verification recovered the private object and EN/RU archive. The restore command's own service checks passed against the selected restoration backup. The final generic status check correctly flagged that `latest` was the pre-restore safety backup, which intentionally contained the deleted state and therefore did not cover the recovered recording. The harness now makes a normal backup of the verified recovered state before checking latest-backup coverage. This preserves the safety backup and the existing coverage check; complete workflow acceptance awaits the next run.
+
+Run 34754046962 was cancelled after its metadata showed the older `81e5347` checkout. A dispatch using the commit SHA was rejected because GitHub required a branch or tag ref. The replacement main-branch run was verified at `59f973b` before its successful result was accepted.

@@ -11,7 +11,7 @@ The scenario:
 3. Make a complete combined backup through `server backup`.
 4. Change the administrator's display name and remove the public file, private object/row and translation archive. The remaining state is valid and can be safety-backed-up.
 5. Restore the selected full backup through `server restore`, including its normal safety backup and validation.
-6. Sign in again and compare the restored administrator row, public file bytes, private object row/bytes and both archive transcripts with their original values. Finish with the installed service and backup checks.
+6. Sign in again and compare the restored administrator row, public file bytes, private object row/bytes and both archive transcripts with their original values. Back up the recovered state, then finish with the installed service and latest-backup checks.
 
 Private recording bytes are synthetic storage fixtures; this is not recording playback or a SyncShow upload rehearsal. Translation uses deterministic replay with all provider credentials absent. The test enables neither member email delivery nor a public tunnel and does not use church data.
 
