@@ -142,4 +142,4 @@ All final source, production-container and four-platform package checks passed. 
 ## Reader Community Home checkpoint
 
 - Heritage `60967fda75d0370db9d04c56dbfd3f1e1d3ebcce` connects the reader to church live pages and public songs, sermons and commentary. A church can be saved without email; existing member access and disabled sources are preserved. Personal-sync-only labels are corrected.
-- The published reader passed 166 unit tests, 49 protocol tests and all 23 browser tests. WOTBC discovery deployment is in progress. See [verification](docs/verification/2026-09-13-reader-community-home.md).
+- The published reader passed 166 unit tests, 49 protocol tests and all 23 browser tests. WOTBC discovery is deployed and healthy, and the real reader completed a fresh sync at 08:21:54 Pacific. See [verification](docs/verification/2026-09-13-reader-community-home.md).
