@@ -2,12 +2,12 @@
 
 This is local integration evidence, not a church deployment.
 
-## Local candidate revisions
+## Published operator revisions
 
 - Heritage `a9b0f03bbb47e5fb0289f8dba8f14f9cd66ddecd`, branch `codex/unified-live-service`.
 - Multilinguum `3817624e902e3ea74b5b5943e5edf0d36df39e16`, branch `codex/heritage-live-integration`.
 
-Both commits are saved in the isolated implementation clones. Publication of the new operator-control source was rejected by automatic approval review because it considered the earlier approval specific to the live-player payload. A new explicit publication question is pending. No alternative egress was attempted. `components.lock.json` continues to pin the previously published live-player checkpoint.
+Both commits are published to their integration branches. The user subsequently authorized publication of all integration work, resolving the earlier approval boundary. Later companion checkpoints include these operator changes; `components.lock.json` records the current published development set.
 
 ## Implemented
 
