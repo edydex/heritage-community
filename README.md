@@ -8,11 +8,11 @@ This repository owns the combined product brief, compatible component versions, 
 
 ## Current status
 
-Integration is in development. Pinned source setup, combined server commands, and live translation are implemented. SyncShow Preview 26 has a verified local Mac installer, including translation screens without a loaded presentation; official desktop releases and real-service acceptance remain unfinished. See [delivery status](STATUS.md).
+Integration is in development. Pinned source setup, combined server commands, and live translation are implemented. SyncShow Preview 27 has retained installers with verified Mac ad-hoc signatures, including saved service translation settings and translation screens without a loaded presentation; official desktop releases and real-service acceptance remain unfinished. See [delivery status](STATUS.md).
 
 ## Install the SyncShow preview
 
-The [desktop preview guide](docs/desktop-preview.md) covers the retained Mac installer, church connection, live translation and tablet teaching. Exact source and package checks are recorded in the [Preview 26 verification](docs/verification/2026-09-13-standalone-screens.md).
+The [desktop preview guide](docs/desktop-preview.md) covers the retained Mac installer, church connection, live translation and tablet teaching. Exact source and package checks are recorded in the [Preview 27 verification](docs/verification/2026-09-13-service-translation-plans.md).
 
 ## Open the complete development workspace
 
@@ -62,6 +62,7 @@ Use `server help` for restore and unattended options. The commands keep exact co
 - [Product brief](docs/product-brief.md)
 - [Live-service experience](docs/live-service.md)
 - [Translation integration](docs/translation-integration.md)
+- [Prepare translation with a service](docs/service-translation-plans.md)
 - [Initial source and public deployment audit](docs/initial-audit.md)
 - [Delivery status and remaining acceptance](STATUS.md)
 
