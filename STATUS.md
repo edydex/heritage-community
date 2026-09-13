@@ -40,7 +40,7 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 
 ## Deployed at WOTBC
 
-- Community `f44037b` and companion `fa1aa3a` are installed together. Supported updates, migrations, companion startup, local/public checks, and format 3 backups succeeded. Existing church recording objects remain covered by the verified inventory.
+- Community `2c98f7e` and companion `9c2c38b` are installed together. Supported updates, migrations, companion startup, local/public checks, and format 3 backups succeeded. Existing church recording objects remain covered by the verified inventory.
 - The real `/live` and `/translate` pages connect to the companion. The supplied YouTube channel is configured, floating translation works, and manager controls require sign-in. No current video is selected; no translation service or microphone has been started.
 - Provider credentials are still absent. This is a deployed foundation, not complete live-service acceptance. See [deployment evidence and remaining checks](docs/verification/2026-09-12-wotbc-deployment.md).
 
@@ -90,4 +90,4 @@ The configured `vr-mayos` connection currently requires renewed Cloudflare Acces
 - Multilinguum `9c2c38b` and Heritage `2c98f7e` add selectable sermon-note uploads in the shared operator console. Economy requires an explicit per-service note-sharing choice. The scoped manager/device lease can list and upload translation reference notes; anonymous callers are denied. Existing archive, replay and voice-profile restrictions remain.
 - 83 Multilinguum tests and builds passed. SyncShow: 2,217 passed, two skipped; syntax checks and real Electron teaching rehearsal passed. Heritage production build and actual local proxy listing/upload/access checks passed. The real browser verified Economy selection, consent reset, locked live settings and Stop with no microphone or provider request.
 - [Musician-screen follow-up](docs/future-musician-screen.md) records instrument-specific chord views, current/next song-section following, manual hold/resume and offline charts.
-- See [verification and limitations](docs/verification/2026-09-13-teaching-and-notes.md). Paid-provider testing remains $0 / $20.
+- The WOTBC unified update completed at `2026-09-13T09:02:09Z`. All three services are healthy, the new operator bundle is public, the notes route returns 401 anonymously and 200 with a scoped lease, and the real `/live` browser reconnects with audio off. All seven artifacts in each of three safety backups passed independent checksums. See [verification and limitations](docs/verification/2026-09-13-teaching-and-notes.md). Paid-provider testing remains $0 / $20.

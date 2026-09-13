@@ -37,4 +37,16 @@ The [musician screen](../future-musician-screen.md) is recorded as future work, 
 
 ## Deployment
 
-Server deployment verification is recorded below after applying this source set. Publication alone does not establish deployment or live-service acceptance.
+The supported unified update completed successfully at `2026-09-13T09:02:09Z` on the verified `heritage-community` Debian 13 host. The installed Community and companion repositories are clean at the exact revisions above. Receipt permissions are 0600 and the recorded set digest is `586c6f3c306253407601611bfe5f028b01c3ad91353615d61e5e3958fa902791`.
+
+All three services are healthy. `/live`, `/translate`, the new operator bundle and public idle-service endpoint return 200. The notes route returns 401 anonymously and 200 with a newly issued scoped lease through the real public Heritage proxy, with no-store. The real browser reloaded `/live`, reached “Waiting for the next service”, and retained Audio off and the WOTBC YouTube channel. No church reference note was uploaded for this deployment check and no microphone or provider service was started.
+
+Independent checksum checks passed for all seven artifacts in each safety backup:
+
+- `backup-20260913T085035Z-pre-unified-update`
+- `backup-20260913T085115Z-pre-translation-setup`
+- `backup-20260913T085459Z-pre-update`
+
+The updater's inventory still covers 11 finalized recording objects / 3,883,891 bytes, with no staged recordings. The host tunnel and nightly backup timer remain healthy. No provider settings were changed.
+
+The unified set's [CI run](https://github.com/edydex/heritage-community/actions/runs/34748571441) passed 11 portable tests and the four isolated Debian lifecycle scenarios at `20db6be`. The application feature branches have no triggered CI runs; the component tests/builds described above were local, with the final server images additionally built and run on WOTBC. SyncShow remains a published source feature, not a packaged desktop release or physical tablet/venue acceptance.
