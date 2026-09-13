@@ -1,6 +1,6 @@
 # Broadcast translation timing — 2026-09-13
 
-The development set pairs Heritage `6ef6e030b054b42904de0b4d943494144e77f21e` (timing feature `7af0ea2`) with Multilinguum `f5b0f8dfe1a5e7d3a2720494113e386db38c829a`. SyncShow remains `cd214139c7f1a21171575ee42f75db23912d16a1`.
+The development set pairs Heritage `3b48db817a9ae5dded9ae7873b1171783d6eb8ec` (timing feature `7af0ea2`) with Multilinguum `f5b0f8dfe1a5e7d3a2720494113e386db38c829a`. SyncShow remains `cd214139c7f1a21171575ee42f75db23912d16a1`.
 
 ## Implemented behavior
 
@@ -23,7 +23,7 @@ Quality/Economy cascade speech supports the new source-timed window. The legacy 
 
 Multilinguum [CI 34757568873](https://github.com/edydex/multilinguum/actions/runs/34757568873) passed all three jobs (web/service checks, voice worker and desktop shell) for the published integration. [Draft PR 1](https://github.com/edydex/multilinguum/pull/1) keeps it reviewable without promoting the development set to main.
 
-Community [CI 34757541168](https://github.com/edydex/heritage_study_bible/actions/runs/34757541168) stopped on existing ShellCheck warnings in deployment scripts, before container validation. Follow-up `6ef6e03` removes unused inventory bookkeeping, labels library-owned variables at their assignment sites and makes empty test environment values explicit. Backup/restore checks remain in place. The local deployment and appliance suites passed; [CI 34757765365](https://github.com/edydex/heritage_study_bible/actions/runs/34757765365) is the corrected exact-revision run.
+Community [CI 34757541168](https://github.com/edydex/heritage_study_bible/actions/runs/34757541168) stopped on existing ShellCheck warnings in deployment scripts, before container validation. Follow-up `6ef6e03` removes unused inventory bookkeeping, labels library-owned variables at their assignment sites and makes empty test environment values explicit. Backup/restore checks remain in place. The local deployment and appliance suites passed; [CI 34757765365](https://github.com/edydex/heritage_study_bible/actions/runs/34757765365) passed static checks, build and migrations, then exposed a public-site identity defect: its home page still rendered a hard-coded WOTBC name on an installation configured as CI Church. Follow-up `3b48db8` uses the configured community name in the public header, metadata, home page, footer and sermon list, with shared per-render settings reads. Its local typecheck and production build passed.
 
 ## Acceptance still needed
 
