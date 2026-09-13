@@ -32,6 +32,7 @@ SELECT id,'$digest',$size,'audio/mpeg','$key',now()
 FROM public.communities WHERE slug='installation-rehearsal';
 SQL
 elif [[ $operation == mutate ]]; then
+  heritage_compose exec -T community node -e 'require("node:assert/strict").equal(require("node:fs").existsSync("/app/media/restore-rehearsal.txt"), false, "The public upload bytes must be removed before restore.")'
   sql <<SQL
 DELETE FROM public.syncshow_sermon_media_objects WHERE sha256='$digest';
 SQL

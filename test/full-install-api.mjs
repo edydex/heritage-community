@@ -32,6 +32,10 @@ if (operation === 'seed') {
   const created = await json('/api/media', { method: 'POST', body: form });
   const media = created.doc;
   assert.ok(media?.id && media.url);
+  assert.equal(media.filename, 'restore-rehearsal.txt');
+  const published = await fetch(new URL(media.url, base));
+  assert.equal(published.status, 200, 'Published notes must be readable before the backup.');
+  assert.equal(hash(Buffer.from(await published.arrayBuffer())), hash(bytes));
   const baseline = { userId: authenticated.user.id, displayName: authenticated.user.displayName,
     mediaId: media.id, mediaUrl: media.url, mediaSha256: hash(bytes), communityId: church.id };
   await writeFile(join(results, 'api-baseline.json'), JSON.stringify(baseline, null, 2) + '\n');
@@ -42,7 +46,12 @@ if (operation === 'seed') {
       headers: { 'content-type': 'application/json' }, body: JSON.stringify({ displayName: 'Changed after the backup' }) });
     assert.equal(changed.doc.displayName, 'Changed after the backup');
     await json(`/api/media/${baseline.mediaId}`, { method: 'DELETE' });
-    assert.equal((await fetch(new URL(baseline.mediaUrl, base))).status, 404);
+    const remaining = await json(`/api/media?where[id][equals]=${encodeURIComponent(baseline.mediaId)}`);
+    assert.equal(remaining.docs.length, 0, 'The deleted upload record must be absent.');
+    // Payload may deny an anonymous file request before reporting its absence.
+    // The guest storage check separately proves the file bytes were removed.
+    const missing = await fetch(new URL(baseline.mediaUrl, base));
+    assert.ok([403, 404].includes(missing.status), `Deleted public file: HTTP ${missing.status}`);
   } else {
     assert.equal(authenticated.user.id, baseline.userId);
     assert.equal(authenticated.user.displayName, baseline.displayName, 'Administrator row must return to its backup state.');
