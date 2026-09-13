@@ -11,7 +11,7 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 ## Implemented in component branches
 
 - Multilinguum `9b8b09d458cc5863fb25ab823f44033dce8e5711`: captions publish independently of speech; operator speech switch cancels pending requests and queued audio; direct speech translation closes and continues as text through the cascade; public text/audio availability is separate; listener playback honors audio-off; cloud operation no longer requires the GPU worker. See [verification](docs/verification/2026-09-12-translation-core.md).
-- Heritage `18b69a84e6a753b6c9f01ea4155498ed1768fb82`: editable church settings for channel, current service video, listener URL, and broadcast delay; an explicitly shaped public `/live/settings.json`; database migration and access validation. Three parser tests, a real PostgreSQL/Payload round-trip/access test, type checks, and the production build passed. This is the last published settings foundation; newer local player candidates are listed below.
+- Heritage `18b69a84e6a753b6c9f01ea4155498ed1768fb82`: editable church settings for channel, current service video, listener URL, and broadcast delay; an explicitly shaped public `/live/settings.json`; database migration and access validation. Three parser tests, a real PostgreSQL/Payload round-trip/access test, type checks, and the production build passed. This settings foundation is included in the published integration checkpoint below.
 
 ## Latest published integration checkpoint
 
@@ -20,10 +20,16 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 - The user explicitly approved publication to the two public application repositories and the private unified repository. Both component branches are published; `components.lock.json` now pins this development set.
 - The user authorized up to $20 of paid testing. Current spend against that allowance is $0, tracked in [the budget ledger](docs/verification/api-test-budget.json).
 
+## Latest local operator checkpoint
+
+- Heritage `a9b0f03bbb47e5fb0289f8dba8f14f9cd66ddecd` and Multilinguum `3817624e902e3ea74b5b5943e5edf0d36df39e16` add authenticated manager controls, renewable scoped access, and explicit mixer capture. See [verification and limits](docs/verification/2026-09-12-operator-control.md).
+- 72 Multilinguum tests, 28 focused Heritage access/SyncShow tests, production builds, and a real local manager login/bilingual-caption/stop rehearsal passed. No microphone or paid provider was used.
+- Automatic approval review requires additional publication approval for this new operator-control payload. The commits are local and the component lock retains the last published checkpoint.
+
 ## In progress
 
 - The Heritage integration branch is based on the clean WOTBC deployment (`5f66b647f050ad45bf596a19a62c308ff65d8294`), fetched directly from that server. Its service-document fix is preserved. The church deployment has not been changed by this implementation run.
-- Heritage church settings, `/live`, `/translate`, and cohosting the processor beside Community. The public client and proxy are implemented; companion deployment and operator control are next.
+- Heritage church settings, `/live`, `/translate`, and cohosting the processor beside Community. The public client, proxy, and Community operator controls are implemented locally; companion deployment and SyncShow control wiring are next.
 
 ## Required before completion
 
