@@ -29,3 +29,11 @@ The unified source selection includes reader `3d1feb7`. Its Community server sub
 ## Fresh signed-in check
 
 At 10:46:28 Pacific (`2026-09-13T17:46:28Z`), Sync now completed again in the user's existing internal-browser session. The page displayed **Synchronization finished** and **Your supported reading data is up to date**, with no offline error. No new test note or account setting was created for this check.
+
+## Member-session recovery follow-up
+
+Community Home still displayed a cached “Signed in” label while its member session was unavailable, then reported “Sign in to this community again” without a recovery control. This was separate from the working personal-sync session. Reader `94a87a486986ee16e1ece011253db99b69816d46` reports missing/401 member sessions explicitly, hides the stale sign-in/empty-calendar claim and provides an email recovery form while retaining public resource access. A temporary network failure does not trigger member reauthentication.
+
+All 192 unit tests, 105 protocol tests and 33 production-browser tests passed in [CI 34773619388](https://github.com/edydex/heritage_study_bible/actions/runs/34773619388). [Deployment 34773736993](https://github.com/edydex/heritage_study_bible/actions/runs/34773736993) published the same source. The real Community Home then displayed **Member sign-in needed**, retained the church-resource controls, and opened **Send church sign-in link**. That real email submission was not performed; the automated recovery test intercepted its synthetic request.
+
+Reloading the real personal-sync page preserved its signed-in session. Sync now completed at 11:13:53 Pacific (`2026-09-13T18:13:53Z`) with **Synchronization finished** and **Your supported reading data is up to date**. The Community server subtree is identical to installed `e7882cf` (tree `d1e9ef8ca565dc362f4e370e47c060bfe60d672d`), so this frontend deployment required no WOTBC server update.
