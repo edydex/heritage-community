@@ -40,7 +40,7 @@ jobs:
         shell: bash
         run: |
           docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges \
-            --tmpfs /tmp:rw,size=256m,mode=1777 --tmpfs /run/lock:rw,size=1m,mode=1777 \
+            --tmpfs /tmp:rw,exec,size=256m,mode=1777 --tmpfs /run/lock:rw,size=1m,mode=1777 \
             -e HERITAGE_ISOLATED_RUNNER_TEST=1 -e HERITAGE_FIXTURE_DEPLOY=/work/component-deploy \
             -v "$RUNNER_TEMP/heritage-fixture:/work:ro" \
             heritage-runner-tests node --test test/server-runner.integration.mjs

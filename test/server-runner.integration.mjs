@@ -96,6 +96,7 @@ const result=spawnSync(${JSON.stringify(realGit)},args,{stdio:'inherit'});proces
   const log = join(root, 'operations.log'); await writeFile(log, '');
   const gitLog = join(root, 'git.log'); await writeFile(gitLog, '');
   const env = { ...process.env, PATH: `${bin}:${process.env.PATH}`, FIXTURE_INSTALL: install, FIXTURE_LOG: log, FIXTURE_GIT_LOG: gitLog, FIXTURE_COMMUNITY: community, FIXTURE_TRANSLATION: translation, GIT_TERMINAL_PROMPT: '0', GIT_ALLOW_PROTOCOL: 'file' };
+  assert.equal(execFileSync('bash', ['-c', 'command -v git'], { env, encoding: 'utf8' }).trim(), join(bin, 'git'), 'The disposable /tmp mount must allow execution of the fixture Git wrapper.');
   async function bundle(pins) {
     const manifest = { schemaVersion: 1, channel: 'fixture', components: Object.entries(pins).map(([id, revision]) => ({ id, repository: repoUrls[id], revision })) };
     const json = JSON.stringify(manifest, null, 2) + '\n';
