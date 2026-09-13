@@ -1,0 +1,13 @@
+# Reader Community Home — 2026-09-13
+
+Heritage `60967fda75d0370db9d04c56dbfd3f1e1d3ebcce` adds congregation entry points for live video, live translation, church songs, sermons, passage commentary and personal sync. Applications remain in their existing repositories; this checkpoint does not change SyncShow or Multilinguum.
+
+A reader can check a church address and save its public library without an email or membership request. Existing member state, member catalogs, secure sessions and disabled-library preferences are preserved. Opening an installed library does not require a successful server refresh. Resource categories are filtered to the selected church; song grouping and existing wording/source selection remain intact. Returning from a song retains the selected church. Unknown or removed churches do not silently show unrelated content.
+
+Community discovery explicitly advertises public live-page URLs. The reader accepts only HTTP(S) links without credentials on the discovery origin. Bad optional links are omitted without breaking sign-in. Existing saved communities refresh their discovery independently of membership and retain their prior data when offline. Personal-sync-only accounts are labelled accurately rather than shown as waiting for an email.
+
+Local checks passed: 166 reader tests in 33 files, 49 protocol tests, the Community translation-discovery test, Community TypeScript checking, reader production build and whitespace checks. The new cases cover public save without auth/network requests, preservation of membership/private catalogs and disabled sources, navigation safety, source filtering, and resource access after failed refresh.
+
+The actual internal browser opened the local reader, checked the real WOTBC discovery/catalog, saved the church with no email, and opened its scoped song library. WOTBC currently advertises zero public resources; the empty-library state was correct and did not substitute built-in or unrelated songs. The home page layout was visually inspected. This does not assert that private member resources are empty.
+
+Full reader CI [34764751005](https://github.com/edydex/heritage_study_bible/actions/runs/34764751005) passed, including all 23 browser tests. Web publication [34764873845](https://github.com/edydex/heritage_study_bible/actions/runs/34764873845) and Pages deployment [34764905648](https://github.com/edydex/heritage_study_bible/actions/runs/34764905648) succeeded. The actual signed-in browser showed the new home page after a normal reload, with reading/account data retained. The WOTBC discovery update is in progress. Manager sign-in and real provider/venue acceptance remain pending as documented in the service-plan checkpoint. Provider testing remains $0 / $20.

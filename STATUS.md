@@ -138,3 +138,8 @@ SyncShow `34edaf474a5ac4427f0b927b415ba8c0d5f4038b` adds Open screen and Close s
 Community `2026-09-13T14:44:21Z` now runs the pinned service-planning integration. A saved service can carry its language, Quality/Economy, generated-speech and note selections into the shared console; Economy note sharing stays an explicit per-session choice. Concurrent saves and changed services require review. The service editor links to these controls, and SyncShow Preview 27 can select the same service. [Workflow](docs/service-translation-plans.md).
 
 All final source, production-container and four-platform package checks passed. The real database scenario covers six competing writers, protected fields, service edits and archival. Both Mac packages pass complete ad-hoc signature checks; the downloaded Apple Silicon app was independently verified again. All seven final installers are retained. WOTBC is healthy, all three safety backups passed independent checksums, and the real reader synchronized after deployment. A manager sign-in is still needed for the final WOTBC admin-console check. [Verification and remaining limits](docs/verification/2026-09-13-service-translation-plans.md). Provider spending remains $0 / $20.
+
+## Reader Community Home checkpoint
+
+- Heritage `60967fda75d0370db9d04c56dbfd3f1e1d3ebcce` connects the reader to church live pages and public songs, sermons and commentary. A church can be saved without email; existing member access and disabled sources are preserved. Personal-sync-only labels are corrected.
+- The published reader passed 166 unit tests, 49 protocol tests and all 23 browser tests. WOTBC discovery deployment is in progress. See [verification](docs/verification/2026-09-13-reader-community-home.md).
