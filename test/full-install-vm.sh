@@ -129,6 +129,6 @@ const root=process.argv[2];
 const manifest=JSON.parse(readFileSync('components.lock.json'));
 writeFileSync(join(root,'result.json'),JSON.stringify({passed:true,completedAt:new Date().toISOString(),manifest,
  freshDebianInstall:true,combinedRestore:true,checks:['administrator database row','public media bytes','managed private object row and bytes','English and Russian translation archive','service health'],
- providerRequests:0,emailDelivery:false,publicTunnel:false},null,2)+'\n');
+ providerCredentials:'absent',translationMode:'deterministic replay',paidProviderTestsPerformed:false,emailDelivery:false,publicTunnel:false},null,2)+'\n');
 JS
 printf 'PASS: fresh Debian installation and full combined restore.\n'

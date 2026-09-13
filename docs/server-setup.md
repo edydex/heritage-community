@@ -69,4 +69,4 @@ Unit tests exercise CLI input validation, official pins, SSH staging, exact argu
 
 `npm test` runs the portable tests. The repository's **Verify unified workspace** GitHub Actions workflow also fetches the selected public Community libraries and runs `test/server-runner.integration.mjs` in a disposable Debian container. That test container has no network, host service socket, credentials or church data. Its root filesystem is read-only; only temporary fixture data and operations locks are writable. The temporary fixture directory permits execution because the suite supplies a Git transport wrapper that redirects fetches to local synthetic repositories. A preflight verifies that the wrapper is actually selected; Git itself also refuses non-file transports.
 
-Real deployment evidence and the remaining acceptance work are tracked in [STATUS](../STATUS.md).
+The separate [full Debian VM rehearsal](../docs/installation-rehearsal.md) exercises the real installation and combined restore commands. Its current outcome, real deployment evidence and remaining acceptance are tracked in [STATUS](../STATUS.md).
