@@ -1,6 +1,6 @@
 # Integrated delivery status
 
-Objective: make Heritage, SyncShow, and Multilinguum convenient to install, configure, operate, and maintain together. Updated 2026-09-12.
+Objective: make Heritage, SyncShow, and Multilinguum convenient to install, configure, operate, and maintain together. Updated 2026-09-13.
 
 ## Implemented in this repository
 
@@ -39,7 +39,7 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 
 ## Deployed at WOTBC
 
-- Community `7d5de50` and companion `6f00fb5` are installed together. Supported updates, migrations, companion startup, local/public checks, and the first format 3 backup succeeded. Existing church recording objects remain covered by the verified inventory.
+- Community `f44037b` and companion `fa1aa3a` are installed together. Supported updates, migrations, companion startup, local/public checks, and format 3 backups succeeded. Existing church recording objects remain covered by the verified inventory.
 - The real `/live` and `/translate` pages connect to the companion. The supplied YouTube channel is configured, floating translation works, and manager controls require sign-in. No current video is selected; no translation service or microphone has been started.
 - Provider credentials are still absent. This is a deployed foundation, not complete live-service acceptance. See [deployment evidence and remaining checks](docs/verification/2026-09-12-wotbc-deployment.md).
 
@@ -50,6 +50,13 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 - The rehearsal also found and fixed an existing native text-cue transition crash and stage next-line overflow. Its stale Bible-format expectations were updated against the current compiler's independently pinned text.
 - The actual SyncShow discovery client and public caption socket connected to WOTBC in idle state; the umbrella doctor now sees `translation: true`. The supported WOTBC update and all seven safety-backup checksums passed.
 - This is published source, not a packaged SyncShow release or real microphone/provider acceptance. See [verification and remaining work](docs/verification/2026-09-12-syncshow-translation.md). Paid testing remains $0 / $20; the API key location question is still pending.
+
+## Published translation-profile checkpoint
+
+- Multilinguum `fa1aa3a` and Heritage `f44037b` add Quality and Economy selection, session model locking, archive provenance, separate text-project credentials, and companion setup support. The current version lock includes them; all three pinned sources bootstrap successfully.
+- Economy defaults to blocked. An administrator must confirm the separate sharing project's setup and explicitly allow possible billed overage; account/model eligibility and remaining allowance are not automatically verified. Private sermon-note attachments are rejected, and provider failures never silently change projects.
+- 82 Multilinguum tests, all builds/type checks, the Heritage deployment suite, and five umbrella tests passed. Actual SDK/processor checks with synthetic responses verified separate text/audio keys and zero further voice requests after speech-off. Real browser selection/start/lock/stop checks passed without opening a microphone.
+- The supported WOTBC update completed; all three services are healthy, both seven-artifact backups passed checksum checks, and the public browser reconnects in idle state. Deployed preflight confirms absent API keys, unconfirmed sharing and blocked Economy overage. See [verification and outstanding acceptance](docs/verification/2026-09-13-translation-profiles.md). Real bilingual model evaluation and guaranteed zero-charge usage remain unfinished; paid-test spend is still $0 / $20.
 
 ## Required before completion
 
