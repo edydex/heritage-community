@@ -131,3 +131,10 @@ The final pinned WOTBC update completed at `2026-09-13T13:13:41Z`, with all serv
 ## Translation screens without slides — Preview 26
 
 SyncShow `34edaf474a5ac4427f0b927b415ba8c0d5f4038b` adds Open screen and Close screen to Translation in Prepare/Load. A venue output can show English/Russian captions without a loaded presentation; Hide leaves it black, and starting Show takes over its outputs. Local regression, real app control-path rehearsal with simulated displays, packaged launch/rendering/shared-service checks and exact source correspondence passed. All four source CI jobs and all four native package jobs passed; the local Apple Silicon installers and all seven CI installers are retained alongside Preview 25. [Verification and remaining acceptance](docs/verification/2026-09-13-standalone-screens.md). This changes only the desktop pin; WOTBC and the $0 / $20 provider budget remain unchanged.
+
+
+## Saved service translation settings — Preview 27
+
+Community `2026-09-13T14:44:21Z` now runs the pinned service-planning integration. A saved service can carry its language, Quality/Economy, generated-speech and note selections into the shared console; Economy note sharing stays an explicit per-session choice. Concurrent saves and changed services require review. The service editor links to these controls, and SyncShow Preview 27 can select the same service. [Workflow](docs/service-translation-plans.md).
+
+All final source, production-container and four-platform package checks passed. The real database scenario covers six competing writers, protected fields, service edits and archival. Both Mac packages pass complete ad-hoc signature checks; the downloaded Apple Silicon app was independently verified again. All seven final installers are retained. WOTBC is healthy, all three safety backups passed independent checksums, and the real reader synchronized after deployment. A manager sign-in is still needed for the final WOTBC admin-console check. [Verification and remaining limits](docs/verification/2026-09-13-service-translation-plans.md). Provider spending remains $0 / $20.

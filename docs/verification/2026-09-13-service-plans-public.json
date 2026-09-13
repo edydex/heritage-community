@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "publicRoutes": [
+    {
+      "path": "/live",
+      "status": 200
+    },
+    {
+      "path": "/translate",
+      "status": 200
+    },
+    {
+      "path": "/translation/client/operator.js",
+      "status": 200
+    },
+    {
+      "path": "/translation/api/public/service",
+      "status": 200
+    }
+  ],
+  "anonymousPlans": 401,
+  "operatorBundleSha256": "46755cb0dddeb796bfdb80cc04282092b8352f4cfab713603c26611f209f5972",
+  "translationInactive": true,
+  "managerCheck": "Pending real manager sign-in",
+  "providerRequests": 0
+}

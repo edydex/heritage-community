@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "installedAt": "2026-09-13T14:44:21Z",
+  "setDigest": "b1fd3cf691c8b6976e527fb9db1d94d1abeebf5d17ac5129cf4536412428b502",
+  "sourceClean": true,
+  "services": {
+    "community": "healthy",
+    "translation-processor": "healthy",
+    "postgres": "healthy"
+  },
+  "backups": [
+    {
+      "name": "backup-20260913T143303Z-pre-unified-update",
+      "verifiedArtifacts": 7
+    },
+    {
+      "name": "backup-20260913T143343Z-pre-translation-setup",
+      "verifiedArtifacts": 7
+    },
+    {
+      "name": "backup-20260913T143704Z-pre-update",
+      "verifiedArtifacts": 7
+    }
+  ]
+}
