@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "run": 34776401596,
+  "runUrl": "https://github.com/edydex/SyncShow/actions/runs/34776401596",
+  "publishedSourceRevision": "638e3a7db47eac8de3c14c9e6fa6af6ea69c8abe",
+  "builtMergeRevision": "fbb3ef299aa091aef5fcdab4a1a5b97aae38f576",
+  "target": "darwin-arm64",
+  "sourceNoticeManifestSha256": "f89d1575be7b4388491605991a38a5255a02141c1abf4a1becb171e4e2e64615",
+  "sourceNoticeFilesVerified": 105,
+  "sourceCRLFBytesPreserved": true,
+  "allBundledLegalRecordsVerified": 134,
+  "appArchiveMatchesBuildMetadata": true,
+  "artifacts": [
+    {
+      "path": "SyncShow-1.4.0-preview.27-arm64.dmg",
+      "size": 158884623,
+      "sha256": "b28a3d245a1662b90d66a142a6b69a35e5b58bd726f1f2429af1a33fae40220d"
+    },
+    {
+      "path": "SyncShow-1.4.0-preview.27-arm64.zip",
+      "size": 159173053,
+      "sha256": "0d5a8d54c572477a4538687486d995bf04670b536a468b942d3c4d50707b5ed5"
+    }
+  ],
+  "releaseLegalStatus": "blocked",
+  "releaseBlockers": [
+    "canvas-native-source-and-third-party-notices",
+    "sharp-libvips-lgpl-corresponding-source",
+    "electron-ffmpeg-corresponding-source-and-build-config"
+  ],
+  "builtTree": "c16cd2726943bb151076e01a131900a58af3f740",
+  "builtTreeMatchesPublishedSource": true,
+  "packagedLaunch": "passed",
+  "packageRun": {
+    "status": "completed",
+    "conclusion": "success",
+    "sourceRevision": "638e3a7db47eac8de3c14c9e6fa6af6ea69c8abe",
+    "targets": {
+      "darwin-arm64": "success",
+      "darwin-x64": "success",
+      "win32-x64": "success",
+      "linux-x64": "success"
+    }
+  },
+  "sourceCI": {
+    "run": 34776401627,
+    "conclusion": "success"
+  }
+}

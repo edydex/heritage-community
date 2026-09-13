@@ -32,7 +32,7 @@ The exact values used by the tools are in [components.lock.json](components.lock
 
 ## Work being finished
 
-- **SyncShow public packaging:** source `5b3da20` adds the exact upstream libvips notice index. Source CI and all four native package jobs passed; the downloaded Mac package's actual notice and installer hashes were inspected. Complete dependency source/license/replacement materials and the protected release configuration remain unfinished. [Evidence and concrete remaining work](docs/verification/2026-09-13-native-release-inputs.md).
+- **SyncShow public packaging:** source `638e3a7` adds 105 pinned libvips source-license texts and archive provenance. Source CI and all four native package jobs passed; the downloaded Apple Silicon package contains every expected text with matching hashes and passed its native launch check. Complete dependency source/license/replacement materials and the protected release configuration remain unfinished. [Evidence and concrete remaining work](docs/verification/2026-09-13-native-release-inputs.md).
 - **Live WOTBC acceptance:** manager sign-in and translation provider keys are still needed. The latest provider-configuration check found no configured API keys. No actual microphone or paid translation session has been started.
 
 ## What remains before calling the integration complete
