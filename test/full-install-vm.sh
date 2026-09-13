@@ -120,6 +120,9 @@ printf 'Restoring the full backup through the unified SSH command.\n'
 node bin/heritage.mjs server restore --host heritage-install-rehearsal --backup "$backup" --non-interactive --yes > "$results/restore.log" 2>&1
 node test/full-install-api.mjs verify "$results"
 ssh heritage-install-rehearsal 'bash /root/rehearsal-storage.sh verify' > "$results/storage-verify.log" 2>&1
+# Restore retains its safety backup as latest. That represents the mutated
+# state, so back up the recovered state before checking current coverage.
+node bin/heritage.mjs server backup --host heritage-install-rehearsal > "$results/post-restore-backup.log" 2>&1
 node bin/heritage.mjs server status --host heritage-install-rehearsal > "$results/status.log" 2>&1
 ssh heritage-install-rehearsal 'cat /opt/heritage-community/state/unified-installation.json' > "$results/installation.json"
 node --input-type=module - "$results" <<'JS'
