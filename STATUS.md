@@ -143,3 +143,9 @@ All final source, production-container and four-platform package checks passed. 
 
 - Heritage `60967fda75d0370db9d04c56dbfd3f1e1d3ebcce` connects the reader to church live pages and public songs, sermons and commentary. A church can be saved without email; existing member access and disabled sources are preserved. Personal-sync-only labels are corrected.
 - The published reader passed 166 unit tests, 49 protocol tests and all 23 browser tests. WOTBC discovery is deployed and healthy, and the real reader completed a fresh sync at 08:21:54 Pacific. See [verification](docs/verification/2026-09-13-reader-community-home.md).
+
+## Passage-linked sermon reader checkpoint
+
+- Heritage `24d92857d79bf5c9231787a3de3a4267f5defe8f` adds reviewed public sermons beside selected Bible passages, church-specific sermon archives and published text-language selection. Existing prepared work was recovered without changing any original working file.
+- All 183 reader unit tests, 105 protocol tests, 26 browser tests and 12 Community publication tests passed. Full reader CI and both web deployment workflows passed. Actual browser rehearsal used a local synthetic publication; the published reader also connected to WOTBC's real, currently empty public archive.
+- WOTBC exact-version alignment completed at `2026-09-13T15:49:01Z`. All three services are healthy, all three safety backups passed independent checksums, and the real account synchronized successfully at 08:51:24 Pacific. Manager and Community membership sign-in remain separate; provider spending remains $0 / $20. [Verification and limits](docs/verification/2026-09-13-passage-sermon-reader.md).
