@@ -1,0 +1,15 @@
+{
+  "name": "heritage-community-workspace",
+  "version": "0.1.0-dev.1",
+  "private": true,
+  "type": "module",
+  "description": "Installation and integration workspace for Heritage, SyncShow, and Multilinguum",
+  "engines": { "node": ">=24" },
+  "bin": { "heritage": "bin/heritage.mjs" },
+  "scripts": {
+    "bootstrap": "node bin/heritage.mjs bootstrap",
+    "status": "node bin/heritage.mjs status",
+    "doctor": "node bin/heritage.mjs doctor",
+    "test": "node --test test/*.test.mjs"
+  }
+}

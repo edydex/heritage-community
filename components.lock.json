@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "channel": "development",
+  "description": "Inspected starting revisions. This set is not yet an accepted integrated release.",
+  "components": [
+    {
+      "id": "heritage",
+      "name": "Heritage Bible and Community server",
+      "repository": "https://github.com/edydex/heritage_study_bible.git",
+      "revision": "ef9574d5227b41c1450f6ece86a1d3fa902b8045"
+    },
+    {
+      "id": "syncshow",
+      "name": "SyncShow",
+      "repository": "https://github.com/edydex/SyncShow.git",
+      "revision": "9c616b8ac16850c6238b1078f7ccabd6b22674ae"
+    },
+    {
+      "id": "multilinguum",
+      "name": "Multilinguum",
+      "repository": "https://github.com/edydex/multilinguum.git",
+      "revision": "a825169ea2faacbf854814e29743c84c02090868"
+    }
+  ]
+}
