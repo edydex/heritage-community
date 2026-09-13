@@ -60,10 +60,10 @@ const operation=process.argv[2];
 assert.equal(process.env.OPENAI_API_KEY,'');
 assert.equal(process.env.OPENAI_QUALITY_TEXT_API_KEY,'');
 assert.equal(process.env.OPENAI_ECONOMY_TEXT_API_KEY,'');
-const headers={authorization:`Bearer ${process.env.PROCESSOR_CONTROL_TOKEN}`,'content-type':'application/json'};
+const headers={authorization:`Bearer ${process.env.PROCESSOR_CONTROL_TOKEN}`};
 async function request(path,method='GET',data) {
-  const response=await fetch('http://127.0.0.1:4310'+path,{method,headers,...(data?{body:JSON.stringify(data)}:{})});
-  assert.ok(response.ok,`${method} ${path}: ${response.status}`); return response;
+  const response=await fetch('http://127.0.0.1:4310'+path,{method,headers:{...headers,...(data!==undefined?{'content-type':'application/json'}:{})},...(data!==undefined?{body:JSON.stringify(data)}:{})});
+  assert.ok(response.ok,`${method} ${path}: ${response.status}: ${(await response.clone().text()).slice(0,500)}`); return response;
 }
 const post=async (path,data)=> (await request(path,'POST',data)).json();
 const fs=await import('node:fs/promises');
