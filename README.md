@@ -8,11 +8,11 @@ This repository owns the combined product brief, compatible component versions, 
 
 ## Current status
 
-Integration is in development. Pinned source setup, combined server commands, and live translation are implemented. SyncShow Preview 25 has a verified local Mac installer; official desktop releases and real-service acceptance remain unfinished. See [delivery status](STATUS.md).
+Integration is in development. Pinned source setup, combined server commands, and live translation are implemented. SyncShow Preview 26 has a verified local Mac installer, including translation screens without a loaded presentation; official desktop releases and real-service acceptance remain unfinished. See [delivery status](STATUS.md).
 
 ## Install the SyncShow preview
 
-The [desktop preview guide](docs/desktop-preview.md) covers the retained Mac installer, church connection, live translation and tablet teaching. Exact source and package checks are recorded in the [Preview 25 verification](docs/verification/2026-09-13-desktop-preview.md).
+The [desktop preview guide](docs/desktop-preview.md) covers the retained Mac installer, church connection, live translation and tablet teaching. Exact source and package checks are recorded in the [Preview 26 verification](docs/verification/2026-09-13-standalone-screens.md).
 
 ## Open the complete development workspace
 
