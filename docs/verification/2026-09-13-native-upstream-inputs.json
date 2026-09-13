@@ -1,0 +1,162 @@
+[
+  {
+    "component": "sharp-libvips",
+    "repository": "lovell/sharp-libvips",
+    "revision": "4da6d14c0d59866adfb9d8cf52bcaa53846dc4f6",
+    "path": "README.md",
+    "gitBlob": "6676201c9a8b14ddea13daa765fd64772a2a3b20",
+    "sha256": "52f8b2931fa6d496c792a2ed808177414ac24f2f87b667bb13fbc21bf1d99758",
+    "bytes": 1998
+  },
+  {
+    "component": "sharp-libvips",
+    "repository": "lovell/sharp-libvips",
+    "revision": "4da6d14c0d59866adfb9d8cf52bcaa53846dc4f6",
+    "path": "LICENSE",
+    "gitBlob": "8dada3edaf50dbc082c9a125058f25def75e625a",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "bytes": 11357
+  },
+  {
+    "component": "sharp-libvips",
+    "repository": "lovell/sharp-libvips",
+    "revision": "4da6d14c0d59866adfb9d8cf52bcaa53846dc4f6",
+    "path": "THIRD-PARTY-NOTICES.md",
+    "gitBlob": "fcb7b9425c03ad926e4e23f20946351f4c8c2e5e",
+    "sha256": "25ffcfa69e28b1913ced27ec778b90f24911a1bb3021253577e8b0af55db0d49",
+    "bytes": 4230
+  },
+  {
+    "component": "sharp-libvips",
+    "repository": "lovell/sharp-libvips",
+    "revision": "4da6d14c0d59866adfb9d8cf52bcaa53846dc4f6",
+    "path": "versions.properties",
+    "gitBlob": "7a8d6f14408caf5ebc6cef6f63abf39e4d2a1dec",
+    "sha256": "cebb421de9568ae3ce8cfd66be62c3da53c2d549232c2e4327d9a9f97276c237",
+    "bytes": 599
+  },
+  {
+    "component": "sharp-libvips",
+    "repository": "lovell/sharp-libvips",
+    "revision": "4da6d14c0d59866adfb9d8cf52bcaa53846dc4f6",
+    "path": "build.sh",
+    "gitBlob": "eca5b7f015d8234e1ffd8c5c769cca937ae0b41a",
+    "sha256": "f32e344b1355b6bcf3836e7f25e2c2de7f25eefeb8c96d02711ad3fcea487488",
+    "bytes": 2804
+  },
+  {
+    "component": "sharp-libvips",
+    "repository": "lovell/sharp-libvips",
+    "revision": "4da6d14c0d59866adfb9d8cf52bcaa53846dc4f6",
+    "path": "build/posix.sh",
+    "gitBlob": "3ab5abb1dfaaa064a2d8c89ce9c526f88b1e6ebc",
+    "sha256": "0f8c3f3c6b1144ce1ceae185440ae1e04209df5031bc97ccae9954c3ecfaee02",
+    "bytes": 23553
+  },
+  {
+    "component": "sharp-libvips",
+    "repository": "lovell/sharp-libvips",
+    "revision": "4da6d14c0d59866adfb9d8cf52bcaa53846dc4f6",
+    "path": "build/win.sh",
+    "gitBlob": "a92043f73d342c76722065378a9f800b1769414f",
+    "sha256": "52f2d9d76b07d4b4ad1720659b1e9bbc76121b85f21d9d084a85af28014473f3",
+    "bytes": 1262
+  },
+  {
+    "component": "sharp-libvips",
+    "repository": "lovell/sharp-libvips",
+    "revision": "4da6d14c0d59866adfb9d8cf52bcaa53846dc4f6",
+    "path": ".github/workflows/ci.yml",
+    "gitBlob": "24b2a6b03589ddcb6895748f28844c4f3fffc50a",
+    "sha256": "f8beaaedffc84dabec55f85f26c5bca29703c23949111a415b6e16aa5db4cb97",
+    "bytes": 3543
+  },
+  {
+    "component": "canvas",
+    "repository": "Brooooooklyn/canvas",
+    "revision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+    "path": "README.md",
+    "gitBlob": "17921002ccf375b4dafc5aaf58f1e8cc1708ee30",
+    "sha256": "1051a72627f361ae5ec3abd67804b5f6f46f292cebe903f1de5e019892576a87",
+    "bytes": 20727
+  },
+  {
+    "component": "canvas",
+    "repository": "Brooooooklyn/canvas",
+    "revision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+    "path": "LICENSE",
+    "gitBlob": "e0024071be828a07166aef9825c50a1912f652ac",
+    "sha256": "8802fecf9da4367bc23bcf20b21cc143785fc6c92b152f3fa7fbe6ce08d344d6",
+    "bytes": 1075
+  },
+  {
+    "component": "canvas",
+    "repository": "Brooooooklyn/canvas",
+    "revision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+    "path": "Cargo.toml",
+    "gitBlob": "2999858ef5c6c30fc4dd9cb45cd3e9c068cf6f11",
+    "sha256": "f8f88315f9193516d984ef5b55cdea0331000e1ba0f1acabae89db443d1513d9",
+    "bytes": 1610
+  },
+  {
+    "component": "canvas",
+    "repository": "Brooooooklyn/canvas",
+    "revision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+    "path": "build.rs",
+    "gitBlob": "09a2c3caf2513a733ea1576b071445a55ae409e1",
+    "sha256": "d86c9adbf8692be58b03ac937a121a4078dfd71d7f90d900e28c2f1976e445fc",
+    "bytes": 6798
+  },
+  {
+    "component": "canvas",
+    "repository": "Brooooooklyn/canvas",
+    "revision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+    "path": ".gitmodules",
+    "gitBlob": "e56c7b8545003a9547c5861c9f3a058649c35fd7",
+    "sha256": "42bbce9349d520c24475215871371def98636c3d8b9f7bdce138302f492f648c",
+    "bytes": 172
+  },
+  {
+    "component": "canvas",
+    "repository": "Brooooooklyn/canvas",
+    "revision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+    "path": "scripts/build-skia.js",
+    "gitBlob": "7d3b73110cbb563f22cf51ebcfca33a02c4fd7d0",
+    "sha256": "173c2c5336651d9de06f7d43ccaff105161ba069d07b394bcf2648b911b63df8",
+    "bytes": 14605
+  },
+  {
+    "component": "canvas",
+    "repository": "Brooooooklyn/canvas",
+    "revision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+    "path": ".github/workflows/CI.yaml",
+    "gitBlob": "a4c108e1728be16bf4c9bf20796ca4f6e2d61b7f",
+    "sha256": "d342b4a264af2e8f2a188c421c05025703708c5e2b324a3dd3400bb225e67d40",
+    "bytes": 22760
+  },
+  {
+    "component": "canvas",
+    "repository": "Brooooooklyn/canvas",
+    "revision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+    "path": ".github/workflows/skia.yaml",
+    "gitBlob": "04b082113a1656537fd54e211a4b5493680919c7",
+    "sha256": "4f46194eed6acbc794633a8ed8b5a6c470281a564f4e27833fa289284404b4ea",
+    "bytes": 13188
+  },
+  {
+    "component": "electron",
+    "repository": "electron/electron",
+    "revision": "9b58e96340a34cccaccc08e410e76838b50b0cb2",
+    "path": "DEPS",
+    "sha256": "54b07e0abc39bf873413c79129d0c800e432e6a6669e308ea07d3c2da863348f",
+    "bytes": 8121
+  },
+  {
+    "component": "chromium",
+    "repository": "chromium/chromium",
+    "revision": "e69b30bba288603e514cffb4c79c359cac68e923",
+    "path": "DEPS",
+    "sha256": "48b2e9f53f3578cec2f5eb687361da19777e3c4880386d4252aa30dc4132bca5",
+    "bytes": 190458
+  }
+]
