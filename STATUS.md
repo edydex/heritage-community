@@ -7,6 +7,7 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 - One product and installation home, with application ownership kept explicit.
 - Pinned source bootstrap, isolated revision folders, refusal to overwrite existing work, generated workspace, and capability diagnostics.
 - Private GitHub repository published and verified. Bootstrap fetched all three pinned component revisions from GitHub; the WOTBC discovery check returned the advertised capabilities successfully.
+- Unified SSH commands for server plan, guided setup, exact-version update, status, backup and restore. They use the supported Community lifecycle, preserve private configuration and prior source sets, and record success after health checks. See [setup guide](docs/server-setup.md).
 
 ## Implemented in component branches
 
@@ -60,7 +61,7 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 
 ## Required before completion
 
-- Supported installation, setup, update, backup/restore, and compatible component releases.
+- Fresh-server installation and full combined restore acceptance, and compatible packaged component releases. The unified command layer and actual WOTBC update are verified below.
 - Community `/live`: configurable YouTube source, original/translated audio choice with mutual exclusion, readable captions, floating view/fallback, and explicit stream alignment.
 - `/translate` and Heritage Bible entry point with text/voice choice.
 - Authenticated Community and SyncShow control of one translation session, including mixer capture, stop, retry, and reconnect.
@@ -69,6 +70,13 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 - Shared service/song/sermon workflows and deliberate publication into Heritage resources.
 - Real email sign-in and two-device personal notes/progress/conflict/offline acceptance.
 - Bilingual English↔Russian service acceptance, representative phone playback, and video/translation alignment.
+
+## Published unified server checkpoint
+
+- Added the combined server command layer and a repeatable GitHub Actions workflow. Eleven portable tests and four isolated Debian lifecycle scenarios passed. Synthetic data and component side effects remain distinguished from real installation/restore acceptance.
+- `server update --host wotbc-community` applied the current exact set through the existing guarded lifecycle. The runner recorded successful installation at `2026-09-13T08:03:11Z`; Community and companion source are clean and all three services are healthy.
+- All seven artifacts in each of the three safety backups passed independent checksum validation. The verified recording inventory still covers 11 objects / 3,883,891 bytes with no staging files. Both live routes and the operator bundle return HTTP 200; the real browser reloaded and reached “Waiting for the next service” with audio off.
+- These commands are ready for the documented existing-server workflow. Fresh install, full restore, packaged desktop releases and real-service/provider acceptance remain open. Paid provider tests remain $0 / $20. See [verification record](docs/verification/2026-09-13-unified-server.md).
 
 ## Evidence boundaries
 
