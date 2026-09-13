@@ -33,4 +33,8 @@ Provider-test spending remains $0 of the authorized $20.
 
 ## Deployment
 
-Publication and WOTBC deployment will be recorded here after their exact revisions and live checks are verified.
+The first timing deployment (Heritage `7af0ea2`, Multilinguum `f5b0f8d`) completed on WOTBC at `2026-09-13T12:48:19Z`, receipt digest `9f2e1c126d40d0e1a6cfa6954e32550e114892add398af22f63045b56aee02b5`, mode 0600. All local/public health checks passed; private recording coverage remained 11 objects / 3,883,891 bytes with no staging files. Every artifact in each of the three safety backups (`backup-20260913T123700Z-pre-unified-update`, `backup-20260913T123740Z-pre-translation-setup`, `backup-20260913T124102Z-pre-update`) passed an independent SHA-256 check. The public audio route returned 410 for a non-current session.
+
+The deployed shared listener and the local tested bundle had identical SHA-256 `32800ab80fa72e8dde50590bdc94984af3ea8d7b51121b1ed496f87d42cfdd77`. The actual WOTBC `/live` page reloaded to Waiting for the next service with Audio off and the correct church YouTube channel. No service video is currently selected. The existing signed-in internal browser also completed a normal Sync now at 05:53:28 Pacific, displaying Synchronization finished with no conflicts.
+
+The configured-identity follow-up passed [Community CI 34758252819](https://github.com/edydex/heritage_study_bible/actions/runs/34758252819) at exact revision `3b48db8`, including static checks, fresh production containers, bootstrap, authentication, isolation and backup verification. The final pinned update is being applied.
