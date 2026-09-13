@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "37a88250cdca4df6f05ac02c6607f7ffe44435ee",
+  "method": "Extracted the CRC-validated embedded 7z payload from the NSIS installer with bsdtar. The installer was not executed on macOS.",
+  "embeddedArchive": {
+    "offset": 548626,
+    "bytes": 128358514,
+    "sha256": "d483f3efb2ad6dcad993065f99fdb737413376b2abff9a64b7f30a07a009c0e9"
+  },
+  "installer": {
+    "path": "SyncShow Setup 1.4.0-preview.27.exe",
+    "size": 129304202,
+    "sha256": "592286454589d37f2975a461089a89413b22151b82a4496efe9f3bf9a3a68393"
+  },
+  "runtimeAndNativeFiles": [
+    {
+      "path": "resources/app.asar",
+      "bytes": 62291897,
+      "sha256": "4e3d518d38a9668487f686a144dd2e53f4ec4754af874816fde33251a4110454"
+    },
+    {
+      "path": "SyncShow.exe",
+      "bytes": 225613824,
+      "sha256": "dc7c16ef5309984b0282e583463abab5b71cb3da7221ed72b5fc09f068867d3f"
+    },
+    {
+      "path": "ffmpeg.dll",
+      "bytes": 3067904,
+      "sha256": "d17c2a0ea5683ff02006676845b84ef2afe18b8f75a5fdcce2b364f85c37a34e"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-42.dll",
+      "bytes": 18406400,
+      "sha256": "6d8ec83a826a1b46ef25a670501fd186475568dd3e48893cb4f756d0f2f428d8"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-cpp-8.18.3.dll",
+      "bytes": 333312,
+      "sha256": "d6eb3395e6f7799c9e2c997aba38068f1ab0684dc08a853013dbe528649306b9"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/sharp-win32-x64-0.35.3.node",
+      "bytes": 442368,
+      "sha256": "45dbb968dff27a1e8d8870d2a34e6f5418fa2a1a4fe27a7ed13ab2fb3f895468"
+    },
+    {
+      "path": "resources/app.asar.unpacked/node_modules/@napi-rs/canvas-win32-x64-msvc/skia.win32-x64-msvc.node",
+      "bytes": 27331584,
+      "sha256": "b31cbafcbcb7a55565889a991b00d39b85b84204f1776e08e90807bd1c3ae787"
+    }
+  ],
+  "legalRecordsVerified": 131,
+  "windowsSourceTextsVerified": 104,
+  "windowsSourceManifestSha256": "8f535e95d9fade8d8a3921689f29615d03361bed7b5aa44a0f77c99ef9de7212",
+  "unresolvedArchives": [
+    "imagequant"
+  ],
+  "releaseLegalStatus": "blocked",
+  "packagedLaunch": {
+    "schemaVersion": 1,
+    "target": "win32-x64",
+    "archive": "win-unpacked/resources/app.asar",
+    "archiveSha256": "4e3d518d38a9668487f686a144dd2e53f4ec4754af874816fde33251a4110454",
+    "executable": "win-unpacked/SyncShow.exe",
+    "executableSha256": "dc7c16ef5309984b0282e583463abab5b71cb3da7221ed72b5fc09f068867d3f",
+    "controlPage": {
+      "title": "",
+      "url": "file:///D:/a/SyncShow/SyncShow/dist/win-unpacked/resources/app.asar/src/renderer/index.html"
+    },
+    "isolatedProfile": "confirmed-and-removed",
+    "launch": "passed"
+  },
+  "publishedSourceRevision": "46d6f5caa23d9fc3466ff1d19ece991595ec15f2",
+  "publishedAndBuiltTree": "2cc6ae058d2b434388af9b9179097664426169d9",
+  "sourceTreesMatch": true,
+  "packageRun": 34779737372,
+  "packageRunConclusion": "success",
+  "nativeTargetsPassed": [
+    "windows-x64",
+    "macos-x64",
+    "macos-arm64",
+    "linux-x64"
+  ],
+  "sourceCiRun": 34779737366,
+  "sourceCiConclusion": "success",
+  "retainedUnder": ".heritage/release-inputs/syncshow/1.4.0-preview.27/qa-34779737372/",
+  "releaseGateCleared": false,
+  "compatiblePinsChanged": false
+}
