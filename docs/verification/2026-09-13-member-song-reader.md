@@ -1,0 +1,24 @@
+# Member song reader — 2026-09-13
+
+Heritage `e7882cff601284c9872e1d11d2953e24a44e19b1` fixes the reader's old “unlisted song link” path, which fetched a member-only document anonymously. Links now identify their Community content server and member audience. The recipient's saved, issuer-bound church session is loaded asynchronously and is sent only to that church's exact content origin. Authenticated redirects are rejected, including in the merged song catalog. Personal sync accounts alone do not grant church membership. Ordinary public Content Servers remain readable anonymously and are not labelled as member-only.
+
+The work imports the prepared member-link helpers and reader changes into the isolated integration checkout, with adaptations for the current secure session store and church-scoped navigation. All nine original working files were checked by SHA-256 and remain unchanged. The Community backend subtree remains exactly `d1e9ef8ca565dc362f4e370e47c060bfe60d672d`, identical to the deployed passage-sermon checkpoint. SyncShow and Multilinguum are unchanged.
+
+**Save offline** saves a member song and its linked files for the current church sign-in. The cache is separate from public resources and other sessions, using a digest rather than a credential in its name. Successful refreshes update an already-saved copy; simply opening a member song does not save it automatically. A network interruption can use the current session's saved copy. A server access denial (`401`, `403`, `404` or `410`) removes the saved song response and shows an access message. A new sign-in requires saving the song again. Offline reading cannot learn about a changed server permission until it reconnects.
+
+## Checks completed
+
+- All 190 reader unit tests across 39 files and all 105 protocol tests passed.
+- All 32 final browser tests passed, including the copy-link wiring test and preservation of ordinary public library access and labels.
+- Both browser runs built the production reader successfully. Whitespace checks passed.
+- The real internal browser joined a synthetic local Community through the ordinary discovery, email-request and callback screens. The fixture returned a local development link; it did not send email or contact external services. The reader opened the church's member catalog, loaded the English song, switched to Russian in the member viewer and saved it offline. After the fixture server was stopped, a normal reload displayed the saved lyrics with an explicit offline-copy message.
+- Automated browser checks cover missing sign-in without a protected content request, rejected cross-origin redirects, account/session cache separation, access denial clearing the saved response, a copied route containing no session token, and anonymous public song reading without member-only labels.
+- The native share action in the internal browser did not produce a completion message. It is not claimed as native OS-share acceptance. Copy fallback wiring is verified by the browser test; physical/mobile share-sheet acceptance remains open.
+
+Final hosted reader CI [34767996815](https://github.com/edydex/heritage_study_bible/actions/runs/34767996815) passed, including all 32 browser tests and the production build. Final web publishing [34768167468](https://github.com/edydex/heritage_study_bible/actions/runs/34768167468) and Pages deployment [34768194619](https://github.com/edydex/heritage_study_bible/actions/runs/34768194619) succeeded.
+
+The supported final WOTBC update completed at `2026-09-13T16:21:45Z`, with set digest `23adbecf118f939d25fc3e0740c83ee81d15eaa622d6bedfa5eafa0c8ee63564`. Independent verification checked that digest against the runner and canonical version manifest, the exact clean Heritage source and all three healthy services. All seven artifacts in each of the six safety backups made during the two successive alignments passed independent checksums. The recording inventory remains 11 finalized objects / 3,883,891 bytes, with no staging files. [Deployment evidence](2026-09-13-member-song-deployed.json).
+
+Public listener, translation and publication routes passed after deployment; anonymous service-plan access remains denied and SMTP hostname lookup succeeds. [Public checks](2026-09-13-member-song-public.json). The existing actual personal account completed a fresh sync at 09:23:38 Pacific, with “Synchronization finished” and its supported reading data up to date. The synthetic fixture, preview servers and rehearsal tab were closed.
+
+No real WOTBC song was edited, shared or published. Live member-content and manager acceptance remain pending the separate church sign-in; the actual manager page was still at its login form. A fresh read of the running processor confirmed that the audio, Quality text and Economy text credentials are all absent, without printing any secret values. Provider tests remain $0 / $20.

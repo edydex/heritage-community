@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "installedAt": "2026-09-13T16:21:45Z",
+  "setDigest": "23adbecf118f939d25fc3e0740c83ee81d15eaa622d6bedfa5eafa0c8ee63564",
+  "heritageRevision": "e7882cff601284c9872e1d11d2953e24a44e19b1",
+  "sourceClean": true,
+  "services": {
+    "community": "healthy",
+    "translation-processor": "healthy",
+    "postgres": "healthy"
+  },
+  "backups": [
+    {
+      "name": "backup-20260913T161132Z-pre-unified-update",
+      "verifiedArtifacts": 7
+    },
+    {
+      "name": "backup-20260913T161213Z-pre-translation-setup",
+      "verifiedArtifacts": 7
+    },
+    {
+      "name": "backup-20260913T161306Z-pre-update",
+      "verifiedArtifacts": 7
+    },
+    {
+      "name": "backup-20260913T161826Z-pre-unified-update",
+      "verifiedArtifacts": 7
+    },
+    {
+      "name": "backup-20260913T161906Z-pre-translation-setup",
+      "verifiedArtifacts": 7
+    },
+    {
+      "name": "backup-20260913T161959Z-pre-update",
+      "verifiedArtifacts": 7
+    }
+  ]
+}

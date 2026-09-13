@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "publicPages": {
+    "live": "https://wotbc.heritage.faith/live",
+    "translation": "https://wotbc.heritage.faith/translate"
+  },
+  "contentServerId": "wotbc",
+  "publications": {
+    "sermons": {
+      "schemaVersion": 1,
+      "kind": "heritage-public-sermon-publication",
+      "catalog": {
+        "url": "/publications/sermons/catalog.json",
+        "mediaType": "application/json"
+      },
+      "detailMediaType": "application/vnd.heritage.sermon+json",
+      "passageIndex": {
+        "url": "/indexes/sermon-passages",
+        "mediaType": "application/json"
+      }
+    }
+  },
+  "catalog": {
+    "status": 200,
+    "schemaVersion": 2,
+    "contentType": "application/json; charset=utf-8",
+    "items": 0
+  },
+  "publicRoutes": [
+    {
+      "path": "/live",
+      "status": 200
+    },
+    {
+      "path": "/translate",
+      "status": 200
+    },
+    {
+      "path": "/translation/api/public/service",
+      "status": 200
+    }
+  ],
+  "anonymousPlans": 401,
+  "smtpDnsResolves": true,
+  "providerRequests": 0
+}
