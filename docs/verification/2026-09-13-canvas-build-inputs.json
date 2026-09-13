@@ -1,0 +1,1489 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-13",
+  "canvasSourceRevision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+  "upstreamRun": 30338026389,
+  "upstreamRunUrl": "https://github.com/Brooooooklyn/canvas/actions/runs/30338026389",
+  "targets": [
+    {
+      "target": "mac-arm64",
+      "upstreamJob": 90207094644,
+      "jobUrl": "https://github.com/Brooooooklyn/canvas/actions/runs/30338026389/job/90207094644",
+      "logSha256": "27ee7f661ec24d03e819d5e833c9d559bbefcfb61942ac4d3002accc6184658e",
+      "npm": {
+        "name": "@napi-rs/canvas-darwin-arm64",
+        "version": "1.0.3",
+        "url": "https://registry.npmjs.org/@napi-rs/canvas-darwin-arm64/-/canvas-darwin-arm64-1.0.3.tgz",
+        "integrity": "sha512-ds14V1BPagLszQyaDTeggny5fNeTCqsUQ5QhFj9VDxSEfzrVxXtdbR0LoFyKa0Siaaw8KvqSk4t7k/WoZJwvbg==",
+        "tarballSha256": "3b00b2003f2d76bdeb3438d7adada9c971bdbd66576539e3b3a6722f53ae7800"
+      },
+      "binary": {
+        "file": "skia.darwin-arm64.node",
+        "bytes": 27025024,
+        "sha256": "cfc25b574e3090327ee08ef1dc240d176a061c3bccce4c4c8139123afc1d1c8d",
+        "matchesUpstreamBuildArtifact": true
+      },
+      "compiledCratesObserved": [
+        {
+          "name": "aho-corasick",
+          "version": "1.1.4"
+        },
+        {
+          "name": "anyhow",
+          "version": "1.0.104"
+        },
+        {
+          "name": "base64-simd",
+          "version": "0.8.0"
+        },
+        {
+          "name": "bitflags",
+          "version": "2.13.1"
+        },
+        {
+          "name": "bytemuck",
+          "version": "1.25.2"
+        },
+        {
+          "name": "canvas",
+          "version": "0.1.0"
+        },
+        {
+          "name": "cc",
+          "version": "1.4.0"
+        },
+        {
+          "name": "cfb",
+          "version": "0.14.0"
+        },
+        {
+          "name": "cfg-if",
+          "version": "1.0.4"
+        },
+        {
+          "name": "cmake",
+          "version": "0.1.58"
+        },
+        {
+          "name": "color_quant",
+          "version": "1.1.0"
+        },
+        {
+          "name": "convert_case",
+          "version": "0.11.0"
+        },
+        {
+          "name": "cssparser",
+          "version": "0.37.0"
+        },
+        {
+          "name": "cssparser-color",
+          "version": "0.5.0"
+        },
+        {
+          "name": "cssparser-macros",
+          "version": "0.7.0"
+        },
+        {
+          "name": "ctor",
+          "version": "1.0.11"
+        },
+        {
+          "name": "dtoa",
+          "version": "1.0.11"
+        },
+        {
+          "name": "dtoa-short",
+          "version": "0.3.5"
+        },
+        {
+          "name": "fastrand",
+          "version": "2.5.0"
+        },
+        {
+          "name": "find-msvc-tools",
+          "version": "0.1.9"
+        },
+        {
+          "name": "fnv",
+          "version": "1.0.7"
+        },
+        {
+          "name": "futures",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-channel",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-core",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-executor",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-io",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-macro",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-sink",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-task",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-util",
+          "version": "0.3.33"
+        },
+        {
+          "name": "gif",
+          "version": "0.14.2"
+        },
+        {
+          "name": "imagesize",
+          "version": "0.15.0"
+        },
+        {
+          "name": "infer",
+          "version": "0.22.0"
+        },
+        {
+          "name": "itoa",
+          "version": "1.0.18"
+        },
+        {
+          "name": "libaom-sys",
+          "version": "0.17.2+libaom.3.11.0"
+        },
+        {
+          "name": "libavif",
+          "version": "0.14.0"
+        },
+        {
+          "name": "libavif-sys",
+          "version": "0.17.0+libavif.1.0.4"
+        },
+        {
+          "name": "libc",
+          "version": "0.2.189"
+        },
+        {
+          "name": "libloading",
+          "version": "0.9.0"
+        },
+        {
+          "name": "libmimalloc-sys2",
+          "version": "0.1.60"
+        },
+        {
+          "name": "memchr",
+          "version": "2.8.3"
+        },
+        {
+          "name": "mimalloc-safe",
+          "version": "0.1.64"
+        },
+        {
+          "name": "napi",
+          "version": "3.11.0"
+        },
+        {
+          "name": "napi-build",
+          "version": "2.3.2"
+        },
+        {
+          "name": "napi-derive",
+          "version": "3.6.0"
+        },
+        {
+          "name": "napi-derive-backend",
+          "version": "6.0.0"
+        },
+        {
+          "name": "napi-sys",
+          "version": "3.3.0"
+        },
+        {
+          "name": "nohash-hasher",
+          "version": "0.2.0"
+        },
+        {
+          "name": "nom",
+          "version": "8.0.0"
+        },
+        {
+          "name": "num_cpus",
+          "version": "1.17.0"
+        },
+        {
+          "name": "outref",
+          "version": "0.5.2"
+        },
+        {
+          "name": "phf",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_generator",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_macros",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_shared",
+          "version": "0.13.1"
+        },
+        {
+          "name": "pin-project-lite",
+          "version": "0.2.17"
+        },
+        {
+          "name": "proc-macro2",
+          "version": "1.0.107"
+        },
+        {
+          "name": "quote",
+          "version": "1.0.47"
+        },
+        {
+          "name": "regex",
+          "version": "1.13.1"
+        },
+        {
+          "name": "regex-automata",
+          "version": "0.4.16"
+        },
+        {
+          "name": "regex-syntax",
+          "version": "0.8.11"
+        },
+        {
+          "name": "rgb",
+          "version": "0.8.53"
+        },
+        {
+          "name": "rustc-hash",
+          "version": "2.1.3"
+        },
+        {
+          "name": "serde",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_core",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_derive",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_json",
+          "version": "1.0.151"
+        },
+        {
+          "name": "shlex",
+          "version": "2.0.1"
+        },
+        {
+          "name": "siphasher",
+          "version": "1.0.3"
+        },
+        {
+          "name": "slab",
+          "version": "0.4.12"
+        },
+        {
+          "name": "smallvec",
+          "version": "1.15.2"
+        },
+        {
+          "name": "syn",
+          "version": "2.0.119"
+        },
+        {
+          "name": "syn",
+          "version": "3.0.3"
+        },
+        {
+          "name": "thiserror",
+          "version": "2.0.19"
+        },
+        {
+          "name": "thiserror-impl",
+          "version": "2.0.19"
+        },
+        {
+          "name": "tokio",
+          "version": "1.53.1"
+        },
+        {
+          "name": "tokio-stream",
+          "version": "0.1.19"
+        },
+        {
+          "name": "unicode-ident",
+          "version": "1.0.24"
+        },
+        {
+          "name": "unicode-segmentation",
+          "version": "1.13.3"
+        },
+        {
+          "name": "uuid",
+          "version": "1.24.0"
+        },
+        {
+          "name": "vsimd",
+          "version": "0.8.0"
+        },
+        {
+          "name": "web-time",
+          "version": "1.1.0"
+        },
+        {
+          "name": "weezl",
+          "version": "0.1.12"
+        },
+        {
+          "name": "zmij",
+          "version": "1.0.23"
+        }
+      ],
+      "skiaDownloadsObserved": [
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libjsonreader-darwin-aarch64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskia-darwin-aarch64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskottie-darwin-aarch64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskparagraph-darwin-aarch64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskresources-darwin-aarch64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libsksg-darwin-aarch64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskshaper-darwin-aarch64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskunicode_core-darwin-aarch64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskunicode_icu-darwin-aarch64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libsvg-darwin-aarch64.a"
+      ],
+      "toolchainLines": [
+        "2026-07-28T07:21:07.4733150Z   1.97.1-aarch64-apple-darwin installed - rustc 1.97.1 (8bab26f4f 2026-07-14)",
+        "2026-07-28T07:21:07.5754790Z   1.97.1-aarch64-apple-darwin unchanged - rustc 1.97.1 (8bab26f4f 2026-07-14)",
+        "2026-07-28T07:21:07.9723590Z rustc 1.97.1 (8bab26f4f 2026-07-14)",
+        "2026-07-28T07:21:28.4070110Z Apple clang version 21.0.0 (clang-2100.1.1.101)"
+      ]
+    },
+    {
+      "target": "mac-x64",
+      "upstreamJob": 90207093816,
+      "jobUrl": "https://github.com/Brooooooklyn/canvas/actions/runs/30338026389/job/90207093816",
+      "logSha256": "e7c5e831d66d832218bf8172bd7082709a6a213d2d5d965c631978ec2ab2c7af",
+      "npm": {
+        "name": "@napi-rs/canvas-darwin-x64",
+        "version": "1.0.3",
+        "url": "https://registry.npmjs.org/@napi-rs/canvas-darwin-x64/-/canvas-darwin-x64-1.0.3.tgz",
+        "integrity": "sha512-qof3LRAAycmkV2I1izZo9RoSHF8kCQr5O05sFwv0jK8rSdYV6KHVwimo6Qb7RxZj40WHKbLHm5JDaUF0o5XUAA==",
+        "tarballSha256": "a95ffd5335de6d451ca0d03ee2b0d7ac798170d7a382c2343421489a915e77b5"
+      },
+      "binary": {
+        "file": "skia.darwin-x64.node",
+        "bytes": 32181296,
+        "sha256": "168de670f13043382d00c411c5b8de3999238ed81f72e30a5fd21f75b5bc466f",
+        "matchesUpstreamBuildArtifact": true
+      },
+      "compiledCratesObserved": [
+        {
+          "name": "aho-corasick",
+          "version": "1.1.4"
+        },
+        {
+          "name": "anyhow",
+          "version": "1.0.104"
+        },
+        {
+          "name": "base64-simd",
+          "version": "0.8.0"
+        },
+        {
+          "name": "bitflags",
+          "version": "2.13.1"
+        },
+        {
+          "name": "bytemuck",
+          "version": "1.25.2"
+        },
+        {
+          "name": "canvas",
+          "version": "0.1.0"
+        },
+        {
+          "name": "cc",
+          "version": "1.4.0"
+        },
+        {
+          "name": "cfb",
+          "version": "0.14.0"
+        },
+        {
+          "name": "cfg-if",
+          "version": "1.0.4"
+        },
+        {
+          "name": "cmake",
+          "version": "0.1.58"
+        },
+        {
+          "name": "color_quant",
+          "version": "1.1.0"
+        },
+        {
+          "name": "convert_case",
+          "version": "0.11.0"
+        },
+        {
+          "name": "cssparser",
+          "version": "0.37.0"
+        },
+        {
+          "name": "cssparser-color",
+          "version": "0.5.0"
+        },
+        {
+          "name": "cssparser-macros",
+          "version": "0.7.0"
+        },
+        {
+          "name": "ctor",
+          "version": "1.0.11"
+        },
+        {
+          "name": "dtoa",
+          "version": "1.0.11"
+        },
+        {
+          "name": "dtoa-short",
+          "version": "0.3.5"
+        },
+        {
+          "name": "fastrand",
+          "version": "2.5.0"
+        },
+        {
+          "name": "find-msvc-tools",
+          "version": "0.1.9"
+        },
+        {
+          "name": "fnv",
+          "version": "1.0.7"
+        },
+        {
+          "name": "futures",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-channel",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-core",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-executor",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-io",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-macro",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-sink",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-task",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-util",
+          "version": "0.3.33"
+        },
+        {
+          "name": "gif",
+          "version": "0.14.2"
+        },
+        {
+          "name": "imagesize",
+          "version": "0.15.0"
+        },
+        {
+          "name": "infer",
+          "version": "0.22.0"
+        },
+        {
+          "name": "itoa",
+          "version": "1.0.18"
+        },
+        {
+          "name": "libaom-sys",
+          "version": "0.17.2+libaom.3.11.0"
+        },
+        {
+          "name": "libavif",
+          "version": "0.14.0"
+        },
+        {
+          "name": "libavif-sys",
+          "version": "0.17.0+libavif.1.0.4"
+        },
+        {
+          "name": "libc",
+          "version": "0.2.189"
+        },
+        {
+          "name": "libloading",
+          "version": "0.9.0"
+        },
+        {
+          "name": "libmimalloc-sys2",
+          "version": "0.1.60"
+        },
+        {
+          "name": "memchr",
+          "version": "2.8.3"
+        },
+        {
+          "name": "mimalloc-safe",
+          "version": "0.1.64"
+        },
+        {
+          "name": "napi",
+          "version": "3.11.0"
+        },
+        {
+          "name": "napi-build",
+          "version": "2.3.2"
+        },
+        {
+          "name": "napi-derive",
+          "version": "3.6.0"
+        },
+        {
+          "name": "napi-derive-backend",
+          "version": "6.0.0"
+        },
+        {
+          "name": "napi-sys",
+          "version": "3.3.0"
+        },
+        {
+          "name": "nohash-hasher",
+          "version": "0.2.0"
+        },
+        {
+          "name": "nom",
+          "version": "8.0.0"
+        },
+        {
+          "name": "num_cpus",
+          "version": "1.17.0"
+        },
+        {
+          "name": "outref",
+          "version": "0.5.2"
+        },
+        {
+          "name": "phf",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_generator",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_macros",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_shared",
+          "version": "0.13.1"
+        },
+        {
+          "name": "pin-project-lite",
+          "version": "0.2.17"
+        },
+        {
+          "name": "proc-macro2",
+          "version": "1.0.107"
+        },
+        {
+          "name": "quote",
+          "version": "1.0.47"
+        },
+        {
+          "name": "regex",
+          "version": "1.13.1"
+        },
+        {
+          "name": "regex-automata",
+          "version": "0.4.16"
+        },
+        {
+          "name": "regex-syntax",
+          "version": "0.8.11"
+        },
+        {
+          "name": "rgb",
+          "version": "0.8.53"
+        },
+        {
+          "name": "rustc-hash",
+          "version": "2.1.3"
+        },
+        {
+          "name": "serde",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_core",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_derive",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_json",
+          "version": "1.0.151"
+        },
+        {
+          "name": "shlex",
+          "version": "2.0.1"
+        },
+        {
+          "name": "siphasher",
+          "version": "1.0.3"
+        },
+        {
+          "name": "slab",
+          "version": "0.4.12"
+        },
+        {
+          "name": "smallvec",
+          "version": "1.15.2"
+        },
+        {
+          "name": "syn",
+          "version": "2.0.119"
+        },
+        {
+          "name": "syn",
+          "version": "3.0.3"
+        },
+        {
+          "name": "thiserror",
+          "version": "2.0.19"
+        },
+        {
+          "name": "thiserror-impl",
+          "version": "2.0.19"
+        },
+        {
+          "name": "tokio",
+          "version": "1.53.1"
+        },
+        {
+          "name": "tokio-stream",
+          "version": "0.1.19"
+        },
+        {
+          "name": "unicode-ident",
+          "version": "1.0.24"
+        },
+        {
+          "name": "unicode-segmentation",
+          "version": "1.13.3"
+        },
+        {
+          "name": "uuid",
+          "version": "1.24.0"
+        },
+        {
+          "name": "vsimd",
+          "version": "0.8.0"
+        },
+        {
+          "name": "web-time",
+          "version": "1.1.0"
+        },
+        {
+          "name": "weezl",
+          "version": "0.1.12"
+        },
+        {
+          "name": "zmij",
+          "version": "1.0.23"
+        }
+      ],
+      "skiaDownloadsObserved": [
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libjsonreader-darwin-x64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskia-darwin-x64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskottie-darwin-x64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskparagraph-darwin-x64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskresources-darwin-x64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libsksg-darwin-x64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskshaper-darwin-x64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskunicode_core-darwin-x64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskunicode_icu-darwin-x64.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libsvg-darwin-x64.a"
+      ],
+      "toolchainLines": [
+        "2026-07-28T07:21:08.2491810Z   1.97.1-aarch64-apple-darwin installed - rustc 1.97.1 (8bab26f4f 2026-07-14)",
+        "2026-07-28T07:21:08.3647800Z   1.97.1-aarch64-apple-darwin unchanged - rustc 1.97.1 (8bab26f4f 2026-07-14)",
+        "2026-07-28T07:21:08.8151530Z rustc 1.97.1 (8bab26f4f 2026-07-14)",
+        "2026-07-28T07:21:31.9400870Z Apple clang version 21.0.0 (clang-2100.1.1.101)"
+      ]
+    },
+    {
+      "target": "linux-x64",
+      "upstreamJob": 90207093806,
+      "jobUrl": "https://github.com/Brooooooklyn/canvas/actions/runs/30338026389/job/90207093806",
+      "logSha256": "cadb65aa34083450fcba5a5e70dd33ecdc1e2a7c2191142e8581e2921503b7e8",
+      "npm": {
+        "name": "@napi-rs/canvas-linux-x64-gnu",
+        "version": "1.0.3",
+        "url": "https://registry.npmjs.org/@napi-rs/canvas-linux-x64-gnu/-/canvas-linux-x64-gnu-1.0.3.tgz",
+        "integrity": "sha512-jtfzAHFp+FRaR7zGT4jyCe6wUgAG/dVb5A4Apd8FY9jKarntDfUAlJXscugiH7ZF5kKnu7/lHFk9LaDPcrGEVQ==",
+        "tarballSha256": "215a6ca11532ec53ec353348937f0af78a0cf783a82b9ad4ec0223a214a09948"
+      },
+      "binary": {
+        "file": "skia.linux-x64-gnu.node",
+        "bytes": 33876416,
+        "sha256": "46d2b7d0cb4ede04f07b451d9d523ddbf2a0e762c8dd8a0b150237cf04914939",
+        "matchesUpstreamBuildArtifact": true
+      },
+      "compiledCratesObserved": [
+        {
+          "name": "aho-corasick",
+          "version": "1.1.4"
+        },
+        {
+          "name": "anyhow",
+          "version": "1.0.104"
+        },
+        {
+          "name": "base64-simd",
+          "version": "0.8.0"
+        },
+        {
+          "name": "bitflags",
+          "version": "2.13.1"
+        },
+        {
+          "name": "bytemuck",
+          "version": "1.25.2"
+        },
+        {
+          "name": "canvas",
+          "version": "0.1.0"
+        },
+        {
+          "name": "cc",
+          "version": "1.4.0"
+        },
+        {
+          "name": "cfb",
+          "version": "0.14.0"
+        },
+        {
+          "name": "cfg-if",
+          "version": "1.0.4"
+        },
+        {
+          "name": "cmake",
+          "version": "0.1.58"
+        },
+        {
+          "name": "color_quant",
+          "version": "1.1.0"
+        },
+        {
+          "name": "convert_case",
+          "version": "0.11.0"
+        },
+        {
+          "name": "cssparser",
+          "version": "0.37.0"
+        },
+        {
+          "name": "cssparser-color",
+          "version": "0.5.0"
+        },
+        {
+          "name": "cssparser-macros",
+          "version": "0.7.0"
+        },
+        {
+          "name": "ctor",
+          "version": "1.0.11"
+        },
+        {
+          "name": "dtoa",
+          "version": "1.0.11"
+        },
+        {
+          "name": "dtoa-short",
+          "version": "0.3.5"
+        },
+        {
+          "name": "fastrand",
+          "version": "2.5.0"
+        },
+        {
+          "name": "find-msvc-tools",
+          "version": "0.1.9"
+        },
+        {
+          "name": "fnv",
+          "version": "1.0.7"
+        },
+        {
+          "name": "futures",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-channel",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-core",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-executor",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-io",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-macro",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-sink",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-task",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-util",
+          "version": "0.3.33"
+        },
+        {
+          "name": "gif",
+          "version": "0.14.2"
+        },
+        {
+          "name": "imagesize",
+          "version": "0.15.0"
+        },
+        {
+          "name": "infer",
+          "version": "0.22.0"
+        },
+        {
+          "name": "itoa",
+          "version": "1.0.18"
+        },
+        {
+          "name": "libaom-sys",
+          "version": "0.17.2+libaom.3.11.0"
+        },
+        {
+          "name": "libavif",
+          "version": "0.14.0"
+        },
+        {
+          "name": "libavif-sys",
+          "version": "0.17.0+libavif.1.0.4"
+        },
+        {
+          "name": "libc",
+          "version": "0.2.189"
+        },
+        {
+          "name": "libloading",
+          "version": "0.9.0"
+        },
+        {
+          "name": "libmimalloc-sys2",
+          "version": "0.1.60"
+        },
+        {
+          "name": "memchr",
+          "version": "2.8.3"
+        },
+        {
+          "name": "mimalloc-safe",
+          "version": "0.1.64"
+        },
+        {
+          "name": "napi",
+          "version": "3.11.0"
+        },
+        {
+          "name": "napi-build",
+          "version": "2.3.2"
+        },
+        {
+          "name": "napi-derive",
+          "version": "3.6.0"
+        },
+        {
+          "name": "napi-derive-backend",
+          "version": "6.0.0"
+        },
+        {
+          "name": "napi-sys",
+          "version": "3.3.0"
+        },
+        {
+          "name": "nohash-hasher",
+          "version": "0.2.0"
+        },
+        {
+          "name": "nom",
+          "version": "8.0.0"
+        },
+        {
+          "name": "num_cpus",
+          "version": "1.17.0"
+        },
+        {
+          "name": "outref",
+          "version": "0.5.2"
+        },
+        {
+          "name": "phf",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_generator",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_macros",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_shared",
+          "version": "0.13.1"
+        },
+        {
+          "name": "pin-project-lite",
+          "version": "0.2.17"
+        },
+        {
+          "name": "proc-macro2",
+          "version": "1.0.107"
+        },
+        {
+          "name": "quote",
+          "version": "1.0.47"
+        },
+        {
+          "name": "regex",
+          "version": "1.13.1"
+        },
+        {
+          "name": "regex-automata",
+          "version": "0.4.16"
+        },
+        {
+          "name": "regex-syntax",
+          "version": "0.8.11"
+        },
+        {
+          "name": "rgb",
+          "version": "0.8.53"
+        },
+        {
+          "name": "rustc-hash",
+          "version": "2.1.3"
+        },
+        {
+          "name": "serde",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_core",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_derive",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_json",
+          "version": "1.0.151"
+        },
+        {
+          "name": "shlex",
+          "version": "2.0.1"
+        },
+        {
+          "name": "siphasher",
+          "version": "1.0.3"
+        },
+        {
+          "name": "slab",
+          "version": "0.4.12"
+        },
+        {
+          "name": "smallvec",
+          "version": "1.15.2"
+        },
+        {
+          "name": "syn",
+          "version": "2.0.119"
+        },
+        {
+          "name": "syn",
+          "version": "3.0.3"
+        },
+        {
+          "name": "thiserror",
+          "version": "2.0.19"
+        },
+        {
+          "name": "thiserror-impl",
+          "version": "2.0.19"
+        },
+        {
+          "name": "tokio",
+          "version": "1.53.1"
+        },
+        {
+          "name": "tokio-stream",
+          "version": "0.1.19"
+        },
+        {
+          "name": "unicode-ident",
+          "version": "1.0.24"
+        },
+        {
+          "name": "unicode-segmentation",
+          "version": "1.13.3"
+        },
+        {
+          "name": "uuid",
+          "version": "1.24.0"
+        },
+        {
+          "name": "vsimd",
+          "version": "0.8.0"
+        },
+        {
+          "name": "web-time",
+          "version": "1.1.0"
+        },
+        {
+          "name": "weezl",
+          "version": "0.1.12"
+        },
+        {
+          "name": "zmij",
+          "version": "1.0.23"
+        }
+      ],
+      "skiaDownloadsObserved": [
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libjsonreader-linux-x64-gnu.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskia-linux-x64-gnu.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskottie-linux-x64-gnu.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskparagraph-linux-x64-gnu.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskresources-linux-x64-gnu.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libsksg-linux-x64-gnu.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskshaper-linux-x64-gnu.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskunicode_core-linux-x64-gnu.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskunicode_icu-linux-x64-gnu.a",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libsvg-linux-x64-gnu.a"
+      ],
+      "toolchainLines": [
+        "2026-07-28T07:20:50.6316366Z   1.97.1-x86_64-unknown-linux-gnu installed - rustc 1.97.1 (8bab26f4f 2026-07-14)",
+        "2026-07-28T07:20:50.6686175Z   1.97.1-x86_64-unknown-linux-gnu unchanged - rustc 1.97.1 (8bab26f4f 2026-07-14)",
+        "2026-07-28T07:20:50.8455902Z rustc 1.97.1 (8bab26f4f 2026-07-14)"
+      ]
+    },
+    {
+      "target": "windows-x64",
+      "upstreamJob": 90207094227,
+      "jobUrl": "https://github.com/Brooooooklyn/canvas/actions/runs/30338026389/job/90207094227",
+      "logSha256": "cee6f52e1ad8d26b41171919707cf310ceade77f1853d6c815251796b71c0445",
+      "npm": {
+        "name": "@napi-rs/canvas-win32-x64-msvc",
+        "version": "1.0.3",
+        "url": "https://registry.npmjs.org/@napi-rs/canvas-win32-x64-msvc/-/canvas-win32-x64-msvc-1.0.3.tgz",
+        "integrity": "sha512-SGhlQ8bDjL1Cz2KnsKMasr/5sTcwG/SZkB6WCJxLsmSm/3aS2C+3p39bA7iZ2/94+NkVDySZfbiGoaSZSFHYxA==",
+        "tarballSha256": "8cbe4655bc643f856f1cf79f97e21c06008325864fc85acdada3a46ffb25fa82"
+      },
+      "binary": {
+        "file": "skia.win32-x64-msvc.node",
+        "bytes": 27331584,
+        "sha256": "b31cbafcbcb7a55565889a991b00d39b85b84204f1776e08e90807bd1c3ae787",
+        "matchesUpstreamBuildArtifact": true
+      },
+      "compiledCratesObserved": [
+        {
+          "name": "aho-corasick",
+          "version": "1.1.4"
+        },
+        {
+          "name": "anyhow",
+          "version": "1.0.104"
+        },
+        {
+          "name": "base64-simd",
+          "version": "0.8.0"
+        },
+        {
+          "name": "bitflags",
+          "version": "2.13.1"
+        },
+        {
+          "name": "bytemuck",
+          "version": "1.25.2"
+        },
+        {
+          "name": "canvas",
+          "version": "0.1.0"
+        },
+        {
+          "name": "cc",
+          "version": "1.4.0"
+        },
+        {
+          "name": "cfb",
+          "version": "0.14.0"
+        },
+        {
+          "name": "cmake",
+          "version": "0.1.58"
+        },
+        {
+          "name": "color_quant",
+          "version": "1.1.0"
+        },
+        {
+          "name": "cssparser",
+          "version": "0.37.0"
+        },
+        {
+          "name": "cssparser-color",
+          "version": "0.5.0"
+        },
+        {
+          "name": "cssparser-macros",
+          "version": "0.7.0"
+        },
+        {
+          "name": "ctor",
+          "version": "1.0.11"
+        },
+        {
+          "name": "dtoa",
+          "version": "1.0.11"
+        },
+        {
+          "name": "dtoa-short",
+          "version": "0.3.5"
+        },
+        {
+          "name": "fastrand",
+          "version": "2.5.0"
+        },
+        {
+          "name": "fnv",
+          "version": "1.0.7"
+        },
+        {
+          "name": "futures",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-channel",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-core",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-executor",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-io",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-macro",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-sink",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-task",
+          "version": "0.3.33"
+        },
+        {
+          "name": "futures-util",
+          "version": "0.3.33"
+        },
+        {
+          "name": "gif",
+          "version": "0.14.2"
+        },
+        {
+          "name": "imagesize",
+          "version": "0.15.0"
+        },
+        {
+          "name": "infer",
+          "version": "0.22.0"
+        },
+        {
+          "name": "itoa",
+          "version": "1.0.18"
+        },
+        {
+          "name": "libaom-sys",
+          "version": "0.17.2+libaom.3.11.0"
+        },
+        {
+          "name": "libavif",
+          "version": "0.14.0"
+        },
+        {
+          "name": "libavif-sys",
+          "version": "0.17.0+libavif.1.0.4"
+        },
+        {
+          "name": "libc",
+          "version": "0.2.189"
+        },
+        {
+          "name": "libloading",
+          "version": "0.9.0"
+        },
+        {
+          "name": "libmimalloc-sys2",
+          "version": "0.1.60"
+        },
+        {
+          "name": "memchr",
+          "version": "2.8.3"
+        },
+        {
+          "name": "mimalloc-safe",
+          "version": "0.1.64"
+        },
+        {
+          "name": "napi",
+          "version": "3.11.0"
+        },
+        {
+          "name": "napi-derive",
+          "version": "3.6.0"
+        },
+        {
+          "name": "napi-derive-backend",
+          "version": "6.0.0"
+        },
+        {
+          "name": "napi-sys",
+          "version": "3.3.0"
+        },
+        {
+          "name": "nohash-hasher",
+          "version": "0.2.0"
+        },
+        {
+          "name": "nom",
+          "version": "8.0.0"
+        },
+        {
+          "name": "num_cpus",
+          "version": "1.17.0"
+        },
+        {
+          "name": "outref",
+          "version": "0.5.2"
+        },
+        {
+          "name": "phf",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_generator",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_macros",
+          "version": "0.13.1"
+        },
+        {
+          "name": "phf_shared",
+          "version": "0.13.1"
+        },
+        {
+          "name": "pin-project-lite",
+          "version": "0.2.17"
+        },
+        {
+          "name": "proc-macro2",
+          "version": "1.0.107"
+        },
+        {
+          "name": "quote",
+          "version": "1.0.47"
+        },
+        {
+          "name": "regex",
+          "version": "1.13.1"
+        },
+        {
+          "name": "regex-automata",
+          "version": "0.4.16"
+        },
+        {
+          "name": "regex-syntax",
+          "version": "0.8.11"
+        },
+        {
+          "name": "rgb",
+          "version": "0.8.53"
+        },
+        {
+          "name": "rustc-hash",
+          "version": "2.1.3"
+        },
+        {
+          "name": "serde",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_core",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_derive",
+          "version": "1.0.229"
+        },
+        {
+          "name": "serde_json",
+          "version": "1.0.151"
+        },
+        {
+          "name": "siphasher",
+          "version": "1.0.3"
+        },
+        {
+          "name": "slab",
+          "version": "0.4.12"
+        },
+        {
+          "name": "smallvec",
+          "version": "1.15.2"
+        },
+        {
+          "name": "syn",
+          "version": "2.0.119"
+        },
+        {
+          "name": "syn",
+          "version": "3.0.3"
+        },
+        {
+          "name": "thiserror",
+          "version": "2.0.19"
+        },
+        {
+          "name": "thiserror-impl",
+          "version": "2.0.19"
+        },
+        {
+          "name": "tokio",
+          "version": "1.53.1"
+        },
+        {
+          "name": "tokio-stream",
+          "version": "0.1.19"
+        },
+        {
+          "name": "uuid",
+          "version": "1.24.0"
+        },
+        {
+          "name": "vsimd",
+          "version": "0.8.0"
+        },
+        {
+          "name": "web-time",
+          "version": "1.1.0"
+        },
+        {
+          "name": "weezl",
+          "version": "0.1.12"
+        },
+        {
+          "name": "windows-link",
+          "version": "0.2.1"
+        },
+        {
+          "name": "zmij",
+          "version": "1.0.23"
+        }
+      ],
+      "skiaDownloadsObserved": [
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/jsonreader-win32-x64-msvc.lib",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/skia-win32-x64-msvc.lib",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/skottie-win32-x64-msvc.lib",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/skparagraph-win32-x64-msvc.lib",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/skresources-win32-x64-msvc.lib",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/sksg-win32-x64-msvc.lib",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/skshaper-win32-x64-msvc.lib",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/skunicode_core-win32-x64-msvc.lib",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/skunicode_icu-win32-x64-msvc.lib",
+        "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/svg-win32-x64-msvc.lib"
+      ],
+      "toolchainLines": [
+        "2026-07-28T07:22:05.1321512Z   1.97.1-x86_64-pc-windows-msvc installed - rustc 1.97.1 (8bab26f4f 2026-07-14)",
+        "2026-07-28T07:22:05.6238304Z   1.97.1-x86_64-pc-windows-msvc unchanged - rustc 1.97.1 (8bab26f4f 2026-07-14)",
+        "2026-07-28T07:22:12.8185742Z rustc 1.97.1 (8bab26f4f 2026-07-14)"
+      ]
+    }
+  ],
+  "scope": "Exact npm binary correspondence to the retained upstream run. Observed compilation lists may omit cached dependencies and are not a lockfile or complete license inventory. No upstream scripts or downloaded binaries were executed.",
+  "remaining": [
+    "Retain complete resolved Cargo graph or own locked builds",
+    "Collect Skia transitive source and license terms at exact revisions",
+    "Complete target-specific source and replacement acceptance before clearing public release gate"
+  ]
+}
