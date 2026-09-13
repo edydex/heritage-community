@@ -6,16 +6,19 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 
 - One product and installation home, with application ownership kept explicit.
 - Pinned source bootstrap, isolated revision folders, refusal to overwrite existing work, generated workspace, and capability diagnostics.
+- Private GitHub repository published and verified. Bootstrap fetched all three pinned component revisions from GitHub; the WOTBC discovery check returned the advertised capabilities successfully.
+
+## Implemented in component branches
+
+- Multilinguum `9b8b09d458cc5863fb25ab823f44033dce8e5711`: captions publish independently of speech; operator speech switch cancels pending requests and queued audio; direct speech translation closes and continues as text through the cascade; public text/audio availability is separate; listener playback honors audio-off; cloud operation no longer requires the GPU worker. See [verification](docs/verification/2026-09-12-translation-core.md).
 
 ## In progress
 
-- Reconcile the clean WOTBC deployment (`5f66b647f050ad45bf596a19a62c308ff65d8294`) with the integration branch. It is newer than the initially inspected feature ref.
-- Multilinguum: independent caption publication and speech-generation switch; ordinary cloud voice included in the first usable integration.
-- Optional GPU worker and a normal CPU server deployment beside Community.
+- The clean WOTBC deployment (`5f66b647f050ad45bf596a19a62c308ff65d8294`) was fetched directly into the isolated Heritage implementation checkout. Its four-line service-document fix is preserved. The integration lock still references the earlier public feature ref until the Heritage changes are published.
+- Heritage church settings, `/live`, `/translate`, and cohosting the processor beside Community.
 
 ## Required before completion
 
-- Published repository and reproducible source/bootstrap checks.
 - Supported installation, setup, update, backup/restore, and compatible component releases.
 - Community `/live`: configurable YouTube source, original/translated audio choice with mutual exclusion, readable captions, floating view/fallback, and explicit stream alignment.
 - `/translate` and Heritage Bible entry point with text/voice choice.

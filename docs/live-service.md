@@ -6,6 +6,8 @@ Accepted direction, 2026-09-12: `/live` combines the church's YouTube stream wit
 
 The church sets its YouTube stream in Community administration. Do not hard-code the reference video from another church. A service may override the usual stream. Handle missing, offline, and non-embeddable video with an honest state and a link to the configured YouTube page.
 
+WOTBC's accepted channel is [Word of Truth Bible Church](https://www.youtube.com/@wordoftruthbiblech), supplied by the user and verified in the channel page. The September 13 scheduled stream was visible as `yVg2nsbpJC0`; this is an observation for rehearsal, not a permanent channel default. Store the channel separately from the current service video.
+
 Offer original YouTube audio, a currently available translated language, and muted audio. Only one source plays. Selecting translated audio mutes YouTube before playback; selecting original stops the translated track before unmuting YouTube. A failed translated connection leaves the original muted until the listener chooses it, preventing an unexpected language or loud audio switch.
 
 Translation text is independently selectable. The main page can show video and captions together. Add a floating caption/control window when Document Picture-in-Picture is supported, with an inline layout available everywhere. Keep YouTube's controls and branding unobscured. Ordinary video picture-in-picture does not carry arbitrary HTML captions or language controls.
