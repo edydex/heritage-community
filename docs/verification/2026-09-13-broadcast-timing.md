@@ -1,6 +1,6 @@
 # Broadcast translation timing — 2026-09-13
 
-The development set pairs Heritage `7af0ea2e921326eef280dbb4107094f3026d48c6` with Multilinguum `f5b0f8dfe1a5e7d3a2720494113e386db38c829a`. SyncShow remains `cd214139c7f1a21171575ee42f75db23912d16a1`.
+The development set pairs Heritage `6ef6e030b054b42904de0b4d943494144e77f21e` (timing feature `7af0ea2`) with Multilinguum `f5b0f8dfe1a5e7d3a2720494113e386db38c829a`. SyncShow remains `cd214139c7f1a21171575ee42f75db23912d16a1`.
 
 ## Implemented behavior
 
@@ -20,6 +20,10 @@ Quality/Economy cascade speech supports the new source-timed window. The legacy 
 - Workspace typechecks, formatting and application/processor/edge builds passed. Listener/edge checks were repeated after their final edits.
 - Heritage Community typecheck and production build passed. Three configuration tests passed; the database-backed live-settings test was explicitly skipped because this local invocation had no disposable database. The compiled Next route manifest contains the intended audio rewrite.
 - In the actual internal browser, a localhost-only server emitted explicitly labeled synthetic tones and sample bilingual text through the real processor and shared listener. Normal user interaction started audio (Listening live); Stop audio returned to Audio off while captions continued. No external model was called. The rendered timing panel showed the supplied 15-second setting. Turning off Match text to video made the live text available when the reference embed stayed blank.
+
+Multilinguum [CI 34757568873](https://github.com/edydex/multilinguum/actions/runs/34757568873) passed all three jobs (web/service checks, voice worker and desktop shell) for the published integration. [Draft PR 1](https://github.com/edydex/multilinguum/pull/1) keeps it reviewable without promoting the development set to main.
+
+Community [CI 34757541168](https://github.com/edydex/heritage_study_bible/actions/runs/34757541168) stopped on existing ShellCheck warnings in deployment scripts, before container validation. Follow-up `6ef6e03` removes unused inventory bookkeeping, labels library-owned variables at their assignment sites and makes empty test environment values explicit. Backup/restore checks remain in place. The local deployment and appliance suites passed; [CI 34757765365](https://github.com/edydex/heritage_study_bible/actions/runs/34757765365) is the corrected exact-revision run.
 
 ## Acceptance still needed
 
