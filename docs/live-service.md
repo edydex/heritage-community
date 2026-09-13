@@ -30,4 +30,4 @@ Ordinary cloud speech already exists and belongs in the first integrated version
 
 ## Current implementation
 
-The first shared browser client and Heritage public proxy are implemented and published in the development pins. The local bilingual text and floating-panel rehearsal passed. See [the verification record](verification/2026-09-12-live-player.md) for the actual evidence and the outstanding video/audio/device checks. Timing remains unfinished; the broadcast-delay setting is not yet applied.
+The first shared browser client and Heritage public proxy are implemented and published in the development pins. The local bilingual text and floating-panel rehearsal passed. See [the verification record](verification/2026-09-12-live-player.md) for the actual evidence and the outstanding video/audio/device checks. The broadcast-delay setting now drives source-timed captions and bounded speech playback, with a listener adjustment and explicit re-alignment after video interruption. See [the timing verification record](verification/2026-09-13-broadcast-timing.md) for the implemented behavior and the remaining real video/audio/device acceptance.
