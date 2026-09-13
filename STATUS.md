@@ -125,3 +125,5 @@ The configured `vr-mayos` connection currently requires renewed Cloudflare Acces
 ## Broadcast timing checkpoint — 2026-09-13
 
 The development pins now include measured broadcast-delay playback, bounded reused speech audio, capture-clock timestamps and cancellation fences. [Verification and limits](docs/verification/2026-09-13-broadcast-timing.md) distinguish local synthetic browser playback from outstanding real YouTube/provider/venue acceptance. The earlier statement that the stored delay is not applied is superseded by this checkpoint. Personal sync remains accepted for the two actual desktop browsers; broader device and reading-plan coverage remains open.
+
+The final pinned WOTBC update completed at `2026-09-13T13:13:41Z`, with all service checks passing and the public listener matching the tested build exactly. Final Community and Multilinguum CI passed. The signed-in reader synchronized successfully again at 06:17:10 Pacific. The durable unified workspace has the same component pins; provider-test spending remains $0 / $20.

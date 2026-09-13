@@ -39,4 +39,16 @@ The first timing deployment (Heritage `7af0ea2`, Multilinguum `f5b0f8d`) complet
 
 The deployed shared listener and the local tested bundle had identical SHA-256 `32800ab80fa72e8dde50590bdc94984af3ea8d7b51121b1ed496f87d42cfdd77`. The actual WOTBC `/live` page reloaded to Waiting for the next service with Audio off and the correct church YouTube channel. No service video is currently selected. The existing signed-in internal browser also completed a normal Sync now at 05:53:28 Pacific, displaying Synchronization finished with no conflicts.
 
-The configured-identity follow-up passed [Community CI 34758252819](https://github.com/edydex/heritage_study_bible/actions/runs/34758252819) at exact revision `3b48db8`, including static checks, fresh production containers, bootstrap, authentication, isolation and backup verification. The final pinned update is being applied.
+The configured-identity follow-up passed [Community CI 34758252819](https://github.com/edydex/heritage_study_bible/actions/runs/34758252819) at exact revision `3b48db8`, including static checks, fresh production containers, bootstrap, authentication, isolation and backup verification.
+
+The final pinned update (Heritage `3b48db8`, Multilinguum `a9d4cc8`, SyncShow `cd21413`) completed at `2026-09-13T13:13:41Z`. The deployed receipt remained mode 0600 and records digest `ee2eee0b0b1d71469a90a528e8326da909857fabccd43491b7322633f3f09a9c`. All local/public service checks passed. Private recording coverage remained 11 objects / 3,883,891 bytes with no staging files. All seven artifacts in each final safety backup passed an independent checksum check:
+
+- `backup-20260913T130752Z-pre-unified-update`
+- `backup-20260913T130833Z-pre-translation-setup`
+- `backup-20260913T131155Z-pre-update`
+
+The three backups from the intermediate configured-identity deployment (`backup-20260913T125710Z-pre-unified-update`, `backup-20260913T125750Z-pre-translation-setup`, `backup-20260913T125843Z-pre-update`) also passed independent checks for all seven artifacts.
+
+The final public shared listener exactly matches the tested local bundle, SHA-256 `7f0ebc7087aa8248156e9ed34e5a81bb5e63742e3f48b2c11f526dc1047ff621`. The public service reports inactive, and a non-current audio request returns 410. The actual `/live` browser reloaded to Waiting for the next service, Audio off and the correct church channel. The existing signed-in reader completed another normal Sync now at 06:17:10 Pacific, displaying Synchronization finished and up-to-date reading data. No new email or provider request was needed.
+
+The durable unified workspace at `/Users/omayo/GitHub/heritage-community` is bootstrapped to these same three component revisions. The primary component checkouts remain untouched.
