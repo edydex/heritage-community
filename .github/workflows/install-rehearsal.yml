@@ -1,0 +1,35 @@
+name: Rehearse full Debian installation
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  install-and-restore:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - name: Install the disposable VM tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends qemu-system-x86 qemu-utils cloud-image-utils acl
+          test -c /dev/kvm
+          sudo setfacl -m u:$(id -u):rw /dev/kvm
+      - name: Fresh setup and combined restore through the real commands
+        run: bash test/full-install-vm.sh
+      - name: Retain the rehearsal result and diagnostic logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debian-install-and-restore
+          path: test-results/fresh-install/
+          if-no-files-found: warn
+          retention-days: 7
