@@ -29,19 +29,27 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 ## In progress
 
 - The Heritage integration branch preserves the prior WOTBC deployment's service-document fix (`5f66b647f050ad45bf596a19a62c308ff65d8294`). WOTBC is now deployed to the published companion checkpoint using its supported backup/update/setup commands; see the deployment record below.
-- Heritage church settings, `/live`, `/translate`, and cohosting the processor beside Community. The public client, proxy, Community operator, and companion lifecycle are published; full paired installation and SyncShow control wiring are next.
+- Heritage church settings, `/live`, `/translate`, and cohosting the processor beside Community. The public client, proxy, Community operator, and companion lifecycle are published; SyncShow control and output wiring are now implemented in the checkpoint below; full paired installation and released application builds remain pending.
 
 ## Latest published companion checkpoint
 
-- Heritage `e191c151114f688d3197dd37edf6676396490668` and Multilinguum `6f00fb5d77b55029592d31f06f91f13250e39792` add private companion setup, pinned-source validation, guarded updates/backups, prepared-session cancellation, graceful archive shutdown, and fresh-volume translation restore. The lock now pins these revisions; SyncShow remains at `9c616b8`.
+- Heritage `e191c151114f688d3197dd37edf6676396490668` and Multilinguum `6f00fb5d77b55029592d31f06f91f13250e39792` add private companion setup, pinned-source validation, guarded updates/backups, prepared-session cancellation, graceful archive shutdown, and fresh-volume translation restore. This companion checkpoint used SyncShow `9c616b8`; the current lock advances Heritage and SyncShow as recorded below.
 - Local deployment checks and 74 Multilinguum tests across the full check and focused follow-up passed. The final processor Docker image built on the verified WOTBC host. A separate disposable Compose project passed packaged-client, maintenance, clean-shutdown, synthetic EN/RU archive, SQLite integrity, and fresh-volume retrieval checks. Its containers, volumes, and networks were removed. See [verification](docs/verification/2026-09-12-companion-storage.md).
 - During the isolated rehearsal, the existing church app and PostgreSQL remained healthy at clean source revision `5f66b647f050ad45bf596a19a62c308ff65d8294`. The separate WOTBC deployment subsequently completed as recorded below. Provider spend remains $0; the key location has been requested from the user.
 
 ## Deployed at WOTBC
 
-- Community `e191c15` and companion `6f00fb5` are installed together. Supported updates, migrations, companion startup, local/public checks, and the first format 3 backup succeeded. Existing church recording objects remain covered by the verified inventory.
+- Community `7d5de50` and companion `6f00fb5` are installed together. Supported updates, migrations, companion startup, local/public checks, and the first format 3 backup succeeded. Existing church recording objects remain covered by the verified inventory.
 - The real `/live` and `/translate` pages connect to the companion. The supplied YouTube channel is configured, floating translation works, and manager controls require sign-in. No current video is selected; no translation service or microphone has been started.
 - Provider credentials are still absent. This is a deployed foundation, not complete live-service acceptance. See [deployment evidence and remaining checks](docs/verification/2026-09-12-wotbc-deployment.md).
+
+## Published SyncShow translation checkpoint
+
+- SyncShow `fe5dc25a91bd84776ab560194ed61f80cd47f1c6` adds the shared caption connection, sandboxed Community operator console, explicit translation approval, per-output full-screen/lower-third/ticker/hide controls, manual overrides and saved venue preferences. Heritage `7d5de50` advertises the installed companion and is deployed on WOTBC.
+- Final SyncShow suite: 2,213 passed, zero failed, two skipped. Real Electron caption and full-app restart checks passed. Native service matrices with caption bands passed at 640×360 and 1920×1080: 108 acknowledgments, 36 captures and four reopened receipts, covering direct and derived stage routes.
+- The rehearsal also found and fixed an existing native text-cue transition crash and stage next-line overflow. Its stale Bible-format expectations were updated against the current compiler's independently pinned text.
+- The actual SyncShow discovery client and public caption socket connected to WOTBC in idle state; the umbrella doctor now sees `translation: true`. The supported WOTBC update and all seven safety-backup checksums passed.
+- This is published source, not a packaged SyncShow release or real microphone/provider acceptance. See [verification and remaining work](docs/verification/2026-09-12-syncshow-translation.md). Paid testing remains $0 / $20; the API key location question is still pending.
 
 ## Required before completion
 
