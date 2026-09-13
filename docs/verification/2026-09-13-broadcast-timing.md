@@ -1,6 +1,6 @@
 # Broadcast translation timing — 2026-09-13
 
-The development set pairs Heritage `3b48db817a9ae5dded9ae7873b1171783d6eb8ec` (timing feature `7af0ea2`) with Multilinguum `f5b0f8dfe1a5e7d3a2720494113e386db38c829a`. SyncShow remains `cd214139c7f1a21171575ee42f75db23912d16a1`.
+The development set pairs Heritage `3b48db817a9ae5dded9ae7873b1171783d6eb8ec` (timing feature `7af0ea2`) with Multilinguum `a9d4cc893d4313db176ab4d950ee6a0c6fa12b48` (timing feature `f5b0f8d`). SyncShow remains `cd214139c7f1a21171575ee42f75db23912d16a1`.
 
 ## Implemented behavior
 
@@ -28,6 +28,8 @@ Community [CI 34757541168](https://github.com/edydex/heritage_study_bible/action
 ## Acceptance still needed
 
 The YouTube iframe remained blank in this internal browser and reached the explicit timeout state, as in the earlier rehearsal. This is not proof of working embedded video or measured broadcast audio synchronization. Native phone/tablet/Picture-in-Picture behavior, a real mixer, EN→RU and RU→EN generated speech, actual source-to-video delay and long-service listening still need a venue/provider rehearsal. Listener counts currently come from LiveKit and do not count buffered HTTP listeners. This is a development feature, not an accepted integrated release.
+
+Follow-up `a9d4cc8` clarifies the late-speech notice: skipped audio is reported without implying that extra audio delay can fix a faster video. The listener build/typecheck passed after this wording change. The operator timing guide distinguishes calibration from generation latency.
 
 Provider-test spending remains $0 of the authorized $20.
 

@@ -31,3 +31,11 @@ Ordinary cloud speech already exists and belongs in the first integrated version
 ## Current implementation
 
 The first shared browser client and Heritage public proxy are implemented and published in the development pins. The local bilingual text and floating-panel rehearsal passed. See [the verification record](verification/2026-09-12-live-player.md) for the actual evidence and the outstanding video/audio/device checks. The broadcast-delay setting now drives source-timed captions and bounded speech playback, with a listener adjustment and explicit re-alignment after video interruption. See [the timing verification record](verification/2026-09-13-broadcast-timing.md) for the implemented behavior and the remaining real video/audio/device acceptance.
+
+## Set timing for a service
+
+Save the current YouTube video URL in the Community's Live service settings. Measure how much later a spoken phrase reaches the YouTube stream than the church audio feed, and save that as the broadcast delay.
+
+On `/live`, start the video at its LIVE position and open **Match translation to video**. Adjust the delay if this connection differs from the church default: increase it when translation is early, decrease it when it is late. Choose translated audio again after changing timing. After a pause, seek or interruption, return to LIVE at normal speed and use **Match to current live position**.
+
+A translation that is not generated before its video position cannot be made earlier by increasing audio delay. The listener reports skipped stale speech; text remains independently available. Turning off **Match text to video** shows text as it arrives, including when YouTube cannot load. `/translate` remains the simplest in-person view.
