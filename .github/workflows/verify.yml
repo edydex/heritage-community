@@ -1,0 +1,46 @@
+name: Verify unified workspace
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+      - name: CLI and bootstrap tests
+        run: npm test
+      - name: Prepare public component libraries and disposable image
+        shell: bash
+        run: |
+          set -euo pipefail
+          revision=$(node -e "process.stdout.write(require('./components.lock.json').components.find(c => c.id === 'heritage').revision)")
+          [[ "$revision" =~ ^[a-f0-9]{40}$ ]]
+          git init --quiet "$RUNNER_TEMP/heritage-component"
+          git -C "$RUNNER_TEMP/heritage-component" remote add origin https://github.com/edydex/heritage_study_bible.git
+          git -C "$RUNNER_TEMP/heritage-component" fetch --depth=1 origin "$revision"
+          git -C "$RUNNER_TEMP/heritage-component" checkout --quiet --detach "$revision"
+          test "$(git -C "$RUNNER_TEMP/heritage-component" rev-parse HEAD)" = "$revision"
+          mkdir -p "$RUNNER_TEMP/heritage-fixture/component-deploy/lib"
+          cp -R server test "$RUNNER_TEMP/heritage-fixture/"
+          cp "$RUNNER_TEMP/heritage-component/community-server/deploy/lib/common.sh" "$RUNNER_TEMP/heritage-component/community-server/deploy/lib/translation.sh" "$RUNNER_TEMP/heritage-fixture/component-deploy/lib/"
+          docker build -t heritage-runner-tests -f test/runner.Dockerfile .
+      - name: Isolated Debian lifecycle rehearsal
+        shell: bash
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges \
+            --tmpfs /tmp:rw,size=256m,mode=1777 --tmpfs /run/lock:rw,size=1m,mode=1777 \
+            -e HERITAGE_ISOLATED_RUNNER_TEST=1 -e HERITAGE_FIXTURE_DEPLOY=/work/component-deploy \
+            -v "$RUNNER_TEMP/heritage-fixture:/work:ro" \
+            heritage-runner-tests node --test test/server-runner.integration.mjs

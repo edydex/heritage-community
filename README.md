@@ -8,7 +8,7 @@ This repository owns the combined product brief, compatible component versions, 
 
 ## Current status
 
-Integration is in development. The version bootstrap and source checks work; the combined installer and live-service experience are being implemented. Do not treat the pinned starting revisions as a service-ready integrated release. See [delivery status](STATUS.md).
+Integration is in development. Pinned source setup, combined server commands, and live translation are implemented. Packaged desktop releases and real-service acceptance remain unfinished. See [delivery status](STATUS.md).
 
 ## Open the complete development workspace
 
@@ -29,7 +29,29 @@ To inspect prerequisites and a Community's advertised capabilities:
 node bin/heritage.mjs doctor https://wotbc.heritage.faith
 ```
 
-Component package installation and combined server deployment are the next installer steps. Never copy production `.env` files, API keys, personal notes, recordings, or database backups into this repository.
+Never copy production `.env` files, API keys, personal notes, recordings, or database backups into this repository.
+
+## Set up or maintain the combined server
+
+From this workspace, use an existing, trusted SSH connection to a Debian 12 or 13 server. The selected SSH account currently needs root access. The server does not need Node.js, this private repository's GitHub credentials, or a GPU.
+
+```sh
+node bin/heritage.mjs server plan --host your-server
+node bin/heritage.mjs server setup --host your-server
+node bin/heritage.mjs server status --host your-server
+```
+
+First setup uses Community's guided installer, then installs the pinned Multilinguum companion. Existing servers follow the guarded update path and preserve their account, tunnel and private configuration. Audio remains optional; provider credentials may be configured later.
+
+After selecting a new tested version of this workspace:
+
+```sh
+node bin/heritage.mjs server plan --host your-server
+node bin/heritage.mjs server update --host your-server
+node bin/heritage.mjs server backup --host your-server
+```
+
+Use `server help` for restore and unattended options. The commands keep exact component pins, refuse dirty or incompatible source, retain safety backups, and record the installed set only after service checks pass. [Setup, recovery, and limits](docs/server-setup.md).
 
 ## Product and implementation
 

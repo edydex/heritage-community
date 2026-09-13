@@ -4,6 +4,7 @@ import { promisify } from 'node:util';
 import { mkdir, readFile, writeFile, mkdtemp, rename, rm, lstat, realpath } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { parseServerArgs, runServer } from '../lib/server.mjs';
 
 const execute = promisify(execFile);
 export const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -116,12 +117,13 @@ export async function checkCommunity(address) {
 
 async function main(args) {
   const command = args[0] ?? 'help';
-  if (!['bootstrap', 'status', 'doctor', 'help', '--help'].includes(command)) throw new Error(`Unknown command: ${command}`);
+  if (!['bootstrap', 'status', 'doctor', 'server', 'help', '--help'].includes(command)) throw new Error(`Unknown command: ${command}`);
   if (command === 'help' || command === '--help') {
-    process.stdout.write('Heritage Community\n\nbootstrap             Fetch the exact component revisions into isolated folders.\nstatus                Verify installed component revisions without changing them.\ndoctor [community-url] Check prerequisites and optionally public Community discovery.\n\nThis development workspace is not yet a combined production installer.\n');
+    process.stdout.write('Heritage Community\n\nbootstrap             Fetch the exact component revisions into isolated folders.\nstatus                Verify installed component revisions without changing them.\ndoctor [community-url] Check prerequisites and optionally public Community discovery.\nserver [command]      Set up, update, inspect, back up or restore a combined server.\n\nUse server help for remote setup commands. Desktop releases and real-service acceptance remain separate.\n');
     return;
   }
   const manifest = validateManifest(JSON.parse(await readFile(join(repositoryRoot, 'components.lock.json'), 'utf8')));
+  if (command === 'server') return runServer(repositoryRoot, manifest, parseServerArgs(args.slice(1)));
   if (command === 'bootstrap') return bootstrap(repositoryRoot, manifest);
   if (command === 'status') {
     let missing = false;
