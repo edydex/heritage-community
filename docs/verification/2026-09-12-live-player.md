@@ -2,13 +2,13 @@
 
 This is local integration evidence, not an accepted church deployment.
 
-## Candidate revisions
+## Published development revisions
 
 - Heritage: `445e459e447fcca3b390d61f5af745bda51a92da`, branch `codex/unified-live-service`.
 - Multilinguum: `ba03971cb44aaccf48c0ae74a16fc2551679426a`, branch `codex/heritage-live-integration`.
 - SyncShow remains at the existing pinned revision; no new projection integration is represented here.
 
-The candidates are committed in the isolated implementation clones under `/private/tmp/heritage-unified-20260912/sources/`. Publication of the Multilinguum commit was rejected by automatic approval review because it required explicit source-publication authorization. No rejected action was retried or bypassed. The component lock remains on the last published, fetchable set until approval is resolved and the new refs are verified.
+The commits were created in isolated implementation clones and published to the listed integration branches after the user explicitly approved the source publication. The component lock pins these revisions. This is a development checkpoint, not a release or a WOTBC deployment.
 
 ## Implemented
 
@@ -25,7 +25,7 @@ The processor packages and serves the public browser module and flat JavaScript 
 - Heritage production build passed and includes both `/live` and `/translate`; type check and three settings-parser tests passed. The guarded database test is skipped in the ordinary command; its earlier real PostgreSQL/Payload run is recorded in the translation-core checkpoint. This change adds no new migration.
 - A real locally running Heritage server forwarded the module, public service JSON, and WebSocket to the real synthetic processor. `/live`, `/translate`, module, and service returned 200; a private processor route under the public prefix returned 404. The proxied WebSocket delivered public state and two caption messages.
 - Codex browser rendered the English and Russian synthetic feeds. Russian text and original YouTube audio remained independently selected. Floating/returning the page panel preserved those choices. Russian persisted after reload. `/translate` did not load a video. Stopping the processor changed the page to reconnecting while earlier text remained readable.
-- No provider credentials were configured for these synthetic rehearsals. Paid test use against the newly authorized $20 allowance remains $0; see `api-test-budget.json`.
+- No provider credentials were configured for these synthetic rehearsals. No OpenAI/LiveKit variables were present in the known local project configuration or WOTBC’s documented `config/community.env`; only SMTP variables were found in the latter. Paid test use against the newly authorized $20 allowance remains $0; see `api-test-budget.json`.
 
 ## Limits and next acceptance
 

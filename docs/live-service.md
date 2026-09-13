@@ -27,3 +27,7 @@ Both EN→RU and RU→EN need a real video/audio rehearsal. Caption and generate
 Community and SyncShow attach to the same active session. The operator chooses source language, target language, quality/economy profile, microphone/mixer input, and whether to generate speech. The public listener controls only its own view and playback; it cannot start provider work or obtain operator credentials.
 
 Ordinary cloud speech already exists and belongs in the first integrated version. The required changes are explicit speech gating, clearing stale queued output, truthful availability, and the shared session controls. Cloned voice remains optional and does not make a GPU mandatory for ordinary installation.
+
+## Current implementation
+
+The first shared browser client and Heritage public proxy are implemented and published in the development pins. The local bilingual text and floating-panel rehearsal passed. See [the verification record](verification/2026-09-12-live-player.md) for the actual evidence and the outstanding video/audio/device checks. Timing remains unfinished; the broadcast-delay setting is not yet applied.
