@@ -30,7 +30,7 @@ Objective: make Heritage, SyncShow, and Multilinguum convenient to install, conf
 ## In progress
 
 - The Heritage integration branch preserves the prior WOTBC deployment's service-document fix (`5f66b647f050ad45bf596a19a62c308ff65d8294`). WOTBC is now deployed to the published companion checkpoint using its supported backup/update/setup commands; see the deployment record below.
-- Heritage church settings, `/live`, `/translate`, and cohosting the processor beside Community. The public client, proxy, Community operator, and companion lifecycle are published; SyncShow control and output wiring are now implemented in the checkpoint below; full paired installation and released application builds remain pending.
+- Heritage church settings, `/live`, `/translate`, and cohosting the processor beside Community. The public client, proxy, Community operator, and companion lifecycle are published; SyncShow control and output wiring are now implemented in the checkpoint below; full paired installation and official releases remain pending; desktop QA package progress is recorded below.
 
 ## Latest published companion checkpoint
 
@@ -86,8 +86,16 @@ The configured `vr-mayos` connection currently requires renewed Cloudflare Acces
 
 ## Published tablet teaching and optional notes
 
-- SyncShow `cf7f0c6` adds paired tablet pen/highlighter teaching, with per-slide/per-output ink, Undo, Clear ink, and optional stylus-only input. Source-app browser-to-projector checks pass; this has not yet been packaged or tested on a physical tablet.
+- SyncShow `cf7f0c6` adds paired tablet pen/highlighter teaching, with per-slide/per-output ink, Undo, Clear ink, and optional stylus-only input. Source-app browser-to-projector checks pass. This is now included in Preview 25 below; physical-tablet acceptance remains pending.
 - Multilinguum `9c2c38b` and Heritage `2c98f7e` add selectable sermon-note uploads in the shared operator console. Economy requires an explicit per-service note-sharing choice. The scoped manager/device lease can list and upload translation reference notes; anonymous callers are denied. Existing archive, replay and voice-profile restrictions remain.
 - 83 Multilinguum tests and builds passed. SyncShow: 2,217 passed, two skipped; syntax checks and real Electron teaching rehearsal passed. Heritage production build and actual local proxy listing/upload/access checks passed. The real browser verified Economy selection, consent reset, locked live settings and Stop with no microphone or provider request.
 - [Musician-screen follow-up](docs/future-musician-screen.md) records instrument-specific chord views, current/next song-section following, manual hold/resume and offline charts.
 - The WOTBC unified update completed at `2026-09-13T09:02:09Z`. All three services are healthy, the new operator bundle is public, the notes route returns 401 anonymously and 200 with a scoped lease, and the real `/live` browser reconnects with audio off. All seven artifacts in each of three safety backups passed independent checksums. See [verification and limitations](docs/verification/2026-09-13-teaching-and-notes.md). Paid-provider testing remains $0 / $20.
+
+## Published SyncShow Preview 25
+
+- The lock now pins SyncShow `cd214139c7f1a21171575ee42f75db23912d16a1`, version `1.4.0-preview.25`. The microphone purpose declaration is preserved in the Mac package, fixing optional mixer access. Clean package builds install Electron's required notices and handle host-specific ASAR paths and Linux native dependencies.
+- Windows preparation now saves thumbnails through Node's long-path-capable, atomic writer. Isolated test profiles use native canonical paths; directory-flush handling matches Windows support. The full local suite passes: 2,218 tests, two existing skips. All four source jobs and all four native package jobs pass in CI.
+- The final local Apple Silicon DMG and ZIP passed packaged PDF/Sharp rendering, shared-service round trip, actual app launch with a temporary profile, native architecture and artifact inventory, and Mac signature verification. Eighteen feature/storage files match the published source exactly. The verified local Mac installers and all seven CI installers are retained with checksum evidence in the unified workspace's ignored `.heritage/installers/` folder.
+- [PR #7](https://github.com/edydex/SyncShow/pull/7) publishes the complete integration for review and runs all four native package targets. This remains a development preview; protected public-release prerequisites and real tablet/mixer/provider acceptance remain open. See [installation instructions](docs/desktop-preview.md) and [exact verification](docs/verification/2026-09-13-desktop-preview.md).
+- This checkpoint changes the desktop source pin only. WOTBC still runs the same verified Heritage `2c98f7e` and Multilinguum `9c2c38b`; no unnecessary server redeployment was performed. Paid-provider testing remains $0 / $20.
