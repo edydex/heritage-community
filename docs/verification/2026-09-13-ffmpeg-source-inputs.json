@@ -1,0 +1,223 @@
+{
+  "electronRevision": "9b58e96340a34cccaccc08e410e76838b50b0cb2",
+  "ffmpegRevision": "ad41607c61898cf7150e0fb20fe4bbabd44922a3",
+  "files": [
+    {
+      "path": "ffmpeg-ad41607c61898cf7150e0fb20fe4bbabd44922a3.tar.gz",
+      "url": "https://chromium.googlesource.com/chromium/third_party/ffmpeg/+archive/ad41607c61898cf7150e0fb20fe4bbabd44922a3.tar.gz",
+      "size": 18432607,
+      "sha256": "2cefa633a2d8d3d52ae5a9fcc896fecf0ec0c46b925c859ed5299e20b6efde4e",
+      "archiveEntries": 11122,
+      "configurationFiles": [
+        "chromium/config/Chrome/android/arm-neon/config.h",
+        "chromium/config/Chrome/android/arm-neon/libavutil/avconfig.h",
+        "chromium/config/Chrome/android/arm64/config.h",
+        "chromium/config/Chrome/android/arm64/libavutil/avconfig.h",
+        "chromium/config/Chrome/android/ia32/config.asm",
+        "chromium/config/Chrome/android/ia32/config.h",
+        "chromium/config/Chrome/android/ia32/libavutil/avconfig.h",
+        "chromium/config/Chrome/android/mips64el/config.h",
+        "chromium/config/Chrome/android/mips64el/libavutil/avconfig.h",
+        "chromium/config/Chrome/android/mipsel/config.h",
+        "chromium/config/Chrome/android/mipsel/libavutil/avconfig.h",
+        "chromium/config/Chrome/android/x64/config.asm",
+        "chromium/config/Chrome/android/x64/config.h",
+        "chromium/config/Chrome/android/x64/libavutil/avconfig.h",
+        "chromium/config/Chrome/ios/arm64/config.h",
+        "chromium/config/Chrome/ios/arm64/libavutil/avconfig.h",
+        "chromium/config/Chrome/ios/x64/config.asm",
+        "chromium/config/Chrome/ios/x64/config.h",
+        "chromium/config/Chrome/ios/x64/libavutil/avconfig.h",
+        "chromium/config/Chrome/linux-noasm/x64/config.h",
+        "chromium/config/Chrome/linux-noasm/x64/libavutil/avconfig.h",
+        "chromium/config/Chrome/linux/arm-neon/config.h",
+        "chromium/config/Chrome/linux/arm-neon/libavutil/avconfig.h",
+        "chromium/config/Chrome/linux/arm/config.h",
+        "chromium/config/Chrome/linux/arm/libavutil/avconfig.h",
+        "chromium/config/Chrome/linux/arm64/config.h",
+        "chromium/config/Chrome/linux/arm64/libavutil/avconfig.h",
+        "chromium/config/Chrome/linux/ia32/config.asm",
+        "chromium/config/Chrome/linux/ia32/config.h",
+        "chromium/config/Chrome/linux/ia32/libavutil/avconfig.h",
+        "chromium/config/Chrome/linux/riscv64/config.h",
+        "chromium/config/Chrome/linux/riscv64/libavutil/avconfig.h",
+        "chromium/config/Chrome/linux/x64/config.asm",
+        "chromium/config/Chrome/linux/x64/config.h",
+        "chromium/config/Chrome/linux/x64/libavutil/avconfig.h",
+        "chromium/config/Chrome/mac/arm64/config.h",
+        "chromium/config/Chrome/mac/arm64/libavutil/avconfig.h",
+        "chromium/config/Chrome/mac/x64/config.asm",
+        "chromium/config/Chrome/mac/x64/config.h",
+        "chromium/config/Chrome/mac/x64/libavutil/avconfig.h",
+        "chromium/config/Chrome/win-msvc/ia32/config.asm",
+        "chromium/config/Chrome/win-msvc/ia32/config.h",
+        "chromium/config/Chrome/win-msvc/ia32/libavutil/avconfig.h",
+        "chromium/config/Chrome/win-msvc/x64/config.asm",
+        "chromium/config/Chrome/win-msvc/x64/config.h",
+        "chromium/config/Chrome/win-msvc/x64/libavutil/avconfig.h",
+        "chromium/config/Chrome/win/arm64/config.h",
+        "chromium/config/Chrome/win/arm64/libavutil/avconfig.h",
+        "chromium/config/Chrome/win/ia32/config.asm",
+        "chromium/config/Chrome/win/ia32/config.h",
+        "chromium/config/Chrome/win/ia32/libavutil/avconfig.h",
+        "chromium/config/Chrome/win/x64/config.asm",
+        "chromium/config/Chrome/win/x64/config.h",
+        "chromium/config/Chrome/win/x64/libavutil/avconfig.h",
+        "chromium/config/Chromium/android/arm-neon/config.h",
+        "chromium/config/Chromium/android/arm-neon/libavutil/avconfig.h",
+        "chromium/config/Chromium/android/arm64/config.h",
+        "chromium/config/Chromium/android/arm64/libavutil/avconfig.h",
+        "chromium/config/Chromium/android/ia32/config.asm",
+        "chromium/config/Chromium/android/ia32/config.h",
+        "chromium/config/Chromium/android/ia32/libavutil/avconfig.h",
+        "chromium/config/Chromium/android/mips64el/config.h",
+        "chromium/config/Chromium/android/mips64el/libavutil/avconfig.h",
+        "chromium/config/Chromium/android/mipsel/config.h",
+        "chromium/config/Chromium/android/mipsel/libavutil/avconfig.h",
+        "chromium/config/Chromium/android/x64/config.asm",
+        "chromium/config/Chromium/android/x64/config.h",
+        "chromium/config/Chromium/android/x64/libavutil/avconfig.h",
+        "chromium/config/Chromium/ios/arm64/config.h",
+        "chromium/config/Chromium/ios/arm64/libavutil/avconfig.h",
+        "chromium/config/Chromium/ios/x64/config.asm",
+        "chromium/config/Chromium/ios/x64/config.h",
+        "chromium/config/Chromium/ios/x64/libavutil/avconfig.h",
+        "chromium/config/Chromium/linux-noasm/x64/config.h",
+        "chromium/config/Chromium/linux-noasm/x64/libavutil/avconfig.h",
+        "chromium/config/Chromium/linux/arm-neon/config.h",
+        "chromium/config/Chromium/linux/arm-neon/libavutil/avconfig.h",
+        "chromium/config/Chromium/linux/arm/config.h",
+        "chromium/config/Chromium/linux/arm/libavutil/avconfig.h",
+        "chromium/config/Chromium/linux/arm64/config.h",
+        "chromium/config/Chromium/linux/arm64/libavutil/avconfig.h",
+        "chromium/config/Chromium/linux/ia32/config.asm",
+        "chromium/config/Chromium/linux/ia32/config.h",
+        "chromium/config/Chromium/linux/ia32/libavutil/avconfig.h",
+        "chromium/config/Chromium/linux/riscv64/config.h",
+        "chromium/config/Chromium/linux/riscv64/libavutil/avconfig.h",
+        "chromium/config/Chromium/linux/x64/config.asm",
+        "chromium/config/Chromium/linux/x64/config.h",
+        "chromium/config/Chromium/linux/x64/libavutil/avconfig.h",
+        "chromium/config/Chromium/mac/arm64/config.h",
+        "chromium/config/Chromium/mac/arm64/libavutil/avconfig.h",
+        "chromium/config/Chromium/mac/x64/config.asm",
+        "chromium/config/Chromium/mac/x64/config.h",
+        "chromium/config/Chromium/mac/x64/libavutil/avconfig.h",
+        "chromium/config/Chromium/win-msvc/ia32/config.asm",
+        "chromium/config/Chromium/win-msvc/ia32/config.h",
+        "chromium/config/Chromium/win-msvc/ia32/libavutil/avconfig.h",
+        "chromium/config/Chromium/win-msvc/x64/config.asm",
+        "chromium/config/Chromium/win-msvc/x64/config.h",
+        "chromium/config/Chromium/win-msvc/x64/libavutil/avconfig.h",
+        "chromium/config/Chromium/win/arm64/config.h",
+        "chromium/config/Chromium/win/arm64/libavutil/avconfig.h",
+        "chromium/config/Chromium/win/ia32/config.asm",
+        "chromium/config/Chromium/win/ia32/config.h",
+        "chromium/config/Chromium/win/ia32/libavutil/avconfig.h",
+        "chromium/config/Chromium/win/x64/config.asm",
+        "chromium/config/Chromium/win/x64/config.h",
+        "chromium/config/Chromium/win/x64/libavutil/avconfig.h"
+      ]
+    },
+    {
+      "path": "electron/patches/config.json",
+      "url": "https://raw.githubusercontent.com/electron/electron/9b58e96340a34cccaccc08e410e76838b50b0cb2/patches/config.json",
+      "size": 1173,
+      "sha256": "be8fc696e319f2dcbd9a32d5ed04076770a559222e7b4b02b57f9e89aa07c66a"
+    },
+    {
+      "path": "electron/patches/ffmpeg/.patches",
+      "url": "https://raw.githubusercontent.com/electron/electron/9b58e96340a34cccaccc08e410e76838b50b0cb2/patches/ffmpeg/.patches",
+      "size": 28,
+      "sha256": "eb2ff86699f3aa0f6ac1b484a8c8a117a3149465273699e136e132024e38e7c6"
+    },
+    {
+      "path": "electron/patches/ffmpeg/link_with_loader_path.patch",
+      "url": "https://raw.githubusercontent.com/electron/electron/9b58e96340a34cccaccc08e410e76838b50b0cb2/patches/ffmpeg/link_with_loader_path.patch",
+      "size": 1219,
+      "sha256": "849b0fbef990623b0caf187c75a3f31f53ed4390e5770196d47880056b53dc7e"
+    },
+    {
+      "path": "electron/build/args/release.gn",
+      "url": "https://raw.githubusercontent.com/electron/electron/9b58e96340a34cccaccc08e410e76838b50b0cb2/build/args/release.gn",
+      "size": 902,
+      "sha256": "b4490cee911e0ed136a6d095c69a7914cb3f4aa2d5517e3f987a2b5f45d3cd56"
+    },
+    {
+      "path": "electron/script/verify-ffmpeg.py",
+      "url": "https://raw.githubusercontent.com/electron/electron/9b58e96340a34cccaccc08e410e76838b50b0cb2/script/verify-ffmpeg.py",
+      "size": 3457,
+      "sha256": "02cca6bc678d330858625001ca8beb00910448af5b5438d0ac86da65acf64a14"
+    },
+    {
+      "path": "electron/build/args/all.gn",
+      "url": "https://raw.githubusercontent.com/electron/electron/9b58e96340a34cccaccc08e410e76838b50b0cb2/build/args/all.gn",
+      "size": 2711,
+      "sha256": "3da2e1f8ce1e28b3a8bb3151cfc8f2f2dbffe51a4c3f5a91cc4f2f3375f0d8c8"
+    }
+  ],
+  "reviewedArchiveFiles": [
+    {
+      "archivePath": "COPYING.LGPLv2.1",
+      "size": 26517,
+      "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30"
+    },
+    {
+      "archivePath": "LICENSE.md",
+      "size": 4346,
+      "sha256": "2e1d16c72fd74e12063776371da757322f8b77589386532f4fd8634bde7de1af"
+    },
+    {
+      "archivePath": "README.chromium",
+      "size": 1267,
+      "sha256": "33df6ebf12d43ecce4fe10aad85c82c3391ead362b84c45eb48e301cea4efa01"
+    },
+    {
+      "archivePath": "BUILD.gn",
+      "size": 15047,
+      "sha256": "bc1aa1556810ac7dd0d632dd083845f805aaded307368c92f44ee74c4225f8e8"
+    },
+    {
+      "archivePath": "chromium/config/Chrome/mac/arm64/config.h",
+      "size": 26654,
+      "sha256": "62153459aca72e658e40f2c648138a5477b431453252b1415071115f5d415e57"
+    },
+    {
+      "archivePath": "chromium/config/Chrome/mac/x64/config.h",
+      "size": 26552,
+      "sha256": "c067a5adb3d68e304ab4061f7d973d0497cf59b2e9c186d686688dc7f5541396"
+    },
+    {
+      "archivePath": "chromium/config/Chrome/mac/x64/config.asm",
+      "size": 23444,
+      "sha256": "c7272a095cc846f97786b1574c82e78a0402ac38ce9aeca45a6bd8eb1af46194"
+    },
+    {
+      "archivePath": "chromium/config/Chrome/linux/x64/config.h",
+      "size": 25316,
+      "sha256": "127f361febdf3efc9d74a0d713277f589b1a0fc2c93aef7e60b25a5920e95c15"
+    },
+    {
+      "archivePath": "chromium/config/Chrome/linux/x64/config.asm",
+      "size": 23444,
+      "sha256": "439e56da15dbb7161d132cd751ad567ecaebe42d0a51fcd0c5565c94a1fadf74"
+    },
+    {
+      "archivePath": "chromium/config/Chrome/win/x64/config.h",
+      "size": 25593,
+      "sha256": "30098907e62d62728db4c85e3dc248a64cffe17e98020b3f75ffb8077af22c64"
+    },
+    {
+      "archivePath": "chromium/config/Chrome/win/x64/config.asm",
+      "size": 23444,
+      "sha256": "fbaad84c989644216a6c32487a78aa74ae2e0661a570eefc955e1c3149e80145"
+    }
+  ],
+  "patchCheck": {
+    "command": "git apply --check ../electron/patches/ffmpeg/link_with_loader_path.patch",
+    "result": "passed",
+    "sourceBuildGnSha256": "bc1aa1556810ac7dd0d632dd083845f805aaded307368c92f44ee74c4225f8e8",
+    "patchApplied": false
+  },
+  "remaining": "Complete build-toolchain/dependency retention and replacement checks against shipped runtimes. This source collection alone does not clear the desktop release requirements."
+}

@@ -31,7 +31,7 @@ The exact values used by the tools are in [components.lock.json](components.lock
 
 ## Work being finished
 
-- **Android Community preview:** native storage and actual offline-state checks now pass; the latest inspected screenshot shows Community Home correctly. The current run replaces a failing accessibility-text lookup with rendered-frame and native-window checks before collecting all three screens. The APK is not yet published. [Current runner and verification record](docs/verification/2026-09-13-android-runner.md).
+- **Android Community preview:** the APK remains unpublished while screenshot freshness and reliable emulator offline setup are checked. Native storage and signer/update checks have passed; one green CI run was rejected after image inspection found a stale capture. The current run addresses the identified emulator Wi-Fi race. [Current runner and verification record](docs/verification/2026-09-13-android-runner.md).
 - **SyncShow public packaging:** source `5b3da20` adds the exact upstream libvips notice index. Source CI and all four native package jobs passed; the downloaded Mac package's actual notice and installer hashes were inspected. Complete dependency source/license/replacement materials and the protected release configuration remain unfinished. [Evidence and concrete remaining work](docs/verification/2026-09-13-native-release-inputs.md).
 - **Live WOTBC acceptance:** manager sign-in and translation provider keys are still needed. The latest provider-configuration check found no configured API keys. No actual microphone or paid translation session has been started.
 
