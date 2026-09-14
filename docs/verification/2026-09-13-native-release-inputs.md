@@ -72,3 +72,9 @@ The downloaded Windows installer is 129,304,202 bytes, SHA-256 `592286454589d37f
 ## Apple Silicon replacement follow-up — September 14
 
 The verified Preview 28 QA runtime successfully loaded locally modified libvips and FFmpeg libraries in a separately re-signed ad-hoc app copy. Signature checks passed and PNG/JPEG/WebP output hashes matched the original baseline. The changes were limited to Mach-O library metadata; this does not prove from-source rebuilding, FFmpeg decoding after replacement, other platforms or a completed release gate. [Procedure and exact evidence](2026-09-14-mac-library-replacement.md).
+
+## FFmpeg source replacement follow-up — September 14
+
+The matching FFmpeg and Chromium Opus sources now build an owner-replacement library for Apple Silicon with the preview's macOS 12 minimum and identical enabled decoder/demuxer/parser selection. It retains all 1,587 original exported names. AAC, Opus and H.264 decode tests passed, with exact H.264 pixels and recorded small audio differences. A freshly extracted Preview 28 copy passed ad-hoc signature verification, loaded the signed rebuilt library in Electron, and retained the original application/libvips bytes and image outputs. [Source inputs, working recipe and acceptance limits](2026-09-14-ffmpeg-source-replacement.md).
+
+This closes the earlier Mac FFmpeg source-build and direct decoding gap. It does not reproduce the upstream binary, verify GUI media playback or other platforms, or clear the complete public-release gate. No shipped package or release verifier was changed.

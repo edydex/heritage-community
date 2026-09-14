@@ -47,6 +47,8 @@ This is a **metadata-only modification**, not a from-source rebuild or a semanti
 
 Complete corresponding-source/build materials, actual rebuilt-library replacement, FFmpeg decoding after replacement, other native targets and protected release configuration remain required by the existing release gate. The current app and package verifiers were not changed. See the [native release-input record](2026-09-13-native-release-inputs.md).
 
+The subsequent [FFmpeg source-replacement rehearsal](2026-09-14-ffmpeg-source-replacement.md) completed an actual FFmpeg/Chromium Opus rebuild, three codec fixtures and loading in a fresh ad-hoc Preview 28 copy on Apple Silicon. Its evidence supersedes the FFmpeg rebuild/decoding gap in this earlier checkpoint; libvips, other targets and broader release acceptance remain open.
+
 ## Recognition comparison deferred without spending
 
 The next bounded transcription comparison is prepared with the current `aba43f7` capture/recognition modules. It pairs the retained 45-second Russian sermon with and without short synthetic topic hints, and the known 10.485-second English fixture with and without unrelated hints. These hints are a diagnostic constructed from the known passage, not the pastor's original notes. All four fixtures passed the offline pipeline check with zero provider requests.
