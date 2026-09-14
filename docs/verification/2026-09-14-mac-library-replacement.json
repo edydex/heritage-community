@@ -1,0 +1,93 @@
+{
+  "sourceRevision": "5301a992638bdcc66a5253026658dd022320eda4",
+  "platform": "darwin-arm64",
+  "status": "passed",
+  "scope": "Disposable copy of verified Preview 28; metadata-only library modification, not a from-source rebuild or codec-content change.",
+  "libraries": {
+    "libvips": {
+      "path": "Contents/Resources/app.asar.unpacked/node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.8.18.3.dylib",
+      "originalSha256": "dcc6c9dc250357a93bfb78b7790bb65e3f4d29f150186ac2b4dca0add3cbf56e",
+      "beforeInstallName": "@rpath/libvips-cpp.8.18.3.dylib",
+      "replacementInstallName": "@rpath/libvips-mod.8.18.3.dylib",
+      "modifiedUnsignedSha256": "7d757a3871070eab354c6c5c5f3b214d71a7570a587d6427bfe5e72d2c5dea01",
+      "modifiedSignedSha256": "dca970d0583497e60b64367e2efb492401e9c41d3d39b4b403a59f4738c14f4b",
+      "originalArtifactUntouched": true
+    },
+    "ffmpeg": {
+      "path": "Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+      "originalSha256": "98dbf406dd4f25cc607964af704806b860b789cd4046416a4b595cacbd88b7f2",
+      "beforeInstallName": "@loader_path/libffmpeg.dylib",
+      "replacementInstallName": "@loader_path/libffmod1.dylib",
+      "modifiedUnsignedSha256": "0420175d14c0f4b3c580ee4c8dc8a0d95b512806722961ebd1c8528567715fa8",
+      "modifiedSignedSha256": "f1fd756192c9de954bb83ee12bff09ad7aa05438b32500b6ac737fec70a676b1",
+      "originalArtifactUntouched": true
+    }
+  },
+  "originalAsarSha256": "3c712e03d691f39654d9955374664302f69aa5da44fe76e90bab95c341733291",
+  "beforeSigning": "Executable=/private/tmp/heritage-unified-20260912/mac-library-replacement-20260914/SyncShow.app/Contents/MacOS/SyncShow\nIdentifier=com.church.syncshow\nFormat=app bundle with Mach-O thin (arm64)\nCodeDirectory v=20400 size=620 flags=0x2(adhoc) hashes=9+7 location=embedded\nSignature=adhoc\nInfo.plist entries=29\nTeamIdentifier=not set\nSealed Resources version=2 rules=13 files=260\nInternal requirements count=0 size=12",
+  "baseline": {
+    "outputs": {
+      "png": {
+        "encodedSha256": "9e8be7023a39958763a01f1bd44779ad58cae206ded5a7519e511fbeb3a65869",
+        "decodedSha256": "da4be99755496bade3484e5909ac141a9dd0df228371cd1305e0a730d1f21d6a",
+        "width": 256,
+        "height": 144
+      },
+      "jpeg": {
+        "encodedSha256": "be22dd6683afdc7a70b19e277562d18732ba019b64e461abb6094c9692202d57",
+        "decodedSha256": "bb6eb8ca189b8643e3da5bd0358c88d00fa234cb0ec3160bff265d2562fb7824",
+        "width": 256,
+        "height": 144
+      },
+      "webp": {
+        "encodedSha256": "30939b06374cdf85cfa7c46e18b678c529a7ec4c0c9506f97ec33d07bed56a9b",
+        "decodedSha256": "6df3da47d02077e32cd2be1f86cbb647ceff4e22484bae53436f6a11a6fcfb34",
+        "width": 256,
+        "height": 144
+      }
+    },
+    "loadedLibraries": [
+      "/private/tmp/heritage-unified-20260912/mac-library-replacement-20260914/SyncShow.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+      "/private/tmp/heritage-unified-20260912/mac-library-replacement-20260914/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.8.18.3.dylib"
+    ],
+    "vipsVersion": "8.18.3",
+    "electron": "43.2.0"
+  },
+  "signatureVerification": "passed",
+  "afterSigning": "Executable=/private/tmp/heritage-unified-20260912/mac-library-replacement-20260914/SyncShow.app/Contents/MacOS/SyncShow\nIdentifier=com.church.syncshow\nFormat=app bundle with Mach-O thin (arm64)\nCodeDirectory v=20400 size=428 flags=0x2(adhoc) hashes=3+7 location=embedded\nSignature=adhoc\nInfo.plist entries=29\nTeamIdentifier=not set\nSealed Resources version=2 rules=13 files=260\nInternal requirements count=0 size=12",
+  "modified": {
+    "outputs": {
+      "png": {
+        "encodedSha256": "9e8be7023a39958763a01f1bd44779ad58cae206ded5a7519e511fbeb3a65869",
+        "decodedSha256": "da4be99755496bade3484e5909ac141a9dd0df228371cd1305e0a730d1f21d6a",
+        "width": 256,
+        "height": 144
+      },
+      "jpeg": {
+        "encodedSha256": "be22dd6683afdc7a70b19e277562d18732ba019b64e461abb6094c9692202d57",
+        "decodedSha256": "bb6eb8ca189b8643e3da5bd0358c88d00fa234cb0ec3160bff265d2562fb7824",
+        "width": 256,
+        "height": 144
+      },
+      "webp": {
+        "encodedSha256": "30939b06374cdf85cfa7c46e18b678c529a7ec4c0c9506f97ec33d07bed56a9b",
+        "decodedSha256": "6df3da47d02077e32cd2be1f86cbb647ceff4e22484bae53436f6a11a6fcfb34",
+        "width": 256,
+        "height": 144
+      }
+    },
+    "loadedLibraries": [
+      "/private/tmp/heritage-unified-20260912/mac-library-replacement-20260914/SyncShow.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+      "/private/tmp/heritage-unified-20260912/mac-library-replacement-20260914/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.8.18.3.dylib"
+    ],
+    "vipsVersion": "8.18.3",
+    "electron": "43.2.0"
+  },
+  "imageOutputUnchanged": true,
+  "asarUnchanged": true,
+  "probeSha256": "d388e29d3fdedba4e39ac9376811a59cce724c2dc350bb84c44aa805717c1246",
+  "paidApiRequests": 0,
+  "sourceBuildVerified": false,
+  "ffmpegDecodingVerified": false,
+  "publicReleaseGateCleared": false
+}
