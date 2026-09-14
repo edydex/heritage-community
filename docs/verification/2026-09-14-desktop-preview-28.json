@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-14",
+  "version": "1.4.0-preview.28",
+  "buildVersion": "140028",
+  "sourceRevision": "5301a992638bdcc66a5253026658dd022320eda4",
+  "builtMergeRevision": "3b368b2557f60d60f13f8f6f734f2e2ac8754d03",
+  "sourceCI": {
+    "run": 34818135231,
+    "conclusion": "success",
+    "targets": 4
+  },
+  "packageCI": {
+    "run": 34818135279,
+    "conclusion": "success",
+    "targets": 4
+  },
+  "downloadedTarget": "darwin-arm64",
+  "downloadedInstallerChecksums": [
+    {
+      "path": "SyncShow-1.4.0-preview.28-arm64.dmg",
+      "size": 158881588,
+      "sha256": "e174870185120b75052f0fe5961dc39537850e49c227ea95f8bc7df303b712e3"
+    },
+    {
+      "path": "SyncShow-1.4.0-preview.28-arm64.zip",
+      "size": 159176089,
+      "sha256": "e43268019a1622aafa389bff291c7c846e448fce09b1698d854eca44d9f66204"
+    }
+  ],
+  "sourceCorrespondence": {
+    "applicationFiles": 324,
+    "passed": true
+  },
+  "codeSignature": "codesign --verify --deep --strict passed",
+  "actualPackagedLaunch": {
+    "schemaVersion": 1,
+    "target": "darwin-arm64",
+    "archive": "SyncShow.app/Contents/Resources/app.asar",
+    "archiveSha256": "3c712e03d691f39654d9955374664302f69aa5da44fe76e90bab95c341733291",
+    "executable": "SyncShow.app/Contents/MacOS/SyncShow",
+    "executableSha256": "78a18c4ec76c5e12c5ee10729b11769f328216e085f1d1d4add8ca1191beec5c",
+    "controlPage": {
+      "title": "",
+      "url": "file:///private/tmp/heritage-unified-20260912/qa-34818135279/macos-arm64/mac-arm64/SyncShow.app/Contents/Resources/app.asar/src/renderer/index.html"
+    },
+    "isolatedProfile": "confirmed-and-removed",
+    "launch": "passed"
+  },
+  "teachingRehearsal": {
+    "fixtureRevision": "3af7c310d999c1bac1c870aff512a331e2d50767",
+    "downloadedPackageRun": 34816323979,
+    "passed": true,
+    "scope": "Downloaded production ASAR main/preload/Remote/output modules in matching Electron test host, with explicit resource-path overrides. Actual package executable launch checked separately.",
+    "applicationCodeIdenticalToPreview28": true
+  },
+  "retainedAt": ".heritage/installers/syncshow/1.4.0-preview.28/5301a992638bdcc66a5253026658dd022320eda4/ci-34818135279/qa-package-macos-arm64/",
+  "limitations": [
+    "Development QA preview, not protected official release",
+    "No physical tablet/stylus, mixer, projector or venue-network acceptance",
+    "Public native dependency source/replacement materials and protected release configuration remain open"
+  ]
+}

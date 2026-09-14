@@ -1,18 +1,18 @@
 # SyncShow Community preview
 
-Version **1.4.0-preview.27** includes Community preparation, full-screen/lower-third/ticker translation, and paired tablet teaching. Translation screens can open without loading slides or starting Show. The shared console can also load the saved language, Quality/Economy, speech and note choices for a prepared service. The unified workspace pins the matching source alongside Heritage and Multilinguum.
+Version **1.4.0-preview.28** (build **140028**) includes Community preparation, full-screen/lower-third/ticker translation, and paired tablet teaching. The new pointer fades progressively over one second; the remote gallery lets the pastor choose nearby slides, and any remote's confirmed slide change shows a wide notice on the host control screen. Translation screens can open without loading slides or starting Show. The shared console also loads saved language, Quality/Economy, speech and note choices for a prepared service.
 
 ## Install on a Mac
 
 Use the installer for your Mac: `arm64` for Apple Silicon, or `x64` for Intel. The verified Apple Silicon installer and checksum evidence are retained under:
 
 ```
-.heritage/installers/syncshow/1.4.0-preview.27/0b350709b3c237adc195938a15c601a498def010/ci-34762620729/qa-package-macos-arm64/
+.heritage/installers/syncshow/1.4.0-preview.28/5301a992638bdcc66a5253026658dd022320eda4/ci-34818135279/qa-package-macos-arm64/
 ```
 
 1. Quit any running SyncShow copy.
 2. Open the DMG and copy SyncShow to Applications. Keep your previous app copy until your church rehearsal passes.
-3. Open the new copy and check that About shows `1.4.0-preview.27`.
+3. Open the new copy and check that About shows `1.4.0-preview.28`.
 
 The preview uses the normal SyncShow settings and service library. Automated package checks use a separate temporary profile. The Mac preview is ad-hoc signed and is not notarized; use macOS's per-app Open Anyway action if it blocks this known preview.
 
@@ -25,12 +25,13 @@ Connect **Heritage Community** to `https://wotbc.heritage.faith` and approve its
 - Configure each congregation output as full-screen translation, lower third, ticker or hidden. These outputs do not display the pulpit video.
 - Without a presentation, choose **Open screen** to use that output for translation alone. **Hide** leaves it black; **Close screen** returns to the desktop. Starting a slide Show takes over its outputs after the normal preflight succeeds. None of these screen controls starts or stops the shared translation session.
 - Open **Remote Control**, pair the tablet on the same network, expand **Teach** and select the congregation output. Use pen/highlighter, colors, Undo and Clear ink. **Stylus only** is optional and off initially; leave it off if the browser reports the pen as touch or mouse.
+- Choose **Pointer** for temporary emphasis: each part of the trail fades after about one second, even while you keep drawing. It does not alter saved ink. Open the slide gallery to see the current slide and its neighbors; **Show all** expands the list. A confirmed slide selection or previous/next action from any paired remote produces a six-second notice on the host control screen, with a dismiss button. Projection and stage screens do not show that notice.
 - Congregants use `/live` for the YouTube player with translation choices, or `/translate` for translation without video.
 
 ## Build and verify another platform
 
 Run `node bin/heritage.mjs bootstrap`, then open the pinned SyncShow folder reported by `node bin/heritage.mjs status`. Use Node.js 24, `npm ci`, `npm run ci`, and the native platform build command from [SyncShow's preview guide](https://github.com/edydex/SyncShow/blob/codex/heritage-live-translation/docs/COMMUNITY_PREVIEW.md).
 
-The [integration PR](https://github.com/edydex/SyncShow/pull/7) runs source tests and creates temporary QA packages for Windows x64, Linux x64 and both Mac architectures. Those GitHub artifacts expire after seven days. The final Preview 27 copies are retained locally under the same source-revision folder in `ci-34762620729/qa-package-<target>/`, covering Windows, Linux and both Mac architectures. Both Mac jobs verify the complete ad-hoc signature; the downloaded Apple Silicon app was independently verified again. Earlier previews remain available in their version folders. The earlier Preview 27 run `34761975006` is diagnostic evidence and should not be used for Mac installation because its PR build skipped signing. This development preview is separate from the protected public-release workflow.
+The [integration PR](https://github.com/edydex/SyncShow/pull/7) runs source tests and creates temporary QA packages for Windows x64, Linux x64 and both Mac architectures. Preview 28's [package workflow](https://github.com/edydex/SyncShow/actions/runs/34818135279) passed all four targets. These GitHub artifacts expire after seven days. The Apple Silicon installer is retained locally at the path above; its signature, source correspondence and actual executable launch were independently verified. Earlier retained previews remain in their version folders. This development QA preview is separate from the protected public-release workflow.
 
-Physical tablet, mixer, venue-network and bilingual-provider acceptance remain to be done. Paid provider testing remains $0 of the authorized $20 allowance. See the [Preview 27 verification record](verification/2026-09-13-service-translation-plans.md) for the exact tested revision and package evidence.
+Physical tablet, mixer and venue-network acceptance remain to be done. A bounded real-sermon provider test ran on the original Multilinguum host, but exposed recognition errors; it does not establish WOTBC delivery or translation quality. See the [Preview 28 record](verification/2026-09-14-desktop-preview-28.md) and [API-test budget](verification/api-test-budget.json).

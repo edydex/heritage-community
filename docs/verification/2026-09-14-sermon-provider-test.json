@@ -1,0 +1,180 @@
+{
+  "date": "2026-09-14",
+  "sourceRevision": "21a9576edd1f898ead1be214c90ee271df6bcba1",
+  "host": "Original Multilinguum container on vr-mayos",
+  "runtime": {
+    "node": "24.20.0",
+    "openai": "7.8.0",
+    "ws": "8.21.3",
+    "zod": "4.4.3"
+  },
+  "audio": {
+    "sourceUrl": "https://www.youtube.com/watch?v=rULLyk5e8Yg&t=2492s",
+    "title": "Сохраняйте то, что создал Бог / От боли к единству – 10",
+    "startSeconds": 2492,
+    "durationSeconds": 45,
+    "format": "mono PCM16 48kHz",
+    "sha256": "ae03f811c7c676747248ac6c1e25c9cec6482a866651f3e66e4d5306e96dce12"
+  },
+  "baseline": {
+    "apiRequestsPassed": true,
+    "qualityAccepted": false,
+    "models": [
+      "gpt-live-transcribe",
+      "gpt-6-astra"
+    ],
+    "sessions": [
+      {
+        "id": "wotbc-sermon-ru",
+        "sourceLanguage": "ru",
+        "targetLanguage": "en",
+        "audioSeconds": 45.0,
+        "partialCount": 170,
+        "finalSegments": 6,
+        "firstPartialMs": 761,
+        "finalTranscriptLagMs": {
+          "min": 415,
+          "median": 546.0,
+          "max": 706
+        },
+        "translationLatencyMs": 14637,
+        "errors": []
+      },
+      {
+        "id": "synthetic-en",
+        "sourceLanguage": "en",
+        "targetLanguage": "ru",
+        "audioSeconds": 10.48525,
+        "partialCount": 35,
+        "finalSegments": 2,
+        "firstPartialMs": 680,
+        "finalTranscriptLagMs": {
+          "min": 489,
+          "median": 579.5,
+          "max": 670
+        },
+        "translationLatencyMs": 8364,
+        "errors": []
+      }
+    ],
+    "usage": [
+      {
+        "input_tokens": 974,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 450,
+        "output_tokens_details": {
+          "reasoning_tokens": 159
+        },
+        "total_tokens": 1424
+      },
+      {
+        "input_tokens": 839,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 297,
+        "output_tokens_details": {
+          "reasoning_tokens": 115
+        },
+        "total_tokens": 1136
+      }
+    ]
+  },
+  "diagnostic": {
+    "apiRequestsPassed": true,
+    "changedProductionSettings": false,
+    "conditions": [
+      {
+        "id": "ru-high-eight-second-turns",
+        "sourceLanguage": "ru",
+        "targetLanguage": "en",
+        "audioSeconds": 45.0,
+        "partialCount": 169,
+        "finalSegments": 6,
+        "firstPartialMs": 1505,
+        "finalTranscriptLagMs": {
+          "min": 443,
+          "median": 639.0,
+          "max": 829
+        },
+        "translationLatencyMs": null,
+        "errors": []
+      },
+      {
+        "id": "ru-low-single-turn",
+        "sourceLanguage": "ru",
+        "targetLanguage": "en",
+        "audioSeconds": 45.0,
+        "partialCount": 166,
+        "finalSegments": 1,
+        "firstPartialMs": 675,
+        "finalTranscriptLagMs": {
+          "min": 490,
+          "median": 490,
+          "max": 490
+        },
+        "translationLatencyMs": null,
+        "errors": []
+      }
+    ]
+  },
+  "fileComparison": {
+    "reservationId": "2026-09-14-original-host-reference-03",
+    "model": "gpt-transcribe",
+    "scope": "Independent whole-file diagnostic, not a human reference or deployed live pipeline.",
+    "audioSeconds": 45,
+    "startedAt": "2026-09-14T08:02:41.721Z",
+    "status": "passed",
+    "requests": 1,
+    "httpStatus": 200,
+    "latencyMs": 2970,
+    "languages": [
+      {
+        "code": "ru"
+      }
+    ],
+    "usage": {
+      "type": "duration",
+      "seconds": 45
+    },
+    "endedAt": "2026-09-14T08:02:44.754Z"
+  },
+  "conservativeBudgetUsedUsd": 0.12,
+  "budgetReservedUsd": 0,
+  "accountBillVerified": false,
+  "findings": [
+    "Both translation directions returned valid text and no provider errors.",
+    "Synthetic English final transcript damaged the known last sentence; translation recovered its meaning.",
+    "Streaming Russian repeatedly recognized искажение where the independent whole-file model returned снисхождение.",
+    "Higher delay and one final commit did not resolve the key term in this sample.",
+    "Whole-file GPT-Transcribe returned coherent Russian in 2970ms after upload, but this is not live latency or a human reference."
+  ],
+  "limitations": [
+    "No human word-aligned ground truth or formal WER/quality score.",
+    "Baseline uses direct providers with eight-second commits; the actual capture pipeline also detects source pauses.",
+    "Whole transcript translation was requested after ASR completed, so 14.637s/8.364s are request durations, not live display latency.",
+    "No WOTBC configuration, manager UI, LiveKit, generated speech, microphone/mixer or phone playback acceptance.",
+    "No credentials left their existing original container environment."
+  ],
+  "nextActions": [
+    "Compare GPT-Transcribe on committed speech turns against the real capture pipeline before changing the Quality default.",
+    "Review audio and transcript with a bilingual listener and a second representative excerpt.",
+    "After recognition is reliable, test context notes, Economy and speech on/off, then WOTBC delivery and physical devices."
+  ],
+  "retainedAt": ".heritage/rehearsals/2026-09-14/sermon-providers/",
+  "evidenceFiles": {
+    "original-host-result.json": "2e054b88e2c3ff630f8d84c9117647f70984ce1b341d927b956ae3f69b735bbf",
+    "original-host-asr-diagnostic-result.json": "6e2531d17ddb77cab31aa8d10951b30bd399e7a612543950d8dc46ebcf498d99",
+    "original-host-file-reference-result.json": "bd1a70564efa8fd4aed503d1d76bac3ec42491b932e074ff9517fafd56d490ca",
+    "original-host-bundle-manifest.json": "7f52ad370d0db2fbbd27fd799efaf8a35785980055dff2ac3b1be00791b414d0"
+  },
+  "terminologyComparison": {
+    "streaming": "искажение",
+    "wholeFile": "снисхождение",
+    "englishTranslationInferred": "forbearance"
+  }
+}
