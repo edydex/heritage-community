@@ -1,0 +1,3 @@
+# Preserve the exact recorded recipe and unified-patch context bytes.
+docs/verification/tools/libvips-rebuild/owned-posix.sh whitespace=-blank-at-eof
+docs/verification/tools/libvips-rebuild/recipe-adaptations.patch whitespace=-blank-at-eol

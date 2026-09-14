@@ -1,0 +1,1082 @@
+{
+  "date": "2026-09-14",
+  "scope": "Apple Silicon source rebuild and owner replacement of libvips in trusted ad-hoc Preview 28 QA copies; combined native-library headless acceptance. Not an official release or physical-service result.",
+  "syncshowSource": "5301a992638bdcc66a5253026658dd022320eda4",
+  "build": {
+    "exitCode": 0,
+    "seconds": 308.23635482788086,
+    "log": "libvips-build.log",
+    "recipe": "/private/tmp/heritage-unified-20260912/libvips-rebuild-20260914/sharp-libvips-4da6d14c0d59866adfb9d8cf52bcaa53846dc4f6",
+    "sourceMode": "retained source archives and vendored Rust crates; offline Cargo"
+  },
+  "recipeRevision": "4da6d14c0d59866adfb9d8cf52bcaa53846dc4f6",
+  "toolVersions": [
+    {
+      "command": [
+        "sw_vers"
+      ],
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.5.2\nBuildVersion:\t\t25F84\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "clang",
+        "--version"
+      ],
+      "stdout": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xcrun",
+        "--show-sdk-version"
+      ],
+      "stdout": "26.5\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/private/tmp/heritage-unified-20260912/libvips-rebuild-20260914/tools-venv/bin/meson",
+        "--version"
+      ],
+      "stdout": "1.12.0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/private/tmp/heritage-unified-20260912/libvips-rebuild-20260914/tools/bin/cargo-cbuild",
+        "--version"
+      ],
+      "stdout": "cargo-c 0.10.25+cargo-0.99.0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/private/tmp/heritage-unified-20260912/canvas-rebuild-20260914/rustup-home/toolchains/1.97.1-aarch64-apple-darwin/bin/rustc",
+        "--version"
+      ],
+      "stdout": "rustc 1.97.1 (8bab26f4f 2026-07-14)\n",
+      "stderr": ""
+    }
+  ],
+  "sources": {
+    "directArchives": 28,
+    "patches": 4,
+    "recipeArchives": 1,
+    "identicalArchiveRegularFilesAfterBuild": 29695,
+    "changedArchiveFiles": 30,
+    "missingArchiveFiles": 0,
+    "registryPackages": 345,
+    "verifiedVendorFiles": 18077,
+    "vendorNoticeCandidates": 628,
+    "compiledVendorDirectoriesObserved": 157,
+    "reviewedLockSha256": "39a321a47d50375109eeb75a6f50e1c43b3731be85bcd7a44661bb80c9f636b9",
+    "imagequantCaveat": "Retained v2.4.1 archive 47d2a84b7b1052975c9d50a3d4e3cacbf57b43d84a4c3131210848ead9964dfb is the current mutable-tag source. Original expected archive da531249... has not been recovered. This is an owned replacement build, not proof of original upstream source correspondence."
+  },
+  "staticLibraryFilesRetained": 40,
+  "exports": {
+    "originalTotal": 15616,
+    "ownedTotal": 15616,
+    "originalVipsApiCount": 1556,
+    "missingVipsApi": [],
+    "missingAll": [
+      "__RNvNtCskUS43YNaPst_3std9panicking11EMPTY_PANIC"
+    ],
+    "additionalAll": [
+      "__RNvNtCsa9BKTri5B3M_3std9panicking11EMPTY_PANIC"
+    ]
+  },
+  "combinedFiles": {
+    "asar": {
+      "path": "Contents/Resources/app.asar",
+      "bytes": 62304049,
+      "sha256": "3c712e03d691f39654d9955374664302f69aa5da44fe76e90bab95c341733291"
+    },
+    "libvips": {
+      "path": "Contents/Resources/app.asar.unpacked/node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.8.18.3.dylib",
+      "bytes": 17846496,
+      "sha256": "542d65f47998f615102cf87c289c3231da8312e013de60bd8877408b8609fa7a"
+    },
+    "canvas": {
+      "path": "Contents/Resources/app.asar.unpacked/node_modules/@napi-rs/canvas-darwin-arm64/skia.darwin-arm64.node",
+      "bytes": 26886112,
+      "sha256": "f1057158c38894f772dff964d0043a12ce822aae00a6990998881e6b275b326f"
+    },
+    "ffmpeg": {
+      "path": "Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+      "bytes": 3188352,
+      "sha256": "dc99d04164d2abf7758302cb0144d5294396cb8ab42db6a28f285858ab84d835"
+    }
+  },
+  "sharp": {
+    "comparison": {
+      "png": {
+        "encodedEqual": true,
+        "decodedEqual": true,
+        "dimensionsEqual": true,
+        "changedChannels": 0,
+        "maximumChannelDifference": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      },
+      "jpeg": {
+        "encodedEqual": true,
+        "decodedEqual": true,
+        "dimensionsEqual": true,
+        "changedChannels": 0,
+        "maximumChannelDifference": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      },
+      "webp": {
+        "encodedEqual": true,
+        "decodedEqual": true,
+        "dimensionsEqual": true,
+        "changedChannels": 0,
+        "maximumChannelDifference": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      },
+      "avif": {
+        "encodedEqual": true,
+        "decodedEqual": true,
+        "dimensionsEqual": true,
+        "changedChannels": 0,
+        "maximumChannelDifference": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      },
+      "tiff": {
+        "encodedEqual": true,
+        "decodedEqual": true,
+        "dimensionsEqual": true,
+        "changedChannels": 0,
+        "maximumChannelDifference": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      },
+      "gif": {
+        "encodedEqual": true,
+        "decodedEqual": true,
+        "dimensionsEqual": true,
+        "changedChannels": 0,
+        "maximumChannelDifference": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      },
+      "palettePng": {
+        "encodedEqual": true,
+        "decodedEqual": true,
+        "dimensionsEqual": true,
+        "changedChannels": 0,
+        "maximumChannelDifference": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      },
+      "pangoText": {
+        "encodedEqual": true,
+        "decodedEqual": true,
+        "dimensionsEqual": true,
+        "changedChannels": 0,
+        "maximumChannelDifference": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      }
+    },
+    "baseline": {
+      "app": "/private/tmp/heritage-unified-20260912/qa-34818135279/macos-arm64/mac-arm64/SyncShow.app",
+      "versions": {
+        "aom": "3.14.1",
+        "archive": "3.8.8",
+        "cairo": "1.18.4",
+        "cgif": "0.5.3",
+        "exif": "0.6.26",
+        "expat": "2.8.2",
+        "ffi": "3.6.0",
+        "fontconfig": "2.18.1",
+        "freetype": "2.14.3",
+        "fribidi": "1.0.16",
+        "glib": "2.89.1",
+        "harfbuzz": "14.2.1",
+        "heif": "1.23.1",
+        "highway": "1.4.0",
+        "imagequant": "2.4.1",
+        "lcms": "2.19.1",
+        "mozjpeg": "0826579",
+        "pango": "1.58.0",
+        "pixman": "0.46.4",
+        "png": "1.6.58",
+        "proxy-libintl": "0.5",
+        "rsvg": "2.62.90",
+        "tiff": "d01a94b",
+        "uhdr": "1acdbed",
+        "vips": "8.18.3",
+        "webp": "1.6.0",
+        "xml2": "2.15.3",
+        "zlib-ng": "2.3.3",
+        "sharp": "0.35.3"
+      },
+      "outputs": {
+        "png": {
+          "bytes": 47468,
+          "encodedSha256": "b754af7c8e02f5885175534b42d5608cff0f37f9ea0f339676d17a26e70ee67d",
+          "decodedSha256": "2f5297362f61e643372c3bbcb7442984a4fc46095c24790987bc13410c7be442",
+          "format": "png",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "jpeg": {
+          "bytes": 30271,
+          "encodedSha256": "4e2950936c024b432424eafd79a716a046c14e3423d874400ae1da9a89b8d6e7",
+          "decodedSha256": "76abdf38a90b8529049ad80a4a3f7b0370e4ff415948dc65eadeba9274e6eddc",
+          "format": "jpeg",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "webp": {
+          "bytes": 14802,
+          "encodedSha256": "e786db5532c855ca2ad1903cec4d84bb5cca8fd77703bd3dd8723dcb73b97133",
+          "decodedSha256": "9d7a061c8fd0b4c53f61ccda438f3ab779d3b0cf56ab82061c543088ba3ab716",
+          "format": "webp",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "avif": {
+          "bytes": 37138,
+          "encodedSha256": "8828a3152588ad99449a1e327791a2f2fef4437f349890bf1bd1f5a629aa8518",
+          "decodedSha256": "2f5297362f61e643372c3bbcb7442984a4fc46095c24790987bc13410c7be442",
+          "format": "heif",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "tiff": {
+          "bytes": 98602,
+          "encodedSha256": "e2628e88a3db318ef08e16b71c5cbc2e4a8bb2e2aee747452c4c4717c1fc3e03",
+          "decodedSha256": "2f5297362f61e643372c3bbcb7442984a4fc46095c24790987bc13410c7be442",
+          "format": "tiff",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "gif": {
+          "bytes": 61428,
+          "encodedSha256": "b53189dccd5c51e887ff3702ced71a10fe7cc1efbbee2515a0fdfd09f8f17232",
+          "decodedSha256": "ce6ee06770889862250aac74e517d30c5258d24b66b821cdfad9df9f0cdaa0a3",
+          "format": "gif",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "palettePng": {
+          "bytes": 44572,
+          "encodedSha256": "550e401e4f6834ddf182861cd655a8ff179f7ea63061a043a55b2fd6c834c619",
+          "decodedSha256": "472c710ac2080c23130b56914f51f9858c095b01e8c151a3cd80f180753d0221",
+          "format": "png",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "pangoText": {
+          "bytes": 3364,
+          "encodedSha256": "8b3583b07e94ecb9594a757ccbc81ae087ec73af5efe0c8c7eb533b782f0ef01",
+          "decodedSha256": "ec61770f517042e668b114f1e3b83505718a84b3a1ee469ab8c8858b65d3d9c2",
+          "format": "png",
+          "width": 217,
+          "height": 59,
+          "channels": 4
+        }
+      },
+      "loadedLibraries": [
+        "/private/tmp/heritage-unified-20260912/qa-34818135279/macos-arm64/mac-arm64/SyncShow.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+        "/private/tmp/heritage-unified-20260912/qa-34818135279/macos-arm64/mac-arm64/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.8.18.3.dylib"
+      ],
+      "formats": {
+        "jpeg": {
+          "id": "jpeg",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".jpg",
+              ".jpeg",
+              ".jpe",
+              ".jfif"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "alias": [
+              "jpe",
+              "jpg"
+            ]
+          }
+        },
+        "png": {
+          "id": "png",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".png"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true
+          }
+        },
+        "webp": {
+          "id": "webp",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".webp"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true
+          }
+        },
+        "tiff": {
+          "id": "tiff",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".tif",
+              ".tiff"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "alias": [
+              "tif"
+            ]
+          }
+        },
+        "magick": {
+          "id": "magick",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "openslide": {
+          "id": "openslide",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "dz": {
+          "id": "dz",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true
+          }
+        },
+        "ppm": {
+          "id": "ppm",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "fits": {
+          "id": "fits",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "gif": {
+          "id": "gif",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".gif"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true
+          }
+        },
+        "svg": {
+          "id": "svg",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".svg",
+              ".svgz",
+              ".svg.gz"
+            ]
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "heif": {
+          "id": "heif",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".avif"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "alias": [
+              "avif"
+            ]
+          }
+        },
+        "pdf": {
+          "id": "pdf",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "vips": {
+          "id": "vips",
+          "input": {
+            "file": true,
+            "buffer": false,
+            "stream": false,
+            "fileSuffix": [
+              ".v",
+              ".vips"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "jp2": {
+          "id": "jp2",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false,
+            "alias": [
+              "j2c",
+              "j2k",
+              "jp2",
+              "jpx"
+            ]
+          }
+        },
+        "jxl": {
+          "id": "jxl",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "rad": {
+          "id": "rad",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "dcraw": {
+          "id": "dcraw",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "raw": {
+          "id": "raw",
+          "input": {
+            "file": false,
+            "buffer": true,
+            "stream": true
+          },
+          "output": {
+            "file": false,
+            "buffer": true,
+            "stream": true
+          }
+        }
+      },
+      "electron": "43.2.0"
+    },
+    "rebuilt": {
+      "app": "/private/tmp/heritage-unified-20260912/libvips-rebuild-20260914/source-vips-preview/SyncShow.app",
+      "versions": {
+        "aom": "3.14.1",
+        "archive": "3.8.8",
+        "cairo": "1.18.4",
+        "cgif": "0.5.3",
+        "exif": "0.6.26",
+        "expat": "2.8.2",
+        "ffi": "3.6.0",
+        "fontconfig": "2.18.1",
+        "freetype": "2.14.3",
+        "fribidi": "1.0.16",
+        "glib": "2.89.1",
+        "harfbuzz": "14.2.1",
+        "heif": "1.23.1",
+        "highway": "1.4.0",
+        "imagequant": "2.4.1",
+        "lcms": "2.19.1",
+        "mozjpeg": "0826579",
+        "pango": "1.58.0",
+        "pixman": "0.46.4",
+        "png": "1.6.58",
+        "proxy-libintl": "0.5",
+        "rsvg": "2.62.90",
+        "tiff": "d01a94b",
+        "uhdr": "1acdbed",
+        "vips": "8.18.3",
+        "webp": "1.6.0",
+        "xml2": "2.15.3",
+        "zlib-ng": "2.3.3",
+        "sharp": "0.35.3"
+      },
+      "outputs": {
+        "png": {
+          "bytes": 47468,
+          "encodedSha256": "b754af7c8e02f5885175534b42d5608cff0f37f9ea0f339676d17a26e70ee67d",
+          "decodedSha256": "2f5297362f61e643372c3bbcb7442984a4fc46095c24790987bc13410c7be442",
+          "format": "png",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "jpeg": {
+          "bytes": 30271,
+          "encodedSha256": "4e2950936c024b432424eafd79a716a046c14e3423d874400ae1da9a89b8d6e7",
+          "decodedSha256": "76abdf38a90b8529049ad80a4a3f7b0370e4ff415948dc65eadeba9274e6eddc",
+          "format": "jpeg",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "webp": {
+          "bytes": 14802,
+          "encodedSha256": "e786db5532c855ca2ad1903cec4d84bb5cca8fd77703bd3dd8723dcb73b97133",
+          "decodedSha256": "9d7a061c8fd0b4c53f61ccda438f3ab779d3b0cf56ab82061c543088ba3ab716",
+          "format": "webp",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "avif": {
+          "bytes": 37138,
+          "encodedSha256": "8828a3152588ad99449a1e327791a2f2fef4437f349890bf1bd1f5a629aa8518",
+          "decodedSha256": "2f5297362f61e643372c3bbcb7442984a4fc46095c24790987bc13410c7be442",
+          "format": "heif",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "tiff": {
+          "bytes": 98602,
+          "encodedSha256": "e2628e88a3db318ef08e16b71c5cbc2e4a8bb2e2aee747452c4c4717c1fc3e03",
+          "decodedSha256": "2f5297362f61e643372c3bbcb7442984a4fc46095c24790987bc13410c7be442",
+          "format": "tiff",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "gif": {
+          "bytes": 61428,
+          "encodedSha256": "b53189dccd5c51e887ff3702ced71a10fe7cc1efbbee2515a0fdfd09f8f17232",
+          "decodedSha256": "ce6ee06770889862250aac74e517d30c5258d24b66b821cdfad9df9f0cdaa0a3",
+          "format": "gif",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "palettePng": {
+          "bytes": 44572,
+          "encodedSha256": "550e401e4f6834ddf182861cd655a8ff179f7ea63061a043a55b2fd6c834c619",
+          "decodedSha256": "472c710ac2080c23130b56914f51f9858c095b01e8c151a3cd80f180753d0221",
+          "format": "png",
+          "width": 960,
+          "height": 540,
+          "channels": 4
+        },
+        "pangoText": {
+          "bytes": 3364,
+          "encodedSha256": "8b3583b07e94ecb9594a757ccbc81ae087ec73af5efe0c8c7eb533b782f0ef01",
+          "decodedSha256": "ec61770f517042e668b114f1e3b83505718a84b3a1ee469ab8c8858b65d3d9c2",
+          "format": "png",
+          "width": 217,
+          "height": 59,
+          "channels": 4
+        }
+      },
+      "loadedLibraries": [
+        "/private/tmp/heritage-unified-20260912/libvips-rebuild-20260914/source-vips-preview/SyncShow.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+        "/private/tmp/heritage-unified-20260912/libvips-rebuild-20260914/source-vips-preview/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.8.18.3.dylib"
+      ],
+      "formats": {
+        "jpeg": {
+          "id": "jpeg",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".jpg",
+              ".jpeg",
+              ".jpe",
+              ".jfif"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "alias": [
+              "jpe",
+              "jpg"
+            ]
+          }
+        },
+        "png": {
+          "id": "png",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".png"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true
+          }
+        },
+        "webp": {
+          "id": "webp",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".webp"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true
+          }
+        },
+        "tiff": {
+          "id": "tiff",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".tif",
+              ".tiff"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "alias": [
+              "tif"
+            ]
+          }
+        },
+        "magick": {
+          "id": "magick",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "openslide": {
+          "id": "openslide",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "dz": {
+          "id": "dz",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true
+          }
+        },
+        "ppm": {
+          "id": "ppm",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "fits": {
+          "id": "fits",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "gif": {
+          "id": "gif",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".gif"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true
+          }
+        },
+        "svg": {
+          "id": "svg",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".svg",
+              ".svgz",
+              ".svg.gz"
+            ]
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "heif": {
+          "id": "heif",
+          "input": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "fileSuffix": [
+              ".avif"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": true,
+            "stream": true,
+            "alias": [
+              "avif"
+            ]
+          }
+        },
+        "pdf": {
+          "id": "pdf",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "vips": {
+          "id": "vips",
+          "input": {
+            "file": true,
+            "buffer": false,
+            "stream": false,
+            "fileSuffix": [
+              ".v",
+              ".vips"
+            ]
+          },
+          "output": {
+            "file": true,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "jp2": {
+          "id": "jp2",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false,
+            "alias": [
+              "j2c",
+              "j2k",
+              "jp2",
+              "jpx"
+            ]
+          }
+        },
+        "jxl": {
+          "id": "jxl",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "rad": {
+          "id": "rad",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "dcraw": {
+          "id": "dcraw",
+          "input": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          },
+          "output": {
+            "file": false,
+            "buffer": false,
+            "stream": false
+          }
+        },
+        "raw": {
+          "id": "raw",
+          "input": {
+            "file": false,
+            "buffer": true,
+            "stream": true
+          },
+          "output": {
+            "file": false,
+            "buffer": true,
+            "stream": true
+          }
+        }
+      },
+      "electron": "43.2.0"
+    },
+    "combinedMatchesBaseline": true
+  },
+  "canvasCombinedMatchesOriginal": true,
+  "combinedMedia": [
+    {
+      "codec": "aac",
+      "codecVersion": 4071780,
+      "frames": 141,
+      "samples": 144384,
+      "channels": 1,
+      "sampleRate": 48000,
+      "width": 0,
+      "height": 0,
+      "sampleFormat": 8,
+      "fixture": "tone-aac.m4a",
+      "decodedSha256": "158810c697c0fe155cd274c2a0a848e2357a867ff98f04b67d4de262897bc2b7"
+    },
+    {
+      "codec": "libopus",
+      "codecVersion": 4071780,
+      "frames": 151,
+      "samples": 144000,
+      "channels": 1,
+      "sampleRate": 48000,
+      "width": 0,
+      "height": 0,
+      "sampleFormat": 1,
+      "fixture": "tone-opus.ogg",
+      "decodedSha256": "93d3e0512fe9a36d26110bb022e5c3fa1567c49a1c1c43ee2444e16d8107d9a3"
+    },
+    {
+      "codec": "h264",
+      "codecVersion": 4071780,
+      "frames": 45,
+      "samples": 0,
+      "channels": 0,
+      "sampleRate": 0,
+      "width": 320,
+      "height": 180,
+      "sampleFormat": -1,
+      "fixture": "pattern-h264.mp4",
+      "decodedSha256": "ad6e41de1bd960f28c5febaede01c46be69d99264c736820f38b0096608ec4da"
+    }
+  ],
+  "signaturesPassed": true,
+  "packagedRuntimePassed": true,
+  "releaseLegalStatus": "blocked",
+  "initialProbeCorrection": "Initial image operations succeeded, but the check matched libvips in the parent folder name and incorrectly counted unrelated loaded libraries. Inspection showed the intended copied libraries. Matching basenames corrected the probe; the rerun passed. Initial script/log/result are retained.",
+  "retained": {
+    "relativeRoot": ".heritage/rehearsals/2026-09-14/libvips-source-rebuild",
+    "fileCount": 178,
+    "totalBytes": 157602557,
+    "archives": [
+      {
+        "path": "build-tools.tar.gz",
+        "bytes": 40058015,
+        "sha256": "1569d91165fe0086d2ef8df0d7441f945f40706361053a430ef0ed739023216f"
+      },
+      {
+        "path": "relink-target.tar.gz",
+        "bytes": 43526135,
+        "sha256": "babe89cb135d1f00c7dff6513b7bc923b585a4c910d6854f08c609d6e57fa33f"
+      },
+      {
+        "path": "render-results.tar.gz",
+        "bytes": 3183175,
+        "sha256": "f3dc2c9db10309871adf3d341db96630433fc75c7aea98562a297e4a9cd032d1"
+      },
+      {
+        "path": "rsvg-vendor.tar.gz",
+        "bytes": 39315532,
+        "sha256": "1ef3cba1b2e432378f98e53e82917d085975d495349d67352f16dc86d007e77b"
+      }
+    ],
+    "manifestSha256": "d6a73cf8cf5c250ea80ddf73d2cdfd8bde0f191aa354e84d0a307f6c5164b41f"
+  },
+  "remaining": [
+    "Other native platforms",
+    "Public source and final packaged notice distribution",
+    "GUI media and physical projector/tablet/service acceptance",
+    "Protected official desktop release configuration",
+    "WOTBC provider and manager setup and remaining resource/device acceptance"
+  ],
+  "paidProviderRequestsThisCheckpoint": 0,
+  "componentPinsChanged": false,
+  "deployedServerChanged": false
+}

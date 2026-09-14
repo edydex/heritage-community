@@ -86,3 +86,9 @@ An owned Apple Silicon Canvas Rust/C++ wrapper now builds offline from a retaine
 ## Full Mac Skia follow-up — September 14
 
 Skia and the Canvas wrapper now both compile from the retained source set on Apple Silicon. The 1,667 compilation commands use source bytes verified against the pinned archives, plus one generated ICU assembly input. A signed Preview 28 owner copy preserves all retained image/text/PDF outputs and passes the packaged runtime check. [Build recipe, input inventory and remaining limits](2026-09-14-skia-source-rebuild.md). This supersedes the earlier Mac Skia prebuilt-library limitation; other targets, distribution materials and the remaining release gates are still open.
+
+## Mac libvips and combined source-build follow-up — September 14
+
+libvips now builds from the 28 retained direct archives, four patches and a fully vendored 345-package Rust lockfile. Its separately signed Preview 28 copy preserves all eight tested image/text outputs exactly. A combined copy also loads the earlier source-built Canvas/Skia and FFmpeg libraries and passes image, PDF, direct media-decoding and packaged-runtime checks. Static libraries, headers, configurations, modified sources and logs are retained for rebuilding and relinking. [Exact build and acceptance record](2026-09-14-libvips-source-rebuild.md).
+
+This closes the Mac libvips source-build/replacement gap. It uses the documented current libimagequant archive for an owned replacement; it does not recover the missing original upstream archive or establish bit-identical historical source correspondence. Other native platforms, public source/final notice distribution, GUI/physical-service checks and protected release configuration remain open. No gate or compatible-set pin changed.
