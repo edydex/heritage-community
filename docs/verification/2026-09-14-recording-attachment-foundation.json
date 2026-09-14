@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-14",
+  "feature": "Reviewed recording attachment prerequisites",
+  "status": "source published; attachment interface and delivery unfinished",
+  "source": {
+    "heritage": "83e180b8de6aa7501fe465b707e24ae214aea2c3",
+    "syncshow": "15fe0d784f13f8598b565002123dc062f9a696b3"
+  },
+  "deployedThisStep": false,
+  "newAcceptedInstaller": false,
+  "checks": {
+    "heritageTypecheck": true,
+    "heritageProtocol": {
+      "passed": 275,
+      "failed": 0
+    },
+    "syncshowFull": {
+      "passed": 2242,
+      "skipped": 2,
+      "failed": 0
+    },
+    "postgresLifecycleScenarios": 4,
+    "preview29DiscoveryCompatible": true
+  },
+  "ci": {
+    "heritage": {
+      "id": 34872051486,
+      "conclusion": "success",
+      "headSha": "83e180b8de6aa7501fe465b707e24ae214aea2c3",
+      "jobs": [
+        {
+          "name": "production-stack",
+          "conclusion": "success"
+        },
+        {
+          "name": "syncshow-sermon-history-live",
+          "conclusion": "success"
+        },
+        {
+          "name": "syncshow-payload-live",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "syncshow": {
+      "id": 34872066538,
+      "conclusion": "success",
+      "headSha": "15fe0d784f13f8598b565002123dc062f9a696b3",
+      "jobs": [
+        {
+          "name": "Test (macos-latest)",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test (windows-latest)",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test (ubuntu-latest)",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test (macos-15-intel)",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "syncshowPackage": {
+      "id": 34872066617,
+      "conclusion": "success",
+      "headSha": "15fe0d784f13f8598b565002123dc062f9a696b3",
+      "jobs": [
+        {
+          "name": "Shared broad gate",
+          "conclusion": "success"
+        },
+        {
+          "name": "QA package (windows-x64)",
+          "conclusion": "success"
+        },
+        {
+          "name": "QA package (macos-arm64)",
+          "conclusion": "success"
+        },
+        {
+          "name": "QA package (linux-x64)",
+          "conclusion": "success"
+        },
+        {
+          "name": "QA package (macos-x64)",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "status": "all passed"
+  },
+  "apiCostThisStepUsd": 0,
+  "accountedApiBudgetUsd": 0.79,
+  "limitations": [
+    "No real WOTBC manager login or browser upload in this step.",
+    "Direct archive attachment, private playback and explicit publication of retained recordings remain to be built.",
+    "No full-sermon or physical-device acceptance.",
+    "Component pins retain the previously verified deployment and Preview 29."
+  ],
+  "evidenceRoot": ".heritage/rehearsals/2026-09-14/recording-storage"
+}
