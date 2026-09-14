@@ -1,0 +1,464 @@
+{
+  "checkedOn": "2026-09-14",
+  "source": {
+    "heritage": "21d3ad925144aa512d8e6bff4ce354d93aef9c11",
+    "multilinguum": "c92aafe9f317e514240bd9621e2945448d9741d2",
+    "syncshow": "3ae4f2b688de9346c3c4d755fdef1544055ff03d"
+  },
+  "local": {
+    "communityTestsPassed": 18,
+    "communityProductionBuild": true,
+    "multilinguumFullCheckTests": 160,
+    "processorTestsAfterCiCorrection": 106,
+    "syncshowFocusedTests": 56,
+    "syncshowBroadTestsPassed": 2238,
+    "syncshowBroadTestsSkipped": 2,
+    "httpAcceptance": [
+      {
+        "path": "/api/community/translation/access",
+        "paired": false,
+        "status": 401
+      },
+      {
+        "path": "/api/community/translation/access",
+        "paired": true,
+        "status": 200
+      },
+      {
+        "path": "/api/community/service-documents",
+        "paired": false,
+        "status": 401
+      },
+      {
+        "path": "/api/community/service-documents",
+        "paired": true,
+        "status": 200
+      },
+      {
+        "purpose": "archive-review",
+        "connection": "approved",
+        "status": 200
+      },
+      {
+        "path": "/translation/api/archives",
+        "status": 200,
+        "completedRecords": 2
+      },
+      {
+        "purpose": "archive-review",
+        "connection": "control-only",
+        "status": 401
+      }
+    ],
+    "integrationTestsPassed": 11
+  },
+  "native": {
+    "windowClass": "TranslationOperatorWindow",
+    "realDatabaseAuthorization": true,
+    "approvedAccessExchanges": 3,
+    "recordedServicesListed": 2,
+    "englishAudioAndRussianTextOnly": true,
+    "russianOriginalAndEnglishTextOnly": true,
+    "wordSeekPlayedSyntheticAudio": true,
+    "reviewSurvivedControlRenewal": true,
+    "controlOnlyConnectionRemainedConnected": true,
+    "controlOnlyArchiveAccessDenied": true,
+    "pairingApprovalUiTested": false,
+    "installedDesktopPackageTested": false
+  },
+  "ordinaryBrowser": {
+    "syntheticManagerLogin": true,
+    "returnedToSharedControls": true,
+    "reviewedRussianTextOnlyRecord": true,
+    "signedOutAndClosed": true
+  },
+  "fixtureStopped": true,
+  "microphoneConnected": false,
+  "paidProviderRequests": 0,
+  "mailSent": false,
+  "limitations": [
+    "Synthetic fixtures do not establish sermon recognition or translation quality.",
+    "Real WOTBC manager and device-pair approval flows remain unverified.",
+    "Review does not attach or publish a transcript or recording to a sermon.",
+    "An archive loads available audio into browser memory; full-service memory and phone acceptance remain open."
+  ],
+  "expectedRuntimeHashes": {
+    "server.js": "afa500a86e2de04ccbfb8ed0431fa91ff1453435b0bd9be732715debbe9faea0",
+    "control-access.js": "f8fb37c7bcfbd273dba36490e97f4b7af06ba7d68418d3c1df975c574d91aadb",
+    "session-engine.js": "f38f24568d3c77ed9ce00bd715f55c22baff77f73661dac20713ec3b33fa0479",
+    "archive-store.js": "82c368eb08ee907bec1b507f6c38a765c52470d0a6d6a5fd5c7f9b156e664c5a",
+    "openai-cascade.js": "8f17fbddc4fb3a98df012fd748d6480957576e244fc42d26cc6500d8a18f6957",
+    "translation-profiles.js": "fcd9b32e45a674ada6bc1b721d862040995a124da680d4c5ece57d4dc2b7dad3",
+    "operator.js": "d3d0a89932358a084a3363f9a92db6594c3892e8174bd1b1db6a642efa3a9af7",
+    "usage.js": "39342cc769d0a532cfd4acc8c44dd230f0e2927b7b90b6457495b30c7f484506"
+  },
+  "ci": {
+    "heritage": {
+      "headSha": "21d3ad925144aa512d8e6bff4ce354d93aef9c11",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/edydex/heritage_study_bible/actions/runs/34865763395"
+    },
+    "multilinguum": {
+      "headSha": "c92aafe9f317e514240bd9621e2945448d9741d2",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/edydex/multilinguum/actions/runs/34866523137"
+    },
+    "syncshow-source": {
+      "headSha": "3ae4f2b688de9346c3c4d755fdef1544055ff03d",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/edydex/SyncShow/actions/runs/34866463395"
+    },
+    "syncshow-package": {
+      "headSha": "3ae4f2b688de9346c3c4d755fdef1544055ff03d",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/edydex/SyncShow/actions/runs/34866463241"
+    }
+  },
+  "preview29": {
+    "version": "1.4.0-preview.29",
+    "builtMergeRevision": "d15d5039fe46c06367383b73418d18dceccda916",
+    "sourceRevision": "3ae4f2b688de9346c3c4d755fdef1544055ff03d",
+    "applicationFilesCompared": 324,
+    "omittedSource": [
+      "src/renderer/test-thumbnails.html"
+    ],
+    "installerChecksums": [
+      {
+        "path": "SyncShow-1.4.0-preview.29-arm64.dmg",
+        "size": 158884279,
+        "sha256": "455aa01ecb815bc136dc6688320fd06b5d144cc5d00445b261a0ca16c188edef"
+      },
+      {
+        "path": "SyncShow-1.4.0-preview.29-arm64.zip",
+        "size": 159176189,
+        "sha256": "54f1d1ea1ac141f96a630f9e1579657ae2943d73532cbc24aae5259bab10d7b5"
+      }
+    ],
+    "runtimeAndSignaturePassed": true,
+    "actualLocalLaunch": {
+      "version": "1.4.0-preview.29",
+      "launch": "passed",
+      "observedUsing": "Codex computer use",
+      "pageTitle": "SyncShow \u2014 Load",
+      "pageUrl": "file:///private/tmp/heritage-unified-20260912/preview29-mount/SyncShow.app/Contents/Resources/app.asar/src/renderer/index.html",
+      "isolatedProfileMarkerVerified": true,
+      "quitExitCode": 0,
+      "profileRetainedPrivately": true
+    },
+    "ciLaunch": {
+      "schemaVersion": 1,
+      "target": "darwin-arm64",
+      "archive": "mac-arm64/SyncShow.app/Contents/Resources/app.asar",
+      "archiveSha256": "8ae900db0c3401767c7d028d9bd671e25ba937c1d26098affb3a5058b0f78278",
+      "executable": "mac-arm64/SyncShow.app/Contents/MacOS/SyncShow",
+      "executableSha256": "f3e60a25cd72ec9d59e302b3a4eb4e975cedaaf39b69068c6928a6eb1486ab51",
+      "controlPage": {
+        "title": "",
+        "url": "file:///Users/runner/work/SyncShow/SyncShow/dist/mac-arm64/SyncShow.app/Contents/Resources/app.asar/src/renderer/index.html"
+      },
+      "isolatedProfile": "confirmed-and-removed",
+      "launch": "passed"
+    },
+    "retainedAt": ".heritage/installers/syncshow/1.4.0-preview.29/3ae4f2b688de9346c3c4d755fdef1544055ff03d/ci-34866463241/qa-package-macos-arm64/"
+  },
+  "deployment": {
+    "checkedAt": "2026-09-14T16:23:37.862907+00:00",
+    "host": "heritage-community",
+    "communitySource": {
+      "revision": "21d3ad925144aa512d8e6bff4ce354d93aef9c11",
+      "clean": true
+    },
+    "translationSource": {
+      "revision": "c92aafe9f317e514240bd9621e2945448d9741d2",
+      "clean": true
+    },
+    "receipt": {
+      "schemaVersion": 1,
+      "installedAt": "2026-09-14T16:23:07Z",
+      "setDigest": "cfd050b873b37da2d0f20eaf0b75f3de192d8ba1025d1c853e33c1263bc2ed5d",
+      "manifest": {
+        "schemaVersion": 1,
+        "channel": "development",
+        "description": "Development integration revisions with local verification. This set is not yet an accepted integrated release.",
+        "components": [
+          {
+            "id": "heritage",
+            "name": "Heritage Bible and Community server",
+            "repository": "https://github.com/edydex/heritage_study_bible.git",
+            "revision": "21d3ad925144aa512d8e6bff4ce354d93aef9c11"
+          },
+          {
+            "id": "syncshow",
+            "name": "SyncShow",
+            "repository": "https://github.com/edydex/SyncShow.git",
+            "revision": "3ae4f2b688de9346c3c4d755fdef1544055ff03d"
+          },
+          {
+            "id": "multilinguum",
+            "name": "Multilinguum",
+            "repository": "https://github.com/edydex/multilinguum.git",
+            "revision": "c92aafe9f317e514240bd9621e2945448d9741d2"
+          }
+        ]
+      },
+      "acceptance": "source-and-service-health; provider and device rehearsal remains separate"
+    },
+    "receiptMode": "0o600",
+    "receiptDigestMatchesRetainedFiles": true,
+    "providerSettingsDigest": "16ce1ce320cd92c6a1b200a644ea7857175dc9f5c7563e5103a5500aa3dc3e9f",
+    "providerConfigured": {
+      "TRANSLATION_OPENAI_API_KEY": false,
+      "TRANSLATION_LIVEKIT_URL": false,
+      "TRANSLATION_LIVEKIT_API_KEY": false,
+      "TRANSLATION_LIVEKIT_API_SECRET": false
+    },
+    "changedConfigurationKeys": [
+      "HERITAGE_TRANSLATION_IMAGE",
+      "HERITAGE_TRANSLATION_REVISION",
+      "HERITAGE_TRANSLATION_SOURCE"
+    ],
+    "protocolAndOperatorHashes": {
+      "/app/node_modules/@multilinguum/protocol/dist/usage.js": "39342cc769d0a532cfd4acc8c44dd230f0e2927b7b90b6457495b30c7f484506",
+      "/app/client/operator.js": "d3d0a89932358a084a3363f9a92db6594c3892e8174bd1b1db6a642efa3a9af7"
+    },
+    "runtimeModuleHashes": {
+      "server.js": "afa500a86e2de04ccbfb8ed0431fa91ff1453435b0bd9be732715debbe9faea0",
+      "control-access.js": "f8fb37c7bcfbd273dba36490e97f4b7af06ba7d68418d3c1df975c574d91aadb",
+      "session-engine.js": "f38f24568d3c77ed9ce00bd715f55c22baff77f73661dac20713ec3b33fa0479",
+      "archive-store.js": "82c368eb08ee907bec1b507f6c38a765c52470d0a6d6a5fd5c7f9b156e664c5a",
+      "openai-cascade.js": "8f17fbddc4fb3a98df012fd748d6480957576e244fc42d26cc6500d8a18f6957",
+      "translation-profiles.js": "fcd9b32e45a674ada6bc1b721d862040995a124da680d4c5ece57d4dc2b7dad3"
+    },
+    "containers": {
+      "community": {
+        "image": "sha256:4be90e2a7d93a927e696af0b49fe6b1114d056e4f8cca19ed4eecc0510b3d209",
+        "imageReference": "heritage-community:local",
+        "running": true,
+        "health": "healthy"
+      },
+      "translation-processor": {
+        "image": "sha256:751ecd7651a8931b3c5c5d7aaf0f3c38556eee5263a72d22cb839922b3e976c0",
+        "imageReference": "heritage-translation:c92aafe9f317",
+        "running": true,
+        "health": "healthy"
+      },
+      "postgres": {
+        "image": "sha256:18cfe3ef5e6815560c98237d6216d1e5119702fb0f3894c8785dd58b8bbe5d73",
+        "imageReference": "postgres:17-alpine",
+        "running": true,
+        "health": "healthy"
+      }
+    },
+    "backups": [
+      {
+        "name": "backup-20260914T161145Z-pre-unified-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T161226Z-pre-translation-setup",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T161550Z-pre-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      }
+    ],
+    "localRoutes": {
+      "/live": {
+        "status": 200,
+        "bytes": 9862,
+        "sha256": "2fc91b50232f04519c213dff63ab3afda81b234a848542d4fb1af88927c4d4c2"
+      },
+      "/translate": {
+        "status": 200,
+        "bytes": 9888,
+        "sha256": "b4c9f22b15dae2860f7298d0381a30e29fe18640b8673cedb9d4531840f6aaac"
+      },
+      "/live/settings.json": {
+        "status": 200,
+        "bytes": 191,
+        "sha256": "c62a3fc84ebaf1cd174c28abf16ec87c31e2d048328ca1d01547a0a8bc0abd0c",
+        "body": {
+          "schemaVersion": 1,
+          "churchName": "Word of Truth Bible Church",
+          "channelUrl": "https://www.youtube.com/@wordoftruthbiblech",
+          "videoId": null,
+          "translationUrl": "/translate",
+          "broadcastDelaySeconds": 0
+        }
+      },
+      "/translation/client/operator.js": {
+        "status": 200,
+        "bytes": 378538,
+        "sha256": "d3d0a89932358a084a3363f9a92db6594c3892e8174bd1b1db6a642efa3a9af7"
+      },
+      "/translation/api/public/service": {
+        "status": 200,
+        "bytes": 106,
+        "sha256": "1e33094c9733402667af2e77227f4e03a0cf96ab2ebd4197291df985d3540090",
+        "body": {
+          "active": false,
+          "serverTimeUnixMs": 1789403015518,
+          "churchName": "Word of Truth Bible Church",
+          "languages": []
+        }
+      }
+    },
+    "workspaceRoutes": {
+      "/admin/live-translation?service=service-2099-01-01": {
+        "status": 200,
+        "streamedSignInDestination": null,
+        "containsWorkspaceGuide": false,
+        "viewTitle": "Live translation  \u2014 Heritage Community",
+        "clientBootstrap": true
+      },
+      "/admin/plan-service": {
+        "status": 200,
+        "streamedSignInDestination": null,
+        "containsWorkspaceGuide": false,
+        "viewTitle": "Plan a service  \u2014 Heritage Community",
+        "clientBootstrap": true
+      },
+      "/admin/prepare-sermon": {
+        "status": 200,
+        "streamedSignInDestination": "/admin/login?redirect=%2Fadmin%2Fprepare-sermon",
+        "containsWorkspaceGuide": false,
+        "viewTitle": "Prepare a sermon  \u2014 Heritage Community",
+        "clientBootstrap": true
+      },
+      "/admin/sermon-publications?sermon=sermon-ci": {
+        "status": 200,
+        "streamedSignInDestination": "/admin/login?redirect=%2Fadmin%2Fsermon-publications%3Fsermon%3Dsermon-ci",
+        "containsWorkspaceGuide": false,
+        "viewTitle": "Review sermon publications  \u2014 Heritage Community",
+        "clientBootstrap": true
+      },
+      "/admin/login": {
+        "status": 200,
+        "streamedSignInDestination": null,
+        "containsWorkspaceGuide": true,
+        "viewTitle": "Login  \u2014 Heritage Community",
+        "clientBootstrap": true
+      }
+    },
+    "anonymousArchiveRoutes": {
+      "/translation/api/archives": {
+        "status": 401,
+        "cacheControl": "private, no-store"
+      },
+      "/translation/api/archives/missing/transcripts/channel-en": {
+        "status": 401,
+        "cacheControl": "private, no-store"
+      },
+      "/translation/api/archives/missing/audio/channel-en": {
+        "status": 401,
+        "cacheControl": "private, no-store"
+      },
+      "/translation/api/archives/missing/latency": {
+        "status": 401,
+        "cacheControl": "private, no-store"
+      }
+    },
+    "smtpConnectivity": {
+      "configured": true,
+      "dnsResolved": true,
+      "tcpConnected": true,
+      "mailSent": false
+    },
+    "paidRequestsMadeByThisAudit": 0
+  },
+  "publicHttp": {
+    "client": "curl",
+    "initialPythonRequest": {
+      "path": "/live",
+      "status": 403,
+      "note": "Edge rejected Python client; normal curl and browser verification are separate."
+    },
+    "responses": [
+      {
+        "path": "/live",
+        "status": 200,
+        "bytes": 9862,
+        "sha256": "2fc91b50232f04519c213dff63ab3afda81b234a848542d4fb1af88927c4d4c2"
+      },
+      {
+        "path": "/translate",
+        "status": 200,
+        "bytes": 9888,
+        "sha256": "b4c9f22b15dae2860f7298d0381a30e29fe18640b8673cedb9d4531840f6aaac"
+      },
+      {
+        "path": "/translation/client/operator.js",
+        "status": 200,
+        "bytes": 378538,
+        "sha256": "d3d0a89932358a084a3363f9a92db6594c3892e8174bd1b1db6a642efa3a9af7"
+      },
+      {
+        "path": "/translation/api/public/service",
+        "status": 200,
+        "bytes": 106,
+        "sha256": "2fa4da3a9ae7fb710487f027c04c6c54716ad857b0ac5107eb950183fa7150ab"
+      },
+      {
+        "path": "/translation/api/archives",
+        "status": 401,
+        "bytes": 59,
+        "sha256": "0242a56d41f5697d41b6d865f98fa8f1f78907a7290983a716a8f636e2a1d7fa"
+      },
+      {
+        "path": "/translation/api/archives/missing/transcripts/channel-en",
+        "status": 401,
+        "bytes": 59,
+        "sha256": "0242a56d41f5697d41b6d865f98fa8f1f78907a7290983a716a8f636e2a1d7fa"
+      },
+      {
+        "path": "/translation/api/archives/missing/audio/channel-en",
+        "status": 401,
+        "bytes": 59,
+        "sha256": "0242a56d41f5697d41b6d865f98fa8f1f78907a7290983a716a8f636e2a1d7fa"
+      },
+      {
+        "path": "/translation/api/archives/missing/latency",
+        "status": 401,
+        "bytes": 59,
+        "sha256": "0242a56d41f5697d41b6d865f98fa8f1f78907a7290983a716a8f636e2a1d7fa"
+      }
+    ]
+  },
+  "publicBrowser": {
+    "livePage": "Waiting for the next service",
+    "translationPage": "Waiting for the next service",
+    "managerEntryRedirect": "https://wotbc.heritage.faith/admin/login?redirect=%2Fadmin%2Flive-translation",
+    "managerGuideVisible": true,
+    "realManagerCredentialsEntered": false,
+    "managerHandoffRetained": true
+  }
+}

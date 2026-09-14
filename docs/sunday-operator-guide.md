@@ -43,6 +43,8 @@ An audience member's **Listen to** choice controls only that person's playback. 
 
 ## Finish the service
 
-Choose **Stop translation** and confirm the controls return to the stopped state. Recorded services can currently be reviewed in the standalone Multilinguum console's **Archives** section, using its authorized server connection. Archive review is not yet part of the shared Community/SyncShow controls. A live AI transcript does not automatically become published sermon notes or commentary; a church manager reviews and publishes that material separately.
+Choose **Stop translation** and confirm the controls return to the stopped state. In the same shared controls, open **Recorded services → Browse recordings**, choose a completed service, then choose its original or translated language. Audio controls appear when that track was recorded; text-only services still show their transcript. Closing review leaves the live controls available.
+
+In SyncShow, use Preview 29 and a connection approved for recording review. An older connection can still control translation; reconnect the church to request the new permission, or use your manager account in Community. Attaching a reviewed transcript or recording directly to a sermon remains unfinished. A live AI transcript does not automatically become published sermon notes or commentary; a church manager reviews and publishes that material separately.
 
 For server installation, provider setup, updates and backups, use the [server guide](server-setup.md). For tablet teaching, the fading pointer and remote slide gallery, use the [desktop preview guide](desktop-preview.md).
