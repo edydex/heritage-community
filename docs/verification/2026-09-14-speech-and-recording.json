@@ -443,5 +443,12 @@
     "maximumUsd": 20,
     "runCalculatedTextAndAsrUsd": 0.13271139375,
     "runConservativeSpeechAllowanceUsd": 0.5
+  },
+  "laterFollowup": {
+    "record": "2026-09-14-wotbc-update.json",
+    "deployedProcessor": "aba43f734949b673fb14f00e154359f6e5de3530",
+    "reviewExplicitPlaybackButtonsPassed": true,
+    "nativeAudioControlsAccepted": false,
+    "paidRequests": 0
   }
 }

@@ -15,7 +15,7 @@ Russian-phrase-end to caption publication at the local recording relay was **3.6
 
 **Meaning remains unaccepted.** One Russian recognition error reached English as “distortion.” Another phrase says “preserve character” and needs review against the recording. The clip ends mid-sentence. No human-ground-truth error rate or quality percentage is claimed.
 
-The local [phrase-by-phrase review](../../.heritage/rehearsals/2026-09-14/sermon-providers/full-engine-07/review/index.html) contains the original recording, recognized text, translations and five generated speech clips, labeled as AI-generated. It is retained locally and ignored by Git. The HTML loaded in the internal browser, but the browser crashed during the audio-control check; browser playback is not counted as verified.
+The local [phrase-by-phrase review](../../.heritage/rehearsals/2026-09-14/sermon-providers/full-engine-07/review/index.html) contains the original recording, recognized text, translations and five generated speech clips, labeled as AI-generated. It is retained locally and ignored by Git. Native audio-control automation crashed the internal browser. A [subsequent check with explicit page buttons](2026-09-14-wotbc-update.md) verified original and generated playback progress, completion, switching and Stop. Local review playback is separate from live relay/phone listening and human meaning approval.
 
 ## Recording defects found and fixed
 
@@ -25,7 +25,7 @@ Follow-up `aba43f734949b673fb14f00e154359f6e5de3530` separates recording from li
 
 The complete `pnpm check` and [source CI](https://github.com/edydex/multilinguum/actions/runs/34825576648) passed, including **89 processor tests**. A separate offline run with the actual updated capture/engine/archive preserved all 4,320,000 source PCM bytes for Russian and 1,006,584 bytes for English after Opus decoding, including the latter's 0.485-second tail. Recognition, translation and speech providers were test doubles in that follow-up; it made **zero paid requests**. This distinguishes the recording regression proof from the earlier real-provider run.
 
-The development pin includes the follow-up fix. WOTBC remains on processor `21a9576`; these changes have not yet been deployed there.
+The development pin includes the follow-up fix. The [subsequent WOTBC update](2026-09-14-wotbc-update.md) deployed processor `aba43f7` and verified that its running modules match the tested build. No paid requests were made during that deployment.
 
 ## Budget and remaining acceptance
 

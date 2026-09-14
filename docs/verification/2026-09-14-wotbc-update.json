@@ -1,0 +1,269 @@
+{
+  "checkedAt": "2026-09-14T09:21:22.952599+00:00",
+  "host": "heritage-community",
+  "communitySource": {
+    "revision": "782535d41e870e12983f807d7f8dda2e217e2c56",
+    "clean": true
+  },
+  "translationSource": {
+    "revision": "aba43f734949b673fb14f00e154359f6e5de3530",
+    "clean": true
+  },
+  "receipt": {
+    "schemaVersion": 1,
+    "installedAt": "2026-09-14T09:20:06Z",
+    "setDigest": "3790efcda9e3a186a2170d45fbc0d04b4a9d4bc93297c7b78673146fb71443ac",
+    "manifest": {
+      "schemaVersion": 1,
+      "channel": "development",
+      "description": "Development integration revisions with local verification. This set is not yet an accepted integrated release.",
+      "components": [
+        {
+          "id": "heritage",
+          "name": "Heritage Bible and Community server",
+          "repository": "https://github.com/edydex/heritage_study_bible.git",
+          "revision": "782535d41e870e12983f807d7f8dda2e217e2c56"
+        },
+        {
+          "id": "syncshow",
+          "name": "SyncShow",
+          "repository": "https://github.com/edydex/SyncShow.git",
+          "revision": "5301a992638bdcc66a5253026658dd022320eda4"
+        },
+        {
+          "id": "multilinguum",
+          "name": "Multilinguum",
+          "repository": "https://github.com/edydex/multilinguum.git",
+          "revision": "aba43f734949b673fb14f00e154359f6e5de3530"
+        }
+      ]
+    },
+    "acceptance": "source-and-service-health; provider and device rehearsal remains separate"
+  },
+  "receiptMode": "0o600",
+  "receiptDigestMatchesRetainedFiles": true,
+  "providerSettingsDigest": "16ce1ce320cd92c6a1b200a644ea7857175dc9f5c7563e5103a5500aa3dc3e9f",
+  "providerConfigured": {
+    "TRANSLATION_OPENAI_API_KEY": false,
+    "TRANSLATION_LIVEKIT_URL": false,
+    "TRANSLATION_LIVEKIT_API_KEY": false,
+    "TRANSLATION_LIVEKIT_API_SECRET": false
+  },
+  "runtimeModuleHashes": {
+    "session-engine.js": "a8ef6bf5e146a5be2237535a7ac43baae86d7c329912aa1c34ae49ee758e92b4",
+    "archive-store.js": "c2c29dc9fb64029b18090476ee54856edc6fc224c17d7a7e8c916adcd876f18e",
+    "realtime-capture-pipeline.js": "c053c22a7939cc08ff44ab8d37f2a5e0b8c19c74c52539acce8f071793ddf541"
+  },
+  "containers": {
+    "community": {
+      "image": "sha256:d80bc33f2c851c646f4fcfd9aae7a61db65b8441f8901516a8772f5573b9d40e",
+      "imageReference": "heritage-community:local",
+      "running": true,
+      "health": "healthy"
+    },
+    "translation-processor": {
+      "image": "sha256:5f32cb322faca5245d96c631e6a4964f530d8c836481096b9298dd8401e4ce03",
+      "imageReference": "heritage-translation:aba43f734949",
+      "running": true,
+      "health": "healthy"
+    },
+    "postgres": {
+      "image": "sha256:18cfe3ef5e6815560c98237d6216d1e5119702fb0f3894c8785dd58b8bbe5d73",
+      "imageReference": "postgres:17-alpine",
+      "running": true,
+      "health": "healthy"
+    }
+  },
+  "backups": [
+    {
+      "name": "backup-20260914T091419Z-pre-unified-update",
+      "checks": [
+        "database.dump: OK",
+        "media.tar.gz: OK",
+        "recovery.tar.gz: OK",
+        "sermon-media.tar.gz: OK",
+        "sermon-media.inventory: OK",
+        "manifest.env: OK",
+        "translation.tar.gz: OK"
+      ]
+    },
+    {
+      "name": "backup-20260914T091459Z-pre-translation-setup",
+      "checks": [
+        "database.dump: OK",
+        "media.tar.gz: OK",
+        "recovery.tar.gz: OK",
+        "sermon-media.tar.gz: OK",
+        "sermon-media.inventory: OK",
+        "manifest.env: OK",
+        "translation.tar.gz: OK"
+      ]
+    },
+    {
+      "name": "backup-20260914T091820Z-pre-update",
+      "checks": [
+        "database.dump: OK",
+        "media.tar.gz: OK",
+        "recovery.tar.gz: OK",
+        "sermon-media.tar.gz: OK",
+        "sermon-media.inventory: OK",
+        "manifest.env: OK",
+        "translation.tar.gz: OK"
+      ]
+    }
+  ],
+  "paidRequestsMadeByThisAudit": 0,
+  "pythonPublicProbes": {
+    "/live": {
+      "status": 403,
+      "client": "Python urllib",
+      "passed": false
+    },
+    "/translate": {
+      "status": 403,
+      "client": "Python urllib",
+      "passed": false
+    },
+    "/live/settings.json": {
+      "status": 403,
+      "client": "Python urllib",
+      "passed": false
+    },
+    "/translation/client/operator.js": {
+      "status": 403,
+      "client": "Python urllib",
+      "passed": false
+    },
+    "/translation/api/public/service": {
+      "status": 403,
+      "client": "Python urllib",
+      "passed": false
+    }
+  },
+  "changedConfigurationKeys": [
+    "HERITAGE_TRANSLATION_IMAGE",
+    "HERITAGE_TRANSLATION_REVISION",
+    "HERITAGE_TRANSLATION_SOURCE"
+  ],
+  "localRoutes": {
+    "/live": {
+      "status": 200,
+      "bytes": 9862
+    },
+    "/translate": {
+      "status": 200,
+      "bytes": 9888
+    },
+    "/live/settings.json": {
+      "status": 200,
+      "bytes": 191,
+      "body": {
+        "schemaVersion": 1,
+        "churchName": "Word of Truth Bible Church",
+        "channelUrl": "https://www.youtube.com/@wordoftruthbiblech",
+        "videoId": null,
+        "translationUrl": "/translate",
+        "broadcastDelaySeconds": 0
+      }
+    },
+    "/translation/client/operator.js": {
+      "status": 200,
+      "bytes": 357358
+    },
+    "/translation/api/public/service": {
+      "status": 200,
+      "bytes": 106,
+      "body": {
+        "active": false,
+        "serverTimeUnixMs": 1789377819011,
+        "churchName": "Word of Truth Bible Church",
+        "languages": []
+      }
+    }
+  },
+  "providerSettingsDigestBefore": "16ce1ce320cd92c6a1b200a644ea7857175dc9f5c7563e5103a5500aa3dc3e9f",
+  "providerSettingsUnchanged": true,
+  "allOtherConfigurationUnchanged": true,
+  "localTestedModuleHashes": {
+    "session-engine.js": "a8ef6bf5e146a5be2237535a7ac43baae86d7c329912aa1c34ae49ee758e92b4",
+    "archive-store.js": "c2c29dc9fb64029b18090476ee54856edc6fc224c17d7a7e8c916adcd876f18e",
+    "realtime-capture-pipeline.js": "c053c22a7939cc08ff44ab8d37f2a5e0b8c19c74c52539acce8f071793ddf541"
+  },
+  "runningModulesMatchTestedBuild": true,
+  "recordingInventory": {
+    "finalizedObjects": 11,
+    "finalizedBytes": 3883891,
+    "stagingFiles": 0,
+    "backupCoversInventory": true
+  },
+  "update": {
+    "command": "node bin/heritage.mjs server update --host wotbc-community",
+    "exitCode": 0,
+    "paidRequests": 0,
+    "credentialsTransferred": false
+  },
+  "mailProbe": {
+    "migrationWarning": "EAI_AGAIN smtp.resend.com",
+    "networkConfiguration": "Migration uses internal backend only; live Community also uses edge.",
+    "firstDiagnostic": "Standalone nodemailer import unavailable in packaged app; no verification result.",
+    "liveAppDns": "passed",
+    "liveAppSmtpGreeting": "220",
+    "authenticationTested": false,
+    "emailSent": false
+  },
+  "browserAcceptance": {
+    "live": {
+      "freshReload": true,
+      "state": "Waiting for the next service",
+      "audio": "Audio off",
+      "videoSelected": false,
+      "channelUrl": "https://www.youtube.com/@wordoftruthbiblech"
+    },
+    "translate": {
+      "state": "Waiting for the next service",
+      "audio": "Audio off",
+      "containsVideoPlayer": false
+    },
+    "managerSignIn": "still pending",
+    "serviceStarted": false
+  },
+  "reviewPlayback": {
+    "source": "Retained local WAV files from full-engine-07, not live microphone input.",
+    "nativeAudioControlClick": "Crashed internal browser tab again; not accepted.",
+    "explicitPageButtons": "passed",
+    "originalPhrase": {
+      "stopTimeSeconds": 7.362299,
+      "durationSeconds": 45,
+      "paused": true,
+      "mediaError": null
+    },
+    "englishPhrase1": {
+      "currentTimeSeconds": 6.73,
+      "durationSeconds": 6.73,
+      "ended": true,
+      "mediaError": null
+    },
+    "switchToEnglishPhrase4": {
+      "originalPaused": true,
+      "originalStoppedAtSeconds": 6.270452
+    },
+    "stopActiveEnglishPhrase4": {
+      "currentTimeSeconds": 0.133928,
+      "durationSeconds": 6.9,
+      "paused": true,
+      "ended": false,
+      "mediaError": null
+    },
+    "renderedDesktopLayoutInspected": true,
+    "speakerAudibilityVerified": false,
+    "bilingualMeaningAccepted": false,
+    "liveRelayOrPhoneAcceptance": false
+  },
+  "acceptanceLimits": [
+    "No paid provider request or credential transfer on WOTBC.",
+    "Existing gpt-live-transcribe choice retained; candidate gpt-transcribe not selected by update.",
+    "Public Python probes returned 403; actual public browser pages separately reached idle state.",
+    "No full service, physical microphone, LiveKit, phone or tablet acceptance.",
+    "Readiness remains an engineering estimate of approximately 75 percent."
+  ]
+}

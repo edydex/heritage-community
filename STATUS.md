@@ -28,9 +28,9 @@ Personal-sync sign-in, church membership and manager access are separate. Synthe
 | SyncShow Preview 28 | [`5301a99`](https://github.com/edydex/SyncShow/commit/5301a992638bdcc66a5253026658dd022320eda4) |
 | Multilinguum | [`aba43f7`](https://github.com/edydex/multilinguum/commit/aba43f734949b673fb14f00e154359f6e5de3530) |
 
-[components.lock.json](components.lock.json) is the exact development set, not an accepted integrated release. Recognition and recording fixes through `aba43f7` passed source CI and are included in the development pin. They have not yet been installed on WOTBC. WOTBC remains on Community `e7882cf` and processor `21a9576`; the newer Heritage pin's Community subtree is byte-for-byte identical to the installed server subtree. The Heritage pin alone did not require a Community server update. The public reader separately runs `94a87a4`; the Android preview uses `782535d`.
+[components.lock.json](components.lock.json) is the exact development set, not an accepted integrated release. WOTBC now has Community source `782535d` and processor `aba43f7`, including the tested recognition and recording fixes. The running processor modules match the tested build. Community's unchanged server subtree reused its prior image. The public reader separately runs `94a87a4`; the Android preview uses `782535d`.
 
-The September 13 server inspection found Community, PostgreSQL and the processor healthy, with a verified backup. September 14 public discovery/doctor also passed. These checks do not prove paid provider configuration, manager access or an actual service.
+The [September 14 deployment audit](docs/verification/2026-09-14-wotbc-update.md) verified all three healthy services, three safety backups and unchanged private settings apart from the translation source/image revision. Both public listener pages reconnected in the real browser. The local sermon review's explicit playback/stop controls also passed. These checks do not prove WOTBC provider configuration, manager access or an actual service.
 
 ## What remains before completion
 
