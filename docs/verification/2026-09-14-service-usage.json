@@ -1,0 +1,241 @@
+{
+  "checkedOn": "2026-09-14",
+  "multilinguumRevision": "dc4678113d651cc8a265cb223ae763abaca75757",
+  "ci": {
+    "conclusion": "success",
+    "headSha": "dc4678113d651cc8a265cb223ae763abaca75757",
+    "status": "completed"
+  },
+  "localCheck": {
+    "command": "pnpm check",
+    "passed": true,
+    "tests": 157
+  },
+  "browser": {
+    "synthetic": true,
+    "outboundRequests": 0,
+    "textRequests": 4,
+    "speechRequests": 1,
+    "operatorCostEvents": 14,
+    "publicUsageLeaked": false,
+    "archives": [
+      {
+        "profile": "economy",
+        "sessionId": "c9a4e8e5-66ea-4ace-acf8-08025713a99e",
+        "completedAt": "2026-09-14T13:37:15.549Z",
+        "usage": {
+          "basis": "observed-service-usage",
+          "ratesCheckedOn": "2026-09-14",
+          "capturedAudioSeconds": 0,
+          "recognitionEstimateUsd": 0,
+          "translationRequests": 1,
+          "speechRequests": 0,
+          "pendingRequests": 0,
+          "requestsWithoutPrice": 0,
+          "inputTokens": 2000,
+          "outputTokens": 120,
+          "generatedAudioSeconds": 0,
+          "knownTranslationListCostUsd": 0.00544,
+          "knownSubtotalUsd": 0.00544,
+          "incomplete": false
+        },
+        "integritySha256": "201251a96d5ade729cfbfb4b904c277f77cd5c1078ec46a87e522d080785b10b"
+      },
+      {
+        "profile": "quality",
+        "sessionId": "1b769a69-8ea8-4cfe-9506-dd32b350e449",
+        "completedAt": "2026-09-14T13:33:33.701Z",
+        "usage": {
+          "basis": "observed-service-usage",
+          "ratesCheckedOn": "2026-09-14",
+          "capturedAudioSeconds": 0,
+          "recognitionEstimateUsd": 0,
+          "translationRequests": 3,
+          "speechRequests": 1,
+          "pendingRequests": 0,
+          "requestsWithoutPrice": 2,
+          "inputTokens": 4000,
+          "outputTokens": 240,
+          "generatedAudioSeconds": 3,
+          "knownTranslationListCostUsd": 0.052,
+          "knownSubtotalUsd": 0.052,
+          "incomplete": true
+        },
+        "integritySha256": "320bf4a351fbec48179169da9bb019158a71c267b59f6ef0e696fee56136cc95"
+      }
+    ]
+  },
+  "paidSpendThisWorkUsd": 0,
+  "deployment": {
+    "checkedAt": "2026-09-14T13:46:14.916593+00:00",
+    "host": "heritage-community",
+    "communitySource": {
+      "revision": "99bab02cca6bb955aac856e9c9567492f3ba1396",
+      "clean": true
+    },
+    "translationSource": {
+      "revision": "dc4678113d651cc8a265cb223ae763abaca75757",
+      "clean": true
+    },
+    "receipt": {
+      "schemaVersion": 1,
+      "installedAt": "2026-09-14T13:45:55Z",
+      "setDigest": "770394e5c9b80f5d0c96833b5cc6267c3d75cf5ebc73216085a016d923e486f4",
+      "manifest": {
+        "schemaVersion": 1,
+        "channel": "development",
+        "description": "Development integration revisions with local verification. This set is not yet an accepted integrated release.",
+        "components": [
+          {
+            "id": "heritage",
+            "name": "Heritage Bible and Community server",
+            "repository": "https://github.com/edydex/heritage_study_bible.git",
+            "revision": "99bab02cca6bb955aac856e9c9567492f3ba1396"
+          },
+          {
+            "id": "syncshow",
+            "name": "SyncShow",
+            "repository": "https://github.com/edydex/SyncShow.git",
+            "revision": "5301a992638bdcc66a5253026658dd022320eda4"
+          },
+          {
+            "id": "multilinguum",
+            "name": "Multilinguum",
+            "repository": "https://github.com/edydex/multilinguum.git",
+            "revision": "dc4678113d651cc8a265cb223ae763abaca75757"
+          }
+        ]
+      },
+      "acceptance": "source-and-service-health; provider and device rehearsal remains separate"
+    },
+    "receiptMode": "0o600",
+    "receiptDigestMatchesRetainedFiles": true,
+    "providerSettingsDigest": "16ce1ce320cd92c6a1b200a644ea7857175dc9f5c7563e5103a5500aa3dc3e9f",
+    "providerConfigured": {
+      "TRANSLATION_OPENAI_API_KEY": false,
+      "TRANSLATION_LIVEKIT_URL": false,
+      "TRANSLATION_LIVEKIT_API_KEY": false,
+      "TRANSLATION_LIVEKIT_API_SECRET": false
+    },
+    "changedConfigurationKeys": [
+      "HERITAGE_TRANSLATION_IMAGE",
+      "HERITAGE_TRANSLATION_REVISION",
+      "HERITAGE_TRANSLATION_SOURCE"
+    ],
+    "protocolAndOperatorHashes": {
+      "/app/node_modules/@multilinguum/protocol/dist/usage.js": "39342cc769d0a532cfd4acc8c44dd230f0e2927b7b90b6457495b30c7f484506",
+      "/app/client/operator.js": "171f716d2eb5ce219a8b544595f2886699dd68c069a38830dfa5563ebb224d04"
+    },
+    "runtimeModuleHashes": {
+      "session-engine.js": "f38f24568d3c77ed9ce00bd715f55c22baff77f73661dac20713ec3b33fa0479",
+      "archive-store.js": "87fd8ddc3c0c2d996a61685ad6e39e8889188d77643fb9d109102b2a9231f343",
+      "openai-cascade.js": "8f17fbddc4fb3a98df012fd748d6480957576e244fc42d26cc6500d8a18f6957",
+      "translation-profiles.js": "fcd9b32e45a674ada6bc1b721d862040995a124da680d4c5ece57d4dc2b7dad3"
+    },
+    "containers": {
+      "community": {
+        "image": "sha256:d9399fb6f3e73ee0f8adbd1d3d4b841c857651db6dddaf8340119158a42d5d81",
+        "imageReference": "heritage-community:local",
+        "running": true,
+        "health": "healthy"
+      },
+      "translation-processor": {
+        "image": "sha256:7ca33e633f1d77aca32aeea68def7d4d9edbc97ef6163b0c8f982858be28b680",
+        "imageReference": "heritage-translation:dc4678113d65",
+        "running": true,
+        "health": "healthy"
+      },
+      "postgres": {
+        "image": "sha256:18cfe3ef5e6815560c98237d6216d1e5119702fb0f3894c8785dd58b8bbe5d73",
+        "imageReference": "postgres:17-alpine",
+        "running": true,
+        "health": "healthy"
+      }
+    },
+    "backups": [
+      {
+        "name": "backup-20260914T134005Z-pre-unified-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T134046Z-pre-translation-setup",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T134408Z-pre-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      }
+    ],
+    "localRoutes": {
+      "/live": {
+        "status": 200,
+        "bytes": 9862,
+        "sha256": "1fe7d65dff8cc034cbc3ad2adbf76d3f22ee1e308c75db748367ba49dd81c816"
+      },
+      "/translate": {
+        "status": 200,
+        "bytes": 9888,
+        "sha256": "4fc2ca1e391b966196b57c7987dd23b5052facd203ccbed185f56f93cda8f09a"
+      },
+      "/live/settings.json": {
+        "status": 200,
+        "bytes": 191,
+        "sha256": "c62a3fc84ebaf1cd174c28abf16ec87c31e2d048328ca1d01547a0a8bc0abd0c",
+        "body": {
+          "schemaVersion": 1,
+          "churchName": "Word of Truth Bible Church",
+          "channelUrl": "https://www.youtube.com/@wordoftruthbiblech",
+          "videoId": null,
+          "translationUrl": "/translate",
+          "broadcastDelaySeconds": 0
+        }
+      },
+      "/translation/client/operator.js": {
+        "status": 200,
+        "bytes": 361159,
+        "sha256": "171f716d2eb5ce219a8b544595f2886699dd68c069a38830dfa5563ebb224d04"
+      },
+      "/translation/api/public/service": {
+        "status": 200,
+        "bytes": 106,
+        "sha256": "697c9cb8875fd30eadbc04740c0437a0d88cd6bb9b35365c9f49e95dc8e574a0",
+        "body": {
+          "active": false,
+          "serverTimeUnixMs": 1789393574911,
+          "churchName": "Word of Truth Bible Church",
+          "languages": []
+        }
+      }
+    },
+    "paidRequestsMadeByThisAudit": 0,
+    "localBuildHashesMatch": true
+  },
+  "publicBrowser": {
+    "live": "Waiting for the next service; Audio off; WOTBC channel present",
+    "translate": "Waiting for the next service; Audio off; no video player"
+  }
+}
