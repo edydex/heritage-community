@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-13T20:32:38.057850+00:00",
+  "status": "provider-transfer-awaiting-explicit-approval",
+  "sourceHost": {
+    "alias": "vr-mayos",
+    "usualTunnel": "ssh-redact.mayos.dev",
+    "usualTunnelResult": "SSH banner exchange timed out; the process exited 255.",
+    "verifiedLanAddress": "192.168.1.26",
+    "hostKeyAlias": "ssh-redact.mayos.dev",
+    "strictHostKeyChecking": true,
+    "ed25519Fingerprint": "SHA256:rBanAUlnFpfNhLpDkVgbGxRSNHcZFpH4enxJvdl1JbY",
+    "hostname": "video-redactor-gpu",
+    "os": "Debian GNU/Linux 13.7",
+    "configMode": "0600",
+    "credentialPresence": {
+      "openai": true,
+      "livekitKey": true,
+      "livekitSecret": true,
+      "separateEconomyKey": false
+    }
+  },
+  "destinationHost": {
+    "alias": "wotbc-community",
+    "hostname": "heritage-community",
+    "os": "Debian GNU/Linux 13.7",
+    "translationRevision": "21a9576edd1f898ead1be214c90ee271df6bcba1",
+    "processorHealthy": true,
+    "openaiConfigured": false,
+    "providerSettingsChanged": false
+  },
+  "openaiModelMetadataChecks": [
+    {
+      "model": "gpt-6-astra",
+      "httpStatus": 200,
+      "returnedId": "gpt-6-astra"
+    },
+    {
+      "model": "gpt-live-transcribe",
+      "httpStatus": 200,
+      "returnedId": "gpt-live-transcribe"
+    },
+    {
+      "model": "gpt-4o-mini-tts",
+      "httpStatus": 200,
+      "returnedId": "gpt-4o-mini-tts"
+    }
+  ],
+  "relayConfiguration": {
+    "scheme": "wss",
+    "hostname": "multilinguum-35ooclzt.livekit.cloud",
+    "embeddedCredentialsOrQuery": false,
+    "placeholderCredentials": false,
+    "liveAccessVerified": false
+  },
+  "sharingSettingsChanged": false,
+  "billableProviderRequests": 0,
+  "paidBudgetUsedUsd": 0,
+  "paidBudgetMaximumUsd": 20,
+  "preparedSetup": {
+    "command": "heritage-community translation configure --non-interactive --yes",
+    "credentialFields": [
+      "TRANSLATION_OPENAI_API_KEY",
+      "TRANSLATION_LIVEKIT_URL",
+      "TRANSLATION_LIVEKIT_API_KEY",
+      "TRANSLATION_LIVEKIT_API_SECRET"
+    ],
+    "method": "Read the existing mode-0600 source file into a local process pipe and send selected values over trusted SSH stdin to the supported destination setup command. No local credential file or credential argument is created. Output is redacted. The command owns safety backup, setup, restart and health checks.",
+    "executed": false,
+    "approvalReviewResult": "Rejected: explicit authorization is required to send the private OpenAI and LiveKit credentials to WOTBC. The transfer command did not start.",
+    "pendingUserRequest": "Explicit approval to reuse the existing OpenAI and LiveKit credentials on wotbc.heritage.faith."
+  },
+  "syntheticFixtures": {
+    "schemaVersion": 1,
+    "scope": "Original synthetic English/Russian church-language fixtures generated locally with installed macOS voices. No personal sermon recording or voice clone is used. No provider request was made.",
+    "cases": [
+      {
+        "language": "en",
+        "voice": "Samantha",
+        "text": "Today we are reading Ephesians chapter two, verses eight and nine. Salvation is a gift of God's grace, received through faith. We do not earn it by good works.",
+        "path": "en.wav",
+        "bytes": 1006664,
+        "sha256": "1e2c35f61734e6011fd130c3e6ef0e48b5c0d470c5c91b04a291b957afe637f8",
+        "durationSeconds": 10.485270833333333,
+        "rms": 4865.26,
+        "peak": 25546
+      },
+      {
+        "language": "ru",
+        "voice": "Milena",
+        "text": "Сегодня мы читаем Послание к Ефесянам, вторую главу, восьмой и девятый стихи. Спасение — это дар Божьей благодати, принимаемый верой. Мы не зарабатываем его добрыми делами.",
+        "path": "ru.wav",
+        "bytes": 1209182,
+        "sha256": "1d70fe96d71900a5578b22af807953b670ffbe0c1d6af0d47d886a0ed8de9652",
+        "durationSeconds": 12.594833333333334,
+        "rms": 4581.88,
+        "peak": 23792
+      }
+    ]
+  },
+  "nextAcceptance": [
+    "After explicit approval, run the supported provider setup and verify health plus unchanged Economy sharing policy.",
+    "Reserve test cost in the $20 ledger before any billable request. Start with one target language and inspect each result before the next request.",
+    "Check real Quality translation English to Russian and Russian to English, then speech-on and speech-off while captions continue.",
+    "Stream the short synthetic recordings through live capture and inspect the WOTBC /live and /translate results.",
+    "Keep real manager sign-in, phone audio, physical mixer, tablet and congregation/stage display acceptance separate."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "productionMainPreloadOutputRemote": true,
+  "isolatedProfile": true,
+  "loopbackOnly": true,
+  "checks": [
+    "paired browser and captured preview",
+    "actual pointer drawing reaches one output",
+    "stage output excluded",
+    "stylus-only rejects mouse",
+    "highlighter and Undo",
+    "cue navigation restores ink",
+    "Clear to black and Restore",
+    "browser reconnect",
+    "Clear ink",
+    "nearby slide gallery selects actual slide",
+    "host-wide notification excludes all projection outputs",
+    "progressive expiry during a continuous gesture",
+    "pointer fully expires without saved ink",
+    "Show end"
+  ],
+  "limitations": [
+    "No physical tablet or stylus",
+    "Synthetic local service and displays",
+    "Source app, not packaged release"
+  ],
+  "date": "2026-09-14",
+  "sourceRevision": "3af7c310d999c1bac1c870aff512a331e2d50767",
+  "localSuite": {
+    "passed": 2237,
+    "skipped": 2,
+    "failed": 0
+  },
+  "syntaxFiles": 219,
+  "finalFocusedSuite": "passed after final gallery focus adjustment",
+  "screenshots": {
+    "progressive-pointer.png": "82d524f7b63e76abba1241f0a3cafd0a620c7d30d040bfc9c416e9151116018c",
+    "tablet-gallery.png": "ad819939e4618aefcc2ad5aa0933c9fb4ef614b6cf0b65a10b4e83a5024d5b7a",
+    "remote-host-notice.png": "d20180711db55754e92a63103195ef4f1acd58714abf3ef256ed9b8a0da6fc39",
+    "tablet-teaching.png": "70dc7ada4e47d0c2a5b27f6dc38d58909f915d19307ce658b7a64392dc7774fb",
+    "teaching-output.png": "ae80bd5e6252bcf38e2e40444e244373c93619574458943f158914ec80597f2e"
+  },
+  "retainedAt": ".heritage/rehearsals/2026-09-14/pastor-controls/",
+  "readinessEstimate": {
+    "overallRoundedPercent": 75,
+    "method": "Weighted area estimates, rounded to nearest 5; approximate +/-10 points, not coverage."
+  }
+}

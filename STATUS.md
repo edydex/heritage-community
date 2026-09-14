@@ -1,5 +1,7 @@
 # Heritage Community delivery status
 
+Open the [HTML progress report](docs/progress.html) for completion estimates, completed work and next steps (updated September 14).
+
 Updated 2026-09-13. The shared repository, deployed church server and desktop preview support preparation and rehearsal. The Android preview is published for phone testing. The integrated live-service release is not finished: provider setup, mobile/venue acceptance and public desktop packaging remain open.
 
 ## What you can use now
@@ -14,7 +16,7 @@ Updated 2026-09-13. The shared repository, deployed church server and desktop pr
 | Prepare and present | SyncShow Preview 27 retains Prepare → Load → Show, shared Community service preparation, English/Russian/stage outputs and loaded-service offline continuation. Translation screens can open without a slide presentation. | [Desktop preview](docs/desktop-preview.md), [saved service settings](docs/service-translation-plans.md) |
 | Control translation | Community and SyncShow share one manager console with English ↔ Russian, Quality/Economy, saved service choices, optional sermon notes and generated-speech controls. Speech-off stops new voice work while captions continue. | [Translation controls](docs/verification/2026-09-13-service-translation-plans.md) |
 | Android reader preview | Published v1.1.33-preview.1 passes native offline screens, encrypted storage, signer/update compatibility and visual inspection. The published download matches the tested package. Physical-phone acceptance remains pending. | [Install Android preview](docs/android-preview.md), [package evidence](docs/verification/2026-09-13-android-preview.json) |
-| Teach from a tablet | Paired pen/highlighter, colors, per-slide ink, Undo and Clear are packaged. Stylus-only input is optional and off by default. Physical-tablet acceptance remains pending. | [Teaching evidence](docs/verification/2026-09-13-teaching-and-notes.md) |
+| Teach from a tablet | Paired pen/highlighter, colors, per-slide ink, Undo and Clear are packaged. New source `3af7c31 adds the one-second progressive pointer, nearby-slide gallery and host-wide remote-change notices; its native rehearsal passed. New-installer and physical-tablet acceptance remain pending. | [Latest teaching evidence](docs/verification/2026-09-14-pastor-controls.md) |
 
 Public and synthetic-content rehearsals do not prove actual WOTBC sermon publication, paid bilingual translation quality, phone playback or a church service on physical screens. Personal-sync sign-in, church membership and manager access are separate.
 
@@ -33,7 +35,7 @@ The exact values used by the tools are in [components.lock.json](components.lock
 ## Work being finished
 
 - **SyncShow public packaging:** source `46d6f5c` adds 104 checked Windows libvips source-license texts, alongside the 105 Mac/Linux texts. Source CI and all four native package jobs passed. The downloaded Windows installer contains every expected notice and matches its app/native hashes; its native launch passed. One upstream source tag changed after the pinned release, so that archive remains explicitly unresolved. Complete dependency source/replacement materials and protected release configuration remain unfinished. [Evidence and concrete remaining work](docs/verification/2026-09-13-native-release-inputs.md).
-- **Live WOTBC acceptance:** manager sign-in and translation provider keys are still needed. The latest provider-configuration check found no configured API keys. No actual microphone or paid translation session has been started.
+- **Live WOTBC acceptance:** existing OpenAI and LiveKit credentials were located on the original Multilinguum host, and OpenAI model metadata access passed. WOTBC's provider configuration is still empty: automatic approval review requires explicit authorization to transfer those credentials there. The setup command and short synthetic English/Russian recordings are prepared. Manager sign-in and actual live/paid acceptance remain pending. [Provider setup evidence](docs/verification/2026-09-13-provider-setup.md).
 
 ## What remains before calling the integration complete
 
