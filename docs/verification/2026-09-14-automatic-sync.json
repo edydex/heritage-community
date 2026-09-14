@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "3f30bdb1dd9002a4d9a50b7545fe6bbc6a5b7697",
+  "local": {
+    "unitTests": 207,
+    "protocolTests": 105,
+    "build": "passed",
+    "diffCheck": "passed"
+  },
+  "browser": {
+    "implementation": "actual Vite reader",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "signedIn": false,
+    "checks": [
+      "Setting and explanation render at phone width",
+      "Opt-in persists after reload",
+      "Bible text opens with automatic sync enabled",
+      "Next chapter navigates from Genesis 1 to Genesis 2"
+    ]
+  },
+  "policy": {
+    "defaultEnabled": false,
+    "launchDelaySeconds": 10,
+    "intervalSeconds": 180,
+    "foregroundOnly": true,
+    "skipOffline": true,
+    "overlappingRequests": false,
+    "backoffMinutes": [
+      6,
+      12,
+      24,
+      30
+    ]
+  },
+  "ci": {
+    "readerRun": 34896684246,
+    "readerStatus": "success",
+    "readerEndToEndTests": 33,
+    "readerSource": "a7cb7c0f1cf52e567806b46f75a838de19cd3749",
+    "androidRun": 34896921200,
+    "androidStatus": "success",
+    "initialAndroidRun": 34896686951,
+    "initialAndroidFailure": "Setup requested obsolete tools SDK package; failed before compile."
+  },
+  "remaining": [
+    "Physical-phone battery measurements",
+    "Signed-in two-device automatic sync acceptance"
+  ],
+  "providerCalls": 0,
+  "implementationRevision": "a7cb7c0f1cf52e567806b46f75a838de19cd3749",
+  "android": {
+    "schemaVersion": 1,
+    "sourceRevision": "3f30bdb1dd9002a4d9a50b7545fe6bbc6a5b7697",
+    "applicationId": "faith.heritage.app",
+    "versionCode": 36,
+    "versionName": "1.1.33-preview.2",
+    "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+    "apk": {
+      "name": "heritage-study-bible-1.1.33-preview.2-debug.apk",
+      "size": 54402791,
+      "sha256": "c65220771fd4b66b72cb3742e96a16064ae486ec904e85af2f2b31a6972c3abd"
+    },
+    "previousRelease": {
+      "versionName": "1.1.32",
+      "versionCode": 34,
+      "sha256": "9107e7e64a35a5a0495caec08fa7bda1261679bfd9fbc7ab91145a02a4ba88cf"
+    },
+    "webAssets": {
+      "count": 533,
+      "manifestSha256": "388f39375aa00cccd3c7baa8a0758cdbf8a513d583dc353738e44c5a64ca593f"
+    },
+    "websiteOnlyMetadata": {
+      ".well-known/assetlinks.json": "4394fc5dee8e1e71c0e678ab5272f92b7f6ee4236300ac9113c0678bf242c7f9"
+    },
+    "nativeTests": [
+      "automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+      "encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+      "packagedCommunityScreensAndMemberLinkWorkOffline",
+      "secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+    ],
+    "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.33-preview.2",
+    "downloadChecksums": "passed",
+    "screenshotVisuallyInspected": true
+  }
+}
