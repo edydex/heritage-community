@@ -97,3 +97,5 @@ All three arguments must be absolute paths. The probe uses the Mac’s Arial fon
 - No paid API requests were made. No provider settings or installed user app changed.
 
 Skia and its transitive sources/notices still need their full source-built/reproducible input set. The initial cache-backed and vendored wrapper builds had different binary hashes, so no byte-for-byte deterministic-build claim is made. Other platforms, GUI/physical presentation, full distribution materials and protected official-release configuration remain open. The readiness estimate stays at approximately 75% overall and 60% for installers.
+
+The [subsequent Skia source rebuild](2026-09-14-skia-source-rebuild.md) replaces the upstream Mac Skia static archives with owned source builds and passes the same packaged rendering checks. It supersedes that specific limitation in this earlier checkpoint.

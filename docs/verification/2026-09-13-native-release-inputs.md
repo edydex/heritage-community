@@ -82,3 +82,7 @@ This closes the earlier Mac FFmpeg source-build and direct decoding gap. It does
 ## Canvas wrapper rebuild follow-up — September 14
 
 An owned Apple Silicon Canvas Rust/C++ wrapper now builds offline from a retained Cargo lockfile and 93 vendored registry sources, using verified upstream Skia static archives. The original-build N-API versions avoid a reproduced image-class incompatibility in the first dependency resolution. English/Russian text, image codecs and packaged PDF rendering match the original preview. The release verifier now rejects the reproduced bad rebuild. [Recipe, exact inputs and limits](2026-09-14-canvas-wrapper-rebuild.md). Full source-built Skia, other native targets and release acceptance remain open.
+
+## Full Mac Skia follow-up — September 14
+
+Skia and the Canvas wrapper now both compile from the retained source set on Apple Silicon. The 1,667 compilation commands use source bytes verified against the pinned archives, plus one generated ICU assembly input. A signed Preview 28 owner copy preserves all retained image/text/PDF outputs and passes the packaged runtime check. [Build recipe, input inventory and remaining limits](2026-09-14-skia-source-rebuild.md). This supersedes the earlier Mac Skia prebuilt-library limitation; other targets, distribution materials and the remaining release gates are still open.

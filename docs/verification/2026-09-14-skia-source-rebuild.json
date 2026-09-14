@@ -1,0 +1,924 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-14",
+  "checkedAt": "2026-09-14T12:24:54.326778+00:00",
+  "status": "Mac Canvas and Skia source rebuild with packaged rendering passed",
+  "scope": "Apple Silicon owner replacement; headless packaged runtime only",
+  "previewRevision": "5301a992638bdcc66a5253026658dd022320eda4",
+  "verifierRevision": "8404883c0cd3e533b39fce3854be28ea8c452e86",
+  "canvasRevision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+  "skiaRevision": "7219df0fb0ff64f26adad448f94e8c001b964e6a",
+  "reusedInputs": {
+    "canvasSource": {
+      "size": 29640541,
+      "sha256": "a1a4c08bc2e4160528e6cdc0a4c57c37ce37c657f7b664244dcfaee033829fd6",
+      "url": "https://codeload.github.com/Brooooooklyn/canvas/tar.gz/2aa648fb4ed83fbe87af77922ecf89153184f8b5"
+    },
+    "skiaSource": {
+      "size": 68583095,
+      "sha256": "83edae36346f1cd9122a1674b82277693bb101d17a106822835c0863f002b5bd",
+      "url": "https://codeload.github.com/google/skia/tar.gz/7219df0fb0ff64f26adad448f94e8c001b964e6a"
+    },
+    "rustVendorArchive": {
+      "size": 14439201,
+      "sha256": "d139ac3a0d12fd950744927daff5c9cb6473687fd4b7c0dfc6b0248d2af94d71"
+    },
+    "cargoLockSha256": "b1a6edb60d4ba65254faefeaf9317be9b8377dcf63ada1203215d4d4d2816c66"
+  },
+  "dependencies": {
+    "inputs": [
+      {
+        "name": "brotli",
+        "target": "third_party/externals/brotli",
+        "repository": "https://skia.googlesource.com/external/github.com/google/brotli.git",
+        "revision": "6d03dfbedda1615c4cba1211f8d81735575209c8",
+        "url": "https://skia.googlesource.com/external/github.com/google/brotli.git/+archive/6d03dfbedda1615c4cba1211f8d81735575209c8.tar.gz",
+        "bytes": 30702524,
+        "sha256": "51bb005a69b61afbffb815c808a499008c5acd652ab298d8a9121bc5f248b7c2"
+      },
+      {
+        "name": "buildtools",
+        "target": "buildtools",
+        "repository": "https://chromium.googlesource.com/chromium/src/buildtools.git",
+        "revision": "729495f2ffa69080907780591fa2a630b2556e98",
+        "url": "https://chromium.googlesource.com/chromium/src/buildtools.git/+archive/729495f2ffa69080907780591fa2a630b2556e98.tar.gz",
+        "bytes": 108110,
+        "sha256": "042a3e89c1734d4fe390a92ac90f1c13eb4fc8ace3837f00a853fd2d5570f00a"
+      },
+      {
+        "name": "dng_sdk",
+        "target": "third_party/externals/dng_sdk",
+        "repository": "https://android.googlesource.com/platform/external/dng_sdk.git",
+        "revision": "dbe0a676450d9b8c71bf00688bb306409b779e90",
+        "url": "https://android.googlesource.com/platform/external/dng_sdk.git/+archive/dbe0a676450d9b8c71bf00688bb306409b779e90.tar.gz",
+        "bytes": 441533,
+        "sha256": "7b34400e98725b93f14a0d9edd42533572883e1a430d647535b2eeeda758c4c9"
+      },
+      {
+        "name": "expat",
+        "target": "third_party/externals/expat",
+        "repository": "https://chromium.googlesource.com/external/github.com/libexpat/libexpat.git",
+        "revision": "6154446fccefbf3ca644894f598969113b0c7bcd",
+        "url": "https://chromium.googlesource.com/external/github.com/libexpat/libexpat.git/+archive/6154446fccefbf3ca644894f598969113b0c7bcd.tar.gz",
+        "bytes": 8442017,
+        "sha256": "0bbded501960d5b58ac0a9efb7e23b7de0a2f48af1459a1beebee5b4e15d8b42"
+      },
+      {
+        "name": "freetype",
+        "target": "third_party/externals/freetype",
+        "repository": "https://chromium.googlesource.com/chromium/src/third_party/freetype2.git",
+        "revision": "264b5fbf5b912b39f98d038bf75d39be0a73f21b",
+        "url": "https://chromium.googlesource.com/chromium/src/third_party/freetype2.git/+archive/264b5fbf5b912b39f98d038bf75d39be0a73f21b.tar.gz",
+        "bytes": 2550981,
+        "sha256": "aebdda1e56febca1837d082dfb2789ccc4c62d3777b1f78a6354a9774491a8eb"
+      },
+      {
+        "name": "harfbuzz",
+        "target": "third_party/externals/harfbuzz",
+        "repository": "https://chromium.googlesource.com/external/github.com/harfbuzz/harfbuzz.git",
+        "revision": "9cb1fee51069b206effb4736e443b038d230789d",
+        "url": "https://chromium.googlesource.com/external/github.com/harfbuzz/harfbuzz.git/+archive/9cb1fee51069b206effb4736e443b038d230789d.tar.gz",
+        "bytes": 37303159,
+        "sha256": "8ce80cd13d524205826acdfd7deb30eb18af5ce5962a1e58ec847c40ab9e848d"
+      },
+      {
+        "name": "highway",
+        "target": "third_party/externals/highway",
+        "repository": "https://chromium.googlesource.com/external/github.com/google/highway.git",
+        "revision": "424360251cdcfc314cfc528f53c872ecd63af0f0",
+        "url": "https://chromium.googlesource.com/external/github.com/google/highway.git/+archive/424360251cdcfc314cfc528f53c872ecd63af0f0.tar.gz",
+        "bytes": 1491421,
+        "sha256": "d0f7161bd68587bcd472456269279792e15fd8d5e822fbc5c637d8858e43a563"
+      },
+      {
+        "name": "icu",
+        "target": "third_party/externals/icu",
+        "repository": "https://chromium.googlesource.com/chromium/deps/icu.git",
+        "revision": "d578f2e8b7bd5938e21cfb6bf15c079e0aa5b738",
+        "url": "https://chromium.googlesource.com/chromium/deps/icu.git/+archive/d578f2e8b7bd5938e21cfb6bf15c079e0aa5b738.tar.gz",
+        "bytes": 55876786,
+        "sha256": "e94652c42f172d6e858b3eab53ba0f97bbacdaac6189646b5ecd735dc16b52f3"
+      },
+      {
+        "name": "libjpeg-turbo",
+        "target": "third_party/externals/libjpeg-turbo",
+        "repository": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo.git",
+        "revision": "e14cbfaa85529d47f9f55b0f104a579c1061f9ad",
+        "url": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo.git/+archive/e14cbfaa85529d47f9f55b0f104a579c1061f9ad.tar.gz",
+        "bytes": 2623911,
+        "sha256": "6c0a0e2511cca66dc1d61eac8056bd0bbfe2005fda8214534bb96644057c1952"
+      },
+      {
+        "name": "libjxl",
+        "target": "third_party/externals/libjxl",
+        "repository": "https://chromium.googlesource.com/external/gitlab.com/wg1/jpeg-xl.git",
+        "revision": "a205468bc5d3a353fb15dae2398a101dff52f2d3",
+        "url": "https://chromium.googlesource.com/external/gitlab.com/wg1/jpeg-xl.git/+archive/a205468bc5d3a353fb15dae2398a101dff52f2d3.tar.gz",
+        "bytes": 16998479,
+        "sha256": "7c0c18903c5a95410545fb33018c530bc91817519b0c29fddd6f0b4b470745d9"
+      },
+      {
+        "name": "libpng",
+        "target": "third_party/externals/libpng",
+        "repository": "https://skia.googlesource.com/third_party/libpng.git",
+        "revision": "d5515b5b8be3901aac04e5bd8bd5c89f287bcd33",
+        "url": "https://skia.googlesource.com/third_party/libpng.git/+archive/d5515b5b8be3901aac04e5bd8bd5c89f287bcd33.tar.gz",
+        "bytes": 1612738,
+        "sha256": "164a0097058ecccc7da3511571f0229a7f8a4e99a3756603efa57df646cfe7f1"
+      },
+      {
+        "name": "libwebp",
+        "target": "third_party/externals/libwebp",
+        "repository": "https://chromium.googlesource.com/webm/libwebp.git",
+        "revision": "845d5476a866141ba35ac133f856fa62f0b7445f",
+        "url": "https://chromium.googlesource.com/webm/libwebp.git/+archive/845d5476a866141ba35ac133f856fa62f0b7445f.tar.gz",
+        "bytes": 3813281,
+        "sha256": "cf7f37f39f8ae159ef5c2fa335ad3d960702417cd2d929c697b4f77f2efd8b18"
+      },
+      {
+        "name": "wuffs",
+        "target": "third_party/externals/wuffs",
+        "repository": "https://skia.googlesource.com/external/github.com/google/wuffs-mirror-release-c.git",
+        "revision": "e3f919ccfe3ef542cfc983a82146070258fb57f8",
+        "url": "https://skia.googlesource.com/external/github.com/google/wuffs-mirror-release-c.git/+archive/e3f919ccfe3ef542cfc983a82146070258fb57f8.tar.gz",
+        "bytes": 327716,
+        "sha256": "1a131eca7ce351976c36e85728b1a2b2f6bdf79ddbdf40d2f4e72110d0a36039"
+      },
+      {
+        "name": "zlib",
+        "target": "third_party/externals/zlib",
+        "repository": "https://chromium.googlesource.com/chromium/src/third_party/zlib",
+        "revision": "646b7f569718921d7d4b5b8e22572ff6c76f2596",
+        "url": "https://chromium.googlesource.com/chromium/src/third_party/zlib/+archive/646b7f569718921d7d4b5b8e22572ff6c76f2596.tar.gz",
+        "bytes": 587275,
+        "sha256": "f1c8667f415b94e48a5dccd8436ffe4c5d614cbecd26a4429ee2d8ee3b97bfe9"
+      }
+    ],
+    "errors": []
+  },
+  "gn": {
+    "url": "https://chrome-infra-packages.appspot.com/dl/gn/gn/mac-arm64/+/git_revision:b2afae122eeb6ce09c52d63f67dc53fc517dbdc8",
+    "archiveSha256": "cbb260f2cf999f7d74da96b3828a061299c6337354dd6db642e778828576025c",
+    "binarySha256": "76c4542d5ad22fc944a5d50f4db5f2ad2ff3792ac48afb08d4415f0da41ce570"
+  },
+  "buildConfiguration": {
+    "icuDataGeneration": [
+      "python3 ../../third_party/externals/icu/scripts/make_data_assembly.py ../../third_party/externals/icu/common/icudtl.dat gen/third_party/icu/icudtl_dat.S --mac"
+    ],
+    "files": [
+      {
+        "path": "third_party/externals/icu/common/icudtl.dat",
+        "size": 10876560,
+        "sha256": "9f48c7f9c7c94d516a14870707e910ab94d75ae640ff6842c4af53276cd26ebe"
+      },
+      {
+        "path": "third_party/externals/icu/scripts/make_data_assembly.py",
+        "size": 3392,
+        "sha256": "ad2ef73d9fb072082ac577667ccbb3eeb4cbb0b5628b8dec6d177108cc92e3df"
+      },
+      {
+        "path": "out/Static/gen/third_party/icu/icudtl_dat.S",
+        "size": 26653179,
+        "sha256": "c6eb266fa0fee14efd8330655aec5020f89368de545da6f555ecdfbb4f7acaca"
+      },
+      {
+        "path": "out/Static/args.gn",
+        "size": 2212,
+        "sha256": "d7bfb451e4de90e098d9fb5a373d78b70b681fd7e853e9656d13b77d14ca0edb"
+      },
+      {
+        "path": "BUILD.gn",
+        "size": 111796,
+        "sha256": "291797b65358339e0a9679d4c186317090d60d6f8fade68fb3c40c292062063f"
+      },
+      {
+        "path": "DEPS",
+        "size": 10719,
+        "sha256": "02545c4a1f44f98639c9d8a99926f548da76d2ad01bb7ecc9112f91054db2439"
+      }
+    ],
+    "gnVersion": "2175 (b2afae122eeb)",
+    "ninjaVersion": "1.13.0.git.kitware.jobserver-pipe-1"
+  },
+  "staticLibraries": [
+    {
+      "name": "libjsonreader.a",
+      "originalSha256": "445866f79e5ece8bd86ce62e4b709d446a23b5293c63847700773136564099dc",
+      "rebuiltSha256": "257cbe9312ffc4ed04ab671a7d8926d29fc572c2d5fdc9d70697ee0f32e576af",
+      "bytes": 22920
+    },
+    {
+      "name": "libskia.a",
+      "originalSha256": "106aa1184bcacf3e0e02f3efd5c346976264ef11105e857b4a3d33e7030203b4",
+      "rebuiltSha256": "676e569048449fdd4f8c30d78e96cf12cd63557b1a332d92cdf6fa1118f6610f",
+      "bytes": 17070128
+    },
+    {
+      "name": "libskottie.a",
+      "originalSha256": "4857198fd87bb1eb39e02468a7001b79716a741734e3bdfd99f7b87b2fa2158b",
+      "rebuiltSha256": "4ad930a3414ef85e4db39b4bb81b3b5294fc2cd5948d4b2fb4b8ba7d44cd9a5d",
+      "bytes": 5868608
+    },
+    {
+      "name": "libskparagraph.a",
+      "originalSha256": "ac6d9635a51a961ceb77579420fd203f371c10d5813a0fe95fede4402b92d6bf",
+      "rebuiltSha256": "d5010c962870f9aa44555e47bae04e8c25c07d278eef53c3ba3eb3f2ade5b270",
+      "bytes": 459128
+    },
+    {
+      "name": "libskresources.a",
+      "originalSha256": "634a4f0e5c4a04a6b258edf1c68c8455b5074a923370de219dbf92150e7799aa",
+      "rebuiltSha256": "7ffae621d7dff3053a87646f354c53aeba7b5c539740690f61e861cf6c536ce7",
+      "bytes": 29288
+    },
+    {
+      "name": "libsksg.a",
+      "originalSha256": "edeb174b573351c4f9f2b0db198a31823864fdefbab6a91426dbdd93d20905bd",
+      "rebuiltSha256": "538fbd0e9f33493ac2428bf79a2f65f46b3248f2025bb429021fc4556a792cc8",
+      "bytes": 5101736
+    },
+    {
+      "name": "libskshaper.a",
+      "originalSha256": "2e442845ac543c91335a4f2998ba953240769e64e4561a50e247512cc9e751bd",
+      "rebuiltSha256": "145f7dfd25ca2c3a7842d81f93a673d39a77d754dab7223d315553aa21709a3e",
+      "bytes": 6060016
+    },
+    {
+      "name": "libskunicode_core.a",
+      "originalSha256": "187932099a167fa8438f3404892e9f79abc9a846db86834f7bf36cd39c1556d5",
+      "rebuiltSha256": "913d34cce0eadfa2de138ad658fc9cb40ea1c2472719970feab27877b551cae7",
+      "bytes": 7104
+    },
+    {
+      "name": "libskunicode_icu.a",
+      "originalSha256": "4ed76d645164b0250c15efb03ee5728af39cf2579c274e930684a9794db7f54c",
+      "rebuiltSha256": "ea127822330aead655011fa36f178a4cdee7e76987c417d4e56d5666159b52a8",
+      "bytes": 18326744
+    },
+    {
+      "name": "libsvg.a",
+      "originalSha256": "62696af29eb9d45531a515909d6e129a0d2ad53214c6ce04f815cd497948feb9",
+      "rebuiltSha256": "b1d0f68b4f485c8bae5078495af3155cc06a47693563fe44f157199fb0ec0b78",
+      "bytes": 5418264
+    }
+  ],
+  "sourceCorrespondence": {
+    "archiveComparisons": [
+      {
+        "sourceArchive": "skia",
+        "compiledFilesMatched": 764
+      },
+      {
+        "sourceArchive": "libpng",
+        "compiledFilesMatched": 18
+      },
+      {
+        "sourceArchive": "zlib",
+        "compiledFilesMatched": 20
+      },
+      {
+        "sourceArchive": "freetype",
+        "compiledFilesMatched": 28
+      },
+      {
+        "sourceArchive": "brotli",
+        "compiledFilesMatched": 10
+      },
+      {
+        "sourceArchive": "expat",
+        "compiledFilesMatched": 3
+      },
+      {
+        "sourceArchive": "libjpeg-turbo",
+        "compiledFilesMatched": 73
+      },
+      {
+        "sourceArchive": "harfbuzz",
+        "compiledFilesMatched": 72
+      },
+      {
+        "sourceArchive": "libwebp",
+        "compiledFilesMatched": 123
+      },
+      {
+        "sourceArchive": "libjxl",
+        "compiledFilesMatched": 64
+      },
+      {
+        "sourceArchive": "highway",
+        "compiledFilesMatched": 2
+      },
+      {
+        "sourceArchive": "wuffs",
+        "compiledFilesMatched": 1
+      },
+      {
+        "sourceArchive": "icu",
+        "compiledFilesMatched": 445
+      }
+    ],
+    "generatedCompilationInputs": [
+      {
+        "path": "out/Static/gen/third_party/icu/icudtl_dat.S",
+        "bytes": 26653179,
+        "sha256": "c6eb266fa0fee14efd8330655aec5020f89368de545da6f555ecdfbb4f7acaca"
+      }
+    ],
+    "totalCompileCommands": 1667,
+    "allNonGeneratedSourcesMatchRetainedArchive": true
+  },
+  "toolchain": {
+    "clang": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+    "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)\nbinary: rustc\ncommit-hash: 8bab26f4f68e0e26f0bb7960be334d5b520ea452\ncommit-date: 2026-07-14\nhost: aarch64-apple-darwin\nrelease: 1.97.1\nLLVM version: 22.1.6\n",
+    "ninja": "1.13.0",
+    "cmake": "4.3.0",
+    "skiaMinimumOS": "11.0",
+    "addonMachOMinimumOS": "12.0",
+    "rustBuild": "--locked --offline with 83 vendored registry packages and the root wrapper",
+    "compiledPackageIds": 84,
+    "skiaElapsed": "2m 44.322s",
+    "canvasElapsed": "1m 05s"
+  },
+  "sourceNotices": {
+    "skiaArchiveCandidates": [
+      {
+        "path": "AUTHORS",
+        "size": 5121,
+        "sha256": "22bf3c038ed41f6bd5e15ce61c61239741046156019c082f1e5c6bdc42c85069"
+      },
+      {
+        "path": "LICENSE",
+        "size": 1507,
+        "sha256": "5f787c1dee3c56547f09ccc2906ab5f5293c4d8dd6c8654e573216c38e908dbd"
+      },
+      {
+        "path": "bazel/rbe/gce_linux/LICENSE",
+        "size": 11340,
+        "sha256": "fd112c80352fc42a60f051012c6b9adef055123e395dece30fa8f44880f39e96"
+      },
+      {
+        "path": "include/third_party/vulkan/LICENSE",
+        "size": 1635,
+        "sha256": "e59bb5c5c6ba426a9ac4ba9fe667ad14c5166b12aa25be8af1d122b14fbe2e36"
+      },
+      {
+        "path": "modules/canvaskit/npm_build/LICENSE",
+        "size": 1635,
+        "sha256": "d27678cba0d529e77201e2d2a053628143e986aad8f1e77f7039ad4366c8f978"
+      },
+      {
+        "path": "third_party/etc1/LICENSE",
+        "size": 9233,
+        "sha256": "5366e97b4478f15a1e2fd7e6094337426597df28de50cd9fed3f2e7e87f1229e"
+      },
+      {
+        "path": "third_party/expat/LICENSE",
+        "size": 1635,
+        "sha256": "cca48bacd6e7ed63f00b42a346bcc8549a460b41efe75d93db350fc882f54dca"
+      },
+      {
+        "path": "third_party/harfbuzz/LICENSE",
+        "size": 1635,
+        "sha256": "cca48bacd6e7ed63f00b42a346bcc8549a460b41efe75d93db350fc882f54dca"
+      },
+      {
+        "path": "third_party/wuffs/LICENSE",
+        "size": 1635,
+        "sha256": "e59bb5c5c6ba426a9ac4ba9fe667ad14c5166b12aa25be8af1d122b14fbe2e36"
+      }
+    ],
+    "dependencyArchives": [
+      {
+        "name": "brotli",
+        "target": "third_party/externals/brotli",
+        "repository": "https://skia.googlesource.com/external/github.com/google/brotli.git",
+        "revision": "6d03dfbedda1615c4cba1211f8d81735575209c8",
+        "url": "https://skia.googlesource.com/external/github.com/google/brotli.git/+archive/6d03dfbedda1615c4cba1211f8d81735575209c8.tar.gz",
+        "bytes": 30702524,
+        "sha256": "51bb005a69b61afbffb815c808a499008c5acd652ab298d8a9121bc5f248b7c2",
+        "noticeCandidates": [
+          {
+            "path": "LICENSE",
+            "bytes": 1084,
+            "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94"
+          }
+        ]
+      },
+      {
+        "name": "buildtools",
+        "target": "buildtools",
+        "repository": "https://chromium.googlesource.com/chromium/src/buildtools.git",
+        "revision": "729495f2ffa69080907780591fa2a630b2556e98",
+        "url": "https://chromium.googlesource.com/chromium/src/buildtools.git/+archive/729495f2ffa69080907780591fa2a630b2556e98.tar.gz",
+        "bytes": 108110,
+        "sha256": "042a3e89c1734d4fe390a92ac90f1c13eb4fc8ace3837f00a853fd2d5570f00a",
+        "noticeCandidates": [
+          {
+            "path": "LICENSE",
+            "bytes": 1537,
+            "sha256": "ff11d445fb41a1087c7630e120ab15f1a2cb67c1b707173cb494141805fca35e"
+          }
+        ]
+      },
+      {
+        "name": "dng_sdk",
+        "target": "third_party/externals/dng_sdk",
+        "repository": "https://android.googlesource.com/platform/external/dng_sdk.git",
+        "revision": "dbe0a676450d9b8c71bf00688bb306409b779e90",
+        "url": "https://android.googlesource.com/platform/external/dng_sdk.git/+archive/dbe0a676450d9b8c71bf00688bb306409b779e90.tar.gz",
+        "bytes": 441533,
+        "sha256": "7b34400e98725b93f14a0d9edd42533572883e1a430d647535b2eeeda758c4c9",
+        "noticeCandidates": [
+          {
+            "path": "LICENSE",
+            "bytes": 5240,
+            "sha256": "012e875468ac2f9a2070ee25a950588afa2735b4b2d961f491e3d72c8f572306"
+          },
+          {
+            "path": "LICENSE.source_code",
+            "bytes": 5157,
+            "sha256": "0c993758dd78dbb15ce6aae8aee79639b428d8ebeca6d416019939dc90fdc08f"
+          },
+          {
+            "path": "LICENSE.technology",
+            "bytes": 82,
+            "sha256": "4731d85e841e1d8b5dbf7e0ba07e0b524c012f9371db3508551f996cb40c8fe6"
+          },
+          {
+            "path": "NOTICE",
+            "bytes": 5422,
+            "sha256": "b60660d2a5a3ee1a49366400e7e9b01c1872356d6f08942f095d356a44deb5f6"
+          }
+        ]
+      },
+      {
+        "name": "expat",
+        "target": "third_party/externals/expat",
+        "repository": "https://chromium.googlesource.com/external/github.com/libexpat/libexpat.git",
+        "revision": "6154446fccefbf3ca644894f598969113b0c7bcd",
+        "url": "https://chromium.googlesource.com/external/github.com/libexpat/libexpat.git/+archive/6154446fccefbf3ca644894f598969113b0c7bcd.tar.gz",
+        "bytes": 8442017,
+        "sha256": "0bbded501960d5b58ac0a9efb7e23b7de0a2f48af1459a1beebee5b4e15d8b42",
+        "noticeCandidates": [
+          {
+            "path": "COPYING",
+            "bytes": 1144,
+            "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87"
+          },
+          {
+            "path": "expat/AUTHORS",
+            "bytes": 142,
+            "sha256": "59f14371c6b75912cfebb46e6247ee5146766e803a0365b124e5d3011e7d0877"
+          },
+          {
+            "path": "expat/COPYING",
+            "bytes": 1144,
+            "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87"
+          }
+        ]
+      },
+      {
+        "name": "freetype",
+        "target": "third_party/externals/freetype",
+        "repository": "https://chromium.googlesource.com/chromium/src/third_party/freetype2.git",
+        "revision": "264b5fbf5b912b39f98d038bf75d39be0a73f21b",
+        "url": "https://chromium.googlesource.com/chromium/src/third_party/freetype2.git/+archive/264b5fbf5b912b39f98d038bf75d39be0a73f21b.tar.gz",
+        "bytes": 2550981,
+        "sha256": "aebdda1e56febca1837d082dfb2789ccc4c62d3777b1f78a6354a9774491a8eb",
+        "noticeCandidates": [
+          {
+            "path": "LICENSE.TXT",
+            "bytes": 2149,
+            "sha256": "bd36c8b474855fa294c2ec5c184544478ef3720aad37d65a6296a4f264fd2d3b"
+          }
+        ]
+      },
+      {
+        "name": "harfbuzz",
+        "target": "third_party/externals/harfbuzz",
+        "repository": "https://chromium.googlesource.com/external/github.com/harfbuzz/harfbuzz.git",
+        "revision": "9cb1fee51069b206effb4736e443b038d230789d",
+        "url": "https://chromium.googlesource.com/external/github.com/harfbuzz/harfbuzz.git/+archive/9cb1fee51069b206effb4736e443b038d230789d.tar.gz",
+        "bytes": 37303159,
+        "sha256": "8ce80cd13d524205826acdfd7deb30eb18af5ce5962a1e58ec847c40ab9e848d",
+        "noticeCandidates": [
+          {
+            "path": "AUTHORS",
+            "bytes": 201,
+            "sha256": "19bfe8f5ed100636cd24ab0c90a3f71c21d8b02d9ba00719447a0faab364d49f"
+          },
+          {
+            "path": "COPYING",
+            "bytes": 1971,
+            "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64"
+          },
+          {
+            "path": "src/ms-use/COPYING",
+            "bytes": 1141,
+            "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+          },
+          {
+            "path": "test/COPYING",
+            "bytes": 4370,
+            "sha256": "9b35b8485f69cd298fccbb3c40a827dc06cf1185553bef827903497d2944a8d7"
+          },
+          {
+            "path": "test/shape/data/aots/COPYING",
+            "bytes": 593,
+            "sha256": "f55f74bf740db07bb032a90aa74af4307adea3d489c1ccba12453cf0c0a764cb"
+          },
+          {
+            "path": "test/shape/data/text-rendering-tests/COPYING",
+            "bytes": 584,
+            "sha256": "d24039e4d22c9bc72096f6174374539d92a3d6e1163938546ec59179fe095e6f"
+          }
+        ]
+      },
+      {
+        "name": "highway",
+        "target": "third_party/externals/highway",
+        "repository": "https://chromium.googlesource.com/external/github.com/google/highway.git",
+        "revision": "424360251cdcfc314cfc528f53c872ecd63af0f0",
+        "url": "https://chromium.googlesource.com/external/github.com/google/highway.git/+archive/424360251cdcfc314cfc528f53c872ecd63af0f0.tar.gz",
+        "bytes": 1491421,
+        "sha256": "d0f7161bd68587bcd472456269279792e15fd8d5e822fbc5c637d8858e43a563",
+        "noticeCandidates": [
+          {
+            "path": "LICENSE",
+            "bytes": 11356,
+            "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+          },
+          {
+            "path": "debian/copyright",
+            "bytes": 825,
+            "sha256": "6e4ecf1cae052b678ea3178dd4b3652d581ee66a82d58db8800dd7d80dd6de76"
+          }
+        ]
+      },
+      {
+        "name": "icu",
+        "target": "third_party/externals/icu",
+        "repository": "https://chromium.googlesource.com/chromium/deps/icu.git",
+        "revision": "d578f2e8b7bd5938e21cfb6bf15c079e0aa5b738",
+        "url": "https://chromium.googlesource.com/chromium/deps/icu.git/+archive/d578f2e8b7bd5938e21cfb6bf15c079e0aa5b738.tar.gz",
+        "bytes": 55876786,
+        "sha256": "e94652c42f172d6e858b3eab53ba0f97bbacdaac6189646b5ecd735dc16b52f3",
+        "noticeCandidates": [
+          {
+            "path": "LICENSE",
+            "bytes": 27718,
+            "sha256": "e55522d81edc687a341a4411e0776e54ca654e90147f354a90458aaced4116af"
+          },
+          {
+            "path": "license.html",
+            "bytes": 622,
+            "sha256": "c62d7697c03979f5056d28b338fafc7a1152820f7b379adf4a9d88cd37160f96"
+          },
+          {
+            "path": "scripts/LICENSE",
+            "bytes": 1559,
+            "sha256": "845022e0c1db1abb41a6ba4cd3c4b674ec290f3359d9d3c78ae558d4c0ed9308"
+          }
+        ]
+      },
+      {
+        "name": "libjpeg-turbo",
+        "target": "third_party/externals/libjpeg-turbo",
+        "repository": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo.git",
+        "revision": "e14cbfaa85529d47f9f55b0f104a579c1061f9ad",
+        "url": "https://chromium.googlesource.com/chromium/deps/libjpeg_turbo.git/+archive/e14cbfaa85529d47f9f55b0f104a579c1061f9ad.tar.gz",
+        "bytes": 2623911,
+        "sha256": "6c0a0e2511cca66dc1d61eac8056bd0bbfe2005fda8214534bb96644057c1952",
+        "noticeCandidates": [
+          {
+            "path": "LICENSE.md",
+            "bytes": 5620,
+            "sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430"
+          }
+        ]
+      },
+      {
+        "name": "libjxl",
+        "target": "third_party/externals/libjxl",
+        "repository": "https://chromium.googlesource.com/external/gitlab.com/wg1/jpeg-xl.git",
+        "revision": "a205468bc5d3a353fb15dae2398a101dff52f2d3",
+        "url": "https://chromium.googlesource.com/external/gitlab.com/wg1/jpeg-xl.git/+archive/a205468bc5d3a353fb15dae2398a101dff52f2d3.tar.gz",
+        "bytes": 16998479,
+        "sha256": "7c0c18903c5a95410545fb33018c530bc91817519b0c29fddd6f0b4b470745d9",
+        "noticeCandidates": [
+          {
+            "path": "AUTHORS",
+            "bytes": 771,
+            "sha256": "b87e1e8486020586e00af974151b4e39c9fba2ff5509b437cd3ccca2ddca58d4"
+          },
+          {
+            "path": "LICENSE",
+            "bytes": 1508,
+            "sha256": "8405932022a556380c2d8c272eff154a923feb197233f348ce5f7334fb0a5ede"
+          },
+          {
+            "path": "debian/copyright",
+            "bytes": 12194,
+            "sha256": "a70b2b13dd790c7f5c75a922aece0d490793063457abf32a2ee2daa1ad3e38ef"
+          },
+          {
+            "path": "third_party/HEVCSoftware/cfg/LICENSE",
+            "bytes": 1744,
+            "sha256": "44a2c5f2ce34d00a30554a44d3e51377852f84bc183dc1b9fb2b48ece976ebef"
+          },
+          {
+            "path": "third_party/testdata/imagecompression.info/LICENSE.txt",
+            "bytes": 770,
+            "sha256": "a7fd8a4eac7b65a8440bcdd4ecd659a48b340d5d664ebd3372f8f2fd2d907ca9"
+          },
+          {
+            "path": "third_party/testdata/raw.pixls/LICENSE.md",
+            "bytes": 6518,
+            "sha256": "75e41a1e0829c942dbde3dee4b7505800803b4d7733d01bc590165e36ce9af22"
+          },
+          {
+            "path": "third_party/testdata/wesaturate/LICENSE.md",
+            "bytes": 6518,
+            "sha256": "75e41a1e0829c942dbde3dee4b7505800803b4d7733d01bc590165e36ce9af22"
+          },
+          {
+            "path": "third_party/testdata/wide-gamut-tests/LICENSE",
+            "bytes": 11357,
+            "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+          }
+        ]
+      },
+      {
+        "name": "libpng",
+        "target": "third_party/externals/libpng",
+        "repository": "https://skia.googlesource.com/third_party/libpng.git",
+        "revision": "d5515b5b8be3901aac04e5bd8bd5c89f287bcd33",
+        "url": "https://skia.googlesource.com/third_party/libpng.git/+archive/d5515b5b8be3901aac04e5bd8bd5c89f287bcd33.tar.gz",
+        "bytes": 1612738,
+        "sha256": "164a0097058ecccc7da3511571f0229a7f8a4e99a3756603efa57df646cfe7f1",
+        "noticeCandidates": [
+          {
+            "path": "AUTHORS",
+            "bytes": 1756,
+            "sha256": "0de66f4a30324ff320b82bc0a19364c90063ed8849c8ab7aac06095870591893"
+          },
+          {
+            "path": "LICENSE",
+            "bytes": 5345,
+            "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526"
+          },
+          {
+            "path": "ci/LICENSE_MIT.txt",
+            "bytes": 1036,
+            "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1"
+          },
+          {
+            "path": "contrib/gregbook/COPYING",
+            "bytes": 18097,
+            "sha256": "d6cb0e9e560f51085556949a84af12b79a00f10ab8b66c752537faf7cd665572"
+          },
+          {
+            "path": "contrib/gregbook/LICENSE",
+            "bytes": 2373,
+            "sha256": "b6a03c1803eb58ffb1f1278d5c7d4096c4c116e66dce8a7553e8c77d163c3438"
+          },
+          {
+            "path": "contrib/pngexif/LICENSE_MIT.txt",
+            "bytes": 1036,
+            "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1"
+          },
+          {
+            "path": "contrib/pngminus/LICENSE.txt",
+            "bytes": 1164,
+            "sha256": "1806f1f10d393e9e377b3a8d1b968452b54f1a90378f14eeef45426946ace330"
+          },
+          {
+            "path": "scripts/cmake/AUTHORS.md",
+            "bytes": 862,
+            "sha256": "50633b976f0133862c921aa67d56de2c0b42eb344c8ca3853686efb092a447db"
+          }
+        ]
+      },
+      {
+        "name": "libwebp",
+        "target": "third_party/externals/libwebp",
+        "repository": "https://chromium.googlesource.com/webm/libwebp.git",
+        "revision": "845d5476a866141ba35ac133f856fa62f0b7445f",
+        "url": "https://chromium.googlesource.com/webm/libwebp.git/+archive/845d5476a866141ba35ac133f856fa62f0b7445f.tar.gz",
+        "bytes": 3813281,
+        "sha256": "cf7f37f39f8ae159ef5c2fa335ad3d960702417cd2d929c697b4f77f2efd8b18",
+        "noticeCandidates": [
+          {
+            "path": "AUTHORS",
+            "bytes": 3048,
+            "sha256": "f9681940f35ab74858ac2717a511fa6237b67f65e99f457c21223e60a851c85a"
+          },
+          {
+            "path": "COPYING",
+            "bytes": 1496,
+            "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+          }
+        ]
+      },
+      {
+        "name": "wuffs",
+        "target": "third_party/externals/wuffs",
+        "repository": "https://skia.googlesource.com/external/github.com/google/wuffs-mirror-release-c.git",
+        "revision": "e3f919ccfe3ef542cfc983a82146070258fb57f8",
+        "url": "https://skia.googlesource.com/external/github.com/google/wuffs-mirror-release-c.git/+archive/e3f919ccfe3ef542cfc983a82146070258fb57f8.tar.gz",
+        "bytes": 327716,
+        "sha256": "1a131eca7ce351976c36e85728b1a2b2f6bdf79ddbdf40d2f4e72110d0a36039",
+        "noticeCandidates": [
+          {
+            "path": "LICENSE",
+            "bytes": 11358,
+            "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+          }
+        ]
+      },
+      {
+        "name": "zlib",
+        "target": "third_party/externals/zlib",
+        "repository": "https://chromium.googlesource.com/chromium/src/third_party/zlib",
+        "revision": "646b7f569718921d7d4b5b8e22572ff6c76f2596",
+        "url": "https://chromium.googlesource.com/chromium/src/third_party/zlib/+archive/646b7f569718921d7d4b5b8e22572ff6c76f2596.tar.gz",
+        "bytes": 587275,
+        "sha256": "f1c8667f415b94e48a5dccd8436ffe4c5d614cbecd26a4429ee2d8ee3b97bfe9",
+        "noticeCandidates": [
+          {
+            "path": "LICENSE",
+            "bytes": 910,
+            "sha256": "e1cfcc55c325b3f78cf55df9664abaa066e2271dffe8213347d9fccdfbac8f2c"
+          }
+        ]
+      }
+    ]
+  },
+  "replacement": {
+    "originalNativeSha256": "2a8a14e3cf9a5129fc845884278560c3fbac2e7861ff35be2b32cf9599428160",
+    "rebuiltBeforeSigningSha256": "4199b24d9ca0f6de559d5a80049d3ee3a9ea66a2b8f0c67f1aa9a7a3c7ba3fa6",
+    "applicationSha256": "3c712e03d691f39654d9955374664302f69aa5da44fe76e90bab95c341733291",
+    "signedNativeSha256": "f1057158c38894f772dff964d0043a12ce822aae00a6990998881e6b275b326f",
+    "signature": "passed",
+    "asarUnchanged": true,
+    "ffmpegUnchanged": true,
+    "libvipsUnchanged": true
+  },
+  "originalRender": {
+    "electron": "43.2.0",
+    "node": "24.18.0",
+    "native": {
+      "path": "/private/tmp/heritage-unified-20260912/qa-34818135279/macos-arm64/mac-arm64/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@napi-rs/canvas-darwin-arm64/skia.darwin-arm64.node",
+      "sha256": "2a8a14e3cf9a5129fc845884278560c3fbac2e7861ff35be2b32cf9599428160"
+    },
+    "fontSha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+    "images": {
+      "png": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "d9628180ceece6473c2bce1201bdb90f345fe3911e4b18ffa702caf6e58f89a7",
+        "rgbaSha256": "06e22b86c00d9690ea8af6dbabcc8d545fc1e15cb4a0fe6c796617e4d58ca4b3"
+      },
+      "jpeg": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "ca36bfa359af51b87f7496a874115c205a49ce0f1df8b0084c092e65efd1db81",
+        "rgbaSha256": "c230b134e68dce98148b4a5a7f27183500c49dd3be8512d724af23dcbf43d6e5"
+      },
+      "webp": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "669bc39eb4853caf0117a25b67fd401ec5e77e71f205653e541e47095e528fe1",
+        "rgbaSha256": "5d21e881e7dad1fa72e38248e3a436c7e163e1e88b1e98809ac0c66ea18f31d9"
+      }
+    },
+    "metrics": [
+      {
+        "text": "Heritage \u00b7 Word of Truth",
+        "width": 214.16000366210938
+      },
+      {
+        "text": "\u0421\u043b\u043e\u0432\u043e \u0438\u0441\u0442\u0438\u043d\u044b \u00b7 \u0418\u043e\u0430\u043d\u043d\u0430 3:16",
+        "width": 263.54998779296875
+      }
+    ],
+    "pdf": {
+      "renderer": "6.2.108",
+      "fixtureSha256": "14a258acc152476acfe619d6c558e412b2960bca6dc2b129b1fc3252be5799af",
+      "pages": [
+        {
+          "text": "Heritage PDF rendering",
+          "width": 480,
+          "height": 270,
+          "encodedSha256": "e103995a1f52fe6beeab18fb217709def7024b1fddc1ae485067a1a36f4d878e",
+          "rgbaSha256": "d4bdec06f0eb3c4ea261dd10f32ba75900a8a60e0b34c9bcf2477cd06650c462"
+        },
+        {
+          "text": "Second page: service notes",
+          "width": 480,
+          "height": 270,
+          "encodedSha256": "bbd515c768f967b4d783e041698ca514d42a728874a4afa9a598958bd7ebe258",
+          "rgbaSha256": "cbc74c4633a05268fd9032558aab7fd0c0b3685db51873b339000ecf4af5be98"
+        }
+      ]
+    }
+  },
+  "sourceBuiltRender": {
+    "electron": "43.2.0",
+    "node": "24.18.0",
+    "native": {
+      "path": "/private/tmp/heritage-unified-20260912/canvas-rebuild-20260914/source-skia-preview/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@napi-rs/canvas-darwin-arm64/skia.darwin-arm64.node",
+      "sha256": "f1057158c38894f772dff964d0043a12ce822aae00a6990998881e6b275b326f"
+    },
+    "fontSha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+    "images": {
+      "png": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "d9628180ceece6473c2bce1201bdb90f345fe3911e4b18ffa702caf6e58f89a7",
+        "rgbaSha256": "06e22b86c00d9690ea8af6dbabcc8d545fc1e15cb4a0fe6c796617e4d58ca4b3"
+      },
+      "jpeg": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "ca36bfa359af51b87f7496a874115c205a49ce0f1df8b0084c092e65efd1db81",
+        "rgbaSha256": "c230b134e68dce98148b4a5a7f27183500c49dd3be8512d724af23dcbf43d6e5"
+      },
+      "webp": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "669bc39eb4853caf0117a25b67fd401ec5e77e71f205653e541e47095e528fe1",
+        "rgbaSha256": "5d21e881e7dad1fa72e38248e3a436c7e163e1e88b1e98809ac0c66ea18f31d9"
+      }
+    },
+    "metrics": [
+      {
+        "text": "Heritage \u00b7 Word of Truth",
+        "width": 214.16000366210938
+      },
+      {
+        "text": "\u0421\u043b\u043e\u0432\u043e \u0438\u0441\u0442\u0438\u043d\u044b \u00b7 \u0418\u043e\u0430\u043d\u043d\u0430 3:16",
+        "width": 263.54998779296875
+      }
+    ],
+    "pdf": {
+      "renderer": "6.2.108",
+      "fixtureSha256": "14a258acc152476acfe619d6c558e412b2960bca6dc2b129b1fc3252be5799af",
+      "pages": [
+        {
+          "text": "Heritage PDF rendering",
+          "width": 480,
+          "height": 270,
+          "encodedSha256": "e103995a1f52fe6beeab18fb217709def7024b1fddc1ae485067a1a36f4d878e",
+          "rgbaSha256": "d4bdec06f0eb3c4ea261dd10f32ba75900a8a60e0b34c9bcf2477cd06650c462"
+        },
+        {
+          "text": "Second page: service notes",
+          "width": 480,
+          "height": 270,
+          "encodedSha256": "bbd515c768f967b4d783e041698ca514d42a728874a4afa9a598958bd7ebe258",
+          "rgbaSha256": "cbc74c4633a05268fd9032558aab7fd0c0b3685db51873b339000ecf4af5be98"
+        }
+      ]
+    }
+  },
+  "comparisons": {
+    "images": true,
+    "metrics": true,
+    "pdf": true,
+    "fontSha256": true,
+    "electron": true,
+    "node": true
+  },
+  "packageGate": {
+    "archive": "/private/tmp/heritage-unified-20260912/canvas-rebuild-20260914/source-skia-preview/SyncShow.app/Contents/Resources/app.asar",
+    "nativeTarget": "canvas-darwin-arm64",
+    "pdfRenderer": "pdfjs-dist@6.2.108",
+    "runtimeSmoke": "passed",
+    "legalEvidence": "passed",
+    "releaseLegalStatus": "blocked"
+  },
+  "helpers": {
+    "collect-skia-deps.py": "9d1de74c37225a9d1647c7dc2e120203f4ec27ab86190ae949f23d4f2f8bc0cf",
+    "build-skia-owned.py": "0201b6996fe17a8f07eacac516a16424c6494e717de35e4d8a98dc5b5e4ed237",
+    "build-full-canvas.py": "f8f5f62782a9638461653b7eb11a4ab5a540faf54677c29fdc55b32b77fa3e9a",
+    "canvas-probe.cjs": "577c3d7c63ff5da5c794e198823ff659d5d71f1ca60dbe3a879d12ee5499c541"
+  },
+  "runtimeDiagnostic": "[0914/052019.281433:ERROR:electron/shell/common/mac/codesign_util.cc:79] task_name_for_pid: (os/kern) failure (5)",
+  "paidApiRequests": 0,
+  "limits": [
+    "This is an owned build using a retained Rust lockfile; it does not recover the missing original upstream lockfile or reproduce its native binary bytes.",
+    "Only the retained image/text/PDF fixtures were compared. No general pixel equivalence, performance, GUI or physical-service claim is made.",
+    "Only Apple Silicon was rebuilt here. Other native targets still need their own source-build and replacement acceptance.",
+    "ICU assembly was generated from the pinned upstream icudtl.dat; regeneration of that data from Unicode source data was not tested.",
+    "Skia source-notice candidates include optional/build/test files and are not a determination that every listed component is linked.",
+    "No official package or release gate was changed. Public source distribution, packaged notices, libvips, protected release configuration and broader service acceptance remain open.",
+    "The normal installed app, user profile, other native libraries and application ASAR were unchanged."
+  ],
+  "upstreamBuildScript": {
+    "path": "scripts/build-skia.js",
+    "revision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+    "sha256": "173c2c5336651d9de06f7d43ccaff105161ba069d07b394bcf2648b911b63df8",
+    "sourceChanges": "none; the obsolete C API example-removal pattern is absent in this Skia source"
+  }
+}
