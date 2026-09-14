@@ -8,11 +8,11 @@ This repository owns the combined product brief, compatible component versions, 
 
 ## Current status
 
-Integration is in development. Pinned source setup, combined server commands, and live translation are implemented. SyncShow Preview 27 has retained installers with verified Mac ad-hoc signatures, including saved service translation settings and translation screens without a loaded presentation; official desktop releases and real-service acceptance remain unfinished. See [delivery status](STATUS.md).
+Integration is in development. Pinned source setup, combined server commands, and live translation are implemented. SyncShow Preview 28 has retained installers with verified Mac ad-hoc signatures, including saved service translation settings and translation screens without a loaded presentation; official desktop releases and real-service acceptance remain unfinished. See [delivery status](STATUS.md).
 
 ## Install the SyncShow preview
 
-The [desktop preview guide](docs/desktop-preview.md) covers the retained Mac installer, church connection, live translation and tablet teaching. Exact source and package checks are recorded in the [Preview 27 verification](docs/verification/2026-09-13-service-translation-plans.md).
+The [desktop preview guide](docs/desktop-preview.md) covers the retained Mac installer, church connection, live translation and tablet teaching. Exact source and package checks are recorded in the [Preview 28 verification](docs/verification/2026-09-14-desktop-preview-28.md).
 
 ## Install the Android preview
 

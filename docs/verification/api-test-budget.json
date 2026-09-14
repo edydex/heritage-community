@@ -3,8 +3,8 @@
   "authorizedAt": "2026-09-12",
   "currency": "USD",
   "maximum": 20,
-  "chargedOrConservativelyEstimated": 0.12,
-  "reservedForPendingRequests": 0.0,
+  "chargedOrConservativelyEstimated": 0.15,
+  "reservedForPendingRequests": 0,
   "requests": [
     {
       "id": "2026-09-14-original-host-text-01",
@@ -122,7 +122,92 @@
         "seconds": 45
       },
       "accountBillVerified": false,
-      "result": "Whole-file GPT-Transcribe produced coherent Russian and the repeated sermon term \u0441\u043d\u0438\u0441\u0445\u043e\u0436\u0434\u0435\u043d\u0438\u0435; separate model output, not human ground truth or live-pipeline acceptance."
+      "result": "Whole-file GPT-Transcribe produced coherent Russian and the repeated sermon term снисхождение; separate model output, not human ground truth or live-pipeline acceptance."
+    },
+    {
+      "id": "2026-09-14-committed-pipeline-04",
+      "status": "failed",
+      "reservedAt": "2026-09-14T08:15:16.798862+00:00",
+      "maximumUsd": 0.1,
+      "scope": "Original host current capture pipeline, GPT-Transcribe committed-turn recognition, public RU sermon 45s and synthetic EN 10.49s; engine output captured instead of translation/TTS. No configuration changes or credential transfer.",
+      "limits": {
+        "realtimeSecretRequests": 2,
+        "realtimeConnections": 2,
+        "audioSecondsTotalMaximum": 120,
+        "responsesRequests": 0,
+        "speechRequests": 0,
+        "hardTimeoutSeconds": 180
+      },
+      "models": [
+        "gpt-transcribe"
+      ],
+      "worstCaseUsd": 0.009,
+      "pricingSources": [
+        "https://developers.openai.com/api/docs/models/gpt-transcribe"
+      ],
+      "completedAt": "2026-09-14T08:19:06.618857+00:00",
+      "chargedOrConservativelyEstimatedUsd": 0.01,
+      "accountBillVerified": false,
+      "result": "Terminal process exit 1: test fixture omitted required source voiceMode channel. Provider session create returned 200; no quality result. Count bounded maximum audio cost because final usage is unavailable."
+    },
+    {
+      "maximumUsd": 0.1,
+      "scope": "Original host current capture pipeline, GPT-Transcribe committed-turn recognition, public RU sermon 45s and synthetic EN 10.49s; engine output captured instead of translation/TTS. No configuration changes or credential transfer.",
+      "limits": {
+        "realtimeSecretRequests": 2,
+        "realtimeConnections": 2,
+        "audioSecondsTotalMaximum": 120,
+        "responsesRequests": 0,
+        "speechRequests": 0,
+        "hardTimeoutSeconds": 180
+      },
+      "models": [
+        "gpt-transcribe"
+      ],
+      "worstCaseUsd": 0.009,
+      "pricingSources": [
+        "https://developers.openai.com/api/docs/models/gpt-transcribe"
+      ],
+      "id": "2026-09-14-committed-pipeline-05",
+      "status": "completed",
+      "reservedAt": "2026-09-14T08:19:06.619212+00:00",
+      "fixtureValidation": "Offline actual pipeline emits both source and cascade text for both languages; zero provider calls.",
+      "completedAt": "2026-09-14T08:20:19.272Z",
+      "calculatedListPriceUsd": 0.00416139375,
+      "chargedOrConservativelyEstimatedUsd": 0.01,
+      "actualAudioSeconds": 55.48525,
+      "actualRequests": 2,
+      "accountBillVerified": false,
+      "result": "Both directions completed with the real capture pipeline. Recognition was more coherent but retained terminology errors; forced eight-second cuts still lost words."
+    },
+    {
+      "id": "2026-09-14-committed-pipeline-06",
+      "status": "completed",
+      "reservedAt": "2026-09-14T08:30:35.595996+00:00",
+      "maximumUsd": 0.1,
+      "scope": "Same authorized RU/EN fixtures and real capture pipeline with updated production transcriber: compatible GPT-Transcribe configuration, ordered completion and natural-pause commits. Engine records input; translation/TTS are disabled. Original host only; no configuration changes or credential transfer.",
+      "limits": {
+        "realtimeSecretRequests": 2,
+        "realtimeConnections": 2,
+        "audioSecondsTotalMaximum": 120,
+        "responsesRequests": 0,
+        "speechRequests": 0,
+        "hardTimeoutSeconds": 180
+      },
+      "models": [
+        "gpt-transcribe"
+      ],
+      "worstCaseUsd": 0.009,
+      "pricingSources": [
+        "https://developers.openai.com/api/docs/models/gpt-transcribe"
+      ],
+      "completedAt": "2026-09-14T08:36:34.754Z",
+      "calculatedListPriceUsd": 0.00416139375,
+      "chargedOrConservativelyEstimatedUsd": 0.01,
+      "actualAudioSeconds": 55.48525,
+      "actualRequests": 2,
+      "accountBillVerified": false,
+      "result": "Both fixtures passed with the real capture pipeline and updated production adapter. Natural-pause commits preserved the complete known English sentence and Russian phrase at the old eight-second boundary. Russian terminology errors remain; no translation/TTS, relay or WOTBC acceptance."
     }
   ],
   "policy": "Reserve a conservative maximum before each paid test. Count failed or uncertain requests until usage is reconciled. Stop before the cumulative maximum can exceed $20. No data-sharing opt-in is changed by this authorization."

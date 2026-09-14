@@ -25,8 +25,10 @@ The whole-file comparison returned in **2.970 seconds after upload** and reporte
 
 ## Budget and remaining work
 
-The three bounded runs used **$0.12 conservatively estimated** of the authorized **$20**, with no pending reservations. Provider usage and published list prices imply approximately $0.1001 total; the ledger rounds each run upward. This is not a verified account invoice. See [the ledger](api-test-budget.json), [live transcription pricing](https://developers.openai.com/api/docs/models/gpt-live-transcribe), [text pricing](https://developers.openai.com/api/docs/models/gpt-6-astra), and [file transcription pricing](https://developers.openai.com/api/docs/models/gpt-transcribe).
+The initial three bounded runs used **$0.12 conservatively estimated** of the authorized **$20**, with no pending reservations at that checkpoint. Provider usage and published list prices imply approximately $0.1001 total; the ledger rounds each run upward. This is not a verified account invoice. See [the ledger](api-test-budget.json), [live transcription pricing](https://developers.openai.com/api/docs/models/gpt-live-transcribe), [text pricing](https://developers.openai.com/api/docs/models/gpt-6-astra), and [file transcription pricing](https://developers.openai.com/api/docs/models/gpt-transcribe).
 
 Next, compare committed-turn `gpt-transcribe` in the actual capture pipeline before choosing the Quality default. Review against the recording with a bilingual listener and a second excerpt; then compare notes, Economy and speech on/off. WOTBC manager setup, relay/phone listening, mixer input and full-service acceptance remain open.
 
 Request usage, timing, fixture hashes and limitations are in [the JSON record](2026-09-14-sermon-provider-test.json). Audio, transcripts and sanitized raw evidence are retained privately under `.heritage/rehearsals/2026-09-14/sermon-providers/`. All credentials remained in the original host's existing container environment.
+
+The follow-up [actual capture-pipeline comparison](2026-09-14-committed-recognition.md) records runs 04–06, the phrase-boundary improvement and the updated $0.15 cumulative budget.

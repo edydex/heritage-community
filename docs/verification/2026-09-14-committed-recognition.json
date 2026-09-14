@@ -1,0 +1,143 @@
+{
+  "checkedAt": "2026-09-14T08:36:34.754Z",
+  "status": "provider-fixtures-passed-quality-open",
+  "sourceRevision": "a48419b58d1f51a333da208ed5b57f0045673df6",
+  "sourceBaseRevision": "21a9576edd1f898ead1be214c90ee271df6bcba1",
+  "compiledModulesMatchPublishedSource": true,
+  "moduleSha256": {
+    "providers-v3/openai-live-transcriber.js": "997549582106fae7ed8d290c3e0dc9263c91bbc8e8652ddf157053534ddca2a4",
+    "providers-v3/realtime-transport.js": "e8a8f794b3902a5928df75a1f287ffc469332482d169b271126c97f6a4f85dd5",
+    "realtime-capture-pipeline.js": "3b9f89a665abe8d2a391236f837d641396c099d82cc5c39c348062ea985ed805"
+  },
+  "resultSha256": "1d2cf28352da03547f1d22f94f4a6c4a5c5cf114e38a1c1a36efa60c013e109f",
+  "reservationId": "2026-09-14-committed-pipeline-06",
+  "requests": [
+    {
+      "path": "/v1/realtime/client_secrets",
+      "inputBytes": 489,
+      "status": 200,
+      "latencyMs": 828
+    },
+    {
+      "path": "/v1/realtime/client_secrets",
+      "inputBytes": 413,
+      "status": 200,
+      "latencyMs": 268
+    }
+  ],
+  "sessions": [
+    {
+      "fixture": "wotbc-ru-committed-pipeline",
+      "language": "ru",
+      "durationSeconds": 45.0,
+      "pcmSha256": "ae03f811c7c676747248ac6c1e25c9cec6482a866651f3e66e4d5306e96dce12",
+      "commits": 8,
+      "nonemptyFinals": 8,
+      "cascadeInputs": 7,
+      "errors": [],
+      "finalLagAfterWindowEndMs": [
+        908,
+        1048,
+        981,
+        711,
+        514,
+        812,
+        1000,
+        749
+      ],
+      "sourceWindows": [
+        {
+          "startMs": 0,
+          "endMs": 7360,
+          "pauseAfterMs": 360
+        },
+        {
+          "startMs": 7360,
+          "endMs": 13940,
+          "pauseAfterMs": 360
+        },
+        {
+          "startMs": 13940,
+          "endMs": 23120,
+          "pauseAfterMs": 360
+        },
+        {
+          "startMs": 23120,
+          "endMs": 30000,
+          "pauseAfterMs": 360
+        },
+        {
+          "startMs": 30000,
+          "endMs": 32000,
+          "pauseAfterMs": 360
+        },
+        {
+          "startMs": 32000,
+          "endMs": 36900,
+          "pauseAfterMs": 360
+        },
+        {
+          "startMs": 36900,
+          "endMs": 43900,
+          "pauseAfterMs": 360
+        },
+        {
+          "startMs": 43900,
+          "endMs": 45000,
+          "pauseAfterMs": null
+        }
+      ]
+    },
+    {
+      "fixture": "synthetic-en-committed-pipeline",
+      "language": "en",
+      "durationSeconds": 10.48525,
+      "pcmSha256": "a7d1a931ff25d4ba5a559f13ab6050040f32881c5b9932cdf3fec92df5895068",
+      "commits": 2,
+      "nonemptyFinals": 1,
+      "cascadeInputs": 1,
+      "errors": [],
+      "finalLagAfterWindowEndMs": [
+        733
+      ],
+      "sourceWindows": [
+        {
+          "startMs": 0,
+          "endMs": 9800,
+          "pauseAfterMs": 360
+        }
+      ]
+    }
+  ],
+  "findings": [
+    "Natural-pause commits preserved the complete known English negation and a Russian phrase split by the previous eight-second cutoff.",
+    "The recurring Russian term still appeared as искажение in one passage instead of снисхождение; quality acceptance remains open.",
+    "Final results are emitted in source order, with explicit empty/failed/missing-result recovery."
+  ],
+  "validation": {
+    "processorTests": 79,
+    "focusedAdapterAndPipelineTests": 22,
+    "fullPnpmCheck": "passed",
+    "paidTranslationRequestsInThisComparison": 0,
+    "paidSpeechRequests": 0,
+    "sourceCi": {
+      "id": 34823780603,
+      "headSha": "a48419b58d1f51a333da208ed5b57f0045673df6",
+      "conclusion": "success",
+      "url": "https://github.com/edydex/multilinguum/actions/runs/34823780603"
+    }
+  },
+  "limits": [
+    "Original host only; no WOTBC configuration changes or credential transfer.",
+    "Actual capture pipeline uses paced prerecorded PCM; no physical mixer or browser microphone test.",
+    "Engine boundary records source and cascade input; translation, archive persistence, relay, display and listening are outside this comparison.",
+    "Small fixture comparison, no human-ground-truth word-error rate or full-service quality acceptance.",
+    "Default remains gpt-live-transcribe; gpt-transcribe is an explicit rehearsal option."
+  ],
+  "budget": {
+    "conservativeTotalUsd": 0.15,
+    "pendingReservedUsd": 0,
+    "authorizedMaximumUsd": 20,
+    "accountInvoiceVerified": false
+  }
+}
