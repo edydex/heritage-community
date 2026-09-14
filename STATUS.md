@@ -14,7 +14,7 @@ The shared repository, deployed church pages, real personal sync and native prev
 | Personal notes and progress | Real email sign-in and bidirectional notes/reading-position transfer passed between Firefox and the internal browser, including conflict review. | [Personal-sync acceptance](docs/verification/2026-09-13-personal-sync.md) |
 | Watch or follow translation | `/live` combines YouTube and translation choices; `/translate` excludes video. Floating text and measured broadcast-delay playback are implemented. WOTBC's channel is configured. | [Live service](https://wotbc.heritage.faith/live), [timing evidence](docs/verification/2026-09-13-broadcast-timing.md) |
 | Prepare and present | SyncShow preserves Prepare → Load → Show, shared Community preparation, English/Russian/stage outputs and loaded-service offline continuation. Translation screens also open without slides. | [Desktop preview](docs/desktop-preview.md), [saved service settings](docs/service-translation-plans.md) |
-| Translation controls | Both controller entry points share English ↔ Russian, Quality/Economy, saved choices, optional notes and speech controls. Speech-off prevents new generated-speech work while captions continue. | [Control verification](docs/verification/2026-09-13-service-translation-plans.md) |
+| Translation controls | Both controller entry points share English ↔ Russian, Quality/Economy, saved choices, optional notes and speech controls. Speech-off prevents new generated-speech work while captions continue. The shared console no longer requires LiveKit for Quality/Economy speech; it uses buffered audio over the church connection. | [Control verification](docs/verification/2026-09-13-service-translation-plans.md) |
 | Android preview | Published v1.1.33-preview.1 passes emulator offline screens, encrypted storage, signer/update compatibility and artifact checks. Physical-phone acceptance remains open. | [Install Android preview](docs/android-preview.md) |
 | Pastor teaching | Preview 28 includes ink/highlighter, colors, Undo/Clear, a progressively fading one-second pointer, nearby-slide gallery and host-only notices for confirmed remote navigation. Native feature rehearsal and all four package builds passed. The downloaded Apple Silicon app matches source and launches. | [Preview 28 evidence](docs/verification/2026-09-14-desktop-preview-28.md) |
 
@@ -24,13 +24,15 @@ Personal-sync sign-in, church membership and manager access are separate. Synthe
 
 | Component | Development pin |
 | --- | --- |
-| Heritage reader and Community | [`782535d`](https://github.com/edydex/heritage_study_bible/commit/782535d41e870e12983f807d7f8dda2e217e2c56) |
+| Heritage reader and Community | [`99bab02`](https://github.com/edydex/heritage_study_bible/commit/99bab02cca6bb955aac856e9c9567492f3ba1396) |
 | SyncShow Preview 28 | [`5301a99`](https://github.com/edydex/SyncShow/commit/5301a992638bdcc66a5253026658dd022320eda4) |
-| Multilinguum | [`aba43f7`](https://github.com/edydex/multilinguum/commit/aba43f734949b673fb14f00e154359f6e5de3530) |
+| Multilinguum | [`55d9494`](https://github.com/edydex/multilinguum/commit/55d949498a50e909ac5f1adeff3c05fdea976163) |
 
-[components.lock.json](components.lock.json) is the exact development set, not an accepted integrated release. WOTBC now has Community source `782535d` and processor `aba43f7`, including the tested recognition and recording fixes. The running processor modules match the tested build. Community's unchanged server subtree reused its prior image. The public reader separately runs `94a87a4`; the Android preview uses `782535d`.
+[components.lock.json](components.lock.json) is the exact development set, not an accepted integrated release. WOTBC now has Community source `99bab02` and processor `55d9494`, including the tested speech-control, recognition and recording fixes. The served operator bundle exactly matches the tested build. The September 14 code-only update preserved private settings and passed health and backup checks. The public reader separately runs `94a87a4`; the Android preview uses `782535d`.
 
 The [September 14 deployment audit](docs/verification/2026-09-14-wotbc-update.md) verified all three healthy services, three safety backups and unchanged private settings apart from the translation source/image revision. Both public listener pages reconnected in the real browser. The local sermon review's explicit playback/stop controls also passed. These checks do not prove WOTBC provider configuration, manager access or an actual service.
+
+A [September 14 audio rehearsal](docs/verification/2026-09-14-audio-relay-and-speech-control.md) verified real local relay reception, speech-off queue clearing, reconnect and browser playback controls using synthetic tones. The shared operator now allows speech without a separate LiveKit account. Real providers, physical listening and church-service acceptance remain separate.
 
 ## What remains before completion
 

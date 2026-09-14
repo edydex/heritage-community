@@ -1,0 +1,238 @@
+{
+  "date": "2026-09-14",
+  "testedAudioRevision": "aba43f734949b673fb14f00e154359f6e5de3530",
+  "speechControlFix": "55d949498a50e909ac5f1adeff3c05fdea976163",
+  "setupWordingFix": "99bab02cca6bb955aac856e9c9567492f3ba1396",
+  "livekitServer": "1.13.7",
+  "bottleSha256": "0302c5e72f2a2a56f0194efd1949e416ea61807701635d54fe3e80b09f7744e1",
+  "serverBinarySha256": "6744bb674ca197475cd466f0effd04ac35304e4ccafc8fbf386e4a6c7fcc1160",
+  "paidRequests": 0,
+  "credentials": "new disposable local credentials only; no existing provider credentials accessed or transferred",
+  "nativeReceiver": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "frames": 17087,
+    "nonSilentFramesAboveRms50": 1333,
+    "renderedTonesSeconds": [
+      3,
+      15,
+      3,
+      3
+    ],
+    "lastAboveThresholdFrameAfterSpeechOffMs": 155,
+    "aboveThresholdFramesAfter500msWhileOff": 0,
+    "renderCountWhileOff": 2,
+    "renderCountAfterReenableBeforeFreshPhrase": 2,
+    "listenerCountBeforeDisconnect": 1,
+    "listenerCountAfterDisconnect": 0,
+    "listenerCountAfterReconnect": 1
+  },
+  "browser": {
+    "bufferedPath": [
+      "Listening live",
+      "Audio off on operator speech-off",
+      "captions continued",
+      "fresh audio after reenable",
+      "Waiting for the next service on stop"
+    ],
+    "webRtcPath": {
+      "connectedListenerCount": 1,
+      "playingMediaElement": {
+        "paused": false,
+        "readyState": 4,
+        "currentTime": 31.09
+      },
+      "audioElementsAfterSpeechOff": 0,
+      "listenerCountAfterSpeechOff": 0,
+      "renderCountAfterListenerOnlyStopAndFreshPhrase": 3,
+      "audioElementsAfterServiceStop": 0,
+      "rejoin": "Listening live"
+    },
+    "operatorRegression": {
+      "before": "Audio provider configured, LiveKit absent: speech toggle incorrectly disabled",
+      "after": "Speech can be selected, saved, started, toggled off/on, and stopped without LiveKit",
+      "missingAudioKey": "Toggle disabled with OpenAI audio-provider setup explanation",
+      "providers": "Placeholder keys; outbound fetch throws; no mixer connected"
+    }
+  },
+  "token": {
+    "advertisedLifetimeSeconds": 300,
+    "expMinusNbf": 300,
+    "grants": {
+      "room": "service-f175ade8-0631-497b-bcdb-2533eb590390",
+      "roomJoin": true,
+      "canPublish": false,
+      "canPublishData": false,
+      "canSubscribe": true,
+      "canUpdateOwnMetadata": true
+    }
+  },
+  "checks": {
+    "multilinguum": "pnpm check passed: formatting, types, 123 tests, builds",
+    "community": "bash syntax and translation deployment fixture suite passed"
+  },
+  "limits": [
+    "Synthetic tones and deterministic transcript injection; no new real-sermon quality result",
+    "WebRTC-only case uses direct-Realtime channel selection with deterministic replay; no actual Realtime provider",
+    "Local loopback server; not LiveKit Cloud, WOTBC paid operation, physical listening, microphone, mixer, phone, or venue acceptance"
+  ],
+  "rawEvidenceSha256": {
+    "buffered": "d5eb24c9fbc912b8c2c26314a5c88d78c994160fe20df394b0ea198e7b6cb2eb",
+    "webRtc": "8a31ff5465f454b32f3ee71900fa3c7d3043e0d013eecc041797b0a75a816ea7"
+  },
+  "cleanup": "All four local rehearsal processes and LiveKit server stopped; repeated stop in cleanup returned expected inactive-session 409",
+  "deployment": {
+    "checkedAt": "2026-09-14T10:27:08.621705+00:00",
+    "host": "heritage-community",
+    "receipt": {
+      "schemaVersion": 1,
+      "installedAt": "2026-09-14T10:26:23Z",
+      "setDigest": "056cbe3f0e103ea1e529c1b445c1748168480f0e3b54f113e87443802f12a2d5",
+      "manifest": {
+        "schemaVersion": 1,
+        "channel": "development",
+        "description": "Development integration revisions with local verification. This set is not yet an accepted integrated release.",
+        "components": [
+          {
+            "id": "heritage",
+            "name": "Heritage Bible and Community server",
+            "repository": "https://github.com/edydex/heritage_study_bible.git",
+            "revision": "99bab02cca6bb955aac856e9c9567492f3ba1396"
+          },
+          {
+            "id": "syncshow",
+            "name": "SyncShow",
+            "repository": "https://github.com/edydex/SyncShow.git",
+            "revision": "5301a992638bdcc66a5253026658dd022320eda4"
+          },
+          {
+            "id": "multilinguum",
+            "name": "Multilinguum",
+            "repository": "https://github.com/edydex/multilinguum.git",
+            "revision": "55d949498a50e909ac5f1adeff3c05fdea976163"
+          }
+        ]
+      },
+      "acceptance": "source-and-service-health; provider and device rehearsal remains separate"
+    },
+    "receiptMode": "0o600",
+    "receiptDigestMatches": true,
+    "communityHead": "99bab02cca6bb955aac856e9c9567492f3ba1396",
+    "communityClean": true,
+    "processorHead": "55d949498a50e909ac5f1adeff3c05fdea976163",
+    "providerSettingsDigest": "16ce1ce320cd92c6a1b200a644ea7857175dc9f5c7563e5103a5500aa3dc3e9f",
+    "providerSettingsUnchanged": true,
+    "changedConfigurationKeys": [
+      "HERITAGE_TRANSLATION_IMAGE",
+      "HERITAGE_TRANSLATION_REVISION",
+      "HERITAGE_TRANSLATION_SOURCE"
+    ],
+    "backups": [
+      {
+        "name": "backup-20260914T101503Z-pre-unified-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T101543Z-pre-translation-setup",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T101904Z-pre-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      }
+    ],
+    "containers": {
+      "community": {
+        "image": "sha256:d9399fb6f3e73ee0f8adbd1d3d4b841c857651db6dddaf8340119158a42d5d81",
+        "running": true,
+        "health": "healthy"
+      },
+      "translation-processor": {
+        "image": "sha256:7c1a2c608a29c4688a74ef3c9eaa48f49d5b0a9e322c0b9eabd8fc8843bdf5fb",
+        "running": true,
+        "health": "healthy"
+      },
+      "postgres": {
+        "image": "sha256:18cfe3ef5e6815560c98237d6216d1e5119702fb0f3894c8785dd58b8bbe5d73",
+        "running": true,
+        "health": "healthy"
+      }
+    },
+    "runtimeFileHashes": {
+      "/app/client/operator.js": "c6907647a56ba5720a213497894dcd63566d84901a0962506bbe08004125dc45",
+      "/app/dist/session-engine.js": "a8ef6bf5e146a5be2237535a7ac43baae86d7c329912aa1c34ae49ee758e92b4",
+      "/app/dist/providers/broadcast-relay.js": "4297fd3dc293b21ffccda36af7576e49386667d347cc92e00566aa21efa7a37d"
+    },
+    "routes": {
+      "/live": {
+        "status": 200,
+        "bytes": 9862,
+        "sha256": "1fe7d65dff8cc034cbc3ad2adbf76d3f22ee1e308c75db748367ba49dd81c816"
+      },
+      "/translate": {
+        "status": 200,
+        "bytes": 9888,
+        "sha256": "4fc2ca1e391b966196b57c7987dd23b5052facd203ccbed185f56f93cda8f09a"
+      },
+      "/live/settings.json": {
+        "status": 200,
+        "bytes": 191,
+        "sha256": "c62a3fc84ebaf1cd174c28abf16ec87c31e2d048328ca1d01547a0a8bc0abd0c",
+        "body": {
+          "schemaVersion": 1,
+          "churchName": "Word of Truth Bible Church",
+          "channelUrl": "https://www.youtube.com/@wordoftruthbiblech",
+          "videoId": null,
+          "translationUrl": "/translate",
+          "broadcastDelaySeconds": 0
+        }
+      },
+      "/translation/client/operator.js": {
+        "status": 200,
+        "bytes": 357372,
+        "sha256": "c6907647a56ba5720a213497894dcd63566d84901a0962506bbe08004125dc45"
+      },
+      "/translation/api/public/service": {
+        "status": 200,
+        "bytes": 106,
+        "sha256": "f78896c9bfed71b0ba780599f9c13f5cef73524c32f9561b57ceb55a02cb8758",
+        "body": {
+          "active": false,
+          "serverTimeUnixMs": 1789381628616,
+          "churchName": "Word of Truth Bible Church",
+          "languages": []
+        }
+      }
+    },
+    "tunnel": "active",
+    "runtimeMailDns": "resolved",
+    "paidRequests": 0,
+    "operatorMatchesTestedBuild": true,
+    "publicBrowserLive": "Waiting for the next service; Audio off",
+    "publicBrowserTranslate": "Waiting for the next service; Audio off; no video"
+  }
+}
