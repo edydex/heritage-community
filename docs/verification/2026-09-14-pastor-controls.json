@@ -44,5 +44,18 @@
   "readinessEstimate": {
     "overallRoundedPercent": 75,
     "method": "Weighted area estimates, rounded to nearest 5; approximate +/-10 points, not coverage."
+  },
+  "githubActions": {
+    "source": {
+      "run": 34816324009,
+      "conclusion": "success",
+      "platforms": 4
+    },
+    "packageSmoke": {
+      "run": 34816323979,
+      "conclusion": "success",
+      "nativeTargets": 4,
+      "publicRelease": false
+    }
   }
 }

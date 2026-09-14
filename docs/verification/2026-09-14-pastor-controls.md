@@ -10,6 +10,8 @@ Every paired remote's confirmed Previous, Next or gallery change sends the host 
 
 ## Verification
 
+The final published revision also passed all four source jobs in [CI 34816324009](https://github.com/edydex/SyncShow/actions/runs/34816324009) and the shared gate plus all four native builds in [Package Smoke 34816323979](https://github.com/edydex/SyncShow/actions/runs/34816323979). These are QA packages; this turn has not independently downloaded/inspected them or cleared the official public-release prerequisites.
+
 - Required local suite: **2,237 passed, zero failed, two existing skips**. Syntax check: **219 files**. The final gallery focus adjustment passed the focused regression tests and the repeated native rehearsal.
 - The native rehearsal uses the production main process, preload, Remote server and display renderers, with a temporary profile, synthetic service/displays and loopback pairing. It sends actual mouse input through Electron.
 - During one continuous 1.65-second gesture, the early screen region had no pointer pixels while the recent region still did. Only the selected language output received the trail; after release it fully expired without creating saved ink.
