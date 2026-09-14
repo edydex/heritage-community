@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-14",
+  "checkedAt": "2026-09-14T12:00:19.803748+00:00",
+  "platform": "darwin-arm64",
+  "previewRevision": "5301a992638bdcc66a5253026658dd022320eda4",
+  "canvasRevision": "2aa648fb4ed83fbe87af77922ecf89153184f8b5",
+  "skiaRevision": "7219df0fb0ff64f26adad448f94e8c001b964e6a",
+  "status": "Owned Canvas wrapper rebuild and packaged rendering passed; full source-built Skia and release acceptance incomplete",
+  "inputs": {
+    "canvas-source.tar.gz": {
+      "size": 29640541,
+      "sha256": "a1a4c08bc2e4160528e6cdc0a4c57c37ce37c657f7b664244dcfaee033829fd6",
+      "url": "https://codeload.github.com/Brooooooklyn/canvas/tar.gz/2aa648fb4ed83fbe87af77922ecf89153184f8b5"
+    },
+    "skia-source.tar.gz": {
+      "size": 68583095,
+      "sha256": "83edae36346f1cd9122a1674b82277693bb101d17a106822835c0863f002b5bd",
+      "url": "https://codeload.github.com/google/skia/tar.gz/7219df0fb0ff64f26adad448f94e8c001b964e6a"
+    },
+    "rust-vendor-reviewed.tar.gz": {
+      "size": 14439201,
+      "sha256": "d139ac3a0d12fd950744927daff5c9cb6473687fd4b7c0dfc6b0248d2af94d71"
+    }
+  },
+  "skiaStaticArchives": [
+    {
+      "name": "libjsonreader.a",
+      "sourceAsset": "libjsonreader-darwin-aarch64.a",
+      "url": "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libjsonreader-darwin-aarch64.a",
+      "bytes": 22920,
+      "sha256": "445866f79e5ece8bd86ce62e4b709d446a23b5293c63847700773136564099dc"
+    },
+    {
+      "name": "libskia.a",
+      "sourceAsset": "libskia-darwin-aarch64.a",
+      "url": "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskia-darwin-aarch64.a",
+      "bytes": 17070128,
+      "sha256": "106aa1184bcacf3e0e02f3efd5c346976264ef11105e857b4a3d33e7030203b4"
+    },
+    {
+      "name": "libskottie.a",
+      "sourceAsset": "libskottie-darwin-aarch64.a",
+      "url": "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskottie-darwin-aarch64.a",
+      "bytes": 5868608,
+      "sha256": "4857198fd87bb1eb39e02468a7001b79716a741734e3bdfd99f7b87b2fa2158b"
+    },
+    {
+      "name": "libskparagraph.a",
+      "sourceAsset": "libskparagraph-darwin-aarch64.a",
+      "url": "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskparagraph-darwin-aarch64.a",
+      "bytes": 459128,
+      "sha256": "ac6d9635a51a961ceb77579420fd203f371c10d5813a0fe95fede4402b92d6bf"
+    },
+    {
+      "name": "libskresources.a",
+      "sourceAsset": "libskresources-darwin-aarch64.a",
+      "url": "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskresources-darwin-aarch64.a",
+      "bytes": 29288,
+      "sha256": "634a4f0e5c4a04a6b258edf1c68c8455b5074a923370de219dbf92150e7799aa"
+    },
+    {
+      "name": "libsksg.a",
+      "sourceAsset": "libsksg-darwin-aarch64.a",
+      "url": "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libsksg-darwin-aarch64.a",
+      "bytes": 5101736,
+      "sha256": "edeb174b573351c4f9f2b0db198a31823864fdefbab6a91426dbdd93d20905bd"
+    },
+    {
+      "name": "libskshaper.a",
+      "sourceAsset": "libskshaper-darwin-aarch64.a",
+      "url": "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskshaper-darwin-aarch64.a",
+      "bytes": 6060016,
+      "sha256": "2e442845ac543c91335a4f2998ba953240769e64e4561a50e247512cc9e751bd"
+    },
+    {
+      "name": "libskunicode_core.a",
+      "sourceAsset": "libskunicode_core-darwin-aarch64.a",
+      "url": "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskunicode_core-darwin-aarch64.a",
+      "bytes": 7104,
+      "sha256": "187932099a167fa8438f3404892e9f79abc9a846db86834f7bf36cd39c1556d5"
+    },
+    {
+      "name": "libskunicode_icu.a",
+      "sourceAsset": "libskunicode_icu-darwin-aarch64.a",
+      "url": "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libskunicode_icu-darwin-aarch64.a",
+      "bytes": 18326744,
+      "sha256": "4ed76d645164b0250c15efb03ee5728af39cf2579c274e930684a9794db7f54c"
+    },
+    {
+      "name": "libsvg.a",
+      "sourceAsset": "libsvg-darwin-aarch64.a",
+      "url": "https://github.com/Brooooooklyn/canvas/releases/download/skia-7219df0f/libsvg-darwin-aarch64.a",
+      "bytes": 5418264,
+      "sha256": "62696af29eb9d45531a515909d6e129a0d2ad53214c6ce04f815cd497948feb9"
+    }
+  ],
+  "cargoLock": {
+    "sha256": "b1a6edb60d4ba65254faefeaf9317be9b8377dcf63ada1203215d4d4d2816c66",
+    "registryPackages": 93,
+    "sourceNoticeFiles": 158,
+    "compilerArtifactPackages": 84,
+    "compiledPackages": [
+      "path+file:///private/tmp/heritage-unified-20260912/canvas-rebuild-20260914/canvas-2aa648fb4ed83fbe87af77922ecf89153184f8b5#canvas@0.1.0",
+      "registry+https://github.com/rust-lang/crates.io-index#aho-corasick@1.1.5",
+      "registry+https://github.com/rust-lang/crates.io-index#anyhow@1.0.104",
+      "registry+https://github.com/rust-lang/crates.io-index#base64-simd@0.8.0",
+      "registry+https://github.com/rust-lang/crates.io-index#bitflags@2.13.2",
+      "registry+https://github.com/rust-lang/crates.io-index#bytemuck@1.25.2",
+      "registry+https://github.com/rust-lang/crates.io-index#cc@1.4.6",
+      "registry+https://github.com/rust-lang/crates.io-index#cfb@0.14.0",
+      "registry+https://github.com/rust-lang/crates.io-index#cfg-if@1.0.4",
+      "registry+https://github.com/rust-lang/crates.io-index#cmake@0.1.58",
+      "registry+https://github.com/rust-lang/crates.io-index#color_quant@1.1.0",
+      "registry+https://github.com/rust-lang/crates.io-index#convert_case@0.11.0",
+      "registry+https://github.com/rust-lang/crates.io-index#cssparser-color@0.5.0",
+      "registry+https://github.com/rust-lang/crates.io-index#cssparser-macros@0.7.1",
+      "registry+https://github.com/rust-lang/crates.io-index#cssparser@0.37.0",
+      "registry+https://github.com/rust-lang/crates.io-index#ctor@1.0.13",
+      "registry+https://github.com/rust-lang/crates.io-index#dtoa-short@0.3.5",
+      "registry+https://github.com/rust-lang/crates.io-index#dtoa@1.0.11",
+      "registry+https://github.com/rust-lang/crates.io-index#fastrand@2.5.0",
+      "registry+https://github.com/rust-lang/crates.io-index#find-msvc-tools@0.1.12",
+      "registry+https://github.com/rust-lang/crates.io-index#fnv@1.0.7",
+      "registry+https://github.com/rust-lang/crates.io-index#futures-channel@0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index#futures-core@0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index#futures-executor@0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index#futures-io@0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index#futures-macro@0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index#futures-sink@0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index#futures-task@0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index#futures-util@0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index#futures@0.3.34",
+      "registry+https://github.com/rust-lang/crates.io-index#gif@0.14.2",
+      "registry+https://github.com/rust-lang/crates.io-index#imagesize@0.15.0",
+      "registry+https://github.com/rust-lang/crates.io-index#infer@0.22.0",
+      "registry+https://github.com/rust-lang/crates.io-index#itoa@1.0.18",
+      "registry+https://github.com/rust-lang/crates.io-index#libaom-sys@0.17.2+libaom.3.11.0",
+      "registry+https://github.com/rust-lang/crates.io-index#libavif-sys@0.17.0+libavif.1.0.4",
+      "registry+https://github.com/rust-lang/crates.io-index#libavif@0.14.0",
+      "registry+https://github.com/rust-lang/crates.io-index#libc@0.2.189",
+      "registry+https://github.com/rust-lang/crates.io-index#libloading@0.9.0",
+      "registry+https://github.com/rust-lang/crates.io-index#libmimalloc-sys2@0.1.63",
+      "registry+https://github.com/rust-lang/crates.io-index#memchr@2.8.3",
+      "registry+https://github.com/rust-lang/crates.io-index#mimalloc-safe@0.1.67",
+      "registry+https://github.com/rust-lang/crates.io-index#napi-build@2.3.2",
+      "registry+https://github.com/rust-lang/crates.io-index#napi-derive-backend@6.0.0",
+      "registry+https://github.com/rust-lang/crates.io-index#napi-derive@3.6.0",
+      "registry+https://github.com/rust-lang/crates.io-index#napi-sys@3.3.0",
+      "registry+https://github.com/rust-lang/crates.io-index#napi@3.11.0",
+      "registry+https://github.com/rust-lang/crates.io-index#nohash-hasher@0.2.0",
+      "registry+https://github.com/rust-lang/crates.io-index#nom@8.0.0",
+      "registry+https://github.com/rust-lang/crates.io-index#num_cpus@1.17.0",
+      "registry+https://github.com/rust-lang/crates.io-index#outref@0.5.2",
+      "registry+https://github.com/rust-lang/crates.io-index#phf@0.13.1",
+      "registry+https://github.com/rust-lang/crates.io-index#phf_generator@0.13.1",
+      "registry+https://github.com/rust-lang/crates.io-index#phf_macros@0.13.1",
+      "registry+https://github.com/rust-lang/crates.io-index#phf_shared@0.13.1",
+      "registry+https://github.com/rust-lang/crates.io-index#pin-project-lite@0.2.17",
+      "registry+https://github.com/rust-lang/crates.io-index#proc-macro2@1.0.107",
+      "registry+https://github.com/rust-lang/crates.io-index#quote@1.0.47",
+      "registry+https://github.com/rust-lang/crates.io-index#regex-automata@0.4.18",
+      "registry+https://github.com/rust-lang/crates.io-index#regex-syntax@0.8.11",
+      "registry+https://github.com/rust-lang/crates.io-index#regex@1.13.1",
+      "registry+https://github.com/rust-lang/crates.io-index#rgb@0.8.53",
+      "registry+https://github.com/rust-lang/crates.io-index#rustc-hash@2.1.3",
+      "registry+https://github.com/rust-lang/crates.io-index#serde@1.0.229",
+      "registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.229",
+      "registry+https://github.com/rust-lang/crates.io-index#serde_derive@1.0.229",
+      "registry+https://github.com/rust-lang/crates.io-index#serde_json@1.0.151",
+      "registry+https://github.com/rust-lang/crates.io-index#shlex@2.0.1",
+      "registry+https://github.com/rust-lang/crates.io-index#siphasher@1.0.3",
+      "registry+https://github.com/rust-lang/crates.io-index#slab@0.4.12",
+      "registry+https://github.com/rust-lang/crates.io-index#smallvec@1.16.1",
+      "registry+https://github.com/rust-lang/crates.io-index#syn@2.0.119",
+      "registry+https://github.com/rust-lang/crates.io-index#syn@3.0.5",
+      "registry+https://github.com/rust-lang/crates.io-index#thiserror-impl@2.0.20",
+      "registry+https://github.com/rust-lang/crates.io-index#thiserror@2.0.20",
+      "registry+https://github.com/rust-lang/crates.io-index#tokio-stream@0.1.19",
+      "registry+https://github.com/rust-lang/crates.io-index#tokio@1.53.1",
+      "registry+https://github.com/rust-lang/crates.io-index#unicode-ident@1.0.24",
+      "registry+https://github.com/rust-lang/crates.io-index#unicode-segmentation@1.13.3",
+      "registry+https://github.com/rust-lang/crates.io-index#uuid@1.26.1",
+      "registry+https://github.com/rust-lang/crates.io-index#vsimd@0.8.0",
+      "registry+https://github.com/rust-lang/crates.io-index#web-time@1.1.0",
+      "registry+https://github.com/rust-lang/crates.io-index#weezl@0.1.12",
+      "registry+https://github.com/rust-lang/crates.io-index#zmij@1.0.23"
+    ],
+    "pinnedNapi": {
+      "napi": "3.11.0",
+      "napi-build": "2.3.2",
+      "napi-derive": "3.6.0",
+      "napi-derive-backend": "6.0.0",
+      "napi-sys": "3.3.0"
+    }
+  },
+  "toolchain": {
+    "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)\nbinary: rustc\ncommit-hash: 8bab26f4f68e0e26f0bb7960be334d5b520ea452\ncommit-date: 2026-07-14\nhost: aarch64-apple-darwin\nrelease: 1.97.1\nLLVM version: 22.1.6\n",
+    "clang": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+    "cmake": "4.3.0",
+    "ninja": "1.13.0",
+    "deploymentTarget": "12.0",
+    "target": "aarch64-apple-darwin",
+    "buildCommand": "python3 build-owned.py ROOT",
+    "offline": true,
+    "locked": true,
+    "registryCache": "empty separate offline-cargo-home",
+    "source": "vendor-reviewed",
+    "machOMinimumOS": "12.0",
+    "registryCacheFiles": [
+      "CACHEDIR.TAG"
+    ],
+    "verifiedVendoredCompilerManifests": 83
+  },
+  "replacement": {
+    "originalNativeSha256": "2a8a14e3cf9a5129fc845884278560c3fbac2e7861ff35be2b32cf9599428160",
+    "rebuiltBeforeSigningSha256": "95b8e3cbb1e1ac81d598cabc7fabec2ab6206b292ffe77d0ef0ae43ad345141c",
+    "applicationSha256": "3c712e03d691f39654d9955374664302f69aa5da44fe76e90bab95c341733291",
+    "signedNativeSha256": "6d9c56c8b57c8a4eb8063d9d3c7206f54f3693349214e7d00a26ea571768d5b2",
+    "signature": "passed",
+    "asarUnchanged": true,
+    "ffmpegUnchanged": true,
+    "libvipsUnchanged": true
+  },
+  "original": {
+    "electron": "43.2.0",
+    "node": "24.18.0",
+    "native": {
+      "path": "/private/tmp/heritage-unified-20260912/qa-34818135279/macos-arm64/mac-arm64/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@napi-rs/canvas-darwin-arm64/skia.darwin-arm64.node",
+      "sha256": "2a8a14e3cf9a5129fc845884278560c3fbac2e7861ff35be2b32cf9599428160"
+    },
+    "fontSha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+    "images": {
+      "png": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "d9628180ceece6473c2bce1201bdb90f345fe3911e4b18ffa702caf6e58f89a7",
+        "rgbaSha256": "06e22b86c00d9690ea8af6dbabcc8d545fc1e15cb4a0fe6c796617e4d58ca4b3"
+      },
+      "jpeg": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "ca36bfa359af51b87f7496a874115c205a49ce0f1df8b0084c092e65efd1db81",
+        "rgbaSha256": "c230b134e68dce98148b4a5a7f27183500c49dd3be8512d724af23dcbf43d6e5"
+      },
+      "webp": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "669bc39eb4853caf0117a25b67fd401ec5e77e71f205653e541e47095e528fe1",
+        "rgbaSha256": "5d21e881e7dad1fa72e38248e3a436c7e163e1e88b1e98809ac0c66ea18f31d9"
+      }
+    },
+    "metrics": [
+      {
+        "text": "Heritage \u00b7 Word of Truth",
+        "width": 214.16000366210938
+      },
+      {
+        "text": "\u0421\u043b\u043e\u0432\u043e \u0438\u0441\u0442\u0438\u043d\u044b \u00b7 \u0418\u043e\u0430\u043d\u043d\u0430 3:16",
+        "width": 263.54998779296875
+      }
+    ],
+    "pdf": {
+      "renderer": "6.2.108",
+      "fixtureSha256": "14a258acc152476acfe619d6c558e412b2960bca6dc2b129b1fc3252be5799af",
+      "pages": [
+        {
+          "text": "Heritage PDF rendering",
+          "width": 480,
+          "height": 270,
+          "encodedSha256": "e103995a1f52fe6beeab18fb217709def7024b1fddc1ae485067a1a36f4d878e",
+          "rgbaSha256": "d4bdec06f0eb3c4ea261dd10f32ba75900a8a60e0b34c9bcf2477cd06650c462"
+        },
+        {
+          "text": "Second page: service notes",
+          "width": 480,
+          "height": 270,
+          "encodedSha256": "bbd515c768f967b4d783e041698ca514d42a728874a4afa9a598958bd7ebe258",
+          "rgbaSha256": "cbc74c4633a05268fd9032558aab7fd0c0b3685db51873b339000ecf4af5be98"
+        }
+      ]
+    }
+  },
+  "rebuilt": {
+    "electron": "43.2.0",
+    "node": "24.18.0",
+    "native": {
+      "path": "/private/tmp/heritage-unified-20260912/canvas-rebuild-20260914/reviewed-preview/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@napi-rs/canvas-darwin-arm64/skia.darwin-arm64.node",
+      "sha256": "6d9c56c8b57c8a4eb8063d9d3c7206f54f3693349214e7d00a26ea571768d5b2"
+    },
+    "fontSha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+    "images": {
+      "png": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "d9628180ceece6473c2bce1201bdb90f345fe3911e4b18ffa702caf6e58f89a7",
+        "rgbaSha256": "06e22b86c00d9690ea8af6dbabcc8d545fc1e15cb4a0fe6c796617e4d58ca4b3"
+      },
+      "jpeg": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "ca36bfa359af51b87f7496a874115c205a49ce0f1df8b0084c092e65efd1db81",
+        "rgbaSha256": "c230b134e68dce98148b4a5a7f27183500c49dd3be8512d724af23dcbf43d6e5"
+      },
+      "webp": {
+        "width": 480,
+        "height": 270,
+        "encodedSha256": "669bc39eb4853caf0117a25b67fd401ec5e77e71f205653e541e47095e528fe1",
+        "rgbaSha256": "5d21e881e7dad1fa72e38248e3a436c7e163e1e88b1e98809ac0c66ea18f31d9"
+      }
+    },
+    "metrics": [
+      {
+        "text": "Heritage \u00b7 Word of Truth",
+        "width": 214.16000366210938
+      },
+      {
+        "text": "\u0421\u043b\u043e\u0432\u043e \u0438\u0441\u0442\u0438\u043d\u044b \u00b7 \u0418\u043e\u0430\u043d\u043d\u0430 3:16",
+        "width": 263.54998779296875
+      }
+    ],
+    "pdf": {
+      "renderer": "6.2.108",
+      "fixtureSha256": "14a258acc152476acfe619d6c558e412b2960bca6dc2b129b1fc3252be5799af",
+      "pages": [
+        {
+          "text": "Heritage PDF rendering",
+          "width": 480,
+          "height": 270,
+          "encodedSha256": "e103995a1f52fe6beeab18fb217709def7024b1fddc1ae485067a1a36f4d878e",
+          "rgbaSha256": "d4bdec06f0eb3c4ea261dd10f32ba75900a8a60e0b34c9bcf2477cd06650c462"
+        },
+        {
+          "text": "Second page: service notes",
+          "width": 480,
+          "height": 270,
+          "encodedSha256": "bbd515c768f967b4d783e041698ca514d42a728874a4afa9a598958bd7ebe258",
+          "rgbaSha256": "cbc74c4633a05268fd9032558aab7fd0c0b3685db51873b339000ecf4af5be98"
+        }
+      ]
+    }
+  },
+  "comparisons": {
+    "images": true,
+    "metrics": true,
+    "pdf": true,
+    "fontSha256": true,
+    "electron": true,
+    "node": true
+  },
+  "packageGate": {
+    "original": "passed",
+    "firstIncompatibleRebuild": "rejected by image round-trip",
+    "reviewedRebuild": "passed",
+    "existingReleaseLegalStatus": "blocked",
+    "sourceRevision": "8404883c0cd3e533b39fce3854be28ea8c452e86",
+    "sourceCI": {
+      "id": 34841069377,
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "id": 103965941958,
+          "name": "Test (windows-latest)",
+          "conclusion": "success"
+        },
+        {
+          "id": 103965942168,
+          "name": "Test (ubuntu-latest)",
+          "conclusion": "success"
+        },
+        {
+          "id": 103965942297,
+          "name": "Test (macos-15-intel)",
+          "conclusion": "success"
+        },
+        {
+          "id": 103965942332,
+          "name": "Test (macos-latest)",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "packageCI": {
+      "id": 34841069396,
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "id": 103965942517,
+          "name": "Shared broad gate",
+          "conclusion": "success"
+        },
+        {
+          "id": 103966300052,
+          "name": "QA package (macos-arm64)",
+          "conclusion": "success"
+        },
+        {
+          "id": 103966300064,
+          "name": "QA package (linux-x64)",
+          "conclusion": "success"
+        },
+        {
+          "id": 103966300097,
+          "name": "QA package (windows-x64)",
+          "conclusion": "success"
+        },
+        {
+          "id": 103966300202,
+          "name": "QA package (macos-x64)",
+          "conclusion": "success"
+        }
+      ]
+    }
+  },
+  "failures": [
+    {
+      "stage": "Initial latest-compatible lockfile",
+      "error": "drawImage rejected Image and Canvas native class inputs",
+      "resolution": "Pinned napi 3.11.0, napi-derive 3.6.0, napi-derive-backend 6.0.0, napi-sys 3.3.0 and napi-build 2.3.2 to observed original-build versions; retained full new lock and vendor sources",
+      "singleCulpritIdentified": false
+    },
+    {
+      "stage": "Source inventory helper",
+      "error": "Assumed one vendor folder per crate name, but syn has two versions",
+      "resolution": "Indexed vendor metadata by name and version"
+    },
+    {
+      "stage": "First reviewed bundle gate",
+      "error": "Evidence manifest expected SyncShow.app while owner copy had a different name",
+      "resolution": "Placed owner copy under reviewed-preview/SyncShow.app; unchanged verifier passed"
+    }
+  ],
+  "limits": [
+    "Skia static archives were verified against official release digests but were not rebuilt from source in this run.",
+    "This is an owned dependency resolution, not recovery of the missing original upstream Cargo.lock or a bit-identical upstream native binary.",
+    "The initial cache-backed and vendored builds were not byte-identical; no deterministic-binary claim is made.",
+    "Only five N-API versions were pinned as a group; no single offending crate was isolated.",
+    "Headless packaged Electron rendering, not native GUI, projector, physical tablet or other-platform acceptance.",
+    "Trusted ad-hoc owner copy only; no installed app, application source, provider settings, public release gate or signing policy changed.",
+    "Rust source notices include build/test/target-only dependencies and are not a complete Skia or linked-license determination."
+  ],
+  "paidApiRequests": 0,
+  "runtimeDiagnostic": "[0914/045917.790894:ERROR:electron/shell/common/mac/codesign_util.cc:79] task_name_for_pid: (os/kern) failure (5)",
+  "helpers": {
+    "build-owned.py": "8a2598d58f04cc816c5d68e05125a6faa0646ee64690cc0fe220f1547afd3738",
+    "canvas-probe.cjs": "577c3d7c63ff5da5c794e198823ff659d5d71f1ca60dbe3a879d12ee5499c541"
+  }
+}
