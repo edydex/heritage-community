@@ -1,0 +1,447 @@
+{
+  "checkedAt": "2026-09-14T08:52:29.976Z",
+  "status": "engine-and-provider-controls-passed-quality-open",
+  "paidSourceRevision": "a48419b58d1f51a333da208ed5b57f0045673df6",
+  "paidResultSha256": "1a5f2fca4783ad80fc3e5494f3e713ee022e57f1bd7dbe1884d4ea6dba5a80bd",
+  "reservationId": "2026-09-14-full-engine-07",
+  "requests": [
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/realtime/client_secrets",
+      "startedAtUnixMs": 1789375879651,
+      "inputBytes": 489,
+      "status": 200,
+      "completedAtUnixMs": 1789375880506
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/responses",
+      "startedAtUnixMs": 1789375889439,
+      "inputBytes": 4927,
+      "status": 200,
+      "usage": {
+        "input_tokens": 880,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 146,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1026
+      },
+      "completedAtUnixMs": 1789375895391
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/audio/speech",
+      "startedAtUnixMs": 1789375895397,
+      "inputBytes": 1572,
+      "speechEnabledAtDispatch": true,
+      "status": 200,
+      "durationSeconds": 6.868041666666667,
+      "outputSha256": "f82023cd78d5d42dcff2656c8565a43bc7f4b6f99f26545a4c94d88e6717294a",
+      "completedAtUnixMs": 1789375897981
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/responses",
+      "startedAtUnixMs": 1789375897431,
+      "inputBytes": 5020,
+      "status": 200,
+      "usage": {
+        "input_tokens": 906,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 194,
+        "output_tokens_details": {
+          "reasoning_tokens": 71
+        },
+        "total_tokens": 1100
+      },
+      "completedAtUnixMs": 1789375902885
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/responses",
+      "startedAtUnixMs": 1789375904950,
+      "inputBytes": 5278,
+      "status": 200,
+      "usage": {
+        "input_tokens": 943,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 123,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1066
+      },
+      "completedAtUnixMs": 1789375910928
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/responses",
+      "startedAtUnixMs": 1789375913522,
+      "inputBytes": 5290,
+      "status": 200,
+      "usage": {
+        "input_tokens": 965,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 131,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1096
+      },
+      "completedAtUnixMs": 1789375916981
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/audio/speech",
+      "startedAtUnixMs": 1789375916985,
+      "inputBytes": 1605,
+      "speechEnabledAtDispatch": true,
+      "status": 200,
+      "durationSeconds": 7.240333333333333,
+      "outputSha256": "68e0c4846abb4344524dac7f65fe085f5d0071b627a8db4f747e62f2db739fce",
+      "completedAtUnixMs": 1789375918898
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/responses",
+      "startedAtUnixMs": 1789375918446,
+      "inputBytes": 5345,
+      "status": 200,
+      "usage": {
+        "input_tokens": 977,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 108,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1085
+      },
+      "completedAtUnixMs": 1789375921472
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/audio/speech",
+      "startedAtUnixMs": 1789375921477,
+      "inputBytes": 1458,
+      "speechEnabledAtDispatch": true,
+      "status": 200,
+      "durationSeconds": 6.825333333333333,
+      "outputSha256": "88cb38fc2f8d945865ef0e009b8bf876dee25d51b9f21cbf6ab2cebe36ed9f54",
+      "completedAtUnixMs": 1789375924510
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/responses",
+      "startedAtUnixMs": 1789375925585,
+      "inputBytes": 5363,
+      "status": 200,
+      "usage": {
+        "input_tokens": 976,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 105,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1081
+      },
+      "completedAtUnixMs": 1789375929008
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/audio/speech",
+      "startedAtUnixMs": 1789375929025,
+      "inputBytes": 1361,
+      "speechEnabledAtDispatch": true,
+      "status": 200,
+      "durationSeconds": 6.240666666666667,
+      "outputSha256": "53dccea9d36fa4f39b208f8c2a672966c79580b1d6fc130ec1d2c7b652030f70",
+      "completedAtUnixMs": 1789375932422
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/responses",
+      "startedAtUnixMs": 1789375929027,
+      "inputBytes": 5199,
+      "status": 200,
+      "usage": {
+        "input_tokens": 944,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 81,
+        "output_tokens_details": {
+          "reasoning_tokens": 27
+        },
+        "total_tokens": 1025
+      },
+      "completedAtUnixMs": 1789375932427
+    },
+    {
+      "session": "wotbc-ru",
+      "path": "/v1/audio/speech",
+      "startedAtUnixMs": 1789375932441,
+      "inputBytes": 1140,
+      "speechEnabledAtDispatch": true,
+      "status": 200,
+      "durationSeconds": 2.1354583333333332,
+      "outputSha256": "2eb191d7f87315bbb31424e443a82323bb99b50ae34f566ab8380192751d57f1",
+      "completedAtUnixMs": 1789375933608
+    },
+    {
+      "session": "synthetic-en",
+      "path": "/v1/realtime/client_secrets",
+      "startedAtUnixMs": 1789375933978,
+      "inputBytes": 413,
+      "status": 200,
+      "completedAtUnixMs": 1789375934213
+    },
+    {
+      "session": "synthetic-en",
+      "path": "/v1/responses",
+      "startedAtUnixMs": 1789375945442,
+      "inputBytes": 4912,
+      "status": 200,
+      "usage": {
+        "input_tokens": 894,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 186,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1080
+      },
+      "completedAtUnixMs": 1789375949949
+    }
+  ],
+  "sessions": [
+    {
+      "fixture": "wotbc-ru",
+      "audioSeconds": 45.0,
+      "pcmSha256": "ae03f811c7c676747248ac6c1e25c9cec6482a866651f3e66e4d5306e96dce12",
+      "acceptance": {
+        "targetFinalCaptions": 7,
+        "sourceFinalCaptions": 8,
+        "captionsWhileOff": 2,
+        "voiceStoppedAndResumed": true,
+        "generatedAudioAfterResume": true,
+        "speechRequests": 5,
+        "archiveCompleted": true
+      },
+      "captionLagAfterSourceWindowMs": [
+        7082,
+        8010,
+        6859,
+        6031,
+        3623,
+        4159,
+        6487
+      ],
+      "speechToggles": [
+        {
+          "enabled": false,
+          "atUnixMs": 1789375898001,
+          "speechRequests": 1
+        },
+        {
+          "enabled": true,
+          "atUnixMs": 1789375910944,
+          "speechRequests": 1
+        }
+      ],
+      "audioChunks": [
+        {
+          "sequence": 0,
+          "durationMs": 6730,
+          "rms": 2324.7730545357203,
+          "sha256": "f77c051a8c73395a216d09edd40e937a444988a3413f53c8d0cb735f80474298",
+          "renderer": "openai-tts:gpt-4o-mini-tts",
+          "afterResume": false
+        },
+        {
+          "sequence": 3,
+          "durationMs": 6900,
+          "rms": 2558.1254852198003,
+          "sha256": "1f277f450a619b6c1454ae3af8d33753db9e9b7a92010602d6d5271b97224135",
+          "renderer": "openai-tts:gpt-4o-mini-tts",
+          "afterResume": true
+        },
+        {
+          "sequence": 4,
+          "durationMs": 5790,
+          "rms": 2629.653837774748,
+          "sha256": "08a5e8f8173f0e41fcd5244397b2c84628166276728e965ec432a3bc46eccee8",
+          "renderer": "openai-tts:gpt-4o-mini-tts",
+          "afterResume": true
+        },
+        {
+          "sequence": 5,
+          "durationMs": 6050,
+          "rms": 2489.2585478167566,
+          "sha256": "3701e0994ecffd591651f037643ee90205ea3dfd436cfcdd59b6d58be485e495",
+          "renderer": "openai-tts:gpt-4o-mini-tts",
+          "afterResume": true
+        },
+        {
+          "sequence": 6,
+          "durationMs": 1240,
+          "rms": 1609.5882441039994,
+          "sha256": "67bae2e01621e8205af19cb8cc9176af475a623a553242d311d816bd18dcb6a6",
+          "renderer": "openai-tts:gpt-4o-mini-tts",
+          "afterResume": true
+        }
+      ],
+      "archiveTracks": {
+        "audio": 1,
+        "transcripts": 2,
+        "hashesVerified": true
+      },
+      "errors": []
+    },
+    {
+      "fixture": "synthetic-en",
+      "audioSeconds": 10.48525,
+      "pcmSha256": "a7d1a931ff25d4ba5a559f13ab6050040f32881c5b9932cdf3fec92df5895068",
+      "acceptance": {
+        "targetFinalCaptions": 1,
+        "sourceFinalCaptions": 1,
+        "captionsWhileOff": 1,
+        "voiceStoppedAndResumed": false,
+        "generatedAudioAfterResume": false,
+        "speechRequests": 0,
+        "archiveCompleted": true
+      },
+      "captionLagAfterSourceWindowMs": [
+        5516
+      ],
+      "speechToggles": [],
+      "audioChunks": [],
+      "archiveTracks": {
+        "audio": 0,
+        "transcripts": 2,
+        "hashesVerified": true
+      },
+      "errors": []
+    }
+  ],
+  "recordingFix": {
+    "sourceRevision": "aba43f734949b673fb14f00e154359f6e5de3530",
+    "sourceCi": {
+      "id": 34825576648,
+      "status": "success",
+      "url": "https://github.com/edydex/multilinguum/actions/runs/34825576648"
+    },
+    "fullPnpmCheck": "passed",
+    "processorTests": 89,
+    "regressionsObservedBeforeFix": [
+      "Source recording was skipped when source playback was off.",
+      "Source and translated audio were archived despite disabled recording flags.",
+      "Capture discarded its subsecond source tail on stop."
+    ],
+    "offlineArchiveVerification": {
+      "status": "passed",
+      "paidRequests": 0,
+      "scope": "Actual updated capture, session engine and file archive with offline recognition/translation/speech doubles. Opus decoding preserves complete source duration including subsecond tail. Not a repeated provider test.",
+      "sourceModuleHashes": {
+        "processor/authorized-sermon-rehearsal.js": "4089368956fba169cc6d6c9ea56ff4a635d62f92e36e55d01558a5b40711ac02",
+        "processor/control-access.js": "f92906f5e68189eb3ae3b564177e20eddf2ec05f96903976d4451b4b8b27339e",
+        "processor/context-store.js": "b885052c42c225849746eafb0fa90362f2087cf7163801373f00476c4773e0cb",
+        "processor/voice-profile-store.js": "9f52d6e62c22da311307d5fda1cf38ef96f5b7d46d27cf6319b560c59247723f",
+        "processor/realtime-capture-pipeline.js": "c053c22a7939cc08ff44ab8d37f2a5e0b8c19c74c52539acce8f071793ddf541",
+        "processor/listener-client.js": "6bec49b3638b51d9fa258312861f8e14bb2a7b9da9638eb84d4a3294f0e251e8",
+        "processor/translation-profiles.js": "47388d73b1078b117e8925449252a0bddb9d98b209f65eaffcfec66292699275",
+        "processor/authorized-sermon-quality-reference.js": "e69460f5e5587956140de304f871de4dc790d38b7078c6db5a37cab4f7c88d46",
+        "processor/source-clock.js": "537c667224009682fcd75fea0feb588d1245fdf2c036b92b16c9eeca0ba86ff8",
+        "processor/archive-store.js": "c2c29dc9fb64029b18090476ee54856edc6fc224c17d7a7e8c916adcd876f18e",
+        "processor/server.js": "09e7234f76d9d8477e58d9fdb2998ce1f62c643d1a986ceb57784c923ed07186",
+        "processor/latency.js": "5895692a2341c09176dd78914840cfdacda6538486aa6cd8a6d8da2567c50a25",
+        "processor/config.js": "f92ac69c37eb97da92508a21a3592539099abe77ba0cc19e33e1cde810279169",
+        "processor/main.js": "820b569fe41a696bb89f607e0f185586582c5fa7121e1d6139341e9e33645b8f",
+        "processor/buffered-audio-relay.js": "4934e9692135731bef1243f436ef882578171e7b85223db7d126d2961b2a25dc",
+        "processor/review-rerender.js": "ef9ecdc16e06119146b13fc2e405a041e4eed144bbe31d5afa5d334669ec7b88",
+        "processor/glossary.js": "c4001899a41bbca14d0a0c04858295608c37032362957df1649e5d67072aef60",
+        "processor/speech-continuity.js": "68180d9cbe71c66d383d7d30547b29895b06e4fb1d30569ad51b8276cb66c9f6",
+        "processor/cloud-benchmark.js": "0c9af4c29353450e2246931a8d898f6171dc85cd97a5b7841f5ec94ae9ed4b9d",
+        "processor/session-engine.js": "a8ef6bf5e146a5be2237535a7ac43baae86d7c329912aa1c34ae49ee758e92b4",
+        "processor/complimentary-benchmark.js": "abb10f7011e331b3ac83afe4e238984e4d00db9b8d36ea517ff177113dc0dd47",
+        "processor/capture-pipeline.js": "6a5aa8376cc500dd116587a1b1ae7d3e5d68fc2c3ebb42112c187fee6e3dedf3",
+        "processor/providers/openai-realtime-translation.js": "344ed3c41ba76590b1810d5b7a67cc13f1baad162be99d84b7e39535feda7af5",
+        "processor/providers/openai-cascade.js": "3e08a0643756b8f5b7e5bd2efd545574e7d1fe08f99cc33fa2a04b24f2b1f328",
+        "processor/providers/openai-chunk-transcriber.js": "c5d76734f6b0afa8c5b08c6db50a000dfbbd19333c6326dba72666d5d26ebb00",
+        "processor/providers/deterministic.js": "7269b9a5b128772e2414493923216dc3035df598e2a1f114d553a614e5707c58",
+        "processor/providers/realtime-transport.js": "e8a8f794b3902a5928df75a1f287ffc469332482d169b271126c97f6a4f85dd5",
+        "processor/providers/livekit-relay.js": "813304a4be0a486a351778cbdddb0e0d16a2573c9d88c7181d8988238cf55cd5",
+        "processor/providers/openai-live-transcriber.js": "997549582106fae7ed8d290c3e0dc9263c91bbc8e8652ddf157053534ddca2a4",
+        "processor/providers/broadcast-relay.js": "08cd90e84bf2e9db0493574466062012841923989e02fe70b32c204cb105b8ff",
+        "processor/providers/voice-worker.js": "55feffde7344d73e4f21c5e2cbb358469585caeb7016ccbd0b83cee0788fbb91",
+        "protocol/dist/types.js": "611361d5bdbb29d31deae8a3a0ad72c4eaff7834969ecad081f66c3f5850d4e8",
+        "protocol/dist/index.js": "bc0670dbdc2ba280eba14ce2f54bdba9de6a65f56e93dc24ce206aba48c8e29a",
+        "protocol/dist/cost.js": "5486a1590bd9d6eb055a4c87551a8294b1fc0fe13e82614f173fe25e6e96fdac",
+        "protocol/dist/schemas.js": "251b66a200462af43bf1a0ab970a648a8a1d050789dc6bdd85df8094da3af672",
+        "protocol/dist/providers.js": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      "sessions": [
+        {
+          "fixture": "wotbc-ru",
+          "decodedSourceBytes": 4320000,
+          "expectedSourceBytes": 4320000,
+          "durationSeconds": 45.0,
+          "sourceRecordedWithPlaybackOff": true,
+          "archiveHashVerified": true
+        },
+        {
+          "fixture": "synthetic-en",
+          "decodedSourceBytes": 1006584,
+          "expectedSourceBytes": 1006584,
+          "durationSeconds": 10.48525,
+          "sourceRecordedWithPlaybackOff": true,
+          "archiveHashVerified": true
+        }
+      ]
+    },
+    "compiledModulesMatchPublishedSource": true
+  },
+  "browserReview": {
+    "htmlLoaded": true,
+    "audioPlaybackVerified": false,
+    "reason": "The internal browser crashed during the audio-control check. WAV/Opus files decode and the generated PCM is non-silent.",
+    "path": ".heritage/rehearsals/2026-09-14/sermon-providers/full-engine-07/review/index.html"
+  },
+  "limits": [
+    "Actual provider/capture/engine test uses paced prerecorded PCM and local recording relay, not physical microphone, WOTBC, LiveKit or phone playback.",
+    "Voice off/on request control passed; real network playout and audible cancellation remain unverified.",
+    "Russian recognition errors propagated to English. No bilingual or full-service quality acceptance.",
+    "Paid run preceded recording fixes; follow-up fixes have separate offline capture/archive proof.",
+    "Account invoice not verified; speech response contains no token usage."
+  ],
+  "budget": {
+    "chargedOrConservativelyEstimatedTotalUsd": 0.79,
+    "pendingReservedUsd": 0,
+    "maximumUsd": 20,
+    "runCalculatedTextAndAsrUsd": 0.13271139375,
+    "runConservativeSpeechAllowanceUsd": 0.5
+  }
+}

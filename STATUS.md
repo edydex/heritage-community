@@ -2,7 +2,7 @@
 
 Updated September 14, 2026. Open the [HTML progress report](docs/progress.html) for completion estimates, completed work and remaining work. The integration is approximately **75% ready for a first usable release**, an engineering estimate rather than measured coverage.
 
-The shared repository, deployed church pages, real personal sync and native previews support preparation and rehearsal. Preview 28 adds the pastor's progressive pointer, nearby-slide gallery and host-wide remote-change notices. Real provider requests now work on the original Multilinguum host, but the supplied sermon exposed recognition problems. WOTBC provider setup, physical-device acceptance and the official desktop release are still unfinished.
+The shared repository, deployed church pages, real personal sync and native previews support preparation and rehearsal. Preview 28 adds the pastor's progressive pointer, nearby-slide gallery and host-wide remote-change notices. Real capture, translation, optional speech, off/on controls and archive finalization passed on the original Multilinguum host, but the supplied sermon exposed recognition problems. WOTBC provider setup, physical-device acceptance and the official desktop release are still unfinished.
 
 ## What you can use now
 
@@ -26,15 +26,15 @@ Personal-sync sign-in, church membership and manager access are separate. Synthe
 | --- | --- |
 | Heritage reader and Community | [`782535d`](https://github.com/edydex/heritage_study_bible/commit/782535d41e870e12983f807d7f8dda2e217e2c56) |
 | SyncShow Preview 28 | [`5301a99`](https://github.com/edydex/SyncShow/commit/5301a992638bdcc66a5253026658dd022320eda4) |
-| Multilinguum | [`a48419b`](https://github.com/edydex/multilinguum/commit/a48419b58d1f51a333da208ed5b57f0045673df6) |
+| Multilinguum | [`aba43f7`](https://github.com/edydex/multilinguum/commit/aba43f734949b673fb14f00e154359f6e5de3530) |
 
-[components.lock.json](components.lock.json) is the exact development set, not an accepted integrated release. Recognition fixes at `a48419b` passed source CI and are included in the development pin. They have not yet been installed on WOTBC. WOTBC remains on Community `e7882cf` and processor `21a9576`; the newer Heritage pin's Community subtree is byte-for-byte identical to the installed server subtree. The Heritage pin alone did not require a Community server update. The public reader separately runs `94a87a4`; the Android preview uses `782535d`.
+[components.lock.json](components.lock.json) is the exact development set, not an accepted integrated release. Recognition and recording fixes through `aba43f7` passed source CI and are included in the development pin. They have not yet been installed on WOTBC. WOTBC remains on Community `e7882cf` and processor `21a9576`; the newer Heritage pin's Community subtree is byte-for-byte identical to the installed server subtree. The Heritage pin alone did not require a Community server update. The public reader separately runs `94a87a4`; the Android preview uses `782535d`.
 
 The September 13 server inspection found Community, PostgreSQL and the processor healthy, with a verified backup. September 14 public discovery/doctor also passed. These checks do not prove paid provider configuration, manager access or an actual service.
 
 ## What remains before completion
 
-1. **Improve real-sermon recognition and verify meaning.** The bounded original-host test completed Russian → English and synthetic English → Russian requests, but produced apparent recognition errors and inference-based repairs. The actual capture pipeline now has a tested committed-turn option that preserves phrases at natural pauses and emits final recognition in source order. The Russian term error remains. Review a second excerpt against the audio and test both languages over a longer service. [Capture comparison](docs/verification/2026-09-14-committed-recognition.md).
+1. **Improve real-sermon recognition and verify meaning.** The bounded original-host test completed Russian → English and synthetic English → Russian requests, but produced apparent recognition errors and inference-based repairs. The actual capture pipeline now has a tested committed-turn option that preserves phrases at natural pauses and emits final recognition in source order. The Russian term error remains. Review a second excerpt against the audio and test both languages over a longer service. [Capture comparison](docs/verification/2026-09-14-committed-recognition.md), [real speech and recording](docs/verification/2026-09-14-speech-and-recording.md).
 2. **Finish WOTBC manager/provider setup.** Existing credentials are on the original Multilinguum host. Automatic approval review requires explicit permission to transfer them to WOTBC; that action remains pending and was not retried. Economy also needs a sharing-project/overage choice. Complimentary eligibility and zero charges are not guaranteed by the app.
 3. **Rehearse the physical service.** Use the real mixer, both control entry points, captions and optional speech. Check voice-off, stop/reconnect, YouTube alignment, phone listening, tablet ink, projector/stage outputs and offline presentation continuation.
 4. **Finish delivery and remaining account/resource acceptance.** Complete public desktop dependency source/replacement materials and protected release configuration. Finish phone sign-in/update/offline sync and actual church song/sermon publication with the intended manager/member accounts.

@@ -3,7 +3,7 @@
   "authorizedAt": "2026-09-12",
   "currency": "USD",
   "maximum": 20,
-  "chargedOrConservativelyEstimated": 0.15,
+  "chargedOrConservativelyEstimated": 0.79,
   "reservedForPendingRequests": 0,
   "requests": [
     {
@@ -208,6 +208,147 @@
       "actualRequests": 2,
       "accountBillVerified": false,
       "result": "Both fixtures passed with the real capture pipeline and updated production adapter. Natural-pause commits preserved the complete known English sentence and Russian phrase at the old eight-second boundary. Russian terminology errors remain; no translation/TTS, relay or WOTBC acceptance."
+    },
+    {
+      "id": "2026-09-14-full-engine-07",
+      "status": "completed",
+      "reservedAt": "2026-09-14T08:50:39.389737+00:00",
+      "maximumUsd": 6,
+      "scope": "Original host only: actual capture, SessionEngine, Quality text translation and natural speech, voice off/on and private local archive. Authorized 45s RU sermon plus synthetic 10.49s EN. Recording relay replaces LiveKit; no WOTBC or microphone changes, credential transfer, account sharing changes or cloned speech.",
+      "limits": {
+        "realtimeSecretRequests": 2,
+        "realtimeConnections": 2,
+        "audioSecondsTotalMaximum": 120,
+        "responsesRequests": 10,
+        "requestBytesMaximum": 24000,
+        "maxOutputTokensPerResponse": 4096,
+        "speechRequests": 6,
+        "speechInputBytesMaximum": 1200,
+        "speechInstructionsCharactersMaximum": 5500,
+        "speechResponseBytesMaximum": 8388608,
+        "hardTimeoutSeconds": 240
+      },
+      "models": [
+        "gpt-transcribe",
+        "gpt-6-astra",
+        "gpt-4o-mini-tts"
+      ],
+      "budgetBasis": "Text upper bound 10 * (24000 byte-as-token input * $10/M + 4096 output * $50/M) = $4.448. Reserve $0.10 for each of six short speech requests plus $0.009 for 120s ASR, rounded up to $6. Stop on guard/engine failure. Reconcile all dispatched and uncertain requests.",
+      "pricingSources": [
+        "https://developers.openai.com/api/docs/models/gpt-transcribe",
+        "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "https://developers.openai.com/api/docs/models/gpt-4o-mini-tts"
+      ],
+      "fixtureValidation": "Offline actual capture/engine/archive exercise passed both fixtures, caption continuation and off/on controls, with zero provider requests.",
+      "completedAt": "2026-09-14T08:52:29.976Z",
+      "actualRequests": 15,
+      "actualAudioSeconds": 55.48525,
+      "actualSpeechRequests": 5,
+      "generatedSpeechSeconds": 29.309833333333334,
+      "textUsage": [
+        {
+          "input_tokens": 880,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 146,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1026
+        },
+        {
+          "input_tokens": 906,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 194,
+          "output_tokens_details": {
+            "reasoning_tokens": 71
+          },
+          "total_tokens": 1100
+        },
+        {
+          "input_tokens": 943,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 123,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1066
+        },
+        {
+          "input_tokens": 965,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 131,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1096
+        },
+        {
+          "input_tokens": 977,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 108,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1085
+        },
+        {
+          "input_tokens": 976,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 105,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1081
+        },
+        {
+          "input_tokens": 944,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 81,
+          "output_tokens_details": {
+            "reasoning_tokens": 27
+          },
+          "total_tokens": 1025
+        },
+        {
+          "input_tokens": 894,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 186,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 1080
+        }
+      ],
+      "calculatedTextAndRecognitionListPriceUsd": 0.13271139375,
+      "speechUsageTokensAvailable": false,
+      "conservativeSpeechAllowanceUsd": 0.5,
+      "chargedOrConservativelyEstimatedUsd": 0.64,
+      "accountBillVerified": false,
+      "result": "Actual capture, Quality translation, natural speech, voice off/on and local archive passed. RU: 7 captions, 5 speech requests; two captions while off with no new speech request, then speech resumed. EN: one translated caption, zero speech requests. Local recording relay only; no microphone, WOTBC, LiveKit or phone acceptance. Russian recognition/meaning problems remain."
     }
   ],
   "policy": "Reserve a conservative maximum before each paid test. Count failed or uncertain requests until usage is reconciled. Stop before the cumulative maximum can exceed $20. No data-sharing opt-in is changed by this authorization."
