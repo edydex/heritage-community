@@ -1,0 +1,375 @@
+{
+  "date": "2026-09-14",
+  "revision": "cf60544a21aac1df3044d4310666f04e4c58ba92",
+  "before": "Quality and Economy startup returned 409 when stored optional relay credentials pointed to a failed relay. Both regression cases failed before the fix.",
+  "after": "Buffered-only services choose the HTTP delivery path per service; they never contact the optional relay. Direct-Realtime sessions retain their configured relay.",
+  "checks": {
+    "fullMultilinguumCheck": "Formatting, types, 128 tests and production builds passed.",
+    "processorTests": 94,
+    "newRegressionCases": 5,
+    "ciInitial": "CI 34835151124 failed at archive finalization in the new streaming tests. Final fixtures disable optional recording; production code is unchanged.",
+    "ci": {
+      "id": 34835391032,
+      "conclusion": "success",
+      "url": "https://github.com/edydex/multilinguum/actions/runs/34835391032"
+    }
+  },
+  "browser": {
+    "profiles": [
+      "quality",
+      "economy"
+    ],
+    "source": "Russian synthetic transcript; English synthetic tone output",
+    "relay": "Real loopback HTTP/WebSocket endpoint rejects connections with 503",
+    "relayRequests": 0,
+    "providerRequests": 0,
+    "renderCalls": 5,
+    "quality": [
+      "started",
+      "initial autoplay required Retry audio",
+      "Listening live after fresh phrase",
+      "speech-off returned Audio off",
+      "captions continued with render count unchanged at 3",
+      "reenable retained Audio off until fresh listener choice",
+      "fresh phrase: Listening live; render count 4",
+      "service stopped"
+    ],
+    "economy": [
+      "started after Quality stopped",
+      "Listening live; render count 5",
+      "speech-off returned Audio off",
+      "captions continued with render count unchanged at 5",
+      "service stopped: Waiting for the next service"
+    ]
+  },
+  "credentials": "Dummy keys only; no existing credentials read, changed or transferred; no real sharing consent or account setting changed.",
+  "paidRequests": 0,
+  "paidTestLedgerTotalUsd": 0.79,
+  "paidTestMaximumUsd": 20,
+  "cleanup": "Local rehearsal and rejecting relay stopped; process exit 0.",
+  "rawEvidenceSha256": "136fd6442cb9aab6bba7faeb8295cb0d0569037c31b199587cfb6f626777d631",
+  "actions": [
+    {
+      "action": "/api/sessions",
+      "at": 1789382833221,
+      "profile": "quality",
+      "state": "preflight",
+      "speech": true,
+      "renderCalls": 0
+    },
+    {
+      "action": "/api/sessions/current/start",
+      "at": 1789382833225,
+      "profile": "quality",
+      "state": "live",
+      "speech": true,
+      "renderCalls": 0
+    },
+    {
+      "action": "render",
+      "at": 1789382846305,
+      "seconds": 3,
+      "sequence": 0
+    },
+    {
+      "action": "/api/sessions/current/replay",
+      "at": 1789382846315,
+      "profile": "quality",
+      "state": "live",
+      "speech": true,
+      "renderCalls": 1
+    },
+    {
+      "action": "render",
+      "at": 1789382863492,
+      "seconds": 15,
+      "sequence": 1
+    },
+    {
+      "action": "/api/sessions/current/replay",
+      "at": 1789382863509,
+      "profile": "quality",
+      "state": "live",
+      "speech": true,
+      "renderCalls": 2
+    },
+    {
+      "action": "render",
+      "at": 1789382875023,
+      "seconds": 15,
+      "sequence": 2
+    },
+    {
+      "action": "/api/sessions/current/replay",
+      "at": 1789382875044,
+      "profile": "quality",
+      "state": "live",
+      "speech": true,
+      "renderCalls": 3
+    },
+    {
+      "action": "/api/sessions/current/channels/channel-en",
+      "at": 1789382880430,
+      "profile": "quality",
+      "state": "live",
+      "speech": false,
+      "renderCalls": 3
+    },
+    {
+      "action": "/api/sessions/current/replay",
+      "at": 1789382888110,
+      "profile": "quality",
+      "state": "live",
+      "speech": false,
+      "renderCalls": 3
+    },
+    {
+      "action": "/api/sessions/current/channels/channel-en",
+      "at": 1789382888477,
+      "profile": "quality",
+      "state": "live",
+      "speech": true,
+      "renderCalls": 3
+    },
+    {
+      "action": "render",
+      "at": 1789382894638,
+      "seconds": 3,
+      "sequence": 4
+    },
+    {
+      "action": "/api/sessions/current/replay",
+      "at": 1789382894656,
+      "profile": "quality",
+      "state": "live",
+      "speech": true,
+      "renderCalls": 4
+    },
+    {
+      "action": "/api/sessions/current/stop",
+      "at": 1789382901116,
+      "profile": "quality",
+      "state": "completed",
+      "speech": true,
+      "renderCalls": 4
+    },
+    {
+      "action": "/api/sessions",
+      "at": 1789382910208,
+      "profile": "economy",
+      "state": "preflight",
+      "speech": true,
+      "renderCalls": 4
+    },
+    {
+      "action": "/api/sessions/current/start",
+      "at": 1789382910227,
+      "profile": "economy",
+      "state": "live",
+      "speech": true,
+      "renderCalls": 4
+    },
+    {
+      "action": "render",
+      "at": 1789382918235,
+      "seconds": 15,
+      "sequence": 5
+    },
+    {
+      "action": "/api/sessions/current/replay",
+      "at": 1789382918249,
+      "profile": "economy",
+      "state": "live",
+      "speech": true,
+      "renderCalls": 5
+    },
+    {
+      "action": "/api/sessions/current/channels/channel-en",
+      "at": 1789382924490,
+      "profile": "economy",
+      "state": "live",
+      "speech": false,
+      "renderCalls": 5
+    },
+    {
+      "action": "/api/sessions/current/replay",
+      "at": 1789382924830,
+      "profile": "economy",
+      "state": "live",
+      "speech": false,
+      "renderCalls": 5
+    },
+    {
+      "action": "/api/sessions/current/stop",
+      "at": 1789382931043,
+      "profile": "economy",
+      "state": "completed",
+      "speech": false,
+      "renderCalls": 5
+    }
+  ],
+  "limits": [
+    "Synthetic provider output; no new sermon quality evidence",
+    "Loopback buffered audio only; no new successful direct-Realtime or cloud relay acceptance",
+    "Physical mixer, tablets, phones, projector, headphones and venue were not tested",
+    "WOTBC manager/provider setup remains pending"
+  ],
+  "productionCodeCommit": "c91c678677922bcff611b2c3d89b89b6c9965015",
+  "deployment": {
+    "checkedAt": "2026-09-14T11:01:39.729115+00:00",
+    "host": "heritage-community",
+    "receipt": {
+      "schemaVersion": 1,
+      "installedAt": "2026-09-14T11:01:08Z",
+      "setDigest": "2623d367aa4b46ad600f85d4b8a7213f03156ca60db8b770d128c66cf7414d7d",
+      "manifest": {
+        "schemaVersion": 1,
+        "channel": "development",
+        "description": "Development integration revisions with local verification. This set is not yet an accepted integrated release.",
+        "components": [
+          {
+            "id": "heritage",
+            "name": "Heritage Bible and Community server",
+            "repository": "https://github.com/edydex/heritage_study_bible.git",
+            "revision": "99bab02cca6bb955aac856e9c9567492f3ba1396"
+          },
+          {
+            "id": "syncshow",
+            "name": "SyncShow",
+            "repository": "https://github.com/edydex/SyncShow.git",
+            "revision": "5301a992638bdcc66a5253026658dd022320eda4"
+          },
+          {
+            "id": "multilinguum",
+            "name": "Multilinguum",
+            "repository": "https://github.com/edydex/multilinguum.git",
+            "revision": "cf60544a21aac1df3044d4310666f04e4c58ba92"
+          }
+        ]
+      },
+      "acceptance": "source-and-service-health; provider and device rehearsal remains separate"
+    },
+    "receiptMode": "0o600",
+    "receiptDigestMatches": true,
+    "communityHead": "99bab02cca6bb955aac856e9c9567492f3ba1396",
+    "communityClean": true,
+    "processorHead": "cf60544a21aac1df3044d4310666f04e4c58ba92",
+    "providerSettingsDigest": "16ce1ce320cd92c6a1b200a644ea7857175dc9f5c7563e5103a5500aa3dc3e9f",
+    "providerSettingsUnchanged": true,
+    "changedConfigurationKeys": [
+      "HERITAGE_TRANSLATION_IMAGE",
+      "HERITAGE_TRANSLATION_REVISION",
+      "HERITAGE_TRANSLATION_SOURCE"
+    ],
+    "backups": [
+      {
+        "name": "backup-20260914T105519Z-pre-unified-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T105559Z-pre-translation-setup",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T105921Z-pre-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      }
+    ],
+    "containers": {
+      "community": {
+        "image": "sha256:d9399fb6f3e73ee0f8adbd1d3d4b841c857651db6dddaf8340119158a42d5d81",
+        "running": true,
+        "health": "healthy"
+      },
+      "translation-processor": {
+        "image": "sha256:7dde7beb5e413a27abf07e3878bc5855a56ac4a3d079bd4853eec801b39bc336",
+        "running": true,
+        "health": "healthy"
+      },
+      "postgres": {
+        "image": "sha256:18cfe3ef5e6815560c98237d6216d1e5119702fb0f3894c8785dd58b8bbe5d73",
+        "running": true,
+        "health": "healthy"
+      }
+    },
+    "runtimeFileHashes": {
+      "/app/client/operator.js": "c6907647a56ba5720a213497894dcd63566d84901a0962506bbe08004125dc45",
+      "/app/dist/server.js": "7c3e24335fd70ff5bb83434a59d398d18d69dd569475119e8bf84a11a5b41c08",
+      "/app/dist/buffered-audio-relay.js": "e21c4b9833a4a7a86ad9fa84b269dc9fd7e98aefe283363419d6ebe8e63ceffa",
+      "/app/dist/providers/session-media-relay.js": "9020a4db46e67df273ded743f8ae4d96eaf26577098bb378686876659f468a48"
+    },
+    "routes": {
+      "/live": {
+        "status": 200,
+        "bytes": 9862,
+        "sha256": "1fe7d65dff8cc034cbc3ad2adbf76d3f22ee1e308c75db748367ba49dd81c816"
+      },
+      "/translate": {
+        "status": 200,
+        "bytes": 9888,
+        "sha256": "4fc2ca1e391b966196b57c7987dd23b5052facd203ccbed185f56f93cda8f09a"
+      },
+      "/live/settings.json": {
+        "status": 200,
+        "bytes": 191,
+        "sha256": "c62a3fc84ebaf1cd174c28abf16ec87c31e2d048328ca1d01547a0a8bc0abd0c",
+        "body": {
+          "schemaVersion": 1,
+          "churchName": "Word of Truth Bible Church",
+          "channelUrl": "https://www.youtube.com/@wordoftruthbiblech",
+          "videoId": null,
+          "translationUrl": "/translate",
+          "broadcastDelaySeconds": 0
+        }
+      },
+      "/translation/client/operator.js": {
+        "status": 200,
+        "bytes": 357372,
+        "sha256": "c6907647a56ba5720a213497894dcd63566d84901a0962506bbe08004125dc45"
+      },
+      "/translation/api/public/service": {
+        "status": 200,
+        "bytes": 106,
+        "sha256": "8e91b371a39a07805f88432c3e5d447d331ae0626b5a06112382ed562787977e",
+        "body": {
+          "active": false,
+          "serverTimeUnixMs": 1789383699724,
+          "churchName": "Word of Truth Bible Church",
+          "languages": []
+        }
+      }
+    },
+    "tunnel": "active",
+    "runtimeMailDns": "resolved",
+    "paidRequests": 0,
+    "runtimeHashesMatchTestedBuild": true,
+    "browser": {
+      "live": "Waiting for the next service; Audio off; configured WOTBC channel",
+      "translate": "Waiting for the next service; Audio off; no video player"
+    }
+  }
+}
