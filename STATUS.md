@@ -2,6 +2,8 @@
 
 Updated September 14, 2026. Open the [HTML progress report](docs/progress.html) for completion estimates, completed work and remaining work. The integration is approximately **75% ready for a first usable release**, an engineering estimate rather than measured coverage.
 
+**Next: a bounded Deep Testing round.** The [interactive walkthrough](docs/deep-testing.html) and [text copy](docs/deep-testing.md) define 31 cases across phone sync, church resources, preparation/presentation, pastor tools, translation, recovery and recordings. First choose/install the exact previews and complete WOTBC manager/provider setup for translation. Direct recording-to-sermon attachment is unpublished local work and remains a separate blocked case until delivered. Freeze broad feature development and test the usable workflows now. A fresh September 14 status check passed WOTBC health and backup consistency; it does not establish manager/provider or physical-device acceptance.
+
 The shared repository, deployed church pages, real personal sync and native previews support preparation and rehearsal. Preview 29 retains the pastor's progressive pointer, nearby-slide gallery and host-wide remote-change notices. Real capture, translation, optional speech, off/on controls and archive finalization passed on the original Multilinguum host, but the supplied sermon exposed recognition problems. WOTBC provider setup, physical-device acceptance and the official desktop release are still unfinished.
 
 ## What you can use now

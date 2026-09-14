@@ -8,17 +8,19 @@ This repository owns the combined product brief, compatible component versions, 
 
 ## Current status
 
-Integration is in development. Pinned source setup, combined server commands, and live translation are implemented. SyncShow Preview 28 has retained installers with verified Mac ad-hoc signatures, including saved service translation settings and translation screens without a loaded presentation; official desktop releases and real-service acceptance remain unfinished. See [delivery status](STATUS.md).
+Integration is in development. Pinned source setup, combined server commands, and live translation are implemented. SyncShow Preview 29 has a retained installer with a verified Mac ad-hoc signature, including saved service translation settings, tablet teaching and recording review; official desktop releases and real-service acceptance remain unfinished. See [delivery status](STATUS.md).
+
+For the next hands-on round, use the [Deep Testing walkthrough](docs/deep-testing.html) or its [text version](docs/deep-testing.md). It separates the short preparation jobs from 31 concrete cases, with expected results, saved notes and result export. The recommended next step is a feature freeze and real-device rehearsal.
 
 ## Install the SyncShow preview
 
 For the weekly church workflow, start with the [Sunday operator guide](docs/sunday-operator-guide.md): the right sign-in, preparation, mixer connection, optional voice, audience playback and stopping the service.
 
-The [desktop preview guide](docs/desktop-preview.md) covers the retained Mac installer, church connection, live translation and tablet teaching. Exact source and package checks are recorded in the [Preview 28 verification](docs/verification/2026-09-14-desktop-preview-28.md).
+The [desktop preview guide](docs/desktop-preview.md) covers the retained Mac installer, church connection, live translation and tablet teaching. Exact source and package checks are recorded in the [Preview 29 and shared-recording verification](docs/verification/2026-09-14-shared-archive-review.md).
 
 ## Install the Android preview
 
-The [Android preview guide](docs/android-preview.md) links to the published Heritage 1.1.33-preview.1 APK and explains updating the existing app, connecting WOTBC, and the remaining phone checks.
+The [Android preview guide](docs/android-preview.md) links to the published Heritage 1.1.33-preview.2 APK, including Automatic Sync, and explains updating the existing app, connecting WOTBC, and the remaining phone checks.
 
 ## Open the complete development workspace
 
