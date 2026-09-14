@@ -12,6 +12,8 @@ Integration is in development. Pinned source setup, combined server commands, an
 
 ## Install the SyncShow preview
 
+For the weekly church workflow, start with the [Sunday operator guide](docs/sunday-operator-guide.md): the right sign-in, preparation, mixer connection, optional voice, audience playback and stopping the service.
+
 The [desktop preview guide](docs/desktop-preview.md) covers the retained Mac installer, church connection, live translation and tablet teaching. Exact source and package checks are recorded in the [Preview 28 verification](docs/verification/2026-09-14-desktop-preview-28.md).
 
 ## Install the Android preview

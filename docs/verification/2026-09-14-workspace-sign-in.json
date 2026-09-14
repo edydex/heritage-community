@@ -1,0 +1,284 @@
+{
+  "checkedOn": "2026-09-14",
+  "heritageRevision": "2edb5db8acba01178e044c81dcfc8faa7049678d",
+  "ci": {
+    "conclusion": "success",
+    "headSha": "2edb5db8acba01178e044c81dcfc8faa7049678d",
+    "status": "completed",
+    "url": "https://github.com/edydex/heritage_study_bible/actions/runs/34854667026"
+  },
+  "initialCi": {
+    "run": 34852976345,
+    "conclusion": "failure",
+    "reason": "HTTP assertion omitted streamed Flight redirects and Payload dashboard default destination"
+  },
+  "local": {
+    "importMap": true,
+    "typecheck": true,
+    "productionBuild": true,
+    "targetedTestsPassed": 14,
+    "integrationTestsPassed": 11,
+    "anonymousResponses": [
+      {
+        "destination": "/admin",
+        "status": 200,
+        "location": null,
+        "bytes": 44368,
+        "html": "local-response-0.html"
+      },
+      {
+        "destination": "/admin/live-translation?service=service-2099-01-01",
+        "status": 200,
+        "location": null,
+        "bytes": 45720,
+        "html": "local-response-1.html"
+      },
+      {
+        "destination": "/admin/plan-service",
+        "status": 200,
+        "location": null,
+        "bytes": 45617,
+        "html": "local-response-2.html"
+      },
+      {
+        "destination": "/admin/prepare-sermon",
+        "status": 200,
+        "location": null,
+        "bytes": 45584,
+        "html": "local-response-3.html"
+      },
+      {
+        "destination": "/admin/sermon-publications?sermon=sermon-ci",
+        "status": 200,
+        "location": null,
+        "bytes": 45709,
+        "html": "local-response-4.html"
+      },
+      {
+        "destination": "/admin/login",
+        "status": 200,
+        "location": null,
+        "bytes": 50536,
+        "html": "local-response-5.html"
+      }
+    ],
+    "ordinarySignInLinkAcceptedAsRedirect": false,
+    "fixtureStopped": true
+  },
+  "browser": {
+    "syntheticAccount": true,
+    "requestedUrl": "http://127.0.0.1:3341/admin/live-translation?service=service-2099-01-01",
+    "signInUrl": "http://127.0.0.1:3341/admin/login?redirect=%2Fadmin%2Flive-translation%3Fservice%3Dservice-2099-01-01",
+    "returnedToRequestedUrl": true,
+    "workspaceGuideVisible": true,
+    "afterSignIn": "Live translation needs to be enabled in server setup.",
+    "signInOfferedForSetupError": false,
+    "fixtureTabClosed": true
+  },
+  "deployment": {
+    "checkedAt": "2026-09-14T14:33:52.174913+00:00",
+    "host": "heritage-community",
+    "communitySource": {
+      "revision": "2edb5db8acba01178e044c81dcfc8faa7049678d",
+      "clean": true
+    },
+    "translationSource": {
+      "revision": "dc4678113d651cc8a265cb223ae763abaca75757",
+      "clean": true
+    },
+    "receipt": {
+      "schemaVersion": 1,
+      "installedAt": "2026-09-14T14:32:34Z",
+      "setDigest": "abbb2959c5f43e53b6d972a7631330a6bc132d708fbf95d1155dc65638fff5e9",
+      "manifest": {
+        "schemaVersion": 1,
+        "channel": "development",
+        "description": "Development integration revisions with local verification. This set is not yet an accepted integrated release.",
+        "components": [
+          {
+            "id": "heritage",
+            "name": "Heritage Bible and Community server",
+            "repository": "https://github.com/edydex/heritage_study_bible.git",
+            "revision": "2edb5db8acba01178e044c81dcfc8faa7049678d"
+          },
+          {
+            "id": "syncshow",
+            "name": "SyncShow",
+            "repository": "https://github.com/edydex/SyncShow.git",
+            "revision": "5301a992638bdcc66a5253026658dd022320eda4"
+          },
+          {
+            "id": "multilinguum",
+            "name": "Multilinguum",
+            "repository": "https://github.com/edydex/multilinguum.git",
+            "revision": "dc4678113d651cc8a265cb223ae763abaca75757"
+          }
+        ]
+      },
+      "acceptance": "source-and-service-health; provider and device rehearsal remains separate"
+    },
+    "receiptMode": "0o600",
+    "receiptDigestMatchesRetainedFiles": true,
+    "providerSettingsDigest": "16ce1ce320cd92c6a1b200a644ea7857175dc9f5c7563e5103a5500aa3dc3e9f",
+    "providerConfigured": {
+      "TRANSLATION_OPENAI_API_KEY": false,
+      "TRANSLATION_LIVEKIT_URL": false,
+      "TRANSLATION_LIVEKIT_API_KEY": false,
+      "TRANSLATION_LIVEKIT_API_SECRET": false
+    },
+    "changedConfigurationKeys": [],
+    "protocolAndOperatorHashes": {
+      "/app/node_modules/@multilinguum/protocol/dist/usage.js": "39342cc769d0a532cfd4acc8c44dd230f0e2927b7b90b6457495b30c7f484506",
+      "/app/client/operator.js": "171f716d2eb5ce219a8b544595f2886699dd68c069a38830dfa5563ebb224d04"
+    },
+    "runtimeModuleHashes": {
+      "session-engine.js": "f38f24568d3c77ed9ce00bd715f55c22baff77f73661dac20713ec3b33fa0479",
+      "archive-store.js": "87fd8ddc3c0c2d996a61685ad6e39e8889188d77643fb9d109102b2a9231f343",
+      "openai-cascade.js": "8f17fbddc4fb3a98df012fd748d6480957576e244fc42d26cc6500d8a18f6957",
+      "translation-profiles.js": "fcd9b32e45a674ada6bc1b721d862040995a124da680d4c5ece57d4dc2b7dad3"
+    },
+    "containers": {
+      "community": {
+        "image": "sha256:c6a2f9aa44adeccba45b15c21c96c7e010727513e8ccffc004f41304220be369",
+        "imageReference": "heritage-community:local",
+        "running": true,
+        "health": "healthy"
+      },
+      "translation-processor": {
+        "image": "sha256:7ca33e633f1d77aca32aeea68def7d4d9edbc97ef6163b0c8f982858be28b680",
+        "imageReference": "heritage-translation:dc4678113d65",
+        "running": true,
+        "health": "healthy"
+      },
+      "postgres": {
+        "image": "sha256:18cfe3ef5e6815560c98237d6216d1e5119702fb0f3894c8785dd58b8bbe5d73",
+        "imageReference": "postgres:17-alpine",
+        "running": true,
+        "health": "healthy"
+      }
+    },
+    "backups": [
+      {
+        "name": "backup-20260914T142346Z-pre-unified-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T142427Z-pre-translation-setup",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T142520Z-pre-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      }
+    ],
+    "localRoutes": {
+      "/live": {
+        "status": 200,
+        "bytes": 9862,
+        "sha256": "5e419be166c576bbf330a87e9a5b7e51dde286b818df584225f6b7fe43de1b1c"
+      },
+      "/translate": {
+        "status": 200,
+        "bytes": 9888,
+        "sha256": "999c1fa0b6b7a97556d2163726f80973e02870e9798ec8949c11026200038d86"
+      },
+      "/live/settings.json": {
+        "status": 200,
+        "bytes": 191,
+        "sha256": "c62a3fc84ebaf1cd174c28abf16ec87c31e2d048328ca1d01547a0a8bc0abd0c",
+        "body": {
+          "schemaVersion": 1,
+          "churchName": "Word of Truth Bible Church",
+          "channelUrl": "https://www.youtube.com/@wordoftruthbiblech",
+          "videoId": null,
+          "translationUrl": "/translate",
+          "broadcastDelaySeconds": 0
+        }
+      },
+      "/translation/client/operator.js": {
+        "status": 200,
+        "bytes": 361159,
+        "sha256": "171f716d2eb5ce219a8b544595f2886699dd68c069a38830dfa5563ebb224d04"
+      },
+      "/translation/api/public/service": {
+        "status": 200,
+        "bytes": 106,
+        "sha256": "864aea661464140ca913cad6678bd50c42b997566fe7748d158b62155e5c3ed1",
+        "body": {
+          "active": false,
+          "serverTimeUnixMs": 1789396429738,
+          "churchName": "Word of Truth Bible Church",
+          "languages": []
+        }
+      }
+    },
+    "workspaceRoutes": {
+      "/admin/live-translation?service=service-2099-01-01": {
+        "status": 200,
+        "streamedSignInDestination": "/admin/login?redirect=%2Fadmin%2Flive-translation%3Fservice%3Dservice-2099-01-01",
+        "containsWorkspaceGuide": false
+      },
+      "/admin/plan-service": {
+        "status": 200,
+        "streamedSignInDestination": "/admin/login?redirect=%2Fadmin%2Fplan-service",
+        "containsWorkspaceGuide": false
+      },
+      "/admin/prepare-sermon": {
+        "status": 200,
+        "streamedSignInDestination": "/admin/login?redirect=%2Fadmin%2Fprepare-sermon",
+        "containsWorkspaceGuide": false
+      },
+      "/admin/sermon-publications?sermon=sermon-ci": {
+        "status": 200,
+        "streamedSignInDestination": "/admin/login?redirect=%2Fadmin%2Fsermon-publications%3Fsermon%3Dsermon-ci",
+        "containsWorkspaceGuide": false
+      },
+      "/admin/login": {
+        "status": 200,
+        "streamedSignInDestination": null,
+        "containsWorkspaceGuide": true
+      }
+    },
+    "smtpConnectivity": {
+      "configured": true,
+      "dnsResolved": true,
+      "tcpConnected": true,
+      "mailSent": false
+    },
+    "paidRequestsMadeByThisAudit": 0
+  },
+  "paidRequestsMadeByThisWork": 0,
+  "realManagerAccountAcceptance": false,
+  "publicBrowser": {
+    "url": "https://wotbc.heritage.faith/admin/login?redirect=%2Fadmin%2Flive-translation",
+    "guideVisible": true,
+    "heading": "Word of Truth Bible Church workspace",
+    "layoutInspected": true,
+    "realCredentialsEntered": false,
+    "handoffRetained": true
+  }
+}
