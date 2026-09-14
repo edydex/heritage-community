@@ -1,0 +1,293 @@
+{
+  "checkedOn": "2026-09-14",
+  "heritageRevision": "05c983545fb9457ec56b4095f77b685143d3888d",
+  "productCorrectionRevision": "42382f28068f9101989720f0d80a5a8fa1a2566e",
+  "ci": {
+    "conclusion": "success",
+    "headSha": "05c983545fb9457ec56b4095f77b685143d3888d",
+    "status": "completed",
+    "url": "https://github.com/edydex/heritage_study_bible/actions/runs/34859366587"
+  },
+  "initialCi": {
+    "run": 34858563271,
+    "conclusion": "failure",
+    "reason": "Anonymous server HTML defers visible controls until hydration; assertion corrected against actual page responses."
+  },
+  "local": {
+    "communityTestsPassed": 14,
+    "syncshowTestsPassed": 10,
+    "integrationTestsPassed": 11,
+    "productionBuildIncludingTypeScript": true,
+    "pairedHttpAcceptance": [
+      {
+        "path": "/api/community/translation/access",
+        "paired": false,
+        "status": 401
+      },
+      {
+        "path": "/api/community/translation/access",
+        "paired": true,
+        "status": 200
+      },
+      {
+        "path": "/api/community/service-documents",
+        "paired": false,
+        "status": 401
+      },
+      {
+        "path": "/api/community/service-documents",
+        "paired": true,
+        "status": 200
+      }
+    ],
+    "fixtureStopped": true
+  },
+  "native": {
+    "syntheticAccountAndConnection": true,
+    "pairingApprovalUiTested": false,
+    "installedDesktopPackageTested": false,
+    "plannerWrapper": "Standalone native BrowserWindow with exact main.js credential helper",
+    "translationWindow": "Actual TranslationOperatorWindow class",
+    "credentialPoliciesMatchPreviewRevision": "5301a992638bdcc66a5253026658dd022320eda4",
+    "translationWindowPolicySha256": "dc3074d6008f97ebcdb6e60cf6f0e0fec4a93e0f1541f2832caa1ba5bbb65434",
+    "plannerPolicySha256": "e79f51ebcaec3f170fbb59ffc0d0b3a01574b5e65ecc2bb39882d8592e3c6f9b",
+    "translationConnected": true,
+    "successfulAccessExchanges": 4,
+    "plannerSavedRevision": 2,
+    "plannerSavedSlides": 3,
+    "plannerWriteResults": [
+      {
+        "window": "planner",
+        "path": "/api/community/service-documents/service-2099-01-01",
+        "status": 200,
+        "method": "PUT",
+        "resourceType": "xhr"
+      }
+    ],
+    "nativeRequestsAllSuccessful": true
+  },
+  "ordinaryBrowser": {
+    "syntheticSignedOutProfile": true,
+    "translationRedirect": "/admin/login?redirect=%2Fadmin%2Flive-translation%3Fservice%3Dservice-2099-01-01",
+    "plannerRedirect": "/admin/login?redirect=%2Fadmin%2Fplan-service",
+    "workspaceGuideVisible": true,
+    "testTabClosed": true
+  },
+  "microphoneConnected": false,
+  "paidProviderRequests": 0,
+  "mailSent": false,
+  "deployment": {
+    "checkedAt": "2026-09-14T15:21:17.599096+00:00",
+    "host": "heritage-community",
+    "communitySource": {
+      "revision": "05c983545fb9457ec56b4095f77b685143d3888d",
+      "clean": true
+    },
+    "translationSource": {
+      "revision": "dc4678113d651cc8a265cb223ae763abaca75757",
+      "clean": true
+    },
+    "receipt": {
+      "schemaVersion": 1,
+      "installedAt": "2026-09-14T15:20:55Z",
+      "setDigest": "d69cdf21ffe423b2fc0c7ea25dddb989da369e38394601cb17f5fe5bec578d30",
+      "manifest": {
+        "schemaVersion": 1,
+        "channel": "development",
+        "description": "Development integration revisions with local verification. This set is not yet an accepted integrated release.",
+        "components": [
+          {
+            "id": "heritage",
+            "name": "Heritage Bible and Community server",
+            "repository": "https://github.com/edydex/heritage_study_bible.git",
+            "revision": "05c983545fb9457ec56b4095f77b685143d3888d"
+          },
+          {
+            "id": "syncshow",
+            "name": "SyncShow",
+            "repository": "https://github.com/edydex/SyncShow.git",
+            "revision": "5301a992638bdcc66a5253026658dd022320eda4"
+          },
+          {
+            "id": "multilinguum",
+            "name": "Multilinguum",
+            "repository": "https://github.com/edydex/multilinguum.git",
+            "revision": "dc4678113d651cc8a265cb223ae763abaca75757"
+          }
+        ]
+      },
+      "acceptance": "source-and-service-health; provider and device rehearsal remains separate"
+    },
+    "receiptMode": "0o600",
+    "receiptDigestMatchesRetainedFiles": true,
+    "providerSettingsDigest": "16ce1ce320cd92c6a1b200a644ea7857175dc9f5c7563e5103a5500aa3dc3e9f",
+    "providerConfigured": {
+      "TRANSLATION_OPENAI_API_KEY": false,
+      "TRANSLATION_LIVEKIT_URL": false,
+      "TRANSLATION_LIVEKIT_API_KEY": false,
+      "TRANSLATION_LIVEKIT_API_SECRET": false
+    },
+    "changedConfigurationKeys": [],
+    "protocolAndOperatorHashes": {
+      "/app/node_modules/@multilinguum/protocol/dist/usage.js": "39342cc769d0a532cfd4acc8c44dd230f0e2927b7b90b6457495b30c7f484506",
+      "/app/client/operator.js": "171f716d2eb5ce219a8b544595f2886699dd68c069a38830dfa5563ebb224d04"
+    },
+    "runtimeModuleHashes": {
+      "session-engine.js": "f38f24568d3c77ed9ce00bd715f55c22baff77f73661dac20713ec3b33fa0479",
+      "archive-store.js": "87fd8ddc3c0c2d996a61685ad6e39e8889188d77643fb9d109102b2a9231f343",
+      "openai-cascade.js": "8f17fbddc4fb3a98df012fd748d6480957576e244fc42d26cc6500d8a18f6957",
+      "translation-profiles.js": "fcd9b32e45a674ada6bc1b721d862040995a124da680d4c5ece57d4dc2b7dad3"
+    },
+    "containers": {
+      "community": {
+        "image": "sha256:96c2d82a0a52efed98aa38a91bc701269d5b433f78f31ad1e48fb7de5c349168",
+        "imageReference": "heritage-community:local",
+        "running": true,
+        "health": "healthy"
+      },
+      "translation-processor": {
+        "image": "sha256:7ca33e633f1d77aca32aeea68def7d4d9edbc97ef6163b0c8f982858be28b680",
+        "imageReference": "heritage-translation:dc4678113d65",
+        "running": true,
+        "health": "healthy"
+      },
+      "postgres": {
+        "image": "sha256:18cfe3ef5e6815560c98237d6216d1e5119702fb0f3894c8785dd58b8bbe5d73",
+        "imageReference": "postgres:17-alpine",
+        "running": true,
+        "health": "healthy"
+      }
+    },
+    "backups": [
+      {
+        "name": "backup-20260914T151207Z-pre-unified-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T151248Z-pre-translation-setup",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      },
+      {
+        "name": "backup-20260914T151342Z-pre-update",
+        "checks": [
+          "database.dump: OK",
+          "media.tar.gz: OK",
+          "recovery.tar.gz: OK",
+          "sermon-media.tar.gz: OK",
+          "sermon-media.inventory: OK",
+          "manifest.env: OK",
+          "translation.tar.gz: OK"
+        ]
+      }
+    ],
+    "localRoutes": {
+      "/live": {
+        "status": 200,
+        "bytes": 9862,
+        "sha256": "8b3370bcf3a2c6e46183cc08e1e6a2cbc828fdd3f93c34b5bb195856cebab56b"
+      },
+      "/translate": {
+        "status": 200,
+        "bytes": 9888,
+        "sha256": "cbb6ff969a6649fb0fe5acd4d444411f5a9f3bcd69d382eccf863ffd674231bc"
+      },
+      "/live/settings.json": {
+        "status": 200,
+        "bytes": 191,
+        "sha256": "c62a3fc84ebaf1cd174c28abf16ec87c31e2d048328ca1d01547a0a8bc0abd0c",
+        "body": {
+          "schemaVersion": 1,
+          "churchName": "Word of Truth Bible Church",
+          "channelUrl": "https://www.youtube.com/@wordoftruthbiblech",
+          "videoId": null,
+          "translationUrl": "/translate",
+          "broadcastDelaySeconds": 0
+        }
+      },
+      "/translation/client/operator.js": {
+        "status": 200,
+        "bytes": 361159,
+        "sha256": "171f716d2eb5ce219a8b544595f2886699dd68c069a38830dfa5563ebb224d04"
+      },
+      "/translation/api/public/service": {
+        "status": 200,
+        "bytes": 106,
+        "sha256": "e5f63995ae5a740f87b6f3b1c11d453d8841478c8cb01e78e8a094d82a438f09",
+        "body": {
+          "active": false,
+          "serverTimeUnixMs": 1789399275212,
+          "churchName": "Word of Truth Bible Church",
+          "languages": []
+        }
+      }
+    },
+    "workspaceRoutes": {
+      "/admin/live-translation?service=service-2099-01-01": {
+        "status": 200,
+        "streamedSignInDestination": null,
+        "containsWorkspaceGuide": false,
+        "viewTitle": "Live translation  \u2014 Heritage Community",
+        "clientBootstrap": true
+      },
+      "/admin/plan-service": {
+        "status": 200,
+        "streamedSignInDestination": null,
+        "containsWorkspaceGuide": false,
+        "viewTitle": "Plan a service  \u2014 Heritage Community",
+        "clientBootstrap": true
+      },
+      "/admin/prepare-sermon": {
+        "status": 200,
+        "streamedSignInDestination": "/admin/login?redirect=%2Fadmin%2Fprepare-sermon",
+        "containsWorkspaceGuide": false,
+        "viewTitle": "Prepare a sermon  \u2014 Heritage Community",
+        "clientBootstrap": true
+      },
+      "/admin/sermon-publications?sermon=sermon-ci": {
+        "status": 200,
+        "streamedSignInDestination": "/admin/login?redirect=%2Fadmin%2Fsermon-publications%3Fsermon%3Dsermon-ci",
+        "containsWorkspaceGuide": false,
+        "viewTitle": "Review sermon publications  \u2014 Heritage Community",
+        "clientBootstrap": true
+      },
+      "/admin/login": {
+        "status": 200,
+        "streamedSignInDestination": null,
+        "containsWorkspaceGuide": true,
+        "viewTitle": "Login  \u2014 Heritage Community",
+        "clientBootstrap": true
+      }
+    },
+    "smtpConnectivity": {
+      "configured": true,
+      "dnsResolved": true,
+      "tcpConnected": true,
+      "mailSent": false
+    },
+    "paidRequestsMadeByThisAudit": 0
+  },
+  "processorHashesUnchangedFromPreviousAcceptance": true,
+  "publicBrowser": {
+    "plannerRedirect": "https://wotbc.heritage.faith/admin/login?redirect=%2Fadmin%2Fplan-service",
+    "translationRedirect": "https://wotbc.heritage.faith/admin/login?redirect=%2Fadmin%2Flive-translation",
+    "workspaceGuideVisibleOnBoth": true,
+    "realManagerCredentialsEntered": false,
+    "translationHandoffRetained": true
+  }
+}

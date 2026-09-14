@@ -19,17 +19,17 @@ The shared repository, deployed church pages, real personal sync and native prev
 | Pastor teaching | Preview 28 includes ink/highlighter, colors, Undo/Clear, a progressively fading one-second pointer, nearby-slide gallery and host-only notices for confirmed remote navigation. Native feature rehearsal and all four package builds passed. The downloaded Apple Silicon app matches source and launches. | [Preview 28 evidence](docs/verification/2026-09-14-desktop-preview-28.md) |
 | Weekly operator workflow | A guide covers the correct account, preparing a service, connecting the mixer, voice and audience playback, usage and stopping. It identifies the current archive-review boundary. | [Run a service](docs/sunday-operator-guide.md) |
 
-Personal-sync sign-in, church membership and manager access are separate. Synthetic resource rehearsals do not establish actual WOTBC publication with the intended church accounts. The deployed [workspace sign-in flow](docs/verification/2026-09-14-workspace-sign-in.md) now explains that distinction and preserves the chosen service or sermon across sign-in. A local browser rehearsal with a synthetic manager passed; the real manager handoff remains open.
+Personal-sync sign-in, church membership and manager access are separate. Synthetic resource rehearsals do not establish actual WOTBC publication with the intended church accounts. The deployed [workspace sign-in flow](docs/verification/2026-09-14-workspace-sign-in.md) now explains that distinction and preserves the chosen service or sermon across sign-in. The [paired-workspace correction](docs/verification/2026-09-14-paired-workspace-entry.md) fixes a regression where the earlier browser-cookie guard blocked SyncShow. Native planner save, translation connection and renewal passed against the actual database-backed APIs; the corrected source is deployed and ordinary browser redirects passed on WOTBC. The real manager handoff remains open.
 
 ## Development pins and deployed versions
 
 | Component | Development pin |
 | --- | --- |
-| Heritage reader and Community | [`2edb5db`](https://github.com/edydex/heritage_study_bible/commit/2edb5db8acba01178e044c81dcfc8faa7049678d) |
+| Heritage reader and Community | [`05c9835`](https://github.com/edydex/heritage_study_bible/commit/05c983545fb9457ec56b4095f77b685143d3888d) |
 | SyncShow Preview 28 | [`5301a99`](https://github.com/edydex/SyncShow/commit/5301a992638bdcc66a5253026658dd022320eda4) |
 | Multilinguum | [`dc46781`](https://github.com/edydex/multilinguum/commit/dc4678113d651cc8a265cb223ae763abaca75757) |
 
-[components.lock.json](components.lock.json) is the exact development set, not an accepted integrated release. WOTBC now has Community source `2edb5db` and processor `dc46781`, including the tested speech-control, optional-relay isolation, recognition, recording and private usage readout. The running relay/server modules and served operator bundle exactly match the tested build. The September 14 code-only update preserved private settings and passed health and backup checks. The public reader separately runs `94a87a4`; the Android preview uses `782535d`.
+[components.lock.json](components.lock.json) is the exact development set, not an accepted integrated release. WOTBC now has Community source `05c9835` and processor `dc46781`, including the tested speech-control, optional-relay isolation, recognition, recording and private usage readout. The running relay/server modules and served operator bundle exactly match the tested build. The September 14 code-only update preserved private settings and passed health and backup checks. The public reader separately runs `94a87a4`; the Android preview uses `782535d`.
 
 The [September 14 deployment audit](docs/verification/2026-09-14-wotbc-update.md) verified all three healthy services, three safety backups and unchanged private settings apart from the translation source/image revision. Both public listener pages reconnected in the real browser. The local sermon review's explicit playback/stop controls also passed. These checks do not prove WOTBC provider configuration, manager access or an actual service.
 

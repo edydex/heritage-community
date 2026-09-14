@@ -1,5 +1,7 @@
 # Church workspace sign-in
 
+**Later correction:** the checks below missed SyncShow's paired native windows, which authenticate API calls after loading the page. Requiring a browser cookie at the HTML entry blocked those windows. The [paired-workspace correction](2026-09-14-paired-workspace-entry.md) supersedes that entry behavior and records native planner, translation and ordinary-browser acceptance. This document retains the original check scope and deployment history.
+
 The church's custom workspace pages now send a signed-out visitor to the existing manager sign-in form before showing preparation or translation controls. The return link keeps the selected service or sermon. The sign-in page explains the distinction between the church manager account and Heritage's personal reading sync.
 
 The translation page distinguishes an expired session from a role or setup error. Only an authentication failure offers another sign-in. A signed-in manager whose processor is not configured sees the setup message and a link back to the workspace.

@@ -8,6 +8,8 @@ Use the [WOTBC church workspace](https://wotbc.heritage.faith/admin) to prepare 
 
 Heritage's **Settings → Sync** signs you in for personal notes and reading progress. That reading session does not also sign you into the church workspace. If you need workspace access, ask the church administrator. The existing **Forgot password?** link belongs to the workspace password sign-in.
 
+An already paired SyncShow instance uses its approved connection for the embedded planner and translation controls. Those windows do not need a separate browser sign-in. Opening the church workspace in an ordinary browser still uses the manager account above.
+
 ## Prepare before the service
 
 1. Open **Plan a service** in Community or **Prepare** in SyncShow. Select the service and arrange songs, Scripture, sermon material and media.
