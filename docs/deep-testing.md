@@ -35,7 +35,7 @@ Use **Not run / Pass / Fail / Blocked**, plus notes, for each case. Executed per
 | Android | [1.1.33-preview.2](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.33-preview.2), code 36, `3f30bdb` | Physical-phone automatic sync |
 | Public reader | heritage.faith, last verified `94a87a4` | Manual sync; no automatic toggle in this baseline |
 | SyncShow | [Retained Preview 29 Mac installer](desktop-preview.md), `3ae4f2b` | Real tablet, projector, mixer and volunteer |
-| WOTBC | Community `21d3ad9`; translation `c92aafe` | Manager/provider and live device acceptance |
+| WOTBC | Community `0009ca9`; translation `c92aafe` | Provider and live device acceptance |
 | Recording attachment | Unpublished local changes beyond the baseline | A3 blocked until delivered |
 
 Live status on September 14 passed app/database/processor health, public discovery, tunnel and backup checks. The latest backup was under 48 hours old, checksums passed and its private recording inventory matched. No paid calls were made to create this plan. At the dated budget checkpoint, $0.79 of $20 was conservatively accounted and nothing reserved; check the [current ledger](verification/api-test-budget.json) before paid work. The usage display is partial, not a hard spending cap or guarantee of free Economy use.
@@ -206,6 +206,32 @@ Notes / evidence:
 3. After the test, leave the harmless resource private or remove only the labeled rehearsal copy, according to the intended church workflow.
 
 **Pass looks like:** Fresh server access matches the selected audience and withdrawal. Previously downloaded/offline copies may remain on a device; withdrawal is not remote deletion of an exported copy.
+
+Result: Not run / Pass / Fail / Blocked
+
+Notes / evidence:
+
+### R4 — Published, Unlisted and Private songs
+
+1. Use one labeled rehearsal song. In Song library, choose Published under Songbook publication and Save.
+2. In a signed-out browser, find it on /songs. Search by both titles, switch Русский/English, open it and return; compare both sets of words.
+3. Refresh church resources in Heritage Bible and find the same published song in Songs.
+4. Choose Unlisted and Save. The public list and refreshed Heritage catalog must omit it, while its direct public link still opens.
+5. Choose Private and Save. Its title and lyrics must disappear publicly; old song pages and previously issued public links must stop working.
+6. Repeat a visibility change using row checkboxes → Edit → Songbook publication. Leave the rehearsal songs Private afterwards.
+
+**Pass looks like:** Individual and bulk choices control fresh public access. Private data and uploaded files are never included. Previously downloaded copies may remain offline.
+
+Result: Not run / Pass / Fail / Blocked
+
+Notes / evidence:
+
+### R5 — Church workspace navigation on phone and desktop
+
+1. Open Song library, Sermon library, Media library and a sermon editor. Open the hamburger on each page and navigate using its full-size workspace choices.
+2. Check that the current section is highlighted and the mobile drawer closes after navigation. Visit Plan a service and confirm its compact menu still works.
+
+**Pass looks like:** All church admin pages provide consistent reachable navigation; the planner keeps its compact layout.
 
 Result: Not run / Pass / Fail / Blocked
 
