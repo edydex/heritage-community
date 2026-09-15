@@ -1,0 +1,154 @@
+{
+  "date": "2026-09-15",
+  "heritageRevision": "9cd8e88f24cdcfd9d7f79db07767b04d35d80017",
+  "communityCI": {
+    "run": 34953140983,
+    "conclusion": "success",
+    "jobs": [
+      "production-stack",
+      "songbook-publication",
+      "syncshow-payload-live",
+      "syncshow-sermon-history-live"
+    ]
+  },
+  "androidCI": {
+    "run": 34953142614,
+    "conclusion": "success"
+  },
+  "android": {
+    "schemaVersion": 1,
+    "sourceRevision": "9cd8e88f24cdcfd9d7f79db07767b04d35d80017",
+    "applicationId": "faith.heritage.app",
+    "versionCode": 37,
+    "versionName": "1.1.34-preview.1",
+    "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+    "apk": {
+      "name": "heritage-study-bible-1.1.34-preview.1-debug.apk",
+      "size": 54407792,
+      "sha256": "ec08cd6afd3f8d4e2a24af797583bd04bc04131164a6140cc597fda9caa6e475"
+    },
+    "previousRelease": {
+      "versionName": "1.1.32",
+      "versionCode": 34,
+      "sha256": "9107e7e64a35a5a0495caec08fa7bda1261679bfd9fbc7ab91145a02a4ba88cf"
+    },
+    "webAssets": {
+      "count": 534,
+      "manifestSha256": "db43ef58a76a1169fbb47111a043a60cc4996f85ed34545469376bc42fc8f7d6"
+    },
+    "websiteOnlyMetadata": {
+      ".well-known/assetlinks.json": "4394fc5dee8e1e71c0e678ab5272f92b7f6ee4236300ac9113c0678bf242c7f9"
+    },
+    "nativeTests": [
+      "automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+      "encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+      "packagedCommunityScreensAndMemberLinkWorkOffline",
+      "secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+    ]
+  },
+  "latestFeed": {
+    "assets": [
+      {
+        "browser_download_url": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.34-preview.1/android-build.json",
+        "name": "android-build.json",
+        "size": 1149
+      },
+      {
+        "browser_download_url": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.34-preview.1/heritage-study-bible-1.1.34-preview.1-debug.apk",
+        "name": "heritage-study-bible-1.1.34-preview.1-debug.apk",
+        "size": 54407792
+      },
+      {
+        "browser_download_url": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.34-preview.1/SHA256SUMS",
+        "name": "SHA256SUMS",
+        "size": 199
+      }
+    ],
+    "draft": false,
+    "html_url": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1",
+    "prerelease": false,
+    "published_at": "2026-09-15T09:39:16Z",
+    "tag_name": "v1.1.34-preview.1",
+    "target_commitish": "main"
+  },
+  "checkerResults": [
+    {
+      "status": "update-available",
+      "currentVersion": "1.1.32",
+      "latestVersion": "v1.1.34-preview.1",
+      "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1",
+      "downloadUrl": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.34-preview.1/heritage-study-bible-1.1.34-preview.1-debug.apk",
+      "assetName": "heritage-study-bible-1.1.34-preview.1-debug.apk"
+    },
+    {
+      "status": "update-available",
+      "currentVersion": "1.1.33-preview.1",
+      "latestVersion": "v1.1.34-preview.1",
+      "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1",
+      "downloadUrl": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.34-preview.1/heritage-study-bible-1.1.34-preview.1-debug.apk",
+      "assetName": "heritage-study-bible-1.1.34-preview.1-debug.apk"
+    },
+    {
+      "status": "update-available",
+      "currentVersion": "1.1.33-preview.2",
+      "latestVersion": "v1.1.34-preview.1",
+      "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1",
+      "downloadUrl": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.34-preview.1/heritage-study-bible-1.1.34-preview.1-debug.apk",
+      "assetName": "heritage-study-bible-1.1.34-preview.1-debug.apk"
+    },
+    {
+      "status": "up-to-date",
+      "currentVersion": "1.1.34-preview.1",
+      "latestVersion": "v1.1.34-preview.1",
+      "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1",
+      "downloadUrl": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.34-preview.1/heritage-study-bible-1.1.34-preview.1-debug.apk",
+      "assetName": "heritage-study-bible-1.1.34-preview.1-debug.apk"
+    }
+  ],
+  "localChecks": {
+    "readerVitest": 216,
+    "readerProtocol": 124,
+    "communityContractTypeScript": 212,
+    "communityContractNode": 63,
+    "calendarAndSermonUnit": 5,
+    "httpWorkflow": "pass including real image upload, whole-sermon import, saved media bytes, publication privacy and calendar recurrence",
+    "browserOfflineSongs": "pass: stopped local church server; saved catalog, English and Russian words remained accessible"
+  },
+  "wotbcDeployment": {
+    "revision": "9cd8e88f24cdcfd9d7f79db07767b04d35d80017",
+    "status": "healthy",
+    "backup": "/opt/heritage-community/backups/backup-20260915T094009Z-pre-update",
+    "privateRecordingObjects": 11,
+    "privateRecordingBytes": 3883891,
+    "stagingFiles": 0,
+    "timeZone": "America/Los_Angeles",
+    "calendarDefaultVisibility": "members",
+    "liveAnonymousCalendar": {
+      "url": "https://wotbc.heritage.faith/api/community/calendar?from=2026-09-01&to=2026-09-30",
+      "body": {
+        "events": [],
+        "timeZone": "America/Los_Angeles",
+        "authenticated": false,
+        "canManage": false
+      },
+      "cacheControl": "private, no-store"
+    },
+    "browserChecks": [
+      "Tags column and sort controls visible",
+      "Sermon slide workspace opens",
+      "Calendar defaults saved",
+      "Date click prefills selected date and Pacific time",
+      "Public Heritage calendar defaults to Events on and Recurring off",
+      "Published WOTBC songbook refresh succeeds"
+    ]
+  },
+  "webDeployment": {
+    "run": 34954078384,
+    "conclusion": "success",
+    "liveScript": "/assets/index-DQyAO1hR.js",
+    "matchesAndroidBundle": true
+  },
+  "physicalPhoneAcceptance": "pending",
+  "paidProviderCalls": 0,
+  "preservedUnrelatedRecordingFiles": 19
+}

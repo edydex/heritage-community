@@ -9,15 +9,15 @@
 </style>
 </head>
 <body>
-<header><strong>HERITAGE / CHURCH RESOURCES</strong><a href="progress.html">← Progress report</a><span>Testing plan · September 14, 2026</span></header>
+<header><strong>HERITAGE / CHURCH RESOURCES</strong><a href="progress.html">← Progress report</a><span>Testing plan · September 15, 2026</span></header>
 <main>
 <p class="eyebrow">Heritage · Community · SyncShow · Multilinguum</p>
 <h1>Freeze the features.<br>Test a real church service.</h1>
 <p class="intro">A short preparation pass is worth doing. Another broad feature pass is not. The next useful evidence comes from actual phones, a tablet, the church screens and bilingual listeners.</p>
-<div class="prep">
+<div class="prep"><p><strong>September 15 update:</strong> run R6–R7, E1–E2 and H5 for song refresh, tags, the calendar and reusable sermon slides. Earlier saved results are retained; rerun affected cases on the new build.</p>
 <h2>Before the round: three concrete jobs</h2>
 <ol>
-<li><strong>Choose and install the test versions.</strong> Use the installed Android update checker to get <strong>1.1.33-preview.2</strong> from v1.1.32 (or use the direct APK), and the retained Mac <strong>SyncShow Preview 29</strong>. Record each device below. The public web reader does not yet have Automatic Sync; it can be the manual second device. Install updates over the existing app so we actually test preservation of notes.</li>
+<li><strong>Choose and install the test versions.</strong> Use the installed Android update checker to get <strong>1.1.34-preview.1</strong> from v1.1.32 (or use the direct APK), and the retained Mac <strong>SyncShow Preview 29</strong>. Record each device below. The updated public web reader also has Automatic Sync; use manual Sync now initially to isolate account issues. Install updates over the existing app so we actually test preservation of notes.</li>
 <li><strong>Complete WOTBC manager and provider setup for the translation tests.</strong> A successful personal-sync login does not grant church-manager access. WOTBC is healthy, but the last configuration audit found its providers unset. Current health checks do not establish working translation. Use an approved WOTBC provider configuration; no credential copying is part of this walkthrough.</li>
 <li><strong>Keep recording attachment outside this first baseline.</strong> Browsing completed recordings is included. Directly attaching a recording to a sermon is still unpublished local work. Finish and deliver that workflow before case A3, or leave A3 blocked and test the rest now.</li>
 </ol>
@@ -64,12 +64,12 @@
 </section>
 <section class="section" id="evidence">
 <h2>The baseline behind this plan</h2>
-<p>Checked September 14, 2026. WOTBC’s app, database, translation processor, public discovery and tunnel passed status checks. The backup was less than 48 hours old, its checksums passed, and the private recording inventory matched. That proves health and backup consistency, not manager sign-in, provider setup, audible playback or translation quality.</p>
+<p>Checked September 15, 2026. WOTBC’s app, database, translation processor, public discovery and tunnel passed status checks. The backup was less than 48 hours old, its checksums passed, and the private recording inventory matched. That proves health and backup consistency, not manager sign-in, provider setup, audible playback or translation quality.</p>
 <div class="table-wrap"><table><thead><tr><th>Part</th><th>Use for this round</th><th>Boundary</th></tr></thead><tbody>
-<tr><td>Android</td><td><a href="https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.33-preview.2">1.1.33-preview.2</a>, code 36; <code>3f30bdb</code></td><td>Published download/native checks passed; physical phone automatic sync remains to be accepted.</td></tr>
-<tr><td>Web reader</td><td><a href="https://heritage.faith/#/settings/sync">heritage.faith</a>; last verified <code>94a87a4</code></td><td>Real two-browser manual sync passed previously. No Automatic Sync toggle in this web baseline.</td></tr>
+<tr><td>Android</td><td><a href="https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1">1.1.34-preview.1</a>, code 37; <code>9cd8e88</code></td><td>Published download/native checks passed; physical phone automatic sync remains to be accepted.</td></tr>
+<tr><td>Web reader</td><td><a href="https://heritage.faith/#/settings/sync">heritage.faith</a>; last verified <code>9cd8e88</code></td><td>Real two-browser manual sync passed previously. Automatic Sync is included; physical-device acceptance remains.</td></tr>
 <tr><td>SyncShow</td><td><a href="desktop-preview.md">Retained Mac Preview 29 installer</a>; <code>3ae4f2b</code></td><td>Downloaded package/launch checked. Do not substitute a newer source checkout or an older installed app without recording it.</td></tr>
-<tr><td>Community / translation</td><td><code>4c443d6</code> / <code>c92aafe</code></td><td>Manager sign-in verified; provider and live device acceptance remain open.</td></tr>
+<tr><td>Community / translation</td><td><code>9cd8e88</code> / <code>c92aafe</code></td><td>Manager sign-in verified; provider and live device acceptance remain open.</td></tr>
 <tr><td>Recording → sermon</td><td>Unpublished local work beyond this set</td><td>A3 stays blocked until a tested workflow is delivered. A1/A2 still apply to existing archive review.</td></tr>
 </tbody></table></div>
 <p class="muted">Android APK SHA-256: <code>c65220771fd4b66b72cb3742e96a16064ae486ec904e85af2f2b31a6972c3abd</code>. Existing source pins are unchanged by this plan.</p>
@@ -79,57 +79,488 @@
 <footer>A dated, local checklist for a real rehearsal. It does not control your apps or automatically mark earlier engineering checks as passes.</footer>
 <script id="walkthrough-data" type="application/json">
 [
-{"id":"preflight","title":"P · Preflight","timing":"Before either session","intro":"Clear these first. A blocked provider setup only blocks the paid translation section.","cases":[
-{"id":"P1","title":"Install the agreed builds without losing data","steps":["Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.","Use Settings → Advanced Settings to check for updates from v1.1.32, or install the direct Preview 2 APK over the existing app. An installed Preview 1 needs the direct APK for this suffix-only update. Quit SyncShow and install the retained Preview 29 Mac package. Open each app and record its About version and device above.","Open an existing Bible note and an existing service before creating rehearsal content."],"expect":"Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.","hint":"If the tablet is an iPad, test the web remote there. Android release evidence does not imply a native iOS app was tested."},
-{"id":"P2","title":"Prove the three kinds of access","steps":["Open Heritage Settings → Sync and confirm the personal account used by both reader devices.","Open WOTBC in Heritage as the intended church member and check access to a member resource.","Open https://wotbc.heritage.faith/admin as the intended manager. Enter Plan a service and Live translation. Pair SyncShow with WOTBC and approve the presentation/translation permissions it requests."],"expect":"Each intended role reaches its own screens. Personal-sync login is not mistaken for manager permission; an ordinary member cannot enter manager controls.","hint":"Use a separate signed-out browser for public checks. Never paste sign-in links, passwords or pairing credentials into this checklist."},
-{"id":"P3","title":"Prepare the service, screens and audio route","steps":["Create DEEP TEST — date with a bilingual song, a Bible passage, sermon notes, one image and one short video. Keep rehearsal publication separate from existing church resources.","Label the real English, Russian and stage outputs. Connect the pastor tablet to the intended Wi-Fi. Identify the actual capture input and headphones.","For translation, have the authorized server operator finish WOTBC provider configuration and confirm the chosen profile is usable. Record the selected models and sharing/overage choice; otherwise mark the translation cases Blocked."],"expect":"Everyone knows which app/device controls what. There is one deliberate audio source and one capture input; playback is not feeding back into the microphone.","hint":"Healthy server status is not a provider test. Do not copy credentials from another machine as an unreviewed shortcut."}
-]},
-{"id":"sync","title":"S · Bible and personal sync","timing":"Desk · 25–35 minutes","intro":"Start with manual sync to isolate account problems, then test automation. Use notes labeled DEEP TEST so real writing is easy to distinguish.","cases":[
-{"id":"S1","title":"Phone sign-in, restart and offline Bible","steps":["On the physical phone, request the real sign-in email and open the link using the normal phone flow. Confirm it returns to Heritage successfully.","Open a Bible chapter and an existing note. Close and reopen the app, then turn on airplane mode and reopen that already available Bible content.","Navigate to the next chapter, create a labeled note offline, and restart once more. Restore connectivity."],"expect":"The real email flow works, existing and new local data survive restart, and available Bible content remains readable offline. A lack of internet does not trap navigation."},
-{"id":"S2","title":"Manual notes and reading position in both directions","steps":["On device A create DEEP TEST A in a chosen verse, then Sync now. On device B, Sync now and find the same note.","Edit that note on B, sync B then A, and confirm the edit. Add DEEP TEST B and repeat the opposite direction.","Advance reading position on A and sync both. While B is actively reading another chapter it should stay there. Reopen the reader from its normal starting point to check saved resume behavior."],"expect":"The supported personal notes and saved position converge both ways. Synchronization does not unexpectedly navigate the actively open reader.","hint":"The public web reader can be device B using manual Sync now."},
-{"id":"S3","title":"Automatic Sync stays out of the way","steps":["On Preview 2, open Settings → Sync. Confirm Automatic Sync starts off, enable it, and restart the app.","Open the Bible and navigate immediately. Leave it foregrounded and online with no text editor focused. After the initial delay (about 10 seconds, possibly longer while busy), check the last-sync status.","Create a note, leave editing, and wait for the next cycle: about 3 minutes after the previous attempt completes. Sync the second device manually to confirm receipt; repeat with B making the change and A receiving automatically."],"expect":"The preference survives restart, launch/navigation remain responsive, and a real background sync cycle transfers the notes. No second tap on Sync now is needed on A.","hint":"This is foreground automation, not a promise to run every 3 minutes with the phone locked. Two automatic clients require two builds containing the feature."},
-{"id":"S4","title":"Offline, background and toggle-off behavior","steps":["With Automatic Sync on, go offline, edit a labeled note and continue reading. Return online and to the foreground, leave editing, and allow the scheduler to retry.","If a failed attempt occurred, allow for backoff: approximately 6, 12, 24, then at most 30 minutes. Use Sync now if you need to distinguish an account problem from waiting; record that it was manual.","Turn Automatic Sync off. After any in-flight sync finishes, make another labeled change and wait longer than 3 minutes. Verify it is not sent until manual sync. Turn automation back on if that is your preference."],"expect":"Offline data stays safe; background/locked operation does not promise timers. Automatic attempts resume without a burst of duplicates, and turning the option off stops new automatic attempts.","hint":"An already started request may finish after the toggle is disabled. Do not call a manual recovery an automatic-sync pass."},
-{"id":"S5","title":"Conflicting and concurrent edits preserve writing","steps":["Sync both devices first. Disconnect B, then edit the same labeled note differently on A and B. Reconnect and sync both.","Follow the app’s conflict review and keep the intended version; confirm the other text is available to review before resolving.","On a slower connection, start syncing a longer labeled note and immediately continue typing. After the request finishes, reopen the note and sync again."],"expect":"There is no silent loss of either conflicting version. Text entered during a request survives in both the visible editor and saved storage, and reaches the other device after resolution.","hint":"Record the two exact labeled texts if something disappears. Do not erase the account to recover from this test."},
-{"id":"S6","title":"Reading-plan progress and ordinary use","steps":["Choose a test reading plan and mark one reading complete on A. Sync both devices and check B’s corresponding progress.","On B change supported progress, sync back and reopen the plan. Read and annotate for 10 minutes while Automatic Sync is enabled on A.","Record any heat, stutter, battery change or unexpected navigation. During the full rehearsal, observe the same phone again."],"expect":"Supported plan progress converges and normal reading feels unchanged. Battery observations are recorded as observations, not a measured efficiency guarantee."}
-]},
-{"id":"resources","title":"R · Church songs and sermon notes","timing":"Desk · 15–20 minutes","intro":"Use the real manager/member roles and one labeled resource. Avoid testing public sharing with private sermon preparation.","cases":[
-{"id":"R1","title":"Song edit → prepare → read","steps":["Add or edit the rehearsal song through SyncShow/Community, including the English and Russian verses and chorus order.","Reopen it from the other preparation entry point and add it to the test service.","Open the intended shared song in Heritage as a member; compare the actual lyrics and selected version. Explicitly save it offline, disconnect that phone, and reopen it."],"expect":"The same intended song/version appears in preparation and Heritage, both languages retain their text, and the explicitly saved resource opens offline."},
-{"id":"R2","title":"Sermon notes appear on the correct passage","steps":["Create a labeled sermon with one primary Bible passage, a second mentioned passage and short reviewed notes.","Keep it private first and check a signed-out browser cannot read the private preparation. Publish only the harmless rehearsal resource to the intended audience.","From Heritage, open the linked passage and its sermon resources. Verify title, passage, notes, formatting and return-to-Bible navigation. Edit the published notes and check the intended update."],"expect":"The right passage leads to the right reviewed content. Private preparation remains private, and the reader does not lose its place."},
-{"id":"R3","title":"Member-only, public and withdrawn resources","steps":["For the labeled resource, compare manager, member and signed-out access against the selected audience.","Change or withdraw its sharing deliberately, refresh each browser and try the old link again.","After the test, leave the harmless resource private or remove only the labeled rehearsal copy, according to the intended church workflow."],"expect":"Fresh server access matches the selected audience and withdrawal. Previously downloaded/offline copies may remain on a device; withdrawal is not remote deletion of an exported copy."},
-{"id":"R4","title":"Published, Unlisted and Private songs","steps":["Use one labeled rehearsal song. In Song library, click its publication dropdown and choose Published. Wait for Saved without leaving the list, then reload to confirm it persisted.","In a signed-out browser, find it on /songs. Search by both titles, switch Русский/English, open it and return; compare both sets of words.","Refresh church resources in Heritage Bible and find the same published song in Songs.","Choose Unlisted from the row dropdown and wait for Saved. The public list and refreshed Heritage catalog must omit it, while its direct public link still opens.","Choose Private from the row dropdown and wait for Saved. Its title and lyrics must disappear publicly; old song pages and previously issued public links must stop working.","Repeat a visibility change using row checkboxes → Edit → Songbook publication. Leave the rehearsal songs Private afterwards."],"expect":"Individual and bulk choices control fresh public access. Private data and uploaded files are never included. Previously downloaded copies may remain offline."},
-{"id":"R5","title":"Church workspace navigation on phone and desktop","steps":["Open Song library, Sermon library, Media library and a sermon editor. Open the hamburger on each page and navigate using its full-size workspace choices.","Check that the current section is highlighted and the mobile drawer closes after navigation. Visit Plan a service and confirm its compact menu still works."],"expect":"All church admin pages provide consistent reachable navigation; the planner keeps its compact layout."}
-]},
-{"id":"show","title":"H · Prepare → Load → Show","timing":"Desk first; repeat on real outputs","intro":"English, Russian, stage, media and offline behavior each need their own observation.","cases":[
-{"id":"H1","title":"Save and reopen a service from both entry points","steps":["In Community Plan a service, arrange the test song, Scripture, sermon and media. Save and reopen.","Open the same service in SyncShow Prepare. Change one harmless item or order, save, and reopen in Community.","Save translation direction, profile, optional notes and speech choices for the service without starting translation."],"expect":"The intended service/order is shared and settings survive reopening. Preparation alone does not activate the microphone or start paid processing."},
-{"id":"H2","title":"Load complete content and check every output","steps":["Load the service and wait until its package/assets are ready. Enter Show and move through every test item.","Read the actual English and Russian outputs separately. Check line wrapping, punctuation, verse/chorus order and Scripture references.","Check the stage-facing screen’s current/next material. Play the short video and image; confirm the intended audio destination and end-of-media behavior."],"expect":"Each physical output shows its assigned content legibly, including stage information and media. No operator controls or private notes appear on the congregation screen."},
-{"id":"H3","title":"Continue a loaded presentation offline","steps":["With the package fully loaded, disconnect only the presentation computer’s network; leave the shared church infrastructure running.","Advance and go back through the song, Scripture, image and video. Check every output again.","Reconnect, return to Prepare, and deliberately reload if accepting newer server changes."],"expect":"The already loaded show continues without internet or Community. Restoring connectivity does not silently replace the running show with different content.","hint":"This does not promise offline cloud translation or download of media that was never loaded."},
-{"id":"H4","title":"Open, hide and close translation screens","steps":["Without a loaded slideshow, use Open screen for the needed translation output.","Try Hide, show it again, then Close screen. Load a slideshow afterward and repeat the transition.","Observe the operator, congregation and stage screens while doing this."],"expect":"Hide gives the intended blank output; Close screen removes that output window. Display visibility changes do not themselves start/stop the translation session or speech generation."}
-]},
-{"id":"pastor","title":"T · Pastor teaching and any remote","timing":"Church · 15–20 minutes","intro":"Use the actual tablet and projector. Stylus-only is optional and should stay off for ordinary finger testing.","cases":[
-{"id":"T1","title":"Persistent pen, highlight and the fading pointer","steps":["Pair the tablet through Remote Control, expand Teach and select the intended congregation output.","Draw with pen and highlighter in several colors/widths. Try Undo and Clear. Verify marks line up on the actual projected slide.","Select Pointer and draw continuously for 3 seconds. Watch the start of the trail disappear while the newer end remains. Stop and wait approximately 1 second. Switch back to pen."],"expect":"Each pointer fragment fades progressively over roughly 1 second; a long trail does not wait for pen-up to vanish all at once. Persistent ink remains until its explicit removal. Tablet drawing does not scroll the page.","hint":"If using an actual stylus, optionally try stylus-only. Some web/browser combinations report it as touch or mouse; keep the normal mode usable."},
-{"id":"T2","title":"Pastor gallery and host-wide slide-change notice","steps":["On the tablet open the nearby-slide gallery, select a nearby slide, then use Show all to choose one farther away.","Have a second remote use next/previous or choose another slide. Observe the host after each confirmed remote change.","Dismiss the host notice once and allow another to expire. Look at the projector and stage screen throughout."],"expect":"The confirmed slide changes everywhere. The SyncShow host gets a screen-wide notice for slide changes from any remote, lasting about 6 seconds unless dismissed. The notice does not appear on congregation or stage outputs."},
-{"id":"T3","title":"Remote reconnect and host control stay predictable","steps":["Disconnect the tablet’s Wi-Fi. Continue changing slides from the host, then reconnect the tablet.","Check the tablet reflects the current slide before choosing another. Change slides from the host while the tablet gallery is open.","Return to the earlier slide and inspect ink behavior; record what persists and whether it matches the teacher’s expectation."],"expect":"No stale remote action replays on reconnection, the gallery catches up to the confirmed slide, and the host remains in control. Lesson ink saving/replay after closing the Show is outside this release."}
-]},
-{"id":"translation","title":"L · Translation and listening","timing":"Church · 35–50 minutes","intro":"Run the short meaning check before the full sermon. WOTBC provider and manager prerequisites must pass first. All paid testing stays within the previously authorized total $20.","cases":[
-{"id":"L1","title":"One session, started from either place","steps":["Choose the test service in SyncShow, set the intended direction, and start translation with generated speech off. On the mixer computer choose Connect this mixer and the correct input; speak a short phrase and check its level meter.","Open the same service’s Live translation controls in Community. Compare the acknowledged running state, direction and speech choice.","Stop from Community, confirm capture/session stops, then start from Community and confirm SyncShow sees the same session. Stop again before changing the setup."],"expect":"Either entry point controls one authoritative service session. Simply opening a page does not capture audio. Stop is acknowledged by both controllers and there is no duplicate billable session."},
-{"id":"L2","title":"Short English ↔ Russian meaning check","steps":["Use 60–90 seconds of the authorized WOTBC sermon starting at 41:32, plus a short English source passage. Have a bilingual listener first write down the actual important wording, names, numbers, Scripture references and negations without relying on the AI transcript.","Run Quality, speech off, notes off. Compare both recognized source and translated text with that reference. Record at least five source-end → audience-caption delay observations using the actual audio and screen.","Repeat the exact excerpt with relevant sermon notes enabled. Check whether terminology improves and whether the output invents anything present only in the notes. Repeat the direction check with English → Russian."],"expect":"No reversal/omission of important meaning or fabricated sermon content. The bilingual listener accepts both directions and identifies whether notes helped. Record delay and agree whether it is usable; no unmeasured latency promise counts as a pass.","hint":"A previous Russian test confused a word meaning condescension with distortion. Listen for actual errors, not merely fluent phrasing. A delay measured after an internal recognition window is not total audience delay."},
-{"id":"L3","title":"Economy and note sharing on the same excerpt","steps":["Check the budget ledger and actual provider usage before starting. At this plan’s date, $0.79 of $20 was conservatively accounted, with no pending reservation; this is not a live balance. Reserve no more than $2 of additional spending for the initial short comparison and check usage again before continuing.","Select Economy only after its project, sharing and overage behavior are understood. Run the same short excerpt without notes, then with notes if you explicitly enable that session’s sharing choice.","Compare important meaning, delay and terminology with L2; record the actual selected models. Stop if costs are unknown enough that the remaining authorized budget cannot be established."],"expect":"Economy remains a usable optional choice, with honest quality/cost results. Notes are optional, and shared-data notes need an intentional per-session choice. The word Economy never counts as proof of free usage.","hint":"The $2 checkpoint is a manual test limit, not an app-enforced hard cap. Service usage is partial and can exclude unknown costs. Do not spend beyond the cumulative $20 authorization."},
-{"id":"L4","title":"Text displays and voice generation are independent","steps":["Run a brief live input with speech off. Try full-screen text, lower third, ticker and text off on the chosen output. Confirm no pulpit video appears on these presentation outputs.","Enable Generate translated speech, listen on headphones, then disable it during a sentence. Watch the operator/usage evidence for new speech requests, and keep speaking.","After text has continued for a while, re-enable speech. Then turn only the text display off, leaving speech enabled."],"expect":"Text continues with generated speech off and no new TTS requests are made. Turning speech off clears queued translated playback; turning it back on starts current content instead of reading the backlog. Text visibility and server-side speech generation remain independent.","hint":"A phone’s Listen to selection is local playback preference. It does not replace the operator’s Generate translated speech switch."},
-{"id":"L5","title":"Audience phone, live page and translation-only page","steps":["On the actual phone open https://wotbc.heritage.faith/live. Check the intended Word of Truth channel/service selection and play the original video when a playable service is available.","Choose translated listening and text. Confirm you do not unintentionally hear original and translated speech together. Measure perceived alignment; adjust the available delay if needed.","Open /translate for an in-person listener, try the floating translation view where supported, rotate the phone, lock/unlock it and return to playback."],"expect":"The intended WOTBC service/source is shown, text-only attendance works without a video feed, and supported playback resumes predictably. Unsupported floating-view/browser behavior has a usable normal-page fallback.","hint":"Record the real phone/browser. Browser automation alone does not prove audible speech or background audio support. An offline YouTube channel is not itself a translation failure."},
-{"id":"L6","title":"Pause, stop and budget after the short test","steps":["Pause the audio source for 20 seconds, then speak again. Check that silence does not produce invented sermon text.","Stop translation from the other controller and confirm capture, text delivery and generated speech finish/stop as intended. Verify no new processing keeps accumulating afterward.","Review Service usage and provider usage, record any unknown amounts, update the cumulative test ledger and keep the total within $20 before approving the long rehearsal."],"expect":"Silence and stopping do not create phantom content or leave an unnoticed running session. Final usage is recorded honestly; unknown costs are not treated as zero."}
-]},
-{"id":"recovery","title":"F · Recover without losing the service","timing":"Church · 10–15 minutes","intro":"Disconnect one test device at a time. Do not power off shared infrastructure during other people’s work.","cases":[
-{"id":"F1","title":"Capture and listener network interruption","steps":["During a short harmless phrase, disconnect the capture computer’s network for about 15 seconds. Watch both operator status and listener display. Keep the already loaded presentation moving.","Reconnect using the indicated recovery action. Speak a new clearly different phrase and verify current content arrives once.","Separately disconnect/reconnect one audience phone while the source continues."],"expect":"The operator sees the interruption, loaded Show keeps working, reconnect reaches the current session without duplicating old text or flooding speech backlog, and one disconnected listener does not disrupt everyone."},
-{"id":"F2","title":"Restart the client and explain the recovery","steps":["With no important unsaved edits, close/reopen the listener and remote. Rejoin the same session.","After stopping translation, close/reopen SyncShow, load the saved test package and find the service’s saved settings.","Have the volunteer explain the recovery steps unaided. Record any hidden setting, missing message or expert-only step."],"expect":"Saved work remains available, rejoining does not silently start capture or another session, and the recovery can be performed by the intended volunteer. Server restore/reboot drills are a separate scheduled maintenance test."}
-]},
-{"id":"archive","title":"A · Recordings and sermon publication","timing":"After stopping the test service","intro":"Archive review is already available. The final attachment case deliberately waits for the unpublished work to be delivered.","cases":[
-{"id":"A1","title":"Review the finished text-only and spoken sessions","steps":["Stop the service and allow finalization. Open Recorded services → Browse recordings from the manager workspace or an appropriately permitted SyncShow connection.","Find the exact session by time/service and inspect original and translated transcripts. Open both the text-only session and the one with generated speech.","Play available audio, pause, seek near its end and reopen the record. Compare the transcript/session identity with what was actually run."],"expect":"The correct completed session and languages are retained. Text-only records are valid without fabricated audio. Available audio really plays and seeks on the intended device.","hint":"Preview 29 may need its separate recording-review permission approved. A new permission problem is not proof the archive disappeared."},
-{"id":"A2","title":"Long recording and private access","steps":["After the full rehearsal, open its full-length archive on the operator computer and a phone with appropriate access.","Play from the start, seek to the middle and near the end, leave/reopen it, and watch for freezing, browser crashes or excessive delay.","Try the private recording link in a signed-out browser and with an unprivileged member session."],"expect":"The full-length recording remains usable on real devices and unauthorized access is denied. Record memory/phone trouble; short synthetic playback does not establish this result.","hint":"The existing review loads full audio into memory, so this is a real acceptance risk. There was also an unresolved internal-browser preview crash in local attachment work."},
-{"id":"A3","title":"Attach → review → publish → withdraw a sermon recording","steps":["Prerequisite: deliver the newer recording-to-sermon workflow in a named server/app build and record those versions. Until then choose Blocked; do not hunt for this control in Preview 29.","With a harmless test recording, choose transcript only, audio only, then both across separate labeled drafts. Interrupt/resume one upload and retry; confirm no duplicate attachment.","Review the private draft, publish only the selected intended content, open it from the Bible passage as a signed-out/member reader as appropriate, then withdraw and retry fresh links."],"expect":"Selected transcript/audio attaches once, is private before approval, plays after intentional publication, and fresh access is removed after withdrawal. Test full-length audio too before calling this feature ready.","hint":"Not in the first frozen baseline. Existing preparation/publication tests and archive browsing can be completed while this case is blocked."}
-]},
-{"id":"rehearsal","title":"G · The full service rehearsal","timing":"45–60 minutes or one actual sermon","intro":"Only start after the short critical cases for the chosen service mode pass.","cases":[
-{"id":"G1","title":"A volunteer runs the whole service","steps":["Choose one already accepted profile/direction/display/speech combination. Check the remaining paid-test budget. Record initial phone battery and the source video/time. Use the real mixer path for this rehearsal even if a saved excerpt was easier earlier.","Have the volunteer open the apps, select the service, Load, check outputs, start capture, present the song/Scripture/sermon, let the pastor use ink/pointer/gallery, and monitor translation. Do not coach unless needed; write down each intervention.","Run the full sermon, with a bilingual listener checking meaning at the beginning, middle and end. Track at least five audience-delay observations throughout, physical audibility, device heat/battery and dropped/repeated material.","Stop translation, review usage and the completed recording, confirm reading notes still exist, and complete A2. Export this checklist and decide which failures require fixes before a supervised pilot."],"expect":"The actual workflow completes without expert rescue, lost work, wrong outputs, private leaks or unaccepted translation errors. Costs stay within authorization. The volunteer can repeat it next week.","hint":"A successful local-file run does not prove the physical mixer path. A supervised pilot can omit blocked features, but those omissions must be explicit."}
-]}
+  {
+    "id": "preflight",
+    "title": "P · Preflight",
+    "timing": "Before either session",
+    "intro": "Clear these first. A blocked provider setup only blocks the paid translation section.",
+    "cases": [
+      {
+        "id": "P1",
+        "title": "Install the agreed builds without losing data",
+        "steps": [
+          "Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.",
+          "Use Settings → Advanced Settings to check for Android 1.1.34-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from both 1.1.32 and 1.1.33 previews. Quit SyncShow and install the retained Preview 29 Mac package. Record the actual versions and devices above.",
+          "Open an existing Bible note and an existing service before creating rehearsal content."
+        ],
+        "expect": "Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.",
+        "hint": "If the tablet is an iPad, test the web remote there. Android release evidence does not imply a native iOS app was tested."
+      },
+      {
+        "id": "P2",
+        "title": "Prove the three kinds of access",
+        "steps": [
+          "Open Heritage Settings → Sync and confirm the personal account used by both reader devices.",
+          "Open WOTBC in Heritage as the intended church member and check access to a member resource.",
+          "Open https://wotbc.heritage.faith/admin as the intended manager. Enter Plan a service and Live translation. Pair SyncShow with WOTBC and approve the presentation/translation permissions it requests."
+        ],
+        "expect": "Each intended role reaches its own screens. Personal-sync login is not mistaken for manager permission; an ordinary member cannot enter manager controls.",
+        "hint": "Use a separate signed-out browser for public checks. Never paste sign-in links, passwords or pairing credentials into this checklist."
+      },
+      {
+        "id": "P3",
+        "title": "Prepare the service, screens and audio route",
+        "steps": [
+          "Create DEEP TEST — date with a bilingual song, a Bible passage, sermon notes, one image and one short video. Keep rehearsal publication separate from existing church resources.",
+          "Label the real English, Russian and stage outputs. Connect the pastor tablet to the intended Wi-Fi. Identify the actual capture input and headphones.",
+          "For translation, have the authorized server operator finish WOTBC provider configuration and confirm the chosen profile is usable. Record the selected models and sharing/overage choice; otherwise mark the translation cases Blocked."
+        ],
+        "expect": "Everyone knows which app/device controls what. There is one deliberate audio source and one capture input; playback is not feeding back into the microphone.",
+        "hint": "Healthy server status is not a provider test. Do not copy credentials from another machine as an unreviewed shortcut."
+      }
+    ]
+  },
+  {
+    "id": "sync",
+    "title": "S · Bible and personal sync",
+    "timing": "Desk · 25–35 minutes",
+    "intro": "Start with manual sync to isolate account problems, then test automation. Use notes labeled DEEP TEST so real writing is easy to distinguish.",
+    "cases": [
+      {
+        "id": "S1",
+        "title": "Phone sign-in, restart and offline Bible",
+        "steps": [
+          "On the physical phone, request the real sign-in email and open the link using the normal phone flow. Confirm it returns to Heritage successfully.",
+          "Open a Bible chapter and an existing note. Close and reopen the app, then turn on airplane mode and reopen that already available Bible content.",
+          "Navigate to the next chapter, create a labeled note offline, and restart once more. Restore connectivity."
+        ],
+        "expect": "The real email flow works, existing and new local data survive restart, and available Bible content remains readable offline. A lack of internet does not trap navigation."
+      },
+      {
+        "id": "S2",
+        "title": "Manual notes and reading position in both directions",
+        "steps": [
+          "On device A create DEEP TEST A in a chosen verse, then Sync now. On device B, Sync now and find the same note.",
+          "Edit that note on B, sync B then A, and confirm the edit. Add DEEP TEST B and repeat the opposite direction.",
+          "Advance reading position on A and sync both. While B is actively reading another chapter it should stay there. Reopen the reader from its normal starting point to check saved resume behavior."
+        ],
+        "expect": "The supported personal notes and saved position converge both ways. Synchronization does not unexpectedly navigate the actively open reader.",
+        "hint": "The public web reader can be device B using manual Sync now."
+      },
+      {
+        "id": "S3",
+        "title": "Automatic Sync stays out of the way",
+        "steps": [
+          "On Android 1.1.34-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.",
+          "Open the Bible and navigate immediately. Leave it foregrounded and online with no text editor focused. After the initial delay (about 10 seconds, possibly longer while busy), check the last-sync status.",
+          "Create a note, leave editing, and wait for the next cycle: about 3 minutes after the previous attempt completes. Sync the second device manually to confirm receipt; repeat with B making the change and A receiving automatically."
+        ],
+        "expect": "The preference survives restart, launch/navigation remain responsive, and a real background sync cycle transfers the notes. No second tap on Sync now is needed on A.",
+        "hint": "This is foreground automation, not a promise to run every 3 minutes with the phone locked. Two automatic clients require two builds containing the feature."
+      },
+      {
+        "id": "S4",
+        "title": "Offline, background and toggle-off behavior",
+        "steps": [
+          "With Automatic Sync on, go offline, edit a labeled note and continue reading. Return online and to the foreground, leave editing, and allow the scheduler to retry.",
+          "If a failed attempt occurred, allow for backoff: approximately 6, 12, 24, then at most 30 minutes. Use Sync now if you need to distinguish an account problem from waiting; record that it was manual.",
+          "Turn Automatic Sync off. After any in-flight sync finishes, make another labeled change and wait longer than 3 minutes. Verify it is not sent until manual sync. Turn automation back on if that is your preference."
+        ],
+        "expect": "Offline data stays safe; background/locked operation does not promise timers. Automatic attempts resume without a burst of duplicates, and turning the option off stops new automatic attempts.",
+        "hint": "An already started request may finish after the toggle is disabled. Do not call a manual recovery an automatic-sync pass."
+      },
+      {
+        "id": "S5",
+        "title": "Conflicting and concurrent edits preserve writing",
+        "steps": [
+          "Sync both devices first. Disconnect B, then edit the same labeled note differently on A and B. Reconnect and sync both.",
+          "Follow the app’s conflict review and keep the intended version; confirm the other text is available to review before resolving.",
+          "On a slower connection, start syncing a longer labeled note and immediately continue typing. After the request finishes, reopen the note and sync again."
+        ],
+        "expect": "There is no silent loss of either conflicting version. Text entered during a request survives in both the visible editor and saved storage, and reaches the other device after resolution.",
+        "hint": "Record the two exact labeled texts if something disappears. Do not erase the account to recover from this test."
+      },
+      {
+        "id": "S6",
+        "title": "Reading-plan progress and ordinary use",
+        "steps": [
+          "Choose a test reading plan and mark one reading complete on A. Sync both devices and check B’s corresponding progress.",
+          "On B change supported progress, sync back and reopen the plan. Read and annotate for 10 minutes while Automatic Sync is enabled on A.",
+          "Record any heat, stutter, battery change or unexpected navigation. During the full rehearsal, observe the same phone again."
+        ],
+        "expect": "Supported plan progress converges and normal reading feels unchanged. Battery observations are recorded as observations, not a measured efficiency guarantee."
+      }
+    ]
+  },
+  {
+    "id": "resources",
+    "title": "R · Church songs and sermon notes",
+    "timing": "Desk · 15–20 minutes",
+    "intro": "Use the real manager/member roles and one labeled resource. Avoid testing public sharing with private sermon preparation.",
+    "cases": [
+      {
+        "id": "R1",
+        "title": "Song edit → prepare → read",
+        "steps": [
+          "Add or edit the rehearsal song through SyncShow/Community, including the English and Russian verses and chorus order.",
+          "Reopen it from the other preparation entry point and add it to the test service.",
+          "Open the intended shared song in Heritage as a member; compare the actual lyrics and selected version. Explicitly save it offline, disconnect that phone, and reopen it."
+        ],
+        "expect": "The same intended song/version appears in preparation and Heritage, both languages retain their text, and the explicitly saved resource opens offline."
+      },
+      {
+        "id": "R2",
+        "title": "Sermon notes appear on the correct passage",
+        "steps": [
+          "Create a labeled sermon with one primary Bible passage, a second mentioned passage and short reviewed notes.",
+          "Keep it private first and check a signed-out browser cannot read the private preparation. Publish only the harmless rehearsal resource to the intended audience.",
+          "From Heritage, open the linked passage and its sermon resources. Verify title, passage, notes, formatting and return-to-Bible navigation. Edit the published notes and check the intended update."
+        ],
+        "expect": "The right passage leads to the right reviewed content. Private preparation remains private, and the reader does not lose its place."
+      },
+      {
+        "id": "R3",
+        "title": "Member-only, public and withdrawn resources",
+        "steps": [
+          "For the labeled resource, compare manager, member and signed-out access against the selected audience.",
+          "Change or withdraw its sharing deliberately, refresh each browser and try the old link again.",
+          "After the test, leave the harmless resource private or remove only the labeled rehearsal copy, according to the intended church workflow."
+        ],
+        "expect": "Fresh server access matches the selected audience and withdrawal. Previously downloaded/offline copies may remain on a device; withdrawal is not remote deletion of an exported copy."
+      },
+      {
+        "id": "R4",
+        "title": "Published, Unlisted and Private songs",
+        "steps": [
+          "Use one labeled rehearsal song. In Song library, click its publication dropdown and choose Published. Wait for Saved without leaving the list, then reload to confirm it persisted.",
+          "In a signed-out browser, find it on /songs. Search by both titles, switch Русский/English, open it and return; compare both sets of words.",
+          "Refresh church resources in Heritage Bible and find the same published song in Songs.",
+          "Choose Unlisted from the row dropdown and wait for Saved. The public list and refreshed Heritage catalog must omit it, while its direct public link still opens.",
+          "Choose Private from the row dropdown and wait for Saved. Its title and lyrics must disappear publicly; old song pages and previously issued public links must stop working.",
+          "Repeat a visibility change using row checkboxes → Edit → Songbook publication. Leave the rehearsal songs Private afterwards."
+        ],
+        "expect": "Individual and bulk choices control fresh public access. Private data and uploaded files are never included. Previously downloaded copies may remain offline."
+      },
+      {
+        "id": "R5",
+        "title": "Church workspace navigation on phone and desktop",
+        "steps": [
+          "Open Song library, Sermon library, Media library and a sermon editor. Open the hamburger on each page and navigate using its full-size workspace choices.",
+          "Check that the current section is highlighted and the mobile drawer closes after navigation. Visit Plan a service and confirm its compact menu still works."
+        ],
+        "expect": "All church admin pages provide consistent reachable navigation; the planner keeps its compact layout."
+      },
+      {
+        "id": "R6",
+        "title": "Phone pull-down refresh and saved lyrics during failure",
+        "steps": [
+          "Publish a clearly labeled bilingual rehearsal song. On the updated phone, open Community → Songs and drag downward from the top until Release to refresh appears. Open the song and read both languages so its words are saved.",
+          "Turn on airplane mode, return to Songs, and pull down again. A connection failure may be immediate; a stalled request stops after about five seconds. Open the saved song and switch EN/RU. Restart Heritage and try again offline.",
+          "Restore connectivity. Change only the rehearsal song to Private, then refresh successfully. Confirm it disappears from the Community list. Check an existing Bible note is untouched."
+        ],
+        "expect": "Failed refresh shows a small message and keeps the last successful list and previously opened words accessible. Successful refresh follows Published status. Personal notes and Bible downloads survive.",
+        "hint": "A song never opened/downloaded needs a connection once. Existing songs are not automatically published. Test both a short pull that cancels and a deliberate pull; normal scrolling must remain comfortable."
+      },
+      {
+        "id": "R7",
+        "title": "Song tags sort by category and then title",
+        "steps": [
+          "Create or use three labeled rehearsal songs with titles ending Alpha, Middle, and Zulu. Assign Choir to all three; assign Solo and Communal to additional rehearsal songs if available.",
+          "In Songs, enable the Tags column if your saved column preference hides it. Click Tags to sort and confirm Alpha → Middle → Zulu within Choir. Reverse the category sort and check the same title order inside each group.",
+          "Filter by Choir, edit one song to Solo, and confirm the list/filter updates. Leave only intended labels and sharing on the rehearsal songs."
+        ],
+        "expect": "Solo, Choir, and Communal are selectable tags; filters work and category ordering has a predictable alphabetical secondary sort."
+      }
+    ]
+  },
+  {
+    "id": "calendar",
+    "title": "E · Church calendar",
+    "timing": "Desk · 10–15 minutes",
+    "intro": "Use clearly labeled rehearsal events. Restore the church defaults afterwards; do not change real events just to test.",
+    "cases": [
+      {
+        "id": "E1",
+        "title": "Calendar privacy and Events/Recurring filters",
+        "steps": [
+          "In Events → Calendar settings, record the current default visibility. Create three rehearsal events: Church default, Public, and Members only. Make one weekly series with an end date.",
+          "In a signed-out browser open the church home, then open Community → Calendar on the phone as a signed-in member. Events starts checked and Recurring unchecked; toggle Recurring and inspect dates and details.",
+          "If authorized for the rehearsal, change the default visibility and confirm only events using Church default follow it. Explicit Public/Members choices stay unchanged. Restore the original default and cancel the rehearsal events."
+        ],
+        "expect": "Anonymous visitors see only public events/series. Members can see member events. Turning a filter off hides its category and selected details. Private titles and locations do not leak into the public feed."
+      },
+      {
+        "id": "E2",
+        "title": "Date-click creation and Pacific recurring times",
+        "steps": [
+          "Open Events → Calendar settings. Confirm WOTBC uses America/Los_Angeles. Save the default once, reload, then click a date and create a clearly labeled event at 10:00 AM.",
+          "Create a weekly 10:00 AM rehearsal series across the November clock change, with an explicit ending date. Browse both months in the admin preview and Community calendar.",
+          "Open an occurrence to edit the series, verify the whole-series explanation, and compare its time after saving. Cancel the rehearsal events when finished."
+        ],
+        "expect": "Date-click creation pre-fills the chosen date and saved time zone. WOTBC follows Pacific daylight saving automatically; 10:00 AM stays 10:00 AM after the clock change. Existing event times do not move when the default zone changes."
+      }
+    ]
+  },
+  {
+    "id": "show",
+    "title": "H · Prepare → Load → Show",
+    "timing": "Desk first; repeat on real outputs",
+    "intro": "English, Russian, stage, media and offline behavior each need their own observation.",
+    "cases": [
+      {
+        "id": "H1",
+        "title": "Save and reopen a service from both entry points",
+        "steps": [
+          "In Community Plan a service, arrange the test song, Scripture, sermon and media. Save and reopen.",
+          "Open the same service in SyncShow Prepare. Change one harmless item or order, save, and reopen in Community.",
+          "Save translation direction, profile, optional notes and speech choices for the service without starting translation."
+        ],
+        "expect": "The intended service/order is shared and settings survive reopening. Preparation alone does not activate the microphone or start paid processing."
+      },
+      {
+        "id": "H2",
+        "title": "Load complete content and check every output",
+        "steps": [
+          "Load the service and wait until its package/assets are ready. Enter Show and move through every test item.",
+          "Read the actual English and Russian outputs separately. Check line wrapping, punctuation, verse/chorus order and Scripture references.",
+          "Check the stage-facing screen’s current/next material. Play the short video and image; confirm the intended audio destination and end-of-media behavior."
+        ],
+        "expect": "Each physical output shows its assigned content legibly, including stage information and media. No operator controls or private notes appear on the congregation screen."
+      },
+      {
+        "id": "H3",
+        "title": "Continue a loaded presentation offline",
+        "steps": [
+          "With the package fully loaded, disconnect only the presentation computer’s network; leave the shared church infrastructure running.",
+          "Advance and go back through the song, Scripture, image and video. Check every output again.",
+          "Reconnect, return to Prepare, and deliberately reload if accepting newer server changes."
+        ],
+        "expect": "The already loaded show continues without internet or Community. Restoring connectivity does not silently replace the running show with different content.",
+        "hint": "This does not promise offline cloud translation or download of media that was never loaded."
+      },
+      {
+        "id": "H4",
+        "title": "Open, hide and close translation screens",
+        "steps": [
+          "Without a loaded slideshow, use Open screen for the needed translation output.",
+          "Try Hide, show it again, then Close screen. Load a slideshow afterward and repeat the transition.",
+          "Observe the operator, congregation and stage screens while doing this."
+        ],
+        "expect": "Hide gives the intended blank output; Close screen removes that output window. Display visibility changes do not themselves start/stop the translation session or speech generation."
+      },
+      {
+        "id": "H5",
+        "title": "Prepare a sermon and add all its slides",
+        "steps": [
+          "Open Prepare a sermon → New sermon. Give it a rehearsal title, speaker, date and language. Add a main point, exact Bible passage, image and short video. Enter/check English and Russian text, preview the stage screen, and save.",
+          "Reopen the sermon and verify every slide. In Plan a service → Sermon, choose it from the newest-added-first dropdown and click Add whole sermon. Save and reopen the service.",
+          "Compare the copied slides and media with the sermon, load the service in SyncShow, and check English/Russian/stage outputs. Disconnect only after loading and verify the media still play."
+        ],
+        "expect": "Sermon slides are reusable and saved independently. Adding the whole sermon copies its current saved slides, notes and media into the service. Later sermon edits do not silently alter the saved service.",
+        "hint": "An empty or unsaved deck cannot supply slides. The manuscript/passages workflow remains under More; public sermon publication is still a separate reviewed action."
+      }
+    ]
+  },
+  {
+    "id": "pastor",
+    "title": "T · Pastor teaching and any remote",
+    "timing": "Church · 15–20 minutes",
+    "intro": "Use the actual tablet and projector. Stylus-only is optional and should stay off for ordinary finger testing.",
+    "cases": [
+      {
+        "id": "T1",
+        "title": "Persistent pen, highlight and the fading pointer",
+        "steps": [
+          "Pair the tablet through Remote Control, expand Teach and select the intended congregation output.",
+          "Draw with pen and highlighter in several colors/widths. Try Undo and Clear. Verify marks line up on the actual projected slide.",
+          "Select Pointer and draw continuously for 3 seconds. Watch the start of the trail disappear while the newer end remains. Stop and wait approximately 1 second. Switch back to pen."
+        ],
+        "expect": "Each pointer fragment fades progressively over roughly 1 second; a long trail does not wait for pen-up to vanish all at once. Persistent ink remains until its explicit removal. Tablet drawing does not scroll the page.",
+        "hint": "If using an actual stylus, optionally try stylus-only. Some web/browser combinations report it as touch or mouse; keep the normal mode usable."
+      },
+      {
+        "id": "T2",
+        "title": "Pastor gallery and host-wide slide-change notice",
+        "steps": [
+          "On the tablet open the nearby-slide gallery, select a nearby slide, then use Show all to choose one farther away.",
+          "Have a second remote use next/previous or choose another slide. Observe the host after each confirmed remote change.",
+          "Dismiss the host notice once and allow another to expire. Look at the projector and stage screen throughout."
+        ],
+        "expect": "The confirmed slide changes everywhere. The SyncShow host gets a screen-wide notice for slide changes from any remote, lasting about 6 seconds unless dismissed. The notice does not appear on congregation or stage outputs."
+      },
+      {
+        "id": "T3",
+        "title": "Remote reconnect and host control stay predictable",
+        "steps": [
+          "Disconnect the tablet’s Wi-Fi. Continue changing slides from the host, then reconnect the tablet.",
+          "Check the tablet reflects the current slide before choosing another. Change slides from the host while the tablet gallery is open.",
+          "Return to the earlier slide and inspect ink behavior; record what persists and whether it matches the teacher’s expectation."
+        ],
+        "expect": "No stale remote action replays on reconnection, the gallery catches up to the confirmed slide, and the host remains in control. Lesson ink saving/replay after closing the Show is outside this release."
+      }
+    ]
+  },
+  {
+    "id": "translation",
+    "title": "L · Translation and listening",
+    "timing": "Church · 35–50 minutes",
+    "intro": "Run the short meaning check before the full sermon. WOTBC provider and manager prerequisites must pass first. All paid testing stays within the previously authorized total $20.",
+    "cases": [
+      {
+        "id": "L1",
+        "title": "One session, started from either place",
+        "steps": [
+          "Choose the test service in SyncShow, set the intended direction, and start translation with generated speech off. On the mixer computer choose Connect this mixer and the correct input; speak a short phrase and check its level meter.",
+          "Open the same service’s Live translation controls in Community. Compare the acknowledged running state, direction and speech choice.",
+          "Stop from Community, confirm capture/session stops, then start from Community and confirm SyncShow sees the same session. Stop again before changing the setup."
+        ],
+        "expect": "Either entry point controls one authoritative service session. Simply opening a page does not capture audio. Stop is acknowledged by both controllers and there is no duplicate billable session."
+      },
+      {
+        "id": "L2",
+        "title": "Short English ↔ Russian meaning check",
+        "steps": [
+          "Use 60–90 seconds of the authorized WOTBC sermon starting at 41:32, plus a short English source passage. Have a bilingual listener first write down the actual important wording, names, numbers, Scripture references and negations without relying on the AI transcript.",
+          "Run Quality, speech off, notes off. Compare both recognized source and translated text with that reference. Record at least five source-end → audience-caption delay observations using the actual audio and screen.",
+          "Repeat the exact excerpt with relevant sermon notes enabled. Check whether terminology improves and whether the output invents anything present only in the notes. Repeat the direction check with English → Russian."
+        ],
+        "expect": "No reversal/omission of important meaning or fabricated sermon content. The bilingual listener accepts both directions and identifies whether notes helped. Record delay and agree whether it is usable; no unmeasured latency promise counts as a pass.",
+        "hint": "A previous Russian test confused a word meaning condescension with distortion. Listen for actual errors, not merely fluent phrasing. A delay measured after an internal recognition window is not total audience delay."
+      },
+      {
+        "id": "L3",
+        "title": "Economy and note sharing on the same excerpt",
+        "steps": [
+          "Check the budget ledger and actual provider usage before starting. At this plan’s date, $0.79 of $20 was conservatively accounted, with no pending reservation; this is not a live balance. Reserve no more than $2 of additional spending for the initial short comparison and check usage again before continuing.",
+          "Select Economy only after its project, sharing and overage behavior are understood. Run the same short excerpt without notes, then with notes if you explicitly enable that session’s sharing choice.",
+          "Compare important meaning, delay and terminology with L2; record the actual selected models. Stop if costs are unknown enough that the remaining authorized budget cannot be established."
+        ],
+        "expect": "Economy remains a usable optional choice, with honest quality/cost results. Notes are optional, and shared-data notes need an intentional per-session choice. The word Economy never counts as proof of free usage.",
+        "hint": "The $2 checkpoint is a manual test limit, not an app-enforced hard cap. Service usage is partial and can exclude unknown costs. Do not spend beyond the cumulative $20 authorization."
+      },
+      {
+        "id": "L4",
+        "title": "Text displays and voice generation are independent",
+        "steps": [
+          "Run a brief live input with speech off. Try full-screen text, lower third, ticker and text off on the chosen output. Confirm no pulpit video appears on these presentation outputs.",
+          "Enable Generate translated speech, listen on headphones, then disable it during a sentence. Watch the operator/usage evidence for new speech requests, and keep speaking.",
+          "After text has continued for a while, re-enable speech. Then turn only the text display off, leaving speech enabled."
+        ],
+        "expect": "Text continues with generated speech off and no new TTS requests are made. Turning speech off clears queued translated playback; turning it back on starts current content instead of reading the backlog. Text visibility and server-side speech generation remain independent.",
+        "hint": "A phone’s Listen to selection is local playback preference. It does not replace the operator’s Generate translated speech switch."
+      },
+      {
+        "id": "L5",
+        "title": "Audience phone, live page and translation-only page",
+        "steps": [
+          "On the actual phone open https://wotbc.heritage.faith/live. Check the intended Word of Truth channel/service selection and play the original video when a playable service is available.",
+          "Choose translated listening and text. Confirm you do not unintentionally hear original and translated speech together. Measure perceived alignment; adjust the available delay if needed.",
+          "Open /translate for an in-person listener, try the floating translation view where supported, rotate the phone, lock/unlock it and return to playback."
+        ],
+        "expect": "The intended WOTBC service/source is shown, text-only attendance works without a video feed, and supported playback resumes predictably. Unsupported floating-view/browser behavior has a usable normal-page fallback.",
+        "hint": "Record the real phone/browser. Browser automation alone does not prove audible speech or background audio support. An offline YouTube channel is not itself a translation failure."
+      },
+      {
+        "id": "L6",
+        "title": "Pause, stop and budget after the short test",
+        "steps": [
+          "Pause the audio source for 20 seconds, then speak again. Check that silence does not produce invented sermon text.",
+          "Stop translation from the other controller and confirm capture, text delivery and generated speech finish/stop as intended. Verify no new processing keeps accumulating afterward.",
+          "Review Service usage and provider usage, record any unknown amounts, update the cumulative test ledger and keep the total within $20 before approving the long rehearsal."
+        ],
+        "expect": "Silence and stopping do not create phantom content or leave an unnoticed running session. Final usage is recorded honestly; unknown costs are not treated as zero."
+      }
+    ]
+  },
+  {
+    "id": "recovery",
+    "title": "F · Recover without losing the service",
+    "timing": "Church · 10–15 minutes",
+    "intro": "Disconnect one test device at a time. Do not power off shared infrastructure during other people’s work.",
+    "cases": [
+      {
+        "id": "F1",
+        "title": "Capture and listener network interruption",
+        "steps": [
+          "During a short harmless phrase, disconnect the capture computer’s network for about 15 seconds. Watch both operator status and listener display. Keep the already loaded presentation moving.",
+          "Reconnect using the indicated recovery action. Speak a new clearly different phrase and verify current content arrives once.",
+          "Separately disconnect/reconnect one audience phone while the source continues."
+        ],
+        "expect": "The operator sees the interruption, loaded Show keeps working, reconnect reaches the current session without duplicating old text or flooding speech backlog, and one disconnected listener does not disrupt everyone."
+      },
+      {
+        "id": "F2",
+        "title": "Restart the client and explain the recovery",
+        "steps": [
+          "With no important unsaved edits, close/reopen the listener and remote. Rejoin the same session.",
+          "After stopping translation, close/reopen SyncShow, load the saved test package and find the service’s saved settings.",
+          "Have the volunteer explain the recovery steps unaided. Record any hidden setting, missing message or expert-only step."
+        ],
+        "expect": "Saved work remains available, rejoining does not silently start capture or another session, and the recovery can be performed by the intended volunteer. Server restore/reboot drills are a separate scheduled maintenance test."
+      }
+    ]
+  },
+  {
+    "id": "archive",
+    "title": "A · Recordings and sermon publication",
+    "timing": "After stopping the test service",
+    "intro": "Archive review is already available. The final attachment case deliberately waits for the unpublished work to be delivered.",
+    "cases": [
+      {
+        "id": "A1",
+        "title": "Review the finished text-only and spoken sessions",
+        "steps": [
+          "Stop the service and allow finalization. Open Recorded services → Browse recordings from the manager workspace or an appropriately permitted SyncShow connection.",
+          "Find the exact session by time/service and inspect original and translated transcripts. Open both the text-only session and the one with generated speech.",
+          "Play available audio, pause, seek near its end and reopen the record. Compare the transcript/session identity with what was actually run."
+        ],
+        "expect": "The correct completed session and languages are retained. Text-only records are valid without fabricated audio. Available audio really plays and seeks on the intended device.",
+        "hint": "Preview 29 may need its separate recording-review permission approved. A new permission problem is not proof the archive disappeared."
+      },
+      {
+        "id": "A2",
+        "title": "Long recording and private access",
+        "steps": [
+          "After the full rehearsal, open its full-length archive on the operator computer and a phone with appropriate access.",
+          "Play from the start, seek to the middle and near the end, leave/reopen it, and watch for freezing, browser crashes or excessive delay.",
+          "Try the private recording link in a signed-out browser and with an unprivileged member session."
+        ],
+        "expect": "The full-length recording remains usable on real devices and unauthorized access is denied. Record memory/phone trouble; short synthetic playback does not establish this result.",
+        "hint": "The existing review loads full audio into memory, so this is a real acceptance risk. There was also an unresolved internal-browser preview crash in local attachment work."
+      },
+      {
+        "id": "A3",
+        "title": "Attach → review → publish → withdraw a sermon recording",
+        "steps": [
+          "Prerequisite: deliver the newer recording-to-sermon workflow in a named server/app build and record those versions. Until then choose Blocked; do not hunt for this control in Preview 29.",
+          "With a harmless test recording, choose transcript only, audio only, then both across separate labeled drafts. Interrupt/resume one upload and retry; confirm no duplicate attachment.",
+          "Review the private draft, publish only the selected intended content, open it from the Bible passage as a signed-out/member reader as appropriate, then withdraw and retry fresh links."
+        ],
+        "expect": "Selected transcript/audio attaches once, is private before approval, plays after intentional publication, and fresh access is removed after withdrawal. Test full-length audio too before calling this feature ready.",
+        "hint": "Not in the first frozen baseline. Existing preparation/publication tests and archive browsing can be completed while this case is blocked."
+      }
+    ]
+  },
+  {
+    "id": "rehearsal",
+    "title": "G · The full service rehearsal",
+    "timing": "45–60 minutes or one actual sermon",
+    "intro": "Only start after the short critical cases for the chosen service mode pass.",
+    "cases": [
+      {
+        "id": "G1",
+        "title": "A volunteer runs the whole service",
+        "steps": [
+          "Choose one already accepted profile/direction/display/speech combination. Check the remaining paid-test budget. Record initial phone battery and the source video/time. Use the real mixer path for this rehearsal even if a saved excerpt was easier earlier.",
+          "Have the volunteer open the apps, select the service, Load, check outputs, start capture, present the song/Scripture/sermon, let the pastor use ink/pointer/gallery, and monitor translation. Do not coach unless needed; write down each intervention.",
+          "Run the full sermon, with a bilingual listener checking meaning at the beginning, middle and end. Track at least five audience-delay observations throughout, physical audibility, device heat/battery and dropped/repeated material.",
+          "Stop translation, review usage and the completed recording, confirm reading notes still exist, and complete A2. Export this checklist and decide which failures require fixes before a supervised pilot."
+        ],
+        "expect": "The actual workflow completes without expert rescue, lost work, wrong outputs, private leaks or unaccepted translation errors. Costs stay within authorization. The volunteer can repeat it next week.",
+        "hint": "A successful local-file run does not prove the physical mixer path. A supervised pilot can omit blocked features, but those omissions must be explicit."
+      }
+    ]
+  }
 ]
 </script>
 <script>
@@ -138,7 +569,7 @@ const plan=JSON.parse(document.getElementById('walkthrough-data').textContent);
 const labels={unrun:'Not run',pass:'Pass',fail:'Fail',blocked:'Blocked'};
 const key='heritage-deep-testing-20260914-v1';
 const cases=plan.flatMap(stage=>stage.cases);
-let state={schemaVersion:1,planDate:'2026-09-14',meta:{},results:{}};
+let state={schemaVersion:1,planDate:'2026-09-15',meta:{},results:{}};
 const saveState=document.getElementById('save-state');
 try{const saved=JSON.parse(localStorage.getItem(key)||'null');if(saved&&saved.schemaVersion===1&&saved.meta&&saved.results){state={...state,meta:saved.meta,results:saved.results};}}catch{saveState.textContent='Saved results could not be read. Export this run before leaving the page.';saveState.dataset.error='true';}
 function result(id){const item=state.results[id];return {status:item&&Object.hasOwn(labels,item.status)?item.status:'unrun',notes:typeof item?.notes==='string'?item.notes:''};}

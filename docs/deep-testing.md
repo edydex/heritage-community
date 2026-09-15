@@ -1,12 +1,12 @@
 # Deep Testing walkthrough
 
-Dated September 14, 2026. Open [the interactive walkthrough](deep-testing.html) for saved results, per-case notes, printing and export. The page stores results only in the browser; export them before changing devices. This text copy provides the same test cases without requiring JavaScript.
+Dated September 15, 2026. Open [the interactive walkthrough](deep-testing.html) for saved results, per-case notes, printing and export. The page stores results only in the browser; export them before changing devices. This text copy provides the same test cases without requiring JavaScript.
 
 ## Recommendation
 
 Do a short preparation pass, then freeze features and test. Do not start another broad implementation batch.
 
-1. Install the agreed builds: Android **1.1.33-preview.2**, versionCode 36, and the retained Mac **SyncShow Preview 29**. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it does not yet contain Automatic Sync.
+1. Install the agreed builds: Android **1.1.34-preview.1**, versionCode 37, and the retained Mac **SyncShow Preview 29**. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it also contains Automatic Sync.
 2. Complete real WOTBC manager sign-in and approved provider configuration before translation tests. Personal sync, membership and manager access are separate. Healthy server status does not prove provider setup. The last configuration audit found providers unset; this plan does not transfer credentials.
 3. Keep direct recording-to-sermon attachment outside the first baseline. It is unpublished local work. Deliver it in a named build before A3, or mark A3 blocked and test everything else now.
 
@@ -32,14 +32,17 @@ Use **Not run / Pass / Fail / Blocked**, plus notes, for each case. Executed per
 
 | Part | Version / evidence | Remaining boundary |
 | --- | --- | --- |
-| Android | [1.1.33-preview.2](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.33-preview.2), code 36, `3f30bdb` | Physical-phone automatic sync |
-| Public reader | heritage.faith, last verified `94a87a4` | Manual sync; no automatic toggle in this baseline |
+| Android | [1.1.34-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1), code 37, `9cd8e88` | Physical-phone automatic sync |
+| Public reader | heritage.faith, last verified `9cd8e88` | Physical-device automatic-sync acceptance |
 | SyncShow | [Retained Preview 29 Mac installer](desktop-preview.md), `3ae4f2b` | Real tablet, projector, mixer and volunteer |
-| WOTBC | Community `4c443d6`; translation `c92aafe` | Provider and live device acceptance |
+| WOTBC | Community `9cd8e88`; translation `c92aafe` | Provider and live device acceptance |
 | Recording attachment | Unpublished local changes beyond the baseline | A3 blocked until delivered |
 
-Live status on September 14 passed app/database/processor health, public discovery, tunnel and backup checks. The latest backup was under 48 hours old, checksums passed and its private recording inventory matched. No paid calls were made to create this plan. At the dated budget checkpoint, $0.79 of $20 was conservatively accounted and nothing reserved; check the [current ledger](verification/api-test-budget.json) before paid work. The usage display is partial, not a hard spending cap or guarantee of free Economy use.
+Live status on September 15 passed app/database/processor health, public discovery, tunnel and backup checks. The latest backup was under 48 hours old, checksums passed and its private recording inventory matched. No paid calls were made to create this plan. At the dated budget checkpoint, $0.79 of $20 was conservatively accounted and nothing reserved; check the [current ledger](verification/api-test-budget.json) before paid work. The usage display is partial, not a hard spending cap or guarantee of free Economy use.
 
+
+
+New in this baseline: R6–R7 (refresh and tags), E1–E2 (calendar), H5 (sermon slides). The 33 earlier case IDs and saved results are preserved. Rerun affected cases after updating.
 
 ## P · Preflight
 
@@ -48,7 +51,7 @@ Before either session. Clear these first. A blocked provider setup only blocks t
 ### P1 — Install the agreed builds without losing data
 
 1. Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.
-2. Use Settings → Advanced Settings to check for updates from v1.1.32, or install the direct Preview 2 APK over the existing app. An installed Preview 1 needs the direct APK for this suffix-only update. Quit SyncShow and install the retained Preview 29 Mac package. Open each app and record its About version and device above.
+2. Use Settings → Advanced Settings to check for Android 1.1.34-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from both 1.1.32 and 1.1.33 previews. Quit SyncShow and install the retained Preview 29 Mac package. Record the actual versions and devices above.
 3. Open an existing Bible note and an existing service before creating rehearsal content.
 
 **Pass looks like:** Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.
@@ -119,7 +122,7 @@ Notes / evidence:
 
 ### S3 — Automatic Sync stays out of the way
 
-1. On Preview 2, open Settings → Sync. Confirm Automatic Sync starts off, enable it, and restart the app.
+1. On Android 1.1.34-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.
 2. Open the Bible and navigate immediately. Leave it foregrounded and online with no text editor focused. After the initial delay (about 10 seconds, possibly longer while busy), check the last-sync status.
 3. Create a note, leave editing, and wait for the next cycle: about 3 minutes after the previous attempt completes. Sync the second device manually to confirm receipt; repeat with B making the change and A receiving automatically.
 
@@ -237,6 +240,60 @@ Result: Not run / Pass / Fail / Blocked
 
 Notes / evidence:
 
+### R6 — Phone pull-down refresh and saved lyrics during failure
+
+1. Publish a clearly labeled bilingual rehearsal song. On the updated phone, open Community → Songs and drag downward from the top until Release to refresh appears. Open the song and read both languages so its words are saved.
+2. Turn on airplane mode, return to Songs, and pull down again. A connection failure may be immediate; a stalled request stops after about five seconds. Open the saved song and switch EN/RU. Restart Heritage and try again offline.
+3. Restore connectivity. Change only the rehearsal song to Private, then refresh successfully. Confirm it disappears from the Community list. Check an existing Bible note is untouched.
+
+**Pass looks like:** Failed refresh shows a small message and keeps the last successful list and previously opened words accessible. Successful refresh follows Published status. Personal notes and Bible downloads survive.
+
+A song never opened/downloaded needs a connection once. Existing songs are not automatically published. Test both a short pull that cancels and a deliberate pull; normal scrolling must remain comfortable.
+
+Result: Not run / Pass / Fail / Blocked
+
+Notes / evidence:
+
+### R7 — Song tags sort by category and then title
+
+1. Create or use three labeled rehearsal songs with titles ending Alpha, Middle, and Zulu. Assign Choir to all three; assign Solo and Communal to additional rehearsal songs if available.
+2. In Songs, enable the Tags column if your saved column preference hides it. Click Tags to sort and confirm Alpha → Middle → Zulu within Choir. Reverse the category sort and check the same title order inside each group.
+3. Filter by Choir, edit one song to Solo, and confirm the list/filter updates. Leave only intended labels and sharing on the rehearsal songs.
+
+**Pass looks like:** Solo, Choir, and Communal are selectable tags; filters work and category ordering has a predictable alphabetical secondary sort.
+
+Result: Not run / Pass / Fail / Blocked
+
+Notes / evidence:
+
+## E · Church calendar
+
+Desk · 10–15 minutes. Use clearly labeled rehearsal events. Restore the church defaults afterwards; do not change real events just to test.
+
+### E1 — Calendar privacy and Events/Recurring filters
+
+1. In Events → Calendar settings, record the current default visibility. Create three rehearsal events: Church default, Public, and Members only. Make one weekly series with an end date.
+2. In a signed-out browser open the church home, then open Community → Calendar on the phone as a signed-in member. Events starts checked and Recurring unchecked; toggle Recurring and inspect dates and details.
+3. If authorized for the rehearsal, change the default visibility and confirm only events using Church default follow it. Explicit Public/Members choices stay unchanged. Restore the original default and cancel the rehearsal events.
+
+**Pass looks like:** Anonymous visitors see only public events/series. Members can see member events. Turning a filter off hides its category and selected details. Private titles and locations do not leak into the public feed.
+
+Result: Not run / Pass / Fail / Blocked
+
+Notes / evidence:
+
+### E2 — Date-click creation and Pacific recurring times
+
+1. Open Events → Calendar settings. Confirm WOTBC uses America/Los_Angeles. Save the default once, reload, then click a date and create a clearly labeled event at 10:00 AM.
+2. Create a weekly 10:00 AM rehearsal series across the November clock change, with an explicit ending date. Browse both months in the admin preview and Community calendar.
+3. Open an occurrence to edit the series, verify the whole-series explanation, and compare its time after saving. Cancel the rehearsal events when finished.
+
+**Pass looks like:** Date-click creation pre-fills the chosen date and saved time zone. WOTBC follows Pacific daylight saving automatically; 10:00 AM stays 10:00 AM after the clock change. Existing event times do not move when the default zone changes.
+
+Result: Not run / Pass / Fail / Blocked
+
+Notes / evidence:
+
 ## H · Prepare → Load → Show
 
 Desk first; repeat on real outputs. English, Russian, stage, media and offline behavior each need their own observation.
@@ -286,6 +343,20 @@ Notes / evidence:
 3. Observe the operator, congregation and stage screens while doing this.
 
 **Pass looks like:** Hide gives the intended blank output; Close screen removes that output window. Display visibility changes do not themselves start/stop the translation session or speech generation.
+
+Result: Not run / Pass / Fail / Blocked
+
+Notes / evidence:
+
+### H5 — Prepare a sermon and add all its slides
+
+1. Open Prepare a sermon → New sermon. Give it a rehearsal title, speaker, date and language. Add a main point, exact Bible passage, image and short video. Enter/check English and Russian text, preview the stage screen, and save.
+2. Reopen the sermon and verify every slide. In Plan a service → Sermon, choose it from the newest-added-first dropdown and click Add whole sermon. Save and reopen the service.
+3. Compare the copied slides and media with the sermon, load the service in SyncShow, and check English/Russian/stage outputs. Disconnect only after loading and verify the media still play.
+
+**Pass looks like:** Sermon slides are reusable and saved independently. Adding the whole sermon copies its current saved slides, notes and media into the service. Later sermon edits do not silently alter the saved service.
+
+An empty or unsaved deck cannot supply slides. The manuscript/passages workflow remains under More; public sermon publication is still a separate reviewed action.
 
 Result: Not run / Pass / Fail / Blocked
 
@@ -509,21 +580,5 @@ A successful local-file run does not prove the physical mixer path. A supervised
 Result: Not run / Pass / Fail / Blocked
 
 Notes / evidence:
-
-## Decide after the round
-
-Every case for the features you intend to use should pass, with no unresolved data-loss, privacy, wrong-screen or essential-control failure. Both language directions need bilingual meaning approval before calling both supported in practice. A skipped feature must be explicitly excluded from the supervised pilot. One rehearsal proves only that setup, not every device or venue.
-
-- **Stop the affected part:** lost writing, private content exposed publicly, wrong-screen changes, meaning reversed in translation, Stop failing or new speech generation continuing after it is disabled.
-- **Fix before relying on it:** recurring reconnect failures, unusable delay, failure to reopen prepared work, or an expert-only workaround every week.
-- **Later polish:** cosmetic spacing, wording and minor inconvenience without service interruption or meaning changes.
-
-Freeze versions during a run. When a blocker is fixed, record the new build and repeat the affected case plus its related workflow. Do not reset accounts, revoke all devices, uninstall apps or erase data as routine troubleshooting.
-
-## Report a failure
-
-Case ID; device/build/browser; exact steps; expected result; actual result; time; screenshot or short recording; relevant connection state. For sync, identify the two labeled test notes and online/offline states. For translation, include source timestamp, direction, profile, notes/speech choices, what was heard and what appeared. Keep API keys, sign-in links and unrelated private content out of the report.
-
-**Start with P1–P3, then S1–S6 on the physical phone.** If providers are pending, continue preparation and pastor tests while translation stays blocked.
 
 [Sunday operator guide](sunday-operator-guide.md) · [Android update guide](android-preview.md) · [Automatic Sync evidence](verification/2026-09-14-automatic-sync.md) · [Recognition evidence](verification/2026-09-14-committed-recognition.md) · [Progress report](progress.html)
