@@ -4,7 +4,11 @@ The Android Community preview brings Community Home, passage-linked published se
 
 ## Install or update
 
-Download [Heritage 1.1.33-preview.2](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.33-preview.2) and choose `heritage-study-bible-1.1.33-preview.2-debug.apk`. Install it over the existing Heritage app; keep the previous installation and its data until the phone rehearsal passes. Do not uninstall first. The release check requires the same application ID and signer as v1.1.32 and a higher Android version code.
+In the installed Android app, open **Settings → Advanced Settings** and check for updates. [Heritage 1.1.33-preview.2](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.33-preview.2) is now the normal GitHub Latest release, and the unchanged checker detects it from v1.1.32. Its APK and development-preview wording are unchanged.
+
+You can also download `heritage-study-bible-1.1.33-preview.2-debug.apk` from that release. Install it over the existing Heritage app; keep the previous installation and its data until the phone rehearsal passes. Do not uninstall first. The release check requires the same application ID and signer as v1.1.32 and a higher Android version code. If Preview 1 is already installed, use the direct APK for this update: the old checker ignores suffix-only version changes.
+
+Published future Android builds use the same normal update feed, including labelled development previews. The publishing process now rejects suffix-only version increments and native version codes that cannot update the latest APK, verifies asset integrity, and checks the actual Latest response. Build-only CI artifacts are not automatically published. See the [update-feed verification](verification/2026-09-14-android-update-feed.md).
 
 This is a development APK, separate from a store release. The release includes `android-build.json` and `SHA256SUMS` identifying its exact source, signing certificate, packaged web assets and native acceptance tests.
 

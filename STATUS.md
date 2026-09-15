@@ -4,6 +4,8 @@ Updated September 14, 2026. Open the [HTML progress report](docs/progress.html) 
 
 **Next: a bounded Deep Testing round.** The [interactive walkthrough](docs/deep-testing.html) and [text copy](docs/deep-testing.md) define 31 cases across phone sync, church resources, preparation/presentation, pastor tools, translation, recovery and recordings. First choose/install the exact previews and complete WOTBC manager/provider setup for translation. Direct recording-to-sermon attachment is unpublished local work and remains a separate blocked case until delivered. Freeze broad feature development and test the usable workflows now. A fresh September 14 status check passed WOTBC health and backup consistency; it does not establish manager/provider or physical-device acceptance.
 
+**Android update feed corrected:** Preview 2 is now visible through the installed checker from v1.1.32. The APK remains the same verified build; only GitHub release-channel metadata changed. Future integration publication uses the normal Latest feed, requires versions the installed checker can detect, and verifies the response after publishing. [Verification and the Preview 1 limitation](docs/verification/2026-09-14-android-update-feed.md).
+
 The shared repository, deployed church pages, real personal sync and native previews support preparation and rehearsal. Preview 29 retains the pastor's progressive pointer, nearby-slide gallery and host-wide remote-change notices. Real capture, translation, optional speech, off/on controls and archive finalization passed on the original Multilinguum host, but the supplied sermon exposed recognition problems. WOTBC provider setup, physical-device acceptance and the official desktop release are still unfinished.
 
 ## What you can use now

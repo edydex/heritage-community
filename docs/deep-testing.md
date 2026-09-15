@@ -48,7 +48,7 @@ Before either session. Clear these first. A blocked provider setup only blocks t
 ### P1 — Install the agreed builds without losing data
 
 1. Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.
-2. Update the Android app over the existing installation using Preview 2. Quit SyncShow and install the retained Preview 29 Mac package. Open each app and record its About version and device above.
+2. Use Settings → Advanced Settings to check for updates from v1.1.32, or install the direct Preview 2 APK over the existing app. An installed Preview 1 needs the direct APK for this suffix-only update. Quit SyncShow and install the retained Preview 29 Mac package. Open each app and record its About version and device above.
 3. Open an existing Bible note and an existing service before creating rehearsal content.
 
 **Pass looks like:** Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.
