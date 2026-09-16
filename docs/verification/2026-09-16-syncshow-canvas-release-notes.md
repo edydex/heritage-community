@@ -1,0 +1,7 @@
+Community's **Other** slides now work in SyncShow: movable text and pictures, braces, filled/outline circles, rotation, and selected-text highlighting. Pictures are retained in the loaded offline Show package. Update Preview 29 before loading these new slide objects.
+
+Choose the Windows x64 EXE, Apple Silicon or Intel Mac DMG, or Linux AppImage/DEB. Quit SyncShow before installing over the previous version. These are maintainer-testing previews: Windows is unsigned; Mac is ad-hoc signed and not notarized. They use your normal SyncShow settings and service library.
+
+All four platforms passed the broad source gate, packaged PDF/Sharp/shared-service checks, and a real application launch with an isolated profile. Every retained installer matches its build receipt. `provenance.json` and `SHA256SUMS` identify the exact source and files. The downloaded Apple Silicon archive also passed its signature check and source comparison. The Windows installation wizard and actual projector/tablet setup remain part of venue acceptance.
+
+Source: [9a9ebf7379797c68e99a2ea1f7a9dcefd1551458](https://github.com/edydex/SyncShow/commit/9a9ebf7379797c68e99a2ea1f7a9dcefd1551458). [All-platform package checks](https://github.com/edydex/SyncShow/actions/runs/35158684356). Native build counter: 140030. Google Drive maintainer credentials are omitted from ordinary QA packages; Community and local presentation do not need them.

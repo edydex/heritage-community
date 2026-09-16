@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "applicationVersion": "1.4.0-preview.30",
+  "buildVersion": "140030",
+  "sourceRevision": "9a9ebf7379797c68e99a2ea1f7a9dcefd1551458",
+  "workflow": "https://github.com/edydex/SyncShow/actions/runs/35158684356",
+  "assets": [
+    {
+      "name": "SyncShow-Setup-1.4.0-preview.30-x64.exe",
+      "size": 129313393,
+      "sha256": "85cf7fa91ddc3a457f84a84838fcdcb02cb1a3b453d81f9e847723605e457bde",
+      "target": "windows-x64"
+    },
+    {
+      "name": "sync-show_1.4.0-preview.30_amd64.deb",
+      "size": 129714100,
+      "sha256": "483e81c0bf61206365d1110391a60d7b7e148116827943c7d1b096d070c50654",
+      "target": "linux-x64"
+    },
+    {
+      "name": "SyncShow-1.4.0-preview.30.AppImage",
+      "size": 166456914,
+      "sha256": "d2f3165e140ee9bd5244b1adb01aeab68d8815ce1d1bebe9fef0f9de2cd5217d",
+      "target": "linux-x64"
+    },
+    {
+      "name": "SyncShow-1.4.0-preview.30-arm64.dmg",
+      "size": 158873438,
+      "sha256": "2695976f734566a59d0acdd4014936c585dbd8bb082d5c7510407c162faa1bc5",
+      "target": "macos-arm64"
+    },
+    {
+      "name": "SyncShow-1.4.0-preview.30-arm64.zip",
+      "size": 159182942,
+      "sha256": "c0bba1f684110d6bdc6de65665d075824739cac87e1b63a046916acd1a981ad5",
+      "target": "macos-arm64"
+    },
+    {
+      "name": "SyncShow-1.4.0-preview.30-x64.dmg",
+      "size": 164697665,
+      "sha256": "5edd59da7035b642307e0e2f919a3e03fad65b5a01a9810609bb286fcb89995f",
+      "target": "macos-x64"
+    },
+    {
+      "name": "SyncShow-1.4.0-preview.30-x64.zip",
+      "size": 165027995,
+      "sha256": "3224549a58c7171c1f6264d7647d5e928343dc69735992f9588af1707b9c2d36",
+      "target": "macos-x64"
+    }
+  ],
+  "buildReceipts": [
+    {
+      "schemaVersion": 1,
+      "sourceRevision": "9a9ebf7379797c68e99a2ea1f7a9dcefd1551458",
+      "application": {
+        "name": "sync-show",
+        "productName": "SyncShow",
+        "version": "1.4.0-preview.30"
+      },
+      "target": {
+        "key": "win32-x64",
+        "platform": "win32",
+        "arch": "x64"
+      },
+      "appArchive": {
+        "path": "win-unpacked/resources/app.asar",
+        "size": 62334304,
+        "sha256": "dfb14bd7a233b9833cf53b7dc31b29d1ef2ccb6c13e0308ba94d242ebca9e6b4"
+      },
+      "runtime": {
+        "path": "win-unpacked/SyncShow.exe",
+        "size": 225613824,
+        "sha256": "5a27cf02373c9ec4d65af75f07bf9fbd3c764aa57b0fe2928d3ec439aaf21fad",
+        "architecture": "x64"
+      },
+      "nativeArtifacts": [
+        {
+          "path": "win-unpacked/ffmpeg.dll",
+          "size": 3067904,
+          "sha256": "d17c2a0ea5683ff02006676845b84ef2afe18b8f75a5fdcce2b364f85c37a34e",
+          "architecture": "x64",
+          "package": "electron-ffmpeg"
+        },
+        {
+          "path": "win-unpacked/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-42.dll",
+          "size": 18406400,
+          "sha256": "6d8ec83a826a1b46ef25a670501fd186475568dd3e48893cb4f756d0f2f428d8",
+          "architecture": "x64",
+          "package": "@img/sharp-win32-x64"
+        },
+        {
+          "path": "win-unpacked/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/libvips-cpp-8.18.3.dll",
+          "size": 333312,
+          "sha256": "d6eb3395e6f7799c9e2c997aba38068f1ab0684dc08a853013dbe528649306b9",
+          "architecture": "x64",
+          "package": "@img/sharp-win32-x64"
+        },
+        {
+          "path": "win-unpacked/resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/sharp-win32-x64-0.35.3.node",
+          "size": 442368,
+          "sha256": "45dbb968dff27a1e8d8870d2a34e6f5418fa2a1a4fe27a7ed13ab2fb3f895468",
+          "architecture": "x64",
+          "package": "@img/sharp-win32-x64"
+        },
+        {
+          "path": "win-unpacked/resources/app.asar.unpacked/node_modules/@napi-rs/canvas-win32-x64-msvc/skia.win32-x64-msvc.node",
+          "size": 27331584,
+          "sha256": "b31cbafcbcb7a55565889a991b00d39b85b84204f1776e08e90807bd1c3ae787",
+          "architecture": "x64",
+          "package": "@napi-rs/canvas-win32-x64-msvc"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "SyncShow Setup 1.4.0-preview.30.exe",
+          "size": 129313393,
+          "sha256": "85cf7fa91ddc3a457f84a84838fcdcb02cb1a3b453d81f9e847723605e457bde"
+        }
+      ],
+      "privateGoogleDriveConfig": "absent",
+      "packagedPdfRuntimeGate": "required-by-workflow",
+      "packagedSharpRuntimeGate": "required-by-workflow",
+      "legalEvidenceGate": "required-by-workflow"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceRevision": "9a9ebf7379797c68e99a2ea1f7a9dcefd1551458",
+      "application": {
+        "name": "sync-show",
+        "productName": "SyncShow",
+        "version": "1.4.0-preview.30"
+      },
+      "target": {
+        "key": "linux-x64",
+        "platform": "linux",
+        "arch": "x64"
+      },
+      "appArchive": {
+        "path": "linux-unpacked/resources/app.asar",
+        "size": 62334732,
+        "sha256": "859e8cd19efe70ccd28838e62ae62fac84b2da9714f156c1c8b90ae2c32b7298"
+      },
+      "runtime": {
+        "path": "linux-unpacked/sync-show",
+        "size": 219917560,
+        "sha256": "84e1078c8f38659f3785fec90b68ff47dcb7b5ed94e97e4e4cc6dd3290758991",
+        "architecture": "x64"
+      },
+      "nativeArtifacts": [
+        {
+          "path": "linux-unpacked/libffmpeg.so",
+          "size": 2731256,
+          "sha256": "51ad31b5b8b704b94f123c6eb283eecc383f4692b9c1f262377680339293a323",
+          "architecture": "x64",
+          "package": "electron-ffmpeg"
+        },
+        {
+          "path": "linux-unpacked/resources/app.asar.unpacked/node_modules/@img/sharp-libvips-linux-x64/lib/libvips-cpp.so.8.18.3",
+          "size": 18195640,
+          "sha256": "0c1a1560417bbcdac38ce83151e52e56711deb70c5373053822c3301a19a4496",
+          "architecture": "x64",
+          "package": "@img/sharp-libvips-linux-x64"
+        },
+        {
+          "path": "linux-unpacked/resources/app.asar.unpacked/node_modules/@img/sharp-linux-x64/lib/sharp-linux-x64-0.35.3.node",
+          "size": 415112,
+          "sha256": "62ad8a4400d01452a37034e527b3f0849c4d685b33e8acde79abfbcc9fe5bc12",
+          "architecture": "x64",
+          "package": "@img/sharp-linux-x64"
+        },
+        {
+          "path": "linux-unpacked/resources/app.asar.unpacked/node_modules/@napi-rs/canvas-linux-x64-gnu/skia.linux-x64-gnu.node",
+          "size": 33876416,
+          "sha256": "46d2b7d0cb4ede04f07b451d9d523ddbf2a0e762c8dd8a0b150237cf04914939",
+          "architecture": "x64",
+          "package": "@napi-rs/canvas-linux-x64-gnu"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "sync-show_1.4.0-preview.30_amd64.deb",
+          "size": 129714100,
+          "sha256": "483e81c0bf61206365d1110391a60d7b7e148116827943c7d1b096d070c50654"
+        },
+        {
+          "path": "SyncShow-1.4.0-preview.30.AppImage",
+          "size": 166456914,
+          "sha256": "d2f3165e140ee9bd5244b1adb01aeab68d8815ce1d1bebe9fef0f9de2cd5217d",
+          "architecture": "x64"
+        }
+      ],
+      "privateGoogleDriveConfig": "absent",
+      "packagedPdfRuntimeGate": "required-by-workflow",
+      "packagedSharpRuntimeGate": "required-by-workflow",
+      "legalEvidenceGate": "required-by-workflow"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceRevision": "9a9ebf7379797c68e99a2ea1f7a9dcefd1551458",
+      "application": {
+        "name": "sync-show",
+        "productName": "SyncShow",
+        "version": "1.4.0-preview.30"
+      },
+      "target": {
+        "key": "darwin-arm64",
+        "platform": "darwin",
+        "arch": "arm64"
+      },
+      "appArchive": {
+        "path": "mac-arm64/SyncShow.app/Contents/Resources/app.asar",
+        "size": 62334672,
+        "sha256": "3d764d9f6ffb1486dba97c54748755c297c32875a70a617e987d85c5fcce44f8"
+      },
+      "runtime": {
+        "path": "mac-arm64/SyncShow.app/Contents/MacOS/SyncShow",
+        "size": 52992,
+        "sha256": "590f784b21329ec9ead846cf61dd30df7a688f4f3d113d05422e5dcfcc262540",
+        "architecture": "arm64"
+      },
+      "nativeArtifacts": [
+        {
+          "path": "mac-arm64/SyncShow.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+          "size": 2248928,
+          "sha256": "98dbf406dd4f25cc607964af704806b860b789cd4046416a4b595cacbd88b7f2",
+          "architecture": "arm64",
+          "package": "electron-ffmpeg"
+        },
+        {
+          "path": "mac-arm64/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64-0.35.3.node",
+          "size": 298384,
+          "sha256": "c00f06443cdae90d909be3062e0267a377b1949a887d2841ae43652b6334ecaa",
+          "architecture": "arm64",
+          "package": "@img/sharp-darwin-arm64"
+        },
+        {
+          "path": "mac-arm64/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@img/sharp-libvips-darwin-arm64/lib/libvips-cpp.8.18.3.dylib",
+          "size": 17784080,
+          "sha256": "dcc6c9dc250357a93bfb78b7790bb65e3f4d29f150186ac2b4dca0add3cbf56e",
+          "architecture": "arm64",
+          "package": "@img/sharp-libvips-darwin-arm64"
+        },
+        {
+          "path": "mac-arm64/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@napi-rs/canvas-darwin-arm64/skia.darwin-arm64.node",
+          "size": 27043136,
+          "sha256": "2a8a14e3cf9a5129fc845884278560c3fbac2e7861ff35be2b32cf9599428160",
+          "architecture": "arm64",
+          "package": "@napi-rs/canvas-darwin-arm64"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "SyncShow-1.4.0-preview.30-arm64.dmg",
+          "size": 158873438,
+          "sha256": "2695976f734566a59d0acdd4014936c585dbd8bb082d5c7510407c162faa1bc5"
+        },
+        {
+          "path": "SyncShow-1.4.0-preview.30-arm64.zip",
+          "size": 159182942,
+          "sha256": "c0bba1f684110d6bdc6de65665d075824739cac87e1b63a046916acd1a981ad5"
+        }
+      ],
+      "privateGoogleDriveConfig": "absent",
+      "packagedPdfRuntimeGate": "required-by-workflow",
+      "packagedSharpRuntimeGate": "required-by-workflow",
+      "legalEvidenceGate": "required-by-workflow"
+    },
+    {
+      "schemaVersion": 1,
+      "sourceRevision": "9a9ebf7379797c68e99a2ea1f7a9dcefd1551458",
+      "application": {
+        "name": "sync-show",
+        "productName": "SyncShow",
+        "version": "1.4.0-preview.30"
+      },
+      "target": {
+        "key": "darwin-x64",
+        "platform": "darwin",
+        "arch": "x64"
+      },
+      "appArchive": {
+        "path": "mac/SyncShow.app/Contents/Resources/app.asar",
+        "size": 62334728,
+        "sha256": "f30da915fe0b535be9625a2cd183f941875601d40b3d33ce021238d46014467f"
+      },
+      "runtime": {
+        "path": "mac/SyncShow.app/Contents/MacOS/SyncShow",
+        "size": 32368,
+        "sha256": "7f6692d782048b449580252da1233f1c3a7ec12163759fccfbd4c31a99022d84",
+        "architecture": "x64"
+      },
+      "nativeArtifacts": [
+        {
+          "path": "mac/SyncShow.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib",
+          "size": 2523296,
+          "sha256": "c0f671bd0838fea0885b0ca268dd69032353e771467f5d7fd6c95622f60bc230",
+          "architecture": "x64",
+          "package": "electron-ffmpeg"
+        },
+        {
+          "path": "mac/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@img/sharp-darwin-x64/lib/sharp-darwin-x64-0.35.3.node",
+          "size": 275600,
+          "sha256": "8712a08b195eb7d58fcfa36c15ec89b25fdcb3d2e9426e0cae84165c2cb588e7",
+          "architecture": "x64",
+          "package": "@img/sharp-darwin-x64"
+        },
+        {
+          "path": "mac/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@img/sharp-libvips-darwin-x64/lib/libvips-cpp.8.18.3.dylib",
+          "size": 20068128,
+          "sha256": "dd770ffc46b7a63856c35ffa8122093a57cc04b45731c01a9149bcdbbe3aba54",
+          "architecture": "x64",
+          "package": "@img/sharp-libvips-darwin-x64"
+        },
+        {
+          "path": "mac/SyncShow.app/Contents/Resources/app.asar.unpacked/node_modules/@napi-rs/canvas-darwin-x64/skia.darwin-x64.node",
+          "size": 32450944,
+          "sha256": "0540dd6fcfc0ec4e889c0adf15bd47fe6bd649b0c0a9dd0055a9041275d41549",
+          "architecture": "x64",
+          "package": "@napi-rs/canvas-darwin-x64"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "SyncShow-1.4.0-preview.30-x64.dmg",
+          "size": 164697665,
+          "sha256": "5edd59da7035b642307e0e2f919a3e03fad65b5a01a9810609bb286fcb89995f"
+        },
+        {
+          "path": "SyncShow-1.4.0-preview.30-x64.zip",
+          "size": 165027995,
+          "sha256": "3224549a58c7171c1f6264d7647d5e928343dc69735992f9588af1707b9c2d36"
+        }
+      ],
+      "privateGoogleDriveConfig": "absent",
+      "packagedPdfRuntimeGate": "required-by-workflow",
+      "packagedSharpRuntimeGate": "required-by-workflow",
+      "legalEvidenceGate": "required-by-workflow"
+    }
+  ],
+  "launchReceipts": [
+    {
+      "schemaVersion": 1,
+      "target": "win32-x64",
+      "archive": "win-unpacked/resources/app.asar",
+      "archiveSha256": "dfb14bd7a233b9833cf53b7dc31b29d1ef2ccb6c13e0308ba94d242ebca9e6b4",
+      "executable": "win-unpacked/SyncShow.exe",
+      "executableSha256": "5a27cf02373c9ec4d65af75f07bf9fbd3c764aa57b0fe2928d3ec439aaf21fad",
+      "controlPage": {
+        "title": "",
+        "url": "file:///D:/a/SyncShow/SyncShow/dist/win-unpacked/resources/app.asar/src/renderer/index.html"
+      },
+      "isolatedProfile": "confirmed-and-removed",
+      "launch": "passed"
+    },
+    {
+      "schemaVersion": 1,
+      "target": "linux-x64",
+      "archive": "linux-unpacked/resources/app.asar",
+      "archiveSha256": "859e8cd19efe70ccd28838e62ae62fac84b2da9714f156c1c8b90ae2c32b7298",
+      "executable": "linux-unpacked/sync-show",
+      "executableSha256": "84e1078c8f38659f3785fec90b68ff47dcb7b5ed94e97e4e4cc6dd3290758991",
+      "controlPage": {
+        "title": "",
+        "url": "file:///home/runner/work/SyncShow/SyncShow/dist/linux-unpacked/resources/app.asar/src/renderer/index.html"
+      },
+      "isolatedProfile": "confirmed-and-removed",
+      "launch": "passed"
+    },
+    {
+      "schemaVersion": 1,
+      "target": "darwin-arm64",
+      "archive": "mac-arm64/SyncShow.app/Contents/Resources/app.asar",
+      "archiveSha256": "3d764d9f6ffb1486dba97c54748755c297c32875a70a617e987d85c5fcce44f8",
+      "executable": "mac-arm64/SyncShow.app/Contents/MacOS/SyncShow",
+      "executableSha256": "590f784b21329ec9ead846cf61dd30df7a688f4f3d113d05422e5dcfcc262540",
+      "controlPage": {
+        "title": "",
+        "url": "file:///Users/runner/work/SyncShow/SyncShow/dist/mac-arm64/SyncShow.app/Contents/Resources/app.asar/src/renderer/index.html"
+      },
+      "isolatedProfile": "confirmed-and-removed",
+      "launch": "passed"
+    },
+    {
+      "schemaVersion": 1,
+      "target": "darwin-x64",
+      "archive": "mac/SyncShow.app/Contents/Resources/app.asar",
+      "archiveSha256": "f30da915fe0b535be9625a2cd183f941875601d40b3d33ce021238d46014467f",
+      "executable": "mac/SyncShow.app/Contents/MacOS/SyncShow",
+      "executableSha256": "7f6692d782048b449580252da1233f1c3a7ec12163759fccfbd4c31a99022d84",
+      "controlPage": {
+        "title": "",
+        "url": "file:///Users/runner/work/SyncShow/SyncShow/dist/mac/SyncShow.app/Contents/Resources/app.asar/src/renderer/index.html"
+      },
+      "isolatedProfile": "confirmed-and-removed",
+      "launch": "passed"
+    }
+  ],
+  "downloadedMac": {
+    "archiveSha256": "3d764d9f6ffb1486dba97c54748755c297c32875a70a617e987d85c5fcce44f8",
+    "sourceRevision": "9a9ebf7379797c68e99a2ea1f7a9dcefd1551458",
+    "files": [
+      "src/renderer/canvas-layout.js",
+      "src/renderer/native-cue-renderer.js",
+      "src/renderer/display.html",
+      "src/services/show/NativeCueScene.js",
+      "src/services/project/NativeSlideRenderer.js",
+      "packages/service-core/node/services/project/CanvasLayout.js",
+      "packages/service-core/node/services/project/ServiceProject.js"
+    ],
+    "version": "1.4.0-preview.30",
+    "signature": "passed"
+  }
+}
