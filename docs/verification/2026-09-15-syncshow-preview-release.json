@@ -199,5 +199,21 @@
       "conclusion": "success",
       "name": "QA package (macos-x64)"
     }
-  ]
+  ],
+  "publication": {
+    "repository": "edydex/heritage-community",
+    "visibility": "private",
+    "url": "https://github.com/edydex/heritage-community/releases/tag/syncshow-v1.4.0-preview.29",
+    "tag": "syncshow-v1.4.0-preview.29",
+    "target": "2db2878e617ad1bfd2a9424bfdc2ef04c9b8ad45",
+    "publishedAt": "2026-09-16T07:20:20Z",
+    "draft": false,
+    "prerelease": true,
+    "all17UploadedAssetSizesAndDigestsMatch": true,
+    "windowsDownloadedFromPublishedRelease": {
+      "name": "SyncShow-Setup-1.4.0-preview.29-x64.exe",
+      "size": 129307663,
+      "sha256": "65c4f4624c3fdc8fb2c9cc03bb636c5d1ae92454f807df2f98efe0865aaf1029"
+    }
+  }
 }

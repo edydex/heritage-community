@@ -13,6 +13,10 @@ The user requested permanent SyncShow installers for the testing round, especial
 - The Windows installer is renamed from `SyncShow Setup 1.4.0-preview.29.exe` to `SyncShow-Setup-1.4.0-preview.29-x64.exe` for a stable, readable download URL. Its bytes are unchanged: SHA-256 `65c4f4624c3fdc8fb2c9cc03bb636c5d1ae92454f807df2f98efe0865aaf1029` (129,307,663 bytes).
 - The release includes the four package receipts, four launch receipts, build provenance and SHA256SUMS. [Machine-readable provenance](2026-09-15-syncshow-preview-release.json) records all package hashes and exact successful checks.
 
+## Published-download verification
+
+Published at `2026-09-16T07:20:20Z` as a private prerelease, with draft status false. All 17 GitHub asset sizes and stored SHA-256 digests match the staged files. The Windows installer was downloaded again from the published release; its 129,307,663 bytes and SHA-256 match the original CI receipt. The release tag identifies integration record `2db2878`; the attached build-provenance file identifies the separate SyncShow source revision.
+
 ## Boundary and remaining acceptance
 
 This is private maintainer-test delivery. The existing public SyncShow release workflow remains unchanged and blocked on dependency source/relinking materials and official Drive configuration. No credentials are included in these QA packages. Community and local presentation workflows do not depend on maintainer Drive credentials.
