@@ -4,9 +4,9 @@ The Android Community preview brings Community Home, passage-linked published se
 
 ## Install or update
 
-In the installed Android app, open **Settings → Advanced Settings** and check for updates. [Heritage 1.1.38-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.38-preview.1) is now the normal GitHub Latest release, and the installed checker detects it from earlier builds through 1.1.37. Version code 41 preserves the existing application identity and signer.
+In the installed Android app, open **Settings → Advanced Settings** and check for updates. [Heritage 1.1.39-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.39-preview.1) is now the normal GitHub Latest release, and the installed checker detects it from earlier builds through 1.1.38. Version code 42 preserves the existing application identity and signer.
 
-You can also download `heritage-study-bible-1.1.38-preview.1-debug.apk` from that release. Install it over the existing Heritage app; keep the previous installation and its data until the phone rehearsal passes. Do not uninstall first. The release check requires the same application ID and signer as v1.1.32 and a higher Android version code. This release increases the numeric version, so the older checker can detect it too.
+You can also download `heritage-study-bible-1.1.39-preview.1-debug.apk` from that release. Install it over the existing Heritage app; keep the previous installation and its data until the phone rehearsal passes. Do not uninstall first. The release check requires the same application ID and signer as v1.1.32 and a higher Android version code. This release increases the numeric version, so the older checker can detect it too.
 
 Published future Android builds use the same normal update feed, including labelled development previews. The publishing process now rejects suffix-only version increments and native version codes that cannot update the latest APK, verifies asset integrity, and checks the actual Latest response. Build-only CI artifacts are not automatically published. See the [update-feed verification](verification/2026-09-14-android-update-feed.md).
 
@@ -42,7 +42,7 @@ Automated native checks use an Android emulator with Wi-Fi and mobile data disab
 
 Physical-phone installation/update, real email return into the app, member sign-in, native sharing, microphone/audio playback and a bilingual service rehearsal still require device acceptance. The separate real desktop-browser note/progress synchronization evidence does not substitute for these phone checks.
 
-[Current build, published assets and acceptance evidence](verification/2026-09-16-reader-canvas.md). Earlier [Automatic Sync native evidence](verification/2026-09-14-automatic-sync.json) remains available.
+[Current build, published assets and acceptance evidence](verification/2026-09-16-preparation-qol.md). Earlier [Automatic Sync native evidence](verification/2026-09-14-automatic-sync.json) remains available.
 
 Version 1.1.35 also formats verse cues and slide dividers as readable headings and paragraph breaks. Its built-in Russian hymns are limited to two sourced texts; church-published songs remain available.
 
@@ -51,3 +51,5 @@ Version 1.1.36 corrects the song list: only built-ins with Russian words show a 
 Version 1.1.37 adds the song-sharing popup with copy confirmation and a QR code. Calendar events open dedicated details pages. Pacific abbreviations work in Firefox, and the optional event website field has a clear description and field-level errors.
 
 Version 1.1.38 fixes the first jump to a verse from saved notes and search. Unique prefixes such as Luk and Joh work, while ambiguous prefixes such as Jo and Ma open clickable book choices.
+
+Version 1.1.39 adds first-section previews on mouse hover or keyboard focus. Normal touch taps still open songs. Its accompanying Community update adds passage shortcuts, a more compact sermon editor, right-click Slide settings and Ctrl/Command+Z.
