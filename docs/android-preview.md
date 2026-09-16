@@ -4,9 +4,9 @@ The Android Community preview brings Community Home, passage-linked published se
 
 ## Install or update
 
-In the installed Android app, open **Settings → Advanced Settings** and check for updates. [Heritage 1.1.34-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1) is now the normal GitHub Latest release, and the installed checker detects it from v1.1.32 and v1.1.33 previews. Version code 37 preserves the existing application identity and signer.
+In the installed Android app, open **Settings → Advanced Settings** and check for updates. [Heritage 1.1.35-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.35-preview.1) is now the normal GitHub Latest release, and the installed checker detects it from earlier 1.1.32, 1.1.33 and 1.1.34 builds. Version code 38 preserves the existing application identity and signer.
 
-You can also download `heritage-study-bible-1.1.34-preview.1-debug.apk` from that release. Install it over the existing Heritage app; keep the previous installation and its data until the phone rehearsal passes. Do not uninstall first. The release check requires the same application ID and signer as v1.1.32 and a higher Android version code. This release increases the numeric version, so the older checker can detect it too.
+You can also download `heritage-study-bible-1.1.35-preview.1-debug.apk` from that release. Install it over the existing Heritage app; keep the previous installation and its data until the phone rehearsal passes. Do not uninstall first. The release check requires the same application ID and signer as v1.1.32 and a higher Android version code. This release increases the numeric version, so the older checker can detect it too.
 
 Published future Android builds use the same normal update feed, including labelled development previews. The publishing process now rejects suffix-only version increments and native version codes that cannot update the latest APK, verifies asset integrity, and checks the actual Latest response. Build-only CI artifacts are not automatically published. See the [update-feed verification](verification/2026-09-14-android-update-feed.md).
 
@@ -18,6 +18,7 @@ Open **Community Home**, enter `wotbc.heritage.faith` under **Find a church**, a
 
 - **Live service** opens the church stream with translation choices.
 - **Live translation** opens translation without video.
+- **Calendar** opens a dedicated page from the button before Sermons. Multi-day events span the dates in one bar within each week.
 - **Songs** and **Sermons and notes** open the church's available resources. Reviewed public sermons can also appear beside the Bible passages they reference.
 - Save a member song for offline reading while signed in. The saved copy belongs to that church session; access revocation removes it when checked online.
 
@@ -41,4 +42,6 @@ Automated native checks use an Android emulator with Wi-Fi and mobile data disab
 
 Physical-phone installation/update, real email return into the app, member sign-in, native sharing, microphone/audio playback and a bilingual service rehearsal still require device acceptance. The separate real desktop-browser note/progress synchronization evidence does not substitute for these phone checks.
 
-[Current build, published assets and acceptance evidence](verification/2026-09-15-community-workflows.md). Earlier [Automatic Sync native evidence](verification/2026-09-14-automatic-sync.json) remains available.
+[Current build, published assets and acceptance evidence](verification/2026-09-16-calendar-song-polish.md). Earlier [Automatic Sync native evidence](verification/2026-09-14-automatic-sync.json) remains available.
+
+Version 1.1.35 also formats verse cues and slide dividers as readable headings and paragraph breaks. Its built-in Russian hymns are limited to two sourced texts; church-published songs remain available.

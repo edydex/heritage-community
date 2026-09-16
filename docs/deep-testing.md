@@ -1,12 +1,12 @@
 # Deep Testing walkthrough
 
-Dated September 15, 2026. Open [the interactive walkthrough](deep-testing.html) for saved results, per-case notes, printing and export. The page stores results only in the browser; export them before changing devices. This text copy provides the same test cases without requiring JavaScript.
+Dated September 16, 2026. Open [the interactive walkthrough](deep-testing.html) for saved results, per-case notes, printing and export. The page stores results only in the browser; export them before changing devices. This text copy provides the same test cases without requiring JavaScript.
 
 ## Recommendation
 
 Do a short preparation pass, then freeze features and test. Do not start another broad implementation batch.
 
-1. Install the agreed builds: Android **1.1.34-preview.1**, versionCode 37, and the published **SyncShow Preview 29** installer for your computer. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it also contains Automatic Sync.
+1. Install the agreed builds: Android **1.1.35-preview.1**, versionCode 38, and the published **SyncShow Preview 29** installer for your computer. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it also contains Automatic Sync.
 2. Complete real WOTBC manager sign-in and approved provider configuration before translation tests. Personal sync, membership and manager access are separate. Healthy server status does not prove provider setup. The last configuration audit found providers unset; this plan does not transfer credentials.
 3. Keep direct recording-to-sermon attachment outside the first baseline. It is unpublished local work. Deliver it in a named build before A3, or mark A3 blocked and test everything else now.
 
@@ -32,13 +32,13 @@ Use **Not run / Pass / Fail / Blocked**, plus notes, for each case. Executed per
 
 | Part | Version / evidence | Remaining boundary |
 | --- | --- | --- |
-| Android | [1.1.34-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1), code 37, `9cd8e88` | Physical-phone automatic sync |
-| Public reader | heritage.faith, last verified `9cd8e88` | Physical-device automatic-sync acceptance |
+| Android | [1.1.35-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.35-preview.1), code 38, `b12cef6` | Physical-phone automatic sync |
+| Public reader | heritage.faith, last verified `b12cef6` | Physical-device automatic-sync acceptance |
 | SyncShow | [Windows / Mac / Linux Preview 29 installers](desktop-preview.md), `15fe0d7` | Real tablet, projector, mixer and volunteer |
-| WOTBC | Community `9cd8e88`; translation `c92aafe` | Provider and live device acceptance |
+| WOTBC | Community `b12cef6`; translation `c92aafe` | Provider and live device acceptance |
 | Recording attachment | Unpublished local changes beyond the baseline | A3 blocked until delivered |
 
-Live status on September 15 passed app/database/processor health, public discovery, tunnel and backup checks. The latest backup was under 48 hours old, checksums passed and its private recording inventory matched. No paid calls were made to create this plan. At the dated budget checkpoint, $0.79 of $20 was conservatively accounted and nothing reserved; check the [current ledger](verification/api-test-budget.json) before paid work. The usage display is partial, not a hard spending cap or guarantee of free Economy use.
+Live status on September 16 passed app/database/processor health, public discovery, tunnel and backup checks. The latest backup was under 48 hours old, checksums passed and its private recording inventory matched. No paid calls were made to create this plan. At the dated budget checkpoint, $0.79 of $20 was conservatively accounted and nothing reserved; check the [current ledger](verification/api-test-budget.json) before paid work. The usage display is partial, not a hard spending cap or guarantee of free Economy use.
 
 
 
@@ -51,7 +51,7 @@ Before either session. Clear these first. A blocked provider setup only blocks t
 ### P1 — Install the agreed builds without losing data
 
 1. Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.
-2. Use Settings → Advanced Settings to check for Android 1.1.34-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from both 1.1.32 and 1.1.33 previews. Quit SyncShow and install the published Preview 29 package for your computer. Record the actual versions and devices above.
+2. Use Settings → Advanced Settings to check for Android 1.1.35-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier 1.1.32, 1.1.33 and 1.1.34 builds. Quit SyncShow and install the published Preview 29 package for your computer. Record the actual versions and devices above.
 3. Open an existing Bible note and an existing service before creating rehearsal content.
 
 **Pass looks like:** Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.
@@ -122,7 +122,7 @@ Notes / evidence:
 
 ### S3 — Automatic Sync stays out of the way
 
-1. On Android 1.1.34-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.
+1. On Android 1.1.35-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.
 2. Open the Bible and navigate immediately. Leave it foregrounded and online with no text editor focused. After the initial delay (about 10 seconds, possibly longer while busy), check the last-sync status.
 3. Create a note, leave editing, and wait for the next cycle: about 3 minutes after the previous attempt completes. Sync the second device manually to confirm receipt; repeat with B making the change and A receiving automatically.
 
@@ -182,7 +182,7 @@ Desk · 15–20 minutes. Use the real manager/member roles and one labeled resou
 
 1. Add or edit the rehearsal song through SyncShow/Community, including the English and Russian verses and chorus order.
 2. Reopen it from the other preparation entry point and add it to the test service.
-3. Open the intended shared song in Heritage as a member; compare the actual lyrics and selected version. Explicitly save it offline, disconnect that phone, and reopen it.
+3. Open the intended shared song in Heritage as a member; compare the actual lyrics and selected version. Confirm ^1/^2 cues become verse headings, dashed slide dividers become paragraph gaps, and the sung lines are unchanged in both languages. Explicitly save it offline, disconnect that phone, and reopen it.
 
 **Pass looks like:** The same intended song/version appears in preparation and Heritage, both languages retain their text, and the explicitly saved resource opens offline.
 
@@ -273,7 +273,7 @@ Desk · 10–15 minutes. Use clearly labeled rehearsal events. Restore the churc
 ### E1 — Calendar privacy and Events/Recurring filters
 
 1. In Events → Calendar settings, record the current default visibility. Create three rehearsal events: Church default, Public, and Members only. Make one weekly series with an end date.
-2. In a signed-out browser open the church home, then open Community → Calendar on the phone as a signed-in member. Events starts checked and Recurring unchecked; toggle Recurring and inspect dates and details.
+2. In a signed-out browser open the church home, then open Community Home → Calendar on the phone as a signed-in member. Events starts checked and Recurring unchecked; toggle Recurring and inspect dates and details.
 3. If authorized for the rehearsal, change the default visibility and confirm only events using Church default follow it. Explicit Public/Members choices stay unchanged. Restore the original default and cancel the rehearsal events.
 
 **Pass looks like:** Anonymous visitors see only public events/series. Members can see member events. Turning a filter off hides its category and selected details. Private titles and locations do not leak into the public feed.
@@ -285,7 +285,7 @@ Notes / evidence:
 ### E2 — Date-click creation and Pacific recurring times
 
 1. Open Events → Calendar settings. Confirm WOTBC uses America/Los_Angeles. Save the default once, reload, then click a date and create a clearly labeled event at 10:00 AM.
-2. Create a weekly 10:00 AM rehearsal series across the November clock change, with an explicit ending date. Browse both months in the admin preview and Community calendar.
+2. Create a weekly 10:00 AM rehearsal series across the November clock change, with an explicit ending date. Browse both months in the admin preview and Community calendar. Also create a three-day rehearsal event: it should be one bar within a week, continue on the next row across a week boundary, and open its details from the middle date.
 3. Open an occurrence to edit the series, verify the whole-series explanation, and compare its time after saving. Cancel the rehearsal events when finished.
 
 **Pass looks like:** Date-click creation pre-fills the chosen date and saved time zone. WOTBC follows Pacific daylight saving automatically; 10:00 AM stays 10:00 AM after the clock change. Existing event times do not move when the default zone changes.

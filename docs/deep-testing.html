@@ -17,7 +17,7 @@
 <div class="prep"><p><strong>September 15 update:</strong> run R6–R7, E1–E2 and H5 for song refresh, tags, the calendar and reusable sermon slides. Earlier saved results are retained; rerun affected cases on the new build.</p>
 <h2>Before the round: three concrete jobs</h2>
 <ol>
-<li><strong>Choose and install the test versions.</strong> Use the installed Android update checker to get <strong>1.1.34-preview.1</strong> from v1.1.32 (or use the direct APK), and the published <strong>SyncShow Preview 29</strong> installer for your computer. Record each device below. The updated public web reader also has Automatic Sync; use manual Sync now initially to isolate account issues. Install updates over the existing app so we actually test preservation of notes.</li>
+<li><strong>Choose and install the test versions.</strong> Use the installed Android update checker to get <strong>1.1.35-preview.1</strong> from v1.1.32 (or use the direct APK), and the published <strong>SyncShow Preview 29</strong> installer for your computer. Record each device below. The updated public web reader also has Automatic Sync; use manual Sync now initially to isolate account issues. Install updates over the existing app so we actually test preservation of notes.</li>
 <li><strong>Complete WOTBC manager and provider setup for the translation tests.</strong> A successful personal-sync login does not grant church-manager access. WOTBC is healthy, but the last configuration audit found its providers unset. Current health checks do not establish working translation. Use an approved WOTBC provider configuration; no credential copying is part of this walkthrough.</li>
 <li><strong>Keep recording attachment outside this first baseline.</strong> Browsing completed recordings is included. Directly attaching a recording to a sermon is still unpublished local work. Finish and deliver that workflow before case A3, or leave A3 blocked and test the rest now.</li>
 </ol>
@@ -66,13 +66,13 @@
 <h2>The baseline behind this plan</h2>
 <p>Checked September 15, 2026. WOTBC’s app, database, translation processor, public discovery and tunnel passed status checks. The backup was less than 48 hours old, its checksums passed, and the private recording inventory matched. That proves health and backup consistency, not manager sign-in, provider setup, audible playback or translation quality.</p>
 <div class="table-wrap"><table><thead><tr><th>Part</th><th>Use for this round</th><th>Boundary</th></tr></thead><tbody>
-<tr><td>Android</td><td><a href="https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1">1.1.34-preview.1</a>, code 37; <code>9cd8e88</code></td><td>Published download/native checks passed; physical phone automatic sync remains to be accepted.</td></tr>
-<tr><td>Web reader</td><td><a href="https://heritage.faith/#/settings/sync">heritage.faith</a>; last verified <code>9cd8e88</code></td><td>Real two-browser manual sync passed previously. Automatic Sync is included; physical-device acceptance remains.</td></tr>
+<tr><td>Android</td><td><a href="https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.35-preview.1">1.1.35-preview.1</a>, code 38; <code>b12cef6</code></td><td>Published download/native checks passed; physical phone automatic sync remains to be accepted.</td></tr>
+<tr><td>Web reader</td><td><a href="https://heritage.faith/#/settings/sync">heritage.faith</a>; last verified <code>b12cef6</code></td><td>Real two-browser manual sync passed previously. Automatic Sync is included; physical-device acceptance remains.</td></tr>
 <tr><td>SyncShow</td><td><a href="https://github.com/edydex/heritage-community/releases/tag/syncshow-v1.4.0-preview.29">Windows / Mac / Linux Preview 29 installers</a>; <code>15fe0d7</code></td><td>Downloaded package/launch checked. Do not substitute a newer source checkout or an older installed app without recording it.</td></tr>
-<tr><td>Community / translation</td><td><code>9cd8e88</code> / <code>c92aafe</code></td><td>Manager sign-in verified; provider and live device acceptance remain open.</td></tr>
+<tr><td>Community / translation</td><td><code>b12cef6</code> / <code>c92aafe</code></td><td>Manager sign-in verified; provider and live device acceptance remain open.</td></tr>
 <tr><td>Recording → sermon</td><td>Unpublished local work beyond this set</td><td>A3 stays blocked until a tested workflow is delivered. A1/A2 still apply to existing archive review.</td></tr>
 </tbody></table></div>
-<p class="muted">Android APK SHA-256: <code>ec08cd6afd3f8d4e2a24af797583bd04bc04131164a6140cc597fda9caa6e475</code>. Use the exact source versions listed above for this test baseline.</p>
+<p class="muted">Android APK SHA-256: <code>e35cd610855b93e148c9beab9f4606700a196e0f6a50735027de2039462b7ab9</code>. Use the exact source versions listed above for this test baseline.</p>
 <p><a href="sunday-operator-guide.md">Sunday operator guide</a> · <a href="android-preview.md">Android update instructions</a> · <a href="verification/2026-09-14-automatic-sync.md">Automatic Sync evidence</a> · <a href="verification/2026-09-14-committed-recognition.md">Known recognition issue</a> · <a href="verification/api-test-budget.json">API budget ledger</a> · <a href="deep-testing.md">Text walkthrough</a></p>
 </section>
 </main>
@@ -90,7 +90,7 @@
         "title": "Install the agreed builds without losing data",
         "steps": [
           "Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.",
-          "Use Settings → Advanced Settings to check for Android 1.1.34-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from both 1.1.32 and 1.1.33 previews. Quit SyncShow and install the published Preview 29 package for your computer. Record the actual versions and devices above.",
+          "Use Settings → Advanced Settings to check for Android 1.1.35-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier 1.1.32, 1.1.33 and 1.1.34 builds. Quit SyncShow and install the published Preview 29 package for your computer. Record the actual versions and devices above.",
           "Open an existing Bible note and an existing service before creating rehearsal content."
         ],
         "expect": "Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.",
@@ -151,7 +151,7 @@
         "id": "S3",
         "title": "Automatic Sync stays out of the way",
         "steps": [
-          "On Android 1.1.34-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.",
+          "On Android 1.1.35-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.",
           "Open the Bible and navigate immediately. Leave it foregrounded and online with no text editor focused. After the initial delay (about 10 seconds, possibly longer while busy), check the last-sync status.",
           "Create a note, leave editing, and wait for the next cycle: about 3 minutes after the previous attempt completes. Sync the second device manually to confirm receipt; repeat with B making the change and A receiving automatically."
         ],
@@ -204,7 +204,7 @@
         "steps": [
           "Add or edit the rehearsal song through SyncShow/Community, including the English and Russian verses and chorus order.",
           "Reopen it from the other preparation entry point and add it to the test service.",
-          "Open the intended shared song in Heritage as a member; compare the actual lyrics and selected version. Explicitly save it offline, disconnect that phone, and reopen it."
+          "Open the intended shared song in Heritage as a member; compare the actual lyrics and selected version. Confirm ^1/^2 cues become verse headings, dashed slide dividers become paragraph gaps, and the sung lines are unchanged in both languages. Explicitly save it offline, disconnect that phone, and reopen it."
         ],
         "expect": "The same intended song/version appears in preparation and Heritage, both languages retain their text, and the explicitly saved resource opens offline."
       },
@@ -284,7 +284,7 @@
         "title": "Calendar privacy and Events/Recurring filters",
         "steps": [
           "In Events → Calendar settings, record the current default visibility. Create three rehearsal events: Church default, Public, and Members only. Make one weekly series with an end date.",
-          "In a signed-out browser open the church home, then open Community → Calendar on the phone as a signed-in member. Events starts checked and Recurring unchecked; toggle Recurring and inspect dates and details.",
+          "In a signed-out browser use the Calendar button on the church home, then open Community Home → Calendar on the phone as a signed-in member. Events starts checked and Recurring unchecked; toggle Recurring and inspect dates and details.",
           "If authorized for the rehearsal, change the default visibility and confirm only events using Church default follow it. Explicit Public/Members choices stay unchanged. Restore the original default and cancel the rehearsal events."
         ],
         "expect": "Anonymous visitors see only public events/series. Members can see member events. Turning a filter off hides its category and selected details. Private titles and locations do not leak into the public feed."
@@ -294,7 +294,7 @@
         "title": "Date-click creation and Pacific recurring times",
         "steps": [
           "Open Events → Calendar settings. Confirm WOTBC uses America/Los_Angeles. Save the default once, reload, then click a date and create a clearly labeled event at 10:00 AM.",
-          "Create a weekly 10:00 AM rehearsal series across the November clock change, with an explicit ending date. Browse both months in the admin preview and Community calendar.",
+          "Create a weekly 10:00 AM rehearsal series across the November clock change, with an explicit ending date. Browse both months in the admin preview and Community calendar. Also create a three-day rehearsal event: it should be one bar within a week, continue on the next row across a week boundary, and open its details from the middle date.",
           "Open an occurrence to edit the series, verify the whole-series explanation, and compare its time after saving. Cancel the rehearsal events when finished."
         ],
         "expect": "Date-click creation pre-fills the chosen date and saved time zone. WOTBC follows Pacific daylight saving automatically; 10:00 AM stays 10:00 AM after the clock change. Existing event times do not move when the default zone changes."
@@ -569,7 +569,7 @@ const plan=JSON.parse(document.getElementById('walkthrough-data').textContent);
 const labels={unrun:'Not run',pass:'Pass',fail:'Fail',blocked:'Blocked'};
 const key='heritage-deep-testing-20260914-v1';
 const cases=plan.flatMap(stage=>stage.cases);
-let state={schemaVersion:1,planDate:'2026-09-15',meta:{},results:{}};
+let state={schemaVersion:1,planDate:'2026-09-16',meta:{},results:{}};
 const saveState=document.getElementById('save-state');
 try{const saved=JSON.parse(localStorage.getItem(key)||'null');if(saved&&saved.schemaVersion===1&&saved.meta&&saved.results){state={...state,meta:saved.meta,results:saved.results};}}catch{saveState.textContent='Saved results could not be read. Export this run before leaving the page.';saveState.dataset.error='true';}
 function result(id){const item=state.results[id];return {status:item&&Object.hasOwn(labels,item.status)?item.status:'unrun',notes:typeof item?.notes==='string'?item.notes:''};}
