@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-16T22:44:14.275972+00:00",
+  "checkedAt": "2026-09-16T23:04:24.700152+00:00",
   "heritageRevision": "322806319cdf12dfe266a216170945ce8a3fbf67",
   "syncshowRevision": "9a9ebf7379797c68e99a2ea1f7a9dcefd1551458",
   "local": {
@@ -509,7 +509,72 @@
       "version": "1.4.0-preview.30",
       "signature": "passed"
     },
-    "publication": "awaiting authorization"
+    "publication": {
+      "checkedAt": "2026-09-16T23:01:21.489764+00:00",
+      "url": "https://github.com/edydex/heritage-community/releases/tag/syncshow-v1.4.0-preview.30",
+      "publishedAt": "2026-09-16T23:00:27Z",
+      "tag": "syncshow-v1.4.0-preview.30",
+      "target": "cc2cc7fc7bd7b3ac30db4e846b3543e93ec16566",
+      "draft": false,
+      "prerelease": true,
+      "allAssetDigestsMatch": true,
+      "assets": [
+        {
+          "name": "provenance.json",
+          "size": 16228,
+          "sha256": "d7c5eff25ea39caa7d0cdd332d5d31ccc90fd18ce72e8731047392c243f7019a",
+          "url": "https://github.com/edydex/heritage-community/releases/download/syncshow-v1.4.0-preview.30/provenance.json"
+        },
+        {
+          "name": "SHA256SUMS",
+          "size": 796,
+          "sha256": "caad68b99d397679b8a2fed46c52e9eeb4b1e1359486117371e6d1a162d8a86d",
+          "url": "https://github.com/edydex/heritage-community/releases/download/syncshow-v1.4.0-preview.30/SHA256SUMS"
+        },
+        {
+          "name": "sync-show_1.4.0-preview.30_amd64.deb",
+          "size": 129714100,
+          "sha256": "483e81c0bf61206365d1110391a60d7b7e148116827943c7d1b096d070c50654",
+          "url": "https://github.com/edydex/heritage-community/releases/download/syncshow-v1.4.0-preview.30/sync-show_1.4.0-preview.30_amd64.deb"
+        },
+        {
+          "name": "SyncShow-1.4.0-preview.30-arm64.dmg",
+          "size": 158873438,
+          "sha256": "2695976f734566a59d0acdd4014936c585dbd8bb082d5c7510407c162faa1bc5",
+          "url": "https://github.com/edydex/heritage-community/releases/download/syncshow-v1.4.0-preview.30/SyncShow-1.4.0-preview.30-arm64.dmg"
+        },
+        {
+          "name": "SyncShow-1.4.0-preview.30-arm64.zip",
+          "size": 159182942,
+          "sha256": "c0bba1f684110d6bdc6de65665d075824739cac87e1b63a046916acd1a981ad5",
+          "url": "https://github.com/edydex/heritage-community/releases/download/syncshow-v1.4.0-preview.30/SyncShow-1.4.0-preview.30-arm64.zip"
+        },
+        {
+          "name": "SyncShow-1.4.0-preview.30-x64.dmg",
+          "size": 164697665,
+          "sha256": "5edd59da7035b642307e0e2f919a3e03fad65b5a01a9810609bb286fcb89995f",
+          "url": "https://github.com/edydex/heritage-community/releases/download/syncshow-v1.4.0-preview.30/SyncShow-1.4.0-preview.30-x64.dmg"
+        },
+        {
+          "name": "SyncShow-1.4.0-preview.30-x64.zip",
+          "size": 165027995,
+          "sha256": "3224549a58c7171c1f6264d7647d5e928343dc69735992f9588af1707b9c2d36",
+          "url": "https://github.com/edydex/heritage-community/releases/download/syncshow-v1.4.0-preview.30/SyncShow-1.4.0-preview.30-x64.zip"
+        },
+        {
+          "name": "SyncShow-1.4.0-preview.30.AppImage",
+          "size": 166456914,
+          "sha256": "d2f3165e140ee9bd5244b1adb01aeab68d8815ce1d1bebe9fef0f9de2cd5217d",
+          "url": "https://github.com/edydex/heritage-community/releases/download/syncshow-v1.4.0-preview.30/SyncShow-1.4.0-preview.30.AppImage"
+        },
+        {
+          "name": "SyncShow-Setup-1.4.0-preview.30-x64.exe",
+          "size": 129313393,
+          "sha256": "85cf7fa91ddc3a457f84a84838fcdcb02cb1a3b453d81f9e847723605e457bde",
+          "url": "https://github.com/edydex/heritage-community/releases/download/syncshow-v1.4.0-preview.30/SyncShow-Setup-1.4.0-preview.30-x64.exe"
+        }
+      ]
+    }
   },
   "ci": {
     "readerCommunity": "https://github.com/edydex/heritage_study_bible/actions/runs/35158388712",
@@ -517,5 +582,57 @@
     "android": "https://github.com/edydex/heritage_study_bible/actions/runs/35158390883",
     "web": "https://github.com/edydex/heritage_study_bible/actions/runs/35158411097",
     "desktop": "https://github.com/edydex/SyncShow/actions/runs/35158684356"
+  },
+  "finalCommunityCI": {
+    "url": "https://github.com/edydex/heritage_study_bible/actions/runs/35159771223",
+    "headSha": "8eabb941efee567d96d93fd0703a98f6e0153333",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "production-stack",
+        "conclusion": "success"
+      },
+      {
+        "name": "syncshow-payload-live",
+        "conclusion": "success"
+      },
+      {
+        "name": "syncshow-sermon-history-live",
+        "conclusion": "success"
+      },
+      {
+        "name": "songbook-publication",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "wotbc": {
+    "source": {
+      "sourceRevision": "8eabb941efee567d96d93fd0703a98f6e0153333",
+      "sourceFiles": {
+        "community-server/src/components/CanvasSlide.tsx": "b6075b89ceaaf65f47c9fb9124b3141d3e50ffb559e855aac28fcc6156377ce1",
+        "community-server/src/components/canvas-slide.css": "84b4ec5a3bc5ec7ca09f8367acb57983d361174bfc48919878f751b0355e75d1",
+        "community-server/src/components/SlideText.tsx": "7a55fd8c52c84d850e4d38c0de13ea917780013176564a615f10456c3f09e393",
+        "community-server/packages/service-core/node/services/project/CanvasLayout.js": "c809953db24777439e70ed41bb9904169c1442cb82e4c6a3a6006b511990b373"
+      },
+      "runtime": {
+        "canvasObjects": true,
+        "selectedTextHighlight": true,
+        "finalCanvasColorRule": true
+      }
+    },
+    "translationRevision": "c92aafe9f317e514240bd9621e2945448d9741d2",
+    "independentStatus": "passed",
+    "localAndPublicHealth": "passed",
+    "backup": "backup-20260916T225505Z-pre-update",
+    "backupChecksums": "passed",
+    "recordings": {
+      "files": 11,
+      "bytes": 3883891,
+      "inventorySha256": "62f41a3849c68c1d80a38dbe2ba19ed4a5cfa8ca513c7323438e7349ca157b58"
+    },
+    "recordingInventoryMatchesBeforeUpdate": true,
+    "stagingFiles": 0,
+    "smtp": "Migration reported a transient DNS verification warning; a lookup inside the running app passed afterward. No email was sent."
   }
 }

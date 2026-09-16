@@ -35,7 +35,7 @@ Use **Not run / Pass / Fail / Blocked**, plus notes, for each case. Executed per
 | Android | [1.1.38-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.38-preview.1), code 41, `3228063` | Physical-phone automatic sync |
 | Public reader | heritage.faith, last verified `3228063` | Physical-device automatic-sync acceptance |
 | SyncShow | [Windows / Mac / Linux Preview 30 installers](desktop-preview.md), `9a9ebf7` | Real tablet, projector, mixer and volunteer |
-| WOTBC | Community `3228063`; translation `c92aafe` | Provider and live device acceptance |
+| WOTBC | Community `8eabb94`; translation `c92aafe` | Provider and live device acceptance |
 | Recording attachment | Unpublished local changes beyond the baseline | A3 blocked until delivered |
 
 Live status on September 16 passed app/database/processor health, public discovery, tunnel and backup checks. The latest backup was under 48 hours old, checksums passed and its private recording inventory matched. No paid calls were made to create this plan. At the dated budget checkpoint, $0.79 of $20 was conservatively accounted and nothing reserved; check the [current ledger](verification/api-test-budget.json) before paid work. The usage display is partial, not a hard spending cap or guarantee of free Economy use.

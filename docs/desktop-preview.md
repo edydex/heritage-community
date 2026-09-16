@@ -4,7 +4,7 @@ Version **1.4.0-preview.30** includes Community preparation, full-screen/lower-t
 
 ## Download and install
 
-Publication approval is pending. The seven packages and checksums are prepared and verified; the permanent links below become available when the release is published.
+Published September 16, 2026. All seven installers, provenance and checksums are attached; every published asset’s size and SHA-256 matches the verified local file.
 
 The [permanent private GitHub downloads](https://github.com/edydex/heritage-community/releases/tag/syncshow-v1.4.0-preview.30) add support for Community’s Other slides and text highlighting at `9a9ebf7`. Sign into GitHub with access to the Heritage Community repository. They remain available after the temporary CI artifacts expire.
 
