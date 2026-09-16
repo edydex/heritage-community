@@ -1,0 +1,161 @@
+{
+  "checkedAt": "2026-09-16T23:50:36.828617+00:00",
+  "heritageRevision": "8662221acc3277a0411b5956ebf19012d70c62a5",
+  "syncshowRevision": "9a9ebf7379797c68e99a2ea1f7a9dcefd1551458",
+  "syncshowRebuilt": false,
+  "local": {
+    "readerUnitPassed": 228,
+    "readerProtocolPassed": 124,
+    "focusedCommunityTestsPassed": 20,
+    "typecheck": "passed",
+    "communityProductionBuild": "passed",
+    "plannerBrowsers": [
+      {
+        "browser": "chromium",
+        "saveReopen": true,
+        "dragResizeRotation": true,
+        "highlight": true,
+        "image": true,
+        "russianStage": true,
+        "workspace": true,
+        "compactLayout": true,
+        "slideSettingsDialog": true,
+        "songHoverFocus": true,
+        "passageShortcut": true,
+        "ambiguousBooks": true,
+        "controlUndo": true,
+        "commandUndo": true,
+        "nativeTextUndoPreserved": true,
+        "errors": []
+      },
+      {
+        "browser": "firefox",
+        "saveReopen": true,
+        "dragResizeRotation": true,
+        "highlight": true,
+        "image": true,
+        "russianStage": true,
+        "workspace": true,
+        "compactLayout": true,
+        "slideSettingsDialog": true,
+        "songHoverFocus": true,
+        "passageShortcut": true,
+        "ambiguousBooks": true,
+        "controlUndo": true,
+        "commandUndo": true,
+        "nativeTextUndoPreserved": true,
+        "errors": []
+      }
+    ]
+  },
+  "liveReader": {
+    "checkedAt": "2026-09-16T23:40:09.611578+00:00",
+    "entry": "/assets/index-BDwZ6OPC.js",
+    "sha256": "240e96c33d11ff44fc9c3e7b1387fe96d176436305a90e23e64e1efff540fca7",
+    "exactSourceMatches": true,
+    "browserTestsPassed": 6,
+    "browsers": [
+      "chromium",
+      "firefox"
+    ]
+  },
+  "android": {
+    "checkedAt": "2026-09-16T23:44:18.885321+00:00",
+    "latest": "v1.1.39-preview.1",
+    "versionCode": 42,
+    "sourceRevision": "8662221acc3277a0411b5956ebf19012d70c62a5",
+    "allAssetDigestsMatch": true,
+    "webAssetsCompared": 539,
+    "apk": {
+      "name": "heritage-study-bible-1.1.39-preview.1-debug.apk",
+      "size": 54422534,
+      "sha256": "59db5f9de795dd9b3b840566cdcdd95937ffb394186fbd5bb9d0627db97a8d0f"
+    },
+    "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+    "signerExtractedFromDownloadedApk": false,
+    "nativeTests": [
+      "automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+      "encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+      "packagedCommunityScreensAndMemberLinkWorkOffline",
+      "secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+    ]
+  },
+  "updateChecker": [
+    {
+      "version": "1.1.32",
+      "status": "update-available",
+      "latest": "v1.1.39-preview.1"
+    },
+    {
+      "version": "1.1.36-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.39-preview.1"
+    },
+    {
+      "version": "1.1.38-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.39-preview.1"
+    },
+    {
+      "version": "1.1.39-preview.1",
+      "status": "up-to-date",
+      "latest": "v1.1.39-preview.1"
+    }
+  ],
+  "ci": {
+    "community": {
+      "run": 35163271136,
+      "conclusion": "success",
+      "jobs": 4
+    },
+    "android": {
+      "run": 35163197700,
+      "conclusion": "success"
+    },
+    "web": {
+      "run": 35163195955,
+      "conclusion": "success"
+    }
+  },
+  "wotbc": {
+    "status": "passed",
+    "independentHealthAndBackupChecks": "passed",
+    "source": {
+      "checkedAt": "2026-09-16T23:48:43.398477+00:00",
+      "revision": "8662221acc3277a0411b5956ebf19012d70c62a5",
+      "sourceFilesCompared": 30,
+      "allSourceFilesMatch": true,
+      "runningBundleMarkers": {
+        "heritage-canvas-inspector": true,
+        "heritage-song-preview": true,
+        "Passage shortcut": true,
+        "Control+Z Meta+Z": true
+      }
+    },
+    "recordings": {
+      "files": 11,
+      "bytes": 3883891,
+      "inventorySha256": "62f41a3849c68c1d80a38dbe2ba19ed4a5cfa8ca513c7323438e7349ca157b58"
+    },
+    "recordingsUnchanged": true,
+    "stagingFiles": 0,
+    "safetyBackup": "backup-20260916T234044Z-pre-update",
+    "smtpMigrationWarning": "EAI_AGAIN smtp.resend.com; read-only lookup in running app passed afterward; no email sent",
+    "publicSongbookBrowsers": [
+      {
+        "browser": "chromium",
+        "songCount": 2,
+        "hoverFocus": "passed",
+        "errors": []
+      },
+      {
+        "browser": "firefox",
+        "songCount": 2,
+        "hoverFocus": "passed",
+        "errors": []
+      }
+    ]
+  },
+  "paidCalls": 0,
+  "physicalDeviceAcceptance": "pending"
+}

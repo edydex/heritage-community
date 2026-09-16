@@ -6,7 +6,7 @@ Dated September 16, 2026. Open [the interactive walkthrough](deep-testing.html) 
 
 Do a short preparation pass, then freeze features and test. Do not start another broad implementation batch.
 
-1. Install the agreed builds: Android **1.1.38-preview.1**, versionCode 41, and the published **SyncShow Preview 30** installer for your computer. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it also contains Automatic Sync.
+1. Install the agreed builds: Android **1.1.39-preview.1**, versionCode 42, and the published **SyncShow Preview 30** installer for your computer. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it also contains Automatic Sync.
 2. Complete real WOTBC manager sign-in and approved provider configuration before translation tests. Personal sync, membership and manager access are separate. Healthy server status does not prove provider setup. The last configuration audit found providers unset; this plan does not transfer credentials.
 3. Keep direct recording-to-sermon attachment outside the first baseline. It is unpublished local work. Deliver it in a named build before A3, or mark A3 blocked and test everything else now.
 
@@ -32,10 +32,10 @@ Use **Not run / Pass / Fail / Blocked**, plus notes, for each case. Executed per
 
 | Part | Version / evidence | Remaining boundary |
 | --- | --- | --- |
-| Android | [1.1.38-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.38-preview.1), code 41, `3228063` | Physical-phone automatic sync |
-| Public reader | heritage.faith, last verified `3228063` | Physical-device automatic-sync acceptance |
+| Android | [1.1.39-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.39-preview.1), code 42, `8662221` | Physical-phone automatic sync |
+| Public reader | heritage.faith, last verified `8662221` | Physical-device automatic-sync acceptance |
 | SyncShow | [Windows / Mac / Linux Preview 30 installers](desktop-preview.md), `9a9ebf7` | Real tablet, projector, mixer and volunteer |
-| WOTBC | Community `8eabb94`; translation `c92aafe` | Provider and live device acceptance |
+| WOTBC | Community `8662221`; translation `c92aafe` | Provider and live device acceptance |
 | Recording attachment | Unpublished local changes beyond the baseline | A3 blocked until delivered |
 
 Live status on September 16 passed app/database/processor health, public discovery, tunnel and backup checks. The latest backup was under 48 hours old, checksums passed and its private recording inventory matched. No paid calls were made to create this plan. At the dated budget checkpoint, $0.79 of $20 was conservatively accounted and nothing reserved; check the [current ledger](verification/api-test-budget.json) before paid work. The usage display is partial, not a hard spending cap or guarantee of free Economy use.
@@ -51,7 +51,7 @@ Before either session. Clear these first. A blocked provider setup only blocks t
 ### P1 — Install the agreed builds without losing data
 
 1. Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.
-2. Use Settings → Advanced Settings to check for Android 1.1.38-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier builds through 1.1.37. Quit SyncShow and install the published Preview 30 package for your computer. Record the actual versions and devices above.
+2. Use Settings → Advanced Settings to check for Android 1.1.39-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier builds through 1.1.38. Quit SyncShow and install the published Preview 30 package for your computer. Record the actual versions and devices above.
 3. Open an existing Bible note and an existing service before creating rehearsal content.
 
 **Pass looks like:** Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.
@@ -122,7 +122,7 @@ Notes / evidence:
 
 ### S3 — Automatic Sync stays out of the way
 
-1. On Android 1.1.38-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.
+1. On Android 1.1.39-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.
 2. Open the Bible and navigate immediately. Leave it foregrounded and online with no text editor focused. After the initial delay (about 10 seconds, possibly longer while busy), check the last-sync status.
 3. Create a note, leave editing, and wait for the next cycle: about 3 minutes after the previous attempt completes. Sync the second device manually to confirm receipt; repeat with B making the change and A receiving automatically.
 
@@ -358,6 +358,12 @@ Notes / evidence:
 1. Open Prepare a sermon → New sermon. Give it a rehearsal title, speaker, date and language. Add a main point, exact Bible passage, image and short video. Enter/check English and Russian text, preview the stage screen, and save.
 2. Reopen the sermon and verify every slide. In Plan a service → Sermon, choose it from the newest-added-first dropdown and click Add whole sermon. Save and reopen the service.
 3. Compare the copied slides and media with the sermon, load the service in SyncShow, and check English/Russian/stage outputs. Disconnect only after loading and verify the media still play.
+4. Add an Other slide with text, an uploaded picture, a brace, an outline circle and a filled circle. Move, resize and rotate the objects; change their order. Select words and apply a highlight. Save and reopen the sermon.
+5. Check English, Russian and Stage-Facing Screen previews. Add the whole saved sermon to a service and open it in SyncShow Preview 30. Compare the objects and highlights, then disconnect after Load and advance through the slide offline.
+6. Check the sermon picker is above Status/Save in the left pane and object tools sit beside the slide. Right-click a slide and open Slide settings; edit its name, close, save and reopen.
+7. Add a passage using 1 chr 3 7-10. Try Ma 5 3-9 and choose Matthew; Malachi should explain its chapter limit. Confirm the inserted verses.
+8. Add an object and click outside text entry, then press Ctrl+Z (Windows/Linux) or Command+Z (Mac). The slide change should undo. Type inside text and use the same shortcut; it should undo typing instead.
+9. Hover over a song title in the song collection, public songbook and service song list; check its first section. Try keyboard focus and Escape too.
 
 **Pass looks like:** Sermon slides are reusable and saved independently. Adding the whole sermon copies its current saved slides, notes and media into the service. Later sermon edits do not silently alter the saved service.
 
@@ -370,11 +376,6 @@ Notes / evidence:
 ## T · Pastor teaching and any remote
 
 Church · 15–20 minutes. Use the actual tablet and projector. Stylus-only is optional and should stay off for ordinary finger testing.
-
-Additional checks in the September 16 update:
-
-- Add an Other slide with text, an uploaded picture, a brace, an outline circle and a filled circle. Move, resize and rotate the objects; change their order. Select words and apply a highlight. Save and reopen the sermon.
-- Check English, Russian and Stage-Facing Screen previews. Add the whole saved sermon to a service and open it in SyncShow Preview 30. Compare the objects and highlights, then disconnect after Load and advance through the slide offline.
 
 ### T1 — Persistent pen, highlight and the fading pointer
 
