@@ -1,0 +1,167 @@
+{
+  "sourceRevision": "e04cf19809e294b06032d24bef2f804a5dfd2cac",
+  "checkedAt": "2026-09-16T16:25:17.249Z",
+  "ci": {
+    "community": {
+      "url": "https://github.com/edydex/heritage_study_bible/actions/runs/35119912155",
+      "conclusion": "success",
+      "headSha": "e04cf19809e294b06032d24bef2f804a5dfd2cac",
+      "jobs": [
+        {
+          "name": "syncshow-payload-live",
+          "conclusion": "success"
+        },
+        {
+          "name": "syncshow-sermon-history-live",
+          "conclusion": "success"
+        },
+        {
+          "name": "production-stack",
+          "conclusion": "success"
+        },
+        {
+          "name": "songbook-publication",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "android": {
+      "url": "https://github.com/edydex/heritage_study_bible/actions/runs/35119915402",
+      "conclusion": "success",
+      "headSha": "e04cf19809e294b06032d24bef2f804a5dfd2cac",
+      "jobs": []
+    },
+    "webBuild": {
+      "url": "https://github.com/edydex/heritage_study_bible/actions/runs/35121544223",
+      "conclusion": "success",
+      "headSha": "e04cf19809e294b06032d24bef2f804a5dfd2cac",
+      "jobs": [
+        {
+          "name": "build-and-deploy",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "pagesDelivery": {
+      "url": "https://github.com/edydex/heritage_study_bible/actions/runs/35121603955",
+      "conclusion": "success",
+      "headSha": "3e3f7f4bfea8dbc41d398cb9ece45367049d6a99",
+      "jobs": [
+        {
+          "name": "build",
+          "conclusion": "success"
+        },
+        {
+          "name": "deploy",
+          "conclusion": "success"
+        },
+        {
+          "name": "report-build-status",
+          "conclusion": "success"
+        }
+      ]
+    }
+  },
+  "local": {
+    "readerTestsPassed": 225,
+    "protocolTestsPassed": 124,
+    "calendarTestsPassed": 5,
+    "browserTestsPassed": 32,
+    "browserEngines": [
+      "chromium",
+      "firefox"
+    ],
+    "communityTypecheck": "passed",
+    "readerBuild": "passed",
+    "communityProductionBuild": "passed",
+    "renderedQrDecoded": true,
+    "clipboardDenialFallbackVerified": true
+  },
+  "android": {
+    "sourceRevision": "e04cf19809e294b06032d24bef2f804a5dfd2cac",
+    "allChecksumsMatch": true,
+    "sameSigner": true,
+    "latest": "v1.1.37-preview.1",
+    "entry": "/assets/index-Ck6E9wKG.js",
+    "entryMatchesExactSourceBuild": true,
+    "apk": {
+      "name": "heritage-study-bible-1.1.37-preview.1-debug.apk",
+      "size": 54420226,
+      "sha256": "bd83cb59ff6a2cba298e5dc4ae8f5b8a500bb8bf9aac41f21be40bce30f07dcd"
+    },
+    "nativeTests": [
+      "automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+      "encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+      "packagedCommunityScreensAndMemberLinkWorkOffline",
+      "secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+    ]
+  },
+  "updateChecker": [
+    {
+      "version": "1.1.32",
+      "status": "update-available"
+    },
+    {
+      "version": "1.1.35-preview.1",
+      "status": "update-available"
+    },
+    {
+      "version": "1.1.36-preview.1",
+      "status": "update-available"
+    },
+    {
+      "version": "1.1.37-preview.1",
+      "status": "up-to-date"
+    }
+  ],
+  "live": {
+    "checkedAt": "2026-09-16T16:25:17.249Z",
+    "sourceRevision": "e04cf19809e294b06032d24bef2f804a5dfd2cac",
+    "entry": "/assets/index-Ck6E9wKG.js",
+    "bundleSha256": "e9589e2f78ece09ae17ea210d8db7169e08c9b0def3f49a5434663f0c44840c6",
+    "liveBundleMatches": true,
+    "churchLyricsUnchanged": true,
+    "publicEventPrivacyVerified": true,
+    "browsers": [
+      {
+        "name": "chromium",
+        "privateEventHidden": true,
+        "legacyEventFixtureOpensAndReloads": true,
+        "realSongQrDecoded": "https://wotbc.heritage.faith/songs/o-lord-my-rock-and-my-redeemer",
+        "actualClipboardVerified": true,
+        "pageErrors": []
+      },
+      {
+        "name": "firefox",
+        "privateEventHidden": true,
+        "legacyEventFixtureOpensAndReloads": true,
+        "realSongQrDecoded": "https://wotbc.heritage.faith/songs/o-lord-my-rock-and-my-redeemer",
+        "actualClipboardVerified": false,
+        "pageErrors": []
+      }
+    ]
+  },
+  "wotbc": {
+    "communityRevision": "e04cf19809e294b06032d24bef2f804a5dfd2cac",
+    "translationRevision": "c92aafe9f317e514240bd9621e2945448d9741d2",
+    "allServicesHealthy": true,
+    "localAndPublicChecksPassed": true,
+    "safetyBackup": "/opt/heritage-community/backups/backup-20260916T161538Z-pre-update",
+    "backupChecksumsValid": true,
+    "privateRecordingInventoryMatches": true,
+    "finalizedRecordings": 11,
+    "finalizedRecordingBytes": 3883891,
+    "stagingFiles": 0,
+    "originalEventRecordUnchanged": true,
+    "legacyTimeZone": "PST",
+    "publicEventPrivacyVerified": true,
+    "legacyTimeZoneHandledInDeployedFixture": true
+  },
+  "limitations": [
+    "Event rendering on the deployed public site used a labelled legacy-PST fixture; actual church events and their visibility were not edited.",
+    "Public/private occurrence access, URL field validation and save-time Pacific canonicalization also passed production-container HTTP acceptance in CI.",
+    "Physical phone update, scanning with a second device and the user's signed-in Firefox session remain user acceptance checks.",
+    "The migration process logged the existing temporary SMTP DNS verification warning; migrations and service health passed. Email delivery was not re-tested in this change.",
+    "No paid provider calls were made."
+  ]
+}
