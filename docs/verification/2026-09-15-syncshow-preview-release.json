@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "applicationVersion": "1.4.0-preview.29",
+  "nativeBuildVersion": "140028",
+  "sourceRepository": "edydex/SyncShow",
+  "sourceRevision": "15fe0d784f13f8598b565002123dc062f9a696b3",
+  "ciCheckoutRevision": "4ffc24108eeb70d49468e074f1b44d40c1b98471",
+  "sourceTree": "c94e471c7e7f2853a5d9bc945b36b72c9f57dd6a",
+  "sourceAndCITreesIdentical": true,
+  "ciURL": "https://github.com/edydex/SyncShow/actions/runs/34872066538",
+  "packageURL": "https://github.com/edydex/SyncShow/actions/runs/34872066617",
+  "distribution": "private-maintainer-testing",
+  "publicReleaseLegalStatus": "blocked",
+  "installerWizardOnUserWindowsMachine": "pending",
+  "assets": [
+    {
+      "name": "sync-show_1.4.0-preview.29_amd64.deb",
+      "platform": "linux-x64",
+      "size": 129709952,
+      "sha256": "3b8845903daeb6d7598b13dd133598108bdabe312c328c8190fd363d7fb28ea5"
+    },
+    {
+      "name": "SyncShow-1.4.0-preview.29.AppImage",
+      "platform": "linux-x64",
+      "size": 166440479,
+      "sha256": "08efa8cd5892c7ed804b1899de3fb10b631fc23a63add6542469b83d14aa1901"
+    },
+    {
+      "name": "SyncShow-1.4.0-preview.29-arm64.dmg",
+      "platform": "darwin-arm64",
+      "size": 158887128,
+      "sha256": "0881d5ffe4e2cbd18fad903fe6f894afb9c9448771a25d971522864019a9d8bc"
+    },
+    {
+      "name": "SyncShow-1.4.0-preview.29-arm64.zip",
+      "platform": "darwin-arm64",
+      "size": 159177111,
+      "sha256": "9b7b103a33b24ed74a07fe057bc50dd80fff3b1488d5abd7c709bd1cc82476b4"
+    },
+    {
+      "name": "SyncShow-1.4.0-preview.29-x64.dmg",
+      "platform": "darwin-x64",
+      "size": 164698662,
+      "sha256": "5143ed33dfdb4b76dc65e3cbd237f557672cbbcdc4097c80c62e21e8c89b5f0b"
+    },
+    {
+      "name": "SyncShow-1.4.0-preview.29-x64.zip",
+      "platform": "darwin-x64",
+      "size": 165022167,
+      "sha256": "278386bc380c990e9ddcedcd1dd782580f25d80f54709ce8e6c4daf0aae173f3"
+    },
+    {
+      "name": "SyncShow-Setup-1.4.0-preview.29-x64.exe",
+      "platform": "win32-x64",
+      "size": 129307663,
+      "sha256": "65c4f4624c3fdc8fb2c9cc03bb636c5d1ae92454f807df2f98efe0865aaf1029",
+      "ciArtifactName": "SyncShow Setup 1.4.0-preview.29.exe"
+    }
+  ],
+  "checks": [
+    {
+      "checks": [],
+      "conclusion": "success",
+      "name": "Shared broad gate"
+    },
+    {
+      "checks": [
+        {
+          "conclusion": "success",
+          "name": "Verify packaged PDF engine"
+        },
+        {
+          "conclusion": "success",
+          "name": "Verify packaged Sharp runtime"
+        },
+        {
+          "conclusion": "success",
+          "name": "Run the packaged shared service workflow"
+        },
+        {
+          "conclusion": "success",
+          "name": "Launch the packaged application"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Launch the packaged application under Xvfb"
+        },
+        {
+          "conclusion": "success",
+          "name": "Verify blocked legal evidence without publishing"
+        },
+        {
+          "conclusion": "success",
+          "name": "Write exact QA artifact evidence"
+        }
+      ],
+      "conclusion": "success",
+      "name": "QA package (windows-x64)"
+    },
+    {
+      "checks": [
+        {
+          "conclusion": "success",
+          "name": "Verify packaged PDF engine"
+        },
+        {
+          "conclusion": "success",
+          "name": "Verify packaged Sharp runtime"
+        },
+        {
+          "conclusion": "success",
+          "name": "Run the packaged shared service workflow"
+        },
+        {
+          "conclusion": "success",
+          "name": "Launch the packaged application"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Launch the packaged application under Xvfb"
+        },
+        {
+          "conclusion": "success",
+          "name": "Verify blocked legal evidence without publishing"
+        },
+        {
+          "conclusion": "success",
+          "name": "Write exact QA artifact evidence"
+        }
+      ],
+      "conclusion": "success",
+      "name": "QA package (macos-arm64)"
+    },
+    {
+      "checks": [
+        {
+          "conclusion": "success",
+          "name": "Verify packaged PDF engine"
+        },
+        {
+          "conclusion": "success",
+          "name": "Verify packaged Sharp runtime"
+        },
+        {
+          "conclusion": "success",
+          "name": "Run the packaged shared service workflow"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Launch the packaged application"
+        },
+        {
+          "conclusion": "success",
+          "name": "Launch the packaged application under Xvfb"
+        },
+        {
+          "conclusion": "success",
+          "name": "Verify blocked legal evidence without publishing"
+        },
+        {
+          "conclusion": "success",
+          "name": "Write exact QA artifact evidence"
+        }
+      ],
+      "conclusion": "success",
+      "name": "QA package (linux-x64)"
+    },
+    {
+      "checks": [
+        {
+          "conclusion": "success",
+          "name": "Verify packaged PDF engine"
+        },
+        {
+          "conclusion": "success",
+          "name": "Verify packaged Sharp runtime"
+        },
+        {
+          "conclusion": "success",
+          "name": "Run the packaged shared service workflow"
+        },
+        {
+          "conclusion": "success",
+          "name": "Launch the packaged application"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Launch the packaged application under Xvfb"
+        },
+        {
+          "conclusion": "success",
+          "name": "Verify blocked legal evidence without publishing"
+        },
+        {
+          "conclusion": "success",
+          "name": "Write exact QA artifact evidence"
+        }
+      ],
+      "conclusion": "success",
+      "name": "QA package (macos-x64)"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ Dated September 15, 2026. Open [the interactive walkthrough](deep-testing.html) 
 
 Do a short preparation pass, then freeze features and test. Do not start another broad implementation batch.
 
-1. Install the agreed builds: Android **1.1.34-preview.1**, versionCode 37, and the retained Mac **SyncShow Preview 29**. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it also contains Automatic Sync.
+1. Install the agreed builds: Android **1.1.34-preview.1**, versionCode 37, and the published **SyncShow Preview 29** installer for your computer. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it also contains Automatic Sync.
 2. Complete real WOTBC manager sign-in and approved provider configuration before translation tests. Personal sync, membership and manager access are separate. Healthy server status does not prove provider setup. The last configuration audit found providers unset; this plan does not transfer credentials.
 3. Keep direct recording-to-sermon attachment outside the first baseline. It is unpublished local work. Deliver it in a named build before A3, or mark A3 blocked and test everything else now.
 
@@ -34,7 +34,7 @@ Use **Not run / Pass / Fail / Blocked**, plus notes, for each case. Executed per
 | --- | --- | --- |
 | Android | [1.1.34-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1), code 37, `9cd8e88` | Physical-phone automatic sync |
 | Public reader | heritage.faith, last verified `9cd8e88` | Physical-device automatic-sync acceptance |
-| SyncShow | [Retained Preview 29 Mac installer](desktop-preview.md), `3ae4f2b` | Real tablet, projector, mixer and volunteer |
+| SyncShow | [Windows / Mac / Linux Preview 29 installers](desktop-preview.md), `15fe0d7` | Real tablet, projector, mixer and volunteer |
 | WOTBC | Community `9cd8e88`; translation `c92aafe` | Provider and live device acceptance |
 | Recording attachment | Unpublished local changes beyond the baseline | A3 blocked until delivered |
 
@@ -51,7 +51,7 @@ Before either session. Clear these first. A blocked provider setup only blocks t
 ### P1 — Install the agreed builds without losing data
 
 1. Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.
-2. Use Settings → Advanced Settings to check for Android 1.1.34-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from both 1.1.32 and 1.1.33 previews. Quit SyncShow and install the retained Preview 29 Mac package. Record the actual versions and devices above.
+2. Use Settings → Advanced Settings to check for Android 1.1.34-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from both 1.1.32 and 1.1.33 previews. Quit SyncShow and install the published Preview 29 package for your computer. Record the actual versions and devices above.
 3. Open an existing Bible note and an existing service before creating rehearsal content.
 
 **Pass looks like:** Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.

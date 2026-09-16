@@ -17,7 +17,7 @@
 <div class="prep"><p><strong>September 15 update:</strong> run R6–R7, E1–E2 and H5 for song refresh, tags, the calendar and reusable sermon slides. Earlier saved results are retained; rerun affected cases on the new build.</p>
 <h2>Before the round: three concrete jobs</h2>
 <ol>
-<li><strong>Choose and install the test versions.</strong> Use the installed Android update checker to get <strong>1.1.34-preview.1</strong> from v1.1.32 (or use the direct APK), and the retained Mac <strong>SyncShow Preview 29</strong>. Record each device below. The updated public web reader also has Automatic Sync; use manual Sync now initially to isolate account issues. Install updates over the existing app so we actually test preservation of notes.</li>
+<li><strong>Choose and install the test versions.</strong> Use the installed Android update checker to get <strong>1.1.34-preview.1</strong> from v1.1.32 (or use the direct APK), and the published <strong>SyncShow Preview 29</strong> installer for your computer. Record each device below. The updated public web reader also has Automatic Sync; use manual Sync now initially to isolate account issues. Install updates over the existing app so we actually test preservation of notes.</li>
 <li><strong>Complete WOTBC manager and provider setup for the translation tests.</strong> A successful personal-sync login does not grant church-manager access. WOTBC is healthy, but the last configuration audit found its providers unset. Current health checks do not establish working translation. Use an approved WOTBC provider configuration; no credential copying is part of this walkthrough.</li>
 <li><strong>Keep recording attachment outside this first baseline.</strong> Browsing completed recordings is included. Directly attaching a recording to a sermon is still unpublished local work. Finish and deliver that workflow before case A3, or leave A3 blocked and test the rest now.</li>
 </ol>
@@ -68,7 +68,7 @@
 <div class="table-wrap"><table><thead><tr><th>Part</th><th>Use for this round</th><th>Boundary</th></tr></thead><tbody>
 <tr><td>Android</td><td><a href="https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.34-preview.1">1.1.34-preview.1</a>, code 37; <code>9cd8e88</code></td><td>Published download/native checks passed; physical phone automatic sync remains to be accepted.</td></tr>
 <tr><td>Web reader</td><td><a href="https://heritage.faith/#/settings/sync">heritage.faith</a>; last verified <code>9cd8e88</code></td><td>Real two-browser manual sync passed previously. Automatic Sync is included; physical-device acceptance remains.</td></tr>
-<tr><td>SyncShow</td><td><a href="desktop-preview.md">Retained Mac Preview 29 installer</a>; <code>3ae4f2b</code></td><td>Downloaded package/launch checked. Do not substitute a newer source checkout or an older installed app without recording it.</td></tr>
+<tr><td>SyncShow</td><td><a href="https://github.com/edydex/heritage-community/releases/tag/syncshow-v1.4.0-preview.29">Windows / Mac / Linux Preview 29 installers</a>; <code>15fe0d7</code></td><td>Downloaded package/launch checked. Do not substitute a newer source checkout or an older installed app without recording it.</td></tr>
 <tr><td>Community / translation</td><td><code>9cd8e88</code> / <code>c92aafe</code></td><td>Manager sign-in verified; provider and live device acceptance remain open.</td></tr>
 <tr><td>Recording → sermon</td><td>Unpublished local work beyond this set</td><td>A3 stays blocked until a tested workflow is delivered. A1/A2 still apply to existing archive review.</td></tr>
 </tbody></table></div>
@@ -90,7 +90,7 @@
         "title": "Install the agreed builds without losing data",
         "steps": [
           "Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.",
-          "Use Settings → Advanced Settings to check for Android 1.1.34-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from both 1.1.32 and 1.1.33 previews. Quit SyncShow and install the retained Preview 29 Mac package. Record the actual versions and devices above.",
+          "Use Settings → Advanced Settings to check for Android 1.1.34-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from both 1.1.32 and 1.1.33 previews. Quit SyncShow and install the published Preview 29 package for your computer. Record the actual versions and devices above.",
           "Open an existing Bible note and an existing service before creating rehearsal content."
         ],
         "expect": "Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.",
