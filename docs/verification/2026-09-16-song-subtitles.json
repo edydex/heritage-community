@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "271e923c7b8e404c365bd94057da3d5c815225d2",
+  "localChecks": {
+    "focusedTests": 11,
+    "browserScenarios": 10,
+    "legacyFixturesCorrectedAfterBaselineFailure": true
+  },
+  "web": {
+    "checkedAt": "2026-09-16T15:26:35.948Z",
+    "sourceRevision": "271e923c7b8e404c365bd94057da3d5c815225d2",
+    "url": "https://heritage.faith/",
+    "entry": "/assets/index-CJ_qhROS.js",
+    "bundleSha256": "05332ae66ee2636158326eb68a75efa4a4ccd12a5564aa421d66b5fb60055497",
+    "downloadMatched": true,
+    "builtInCardsChecked": 19,
+    "russianSubtitles": [
+      {
+        "song": "Amazing Grace",
+        "subtitle": "О, благодать"
+      },
+      {
+        "song": "Rock of Ages",
+        "subtitle": "Благодатная скала"
+      }
+    ],
+    "englishOnlyRussianSelectorDisabled": true,
+    "sourcedRussianVersionOpens": true,
+    "phoneWidth": 390
+  },
+  "androidBuild": {
+    "schemaVersion": 1,
+    "sourceRevision": "271e923c7b8e404c365bd94057da3d5c815225d2",
+    "applicationId": "faith.heritage.app",
+    "versionCode": 39,
+    "versionName": "1.1.36-preview.1",
+    "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+    "apk": {
+      "name": "heritage-study-bible-1.1.36-preview.1-debug.apk",
+      "size": 54406588,
+      "sha256": "90408836b96bb5f8751054f74c4278be9256c1c0f463384d793d26a6e0d83f8f"
+    },
+    "previousRelease": {
+      "versionName": "1.1.32",
+      "versionCode": 34,
+      "sha256": "9107e7e64a35a5a0495caec08fa7bda1261679bfd9fbc7ab91145a02a4ba88cf"
+    },
+    "webAssets": {
+      "count": 537,
+      "manifestSha256": "8d1371ab877abff719c0f36ea0ed2a960e19b83412ebf8ce69d3d5b301cbfcdb"
+    },
+    "websiteOnlyMetadata": {
+      ".well-known/assetlinks.json": "4394fc5dee8e1e71c0e678ab5272f92b7f6ee4236300ac9113c0678bf242c7f9"
+    },
+    "nativeTests": [
+      "automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+      "encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+      "packagedCommunityScreensAndMemberLinkWorkOffline",
+      "secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+    ]
+  },
+  "androidCI": {
+    "conclusion": "success",
+    "headSha": "271e923c7b8e404c365bd94057da3d5c815225d2",
+    "status": "completed",
+    "url": "https://github.com/edydex/heritage_study_bible/actions/runs/35115140596"
+  },
+  "androidDownload": {
+    "apk": {
+      "name": "heritage-study-bible-1.1.36-preview.1-debug.apk",
+      "size": 54406588,
+      "sha256": "90408836b96bb5f8751054f74c4278be9256c1c0f463384d793d26a6e0d83f8f"
+    },
+    "sourceRevision": "271e923c7b8e404c365bd94057da3d5c815225d2",
+    "latest": "v1.1.36-preview.1",
+    "assetDigestsMatch": true,
+    "webBundleMatches": true,
+    "signerMatches": true
+  },
+  "updateChecker": [
+    {
+      "version": "1.1.32",
+      "status": "update-available"
+    },
+    {
+      "version": "1.1.34-preview.1",
+      "status": "update-available"
+    },
+    {
+      "version": "1.1.35-preview.1",
+      "status": "update-available"
+    },
+    {
+      "version": "1.1.36-preview.1",
+      "status": "up-to-date"
+    }
+  ],
+  "server": {
+    "revision": "b12cef6706d20f6dbf6b2af0452c991062bceb6b",
+    "redeployed": false,
+    "communityServerTreeUnchanged": true
+  },
+  "physicalPhoneTested": false,
+  "paidProviderCalls": 0
+}

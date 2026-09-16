@@ -6,7 +6,7 @@ Dated September 16, 2026. Open [the interactive walkthrough](deep-testing.html) 
 
 Do a short preparation pass, then freeze features and test. Do not start another broad implementation batch.
 
-1. Install the agreed builds: Android **1.1.35-preview.1**, versionCode 38, and the published **SyncShow Preview 29** installer for your computer. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it also contains Automatic Sync.
+1. Install the agreed builds: Android **1.1.36-preview.1**, versionCode 39, and the published **SyncShow Preview 29** installer for your computer. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it also contains Automatic Sync.
 2. Complete real WOTBC manager sign-in and approved provider configuration before translation tests. Personal sync, membership and manager access are separate. Healthy server status does not prove provider setup. The last configuration audit found providers unset; this plan does not transfer credentials.
 3. Keep direct recording-to-sermon attachment outside the first baseline. It is unpublished local work. Deliver it in a named build before A3, or mark A3 blocked and test everything else now.
 
@@ -32,8 +32,8 @@ Use **Not run / Pass / Fail / Blocked**, plus notes, for each case. Executed per
 
 | Part | Version / evidence | Remaining boundary |
 | --- | --- | --- |
-| Android | [1.1.35-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.35-preview.1), code 38, `b12cef6` | Physical-phone automatic sync |
-| Public reader | heritage.faith, last verified `b12cef6` | Physical-device automatic-sync acceptance |
+| Android | [1.1.36-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.36-preview.1), code 39, `271e923` | Physical-phone automatic sync |
+| Public reader | heritage.faith, last verified `271e923` | Physical-device automatic-sync acceptance |
 | SyncShow | [Windows / Mac / Linux Preview 29 installers](desktop-preview.md), `15fe0d7` | Real tablet, projector, mixer and volunteer |
 | WOTBC | Community `b12cef6`; translation `c92aafe` | Provider and live device acceptance |
 | Recording attachment | Unpublished local changes beyond the baseline | A3 blocked until delivered |
@@ -51,7 +51,7 @@ Before either session. Clear these first. A blocked provider setup only blocks t
 ### P1 — Install the agreed builds without losing data
 
 1. Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.
-2. Use Settings → Advanced Settings to check for Android 1.1.35-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier 1.1.32, 1.1.33 and 1.1.34 builds. Quit SyncShow and install the published Preview 29 package for your computer. Record the actual versions and devices above.
+2. Use Settings → Advanced Settings to check for Android 1.1.36-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier builds through 1.1.35. Quit SyncShow and install the published Preview 29 package for your computer. Record the actual versions and devices above.
 3. Open an existing Bible note and an existing service before creating rehearsal content.
 
 **Pass looks like:** Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.
@@ -122,7 +122,7 @@ Notes / evidence:
 
 ### S3 — Automatic Sync stays out of the way
 
-1. On Android 1.1.35-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.
+1. On Android 1.1.36-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.
 2. Open the Bible and navigate immediately. Leave it foregrounded and online with no text editor focused. After the initial delay (about 10 seconds, possibly longer while busy), check the last-sync status.
 3. Create a note, leave editing, and wait for the next cycle: about 3 minutes after the previous attempt completes. Sync the second device manually to confirm receipt; repeat with B making the change and A receiving automatically.
 
