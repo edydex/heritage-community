@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-09-21T16:12:50.239481+00:00",
+  "repo": "edydex/heritage-preview-builds",
+  "tag": "multilinguum-v0.1.1-preview.1",
+  "repositoryPrivate": true,
+  "files": [
+    {
+      "name": "Multilinguum_0.1.1_aarch64.dmg",
+      "bytes": 3189581,
+      "sha256": "e14fa6d5ba81e98303c56d14c5e213fa1f9baa10cb0fefa697860b8b60120a1d"
+    },
+    {
+      "name": "Multilinguum_0.1.1_x64.dmg",
+      "bytes": 3321802,
+      "sha256": "d27ff715a75f59ae0c20ef93ceeb0c1c16594f866f38bc8b2f85e065f710a5e2"
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 724,
+      "sha256": "93ae4cb56f3646cfcf518201df9582544c15c3657155bb37594a568949295b3a"
+    },
+    {
+      "name": "SHA256SUMS-arm64",
+      "bytes": 188,
+      "sha256": "5e0822c3a5f262e5e1d9dfe5e62e81d31d7470c61f22a367b63c0782a754aac2"
+    },
+    {
+      "name": "SHA256SUMS-x86_64",
+      "bytes": 185,
+      "sha256": "39ff4faa7fe629c231121f4c8a2b97144f6c421db398c579cc916640afce9346"
+    },
+    {
+      "name": "download-verification.json",
+      "bytes": 887,
+      "sha256": "8ae4ae40d12240cd5ad3eef5fb05d5cc67e851af22dfff61161b8c89cccb0279"
+    },
+    {
+      "name": "macos-arm64-receipt.json",
+      "bytes": 1350,
+      "sha256": "1794ed2d1e5b77b22313676dc7ae503bc38272eee62e977afb428437fa064ce2"
+    },
+    {
+      "name": "macos-x86_64-receipt.json",
+      "bytes": 1347,
+      "sha256": "5da907b29884b7b670301954ef2d027cf05294de04d933449ab57ccb2bcc2d59"
+    },
+    {
+      "name": "verified-provenance.json",
+      "bytes": 866,
+      "sha256": "8014f0575a7448fb9c342a193195523810a3dbbdae81c5b2cc49b34d6241d139"
+    }
+  ],
+  "allByteIdentical": true,
+  "publishedAt": "2026-09-21T16:12:51Z",
+  "releaseUrl": "https://github.com/edydex/heritage-preview-builds/releases/tag/multilinguum-v0.1.1-preview.1",
+  "isDraft": false,
+  "isPrerelease": true,
+  "packageSourceRevision": "90f91308eaa46e6ed2e4b738e287f5f6bcd46257",
+  "operatorAndProtocolUnchangedAt": "c86c384e3fe7e793e6e583d24bc559c85ba01a95",
+  "limitations": [
+    "Ad-hoc signed; not Developer ID signed or notarized.",
+    "Apple-silicon downloaded app launch/version checked; Intel hardware and real capture untested.",
+    "Connects to a configured processor; no bundled translation server or credentials."
+  ]
+}

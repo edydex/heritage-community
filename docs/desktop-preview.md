@@ -23,6 +23,20 @@ The preview uses the normal SyncShow settings and service library. Automated pac
 
 These installers are retained for owner testing in the private preview-builds repository. SyncShow's public release checks still require dependency source/relinking materials and official Drive configuration. The ordinary QA packages omit maintainer Drive credentials; Community and local presentations do not need those credentials.
 
+## Standalone Multilinguum Mac console
+
+[Multilinguum 0.1.1 private downloads](https://github.com/edydex/heritage-preview-builds/releases/tag/multilinguum-v0.1.1-preview.1)
+are available for Apple silicon (`aarch64`) and Intel (`x64`), on macOS 13 or
+newer. Both installers and all seven checksum/verification files were downloaded
+back from GitHub and matched byte-for-byte. The Apple-silicon app was launched
+and its version checked; Intel hardware and actual mixer capture remain to be
+tested. These are ad-hoc-signed previews, without Developer ID signing or
+notarization.
+
+This is an optional standalone console. It connects to an existing configured
+processor and contains no provider credentials or bundled translation server.
+The integrated controls remain available directly in Community and SyncShow.
+
 ## Connect the church
 
 Connect **Heritage Community** to `https://wotbc.heritage.faith` and approve its presentation/translation capabilities. Your usual Prepare → Load → Show workflow remains available offline after the service package is loaded.
