@@ -31,6 +31,10 @@ node bin/heritage.mjs server status --host wotbc-community
 
 The version set may be newer than the live receipt. Use the supported `server update` command deliberately; it takes backups, refuses a prepared/live service, preserves private provider settings, checks health, and records the applied source set after success. Provider credentials belong in the server’s private settings, not the development checkout. Ordinary cloud translation does not depend on the old GPU server; cloned-voice workloads are separate.
 
+## Latest reader correction
+
+Heritage source `c70e88ed35ee248d1ba43e150a751fce9ea41ec5` adds BSB wording and checked phrase highlights to original-language occurrence results. Greek/BSB mappings now cover matching verses in all 27 NT books, loaded by book; Hebrew/Aramaic results show verse context without claimed word alignment. See Heritage `docs/ORIGINAL-LANGUAGES.md` for source hashes and regeneration. The public reader is updated; this source change does not alter Community server runtime code or require restarting a service. Android 1.1.44-preview.1 (code 47) is published in the normal Latest feed; its [independent receipt](verification/2026-09-21-android-1.1.44.json) verifies all three assets, signer, 694 web files and eleven native tests. The actual checker detects it from earlier versions.
+
 ## Work still requiring acceptance or external input
 
 1. Install the current Android and SyncShow previews on the actual phone, Windows presentation computer and e-ink tablet. Test background audio, offline downloads, Android Auto, patterns, pen input, all three presentation outputs and service continuation after network loss.

@@ -1,13 +1,13 @@
 # September expansion: hands-on checks
 
-Use Android **1.1.43-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
+Use Android **1.1.44-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
 
 1. **Resume listening.** Open Audio, choose an audiobook, seek a few minutes in and change playback speed. Navigate back to the Bible, lock the phone, then return. Pause, close and reopen the app. Expected: the saved recording/position remains; reopening does not start audio unexpectedly. Test headset pause/play and the notification controls too.
 2. **Offline files and storage.** Download one short recording, switch the phone offline and play/seek it. Open Internal Storage and remove that recording. Expected: the local file disappears, listening position and reading notes remain, and online streaming works again after reconnecting. Interrupt a second download and verify it is removable/retryable without a corrupt item showing as downloaded. Keep the app open for large downloads.
 3. **Nearby audiobook text.** In Confessions or Enchiridion, play a passage and use Go to nearby text. Expected: the matching paragraph is temporarily indicated and audio continues at the same position. Return to the player, seek to a different passage and repeat. There must be no saved note/highlight added. Some recordings use a different translation; an unavailable match should open the book normally instead of guessing.
 4. **BSB following.** Open Romans 1 audio and its BSB text. Following starts on by default; listen across a verse boundary and tap a timed verse to seek. Disable it in Audio Settings and scroll manually. Expected: gray audio markers remain distinct from personal annotations. Missing timing data must not interrupt sound or select a guessed verse. Following advances the currently open Bible chapter when the queue advances. Browsing elsewhere should not pull you back.
 5. **Android Auto.** Park safely before testing. Connect the actual phone to the head unit, open Heritage in its audio apps, browse the audiobook and Bible roots and play a short recording. Test resume, next/previous and disconnect/reconnect. Expected: the library works without opening the reader first, and phone/car state agrees. If Heritage is absent, record the phone/Auto/head-unit versions and installation method; emulator success does not establish head-unit compatibility.
-6. **Original languages.** Enable the named original-language parallel source in an OT passage, an Aramaic portion of Daniel, and Romans. Check right-to-left pointing, narrow-screen readability and source labels. In matching Romans verses, tap/focus patterned word links. Expected: only attested matching groups are connected; variants or unverified verse numbering remain unlinked. The Septuagint is not being substituted for Hebrew/Aramaic.
+6. **Original languages.** Enable the named original-language parallel source in an OT passage, an Aramaic portion of Daniel, and Romans. Check right-to-left pointing, narrow-screen readability and source labels. In matching New Testament verses, tap for occurrences and hold for checked word counterparts. Expected: only attested matching groups are connected; variants or unverified verse numbering remain unlinked. The Septuagint is not being substituted for Hebrew/Aramaic.
 7. **Monochrome teaching.** Pair the real tablet with SyncShow, select Teach and enable Monochrome. Draw with several named colors; compare palette patterns and the used-color legend. Try pen, highlighter, temporary pointer, Undo, gallery navigation and reconnection. Expected: the tablet remains usable in grayscale and congregation output retains the selected colors. Also create colored text/shapes/highlights in Community's monochrome authoring mode. Check thin marks on the actual e-ink screen; browser emulation is insufficient.
 8. **Private Bible import.** Use the included openly licensed sample through Community's Bible translations library or SyncShow Prepare → This computer → Scripture → Bible translations. Review the preview and permission/source information, install, select it for the intended outputs, and add the sample passage. Save and reopen the service; prepare an offline package and disconnect. Expected: the exact words and attribution remain in English, Russian and stage-facing outputs as configured. Missing verses must fail clearly. Obtain publisher-authorized source before trying LSB; do not upload a proprietary file from another application as a substitute.
 9. **Muse and speech choices.** Start with a short English passage through the real mixer, Automatic recognition, Quality and speech off. Expected: Muse source recognition, translated captions and no generated speech. Stop completely, then test Russian → English and verify the explicit OpenAI recognition choice. Repeat with reviewed notes, and finally with optional speech. Have a bilingual person review terms and meaning; provider success is not a quality score. Test stopping and network reconnect before a longer service. Keep paid testing within the owner's remaining budget.
@@ -63,3 +63,25 @@ it over the existing app before testing these edition and navigation changes.
   click opens that verse. Toggle Settings → B&W word links, verify diagonal
   strokes differ from dots, then turn it off for color tints. Word actions must
   not open the verse-note editor.
+
+## Translated word occurrences (Android 1.1.44 and web)
+
+- Open **BSB + Original**, Romans 1, and tap **servant**. Each occurrence should
+  show the actual BSB verse and the highlighted English wording, with its Greek
+  source underneath. Matthew 8:9 shows **servant**; Matthew 20:27 shows **slave**.
+- Use **Show more** to reach Romans 6:19. Both appearances of **in slavery**
+  should be highlighted. These are contextual translations of the same source
+  lemma, not a single dictionary gloss copied into every verse.
+- Matthew 18:27 should show the full BSB verse and **Exact word mapping
+  unavailable**, without a guessed highlight. Other source-edition differences
+  can also remain unlinked. Hebrew/Aramaic lookups currently provide BSB context,
+  not exact translated-word highlights.
+- Tap an occurrence: the first tap should open its verse. In Acts 13:9, tap
+  **Paul** with word-link colors disabled; source-lemma lookup should still work.
+- On the updated Android app, repeat offline. Its installed maps are bundled.
+  A web browser can reuse already loaded maps, but a new book may require a
+  connection. A failed request must preserve source verses and offer retry.
+
+These checks verify behavior. A reader should still spot-check source senses
+and contextual translations; structural correspondence checks do not constitute
+a complete scholarly review.
