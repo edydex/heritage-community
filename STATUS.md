@@ -29,6 +29,8 @@ The integration/source repositories are **public**. Owner preview installers and
 - **Muse:** English preference, explicit Russian OpenAI fallback, locally extracted sermon vocabulary and encrypted server token storage. Vocabulary extraction filters common Russian and English connecting words before ranking names and terms, preserving the bounded hint budget for bilingual notes. A bounded English recognition and Quality EN→RU translation check used public-domain human narration. It did not open a microphone, generate speech or start a public service. The hint-filter regression does not establish provider recognition accuracy. Operational receipts remain private.
 - **Later research:** proposed prophecy-fulfillment tables have a source/uncertainty roadmap; the musician screen remains documented future work. Neither is presented as implemented history or generated musical arrangements.
 
+The bilingual vocabulary correction passed deployed context-store checks using generated notes; see [the bounded verification record](docs/verification/2026-09-21-bilingual-hints.json). This establishes the corrected hint behavior, not measured recognition quality.
+
 Earlier delivered calendar, song sharing/publication, search shortcuts, first-click verse navigation, slide objects/highlighting, compact editor, Undo, pointer/gallery and notes/progress sync remain available. Evidence is retained in [the dated verification records](docs/verification/), [the expansion chronology](docs/EXPANSION-2026-09-20.md), and the current [requirement audit](docs/EXPANSION-AUDIT-2026-09-21.md).
 
 ## Desired pins versus installed source

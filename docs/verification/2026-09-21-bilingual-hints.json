@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-21",
+  "component": "multilinguum",
+  "sourceRevision": "c86c384e3fe7e793e6e583d24bc559c85ba01a95",
+  "sourcePullRequest": "https://github.com/edydex/multilinguum/pull/4",
+  "sourceWorkflow": "https://github.com/edydex/multilinguum/actions/runs/35621812580",
+  "defect": "Common Russian connecting words and capitalized sentence starters could exhaust the 64-word hint budget before useful vocabulary was included.",
+  "change": "Filter common Russian and English words before the existing bounded ranking of sermon-note vocabulary.",
+  "localChecks": {
+    "newRegressionCases": 2,
+    "regressionsFailedBeforeFix": true,
+    "regressionsPassedAfterFix": true,
+    "fullPnpmCheck": "passed",
+    "processorTestsPassed": 118,
+    "integrationTestsPassed": 11
+  },
+  "deployedChecks": {
+    "supportedUpdate": "passed",
+    "compiledModulesMatchTestedBuild": true,
+    "generatedNotesThroughContextStore": {
+      "english": "passed",
+      "russian": "passed",
+      "usefulVocabularyRetained": true,
+      "connectingWordsExcluded": true,
+      "hintBoundsPreserved": true,
+      "isolatedTemporaryFilesRemoved": true
+    }
+  },
+  "paidProviderRequests": 0,
+  "privateSermonUploads": 0,
+  "operatorApplicationChanged": false,
+  "limitations": [
+    "Hint extraction and deployment checks do not establish speech-recognition accuracy.",
+    "No recognition, translation, speech generation, microphone or live-service test was performed in this increment.",
+    "Private operational/configuration receipts remain outside this public repository.",
+    "Standalone Mac installer publication and the prepared sermon provider test still require their pending approvals."
+  ]
+}
