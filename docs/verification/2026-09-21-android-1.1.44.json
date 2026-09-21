@@ -1,0 +1,71 @@
+{
+  "date": "2026-09-21",
+  "workflow": "https://github.com/edydex/heritage_study_bible/actions/runs/35627680614",
+  "release": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.44-preview.1",
+  "sourceRevision": "c70e88ed35ee248d1ba43e150a751fce9ea41ec5",
+  "version": "1.1.44-preview.1",
+  "versionCode": 47,
+  "apk": {
+    "name": "heritage-study-bible-1.1.44-preview.1-debug.apk",
+    "size": 72739667,
+    "sha256": "7edc0764a57a1058262ebc5992af525b42cd6175014d33b2840c47477a673f7e"
+  },
+  "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+  "downloadedAssetsVerified": 3,
+  "webAssetsVerified": 694,
+  "nativeTestCases": [
+    "com.getcapacitor.myapp.ExampleInstrumentedTest.useAppContext",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.appAndCarSharePlaybackWhichContinuesAfterTheReaderCloses",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.carLibraryAndSavedQueueLoadWithoutOpeningTheBible",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.legacyCarBrowserCanDiscoverTheLibraryWithoutOpeningTheReader",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.offlineResolverRejectsTraversalAndUnrelatedAppFiles",
+    "faith.heritage.app.AudioStorageIntegrationTest.deleteOfflineAudioThroughInternalStorage",
+    "faith.heritage.app.AudioStorageIntegrationTest.interruptedTransferCanBeRemovedWithoutTouchingNotes",
+    "faith.heritage.app.CommunityIntegrationTest.automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+    "faith.heritage.app.CommunityIntegrationTest.encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+    "faith.heritage.app.CommunityIntegrationTest.packagedCommunityScreensAndMemberLinkWorkOffline",
+    "faith.heritage.app.CommunityIntegrationTest.secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+  ],
+  "nativeTestsPassed": 11,
+  "latestFeed": {
+    "tag": "v1.1.44-preview.1",
+    "draft": false,
+    "prerelease": false
+  },
+  "physicalPhoneTest": false,
+  "updateChecker": [
+    {
+      "status": "update-available",
+      "currentVersion": "1.1.32",
+      "latestVersion": "v1.1.44-preview.1",
+      "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.44-preview.1",
+      "downloadUrl": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.44-preview.1/heritage-study-bible-1.1.44-preview.1-debug.apk",
+      "assetName": "heritage-study-bible-1.1.44-preview.1-debug.apk"
+    },
+    {
+      "status": "update-available",
+      "currentVersion": "1.1.42-preview.1",
+      "latestVersion": "v1.1.44-preview.1",
+      "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.44-preview.1",
+      "downloadUrl": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.44-preview.1/heritage-study-bible-1.1.44-preview.1-debug.apk",
+      "assetName": "heritage-study-bible-1.1.44-preview.1-debug.apk"
+    },
+    {
+      "status": "update-available",
+      "currentVersion": "1.1.43-preview.1",
+      "latestVersion": "v1.1.44-preview.1",
+      "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.44-preview.1",
+      "downloadUrl": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.44-preview.1/heritage-study-bible-1.1.44-preview.1-debug.apk",
+      "assetName": "heritage-study-bible-1.1.44-preview.1-debug.apk"
+    },
+    {
+      "status": "up-to-date",
+      "currentVersion": "1.1.44-preview.1",
+      "latestVersion": "v1.1.44-preview.1",
+      "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.44-preview.1",
+      "downloadUrl": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.44-preview.1/heritage-study-bible-1.1.44-preview.1-debug.apk",
+      "assetName": "heritage-study-bible-1.1.44-preview.1-debug.apk"
+    }
+  ],
+  "wordStudyEvidence": "2026-09-21-word-study.json"
+}

@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-21",
+  "sourceRevision": "c70e88ed35ee248d1ba43e150a751fce9ea41ec5",
+  "pullRequest": "https://github.com/edydex/heritage_study_bible/pull/21",
+  "ci": "https://github.com/edydex/heritage_study_bible/actions/runs/35627680615",
+  "coverage": {
+    "books": 27,
+    "matchedVerseRecords": 6596,
+    "unlinkedVerseRecords": 1347,
+    "wordGroups": 94788,
+    "mappingBytes": 6677045,
+    "source": "Nestle 1904 / Berean published translation table",
+    "generatedTranslations": false
+  },
+  "automatedChecks": {
+    "unitTestsPassed": 287,
+    "protocolTestsPassed": 125,
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "focusedBrowserCasesPerBrowser": 5,
+    "extendedRetryUnmappedOfflineCaseRetestedInBoth": true,
+    "everyGroupValidatedAgainstInstalledSourceAndTargetText": true,
+    "everyNewFileHashValidated": true,
+    "existingGreekAndRomansOutputsByteIdentical": true
+  },
+  "examples": {
+    "Matthew 8:9": "servant",
+    "Matthew 20:27": "slave",
+    "Romans 6:19": "in slavery (two highlighted occurrences)",
+    "Matthew 18:27": "BSB context without guessed word match"
+  },
+  "liveWeb": {
+    "url": "https://heritage.faith/",
+    "sourceRevision": "c70e88ed35ee248d1ba43e150a751fce9ea41ec5",
+    "verified": {
+      "assets/index-C9cktymx.js": "35e4eef38a6f73fbee22665e7db16bafc43f4c4555cf1e1ad4bc65f195bedf08",
+      "assets/index-Drln3-LV.css": "7c61d4573dcbd0c48d9524ceb0ce3b90ca15e3024ce1eedf147b602ed6c70cf8",
+      "data/original-languages/bsb-word-links/index.json": "d7bb5ea93470e024856decf9df9566aaae9e81f924e8a9b57bb192da99ca068e",
+      "data/original-languages/bsb-word-links/matthew.json": "523ba4149a3024dd30593d6a357945de5fd6f0c418e50a705520371542f99932",
+      "data/original-languages/bsb-word-links/romans.json": "cf9dabfd86e272fb146973b3b3abd4ee3de68fe06c11e6eb27df8aa062ea5aa3",
+      "data/original-languages/bsb-word-links/revelation.json": "399f75e08c3ad35c73a59aeb31c8620bd816e136a1aec5f5d5faf1c911911618"
+    },
+    "visualPopupCheck": true,
+    "browser": "Codex in-app browser",
+    "entryPoint": "https://heritage.faith/#/romans/1",
+    "tap": "servant",
+    "observed": "BSB phrase heading, full translated verse and highlights beside source Greek"
+  },
+  "boundaries": [
+    "Exact translated-word mapping currently covers checked N1904-to-BSB matches only.",
+    "Hebrew/Aramaic results include BSB context without exact word mapping.",
+    "Other translations retain explicitly labeled word-form search.",
+    "Different editions and unavailable mappings are left unlinked.",
+    "Source and contextual sense review by a human remains separate from structural tests.",
+    "No physical Android phone acceptance is claimed."
+  ]
+}
