@@ -20,6 +20,8 @@ Use Node.js 24+, Git, and the platform tools described in each component README.
 - Original dirty workspaces are preserved separately from maintained source. Obtain the private restoration instructions from the owner if archival local work is needed; do not overwrite the maintained checkout.
 - Credentials, private audits, raw provider transcripts and deployment receipts stay outside public source. Obtain the owner's private handoff separately when operational work requires it.
 
+SyncShow preview pushes and manual **Build and Release** runs now create checked installers through the four-platform packaging workflow. Each successful platform summary links its seven-day artifact ZIP. Permanent private releases remain a separate verified publication; use Preview 31 above for installation. The [repair receipt](verification/2026-09-21-syncshow-release-routing.json) distinguishes workflow source from the unchanged published installer source.
+
 ## Server access
 
 Configure the new computer's trusted SSH access to WOTBC through the owner's normal SSH setup. Do not copy a private SSH key into a repository, accept an unverified host key, or guess nearby machines. Then inspect before updating:

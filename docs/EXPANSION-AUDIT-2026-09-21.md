@@ -12,7 +12,7 @@ GitHub was checked again for these application revisions and release assets:
 | Component | Source and delivery |
 | --- | --- |
 | Heritage Bible / Community | Reader release source `1d57fe30a4cac26f95450d928e2acbb33bec4743`; Android **1.1.47-preview.1**, code **50**, published in the normal Latest feed with APK, build metadata and checksums. The web reader serves the matching assets. |
-| SyncShow | Main `a25d9d1b05de143a91b904fad8f3df1de9800ab8`; Preview **31**, seven installers and ten verification/provenance assets available in the owner's private preview repository. |
+| SyncShow | Maintenance main `3c669bb2d2598cfba6671b7095e1586919737608` includes the [preview build/download repair](verification/2026-09-21-syncshow-release-routing.json); the published Preview **31** application tree still matches `a25d9d1b05de143a91b904fad8f3df1de9800ab8`. Its seven installers and ten verification/provenance assets remain available in the owner's private preview repository. |
 | Multilinguum | Main `c86c384e3fe7e793e6e583d24bc559c85ba01a95`; integrated processor source includes the bilingual hint-budget correction. Standalone **0.1.1** Apple-silicon and Intel Mac installers were built and verified from the earlier `90f9130` application tree; their operator code is unchanged by this processor-only fix. [Permanent private publication](https://github.com/edydex/heritage-preview-builds/releases/tag/multilinguum-v0.1.1-preview.1) is complete; both installers and seven verification files were downloaded and compared byte-for-byte. |
 
 The Android APK SHA-256 is
