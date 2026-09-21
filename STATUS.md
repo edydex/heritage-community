@@ -9,7 +9,7 @@ The September expansion is implemented and merged into the component repositorie
 | Component | Current result |
 | --- | --- |
 | Heritage web reader | Live audio library, saved listening position, compact BSB playback, default-on text following, audiobook paragraph navigation and named original-language parallel texts. |
-| Android | [1.1.47-preview.1 / code 50](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.47-preview.1) is published through the normal Latest feed. All three downloaded assets, signer, 697 bundled web files and eleven native tests passed; the actual checker detects it from older versions. [Release receipt](docs/verification/2026-09-21-android-1.1.47.json). |
+| Android | [1.1.48-preview.1 / code 51](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.48-preview.1) is published through the normal Latest feed. All three downloaded assets, signer, 697 bundled web files and twelve native tests passed; the actual checker detects it from older versions. [Release receipt](docs/verification/2026-09-21-android-1.1.48.json). |
 | Community server | Accessible slide authoring, private Bible imports, existing preparation/calendar/song workflows and Muse settings are implemented. Operational deployment receipts remain private. |
 | SyncShow | [Preview 31](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.31) has seven verified private installers: Windows, both Mac architectures and Linux. All 17 assets were downloaded and matched their hashes. Public distribution gates remain open. |
 | Multilinguum | Muse recognition, explicit Russian fallback, notes vocabulary and encrypted provider settings are implemented for the Community companion. Both 0.1.1 Mac installers passed hosted builds and independent mounted-bundle verification. The Apple-silicon download launches. [Both Mac installers](https://github.com/edydex/heritage-preview-builds/releases/tag/multilinguum-v0.1.1-preview.1) and seven verification files are published privately; all nine downloads match the verified originals. |
@@ -39,7 +39,7 @@ Earlier delivered calendar, song sharing/publication, search shortcuts, first-cl
 
 | Component | Selected revision |
 | --- | --- |
-| Heritage / Community | `1d57fe30a4cac26f95450d928e2acbb33bec4743` |
+| Heritage / Community | `a16045070e938ab7a22d5cfcf0653a388210ab05` |
 | SyncShow | `3c669bb2d2598cfba6671b7095e1586919737608` |
 | Multilinguum | `c86c384e3fe7e793e6e583d24bc559c85ba01a95` |
 
@@ -59,3 +59,5 @@ Paid provider tests require an approved budget and a private usage ledger. Audio
 Maximus now has its matching internal historical text and paragraph following, completing internal text coverage for all ten audiobooks. The recording/download IDs remain stable. [Delivery verification](docs/verification/2026-09-21-maximus-audio-text.json).
 
 Version 1.1.47 removes blank Bible reading highlights between verses. The marker advances as the previous interval ends, while tap-to-seek still requires a verified timestamp. See [continuous-follow verification](docs/verification/2026-09-21-continuous-audio-highlight.json).
+
+Version 1.1.48 fixes Android Bible marker delay by scheduling from the native playback service clock at verse boundaries. Ezekiel 42 exposed the old one-second update interval; pause, seek and 0.75×/1×/2× playback now pass measured native checks. The timestamp dataset is unchanged. [Verification](docs/verification/2026-09-21-android-boundary-clock.json). Physical-phone listening remains the next acceptance step.

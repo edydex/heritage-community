@@ -1,6 +1,6 @@
 # September expansion: hands-on checks
 
-Use Android **1.1.47-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
+Use Android **1.1.48-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
 
 1. **Resume listening.** Open Audio, choose an audiobook, seek a few minutes in and change playback speed. Navigate back to the Bible, lock the phone, then return. Pause, close and reopen the app. Expected: the saved recording/position remains; reopening does not start audio unexpectedly. Test headset pause/play and the notification controls too.
 2. **Offline files and storage.** Download one short recording, switch the phone offline and play/seek it. Open Internal Storage and remove that recording. Expected: the local file disappears, listening position and reading notes remain, and online streaming works again after reconnecting. Interrupt a second download and verify it is removable/retryable without a corrupt item showing as downloaded. Keep the app open for large downloads.
@@ -107,3 +107,11 @@ a complete scholarly review.
 2. Tap verse 9: because its timing is not verified, the app should explain that it has no verified audio position and leave playback unchanged. Tap verse 10 to check verified seeking.
 3. Try ordinary pauses in other chapters and the closing narration. The final verse stays marked through the outro; the next chapter introduction remains unmarked.
 4. When several consecutive verses lack timings, the first following verse remains marked until a verified interval resumes. This is a reading cue, not newly verified alignment. Report recording, chapter and timestamp for mismatches.
+
+## Android verse boundary timing (1.1.48)
+
+1. Update without uninstalling, then open BSB Ezekiel 42 and play from the beginning.
+2. Watch verses 1–4: the first marker should begin with the first verse; later markers advance when the preceding verse ends, including the breath before the next one.
+3. Pause just before a transition, wait, and resume. The marker must remain still while paused and resume with playback.
+4. Tap an earlier timed verse, then try 0.75×, 1× and 2×. Lock/unlock the phone while playback continues and verify following resumes correctly.
+5. If a spoken boundary still differs, record app version, chapter, verse, playback speed and whether the delay is before or after the words. The fix removes display polling delay; it does not certify every automatic alignment mark.
