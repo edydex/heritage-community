@@ -8,19 +8,19 @@ This repository owns the combined product brief, compatible component versions, 
 
 ## Current status
 
-Integration is in development. Pinned source setup, combined server commands, and live translation are implemented. SyncShow Preview 29 has a retained installer with a verified Mac ad-hoc signature, including saved service translation settings, tablet teaching and recording review; official desktop releases and real-service acceptance remain unfinished. See [delivery status](STATUS.md).
+Integration is in development. Community supports the cohosted translation processor, including Muse and OpenAI. SyncShow Preview 31 has verified Windows, both Mac architectures and Linux installers in the private preview-builds repository. The reader now includes internal audio and named original-language sources. Physical-service acceptance and public desktop distribution remain open. See [current delivery status](STATUS.md) and the [next-computer handoff](docs/CONTINUING-WORK.md).
 
-For the next hands-on round, use the [Deep Testing walkthrough](docs/deep-testing.html) or its [text version](docs/deep-testing.md). It separates the short preparation jobs from 31 concrete cases, with expected results, saved notes and result export. The recommended next step is a feature freeze and real-device rehearsal.
+For the next hands-on round, use the [Deep Testing walkthrough](docs/deep-testing.html) or its [text version](docs/deep-testing.md). It separates the short preparation jobs from concrete cases, with expected results, saved notes and result export. Use the [September expansion checks](docs/expansion-testing.md) for audio, monochrome mode, Bible imports and original-language reading. The recommended next step is real-device rehearsal.
 
 ## Install the SyncShow preview
 
 For the weekly church workflow, start with the [Sunday operator guide](docs/sunday-operator-guide.md): the right sign-in, preparation, mixer connection, optional voice, audience playback and stopping the service.
 
-The [desktop preview guide](docs/desktop-preview.md) covers the retained Mac installer, church connection, live translation and tablet teaching. Exact source and package checks are recorded in the [Preview 29 and shared-recording verification](docs/verification/2026-09-14-shared-archive-review.md).
+The [desktop preview guide](docs/desktop-preview.md) covers all retained installers, church connection, live translation and tablet teaching. Exact Preview 31 source and package checks are recorded in the [package receipt](docs/verification/2026-09-20-syncshow-preview31.json).
 
 ## Install the Android preview
 
-The [Android preview guide](docs/android-preview.md) links to the published Heritage 1.1.33-preview.2 APK, including Automatic Sync, and explains updating the existing app, connecting WOTBC, and the remaining phone checks.
+The [Android preview guide](docs/android-preview.md) links to the current published APK and explains updating the existing app, connecting WOTBC, audio/storage controls and the remaining phone checks.
 
 ## Open the complete development workspace
 
@@ -45,7 +45,7 @@ Never copy production `.env` files, API keys, personal notes, recordings, or dat
 
 ## Set up or maintain the combined server
 
-From this workspace, use an existing, trusted SSH connection to a Debian 12 or 13 server. The selected SSH account currently needs root access. The server does not need Node.js, this private repository's GitHub credentials, or a GPU.
+From this workspace, use an existing, trusted SSH connection to a Debian 12 or 13 server. The selected SSH account currently needs root access. The server does not need Node.js, GitHub credentials for these public source repositories, or a GPU.
 
 ```sh
 node bin/heritage.mjs server plan --host your-server

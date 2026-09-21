@@ -1,0 +1,43 @@
+# Continue on another computer
+
+Start from the public integration repository. Application source is maintained in its original repositories; there is no fifth application to migrate or a need to combine their Git histories.
+
+```sh
+git clone https://github.com/edydex/heritage-community.git
+cd heritage-community
+node bin/heritage.mjs bootstrap
+node bin/heritage.mjs status
+```
+
+Use Node.js 24+, Git, and the platform tools described in each component README. Open the generated `.heritage/heritage.code-workspace`. The bootstrap creates clean exact-revision checkouts; create a `codex/` branch inside the component you intend to change. It refuses to replace dirty work. Read [STATUS](../STATUS.md), the [expansion scope](EXPANSION-2026-09-20.md), and [the hands-on walkthrough](deep-testing.html) before choosing work.
+
+## Source, packages and private material
+
+- `components.lock.json` selects development source. It is not proof that the server or every installed app runs that revision. Check the live server receipt and package metadata separately.
+- [SyncShow Preview 31](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.31) is in a **private** owner-testing repository. All seven installers, receipts and checksums were downloaded and verified. Sign in to GitHub with access to that repository.
+- [Heritage Android releases](https://github.com/edydex/heritage_study_bible/releases/latest) use the normal Latest feed so older installed update checkers work. Verify `android-build.json` and `SHA256SUMS`; an Actions artifact alone is not a published update.
+- The integrated Multilinguum processor is built and deployed through the server tools. Its standalone macOS shell has not been delivered as a newly verified installer. Do not substitute a Rust compile check for package acceptance.
+- Original dirty workspaces are preserved separately from maintained source. Obtain the private restoration instructions from the owner if archival local work is needed; do not overwrite the maintained checkout.
+- Credentials, private audits, raw provider transcripts and deployment receipts stay outside public source. Obtain the owner's private handoff separately when operational work requires it.
+
+## Server access
+
+Configure the new computer's trusted SSH access to WOTBC through the owner's normal SSH setup. Do not copy a private SSH key into a repository, accept an unverified host key, or guess nearby machines. Then inspect before updating:
+
+```sh
+node bin/heritage.mjs server plan --host wotbc-community
+node bin/heritage.mjs server status --host wotbc-community
+```
+
+The version set may be newer than the live receipt. Use the supported `server update` command deliberately; it takes backups, refuses a prepared/live service, preserves private provider settings, checks health, and records the applied source set after success. Provider credentials belong in the server’s private settings, not the development checkout. Ordinary cloud translation does not depend on the old GPU server; cloned-voice workloads are separate.
+
+## Work still requiring acceptance or external input
+
+1. Install the current Android and SyncShow previews on the actual phone, Windows presentation computer and e-ink tablet. Test background audio, offline downloads, Android Auto, patterns, pen input, all three presentation outputs and service continuation after network loss.
+2. Rehearse English and Russian through WOTBC's real capture controls, with notes and optional speech. The bounded English Muse/translation check passed; Russian sermon meaning and a complete venue service remain unaccepted. Obtain an explicit provider-test budget and consult the owner's private ledger before spending.
+3. Audiobook paragraph alignment is generated locally, with no API charge. Five complete books/54 recordings are currently shipped. Remaining long books are processed in a staging directory outside Git. Check the private handoff for any active job before starting another; only install a complete book after identity, timing and exact paragraph tests pass. See Heritage `docs/AUDIOBOOK-TEXT.md` for reproducible commands. Unmatched spans remain unlinked.
+4. LSB requires a publisher-authorized software file/agreement. Contact details and the strict portable import format are in Heritage `docs/BIBLE-IMPORTS.md` and SyncShow's Bible import guide. A ProPresenter purchase is not treated as a transferable data license. SYNO/UKRK recording permissions and exact edition identity remain unresolved.
+5. Public SyncShow distribution still needs native dependency source/relinking materials and official Drive configuration. Private owner previews are not a declaration that these gates passed.
+6. Prophecy-fulfillment tables and the musician screen are documented future work. Do not invent historical fulfillment identifications or word correspondences.
+
+When handing work onward, record source SHA, deployed receipt, package version/hash, tests actually run and remaining physical/provider checks. Preserve unrelated dirty work; avoid blanket staging, resets, deletion or moving published tags.

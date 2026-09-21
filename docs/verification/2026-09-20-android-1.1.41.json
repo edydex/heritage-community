@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-20",
+  "workflow": "https://github.com/edydex/heritage_study_bible/actions/runs/35567277038",
+  "release": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.41-preview.1",
+  "sourceRevision": "121049e6889513fd3f0868a5040a8a3efc5e3445",
+  "version": "1.1.41-preview.1",
+  "versionCode": 44,
+  "apk": {
+    "name": "heritage-study-bible-1.1.41-preview.1-debug.apk",
+    "size": 62509009,
+    "sha256": "d37ebf17944326d48df0edc997445b4ed0d88fa02d830ac04c9aac42a29d5419"
+  },
+  "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+  "downloadedAssetsVerified": 3,
+  "webAssetsVerified": 655,
+  "nativeTestCases": [
+    "com.getcapacitor.myapp.ExampleInstrumentedTest.useAppContext",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.appAndCarSharePlaybackWhichContinuesAfterTheReaderCloses",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.carLibraryAndSavedQueueLoadWithoutOpeningTheBible",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.legacyCarBrowserCanDiscoverTheLibraryWithoutOpeningTheReader",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.offlineResolverRejectsTraversalAndUnrelatedAppFiles",
+    "faith.heritage.app.AudioStorageIntegrationTest.deleteOfflineAudioThroughInternalStorage",
+    "faith.heritage.app.AudioStorageIntegrationTest.interruptedTransferCanBeRemovedWithoutTouchingNotes",
+    "faith.heritage.app.CommunityIntegrationTest.automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+    "faith.heritage.app.CommunityIntegrationTest.encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+    "faith.heritage.app.CommunityIntegrationTest.packagedCommunityScreensAndMemberLinkWorkOffline",
+    "faith.heritage.app.CommunityIntegrationTest.secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+  ],
+  "nativeTestsPassed": 11,
+  "latestFeed": {
+    "tag": "v1.1.41-preview.1",
+    "draft": false,
+    "prerelease": false
+  },
+  "physicalPhoneTest": false,
+  "publicationRecovery": "The 1.1.40 build passed native tests but stopped before release upload because a full commit response exceeded the publisher buffer. PR 17 bounds the lookup to the SHA. Its old tag is unchanged; this verified release has a new immutable version.",
+  "installedCheckerResults": [
+    {
+      "status": "update-available",
+      "currentVersion": "1.1.32",
+      "latestVersion": "v1.1.41-preview.1",
+      "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.41-preview.1",
+      "downloadUrl": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.41-preview.1/heritage-study-bible-1.1.41-preview.1-debug.apk",
+      "assetName": "heritage-study-bible-1.1.41-preview.1-debug.apk"
+    },
+    {
+      "status": "update-available",
+      "currentVersion": "1.1.39-preview.1",
+      "latestVersion": "v1.1.41-preview.1",
+      "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.41-preview.1",
+      "downloadUrl": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.41-preview.1/heritage-study-bible-1.1.41-preview.1-debug.apk",
+      "assetName": "heritage-study-bible-1.1.41-preview.1-debug.apk"
+    },
+    {
+      "status": "up-to-date",
+      "currentVersion": "1.1.41-preview.1",
+      "latestVersion": "v1.1.41-preview.1",
+      "releaseUrl": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.41-preview.1",
+      "downloadUrl": "https://github.com/edydex/heritage_study_bible/releases/download/v1.1.41-preview.1/heritage-study-bible-1.1.41-preview.1-debug.apk",
+      "assetName": "heritage-study-bible-1.1.41-preview.1-debug.apk"
+    }
+  ]
+}
