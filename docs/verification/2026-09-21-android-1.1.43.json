@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-21",
+  "workflow": "https://github.com/edydex/heritage_study_bible/actions/runs/35581708165",
+  "release": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.43-preview.1",
+  "sourceRevision": "343e2324479dfbcb094879c7d7e9c09f2fcc23be",
+  "version": "1.1.43-preview.1",
+  "versionCode": 46,
+  "apk": {
+    "name": "heritage-study-bible-1.1.43-preview.1-debug.apk",
+    "size": 70689985,
+    "sha256": "ea8a218c2ef2487f06fa369c66b732cb6fd8f454991171e11bc25039bb62b5e8"
+  },
+  "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+  "downloadedAssetsVerified": 3,
+  "webAssetsVerified": 666,
+  "nativeTestCases": [
+    "com.getcapacitor.myapp.ExampleInstrumentedTest.useAppContext",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.appAndCarSharePlaybackWhichContinuesAfterTheReaderCloses",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.carLibraryAndSavedQueueLoadWithoutOpeningTheBible",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.legacyCarBrowserCanDiscoverTheLibraryWithoutOpeningTheReader",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.offlineResolverRejectsTraversalAndUnrelatedAppFiles",
+    "faith.heritage.app.AudioStorageIntegrationTest.deleteOfflineAudioThroughInternalStorage",
+    "faith.heritage.app.AudioStorageIntegrationTest.interruptedTransferCanBeRemovedWithoutTouchingNotes",
+    "faith.heritage.app.CommunityIntegrationTest.automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+    "faith.heritage.app.CommunityIntegrationTest.encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+    "faith.heritage.app.CommunityIntegrationTest.packagedCommunityScreensAndMemberLinkWorkOffline",
+    "faith.heritage.app.CommunityIntegrationTest.secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+  ],
+  "nativeTestsPassed": 11,
+  "latestFeed": {
+    "tag": "v1.1.43-preview.1",
+    "draft": false,
+    "prerelease": false
+  },
+  "physicalPhoneTest": false
+}
