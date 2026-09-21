@@ -1,6 +1,6 @@
 # September expansion: hands-on checks
 
-Use Android **1.1.41-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
+Use Android **1.1.42-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
 
 1. **Resume listening.** Open Audio, choose an audiobook, seek a few minutes in and change playback speed. Navigate back to the Bible, lock the phone, then return. Pause, close and reopen the app. Expected: the saved recording/position remains; reopening does not start audio unexpectedly. Test headset pause/play and the notification controls too.
 2. **Offline files and storage.** Download one short recording, switch the phone offline and play/seek it. Open Internal Storage and remove that recording. Expected: the local file disappears, listening position and reading notes remain, and online streaming works again after reconnecting. Interrupt a second download and verify it is removable/retryable without a corrupt item showing as downloaded. Keep the app open for large downloads.
@@ -13,3 +13,23 @@ Use Android **1.1.41-preview.1** and SyncShow **1.4.0-preview.31**. Verify the s
 9. **Muse and speech choices.** Start with a short English passage through the real mixer, Automatic recognition, Quality and speech off. Expected: Muse source recognition, translated captions and no generated speech. Stop completely, then test Russian → English and verify the explicit OpenAI recognition choice. Repeat with reviewed notes, and finally with optional speech. Have a bilingual person review terms and meaning; provider success is not a quality score. Test stopping and network reconnect before a longer service. Keep paid testing within the owner's remaining budget.
 
 The current code/package checks are recorded in [STATUS](../STATUS.md). Report concrete differences from these expectations; include a screenshot or exact error text where useful, without sharing API tokens or private sermon content publicly.
+
+## Additional checks for Android 1.1.42
+
+The release is published and verified through the normal update checker. Install
+it over the existing app before testing these edition and navigation changes.
+
+- In the existing Tertullian or Polycarp reading edition, bookmark a chapter and
+  note the saved reading position. Play its recording, then choose **Go to nearby
+  text**. Confirm the named Dodgson or Lake edition opens at the spoken passage.
+  Bookmark this edition too. Use the edition link to return to the earlier text;
+  its bookmark and reading position should still be there.
+- Seek within the final Institutes track and choose **Go to nearby text**. It
+  should open Book IV of the complete Allen text. The original volume-one text
+  remains a separate edition; its previous bookmarks should still work.
+- Try later recordings in Wars, Antiquities and City of God. Listen before and
+  after a link, reload the text page, and compare the highlighted paragraph with
+  what is spoken. A match is a nearby paragraph, not a word-by-word cursor.
+- Keep a previously downloaded recording and its saved listening position through
+  the update. Verify both remain usable offline. No audio redownload should be
+  required just because its text edition changed.
