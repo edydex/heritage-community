@@ -1,18 +1,18 @@
 # Heritage Community delivery status
 
-Updated September 20, 2026 (Pacific time). [Interactive progress report](docs/progress.html) · [Continue on another computer](docs/CONTINUING-WORK.md) · [Deep Testing walkthrough](docs/deep-testing.html).
+Updated September 21, 2026 (UTC). [Interactive progress report](docs/progress.html) · [Continue on another computer](docs/CONTINUING-WORK.md) · [Deep Testing walkthrough](docs/deep-testing.html).
 
-The September expansion is implemented and merged into the component repositories. A bounded English human-narration recognition/translation check passed; real-service acceptance remains separate. The remaining work includes audiobook timing coverage, Russian sermon quality, physical-device/service acceptance and public desktop distribution. The progress report estimates roughly 80% readiness for an integrated first release; this is an engineering estimate, not measured reliability or test coverage.
+The September expansion is implemented and merged into the component repositories. A bounded English human-narration recognition/translation check passed; real-service acceptance remains separate. The remaining work includes timing review by listening, Russian sermon quality, physical-device/service acceptance and public desktop distribution. The progress report estimates roughly 80% readiness for an integrated first release; this is an engineering estimate, not measured reliability or test coverage.
 
 ## Current delivery
 
 | Component | Current result |
 | --- | --- |
 | Heritage web reader | Live audio library, saved listening position, BSB recordings and optional verse following, audiobook paragraph navigation and named original-language parallel texts. |
-| Android | [1.1.41-preview.1 / code 44](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.41-preview.1) is published through the normal Latest feed. All three downloaded assets, signer, 655 bundled web files and eleven native tests passed; the actual checker detects it from older versions. [Release receipt](docs/verification/2026-09-20-android-1.1.41.json). |
+| Android | [1.1.42-preview.1 / code 45](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.42-preview.1) is published through the normal Latest feed. All three downloaded assets, signer, 664 bundled web files and eleven native tests passed; the actual checker detects it from older versions. [Release receipt](docs/verification/2026-09-21-android-1.1.42.json). |
 | Community server | Accessible slide authoring, private Bible imports, existing preparation/calendar/song workflows and Muse settings are implemented. Operational deployment receipts remain private. |
 | SyncShow | [Preview 31](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.31) has seven verified private installers: Windows, both Mac architectures and Linux. All 17 assets were downloaded and matched their hashes. Public distribution gates remain open. |
-| Multilinguum | Muse recognition, explicit Russian fallback, notes vocabulary and encrypted provider settings are implemented for the Community companion. No newly verified standalone desktop installer is claimed. |
+| Multilinguum | Muse recognition, explicit Russian fallback, notes vocabulary and encrypted provider settings are implemented for the Community companion. Both 0.1.1 Mac installers passed hosted builds and independent mounted-bundle verification. The Apple-silicon download launches; permanent private publication is awaiting owner approval. |
 | Repository preservation | Maintained component features are merged into main. Original dirty Heritage/SyncShow workspaces were privately backed up and restored byte-for-byte; they were not reset or replaced. |
 
 The integration/source repositories are **public**. Owner preview installers and original-workspace backups have separate private repositories. Do not place credentials, raw church recordings, service decks or private audit files here.
@@ -24,7 +24,7 @@ The integration/source repositories are **public**. Owner preview installers and
 - **Library cleanup:** the requested unused/unpublished-song cleanup is complete. Source-deck inventories, exact changes and restoration details remain in the private operational handoff.
 - **Audio:** internal queue/player, persistent resume, speed, Android downloads/removal and Internal Storage. Native background/headset/notification controls and Android Auto browsing are implemented; eleven emulator tests passed. A physical phone and car/head unit remain separate acceptance.
 - **BSB audio:** all 66 books / 1,189 Barry Hays recordings. Checked automatic timings cover 14,912 of 31,102 verses. Unmatched verses play without guessed markers. SYNO/UKRK recordings require permission and exact-edition confirmation. [Audio sources and limits](https://github.com/edydex/heritage_study_bible/blob/main/docs/BIBLE-AUDIO.md).
-- **Audiobook text:** five complete books / 54 recordings have checked phrase-to-paragraph links. Longer books are processing locally with Whisper; partial staged books are not installed. Different translations can have sparse coverage. [Alignment method and reproducible commands](https://github.com/edydex/heritage_study_bible/blob/main/docs/AUDIOBOOK-TEXT.md).
+- **Audiobook text:** all nine internally readable audiobooks / 383 recordings have checked phrase-to-paragraph links. Polycarp and Tertullian have separately named matching translations; Institutes includes both Allen volumes. Existing editions, bookmarks and recording IDs are preserved. Timings are automatic and unmatched passages remain unlinked. [Alignment method and reproducible commands](https://github.com/edydex/heritage_study_bible/blob/main/docs/AUDIOBOOK-TEXT.md).
 - **Original languages:** named WLC 4.20 / OSHB Hebrew-Aramaic OT and Nestle 1904 Greek NT. Romans has 5,187 attested Greek/BSB word-link groups across 376 whole-verse matches; unmatched variants and unverified numbering are left unlinked. [Sources and attribution](https://github.com/edydex/heritage_study_bible/blob/main/docs/ORIGINAL-LANGUAGES.md).
 - **Muse:** English preference, explicit Russian OpenAI fallback, locally extracted sermon vocabulary and encrypted server token storage. A bounded English recognition and Quality EN→RU translation check used public-domain human narration. It did not open a microphone, generate speech or start a public service. Operational receipts remain private.
 - **Later research:** proposed prophecy-fulfillment tables have a source/uncertainty roadmap; the musician screen remains documented future work. Neither is presented as implemented history or generated musical arrangements.
@@ -45,7 +45,7 @@ Installed server revisions, private storage inventories and provider-configurati
 
 ## Remaining acceptance
 
-1. **Audiobook timing:** finish and validate the remaining complete books; do not publish partial indexes or claim word-perfect synchronization.
+1. **Audio timing:** review the completed audiobook links by listening. BSB verse following still uses partial validated timings; a broader alignment trial is staged separately. Do not claim word-perfect synchronization.
 2. **Russian/English service quality:** review actual sermon meaning, source capture, optional speech, stop/reconnect and a full-length service. The English provider rehearsal does not close this gate.
 3. **Physical devices:** real Android update/sign-in/automatic sync, downloads/background playback/Android Auto, e-ink stylus patterns, projector/stage screens and loaded-service offline continuation.
 4. **Authorized external content:** obtain a publisher-approved LSB software source and permitted exact-edition Russian/Ukrainian recordings. Do not infer recording rights from a text's public-domain status.

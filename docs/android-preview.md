@@ -4,9 +4,9 @@ The Android Community preview brings Community Home, passage-linked published se
 
 ## Install or update
 
-In the installed Android app, open **Settings → Advanced Settings** and check for updates. [Heritage 1.1.41-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.41-preview.1) is now the normal GitHub Latest release, and the installed checker detects it from earlier builds through 1.1.40. Version code 44 preserves the existing application identity and signer.
+In the installed Android app, open **Settings → Advanced Settings** and check for updates. [Heritage 1.1.42-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.42-preview.1) is now the normal GitHub Latest release, and the installed checker detects it from earlier builds through 1.1.41. Version code 45 preserves the existing application identity and signer.
 
-You can also download `heritage-study-bible-1.1.41-preview.1-debug.apk` from that release. Install it over the existing Heritage app; keep the previous installation and its data until the phone rehearsal passes. Do not uninstall first. The release check requires the same application ID and signer as v1.1.32 and a higher Android version code. This release increases the numeric version, so the older checker can detect it too.
+You can also download `heritage-study-bible-1.1.42-preview.1-debug.apk` from that release. Install it over the existing Heritage app; keep the previous installation and its data until the phone rehearsal passes. Do not uninstall first. The release check requires the same application ID and signer as v1.1.32 and a higher Android version code. This release increases the numeric version, so the older checker can detect it too.
 
 Published future Android builds use the same normal update feed, including labelled development previews. The publishing process now rejects suffix-only version increments and native version codes that cannot update the latest APK, verifies asset integrity, and checks the actual Latest response. Build-only CI artifacts are not automatically published. See the [update-feed verification](verification/2026-09-14-android-update-feed.md).
 
@@ -38,11 +38,11 @@ Community → Calendar starts with Events enabled and Recurring disabled. WOTBC 
 
 ## Acceptance boundary
 
-Automated native checks use an Android emulator with Wi-Fi and mobile data disabled. The latest download matches all 655 web assets from its source, the native audio catalog and the verified signer. Eleven tests cover audio playback/car browsing/storage in addition to the bundled Community screens, native encrypted storage, Automatic Sync preference persistence across activity restart, offline Bible opening, and rejection of ciphertext moved to another storage key. The tests use synthetic values and do not send an email, access a real member song or call a translation provider.
+Automated native checks use an Android emulator with Wi-Fi and mobile data disabled. The latest download matches all 664 web assets from its source, the native audio catalog and the verified signer. Eleven tests cover audio playback/car browsing/storage in addition to the bundled Community screens, native encrypted storage, Automatic Sync preference persistence across activity restart, offline Bible opening, and rejection of ciphertext moved to another storage key. The tests use synthetic values and do not send an email, access a real member song or call a translation provider.
 
 Physical-phone installation/update, real email return into the app, member sign-in, native sharing, microphone/audio playback and a bilingual service rehearsal still require device acceptance. The separate real desktop-browser note/progress synchronization evidence does not substitute for these phone checks.
 
-[Current build, published assets and acceptance evidence](verification/2026-09-20-android-1.1.41.json). Earlier [Automatic Sync native evidence](verification/2026-09-14-automatic-sync.json) remains available.
+[Current build, published assets and acceptance evidence](verification/2026-09-21-android-1.1.42.json). Earlier [Automatic Sync native evidence](verification/2026-09-14-automatic-sync.json) remains available.
 
 Version 1.1.35 also formats verse cues and slide dividers as readable headings and paragraph breaks. Its built-in Russian hymns are limited to two sourced texts; church-published songs remain available.
 
@@ -60,6 +60,6 @@ Open **Audio** for the Bible or audiobook library. Choose a recording, use the i
 
 The native media session supports background/headset/notification controls and an Android Auto library. Emulator browsing/playback checks passed; a real car/head unit still needs acceptance. All 1,189 BSB chapter recordings are available. Optional verse following uses a temporary gray marker and can scroll the current chapter; automatic timing is currently accepted for 14,912 of 31,102 verses. Other verses play without guessed highlights.
 
-**Go to nearby text** is available for matched portions of 54 recordings in five books. Different spoken translations can yield sparse coverage. The remaining long books are processing locally; other recordings still open the book normally. The parallel reader also offers named WLC/OSHB Hebrew-Aramaic and Nestle 1904 Greek texts, with attested Greek/BSB word links in matching Romans verses.
+**Go to nearby text** now covers matched portions of all 383 recordings in the nine internally readable audiobooks. Polycarp uses the Lake translation, Tertullian uses Dodgson, and Institutes includes both Allen volumes. Earlier reading editions and bookmarks remain separate. Recording IDs, saved listening positions and existing downloads are preserved. Unmatched passages open the book normally; these are automatic paragraph links, not exact word highlighting. The parallel reader also offers named WLC/OSHB Hebrew-Aramaic and Nestle 1904 Greek texts, with attested Greek/BSB word links in matching Romans verses.
 
-The unpublished 1.1.40 attempt passed native acceptance but its publisher exceeded a response buffer while reading a large source commit. Version 1.1.41 repairs that path and is independently verified in the normal update feed. No older published tag or APK was replaced.
+The unpublished 1.1.40 attempt passed native acceptance but its publisher exceeded a response buffer while reading a large source commit. Version 1.1.41 repaired that path; 1.1.42 also passes independent update-feed verification. No older published tag or APK was replaced.
