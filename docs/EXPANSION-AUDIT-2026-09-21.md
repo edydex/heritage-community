@@ -16,11 +16,11 @@ GitHub was checked again for these application revisions and release assets:
 | Multilinguum | Main `c86c384e3fe7e793e6e583d24bc559c85ba01a95`; integrated processor source includes the bilingual hint-budget correction. Standalone **0.1.1** Apple-silicon and Intel Mac installers were built and verified from the earlier `90f9130` application tree; their operator code is unchanged by this processor-only fix. [Permanent private publication](https://github.com/edydex/heritage-preview-builds/releases/tag/multilinguum-v0.1.1-preview.1) is complete; both installers and seven verification files were downloaded and compared byte-for-byte. |
 
 The Android APK SHA-256 is
-`b24e946275dce6413c220c0b8873961c6b947f3f26e6f8b0df5b52c9cd50620e`.
+`d0660822f945cef9d00543860413879872a08a870e061f4820b3bc67abf58f39`.
 The [release receipt](verification/2026-09-21-android-1.1.48.json) records the
-unchanged signer, all 697 bundled web files and eleven native test cases.
+unchanged signer, all 697 bundled web files and twelve native test cases.
 The live reader's HTML, entry JavaScript/stylesheet, Maximus text and
-paragraph timing file, and Romans verse timings were compared with the released build. These checks do not
+paragraph timing file, and Romans/Ezekiel verse timings were compared with the released build. These checks do not
 substitute for a physical phone update or human listening.
 
 ## Requirement-by-requirement result
