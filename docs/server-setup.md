@@ -1,6 +1,6 @@
 # Combined server setup and operation
 
-The unified workspace sends a small versioned runner to a server over your existing SSH connection. That runner fetches exact public component commits and uses Community's supported installer, translation setup, update, status, backup and restore commands. Private repository access is needed only on the computer holding this workspace; no private GitHub credential is copied to the server.
+The unified workspace sends a small versioned runner to a server over your existing SSH connection. That runner fetches exact public component commits and uses Community's supported installer, translation setup, update, status, backup and restore commands. The integration and component source repositories are public. Private preview downloads and original-workspace backups have separate access controls; no GitHub credential is copied to the server.
 
 ## Before setup
 
