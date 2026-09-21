@@ -40,7 +40,7 @@ Earlier delivered calendar, song sharing/publication, search shortcuts, first-cl
 | Component | Selected revision |
 | --- | --- |
 | Heritage / Community | `1d57fe30a4cac26f95450d928e2acbb33bec4743` |
-| SyncShow | `a25d9d1b05de143a91b904fad8f3df1de9800ab8` |
+| SyncShow | `3c669bb2d2598cfba6671b7095e1586919737608` |
 | Multilinguum | `c86c384e3fe7e793e6e583d24bc559c85ba01a95` |
 
 Installed server revisions, private storage inventories and provider-configuration checks belong in the private operational handoff. Inspect the trusted server with the supported status command before maintenance; desired source pins and actual deployment are distinct.

@@ -1,0 +1,193 @@
+{
+  "verifiedOn": "2026-09-21",
+  "source": "3c669bb2d2598cfba6671b7095e1586919737608",
+  "reviewedSource": "856352ad94f51cd073e5db4c9f5fa59572d0443c",
+  "reviewedAndMergedTreesEqual": true,
+  "changedFiles": [
+    ".github/workflows/build.yml",
+    ".github/workflows/package-smoke.yml",
+    "README.md",
+    "docs/COMMUNITY_PREVIEW.md"
+  ],
+  "failedPublicRun": "https://github.com/edydex/SyncShow/actions/runs/35399840569",
+  "failure": "Missing protected Google Drive release configuration.",
+  "resolution": "Preview pushes and manual runs call the four-platform packaging workflow. Each successful platform links checked installer artifacts; permanent private publication remains separate.",
+  "runs": {
+    "prTests": {
+      "url": "https://github.com/edydex/SyncShow/actions/runs/35646720191",
+      "source": "856352ad94f51cd073e5db4c9f5fa59572d0443c",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "Test (windows-latest)",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test (macos-latest)",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test (ubuntu-latest)",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test (macos-15-intel)",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "prPackages": {
+      "url": "https://github.com/edydex/SyncShow/actions/runs/35646720220",
+      "source": "856352ad94f51cd073e5db4c9f5fa59572d0443c",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "Shared broad gate",
+          "conclusion": "success"
+        },
+        {
+          "name": "QA package (linux-x64)",
+          "conclusion": "success"
+        },
+        {
+          "name": "QA package (windows-x64)",
+          "conclusion": "success"
+        },
+        {
+          "name": "QA package (macos-x64)",
+          "conclusion": "success"
+        },
+        {
+          "name": "QA package (macos-arm64)",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "manualPreviewRelease": {
+      "url": "https://github.com/edydex/SyncShow/actions/runs/35647145891",
+      "source": "856352ad94f51cd073e5db4c9f5fa59572d0443c",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "check-version",
+          "conclusion": "success"
+        },
+        {
+          "name": "build-windows",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Build macOS (${{ matrix.arch }})",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Testing installers / Shared broad gate",
+          "conclusion": "success"
+        },
+        {
+          "name": "build-linux",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "create-release",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Testing installers / QA package (macos-x64)",
+          "conclusion": "success"
+        },
+        {
+          "name": "Testing installers / QA package (windows-x64)",
+          "conclusion": "success"
+        },
+        {
+          "name": "Testing installers / QA package (macos-arm64)",
+          "conclusion": "success"
+        },
+        {
+          "name": "Testing installers / QA package (linux-x64)",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "mergedMainTests": {
+      "url": "https://github.com/edydex/SyncShow/actions/runs/35647410740",
+      "source": "3c669bb2d2598cfba6671b7095e1586919737608",
+      "conclusion": "success"
+    }
+  },
+  "routingCases": [
+    {
+      "version": "1.4.0-preview.31",
+      "event": "push",
+      "preview": true,
+      "publicBuild": false,
+      "pass": true
+    },
+    {
+      "version": "1.4.0-preview.31",
+      "event": "workflow_dispatch",
+      "preview": true,
+      "publicBuild": false,
+      "pass": true
+    },
+    {
+      "version": "1.4.0-preview",
+      "event": "workflow_dispatch",
+      "preview": true,
+      "publicBuild": false,
+      "pass": true
+    },
+    {
+      "version": "1.4.0",
+      "event": "workflow_dispatch",
+      "preview": false,
+      "publicBuild": true,
+      "pass": true
+    },
+    {
+      "version": "1.4.0-beta.1",
+      "event": "push",
+      "preview": false,
+      "publicBuild": false,
+      "pass": true
+    },
+    {
+      "version": "1.4.0-beta.1",
+      "event": "workflow_dispatch",
+      "preview": false,
+      "publicBuild": true,
+      "pass": true
+    }
+  ],
+  "windowsPublishedInstallerRecheck": {
+    "verifiedOn": "2026-09-21",
+    "release": "https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.31",
+    "file": "SyncShow.Setup.1.4.0-preview.31.exe",
+    "size": 129324875,
+    "sha256": "9f7a6e0818c185b48c2dbfcf3b392eb7401a35871bf2c1c59d15ffa56f64dd7f",
+    "manifestAndChecksumsMatch": true,
+    "hostedWindowsLaunchPassed": true,
+    "physicalWindowsMachineTest": false
+  },
+  "browserVerification": "Signed-in release page visibly showed the Windows EXE; a successful Windows package summary visibly linked its artifact ZIP.",
+  "publishedPreviewSource": "a25d9d1b05de143a91b904fad8f3df1de9800ab8",
+  "publishedPreviewBytesReplaced": false,
+  "publicReleaseGatesChanged": false,
+  "physicalWindowsInstallTested": false,
+  "manualRunWindowsDownload": {
+    "run": "https://github.com/edydex/SyncShow/actions/runs/35647145891",
+    "source": "856352ad94f51cd073e5db4c9f5fa59572d0443c",
+    "artifact": {
+      "path": "SyncShow Setup 1.4.0-preview.31.exe",
+      "size": 129324874,
+      "sha256": "6d6363e3a4335b5e6d7e8ca8485850b2a022223db8da717741bc43a953f22a19"
+    },
+    "downloadedBytesMatchReceipt": true,
+    "windowsExecutableHeader": true,
+    "launchPassed": true,
+    "appArchiveMatchesPublishedPreview31": true,
+    "electronRuntimeMatchesPublishedPreview31": true,
+    "physicalInstallTest": false
+  }
+}

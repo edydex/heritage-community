@@ -23,6 +23,12 @@ The preview uses the normal SyncShow settings and service library. Automated pac
 
 These installers are retained for owner testing in the private preview-builds repository. SyncShow's public release checks still require dependency source/relinking materials and official Drive configuration. The ordinary QA packages omit maintainer Drive credentials; Community and local presentations do not need those credentials.
 
+## Preview build status
+
+The September 18 public-release run failed while requiring official Drive configuration. The current Preview 31 Windows installer is available at the link above and was downloaded again on September 21: its size and SHA-256 match its published receipts.
+
+Preview pushes and manual **Build and Release** runs now call the four-platform packaging workflow. The repaired manual run passed, including packaged application launch on all four targets. Each successful platform summary links its installer ZIP and verification files; these temporary artifacts expire after seven days. Permanent private publication is separate. The existing Preview 31 release bytes were not replaced by this workflow/documentation fix. See the [repair verification](verification/2026-09-21-syncshow-release-routing.json).
+
 ## Standalone Multilinguum Mac console
 
 [Multilinguum 0.1.1 private downloads](https://github.com/edydex/heritage-preview-builds/releases/tag/multilinguum-v0.1.1-preview.1)
@@ -52,7 +58,7 @@ Connect **Heritage Community** to `https://wotbc.heritage.faith` and approve its
 
 ## Build and verify another platform
 
-Run `node bin/heritage.mjs bootstrap`, then open the pinned SyncShow folder reported by `node bin/heritage.mjs status`. Use Node.js 24, `npm ci`, `npm run ci`, and the native platform build command from [SyncShow's preview guide](https://github.com/edydex/SyncShow/blob/a25d9d1b05de143a91b904fad8f3df1de9800ab8/docs/COMMUNITY_PREVIEW.md).
+Run `node bin/heritage.mjs bootstrap`, then open the pinned SyncShow folder reported by `node bin/heritage.mjs status`. Use Node.js 24, `npm ci`, `npm run ci`, and the native platform build command from [SyncShow's preview guide](https://github.com/edydex/SyncShow/blob/3c669bb2d2598cfba6671b7095e1586919737608/docs/COMMUNITY_PREVIEW.md).
 
 The [Preview 31 package workflow](https://github.com/edydex/SyncShow/actions/runs/35563508953) built CI checkout `4121574c2c196c6081a09f26ec95c24277503139`, whose source tree equals reviewed commit `c1f9e36f1eecb6cf5d3c471e82f1b099399d5b87` and merged main `a25d9d1b05de143a91b904fad8f3df1de9800ab8`. Each platform runs its packaged application, PDF/Sharp and shared service checks before publishing QA artifacts. Permanent downloads retain their verified bytes and provenance. The local canvas rehearsal additionally checks images, shapes and highlights in Chromium and Firefox, and reopens a saved Show package after its original source files are removed.
 
