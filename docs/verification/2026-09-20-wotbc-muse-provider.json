@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-20",
+  "host": "WOTBC Heritage translation processor",
+  "heritageRevision": "b22dae852faf69cb65c85ea40ec543f258f5a892",
+  "multilinguumRevision": "2e1d16e02163593f40ce7a7e22dc6e7c34fc2821",
+  "status": "passed",
+  "source": {
+    "url": "https://archive.org/download/enchiridion_of_st_augustine_librivox/enchiridion_01_augustine_64kb.mp3",
+    "startSeconds": 180,
+    "audioSeconds": 45,
+    "silenceSeconds": 3,
+    "sha256": "e82d621de7c59827ac0f4b8ae3e24562d75116876c4c4ec2a420bc26cf731b78",
+    "kind": "Public-domain human narration; not a church sermon"
+  },
+  "recognition": {
+    "provider": "muse",
+    "model": "muse-voice-transcribe-1.0",
+    "finalSegments": 2,
+    "errors": 0,
+    "keywordCount": 24
+  },
+  "translation": {
+    "profile": "quality",
+    "model": "gpt-6-astra",
+    "requests": 1,
+    "usage": {
+      "input_tokens": 1012,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 440,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1452
+    }
+  },
+  "scope": "Isolated deployed-provider rehearsal on WOTBC: prerecorded human voice, sermon-note keywords, automatic recognition selection, and one Quality text translation per fixture. No microphone, public service, speech synthesis, relay, or physical-device acceptance.",
+  "microphoneUsed": false,
+  "speechRequests": 0,
+  "publicLiveSessionStarted": false,
+  "openaiKeyConfigured": true,
+  "museEncryptedStorageSurvivedUpdate": true,
+  "browserStartEnabled": true,
+  "chargedOrConservativelyEstimatedUsd": 0.1,
+  "accountBillVerified": false,
+  "modules": {
+    "config.js": "64418cd8d253f13c6fadbdcecaee77c1bba617b75a6ce0e05d86a833d2e9425f",
+    "provider-secrets.js": "5e58b5a88124364bacf70ec4de60659b537eccd86e5170eb82bee0c645550527",
+    "transcription-selection.js": "5308a7774322cb3e93989b13d9855d9478884a11dd3162b70c384f4adcecf5c9",
+    "translation-profiles.js": "fcd9b32e45a674ada6bc1b721d862040995a124da680d4c5ece57d4dc2b7dad3",
+    "context-store.js": "6daabe2b3e4cc9d117066abcf6ee73d2d22192046560d1ff292c32ec34c0c0b2",
+    "providers/muse-live-transcriber.js": "333d52aa89116b297818c04eb4f747effeee6c00a12d6636e4426147f801514d",
+    "providers/openai-live-transcriber.js": "c85d6b67479c038c270eb8c6d01ae789cbd91299b56e9903ab4e3a5f3abb804f",
+    "providers/openai-cascade.js": "8f17fbddc4fb3a98df012fd748d6480957576e244fc42d26cc6500d8a18f6957",
+    "providers/realtime-transport.js": "e8a8f794b3902a5928df75a1f287ffc469332482d169b271126c97f6a4f85dd5"
+  }
+}

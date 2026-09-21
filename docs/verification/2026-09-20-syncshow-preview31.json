@@ -1,0 +1,69 @@
+{
+  "version": "1.4.0-preview.31",
+  "sourceRevision": "c1f9e36f1eecb6cf5d3c471e82f1b099399d5b87",
+  "ciCheckout": "4121574c2c196c6081a09f26ec95c24277503139",
+  "mergedMain": "a25d9d1b05de143a91b904fad8f3df1de9800ab8",
+  "sourceTree": "013f644a06346a1060d8ae663aec527a868e8379",
+  "packageRun": "https://github.com/edydex/SyncShow/actions/runs/35563508953",
+  "ciRun": "https://github.com/edydex/SyncShow/actions/runs/35563509042",
+  "targets": [
+    "linux-x64",
+    "darwin-arm64",
+    "darwin-x64",
+    "win32-x64"
+  ],
+  "artifacts": [
+    {
+      "path": "sync-show_1.4.0-preview.31_amd64.deb",
+      "size": 129724512,
+      "sha256": "a8c65f65002d33c1f2698de1bbffde3c5d99b2491d75359fa113a1a3edbe38ff",
+      "target": "linux-x64",
+      "downloadName": "sync-show_1.4.0-preview.31_amd64.deb"
+    },
+    {
+      "path": "SyncShow-1.4.0-preview.31.AppImage",
+      "size": 166464642,
+      "sha256": "afcddb2479038742af3ee057d1d6afb6f33c6318bd19f8edcd44ecd8d2a21faf",
+      "architecture": "x64",
+      "target": "linux-x64",
+      "downloadName": "SyncShow-1.4.0-preview.31.AppImage"
+    },
+    {
+      "path": "SyncShow-1.4.0-preview.31-arm64.dmg",
+      "size": 158914031,
+      "sha256": "e8eebe0fc8da3412efcdc6c2a7b14171f5e754f6ea9c044f102d15f65a69d4ad",
+      "target": "darwin-arm64",
+      "downloadName": "SyncShow-1.4.0-preview.31-arm64.dmg"
+    },
+    {
+      "path": "SyncShow-1.4.0-preview.31-arm64.zip",
+      "size": 159195938,
+      "sha256": "a14b1d9c613ac14b327eef872ca1c490cc3d5a8339cd822ddd92cd9e7b9ff15a",
+      "target": "darwin-arm64",
+      "downloadName": "SyncShow-1.4.0-preview.31-arm64.zip"
+    },
+    {
+      "path": "SyncShow-1.4.0-preview.31-x64.dmg",
+      "size": 164696202,
+      "sha256": "2cbcc91873fcd8e5761a83a80215adb6a1d32b67bc5d4bf0e02c743f456f7ae0",
+      "target": "darwin-x64",
+      "downloadName": "SyncShow-1.4.0-preview.31-x64.dmg"
+    },
+    {
+      "path": "SyncShow-1.4.0-preview.31-x64.zip",
+      "size": 165040540,
+      "sha256": "4d24dbe366f9edc28d0fd64d65601643b445b2d143a4a0f9094d4f6f40504ed1",
+      "target": "darwin-x64",
+      "downloadName": "SyncShow-1.4.0-preview.31-x64.zip"
+    },
+    {
+      "path": "SyncShow Setup 1.4.0-preview.31.exe",
+      "size": 129324875,
+      "sha256": "9f7a6e0818c185b48c2dbfcf3b392eb7401a35871bf2c1c59d15ffa56f64dd7f",
+      "target": "win32-x64",
+      "downloadName": "SyncShow.Setup.1.4.0-preview.31.exe"
+    }
+  ],
+  "publicReleaseReady": false,
+  "boundary": "Verified QA packages for owner testing. Protected public release checks remain unresolved; no distribution authorization is inferred from successful QA."
+}
