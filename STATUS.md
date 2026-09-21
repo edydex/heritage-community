@@ -26,8 +26,10 @@ The integration/source repositories are **public**. Owner preview installers and
 - **BSB audio:** all 66 books / 1,189 Barry Hays recordings. All 1,189 chapters were rebuilt against complete text; accepted automatic timings cover 29,630 of 31,102 verse entries (95.27% coverage, not accuracy). Unmatched verses play without guessed markers. SYNO/UKRK recordings require permission and exact-edition confirmation. [Audio sources and limits](https://github.com/edydex/heritage_study_bible/blob/main/docs/BIBLE-AUDIO.md).
 - **Audiobook text:** all nine internally readable audiobooks / 383 recordings have checked phrase-to-paragraph links. Polycarp and Tertullian have separately named matching translations; Institutes includes both Allen volumes. Existing editions, bookmarks and recording IDs are preserved. Timings are automatic and unmatched passages remain unlinked. [Alignment method and reproducible commands](https://github.com/edydex/heritage_study_bible/blob/main/docs/AUDIOBOOK-TEXT.md).
 - **Original languages:** named WLC 4.20 / OSHB Hebrew-Aramaic OT and Nestle 1904 Greek NT. Romans has 5,187 attested Greek/BSB word-link groups across 376 whole-verse matches; unmatched variants and unverified numbering are left unlinked. The parallel reader uses gentle color tints by default or patterned B&W links. Tap for word occurrences; hold or Shift+Enter for a checked counterpart. N1904 Greek searches use source lemmas; other searches label their word-form scope. [Sources and attribution](https://github.com/edydex/heritage_study_bible/blob/main/docs/ORIGINAL-LANGUAGES.md).
-- **Muse:** English preference, explicit Russian OpenAI fallback, locally extracted sermon vocabulary and encrypted server token storage. A bounded English recognition and Quality EN→RU translation check used public-domain human narration. It did not open a microphone, generate speech or start a public service. Operational receipts remain private.
+- **Muse:** English preference, explicit Russian OpenAI fallback, locally extracted sermon vocabulary and encrypted server token storage. Vocabulary extraction filters common Russian and English connecting words before ranking names and terms, preserving the bounded hint budget for bilingual notes. A bounded English recognition and Quality EN→RU translation check used public-domain human narration. It did not open a microphone, generate speech or start a public service. The hint-filter regression does not establish provider recognition accuracy. Operational receipts remain private.
 - **Later research:** proposed prophecy-fulfillment tables have a source/uncertainty roadmap; the musician screen remains documented future work. Neither is presented as implemented history or generated musical arrangements.
+
+The bilingual vocabulary correction passed deployed context-store checks using generated notes; see [the bounded verification record](docs/verification/2026-09-21-bilingual-hints.json). This establishes the corrected hint behavior, not measured recognition quality.
 
 Earlier delivered calendar, song sharing/publication, search shortcuts, first-click verse navigation, slide objects/highlighting, compact editor, Undo, pointer/gallery and notes/progress sync remain available. Evidence is retained in [the dated verification records](docs/verification/), [the expansion chronology](docs/EXPANSION-2026-09-20.md), and the current [requirement audit](docs/EXPANSION-AUDIT-2026-09-21.md).
 
@@ -39,7 +41,7 @@ Earlier delivered calendar, song sharing/publication, search shortcuts, first-cl
 | --- | --- |
 | Heritage / Community | `343e2324479dfbcb094879c7d7e9c09f2fcc23be` |
 | SyncShow | `a25d9d1b05de143a91b904fad8f3df1de9800ab8` |
-| Multilinguum | `90f91308eaa46e6ed2e4b738e287f5f6bcd46257` |
+| Multilinguum | `c86c384e3fe7e793e6e583d24bc559c85ba01a95` |
 
 Installed server revisions, private storage inventories and provider-configuration checks belong in the private operational handoff. Inspect the trusted server with the supported status command before maintenance; desired source pins and actual deployment are distinct.
 
