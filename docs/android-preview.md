@@ -4,9 +4,9 @@ The Android Community preview brings Community Home, passage-linked published se
 
 ## Install or update
 
-In the installed Android app, open **Settings → Advanced Settings** and check for updates. [Heritage 1.1.47-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.47-preview.1) is now the normal GitHub Latest release, and the installed checker detects it from earlier builds through 1.1.46. Version code 50 preserves the existing application identity and signer.
+In the installed Android app, open **Settings → Advanced Settings** and check for updates. [Heritage 1.1.48-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.48-preview.1) is now the normal GitHub Latest release, and the installed checker detects it from earlier builds through 1.1.47. Version code 51 preserves the existing application identity and signer.
 
-You can also download `heritage-study-bible-1.1.47-preview.1-debug.apk` from that release. Install it over the existing Heritage app; keep the previous installation and its data until the phone rehearsal passes. Do not uninstall first. The release check requires the same application ID and signer as v1.1.32 and a higher Android version code. This release increases the numeric version, so the older checker can detect it too.
+You can also download `heritage-study-bible-1.1.48-preview.1-debug.apk` from that release. Install it over the existing Heritage app; keep the previous installation and its data until the phone rehearsal passes. Do not uninstall first. The release check requires the same application ID and signer as v1.1.32 and a higher Android version code. This release increases the numeric version, so the older checker can detect it too.
 
 Published future Android builds use the same normal update feed, including labelled development previews. The publishing process now rejects suffix-only version increments and native version codes that cannot update the latest APK, verifies asset integrity, and checks the actual Latest response. Build-only CI artifacts are not automatically published. See the [update-feed verification](verification/2026-09-14-android-update-feed.md).
 
@@ -38,11 +38,11 @@ Community → Calendar starts with Events enabled and Recurring disabled. WOTBC 
 
 ## Acceptance boundary
 
-Automated native checks use an Android emulator with Wi-Fi and mobile data disabled. The latest download matches all 697 web assets from its source, the native audio catalog and the verified signer. Eleven tests cover audio playback/car browsing/storage in addition to the bundled Community screens, native encrypted storage, Automatic Sync preference persistence across activity restart, offline Bible opening, and rejection of ciphertext moved to another storage key. The tests use synthetic values and do not send an email, access a real member song or call a translation provider.
+Automated native checks use an Android emulator with Wi-Fi and mobile data disabled. The latest download matches all 697 web assets from its source, the native audio catalog and the verified signer. Twelve tests cover audio playback/car browsing/storage in addition to the bundled Community screens, native encrypted storage, Automatic Sync preference persistence across activity restart, offline Bible opening, and rejection of ciphertext moved to another storage key. The tests use synthetic values and do not send an email, access a real member song or call a translation provider.
 
 Physical-phone installation/update, real email return into the app, member sign-in, native sharing, microphone/audio playback and a bilingual service rehearsal still require device acceptance. The separate real desktop-browser note/progress synchronization evidence does not substitute for these phone checks.
 
-[Current build, published assets and acceptance evidence](verification/2026-09-21-android-1.1.47.json). Earlier [Automatic Sync native evidence](verification/2026-09-14-automatic-sync.json) remains available.
+[Current build, published assets and acceptance evidence](verification/2026-09-21-android-1.1.48.json). Earlier [Automatic Sync native evidence](verification/2026-09-14-automatic-sync.json) remains available.
 
 Version 1.1.35 also formats verse cues and slide dividers as readable headings and paragraph breaks. Its built-in Russian hymns are limited to two sourced texts; church-published songs remain available.
 
@@ -62,10 +62,12 @@ The native media session supports background/headset/notification controls and a
 
 **Go to nearby text** now covers matched portions of all 384 recordings in the ten internally readable audiobooks. Polycarp uses the Lake translation, Tertullian uses Dodgson, and Institutes includes both Allen volumes. Earlier reading editions and bookmarks remain separate. Recording IDs, saved listening positions and existing downloads are preserved. Unmatched passages open the book normally; these are automatic paragraph links, not exact word highlighting. The parallel reader also offers named WLC/OSHB Hebrew-Aramaic and Nestle 1904 Greek texts, with 94,788 checked Greek/BSB word-link groups across 6,596 matching NT verse records. Word occurrence results include BSB wording with the translated phrase highlighted beside the source Greek; missing mappings are labeled. Hebrew/Aramaic results provide BSB context without claiming exact word alignment. Tap words for occurrences; hold them or press Shift+Enter for counterparts. Settings → B&W word links switches subtle tints to patterns. Audiobooks also follow the playing paragraph while their matching text is open.
 
-The unpublished 1.1.40 attempt passed native acceptance but its publisher exceeded a response buffer while reading a large source commit. Version 1.1.41 repaired that path; 1.1.47 also passes independent update-feed verification. No older published tag or APK was replaced.
+The unpublished 1.1.40 attempt passed native acceptance but its publisher exceeded a response buffer while reading a large source commit. Version 1.1.41 repaired that path; 1.1.48 also passes independent update-feed verification. No older published tag or APK was replaced.
 
 Version 1.1.45 added the chronological plan’s optional Day 250 Egypt prophecy comparison. Oracle dates, proposed events and their evidential limits stay separate; Scripture links open the exact verse. It is preliminary editorial research with specialist review pending.
 
 Version 1.1.46 adds internal Maximus text and paragraph following using the historical edition linked by LibriVox. All ten audiobooks now have internal reading text and installed automatic matches. Existing recordings, downloads and listening positions keep their identities.
 
 Version 1.1.47 removes blank Bible reading highlights between verses. The marker advances as the previous interval ends, while tap-to-seek still requires a verified timestamp. See [continuous-follow verification](verification/2026-09-21-continuous-audio-highlight.json).
+
+Version 1.1.48 fixes Android Bible marker delay by scheduling from the native playback service clock at verse boundaries. Ezekiel 42 exposed the old one-second update interval; pause, seek and 0.75×/1×/2× playback now pass measured native checks. The timestamp dataset is unchanged. [Verification](verification/2026-09-21-android-boundary-clock.json). Physical-phone listening remains the next acceptance step.

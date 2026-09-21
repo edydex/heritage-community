@@ -1,0 +1,163 @@
+{
+  "date": "2026-09-21",
+  "sourceCommit": "0ad38396c7235f4cbb848d76e15653dcc008700c",
+  "chapter": "Ezekiel 42",
+  "baseline": {
+    "version": "1.1.47-preview.1",
+    "measuredUpperLatencyMs": 982.7656593322754,
+    "clock": "ExoPlayer service",
+    "failsNewRegression": true
+  },
+  "fixed": {
+    "version": "1.1.48-preview.1",
+    "measurements": [
+      {
+        "verse": 1,
+        "boundary": 4.642468681335449,
+        "rate": 2,
+        "observedUpperLatencyMs": 96.26565933227539,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 2,
+        "boundary": 15.34246898651123,
+        "rate": 2,
+        "observedUpperLatencyMs": 30.265506744384766,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 3,
+        "boundary": 22.04246879577637,
+        "rate": 2,
+        "observedUpperLatencyMs": 74.2656021118164,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 4,
+        "boundary": 33.402467498779295,
+        "rate": 2,
+        "observedUpperLatencyMs": 59.26625061035156,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 2,
+        "boundary": 15.34246898651123,
+        "rate": 1,
+        "observedUpperLatencyMs": 205.53101348876953,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 3,
+        "boundary": 22.04246879577637,
+        "rate": 0.75,
+        "observedUpperLatencyMs": 215.37493896484375,
+        "observationSpanMs": 0
+      }
+    ],
+    "nativeTests": [
+      "com.getcapacitor.myapp.ExampleInstrumentedTest.useAppContext",
+      "faith.heritage.app.AudioPlaybackIntegrationTest.appAndCarSharePlaybackWhichContinuesAfterTheReaderCloses",
+      "faith.heritage.app.AudioPlaybackIntegrationTest.carLibraryAndSavedQueueLoadWithoutOpeningTheBible",
+      "faith.heritage.app.AudioPlaybackIntegrationTest.ezekielVerseHighlightsFollowTheNativeClockAtRealBoundaries",
+      "faith.heritage.app.AudioPlaybackIntegrationTest.legacyCarBrowserCanDiscoverTheLibraryWithoutOpeningTheReader",
+      "faith.heritage.app.AudioPlaybackIntegrationTest.offlineResolverRejectsTraversalAndUnrelatedAppFiles",
+      "faith.heritage.app.AudioStorageIntegrationTest.deleteOfflineAudioThroughInternalStorage",
+      "faith.heritage.app.AudioStorageIntegrationTest.interruptedTransferCanBeRemovedWithoutTouchingNotes",
+      "faith.heritage.app.CommunityIntegrationTest.automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+      "faith.heritage.app.CommunityIntegrationTest.encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+      "faith.heritage.app.CommunityIntegrationTest.packagedCommunityScreensAndMemberLinkWorkOffline",
+      "faith.heritage.app.CommunityIntegrationTest.secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+    ]
+  },
+  "actualRecording": {
+    "url": "https://openbible.com/audio/hays/BSB_26_Ezk_042_H.mp3",
+    "sha256": "dfbae098283c2a8a928a2771ca00846e73489f2b6930fa5156b7d01009459dad",
+    "matchesAlignmentSource": true
+  },
+  "limitations": [
+    "Timing regression uses self-generated PCM and exact shipped boundaries; it is not a human listening accuracy test.",
+    "Physical Android phone retest remains pending.",
+    "No recording timestamps were shifted."
+  ],
+  "testCommit": "16711ff8afe18019261dd5628715060353c5e645",
+  "sourceRevision": "a16045070e938ab7a22d5cfcf0653a388210ab05",
+  "release": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.48-preview.1",
+  "liveWeb": {
+    "url": "https://heritage.faith/#/ezekiel/42",
+    "sourceRevision": "a16045070e938ab7a22d5cfcf0653a388210ab05",
+    "assets": {
+      "index.html": "9d7c3d3acbf100511397795b425f06d00844330c295c43f190b66d9ff5be04e0",
+      "data/books/maximus-disputation-clark.txt": "29cefd9906eae613a06f020f50475fb9f9f17fb8bd683437c253bd7314080e82",
+      "data/audio/books/maximus-cosmic-mystery.json": "10cc1e62b724aceb8be2a9730ce9d390683e296a65be88e64d7a65691a2dc7e3",
+      "data/audio/bsb-hays/romans.json": "e60ccbf4c481917aad1c4e348f07cc831c1c5632a99dd2539416376709182697",
+      "data/audio/bsb-hays/ezekiel.json": "d42ced8e68f685278731378a08f26c413e6569519451ad76e2141bc0748f00b1",
+      "assets/index--bWG6VCn.js": "4bd18713276aafb6b2695175a0241b0e17d4f0e778981609aba93168e45fc9af",
+      "assets/index-fp3domWb.css": "36ef13ad0b1a925302a10a4d6ab77d3cd2da97b16df68ad4da1cc42992a4c5b1"
+    }
+  },
+  "ciLatency": {
+    "chapter": "Ezekiel 42",
+    "clock": "ExoPlayer service",
+    "audio": "generated PCM fixture",
+    "measurements": [
+      {
+        "verse": 1,
+        "boundary": 4.642468681335449,
+        "rate": 2,
+        "observedUpperLatencyMs": 77.26565933227539,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 2,
+        "boundary": 15.34246898651123,
+        "rate": 2,
+        "observedUpperLatencyMs": 111.76550674438477,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 3,
+        "boundary": 22.04246879577637,
+        "rate": 2,
+        "observedUpperLatencyMs": 15.765602111816406,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 4,
+        "boundary": 33.402467498779295,
+        "rate": 2,
+        "observedUpperLatencyMs": 96.26625061035156,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 2,
+        "boundary": 15.34246898651123,
+        "rate": 1,
+        "observedUpperLatencyMs": 214.53101348876953,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 3,
+        "boundary": 22.04246879577637,
+        "rate": 0.75,
+        "observedUpperLatencyMs": 222.0416056315104,
+        "observationSpanMs": 0
+      }
+    ]
+  },
+  "checks": {
+    "javascriptUnitTests": 293,
+    "protocolTests": 127,
+    "focusedBrowserAudioTests": 5,
+    "javaTimingUnitTests": 4,
+    "nativeAcceptanceTests": 12
+  },
+  "regressionGate": {
+    "initialRun": "https://github.com/edydex/heritage_study_bible/actions/runs/35651095126",
+    "corrections": [
+      "Compare observed marker to the post-observation service clock.",
+      "Match the recording sample rate and wait for fixture service shutdown."
+    ],
+    "latencyLimitMs": 300,
+    "finalRun": "https://github.com/edydex/heritage_study_bible/actions/runs/35653134499"
+  }
+}
