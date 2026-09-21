@@ -1,23 +1,23 @@
 # SyncShow Community preview
 
-Version **1.4.0-preview.31** includes Community preparation, full-screen/lower-third/ticker translation, and paired tablet teaching. The pointer fades progressively over one second; the remote gallery lets the pastor choose nearby slides, and any remote's confirmed slide change shows a wide notice on the host control screen. Translation screens can open without loading slides or starting Show. Preview 29 adds separately approved access to private recordings from the shared controls. The shared console also loads saved language, Quality/Economy, speech and note choices for a prepared service.
+Version **1.4.0-preview.32** includes Community preparation, full-screen/lower-third/ticker translation, and paired tablet teaching. The pointer fades progressively over one second; the remote gallery lets the pastor choose nearby slides, and any remote's confirmed slide change shows a wide notice on the host control screen. Translation screens can open without loading slides or starting Show. Preview 29 adds separately approved access to private recordings from the shared controls. The shared console also loads saved language, Quality/Economy, speech and note choices for a prepared service.
 
 ## Download and install
 
-Published September 20, 2026 (Pacific time). All seven installers, provenance and checksums are attached; every published asset’s size and SHA-256 matches the verified local file.
+Published September 21, 2026 (Pacific time). All seven installers, provenance and checksums are attached; every published asset’s size and SHA-256 matches the verified local file.
 
-The [permanent private GitHub downloads](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.31) add patterned monochrome tablet controls and authorized Bible imports. Sign into GitHub with access to `edydex/heritage-preview-builds`. That repository is private; the integration/source repositories are public. These downloads remain available after temporary CI artifacts expire.
+The [permanent private GitHub downloads](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.32) add the distinct reading/sermon Scripture layouts and per-output sermon title images; patterned monochrome tablet controls and authorized Bible imports remain available. Sign into GitHub with access to `edydex/heritage-preview-builds`. That repository is private; the integration/source repositories are public. These downloads remain available after temporary CI artifacts expire.
 
 | Computer | Installer |
 | --- | --- |
-| Windows 10/11, x64 | [Download Windows installer](https://github.com/edydex/heritage-preview-builds/releases/download/syncshow-v1.4.0-preview.31/SyncShow.Setup.1.4.0-preview.31.exe) |
-| Mac, Apple Silicon | [Download arm64 DMG](https://github.com/edydex/heritage-preview-builds/releases/download/syncshow-v1.4.0-preview.31/SyncShow-1.4.0-preview.31-arm64.dmg) |
-| Mac, Intel | [Download x64 DMG](https://github.com/edydex/heritage-preview-builds/releases/download/syncshow-v1.4.0-preview.31/SyncShow-1.4.0-preview.31-x64.dmg) |
-| Linux, x64 | [AppImage](https://github.com/edydex/heritage-preview-builds/releases/download/syncshow-v1.4.0-preview.31/SyncShow-1.4.0-preview.31.AppImage) or [Debian package](https://github.com/edydex/heritage-preview-builds/releases/download/syncshow-v1.4.0-preview.31/sync-show_1.4.0-preview.31_amd64.deb) |
+| Windows 10/11, x64 | [Download Windows installer](https://github.com/edydex/heritage-preview-builds/releases/download/syncshow-v1.4.0-preview.32/SyncShow.Setup.1.4.0-preview.32.exe) |
+| Mac, Apple Silicon | [Download arm64 DMG](https://github.com/edydex/heritage-preview-builds/releases/download/syncshow-v1.4.0-preview.32/SyncShow-1.4.0-preview.32-arm64.dmg) |
+| Mac, Intel | [Download x64 DMG](https://github.com/edydex/heritage-preview-builds/releases/download/syncshow-v1.4.0-preview.32/SyncShow-1.4.0-preview.32-x64.dmg) |
+| Linux, x64 | [AppImage](https://github.com/edydex/heritage-preview-builds/releases/download/syncshow-v1.4.0-preview.32/SyncShow-1.4.0-preview.32.AppImage) or [Debian package](https://github.com/edydex/heritage-preview-builds/releases/download/syncshow-v1.4.0-preview.32/sync-show_1.4.0-preview.32_amd64.deb) |
 
 1. Quit any running SyncShow copy.
 2. On Windows, run the EXE and follow the installer. On Mac, open the DMG and copy SyncShow to Applications. Keep your previous installer until your church rehearsal passes.
-3. Open the new copy and confirm application version `1.4.0-preview.31`. The attached provenance file records the exact source and checksums. Native package metadata uses counter `140031`. Update Preview 29 before loading a service with Other slides or text highlights.
+3. Open the new copy and confirm application version `1.4.0-preview.32`. The attached provenance file records the exact source and checksums. Native package metadata uses counter `140032`. Update Preview 29 before loading a service with Other slides or text highlights.
 
 The preview uses the normal SyncShow settings and service library. Automated package checks use a separate temporary profile. Windows is unsigned. The Mac preview is ad-hoc signed and not notarized; use macOS's per-app Open Anyway action if it blocks this known preview. No automatic updater is enabled by this private download publication.
 
@@ -25,9 +25,9 @@ These installers are retained for owner testing in the private preview-builds re
 
 ## Preview build status
 
-The September 18 public-release run failed while requiring official Drive configuration. The current Preview 31 Windows installer is available at the link above and was downloaded again on September 21: its size and SHA-256 match its published receipts.
+Preview 32 passed all four native package and launch checks. Seven installers and ten verification/checksum files are published permanently at the links above; all uploaded digests match and the Windows download was independently compared. See the [service-layout verification](verification/2026-09-21-service-layout.md).
 
-Preview pushes and manual **Build and Release** runs now call the four-platform packaging workflow. The repaired manual run passed, including packaged application launch on all four targets. Each successful platform summary links its installer ZIP and verification files; these temporary artifacts expire after seven days. Permanent private publication is separate. The existing Preview 31 release bytes were not replaced by this workflow/documentation fix. See the [repair verification](verification/2026-09-21-syncshow-release-routing.json).
+Preview pushes and manual **Build and Release** runs call the four-platform packaging workflow. Temporary workflow artifacts expire after seven days; the private release downloads do not. Older Preview 31 bytes remain unchanged. See the earlier [workflow repair](verification/2026-09-21-syncshow-release-routing.json).
 
 ## Standalone Multilinguum Mac console
 
@@ -58,12 +58,14 @@ Connect **Heritage Community** to `https://wotbc.heritage.faith` and approve its
 
 ## Build and verify another platform
 
-Run `node bin/heritage.mjs bootstrap`, then open the pinned SyncShow folder reported by `node bin/heritage.mjs status`. Use Node.js 24, `npm ci`, `npm run ci`, and the native platform build command from [SyncShow's preview guide](https://github.com/edydex/SyncShow/blob/3c669bb2d2598cfba6671b7095e1586919737608/docs/COMMUNITY_PREVIEW.md).
+Run `node bin/heritage.mjs bootstrap`, then open the pinned SyncShow folder reported by `node bin/heritage.mjs status`. Use Node.js 24, `npm ci`, `npm run ci`, and the native platform build command from [SyncShow's preview guide](https://github.com/edydex/SyncShow/blob/389791c9af20393bdc3bb3b9c0128769895a6756/docs/COMMUNITY_PREVIEW.md).
 
-The [Preview 31 package workflow](https://github.com/edydex/SyncShow/actions/runs/35563508953) built CI checkout `4121574c2c196c6081a09f26ec95c24277503139`, whose source tree equals reviewed commit `c1f9e36f1eecb6cf5d3c471e82f1b099399d5b87` and merged main `a25d9d1b05de143a91b904fad8f3df1de9800ab8`. Each platform runs its packaged application, PDF/Sharp and shared service checks before publishing QA artifacts. Permanent downloads retain their verified bytes and provenance. The local canvas rehearsal additionally checks images, shapes and highlights in Chromium and Firefox, and reopens a saved Show package after its original source files are removed.
+The [Preview 32 package workflow](https://github.com/edydex/SyncShow/actions/runs/35666565564) built CI checkout `0fdaae6d2711bfb4209f61a54b4412cfc2b9befe`, whose source tree equals reviewed commit `82ab63a9da0e8febd3fb1452ebeed934633a77d3` and merged main `389791c9af20393bdc3bb3b9c0128769895a6756`. Each platform launches its packaged application and checks its runtime before uploading QA artifacts. The release retains these exact verified bytes and provenance.
 
-In Community, choose **Prepare a sermon → Other**, or add Other under Sermon while planning a service. Add text, pictures, braces and circles; drag the Move, Resize and Rotate handles or use numeric controls. Select words for **Highlight**. English and Russian can have separate layouts; Russian follows to the stage output. Save, add the sermon to a service and load it in Preview 31. See the [current verification record](verification/2026-09-16-reader-canvas.md).
+In Community, choose **Prepare a sermon → Other**, or add Other under Sermon while planning a service. Add text, pictures, braces and circles; drag the Move, Resize and Rotate handles or use numeric controls. Select words for **Highlight**. English and Russian can have separate layouts; Russian follows to the stage output. Save, add the sermon to a service and load it in Preview 32. See the [current verification record](verification/2026-09-16-reader-canvas.md).
 
 Physical tablet, mixer and venue-network acceptance remain to be done. A bounded real-sermon provider test ran on the original Multilinguum host, but exposed recognition errors; it does not establish WOTBC delivery or translation quality. See the [Preview 29 and recording-review record](verification/2026-09-14-shared-archive-review.md) and [API-test budget](verification/api-test-budget.json).
 
-Preview 31 adds **Monochrome** in tablet teaching, with named patterns and a used-color reference while congregation colors stay unchanged. Authorized Bible editions can be installed through **Prepare → This computer → Scripture → Bible translations**; imported text and credits travel with offline service packages. Check the installed server and configured providers separately before the venue rehearsal; provider success does not establish physical capture or bilingual sermon quality.
+Preview 31 introduced **Monochrome** in tablet teaching, with named patterns and a used-color reference while congregation colors stay unchanged. Authorized Bible editions can be installed through **Prepare → This computer → Scripture → Bible translations**; imported text and credits travel with offline service packages. Check the installed server and configured providers separately before the venue rehearsal; provider success does not establish physical capture or bilingual sermon quality.
+
+The September 21 service-layout update adds forgiving verse/chorus/part headings, per-song default language, a reading title slide and prior sermon-point context over Scripture. English/Russian sermon title images are independent. Existing service song snapshots stay unchanged; re-add a song to adopt updated library formatting. [Verification and acceptance limits](verification/2026-09-21-service-layout.md).

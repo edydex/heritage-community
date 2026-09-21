@@ -10,8 +10,8 @@ The September expansion is implemented and merged into the component repositorie
 | --- | --- |
 | Heritage web reader | Live audio library, saved listening position, compact BSB playback, default-on text following, audiobook paragraph navigation and named original-language parallel texts. |
 | Android | [1.1.50-preview.1 / code 53](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.50-preview.1) is published through the normal Latest feed. All three downloaded assets, signer, 697 bundled web files and twelve native tests passed; the actual checker detects it from older versions. [Release receipt](docs/verification/2026-09-21-android-1.1.50.json). |
-| Community server | Accessible slide authoring, private Bible imports, existing preparation/calendar/song workflows and Muse settings are implemented. Operational deployment receipts remain private. |
-| SyncShow | [Preview 31](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.31) has seven verified private installers: Windows, both Mac architectures and Linux. All 17 assets were downloaded and matched their hashes. Public distribution gates remain open. |
+| Community server | Flexible song section parsing, inline default song language, distinct reading/sermon Scripture layouts, and independent sermon title images are implemented alongside existing workflows. Operational deployment receipts remain private. |
+| SyncShow | [Preview 32](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.32) has seven verified private installers: Windows, both Mac architectures and Linux. All 17 uploaded assets match their verified hashes; the Windows installer was downloaded again and matched byte-for-byte. Public distribution gates remain open. |
 | Multilinguum | Muse recognition, explicit Russian fallback, notes vocabulary and encrypted provider settings are implemented for the Community companion. Both 0.1.1 Mac installers passed hosted builds and independent mounted-bundle verification. The Apple-silicon download launches. [Both Mac installers](https://github.com/edydex/heritage-preview-builds/releases/tag/multilinguum-v0.1.1-preview.1) and seven verification files are published privately; all nine downloads match the verified originals. |
 | Repository preservation | Maintained component features are merged into main. Original dirty Heritage/SyncShow workspaces were privately backed up and restored byte-for-byte; they were not reset or replaced. |
 
@@ -39,8 +39,8 @@ Earlier delivered calendar, song sharing/publication, search shortcuts, first-cl
 
 | Component | Selected revision |
 | --- | --- |
-| Heritage / Community | `652d726e2d5a9134d1576b56aeffd360271abfa3` |
-| SyncShow | `3c669bb2d2598cfba6671b7095e1586919737608` |
+| Heritage / Community | `0c3ce7d60024224fc6eacc0c0cdd51a2a3d40a41` |
+| SyncShow | `389791c9af20393bdc3bb3b9c0128769895a6756` |
 | Multilinguum | `c86c384e3fe7e793e6e583d24bc559c85ba01a95` |
 
 Installed server revisions, private storage inventories and provider-configuration checks belong in the private operational handoff. Inspect the trusted server with the supported status command before maintenance; desired source pins and actual deployment are distinct.
@@ -63,3 +63,5 @@ Version 1.1.47 removes blank Bible reading highlights between verses. The marker
 Version 1.1.48 fixes Android Bible marker delay by scheduling from the native playback service clock at verse boundaries. Ezekiel 42 exposed the old one-second update interval; pause, seek and 0.75×/1×/2× playback now pass measured native checks. The timestamp dataset is unchanged. [Verification](docs/verification/2026-09-21-android-boundary-clock.json). Physical-phone listening remains the next acceptance step.
 
 Version 1.1.50 groups Bible recordings by translation, fixes Android audio-page system-bar spacing and icon contrast, simplifies reader settings, and adds hold-to-open player controls with a timeline and ten-second jumps. All ten audiobooks now have 55,016 automatic sentence segments across 384 recordings. Existing text, bookmarks, listening positions and downloads are preserved. [Release verification](docs/verification/2026-09-21-android-1.1.50.json). Physical-device and listening acceptance remain open.
+
+The September 21 service-layout update adds forgiving verse/chorus/part headings, per-song default language, a reading title slide and prior sermon-point context over Scripture. English/Russian sermon title images are independent. Existing service song snapshots stay unchanged; re-add a song to adopt updated library formatting. [Verification and acceptance limits](docs/verification/2026-09-21-service-layout.md).
