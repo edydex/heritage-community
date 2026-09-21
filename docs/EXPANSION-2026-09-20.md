@@ -1,5 +1,15 @@
 # September expansion and repository normalization
 
+**Historical snapshot: September 20, 2026.** The counts and release revisions
+below describe that delivery, not the latest state. Subsequent work completed
+all nine internally readable audiobooks / 383 recordings, replaced timings for
+all 1,189 BSB chapters (29,630 accepted verse entries), and shipped compact audio
+controls in Android 1.1.43. Multilinguum's standalone Mac installers have now
+been built and independently verified; permanent publication is still pending.
+Use [STATUS](../STATUS.md) and the [requirement audit](EXPANSION-AUDIT-2026-09-21.md)
+for current delivery and remaining acceptance. Do not restart a worker merely
+because this historical snapshot says processing is underway.
+
 This public summary describes application behavior, source checks and released artifacts. Private deployment receipts, provider settings, raw transcripts, service-deck/song inventories and budget records remain in the owner's operational handoff. The source repositories are public; private previews and original-workspace backups have separate access controls.
 
 ## Implemented
