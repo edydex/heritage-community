@@ -126,3 +126,11 @@ Public-domain recording permission is stated by Bible Hub and AudioBible.org. Ex
 267 unit tests / 124 protocol tests passed. All five audio browser tests passed in Chromium and Firefox; real public Romans 1 playback/seek also passed in both with no page errors/phone overflow. Playback smoke was muted, so it does not establish spoken-word alignment accuracy. Android app/instrumentation packages compile and native car acceptance now checks the Bible root/queue. Hosted non-publishing Android run35559852399 and reader35559855486/Community35559855487 are running. No new released APK or deployment yet. Previous Heritage0e32102 checks all passed.
 
 SyncShowee25a1c all9checks passed; Multi2e1d16e unchanged. No added API spend ($0.81 ledger). Remaining work includes complete timing quality, exact audiobook alignment, Hebrew/Aramaic, Muse deployment/capture, dirty-original preservation, main consolidation and verified releases.
+
+## Hebrew and Aramaic checkpoint
+
+Heritage `b22dae852faf69cb65c85ea40ec543f258f5a892` is published on the expansion branch. All 39 OT books now use the named WLC 4.20 / Open Scriptures Hebrew Bible witness. Right-to-left text keeps written readings separate from qere alternatives; the generator accounts for all 305,507 written source words, retains source references and handles reviewed BSB verse-boundary differences. Hebrew Psalm headings remain separate. Nehemiah 7:68 is absent from this witness and is not invented. Unverified primary numbering such as UKRK leaves the source column empty. Greek and attested Romans links remain available. See Heritage docs/ORIGINAL-LANGUAGES.md.
+
+271 reader unit tests and 124 protocol tests passed. Five focused Hebrew/audio browser tests passed in each of Chromium and Firefox, including narrow layouts and the visible BSB audio marker in parallel mode. Production build passed. Hosted acceptance for this head is running: Android 35560995243, reader 35560940843, Community 35560940758. All BSB 6433c79 hosted checks, including eleven packaged Android tests, finished successfully.
+
+No new deployment or released APK in this checkpoint. Exact audiobook text navigation, improved Bible-audio timing, Muse deployment/human-sermon capture and repository preservation/consolidation/releases remain active. No added API spending.
