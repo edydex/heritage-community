@@ -1,6 +1,6 @@
 # September expansion: hands-on checks
 
-Use Android **1.1.45-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
+Use Android **1.1.47-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
 
 1. **Resume listening.** Open Audio, choose an audiobook, seek a few minutes in and change playback speed. Navigate back to the Bible, lock the phone, then return. Pause, close and reopen the app. Expected: the saved recording/position remains; reopening does not start audio unexpectedly. Test headset pause/play and the notification controls too.
 2. **Offline files and storage.** Download one short recording, switch the phone offline and play/seek it. Open Internal Storage and remove that recording. Expected: the local file disappears, listening position and reading notes remain, and online streaming works again after reconnecting. Interrupt a second download and verify it is removable/retryable without a corrupt item showing as downloaded. Keep the app open for large downloads.
@@ -86,10 +86,24 @@ These checks verify behavior. A reader should still spot-check source senses
 and contextual translations; structural correspondence checks do not constitute
 a complete scholarly review.
 
-## Egypt prophecy comparison (Android 1.1.45 and web)
+## Egypt prophecy comparison (introduced in Android 1.1.45 and web)
 
 1. Open the chronological plan at Day 250, then the Egypt note. The dated-oracle timeline should appear first; the proposed-fulfillment section starts collapsed.
 2. Expand it. On a phone, each entry stacks vertically without horizontal scrolling. Read the distinction between the attested campaign and its disputed outcome; the forty-year desolation must retain an unknown fulfillment date.
 3. Tap the exact **Ezekiel 29:17** context link. The reader should land at verse 17 on the first click. Go back; following the reference must not mark the note done.
 4. Open the historical sources and have a historically informed reader review the claims and limitations. Automated layout/link tests do not establish historical or theological acceptance.
 5. Existing saved chapter/note completion should remain. The new Egypt note is a separate reading item; opening its optional comparison alone does not complete it.
+
+## Maximus internal text (introduced in Android 1.1.46 and web)
+
+1. Resume Maximus in Audio Settings from an existing timestamp; choose **Go to nearby text**. It should open inside Heritage, at a marked paragraph, on the first tap.
+2. Confirm **William R. Clark, 1896 · Audio text** and the source scan link. This is Hefele’s historical account of the disputation.
+3. Check beginning, middle and closing narration. Automatic matching covers 77.7% of duration, not all speech; introductions, short replies and uncertain passages can remain unmarked. Record exact timestamps for incorrect matches.
+4. Reload and confirm the same nearby paragraph. The compact Play/Pause control should still work, without an extra fixed player. Existing saved audio should continue to play offline after the update.
+
+## Continuous Bible audio marker (Android 1.1.47 and web)
+
+1. Play Romans 8 with following enabled. Watch the transition from verse 8 to verse 9: verse 9 should be marked as soon as verse 8 ends, without a blank interval.
+2. Tap verse 9: because its timing is not verified, the app should explain that it has no verified audio position and leave playback unchanged. Tap verse 10 to check verified seeking.
+3. Try ordinary pauses in other chapters and the closing narration. The final verse stays marked through the outro; the next chapter introduction remains unmarked.
+4. When several consecutive verses lack timings, the first following verse remains marked until a verified interval resumes. This is a reading cue, not newly verified alignment. Report recording, chapter and timestamp for mismatches.

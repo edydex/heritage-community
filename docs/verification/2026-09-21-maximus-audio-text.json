@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-21",
+  "sourceRevision": "1d57fe30a4cac26f95450d928e2acbb33bec4743",
+  "readerRelease": "1.1.47-preview.1",
+  "sourceCommit": "f75eaec57cc92dcf41e9ab4c64ef3b65b3655942",
+  "checksSourceRevision": "e36e0a0f5e7c086f1aee439295315eb63f83177e",
+  "feature": "Internal Maximus historical text and audiobook paragraph navigation/following",
+  "source": {
+    "bookId": "maximus-cosmic-mystery",
+    "title": "Abbot Maximus and his Disputation with Pyrrhus",
+    "author": "Charles Joseph Hefele",
+    "translator": "William R. Clark",
+    "edition": "A History of the Councils of the Church, Volume V, 1896, section 303, pp. 73\u201389",
+    "sourceUrl": "https://archive.org/details/ahistoryofthecou05hefeuoft/page/n92/mode/1up",
+    "sourceDownloadUrl": "https://archive.org/download/ahistoryofthecou05hefeuoft/ahistoryofthecou05hefeuoft_djvu.xml",
+    "sourceSha256": "d4be7f3be65dea42efec40fa899ca9ab9a41735289ff6ac9e26f3029f63fcec3",
+    "printedPages": [
+      73,
+      89
+    ],
+    "scanPages": [
+      92,
+      108
+    ],
+    "textPath": "data/books/maximus-disputation-clark.txt",
+    "textSha256": "29cefd9906eae613a06f020f50475fb9f9f17fb8bd683437c253bd7314080e82",
+    "rights": "Public-domain 1896 edition; Internet Archive metadata: NOT_IN_COPYRIGHT.",
+    "recordingSourceUrl": "https://librivox.org/the-early-church-collection-volume-5-by-various/",
+    "recordingId": "lv-b61af91e3bbc5c0154f8cc06",
+    "editorialChanges": [
+      "Section 303 only; headers, running page numbers and scholarly footnotes omitted (available in source scan).",
+      "OCR repaired against printed pages; Greek restored from scan, line-wrap hyphenation joined; historical wording retained.",
+      "Paragraph breaks added at speaker changes and before closing narrative; no AI translation or transcript substituted for source text."
+    ]
+  },
+  "timing": {
+    "model": {
+      "engine": "mlx-whisper",
+      "version": "0.4.3",
+      "modelFiles": {
+        "weights.safetensors": "951ed3fc1203e6a62467abb2144a96ce7eafca8fa77e3704fdb8635ff3e7f8a6",
+        "config.json": "b34fc29e4e11e0a25e812775dd67f4dd16fc2c8eb43d28ae25ff7d660ecb6379"
+      }
+    },
+    "recordingSha256": "1c6a659d6dd6f0d2daeb354900affa9400a736a04b8b811bcbc6cd7d03756499",
+    "paragraphsMatched": 91,
+    "spans": 180,
+    "matchedSeconds": 1872.9,
+    "duration": 2410,
+    "coverageIsNotAccuracy": true
+  },
+  "checks": {
+    "unitTests": 289,
+    "protocolTests": 127,
+    "matcherTests": 5,
+    "productionBuild": true,
+    "browserScenarios": 24,
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "firstMiddleLastNavigationAndReload": true,
+    "savedPositionAndFailedTimingFallback": true,
+    "recordingIdentityPreserved": true,
+    "precedingNineTimingFilesUnchanged": true,
+    "sourceImportReproduced": true,
+    "changedSourceRejected": true
+  },
+  "liveWeb": {
+    "url": "https://heritage.faith/#/romans/8",
+    "sourceRevision": "1d57fe30a4cac26f95450d928e2acbb33bec4743",
+    "assets": {
+      "index.html": "b957a155415995ce9bcbb82afc31372f35f12cff89a1e92354bd45ddd81712e5",
+      "data/books/maximus-disputation-clark.txt": "29cefd9906eae613a06f020f50475fb9f9f17fb8bd683437c253bd7314080e82",
+      "data/audio/books/maximus-cosmic-mystery.json": "10cc1e62b724aceb8be2a9730ce9d390683e296a65be88e64d7a65691a2dc7e3",
+      "data/audio/bsb-hays/romans.json": "e60ccbf4c481917aad1c4e348f07cc831c1c5632a99dd2539416376709182697",
+      "assets/index-BUZ6mOSZ.js": "08f50574c8bb33bd0d8ece996f21c8b629b1f0cf52c01889ae5304fcd136fdca",
+      "assets/index-fp3domWb.css": "36ef13ad0b1a925302a10a4d6ab77d3cd2da97b16df68ad4da1cc42992a4c5b1"
+    },
+    "browser": {
+      "date": "2026-09-21",
+      "browser": "Codex in-app browser",
+      "website": "https://heritage.faith/",
+      "continuousBibleMarker": {
+        "chapter": "Romans 8",
+        "actualRecordingPlayed": true,
+        "verse9VisibleDuringMissingTiming": true,
+        "verifiedVerse8TapUsed": true,
+        "continuousFrameSampling": "Covered by local Chromium/Firefox tests; not available through live browser inspection"
+      },
+      "maximus": {
+        "audioLibraryEntry": true,
+        "actualRecordingPlayed": true,
+        "nearbyTextOpenedInternally": true,
+        "highlightedParagraphVisible": true,
+        "sourceEdition": "Hefele / William R. Clark, 1896, section 303",
+        "sourceScanLinked": true
+      },
+      "audioStoppedAfterChecks": true,
+      "settingsHelpMatchesContinuousFollowing": true,
+      "settingsVerifiedAtSource": "1d57fe30a4cac26f95450d928e2acbb33bec4743"
+    }
+  },
+  "physicalPhoneTest": false,
+  "fullHumanListeningReview": false
+}
