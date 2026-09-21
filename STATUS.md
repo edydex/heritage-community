@@ -37,7 +37,7 @@ Earlier delivered calendar, song sharing/publication, search shortcuts, first-cl
 
 | Component | Selected revision |
 | --- | --- |
-| Heritage / Community | `e25792ee39793abd9734a1bf1fdb6a8a20704671` |
+| Heritage / Community | `343e2324479dfbcb094879c7d7e9c09f2fcc23be` |
 | SyncShow | `a25d9d1b05de143a91b904fad8f3df1de9800ab8` |
 | Multilinguum | `90f91308eaa46e6ed2e4b738e287f5f6bcd46257` |
 
