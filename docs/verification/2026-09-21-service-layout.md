@@ -24,3 +24,9 @@ Sermon title images can differ by English/Russian output, with the Russian choic
 - Chromium and Firefox planner checks passed for song parts/repeated chorus, default language, reading title, sermon context, long-heading non-overlap, independent title-image upload, and save/reload.
 - Source references were privately inspected and rendered. The decks, lyrics, private operational logs and service content are not included in this public record.
 - Physical projector/Windows/tablet acceptance remains separate from CI package launch and browser checks. Layouts follow the supplied reference structure; this is not a claim of pixel-identical PowerPoint rendering.
+
+## Live Community acceptance
+
+The supported updater completed its backup, migration and local/public health checks at the merged Heritage revision. In the signed-in browser, the song language preference persisted across reload and selected English for a newly added test entry; the prior Russian preference was restored. Both requested song examples were resaved through the corrected visible-lyrics path, then reloaded and compared: English/Russian words and publication state remained unchanged.
+
+A separate unsaved test-service draft gained eight sections plus a title for the first song, and nine sections plus a title for the second. A Psalm 119 reading generated its passage/edition title and Scripture slides. A sermon passage displayed the preceding point in gold above its gold inline reference and white Scripture. English/Russian title-image selectors appeared independently. The rehearsal draft was closed without saving; existing service presentations were not modified. Server details and lyric comparison evidence remain private.
