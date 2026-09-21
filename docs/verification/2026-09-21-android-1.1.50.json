@@ -1,0 +1,186 @@
+{
+  "date": "2026-09-21",
+  "workflow": "https://github.com/edydex/heritage_study_bible/actions/runs/35663205993",
+  "release": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.50-preview.1",
+  "sourceRevision": "652d726e2d5a9134d1576b56aeffd360271abfa3",
+  "version": "1.1.50-preview.1",
+  "versionCode": 53,
+  "apk": {
+    "name": "heritage-study-bible-1.1.50-preview.1-debug.apk",
+    "size": 73828885,
+    "sha256": "108a318586e08cbbb6ebaff2ee85260a300c0c4a3672dadd35fe799611fcf07e"
+  },
+  "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+  "downloadedAssetsVerified": 3,
+  "webAssetsVerified": 697,
+  "nativeTestCases": [
+    "com.getcapacitor.myapp.ExampleInstrumentedTest.useAppContext",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.appAndCarSharePlaybackWhichContinuesAfterTheReaderCloses",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.carLibraryAndSavedQueueLoadWithoutOpeningTheBible",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.ezekielVerseHighlightsFollowTheNativeClockAtRealBoundaries",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.legacyCarBrowserCanDiscoverTheLibraryWithoutOpeningTheReader",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.offlineResolverRejectsTraversalAndUnrelatedAppFiles",
+    "faith.heritage.app.AudioStorageIntegrationTest.deleteOfflineAudioThroughInternalStorage",
+    "faith.heritage.app.AudioStorageIntegrationTest.interruptedTransferCanBeRemovedWithoutTouchingNotes",
+    "faith.heritage.app.CommunityIntegrationTest.automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+    "faith.heritage.app.CommunityIntegrationTest.encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+    "faith.heritage.app.CommunityIntegrationTest.packagedCommunityScreensAndMemberLinkWorkOffline",
+    "faith.heritage.app.CommunityIntegrationTest.secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+  ],
+  "nativeTestsPassed": 12,
+  "latestFeed": {
+    "tag": "v1.1.50-preview.1",
+    "draft": false,
+    "prerelease": false
+  },
+  "physicalPhoneTest": false,
+  "audioLibraryNativeScreenshotSha256": "4fbdf74f1ee087d03b0ebbfbae35f25c3a46dbb9d4a8a445946d7e7270e14b44",
+  "audiobookSentences": {
+    "books": 10,
+    "recordings": 384,
+    "spans": 55016,
+    "maximumNativeBoundaries": 990,
+    "humanListeningReviewComplete": false
+  },
+  "nativeAudioHighlightLatency": {
+    "chapter": "Ezekiel 42",
+    "clock": "ExoPlayer service",
+    "audio": "generated PCM fixture",
+    "measurements": [
+      {
+        "verse": 1,
+        "boundary": 4.642468681335449,
+        "rate": 2,
+        "observedUpperLatencyMs": 76.26565933227539,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 2,
+        "boundary": 15.34246898651123,
+        "rate": 2,
+        "observedUpperLatencyMs": 113.26550674438477,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 3,
+        "boundary": 22.04246879577637,
+        "rate": 2,
+        "observedUpperLatencyMs": 21.765602111816406,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 4,
+        "boundary": 33.402467498779295,
+        "rate": 2,
+        "observedUpperLatencyMs": 100.76625061035156,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 2,
+        "boundary": 15.34246898651123,
+        "rate": 1,
+        "observedUpperLatencyMs": 213.53101348876953,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 3,
+        "boundary": 22.04246879577637,
+        "rate": 0.75,
+        "observedUpperLatencyMs": 219.37493896484375,
+        "observationSpanMs": 0
+      }
+    ]
+  },
+  "bibleTimingAssetsUnchangedFrom1_1_47": 66,
+  "updateFeedTests": [
+    {
+      "installed": "1.1.32",
+      "status": "update-available",
+      "latest": "v1.1.50-preview.1"
+    },
+    {
+      "installed": "1.1.43-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.50-preview.1"
+    },
+    {
+      "installed": "1.1.44-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.50-preview.1"
+    },
+    {
+      "installed": "1.1.45-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.50-preview.1"
+    },
+    {
+      "installed": "1.1.46-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.50-preview.1"
+    },
+    {
+      "installed": "1.1.47-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.50-preview.1"
+    },
+    {
+      "installed": "1.1.48-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.50-preview.1"
+    },
+    {
+      "installed": "1.1.49-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.50-preview.1"
+    },
+    {
+      "installed": "1.1.50-preview.1",
+      "status": "up-to-date",
+      "latest": "v1.1.50-preview.1"
+    }
+  ],
+  "liveReader": {
+    "url": "https://heritage.faith/#/ezekiel/42",
+    "sourceRevision": "652d726e2d5a9134d1576b56aeffd360271abfa3",
+    "assets": {
+      "data/audio/books/city-of-god.json": "0469d43774b6c59526c5dc8e015c78f32a33400ee3110166b15d59f27164502b",
+      "data/audio/books/confessions-augustine.json": "6c3011e53aa704c0353956db26d5d6485ddf9ca7674cba74c84a2828f33516a7",
+      "data/audio/books/enchiridion-augustine.json": "126cee8957b3445e8299057cd230da5f0015f8d10d4d9ec55eb392f348f3472e",
+      "data/audio/books/institutes.json": "6ee6e92ba0eadaea486f2cd18f6612ee9c2049f28ee71cd4837819093ccb4414",
+      "data/audio/books/josephus-antiquities.json": "91579592e7e0ead53c05d0e1d73138090cde394e84277d96d46c63c54cf730d0",
+      "data/audio/books/josephus-wars.json": "103cfb4faf084188fa92ec4bdcc221cdee5576edc6f063af1ef2c9c16643d805",
+      "data/audio/books/justin-first-apology.json": "d27cbcb22512ba7a7748e7bc634880bdf2460b1fcd2560b91397b64cfdc204b3",
+      "data/audio/books/martyrdom-of-polycarp.json": "68a0bda0ac47b2dc1f57d89c73932313caba9882d0cccf201da3ca9392d96ff5",
+      "data/audio/books/maximus-cosmic-mystery.json": "aea6d37dcfd08f4b5a443cd8eaa4bb0fb17e7a7116ba5a2552e10d71a615d9a0",
+      "data/audio/books/tertullian-apology.json": "ee7c64550a17d43d23a103bea9f7054fd0ae4a509425175cd659ae4dfd55646d",
+      "index.html": "6f2c979c43ff4bc9cbf9c1f62ed0a98cf9f1ae6784ca31cb232e5dfdcd55a2eb",
+      "data/books/maximus-disputation-clark.txt": "29cefd9906eae613a06f020f50475fb9f9f17fb8bd683437c253bd7314080e82",
+      "data/audio/bsb-hays/romans.json": "e60ccbf4c481917aad1c4e348f07cc831c1c5632a99dd2539416376709182697",
+      "data/audio/bsb-hays/ezekiel.json": "d42ced8e68f685278731378a08f26c413e6569519451ad76e2141bc0748f00b1",
+      "assets/index-I7X-A8Pn.js": "fbed608e44064c6427256a983a1b276cb706e3ef199525e0bb7c4ad02e8fcbb8",
+      "assets/index-BEZN2yls.css": "1e94e74c84b524d405a3bb1d02c5d9e9be4370a0cca93b366183aab0c03f81b3"
+    },
+    "browser": {
+      "engine": "Chromium",
+      "viewport": "390x844",
+      "translationGrouping": true,
+      "search": true,
+      "minimalSettings": true,
+      "defaultVerseStacking": true,
+      "bibleAndBookHoldPlayer": true,
+      "nativeBackEventClosesPlayer": true,
+      "audioRequestsMade": false,
+      "physicalDevice": false
+    }
+  },
+  "androidAudioPageVisualReview": {
+    "statusBarReadable": true,
+    "headerBelowSystemBar": true,
+    "reviewedPublishedRunScreenshot": true
+  },
+  "sourceChecks": {
+    "pr": "https://github.com/edydex/heritage_study_bible/pull/30",
+    "testRun": "https://github.com/edydex/heritage_study_bible/actions/runs/35663205939",
+    "browserTests": 72
+  }
+}

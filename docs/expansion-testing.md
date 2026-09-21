@@ -1,6 +1,6 @@
 # September expansion: hands-on checks
 
-Use Android **1.1.48-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
+Use Android **1.1.50-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
 
 1. **Resume listening.** Open Audio, choose an audiobook, seek a few minutes in and change playback speed. Navigate back to the Bible, lock the phone, then return. Pause, close and reopen the app. Expected: the saved recording/position remains; reopening does not start audio unexpectedly. Test headset pause/play and the notification controls too.
 2. **Offline files and storage.** Download one short recording, switch the phone offline and play/seek it. Open Internal Storage and remove that recording. Expected: the local file disappears, listening position and reading notes remain, and online streaming works again after reconnecting. Interrupt a second download and verify it is removable/retryable without a corrupt item showing as downloaded. Keep the app open for large downloads.
@@ -45,7 +45,7 @@ it over the existing app before testing these edition and navigation changes.
 - **Other books.** Listen across several boundaries in Genesis 1, Psalm 23,
   John 3 and a chapter you choose. All 1,189 chapters have been reprocessed.
   Keep the spoken text and highlighted verse together; report any mismatch.
-- **Settings and continuation.** In Settings → Audio Settings, turn Bible
+- **Settings and continuation.** In Settings → More settings → Audio Settings, turn Bible
   auto-scroll off, return, scroll away and verify playback does not pull you
   back. Re-enable it and listen through a chapter ending. The open reader should
   follow the next chapter. Browsing elsewhere must not pull you back.
@@ -60,7 +60,7 @@ it over the existing app before testing these edition and navigation changes.
 - **Parallel word study.** Open BSB/Original Romans 1. Tap “servant” to see Greek
   lemma occurrences; hold it to identify its Greek counterpart. On a keyboard,
   Shift+Enter also reveals the match. Choose an occurrence and confirm the first
-  click opens that verse. Toggle Settings → B&W word links, verify diagonal
+  click opens that verse. Toggle Settings → More settings → B&W, verify diagonal
   strokes differ from dots, then turn it off for color tints. Word actions must
   not open the verse-note editor.
 
@@ -115,3 +115,13 @@ a complete scholarly review.
 3. Pause just before a transition, wait, and resume. The marker must remain still while paused and resume with playback.
 4. Tap an earlier timed verse, then try 0.75×, 1× and 2×. Lock/unlock the phone while playback continues and verify following resumes correctly.
 5. If a spoken boundary still differs, record app version, chapter, verse, playback speed and whether the delay is before or after the words. The fix removes display polling delay; it does not certify every automatic alignment mark.
+
+## Audio library and reader controls (Android 1.1.50)
+
+1. Open Audio in portrait and landscape, with light and dark themes. Time, battery and notification icons must remain readable above the page. The Bible list should show **BSB Audio Bible** once; open it, choose Ezekiel, and check chapter 42. Existing saved recordings and resume positions must remain available.
+2. Open the reader settings dropdown: only text sizes, Dark mode and More settings should appear. In More Settings, toggle B&W and Volume Scroll, reopen, and verify persistence. Expand Other settings to change Verse Stacking; unsaved preferences default on and existing choices remain.
+3. In a Bible chapter, briefly tap Play/Pause. Then hold it for about half a second: player controls should open without toggling playback. Seek to the beginning and middle with the timeline, use −10/+10, and close with Close or Android Back. The reading route should remain open. Repeat in an audiobook.
+4. While an audiobook plays, use the floating −10 above the bottom-left chapter controls. It should seek ten seconds backward without adding a note or changing the chosen recording.
+5. Listen with matching book text open in Polycarp, Confessions and a longer book such as City of God. Only the current matched sentence should be gray, with unchanged surrounding text. Check more than one track, seek and resume, and disable/re-enable text following. Narration without a confident match remains unmarked. Record book, track and timestamp for inaccurate boundaries.
+
+These checks supplement the existing Ezekiel timing and background playback tests; automatic sentence coverage does not establish human-reviewed accuracy.
