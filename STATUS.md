@@ -29,7 +29,7 @@ The integration/source repositories are **public**. Owner preview installers and
 - **Muse:** English preference, explicit Russian OpenAI fallback, locally extracted sermon vocabulary and encrypted server token storage. A bounded English recognition and Quality EN→RU translation check used public-domain human narration. It did not open a microphone, generate speech or start a public service. Operational receipts remain private.
 - **Later research:** proposed prophecy-fulfillment tables have a source/uncertainty roadmap; the musician screen remains documented future work. Neither is presented as implemented history or generated musical arrangements.
 
-Earlier delivered calendar, song sharing/publication, search shortcuts, first-click verse navigation, slide objects/highlighting, compact editor, Undo, pointer/gallery and notes/progress sync remain available. Evidence is retained in [the dated verification records](docs/verification/) and [the expansion chronology](docs/EXPANSION-2026-09-20.md).
+Earlier delivered calendar, song sharing/publication, search shortcuts, first-click verse navigation, slide objects/highlighting, compact editor, Undo, pointer/gallery and notes/progress sync remain available. Evidence is retained in [the dated verification records](docs/verification/), [the expansion chronology](docs/EXPANSION-2026-09-20.md), and the current [requirement audit](docs/EXPANSION-AUDIT-2026-09-21.md).
 
 ## Desired pins versus installed source
 
