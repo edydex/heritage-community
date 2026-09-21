@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-21",
+  "workflow": "https://github.com/edydex/heritage_study_bible/actions/runs/35631994759",
+  "release": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.45-preview.1",
+  "sourceRevision": "5e3bc8e4a2901085648e7fa34bbc4e9547b505db",
+  "version": "1.1.45-preview.1",
+  "versionCode": 48,
+  "apk": {
+    "name": "heritage-study-bible-1.1.45-preview.1-debug.apk",
+    "size": 72746531,
+    "sha256": "5536801a30fe17a6c4bd3618097b0400b6818a71348256a70f26e2c25f69bf06"
+  },
+  "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+  "downloadedAssetsVerified": 3,
+  "webAssetsVerified": 694,
+  "nativeTestCases": [
+    "com.getcapacitor.myapp.ExampleInstrumentedTest.useAppContext",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.appAndCarSharePlaybackWhichContinuesAfterTheReaderCloses",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.carLibraryAndSavedQueueLoadWithoutOpeningTheBible",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.legacyCarBrowserCanDiscoverTheLibraryWithoutOpeningTheReader",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.offlineResolverRejectsTraversalAndUnrelatedAppFiles",
+    "faith.heritage.app.AudioStorageIntegrationTest.deleteOfflineAudioThroughInternalStorage",
+    "faith.heritage.app.AudioStorageIntegrationTest.interruptedTransferCanBeRemovedWithoutTouchingNotes",
+    "faith.heritage.app.CommunityIntegrationTest.automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+    "faith.heritage.app.CommunityIntegrationTest.encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+    "faith.heritage.app.CommunityIntegrationTest.packagedCommunityScreensAndMemberLinkWorkOffline",
+    "faith.heritage.app.CommunityIntegrationTest.secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+  ],
+  "nativeTestsPassed": 11,
+  "latestFeed": {
+    "tag": "v1.1.45-preview.1",
+    "draft": false,
+    "prerelease": false
+  },
+  "physicalPhoneTest": false,
+  "publicationRepair": {
+    "initialWorkflow": "https://github.com/edydex/heritage_study_bible/actions/runs/35630807097",
+    "initialFailure": "Version-specific release notes missing after all native/package checks passed",
+    "repairPR": "https://github.com/edydex/heritage_study_bible/pull/23",
+    "preflightRegressionReproduced": true,
+    "publicationTestsPassed": 21
+  },
+  "updateFeedTests": [
+    {
+      "installed": "1.1.32",
+      "status": "update-available",
+      "latest": "v1.1.45-preview.1"
+    },
+    {
+      "installed": "1.1.43-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.45-preview.1"
+    },
+    {
+      "installed": "1.1.44-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.45-preview.1"
+    },
+    {
+      "installed": "1.1.45-preview.1",
+      "status": "up-to-date",
+      "latest": "v1.1.45-preview.1"
+    }
+  ]
+}
