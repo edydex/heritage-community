@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-21",
+  "workflow": "https://github.com/edydex/heritage_study_bible/actions/runs/35644558307",
+  "release": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.47-preview.1",
+  "sourceRevision": "1d57fe30a4cac26f95450d928e2acbb33bec4743",
+  "version": "1.1.47-preview.1",
+  "versionCode": 50,
+  "apk": {
+    "name": "heritage-study-bible-1.1.47-preview.1-debug.apk",
+    "size": 72783853,
+    "sha256": "b24e946275dce6413c220c0b8873961c6b947f3f26e6f8b0df5b52c9cd50620e"
+  },
+  "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+  "downloadedAssetsVerified": 3,
+  "webAssetsVerified": 697,
+  "nativeTestCases": [
+    "com.getcapacitor.myapp.ExampleInstrumentedTest.useAppContext",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.appAndCarSharePlaybackWhichContinuesAfterTheReaderCloses",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.carLibraryAndSavedQueueLoadWithoutOpeningTheBible",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.legacyCarBrowserCanDiscoverTheLibraryWithoutOpeningTheReader",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.offlineResolverRejectsTraversalAndUnrelatedAppFiles",
+    "faith.heritage.app.AudioStorageIntegrationTest.deleteOfflineAudioThroughInternalStorage",
+    "faith.heritage.app.AudioStorageIntegrationTest.interruptedTransferCanBeRemovedWithoutTouchingNotes",
+    "faith.heritage.app.CommunityIntegrationTest.automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+    "faith.heritage.app.CommunityIntegrationTest.encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+    "faith.heritage.app.CommunityIntegrationTest.packagedCommunityScreensAndMemberLinkWorkOffline",
+    "faith.heritage.app.CommunityIntegrationTest.secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+  ],
+  "nativeTestsPassed": 11,
+  "latestFeed": {
+    "tag": "v1.1.47-preview.1",
+    "draft": false,
+    "prerelease": false
+  },
+  "physicalPhoneTest": false,
+  "updateFeedTests": [
+    {
+      "installed": "1.1.32",
+      "status": "update-available",
+      "latest": "v1.1.47-preview.1"
+    },
+    {
+      "installed": "1.1.43-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.47-preview.1"
+    },
+    {
+      "installed": "1.1.44-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.47-preview.1"
+    },
+    {
+      "installed": "1.1.45-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.47-preview.1"
+    },
+    {
+      "installed": "1.1.46-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.47-preview.1"
+    },
+    {
+      "installed": "1.1.47-preview.1",
+      "status": "up-to-date",
+      "latest": "v1.1.47-preview.1"
+    }
+  ]
+}
