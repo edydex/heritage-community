@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-21",
+  "sourceRevision": "5e3bc8e4a2901085648e7fa34bbc4e9547b505db",
+  "readerRelease": "1.1.45-preview.1",
+  "feature": "Optional Egypt prophecy historical comparisons, chronological plan Day 250",
+  "checks": {
+    "unitTests": 287,
+    "protocolTests": 127,
+    "productionBuild": true,
+    "focusedScenariosPerBrowser": 3,
+    "browsers": [
+      "Chromium",
+      "Firefox"
+    ],
+    "minimumViewportWidth": 320,
+    "exactVerseFirstClick": true,
+    "existingDailyAssignmentsAndItemsUnchanged": true,
+    "generatedCitationTargetsValidated": true
+  },
+  "liveWeb": {
+    "url": "https://heritage.faith/#/resources/reading-plans/chronological-bible/note/250/note-ezekiel-egypt-oracles",
+    "sourceRevision": "5e3bc8e4a2901085648e7fa34bbc4e9547b505db",
+    "assets": {
+      "index.html": "5ee9959440642bda16c72256feb9bc9e0a7fb12c6c6b72caaeeef30dac912b5b",
+      "data/reading-plans/chronological-bible.json": "255006a8b6f98ae6b0fbc9c4c980a72ecb4c4bd0b63c3e781a8d5e60160767f2",
+      "assets/index-CkolpbTW.js": "3f415037c4ac4d190224b732f4a7d693b13bb3a1c4dfee92ac91762ea2c5cceb",
+      "assets/index-fp3domWb.css": "36ef13ad0b1a925302a10a4d6ab77d3cd2da97b16df68ad4da1cc42992a4c5b1"
+    },
+    "browser": {
+      "name": "Codex in-app browser",
+      "collapsedInitially": true,
+      "allFourRowsVisible": true,
+      "specialistReviewPendingVisible": true,
+      "firstClickEzekiel29Verse17InViewport": true,
+      "returnToNoteWithoutCompletion": true
+    }
+  },
+  "historicalAcceptance": {
+    "sourceChecks": "Public primary artifact catalogue, ancient literary text and modern scholarly/curatorial research",
+    "specialistReview": "pending",
+    "unknownFortyYearDatePreserved": true,
+    "fulfillmentDatesSeparateFromOracleTimeline": true
+  },
+  "physicalPhoneTest": false
+}

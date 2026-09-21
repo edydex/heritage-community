@@ -9,7 +9,7 @@ The September expansion is implemented and merged into the component repositorie
 | Component | Current result |
 | --- | --- |
 | Heritage web reader | Live audio library, saved listening position, compact BSB playback, default-on text following, audiobook paragraph navigation and named original-language parallel texts. |
-| Android | [1.1.44-preview.1 / code 47](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.44-preview.1) is published through the normal Latest feed. All three downloaded assets, signer, 694 bundled web files and eleven native tests passed; the actual checker detects it from older versions. [Release receipt](docs/verification/2026-09-21-android-1.1.44.json). |
+| Android | [1.1.45-preview.1 / code 48](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.45-preview.1) is published through the normal Latest feed. All three downloaded assets, signer, 694 bundled web files and eleven native tests passed; the actual checker detects it from older versions. [Release receipt](docs/verification/2026-09-21-android-1.1.45.json). |
 | Community server | Accessible slide authoring, private Bible imports, existing preparation/calendar/song workflows and Muse settings are implemented. Operational deployment receipts remain private. |
 | SyncShow | [Preview 31](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.31) has seven verified private installers: Windows, both Mac architectures and Linux. All 17 assets were downloaded and matched their hashes. Public distribution gates remain open. |
 | Multilinguum | Muse recognition, explicit Russian fallback, notes vocabulary and encrypted provider settings are implemented for the Community companion. Both 0.1.1 Mac installers passed hosted builds and independent mounted-bundle verification. The Apple-silicon download launches. [Both Mac installers](https://github.com/edydex/heritage-preview-builds/releases/tag/multilinguum-v0.1.1-preview.1) and seven verification files are published privately; all nine downloads match the verified originals. |
@@ -27,7 +27,7 @@ The integration/source repositories are **public**. Owner preview installers and
 - **Audiobook text:** all nine internally readable audiobooks / 383 recordings have checked phrase-to-paragraph links. Polycarp and Tertullian have separately named matching translations; Institutes includes both Allen volumes. Existing editions, bookmarks and recording IDs are preserved. Timings are automatic and unmatched passages remain unlinked. [Alignment method and reproducible commands](https://github.com/edydex/heritage_study_bible/blob/main/docs/AUDIOBOOK-TEXT.md).
 - **Original languages:** named WLC 4.20 / OSHB Hebrew-Aramaic OT and Nestle 1904 Greek NT. All 27 NT books have checked Greek/BSB maps: 94,788 groups across 6,596 whole-verse matches; 1,347 differing verse records remain unlinked. Occurrence results show the actual BSB phrase highlighted in its full verse beside the original. Missing word mappings are labeled, and Hebrew/Aramaic results show BSB context without claiming exact word alignment. The parallel reader uses gentle color tints by default or patterned B&W links. Tap for word occurrences; hold or Shift+Enter for a checked counterpart. N1904 Greek searches use source lemmas; other searches label their word-form scope. [Sources and attribution](https://github.com/edydex/heritage_study_bible/blob/main/docs/ORIGINAL-LANGUAGES.md).
 - **Muse:** English preference, explicit Russian OpenAI fallback, locally extracted sermon vocabulary and encrypted server token storage. Vocabulary extraction filters common Russian and English connecting words before ranking names and terms, preserving the bounded hint budget for bilingual notes. A bounded English recognition and Quality EN→RU translation check used public-domain human narration. It did not open a microphone, generate speech or start a public service. The hint-filter regression does not establish provider recognition accuracy. Operational receipts remain private.
-- **Later research:** proposed prophecy-fulfillment tables have a source/uncertainty roadmap; the musician screen remains documented future work. Neither is presented as implemented history or generated musical arrangements.
+- **Prophecy context:** Day 250 of the chronological plan has an optional Egypt comparison below the timeline. Four entries distinguish oracle dates, proposed events, evidence and unresolved features, with exact Scripture links and historical sources. Specialist review remains pending. [Verification](docs/verification/2026-09-21-prophecy-context.json). The musician screen remains future work.
 
 The bilingual vocabulary correction passed deployed context-store checks using generated notes; see [the bounded verification record](docs/verification/2026-09-21-bilingual-hints.json). This establishes the corrected hint behavior, not measured recognition quality.
 
@@ -39,7 +39,7 @@ Earlier delivered calendar, song sharing/publication, search shortcuts, first-cl
 
 | Component | Selected revision |
 | --- | --- |
-| Heritage / Community | `c70e88ed35ee248d1ba43e150a751fce9ea41ec5` |
+| Heritage / Community | `5e3bc8e4a2901085648e7fa34bbc4e9547b505db` |
 | SyncShow | `a25d9d1b05de143a91b904fad8f3df1de9800ab8` |
 | Multilinguum | `c86c384e3fe7e793e6e583d24bc559c85ba01a95` |
 
@@ -52,6 +52,6 @@ Installed server revisions, private storage inventories and provider-configurati
 3. **Physical devices:** real Android update/sign-in/automatic sync, downloads/background playback/Android Auto, e-ink stylus patterns, projector/stage screens and loaded-service offline continuation.
 4. **Authorized external content:** obtain a publisher-approved LSB software source and permitted exact-edition Russian/Ukrainian recordings. Do not infer recording rights from a text's public-domain status.
 5. **Distribution:** finish public native dependency source/relinking notices and official SyncShow Drive configuration. Private owner previews do not bypass these public release requirements. Standalone Multilinguum desktop delivery is separate from the integrated server/console.
-6. **Other product work:** direct recording-to-sermon attachment/publication remains unfinished. Later lesson replay, musician views, fully offline translation and prophecy research are tracked separately.
+6. **Other product work:** direct recording-to-sermon attachment/publication remains unfinished. Later lesson replay, musician views, fully offline translation and wider prophecy research are tracked separately.
 
 Paid provider tests require an approved budget and a private usage ledger. Audiobook matching uses local computation.
