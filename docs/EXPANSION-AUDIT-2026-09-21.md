@@ -13,7 +13,7 @@ GitHub was checked again for these application revisions and release assets:
 | --- | --- |
 | Heritage Bible / Community | Reader release source `343e2324479dfbcb094879c7d7e9c09f2fcc23be`; Android **1.1.43-preview.1**, code **46**, published in the normal Latest feed with APK, build metadata and checksums. The web reader serves the matching assets. |
 | SyncShow | Main `a25d9d1b05de143a91b904fad8f3df1de9800ab8`; Preview **31**, seven installers and ten verification/provenance assets available in the owner's private preview repository. |
-| Multilinguum | Main `90f91308eaa46e6ed2e4b738e287f5f6bcd46257`; integrated processor source delivered. Standalone **0.1.1** Apple-silicon and Intel Mac installers are built and verified, but permanent private publication remains awaiting owner approval. |
+| Multilinguum | Main `c86c384e3fe7e793e6e583d24bc559c85ba01a95`; integrated processor source includes the bilingual hint-budget correction. Standalone **0.1.1** Apple-silicon and Intel Mac installers were built and verified from the earlier `90f9130` application tree; their operator code is unchanged by this processor-only fix. Permanent private publication remains awaiting owner approval. |
 
 The Android APK SHA-256 is
 `ea8a218c2ef2487f06fa369c66b732cb6fd8f454991171e11bc25039bb62b5e8`.
