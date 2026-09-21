@@ -116,3 +116,13 @@ Real Electron acceptance installed the public sample, selected it, added Romans 
 Heritage `0e32102` adds fatal UTF-8 decoding before upload, preventing silent replacement of invalid source bytes. Chrome/Firefox rejected invalid bytes before any preview API request and accepted a valid UTF-8 BOM sample. TypeScript and production build passed. Reader CI passed; the Community run `35558843179` was still running at this checkpoint.
 
 Both heads are published. There is no new installed release or WOTBC deployment in this checkpoint. Bible audio/timing, audiobook text alignment, Hebrew/Aramaic, Muse deployment and real capture, repository preservation/consolidation and releases remain active work. No additional API spending.
+
+## BSB audio checkpoint (September 21 UTC)
+
+Heritage `6433c79dcd7fae799db7e11946dcc0cedca121a4` is published. The internal player now includes all 66 BSB books / 1,189 Barry Hays chapter recordings, a separate Bible library/car root, resume/download/delete support, chapter controls, temporary gray verse markers and optional scrolling within the current chapter. Explicit text navigation chooses BSB; saved notes and highlights are unaffected. Runtime text mismatches and timing-fetch failure do not interrupt playback.
+
+Public-domain recording permission is stated by Bible Hub and AudioBible.org. Exact media URLs, sizes/durations and bounded header hashes were collected from OpenBible.com. A pinned, MIT-licensed contributed MMS alignment dataset had many truncated verse texts. The importer deliberately accepted only 14,912 complete matching verses with confidence, duration and overlap checks. The remaining 16,190 verse records are unhighlighted. These are automatic timings, not auditory verification or complete synchronization. Details and deterministic generator: Heritage docs/BIBLE-AUDIO.md.
+
+267 unit tests / 124 protocol tests passed. All five audio browser tests passed in Chromium and Firefox; real public Romans 1 playback/seek also passed in both with no page errors/phone overflow. Playback smoke was muted, so it does not establish spoken-word alignment accuracy. Android app/instrumentation packages compile and native car acceptance now checks the Bible root/queue. Hosted non-publishing Android run35559852399 and reader35559855486/Community35559855487 are running. No new released APK or deployment yet. Previous Heritage0e32102 checks all passed.
+
+SyncShowee25a1c all9checks passed; Multi2e1d16e unchanged. No added API spend ($0.81 ledger). Remaining work includes complete timing quality, exact audiobook alignment, Hebrew/Aramaic, Muse deployment/capture, dirty-original preservation, main consolidation and verified releases.
