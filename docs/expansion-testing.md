@@ -1,11 +1,11 @@
 # September expansion: hands-on checks
 
-Use Android **1.1.42-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
+Use Android **1.1.43-preview.1** and SyncShow **1.4.0-preview.31**. Verify the server’s installed version separately before rehearsal. Start with a short recording and a disposable presentation; keep your existing phone app data when updating. Record the actual device, app version, steps and result. This supplements the [earlier walkthrough](deep-testing.html).
 
 1. **Resume listening.** Open Audio, choose an audiobook, seek a few minutes in and change playback speed. Navigate back to the Bible, lock the phone, then return. Pause, close and reopen the app. Expected: the saved recording/position remains; reopening does not start audio unexpectedly. Test headset pause/play and the notification controls too.
 2. **Offline files and storage.** Download one short recording, switch the phone offline and play/seek it. Open Internal Storage and remove that recording. Expected: the local file disappears, listening position and reading notes remain, and online streaming works again after reconnecting. Interrupt a second download and verify it is removable/retryable without a corrupt item showing as downloaded. Keep the app open for large downloads.
 3. **Nearby audiobook text.** In Confessions or Enchiridion, play a passage and use Go to nearby text. Expected: the matching paragraph is temporarily indicated and audio continues at the same position. Return to the player, seek to a different passage and repeat. There must be no saved note/highlight added. Some recordings use a different translation; an unavailable match should open the book normally instead of guessing.
-4. **BSB following.** Open Romans 1 audio and its BSB text. Enable following/autoscroll, listen across a verse boundary, seek, then disable following and scroll manually. Expected: gray audio markers remain distinct from personal annotations. Missing timing data must not interrupt sound or select a guessed verse. Following is currently within the opened chapter. Check chapter advance and the saved queue separately.
+4. **BSB following.** Open Romans 1 audio and its BSB text. Following starts on by default; listen across a verse boundary and tap a timed verse to seek. Disable it in Audio Settings and scroll manually. Expected: gray audio markers remain distinct from personal annotations. Missing timing data must not interrupt sound or select a guessed verse. Following advances the currently open Bible chapter when the queue advances. Browsing elsewhere should not pull you back.
 5. **Android Auto.** Park safely before testing. Connect the actual phone to the head unit, open Heritage in its audio apps, browse the audiobook and Bible roots and play a short recording. Test resume, next/previous and disconnect/reconnect. Expected: the library works without opening the reader first, and phone/car state agrees. If Heritage is absent, record the phone/Auto/head-unit versions and installation method; emulator success does not establish head-unit compatibility.
 6. **Original languages.** Enable the named original-language parallel source in an OT passage, an Aramaic portion of Daniel, and Romans. Check right-to-left pointing, narrow-screen readability and source labels. In matching Romans verses, tap/focus patterned word links. Expected: only attested matching groups are connected; variants or unverified verse numbering remain unlinked. The Septuagint is not being substituted for Hebrew/Aramaic.
 7. **Monochrome teaching.** Pair the real tablet with SyncShow, select Teach and enable Monochrome. Draw with several named colors; compare palette patterns and the used-color legend. Try pen, highlighter, temporary pointer, Undo, gallery navigation and reconnection. Expected: the tablet remains usable in grayscale and congregation output retains the selected colors. Also create colored text/shapes/highlights in Community's monochrome authoring mode. Check thin marks on the actual e-ink screen; browser emulation is insufficient.
@@ -33,3 +33,33 @@ it over the existing app before testing these edition and navigation changes.
 - Keep a previously downloaded recording and its saved listening position through
   the update. Verify both remain usable offline. No audio redownload should be
   required just because its text edition changed.
+
+## Compact audio and word-study checks (Android 1.1.43)
+
+- **Small controls.** Open BSB Romans 8. Only the existing bottom navigation
+  should contain Play/Pause, immediately left of the chapter selector. Start
+  playback and tap verses 2, 3, 6, 7 and 8. Each should seek to that verse and
+  temporarily mark it gray. Verse 9 remains without a marker because its timing
+  did not pass the boundary check. Record early/late starts by verse and seconds;
+  coverage percentages are not accuracy scores.
+- **Other books.** Listen across several boundaries in Genesis 1, Psalm 23,
+  John 3 and a chapter you choose. All 1,189 chapters have been reprocessed.
+  Keep the spoken text and highlighted verse together; report any mismatch.
+- **Settings and continuation.** In Settings → Audio Settings, turn Bible
+  auto-scroll off, return, scroll away and verify playback does not pull you
+  back. Re-enable it and listen through a chapter ending. The open reader should
+  follow the next chapter. Browsing elsewhere must not pull you back.
+- **Download without losing files.** Review the whole-BSB size and cancel before
+  downloading. On Wi-Fi with enough space, start it, navigate away and return,
+  then stop after the current chapter. Saved chapters should play offline.
+  Resume should skip completed files. Do not download the entire library merely
+  to prove that cancellation works.
+- **Audiobook following.** Open a matching audiobook text while playing. Follow
+  paragraphs across a book chapter boundary. Disable audiobook auto-scroll and
+  browse manually. Existing notes and saved highlights must remain unchanged.
+- **Parallel word study.** Open BSB/Original Romans 1. Tap “servant” to see Greek
+  lemma occurrences; hold it to identify its Greek counterpart. On a keyboard,
+  Shift+Enter also reveals the match. Choose an occurrence and confirm the first
+  click opens that verse. Toggle Settings → B&W word links, verify diagonal
+  strokes differ from dots, then turn it off for color tints. Word actions must
+  not open the verse-note editor.
