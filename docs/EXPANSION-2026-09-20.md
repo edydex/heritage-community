@@ -1,6 +1,6 @@
 # September 20 expansion and repository normalization
 
-Active work; do not treat this document as a delivery receipt.
+Active work. The latest checkpoint below supersedes older chronological checkpoints; outstanding acceptance is stated explicitly.
 
 ## Scope and acceptance
 
@@ -134,3 +134,13 @@ Heritage `b22dae852faf69cb65c85ea40ec543f258f5a892` is published on the expansio
 271 reader unit tests and 124 protocol tests passed. Five focused Hebrew/audio browser tests passed in each of Chromium and Firefox, including narrow layouts and the visible BSB audio marker in parallel mode. Production build passed. Hosted acceptance for this head is running: Android 35560995243, reader 35560940843, Community 35560940758. All BSB 6433c79 hosted checks, including eleven packaged Android tests, finished successfully.
 
 No new deployment or released APK in this checkpoint. Exact audiobook text navigation, improved Bible-audio timing, Muse deployment/human-sermon capture and repository preservation/consolidation/releases remain active. No added API spending.
+
+## Deployed Muse and private preservation checkpoint (September 21 UTC)
+
+The supported unified updater completed on WOTBC at 04:55 UTC. The independent deployment receipt and checkout confirm Heritage `b22dae852faf69cb65c85ea40ec543f258f5a892` and processor `2e1d16e02163593f40ce7a7e22dc6e7c34fc2821`; SyncShow `ee25a1c` is recorded in the compatible set, not installed by the server updater. Community, PostgreSQL and the processor are healthy. Public discovery, the tunnel, nightly backup timer, and all seven checksums in `backup-20260921T044754Z-pre-update` passed. That backup includes all 12 finalized private recording objects. Running Muse adapter and encrypted-store module SHA-256 values match the locally built published source.
+
+The user-provided Muse key was verified through the provider handshake and saved on WOTBC. The settings file is encrypted, mode 0600, and contains no plaintext key. The real signed-in Community manager page confirms the saved token and the Automatic preference for English. The server currently has no OpenAI key; the UI correctly blocks translation startup and explains the missing provider. This is configuration and deployment evidence, not a human-sermon translation acceptance result. Recovery of the existing original processor key is in progress; no extra provider spend was incurred.
+
+Original dirty Heritage and SyncShow workspaces were preserved separately from maintained source. Staged/unstaged patches, untracked files and local-only commit bundles restore all 243 Heritage and 677 SyncShow changed paths byte-for-byte, including index state. Bundle prerequisites resolve against current public source clones. The user explicitly approved uploading the archives and restore instructions to a separate private backup repository. Both published archives were downloaded and their SHA-256 checksums match. The original workspaces remain untouched; private notes/images and raw audit material were not added to public source.
+
+All hosted checks on Heritage `b22dae8` passed, including eleven packaged Android tests (35560995243), reader (35560940843) and Community (35560940758). Audiobook paragraph navigation is undergoing a local full-library Whisper pass; it is not yet published or included in a released APK. Source consolidation and new verified desktop/Android releases remain active work.
