@@ -1,13 +1,13 @@
 # Deep Testing walkthrough
 
-Dated September 16, 2026. Open [the interactive walkthrough](deep-testing.html) for saved results, per-case notes, printing and export. The page stores results only in the browser; export them before changing devices. This text copy provides the same test cases without requiring JavaScript.
+Updated September 22, 2026. Open [the interactive walkthrough](deep-testing.html) for saved results, per-case notes, printing and export. The page stores results only in the browser; export them before changing devices. This text copy provides the same test cases without requiring JavaScript.
 
 ## Recommendation
 
 Do a short preparation pass, then freeze features and test. Do not start another broad implementation batch.
 
-1. Install the agreed builds: Android **1.1.39-preview.1**, versionCode 42, and the published **SyncShow Preview 30** installer for your computer. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it also contains Automatic Sync.
-2. Complete real WOTBC manager sign-in and approved provider configuration before translation tests. Personal sync, membership and manager access are separate. Healthy server status does not prove provider setup. The last configuration audit found providers unset; this plan does not transfer credentials.
+1. Install the agreed builds: Android **1.1.52-preview.1**, versionCode 55, and the published **SyncShow Preview 33** installer for your computer. Update over the existing app to test preservation of data. The public web reader can be the manual second device; it also contains Automatic Sync.
+2. Complete real WOTBC manager sign-in and approved provider configuration before translation tests. Personal sync, membership and manager access are separate. Healthy server status does not prove provider setup. Record the currently configured providers; this plan does not transfer credentials.
 3. Keep direct recording-to-sermon attachment outside the first baseline. It is unpublished local work. Deliver it in a named build before A3, or mark A3 blocked and test everything else now.
 
 Do the short bilingual quality comparison before the long sermon. Previous Russian recognition changed a word's meaning; correct repeatable meaning errors before a full rehearsal. Official public desktop release work, musician screens, saved annotation replay and more features can wait.
@@ -32,10 +32,10 @@ Use **Not run / Pass / Fail / Blocked**, plus notes, for each case. Executed per
 
 | Part | Version / evidence | Remaining boundary |
 | --- | --- | --- |
-| Android | [1.1.39-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.39-preview.1), code 42, `8662221` | Physical-phone automatic sync |
-| Public reader | heritage.faith, last verified `8662221` | Physical-device automatic-sync acceptance |
-| SyncShow | [Windows / Mac / Linux Preview 30 installers](desktop-preview.md), `9a9ebf7` | Real tablet, projector, mixer and volunteer |
-| WOTBC | Community `8662221`; translation `c92aafe` | Provider and live device acceptance |
+| Android | [1.1.52-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.52-preview.1), code 55, `c2e1c0c` | Physical-phone automatic sync |
+| Public reader | heritage.faith, last verified `c2e1c0c` | Physical-device automatic-sync acceptance |
+| SyncShow | [Windows / Mac / Linux Preview 33 installers](desktop-preview.md), `70d16d0` | Real tablet, projector, mixer and volunteer |
+| WOTBC | Community `09dc4ab`; translation `674c013` | Provider and live device acceptance |
 | Recording attachment | Unpublished local changes beyond the baseline | A3 blocked until delivered |
 
 Live status on September 16 passed app/database/processor health, public discovery, tunnel and backup checks. The latest backup was under 48 hours old, checksums passed and its private recording inventory matched. No paid calls were made to create this plan. At the dated budget checkpoint, $0.79 of $20 was conservatively accounted and nothing reserved; check the [current ledger](verification/api-test-budget.json) before paid work. The usage display is partial, not a hard spending cap or guarantee of free Economy use.
@@ -51,7 +51,7 @@ Before either session. Clear these first. A blocked provider setup only blocks t
 ### P1 — Install the agreed builds without losing data
 
 1. Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.
-2. Use Settings → Advanced Settings to check for Android 1.1.39-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier builds through 1.1.38. Quit SyncShow and install the published Preview 30 package for your computer. Record the actual versions and devices above.
+2. Use Settings → More settings to check for Android 1.1.52-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier builds through 1.1.51. Quit SyncShow and install the published Preview 33 package for your computer. Record the actual versions and devices above.
 3. Open an existing Bible note and an existing service before creating rehearsal content.
 
 **Pass looks like:** Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.
@@ -122,7 +122,7 @@ Notes / evidence:
 
 ### S3 — Automatic Sync stays out of the way
 
-1. On Android 1.1.39-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.
+1. On Android 1.1.52-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.
 2. Open the Bible and navigate immediately. Leave it foregrounded and online with no text editor focused. After the initial delay (about 10 seconds, possibly longer while busy), check the last-sync status.
 3. Create a note, leave editing, and wait for the next cycle: about 3 minutes after the previous attempt completes. Sync the second device manually to confirm receipt; repeat with B making the change and A receiving automatically.
 
@@ -359,7 +359,7 @@ Notes / evidence:
 2. Reopen the sermon and verify every slide. In Plan a service → Sermon, choose it from the newest-added-first dropdown and click Add whole sermon. Save and reopen the service.
 3. Compare the copied slides and media with the sermon, load the service in SyncShow, and check English/Russian/stage outputs. Disconnect only after loading and verify the media still play.
 4. Add an Other slide with text, an uploaded picture, a brace, an outline circle and a filled circle. Move, resize and rotate the objects; change their order. Select words and apply a highlight. Save and reopen the sermon.
-5. Check English, Russian and Stage-Facing Screen previews. Add the whole saved sermon to a service and open it in SyncShow Preview 30. Compare the objects and highlights, then disconnect after Load and advance through the slide offline.
+5. Check English, Russian and Stage-Facing Screen previews. Add the whole saved sermon to a service and open it in SyncShow Preview 33. Compare the objects and highlights, then disconnect after Load and advance through the slide offline.
 6. Check the sermon picker is above Status/Save in the left pane and object tools sit beside the slide. Right-click a slide and open Slide settings; edit its name, close, save and reopen.
 7. Add a passage using 1 chr 3 7-10. Try Ma 5 3-9 and choose Matthew; Malachi should explain its chapter limit. Confirm the inserted verses.
 8. Add an object and click outside text entry, then press Ctrl+Z (Windows/Linux) or Command+Z (Mac). The slide change should undo. Type inside text and use the same shortcut; it should undo typing instead.
@@ -593,3 +593,52 @@ Result: Not run / Pass / Fail / Blocked
 Notes / evidence:
 
 [Sunday operator guide](sunday-operator-guide.md) · [Android update guide](android-preview.md) · [Automatic Sync evidence](verification/2026-09-14-automatic-sync.md) · [Recognition evidence](verification/2026-09-14-committed-recognition.md) · [Progress report](progress.html)
+
+## N · New service flow, cues and church books
+
+Use a disposable rehearsal service. Keep the actual Sunday plan intact. These checks are not automatically marked passed by CI.
+
+### N1 — Readings, songs and reusable artwork
+
+1. Create a rehearsal service: confirm Welcome appears first. Edit its bottom topic on English and Russian screens, then reopen it.
+2. Add Psalm 119:162–175 as a reading. Confirm one numbered title parent, passage children and a final blank. Add a song afterward: it must be a sibling.
+3. Re-add Good and Gracious King from the library. Step forward through Refrain and all repeat/chorus recalls. Check English, Russian and stage-facing outputs.
+4. Add Blank and Closing from Media. Remove the automatic blank if desired, save, reload and load the service in SyncShow.
+
+**Pass looks like:** Each Next step follows the planned order. No raw repeat labels, unwanted nesting or missing images. Existing service copies are unchanged.
+
+Old song snapshots and already split readings are preserved; use newly added entries for this parser/pagination test.
+
+Result: Not run / Pass / Fail / Blocked
+
+Notes / evidence:
+
+### N2 — Automatic translation from the named mixer input
+
+1. Choose and remember the real mixer/USB/line-in/virtual input in SyncShow Translation controls. Prepare the matching service translation plan and select text output and optional phone audio.
+2. Right-click the intended slide in Community: add Start Translate. Add Stop Translate later. Save, refresh its translation plan if required, and reload the service in SyncShow.
+3. Advance to the slide before Start. Confirm preparation completes but no words are transcribed before Start. Advance through Start and Stop using Next only.
+4. Rehearse jumping forward/backward, an input unplug/reconnect, a closed Show and a temporarily disconnected network. Do not start another paid session while testing a failed Stop.
+
+**Pass looks like:** Preparation stays quiet. Translation starts and stops at the marked slides, uses the named input and reports failures. It never silently switches to the built-in microphone or stops another operator’s session.
+
+Record source, device, language direction, notes choice, speech setting and measured delay. Provider tests use the approved budget.
+
+Result: Not run / Pass / Fail / Blocked
+
+Notes / evidence:
+
+### N3 — Community Books, downloads and sentence following
+
+1. Sign into the intended church, then open Books from Resources or Community Home. Its member-only book should appear automatically; pull down or press Refresh to retry.
+2. Play, seek by paragraph, hold Play/Pause for controls, rewind ten seconds, change chapter while paused, and reopen the book to check resume.
+3. Listen while watching the active sentence. Text should move only when that sentence leaves the readable area. Record any wrong boundary or excessive jump.
+4. Download the book and audio. Interrupt and resume once, then enable airplane mode, reopen the app and play a different downloaded chapter. Lock the screen and check playback continues. Remove the copy through Internal Storage. In a separate signed-out or nonmember profile, check the same book and audio links.
+
+**Pass looks like:** The book uses the normal reader and audio library. Downloaded chapters work offline while the church account remains signed in, playback survives the locked screen, and a nonmember cannot retrieve the private book or audio. Paused chapter changes stay paused.
+
+Native service playback and sign-out have emulator coverage. Verify real phone, headset and car behavior separately. Browser storage can be evicted; expired church sign-in requires reconnection.
+
+Result: Not run / Pass / Fail / Blocked
+
+Notes / evidence:

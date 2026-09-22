@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-22",
+  "workflow": "https://github.com/edydex/heritage_study_bible/actions/runs/35687310490",
+  "release": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.52-preview.1",
+  "sourceRevision": "c2e1c0c37abf89b057fcadd40713fa704879b5ad",
+  "version": "1.1.52-preview.1",
+  "versionCode": 55,
+  "apk": {
+    "name": "heritage-study-bible-1.1.52-preview.1-debug.apk",
+    "size": 73841467,
+    "sha256": "e47e28dd85c4a85953fb9f74f8bf1709490874b1807f8a565303eb13ba120d2e"
+  },
+  "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+  "downloadedAssetsVerified": 3,
+  "webAssetsVerified": 696,
+  "nativeTestsPassed": 13,
+  "nativeTestCases": [
+    "com.getcapacitor.myapp.ExampleInstrumentedTest.useAppContext",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.legacyCarBrowserCanDiscoverTheLibraryWithoutOpeningTheReader",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.ezekielVerseHighlightsFollowTheNativeClockAtRealBoundaries",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.carLibraryAndSavedQueueLoadWithoutOpeningTheBible",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.communityBookPlaysDownloadedChaptersWithoutWebViewAndStopsAtSignOut",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.offlineResolverRejectsTraversalAndUnrelatedAppFiles",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.appAndCarSharePlaybackWhichContinuesAfterTheReaderCloses",
+    "faith.heritage.app.AudioStorageIntegrationTest.deleteOfflineAudioThroughInternalStorage",
+    "faith.heritage.app.AudioStorageIntegrationTest.interruptedTransferCanBeRemovedWithoutTouchingNotes",
+    "faith.heritage.app.CommunityIntegrationTest.packagedCommunityScreensAndMemberLinkWorkOffline",
+    "faith.heritage.app.CommunityIntegrationTest.encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+    "faith.heritage.app.CommunityIntegrationTest.automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+    "faith.heritage.app.CommunityIntegrationTest.secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+  ],
+  "physicalPhoneTest": false,
+  "latestFeed": {
+    "tag": "v1.1.52-preview.1",
+    "draft": false,
+    "prerelease": false
+  },
+  "updateFeedTests": [
+    {
+      "installed": "1.1.32",
+      "status": "update-available",
+      "latest": "v1.1.52-preview.1"
+    },
+    {
+      "installed": "1.1.51-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.52-preview.1"
+    },
+    {
+      "installed": "1.1.52-preview.1",
+      "status": "up-to-date",
+      "latest": "v1.1.52-preview.1"
+    }
+  ]
+}
