@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-22",
+  "workflow": "https://github.com/edydex/heritage_study_bible/actions/runs/35696098879",
+  "release": "https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.53-preview.1",
+  "sourceRevision": "ecb0394cf3f310eb0af4677035ae3a6b9c1aea03",
+  "version": "1.1.53-preview.1",
+  "versionCode": 56,
+  "apk": {
+    "name": "heritage-study-bible-1.1.53-preview.1-debug.apk",
+    "size": 73841611,
+    "sha256": "cc11c7a098e52d2fe1acade4251237b1a052918fca4e72fb518f1a36399a2a69"
+  },
+  "signerSha256": "21b68369603f988b8d207cbfeef6e045a31fb2b7129e371137b18b487af483de",
+  "downloadedAssetsVerified": 3,
+  "webAssetsVerified": 696,
+  "nativeTestCases": [
+    "com.getcapacitor.myapp.ExampleInstrumentedTest.useAppContext",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.appAndCarSharePlaybackWhichContinuesAfterTheReaderCloses",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.carLibraryAndSavedQueueLoadWithoutOpeningTheBible",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.communityBookPlaysDownloadedChaptersWithoutWebViewAndStopsAtSignOut",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.ezekielVerseHighlightsFollowTheNativeClockAtRealBoundaries",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.legacyCarBrowserCanDiscoverTheLibraryWithoutOpeningTheReader",
+    "faith.heritage.app.AudioPlaybackIntegrationTest.offlineResolverRejectsTraversalAndUnrelatedAppFiles",
+    "faith.heritage.app.AudioStorageIntegrationTest.deleteOfflineAudioThroughInternalStorage",
+    "faith.heritage.app.AudioStorageIntegrationTest.interruptedTransferCanBeRemovedWithoutTouchingNotes",
+    "faith.heritage.app.CommunityIntegrationTest.automaticSyncSettingSurvivesRestartAndBibleOpensOffline",
+    "faith.heritage.app.CommunityIntegrationTest.encryptedValuesCannotBeSubstitutedForAnotherStorageKey",
+    "faith.heritage.app.CommunityIntegrationTest.packagedCommunityScreensAndMemberLinkWorkOffline",
+    "faith.heritage.app.CommunityIntegrationTest.secureStorageUsesNativeKeystoreAndSurvivesActivityRestart"
+  ],
+  "nativeTestsPassed": 13,
+  "latestFeed": {
+    "tag": "v1.1.53-preview.1",
+    "draft": false,
+    "prerelease": false
+  },
+  "physicalPhoneTest": false,
+  "audioLibraryNativeScreenshotSha256": "087a236d6cd651472190cae8006fbe3f06b55af13574bf96c0d53aee179557cb",
+  "audiobookSentences": {
+    "books": 10,
+    "recordings": 384,
+    "spans": 55016,
+    "maximumNativeBoundaries": 990,
+    "humanListeningReviewComplete": false
+  },
+  "nativeAudioHighlightLatency": {
+    "chapter": "Ezekiel 42",
+    "clock": "ExoPlayer service",
+    "audio": "generated PCM fixture",
+    "measurements": [
+      {
+        "verse": 1,
+        "boundary": 4.642468681335449,
+        "rate": 2,
+        "observedUpperLatencyMs": 88.26565933227539,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 2,
+        "boundary": 15.34246898651123,
+        "rate": 2,
+        "observedUpperLatencyMs": 124.26550674438477,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 3,
+        "boundary": 22.04246879577637,
+        "rate": 2,
+        "observedUpperLatencyMs": 27.265602111816406,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 4,
+        "boundary": 33.402467498779295,
+        "rate": 2,
+        "observedUpperLatencyMs": 105.76625061035156,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 2,
+        "boundary": 15.34246898651123,
+        "rate": 1,
+        "observedUpperLatencyMs": 209.53101348876953,
+        "observationSpanMs": 0
+      },
+      {
+        "verse": 3,
+        "boundary": 22.04246879577637,
+        "rate": 0.75,
+        "observedUpperLatencyMs": 222.0416056315104,
+        "observationSpanMs": 0
+      }
+    ]
+  },
+  "bibleTimingAssetsUnchangedFrom1_1_47": 66,
+  "updateFeedTests": [
+    {
+      "installed": "1.1.32",
+      "status": "update-available",
+      "latest": "v1.1.53-preview.1"
+    },
+    {
+      "installed": "1.1.52-preview.1",
+      "status": "update-available",
+      "latest": "v1.1.53-preview.1"
+    },
+    {
+      "installed": "1.1.53-preview.1",
+      "status": "up-to-date",
+      "latest": "v1.1.53-preview.1"
+    }
+  ]
+}
