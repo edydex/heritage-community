@@ -15,6 +15,7 @@
 
 - [Heritage/Community PR 33](https://github.com/edydex/heritage_study_bible/pull/33): merged `b94b368d9bf6921f417fd00abc6e6caf9083a0ae`; reviewed and merged trees match. All seven CI checks passed. Root browser suite 72 passed; all 12 existing song-browser cases pass after correcting a statement boundary in the shared resource viewer. The regression checks retain redirect protection, same-session offline copies and access-denial clearing.
 - Real disposable PostgreSQL/Payload book checks cover manager upload, member playback, outsider/anonymous denial, revoked membership and atomic failed replacement. The browser book rehearsal verifies current-time highlighting, paragraph seek, resume, chapter changes while paused, controls and denied audio.
+- [Book metadata fix PR 34](https://github.com/edydex/heritage_study_bible/pull/34), merged `09dc4aba74a6194e9f27a57200dd402f92d312bc`, keeps timing data out of ordinary admin form saves. A real multi-megabyte upload exposed the server-action size limit during live publishing. The regression checks a 2 MB attachment, publishing and metadata edits without losing it, plus the membership-checked catalog and reader routes. All seven CI checks passed; no Android code changed.
 - Chromium and Firefox planner checks cover reading/sermon distinction, bilingual title images, song parts, default language, saved cues and reopening.
 - [SyncShow PR 13](https://github.com/edydex/SyncShow/pull/13), merged `70d16d07e03947f30ab9d79291fe6822bd2d2794`; [four-platform package and launch checks](https://github.com/edydex/SyncShow/actions/runs/35678197581), [regression checks](https://github.com/edydex/SyncShow/actions/runs/35678197583).
 - [SyncShow Preview 33](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.33) has seven private installers and ten verification files. All 17 uploaded sizes and SHA-256 digests match. The published Windows EXE was downloaded and verified: `2800d8cbf06b0ebdc6d46a7b930a7da28d69dbf31c3499f6a689182a4405e894`. Packaged, reviewed and merged trees match.
@@ -22,10 +23,11 @@
 
 ## Live deployment checks
 
-- WOTBC completed the supported, backed-up Community update at `b94b368d9bf6921f417fd00abc6e6caf9083a0ae`. Discovery and database-backed catalogs passed local and public checks.
+- WOTBC completed the supported, backed-up Community update and book metadata fix at `09dc4aba74a6194e9f27a57200dd402f92d312bc`. Discovery and database-backed catalogs passed local and public checks.
 - The translation companion is healthy at `674c013930eaa3549cf337626db0d6cef7d36672`. Its served operator exports slide automation version 1. The signed-in operator connects and saves a prepared service without opening an audio input or making a paid provider request.
 - A separate, clearly labeled rehearsal service starts with the original Welcome artwork. English and Russian topic text save independently. Blank and Closing appear in Media; Start Translate on the blank and Stop Translate on Closing save with the service.
-- The member-only book and its chapter audio were uploaded and the published visibility was verified in the live manager. Anonymous content and audio requests return 404, and the anonymous catalog excludes the book. Real Heritage member-reader acceptance is still pending completion of sign-in in the internal browser; the manager session is separate.
+- The member-only book and its chapter audio were uploaded. After fixing the oversized metadata save, publication and preserved timing data were verified in the database. Anonymous content and audio requests return 404, and the anonymous catalog excludes the published book.
+- The real signed-in Firefox reader refreshes the member catalog, opens the book and plays its verified audio. Word highlighting visibly advances; pause, ten-second jumps and paragraph seeking work. Reloading preserves the chapter and the paused 8.8-second position. The first paragraph seeks to its supplied 8.807-second boundary (8.8 in the player). This is a functional playback check, not an audit of every supplied word timing.
 
 ## Acceptance still required
 
