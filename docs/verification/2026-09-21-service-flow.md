@@ -38,3 +38,5 @@ The new private Community book path reads online in Heritage. It does not yet pr
 Private owner desktop previews retain the existing public-distribution limitations: Mac ad-hoc signatures, no notarization, and absent official Drive release credentials. Neither private content nor provider credentials are included in this record.
 
 [Android 1.1.51-preview.1 / code 54](2026-09-21-android-1.1.51.json) is published in the normal Latest feed. The three release downloads, unchanged signer, 698 packaged web files and twelve native tests were independently verified. The actual update-checker function recognizes the live feed from older versions, including 1.1.50.
+
+The uploaded-book limitations above describe the September 21 build. See [the September 22 reader update](2026-09-22-unified-books.md) for subsequent download and playback support.

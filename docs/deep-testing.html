@@ -17,7 +17,7 @@
 <div class="prep"><p><strong>September 21 update:</strong> run N1–N3 for reading groups, reusable Welcome/Closing slides, automatic translation cues and private church books. Earlier saved results are retained; rerun affected cases on the new build.</p>
 <h2>Before the round: three concrete jobs</h2>
 <ol>
-<li><strong>Choose and install the test versions.</strong> Use the installed Android update checker to get <strong>1.1.51-preview.1</strong> from v1.1.32 (or use the direct APK), and the published <strong>SyncShow Preview 33</strong> installer for your computer. Record each device below. The updated public web reader also has Automatic Sync; use manual Sync now initially to isolate account issues. Install updates over the existing app so we actually test preservation of notes.</li>
+<li><strong>Choose and install the test versions.</strong> Use the installed Android update checker to get <strong>1.1.52-preview.1</strong> from v1.1.32 (or use the direct APK), and the published <strong>SyncShow Preview 33</strong> installer for your computer. Record each device below. The updated public web reader also has Automatic Sync; use manual Sync now initially to isolate account issues. Install updates over the existing app so we actually test preservation of notes.</li>
 <li><strong>Complete WOTBC manager and provider setup for the translation tests.</strong> A successful personal-sync login does not grant church-manager access. Provider credentials are configured and a bounded English rehearsal passed. The actual mixer and bilingual service still require acceptance. Use an approved WOTBC provider configuration; no credential copying is part of this walkthrough.</li>
 <li><strong>Keep recording attachment outside this first baseline.</strong> Browsing completed recordings is included. Directly attaching a recording to a sermon is still unpublished local work. Finish and deliver that workflow before case A3, or leave A3 blocked and test the rest now.</li>
 </ol>
@@ -66,7 +66,7 @@
 <h2>The baseline behind this plan</h2>
 <p>Builds checked September 21, 2026. WOTBC’s app, database, translation processor, public discovery and tunnel passed status checks. The backup was less than 48 hours old, its checksums passed, and the private recording inventory matched. That proves health and backup consistency, not manager sign-in, provider setup, audible playback or translation quality.</p>
 <div class="table-wrap"><table><thead><tr><th>Part</th><th>Use for this round</th><th>Boundary</th></tr></thead><tbody>
-<tr><td>Android</td><td><a href="https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.51-preview.1">1.1.51-preview.1</a>, code 54; <code>b94b368</code></td><td>Published download/native checks passed; physical phone automatic sync remains to be accepted.</td></tr>
+<tr><td>Android</td><td><a href="https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.52-preview.1">1.1.52-preview.1</a>, code 55; <code>c2e1c0c</code></td><td>Published download/native checks passed, including Community-book playback; physical phone acceptance remains open.</td></tr>
 <tr><td>Web reader</td><td><a href="https://heritage.faith/#/settings/sync">heritage.faith</a>; last verified <code>b94b368</code></td><td>Real two-browser manual sync passed previously. Automatic Sync is included; physical-device acceptance remains.</td></tr>
 <tr><td>SyncShow</td><td><a href="https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.33">Windows / Mac / Linux Preview 33 installers</a>; <code>70d16d0</code></td><td>Downloaded package/launch checked. Do not substitute a newer source checkout or an older installed app without recording it.</td></tr>
 <tr><td>Community / translation</td><td><code>09dc4ab</code> / <code>674c013</code></td><td>Manager sign-in verified; provider and live device acceptance remain open.</td></tr>
@@ -90,7 +90,7 @@
         "title": "Install the agreed builds without losing data",
         "steps": [
           "Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.",
-          "Use Settings → Advanced Settings to check for Android 1.1.51-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier builds through 1.1.50. Quit SyncShow and install the published Preview 33 package for your computer. Record the actual versions and devices above.",
+          "Use Settings → Advanced Settings to check for Android 1.1.52-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier builds through 1.1.50. Quit SyncShow and install the published Preview 33 package for your computer. Record the actual versions and devices above.",
           "Open an existing Bible note and an existing service before creating rehearsal content."
         ],
         "expect": "Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.",
@@ -151,7 +151,7 @@
         "id": "S3",
         "title": "Automatic Sync stays out of the way",
         "steps": [
-          "On Android 1.1.51-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.",
+          "On Android 1.1.52-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.",
           "Open the Bible and navigate immediately. Leave it foregrounded and online with no text editor focused. After the initial delay (about 10 seconds, possibly longer while busy), check the last-sync status.",
           "Create a note, leave editing, and wait for the next cycle: about 3 minutes after the previous attempt completes. Sync the second device manually to confirm receipt; repeat with B making the change and A receiving automatically."
         ],
@@ -601,15 +601,15 @@
       },
       {
         "id": "N3",
-        "title": "Private church book and word following",
+        "title": "Community Books, downloads and sentence following",
         "steps": [
-          "Sign into the intended church in Heritage and refresh Books. Open its member-only test book.",
+          "Sign into the intended church, then open Books from Resources or Community Home. Its member-only book should appear automatically; pull down or press Refresh to retry.",
           "Play, seek by paragraph, hold Play/Pause for controls, rewind ten seconds, change chapter while paused, and reopen the book to check resume.",
-          "Listen while watching the active word. Record any wrong text, offset or chapter transition.",
-          "In a signed-out or nonmember profile, check the same book and audio links."
+          "Listen while watching the active sentence. Text should move only when that sentence leaves the readable area. Record any wrong boundary or excessive jump.",
+          "Download the book and audio. Interrupt and resume once, then enable airplane mode, reopen the app and play a different downloaded chapter. Lock the screen and check playback continues. Remove the copy through Internal Storage. In a separate signed-out or nonmember profile, check the same book and audio links."
         ],
-        "expect": "A member can read and listen with saved position; a nonmember cannot retrieve the book or audio. Paused chapter changes stay paused.",
-        "hint": "This first private book reader needs a current online sign-in; private offline downloads, background native playback and Android Auto are not delivered for uploaded books."
+        "expect": "The book uses the normal reader and audio library. Downloaded chapters work offline while the church account remains signed in, playback survives the locked screen, and a nonmember cannot retrieve the private book or audio. Paused chapter changes stay paused.",
+        "hint": "Native service playback and sign-out have emulator coverage. Verify real phone, headset and car behavior separately. Browser storage can be evicted; expired church sign-in requires reconnection."
       }
     ]
   }
