@@ -20,6 +20,13 @@
 - [SyncShow Preview 33](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.33) has seven private installers and ten verification files. All 17 uploaded sizes and SHA-256 digests match. The published Windows EXE was downloaded and verified: `2800d8cbf06b0ebdc6d46a7b930a7da28d69dbf31c3499f6a689182a4405e894`. Packaged, reviewed and merged trees match.
 - [Multilinguum PR 6](https://github.com/edydex/multilinguum/pull/6), merged `674c013930eaa3549cf337626db0d6cef7d36672`: provider ingress is gated on the current live session, and Start/Stop use an expected-session check. The embedded operator reconciler includes input-disconnect/failed-stop recovery. Source and both Mac build checks passed. Existing standalone 0.1.1 installers are not replaced with different binaries under the same version.
 
+## Live deployment checks
+
+- WOTBC completed the supported, backed-up Community update at `b94b368d9bf6921f417fd00abc6e6caf9083a0ae`. Discovery and database-backed catalogs passed local and public checks.
+- The translation companion is healthy at `674c013930eaa3549cf337626db0d6cef7d36672`. Its served operator exports slide automation version 1. The signed-in operator connects and saves a prepared service without opening an audio input or making a paid provider request.
+- A separate, clearly labeled rehearsal service starts with the original Welcome artwork. English and Russian topic text save independently. Blank and Closing appear in Media; Start Translate on the blank and Stop Translate on Closing save with the service.
+- The member-only book and its chapter audio were uploaded and the published visibility was verified in the live manager. Anonymous content and audio requests return 404, and the anonymous catalog excludes the book. Real Heritage member-reader acceptance is still pending completion of sign-in in the internal browser; the manager session is separate.
+
 ## Acceptance still required
 
 Use the actual mixer-connected Windows computer and all three church outputs. Check quiet preparation, exact Start/Stop boundaries, input unplug/reconnect, jumping over cues, closing Show, optional phone audio and a full service. Automated package launch is not a physical mixer or projector rehearsal.
