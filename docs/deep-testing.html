@@ -9,12 +9,12 @@
 </style>
 </head>
 <body>
-<header><strong>HERITAGE / CHURCH RESOURCES</strong><a href="progress.html">← Progress report</a><span>Testing plan · September 21, 2026</span></header>
+<header><strong>HERITAGE / CHURCH RESOURCES</strong><a href="progress.html">← Progress report</a><span>Testing plan · September 22, 2026</span></header>
 <main>
 <p class="eyebrow">Heritage · Community · SyncShow · Multilinguum</p>
 <h1>Freeze the features.<br>Test a real church service.</h1>
 <p class="intro">A short preparation pass is worth doing. Another broad feature pass is not. The next useful evidence comes from actual phones, a tablet, the church screens and bilingual listeners.</p>
-<div class="prep"><p><strong>September 21 update:</strong> run N1–N3 for reading groups, reusable Welcome/Closing slides, automatic translation cues and private church books. Earlier saved results are retained; rerun affected cases on the new build.</p>
+<div class="prep"><p><strong>September 22 update:</strong> rerun N3 on Android 1.1.52 for unified Books, resumable downloads, background playback and sentence following.</p><p><strong>September 21 update:</strong> run N1–N3 for reading groups, reusable Welcome/Closing slides, automatic translation cues and private church books. Earlier saved results are retained; rerun affected cases on the new build.</p>
 <h2>Before the round: three concrete jobs</h2>
 <ol>
 <li><strong>Choose and install the test versions.</strong> Use the installed Android update checker to get <strong>1.1.52-preview.1</strong> from v1.1.32 (or use the direct APK), and the published <strong>SyncShow Preview 33</strong> installer for your computer. Record each device below. The updated public web reader also has Automatic Sync; use manual Sync now initially to isolate account issues. Install updates over the existing app so we actually test preservation of notes.</li>
@@ -67,12 +67,12 @@
 <p>Builds checked September 21, 2026. WOTBC’s app, database, translation processor, public discovery and tunnel passed status checks. The backup was less than 48 hours old, its checksums passed, and the private recording inventory matched. That proves health and backup consistency, not manager sign-in, provider setup, audible playback or translation quality.</p>
 <div class="table-wrap"><table><thead><tr><th>Part</th><th>Use for this round</th><th>Boundary</th></tr></thead><tbody>
 <tr><td>Android</td><td><a href="https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.52-preview.1">1.1.52-preview.1</a>, code 55; <code>c2e1c0c</code></td><td>Published download/native checks passed, including Community-book playback; physical phone acceptance remains open.</td></tr>
-<tr><td>Web reader</td><td><a href="https://heritage.faith/#/settings/sync">heritage.faith</a>; last verified <code>b94b368</code></td><td>Real two-browser manual sync passed previously. Automatic Sync is included; physical-device acceptance remains.</td></tr>
+<tr><td>Web reader</td><td><a href="https://heritage.faith/#/settings/sync">heritage.faith</a>; last verified <code>c2e1c0c</code></td><td>Real two-browser manual sync passed previously. Automatic Sync is included; physical-device acceptance remains.</td></tr>
 <tr><td>SyncShow</td><td><a href="https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.33">Windows / Mac / Linux Preview 33 installers</a>; <code>70d16d0</code></td><td>Downloaded package/launch checked. Do not substitute a newer source checkout or an older installed app without recording it.</td></tr>
 <tr><td>Community / translation</td><td><code>09dc4ab</code> / <code>674c013</code></td><td>Manager sign-in verified; provider and live device acceptance remain open.</td></tr>
 <tr><td>Recording → sermon</td><td>Unpublished local work beyond this set</td><td>A3 stays blocked until a tested workflow is delivered. A1/A2 still apply to existing archive review.</td></tr>
 </tbody></table></div>
-<p class="muted">Android APK SHA-256: <code>72ef55158303ca864aa1bb99dd2d2c00eda99813cd0e5b70b7bdfdc8073952ea</code>. Use the exact source versions listed above for this test baseline.</p>
+<p class="muted">Android APK SHA-256: <code>e47e28dd85c4a85953fb9f74f8bf1709490874b1807f8a565303eb13ba120d2e</code>. Use the exact source versions listed above for this test baseline.</p>
 <p><a href="sunday-operator-guide.md">Sunday operator guide</a> · <a href="android-preview.md">Android update instructions</a> · <a href="verification/2026-09-14-automatic-sync.md">Automatic Sync evidence</a> · <a href="verification/2026-09-14-committed-recognition.md">Known recognition issue</a> · <a href="verification/api-test-budget.json">API budget ledger</a> · <a href="deep-testing.md">Text walkthrough</a></p>
 </section>
 </main>
@@ -90,7 +90,7 @@
         "title": "Install the agreed builds without losing data",
         "steps": [
           "Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.",
-          "Use Settings → Advanced Settings to check for Android 1.1.52-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier builds through 1.1.50. Quit SyncShow and install the published Preview 33 package for your computer. Record the actual versions and devices above.",
+          "Use Settings → More settings to check for Android 1.1.52-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier builds through 1.1.51. Quit SyncShow and install the published Preview 33 package for your computer. Record the actual versions and devices above.",
           "Open an existing Bible note and an existing service before creating rehearsal content."
         ],
         "expect": "Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.",
