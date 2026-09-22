@@ -9,20 +9,20 @@
 </style>
 </head>
 <body>
-<header><strong>HERITAGE / CHURCH RESOURCES</strong><a href="progress.html">← Progress report</a><span>Testing plan · September 15, 2026</span></header>
+<header><strong>HERITAGE / CHURCH RESOURCES</strong><a href="progress.html">← Progress report</a><span>Testing plan · September 21, 2026</span></header>
 <main>
 <p class="eyebrow">Heritage · Community · SyncShow · Multilinguum</p>
 <h1>Freeze the features.<br>Test a real church service.</h1>
 <p class="intro">A short preparation pass is worth doing. Another broad feature pass is not. The next useful evidence comes from actual phones, a tablet, the church screens and bilingual listeners.</p>
-<div class="prep"><p><strong>September 15 update:</strong> run R6–R7, E1–E2 and H5 for song refresh, tags, the calendar and reusable sermon slides. Earlier saved results are retained; rerun affected cases on the new build.</p>
+<div class="prep"><p><strong>September 21 update:</strong> run N1–N3 for reading groups, reusable Welcome/Closing slides, automatic translation cues and private church books. Earlier saved results are retained; rerun affected cases on the new build.</p>
 <h2>Before the round: three concrete jobs</h2>
 <ol>
-<li><strong>Choose and install the test versions.</strong> Use the installed Android update checker to get <strong>1.1.39-preview.1</strong> from v1.1.32 (or use the direct APK), and the published <strong>SyncShow Preview 30</strong> installer for your computer. Record each device below. The updated public web reader also has Automatic Sync; use manual Sync now initially to isolate account issues. Install updates over the existing app so we actually test preservation of notes.</li>
-<li><strong>Complete WOTBC manager and provider setup for the translation tests.</strong> A successful personal-sync login does not grant church-manager access. WOTBC is healthy, but the last configuration audit found its providers unset. Current health checks do not establish working translation. Use an approved WOTBC provider configuration; no credential copying is part of this walkthrough.</li>
+<li><strong>Choose and install the test versions.</strong> Use the installed Android update checker to get <strong>1.1.51-preview.1</strong> from v1.1.32 (or use the direct APK), and the published <strong>SyncShow Preview 33</strong> installer for your computer. Record each device below. The updated public web reader also has Automatic Sync; use manual Sync now initially to isolate account issues. Install updates over the existing app so we actually test preservation of notes.</li>
+<li><strong>Complete WOTBC manager and provider setup for the translation tests.</strong> A successful personal-sync login does not grant church-manager access. Provider credentials are configured and a bounded English rehearsal passed. The actual mixer and bilingual service still require acceptance. Use an approved WOTBC provider configuration; no credential copying is part of this walkthrough.</li>
 <li><strong>Keep recording attachment outside this first baseline.</strong> Browsing completed recordings is included. Directly attaching a recording to a sermon is still unpublished local work. Finish and deliver that workflow before case A3, or leave A3 blocked and test the rest now.</li>
 </ol>
 <p><strong>Do one short quality check before the long audio rehearsal.</strong> Real Russian recognition has changed a word’s meaning in prior tests. If that repeats, fix that specific problem and retest the excerpt before spending time on a full service.</p>
-<p class="muted">Official desktop release packaging, the musician screen, saved lesson-annotation replay and more features can wait. The overall ≈75% readiness estimate remains a rough engineering estimate; this checklist measures a different thing: what you actually tried.</p>
+<p class="muted">Official desktop release packaging, the musician screen, saved lesson-annotation replay and more features can wait. The overall ≈80% readiness estimate remains a rough engineering estimate; this checklist measures a different thing: what you actually tried.</p>
 </div>
 <section class="section" id="schedule">
 <h2>Three sessions, not one exhausting checklist</h2>
@@ -43,7 +43,7 @@
 <label>Run name<input data-meta="name" placeholder="Sunday rehearsal — date / place"></label>
 <label>People / roles<input data-meta="people" placeholder="Operator, pastor, English/Russian listener"></label>
 <label class="wide">Installed apps, devices and browsers<textarea data-meta="devices" placeholder="Phone A: Android version + Heritage version; Phone B/browser; SyncShow About version; tablet/browser; screen connections"></textarea></label>
-<label>Audio source and route<input data-meta="audio" placeholder="Saved excerpt → mixer → capture input; or live microphone"></label>
+<label>Audio source and route<input data-meta="audio" placeholder="Saved excerpt → mixer → capture input; or another named USB/line-in/virtual audio input"></label>
 <label>Translation setup<input data-meta="translation" placeholder="Server, direction, profile, selected models, notes, speech"></label>
 <label class="wide">Decisions, unresolved prerequisites and overall notes<textarea data-meta="notes" placeholder="Who completed manager/provider setup? Which cases must wait? Agreed acceptable translation delay? Known workarounds?"></textarea></label>
 </div>
@@ -64,15 +64,15 @@
 </section>
 <section class="section" id="evidence">
 <h2>The baseline behind this plan</h2>
-<p>Checked September 15, 2026. WOTBC’s app, database, translation processor, public discovery and tunnel passed status checks. The backup was less than 48 hours old, its checksums passed, and the private recording inventory matched. That proves health and backup consistency, not manager sign-in, provider setup, audible playback or translation quality.</p>
+<p>Builds checked September 21, 2026. WOTBC’s app, database, translation processor, public discovery and tunnel passed status checks. The backup was less than 48 hours old, its checksums passed, and the private recording inventory matched. That proves health and backup consistency, not manager sign-in, provider setup, audible playback or translation quality.</p>
 <div class="table-wrap"><table><thead><tr><th>Part</th><th>Use for this round</th><th>Boundary</th></tr></thead><tbody>
-<tr><td>Android</td><td><a href="https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.39-preview.1">1.1.39-preview.1</a>, code 42; <code>8662221</code></td><td>Published download/native checks passed; physical phone automatic sync remains to be accepted.</td></tr>
-<tr><td>Web reader</td><td><a href="https://heritage.faith/#/settings/sync">heritage.faith</a>; last verified <code>8662221</code></td><td>Real two-browser manual sync passed previously. Automatic Sync is included; physical-device acceptance remains.</td></tr>
-<tr><td>SyncShow</td><td><a href="https://github.com/edydex/heritage-community/releases/tag/syncshow-v1.4.0-preview.30">Windows / Mac / Linux Preview 30 installers</a>; <code>9a9ebf7</code></td><td>Downloaded package/launch checked. Do not substitute a newer source checkout or an older installed app without recording it.</td></tr>
-<tr><td>Community / translation</td><td><code>8662221</code> / <code>c92aafe</code></td><td>Manager sign-in verified; provider and live device acceptance remain open.</td></tr>
+<tr><td>Android</td><td><a href="https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.51-preview.1">1.1.51-preview.1</a>, code 54; <code>b94b368</code></td><td>Published download/native checks passed; physical phone automatic sync remains to be accepted.</td></tr>
+<tr><td>Web reader</td><td><a href="https://heritage.faith/#/settings/sync">heritage.faith</a>; last verified <code>b94b368</code></td><td>Real two-browser manual sync passed previously. Automatic Sync is included; physical-device acceptance remains.</td></tr>
+<tr><td>SyncShow</td><td><a href="https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.33">Windows / Mac / Linux Preview 33 installers</a>; <code>70d16d0</code></td><td>Downloaded package/launch checked. Do not substitute a newer source checkout or an older installed app without recording it.</td></tr>
+<tr><td>Community / translation</td><td><code>b94b368</code> / <code>674c013</code></td><td>Manager sign-in verified; provider and live device acceptance remain open.</td></tr>
 <tr><td>Recording → sermon</td><td>Unpublished local work beyond this set</td><td>A3 stays blocked until a tested workflow is delivered. A1/A2 still apply to existing archive review.</td></tr>
 </tbody></table></div>
-<p class="muted">Android APK SHA-256: <code>bd83cb59ff6a2cba298e5dc4ae8f5b8a500bb8bf9aac41f21be40bce30f07dcd</code>. Use the exact source versions listed above for this test baseline.</p>
+<p class="muted">Android APK SHA-256: <code>72ef55158303ca864aa1bb99dd2d2c00eda99813cd0e5b70b7bdfdc8073952ea</code>. Use the exact source versions listed above for this test baseline.</p>
 <p><a href="sunday-operator-guide.md">Sunday operator guide</a> · <a href="android-preview.md">Android update instructions</a> · <a href="verification/2026-09-14-automatic-sync.md">Automatic Sync evidence</a> · <a href="verification/2026-09-14-committed-recognition.md">Known recognition issue</a> · <a href="verification/api-test-budget.json">API budget ledger</a> · <a href="deep-testing.md">Text walkthrough</a></p>
 </section>
 </main>
@@ -90,7 +90,7 @@
         "title": "Install the agreed builds without losing data",
         "steps": [
           "Export or otherwise retain a recoverable copy of important personal data. Keep the previous SyncShow installer and its existing profile. Ask the server operator to confirm the recent backup is usable; do not perform a destructive restore on the church server.",
-          "Use Settings → Advanced Settings to check for Android 1.1.39-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier builds through 1.1.38. Quit SyncShow and install the published Preview 30 package for your computer. Record the actual versions and devices above.",
+          "Use Settings → Advanced Settings to check for Android 1.1.51-preview.1, or install its direct APK over the existing app. The checker can detect this numeric-version update from earlier builds through 1.1.50. Quit SyncShow and install the published Preview 33 package for your computer. Record the actual versions and devices above.",
           "Open an existing Bible note and an existing service before creating rehearsal content."
         ],
         "expect": "Existing data is present, the Bible opens, and the versions match the plan. A clean reinstall alone is not an update-preservation test.",
@@ -115,7 +115,7 @@
           "Label the real English, Russian and stage outputs. Connect the pastor tablet to the intended Wi-Fi. Identify the actual capture input and headphones.",
           "For translation, have the authorized server operator finish WOTBC provider configuration and confirm the chosen profile is usable. Record the selected models and sharing/overage choice; otherwise mark the translation cases Blocked."
         ],
-        "expect": "Everyone knows which app/device controls what. There is one deliberate audio source and one capture input; playback is not feeding back into the microphone.",
+        "expect": "Everyone knows which app/device controls what. There is one deliberate audio source and one capture input; playback is not feeding back into the selected input.",
         "hint": "Healthy server status is not a provider test. Do not copy credentials from another machine as an unreviewed shortcut."
       }
     ]
@@ -151,7 +151,7 @@
         "id": "S3",
         "title": "Automatic Sync stays out of the way",
         "steps": [
-          "On Android 1.1.39-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.",
+          "On Android 1.1.51-preview.1 or the updated web reader, open Settings → Sync. For a new installation Automatic Sync starts off; an update preserves your previous choice. Enable it and restart the app.",
           "Open the Bible and navigate immediately. Leave it foregrounded and online with no text editor focused. After the initial delay (about 10 seconds, possibly longer while busy), check the last-sync status.",
           "Create a note, leave editing, and wait for the next cycle: about 3 minutes after the previous attempt completes. Sync the second device manually to confirm receipt; repeat with B making the change and A receiving automatically."
         ],
@@ -358,7 +358,7 @@
           "Reopen the sermon and verify every slide. In Plan a service → Sermon, choose it from the newest-added-first dropdown and click Add whole sermon. Save and reopen the service.",
           "Compare the copied slides and media with the sermon, load the service in SyncShow, and check English/Russian/stage outputs. Disconnect only after loading and verify the media still play.",
           "Add an Other slide with text, an uploaded picture, a brace, an outline circle and a filled circle. Move, resize and rotate the objects; change their order. Select words and apply a highlight. Save and reopen the sermon.",
-          "Check English, Russian and Stage-Facing Screen previews. Add the whole saved sermon to a service and open it in SyncShow Preview 30. Compare the objects and highlights, then disconnect after Load and advance through the slide offline.",
+          "Check English, Russian and Stage-Facing Screen previews. Add the whole saved sermon to a service and open it in SyncShow Preview 33. Compare the objects and highlights, then disconnect after Load and advance through the slide offline.",
           "Check the sermon picker is above Status/Save in the left pane and object tools sit beside the slide. Right-click a slide and open Slide settings; edit its name, close, save and reopen.",
           "Add a passage using 1 chr 3 7-10. Try Ma 5 3-9 and choose Matthew; Malachi should explain its chapter limit. Confirm the inserted verses.",
           "Add an object and click outside text entry, then press Ctrl+Z (Windows/Linux) or Command+Z (Mac). The slide change should undo. Type inside text and use the same shortcut; it should undo typing instead.",
@@ -566,6 +566,50 @@
         ],
         "expect": "The actual workflow completes without expert rescue, lost work, wrong outputs, private leaks or unaccepted translation errors. Costs stay within authorization. The volunteer can repeat it next week.",
         "hint": "A successful local-file run does not prove the physical mixer path. A supervised pilot can omit blocked features, but those omissions must be explicit."
+      }
+    ]
+  },
+  {
+    "id": "service-flow",
+    "title": "N · New service flow, cues and church books",
+    "timing": "Current builds on the real presentation computer",
+    "intro": "Use a disposable rehearsal service. Keep the actual Sunday plan intact. These checks are not automatically marked passed by CI.",
+    "cases": [
+      {
+        "id": "N1",
+        "title": "Readings, songs and reusable artwork",
+        "steps": [
+          "Create a rehearsal service: confirm Welcome appears first. Edit its bottom topic on English and Russian screens, then reopen it.",
+          "Add Psalm 119:162–175 as a reading. Confirm one numbered title parent, passage children and a final blank. Add a song afterward: it must be a sibling.",
+          "Re-add Good and Gracious King from the library. Step forward through Refrain and all repeat/chorus recalls. Check English, Russian and stage-facing outputs.",
+          "Add Blank and Closing from Media. Remove the automatic blank if desired, save, reload and load the service in SyncShow."
+        ],
+        "expect": "Each Next step follows the planned order. No raw repeat labels, unwanted nesting or missing images. Existing service copies are unchanged.",
+        "hint": "Old song snapshots and already split readings are preserved; use newly added entries for this parser/pagination test."
+      },
+      {
+        "id": "N2",
+        "title": "Automatic translation from the named mixer input",
+        "steps": [
+          "Choose and remember the real mixer/USB/line-in/virtual input in SyncShow Translation controls. Prepare the matching service translation plan and select text output and optional phone audio.",
+          "Right-click the intended slide in Community: add Start Translate. Add Stop Translate later. Save, refresh its translation plan if required, and reload the service in SyncShow.",
+          "Advance to the slide before Start. Confirm preparation completes but no words are transcribed before Start. Advance through Start and Stop using Next only.",
+          "Rehearse jumping forward/backward, an input unplug/reconnect, a closed Show and a temporarily disconnected network. Do not start another paid session while testing a failed Stop."
+        ],
+        "expect": "Preparation stays quiet. Translation starts and stops at the marked slides, uses the named input and reports failures. It never silently switches to the built-in microphone or stops another operator’s session.",
+        "hint": "Record source, device, language direction, notes choice, speech setting and measured delay. Provider tests use the approved budget."
+      },
+      {
+        "id": "N3",
+        "title": "Private church book and word following",
+        "steps": [
+          "Sign into the intended church in Heritage and refresh Books. Open its member-only test book.",
+          "Play, seek by paragraph, hold Play/Pause for controls, rewind ten seconds, change chapter while paused, and reopen the book to check resume.",
+          "Listen while watching the active word. Record any wrong text, offset or chapter transition.",
+          "In a signed-out or nonmember profile, check the same book and audio links."
+        ],
+        "expect": "A member can read and listen with saved position; a nonmember cannot retrieve the book or audio. Paused chapter changes stay paused.",
+        "hint": "This first private book reader needs a current online sign-in; private offline downloads, background native playback and Android Auto are not delivered for uploaded books."
       }
     ]
   }

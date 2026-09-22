@@ -7,19 +7,19 @@
       "id": "heritage",
       "name": "Heritage Bible and Community server",
       "repository": "https://github.com/edydex/heritage_study_bible.git",
-      "revision": "0c3ce7d60024224fc6eacc0c0cdd51a2a3d40a41"
+      "revision": "b94b368d9bf6921f417fd00abc6e6caf9083a0ae"
     },
     {
       "id": "syncshow",
       "name": "SyncShow",
       "repository": "https://github.com/edydex/SyncShow.git",
-      "revision": "389791c9af20393bdc3bb3b9c0128769895a6756"
+      "revision": "70d16d07e03947f30ab9d79291fe6822bd2d2794"
     },
     {
       "id": "multilinguum",
       "name": "Multilinguum",
       "repository": "https://github.com/edydex/multilinguum.git",
-      "revision": "c86c384e3fe7e793e6e583d24bc559c85ba01a95"
+      "revision": "674c013930eaa3549cf337626db0d6cef7d36672"
     }
   ]
 }
