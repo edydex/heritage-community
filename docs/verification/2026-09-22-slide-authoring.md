@@ -20,7 +20,7 @@ The saved September 20 service has 51 slides. All 117 English/Russian/stage-chan
 
 ## External Bible sources
 
-The existing foolishandweak.org integration uses NASB95 RefTagger. The publishers permit limited quotations on presentation slides, subject to their terms. A public popup widget is not a confirmed API for an indefinitely retained, editable presentation library. No LSB/NASB API import is enabled in this release; see [verified source options and remaining requirements](https://github.com/edydex/heritage_study_bible/blob/main/community-server/docs/BIBLE_PASSAGE_SOURCES.md). Existing authorized portable Bible imports remain available.
+The subsequent browser-only update adds selected LSB and NASB95 passage lookup from public readers; see [its walkthrough and verification](2026-09-22-online-bibles.md). It does not alter Preview 35. The owner has paused new SyncShow releases while testing and refining the Community Planner.
 
 ## Release provenance
 
