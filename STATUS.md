@@ -4,14 +4,16 @@ Updated September 22, 2026 (UTC). [Interactive progress report](docs/progress.ht
 
 The September expansion is implemented and merged into the component repositories. A bounded English human-narration recognition/translation check passed; real-service acceptance remains separate. The remaining work includes timing review by listening, Russian sermon quality, physical-device/service acceptance and public desktop distribution. The progress report estimates roughly 80% readiness for an integrated first release; this is an engineering estimate, not measured reliability or test coverage.
 
+**Current focus:** iterate on the Community browser Service Planner. The owner has paused new SyncShow releases until explicitly requested. Existing installers remain available; source/server updates continue. LSB and NASB95 passage lookup is the immediate priority: [walkthrough and verification](docs/verification/2026-09-22-online-bibles.md).
+
 ## Current delivery
 
 | Component | Current result |
 | --- | --- |
 | Heritage web reader | Live unified Books library with Community refresh, account-scoped book/audio downloads, shared playback, sentence following and minimal auto-scroll, alongside existing Bible and original-language features. |
 | Android | [1.1.53-preview.1 / code 56](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.53-preview.1) is published through the normal Latest feed. All three downloaded assets, signer, 696 bundled web files and thirteen native tests passed; the actual checker detects it from older versions. [Release receipt](docs/verification/2026-09-22-android-1.1.53.json). |
-| Community server | Editable Scripture excerpts and separated verse selections, always-visible title fields, quotation attribution, and stable object dragging/font inputs are deployed alongside existing workflows. Operational deployment receipts remain private. |
-| SyncShow | [Preview 34](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.34) has seven verified private installers: Windows, both Mac architectures and Linux. All 17 uploaded assets match their verified hashes; the Windows installer was downloaded again and matched byte-for-byte. Public distribution gates remain open. |
+| Community server | The main-panel Add Slide palette, consistent typography and templates are deployed. LSB and NASB95 passage lookup works without a key; live new-service creation, bilingual outputs and save/reopen passed. [Slide walkthrough](docs/verification/2026-09-22-slide-authoring.md) · [Bible lookup checks](docs/verification/2026-09-22-online-bibles.md). |
+| SyncShow | [Preview 35](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.35) has seven verified private installers: Windows, both Mac architectures and Linux. All 17 uploaded assets match their verified hashes; the Windows installer was downloaded again and matched byte-for-byte. Public distribution gates remain open. |
 | Multilinguum | Muse recognition, explicit Russian fallback, notes vocabulary and encrypted provider settings are implemented for the Community companion. Both 0.1.1 Mac installers passed hosted builds and independent mounted-bundle verification. The Apple-silicon download launches. [Both Mac installers](https://github.com/edydex/heritage-preview-builds/releases/tag/multilinguum-v0.1.1-preview.1) and seven verification files are published privately; all nine downloads match the verified originals. |
 | Repository preservation | Maintained component features are merged into main. Original dirty Heritage/SyncShow workspaces were privately backed up and restored byte-for-byte; they were not reset or replaced. |
 
@@ -20,7 +22,7 @@ The integration/source repositories are **public**. Owner preview installers and
 ## September features and evidence
 
 - **Accessible teaching:** named patterns and used-color legends in Community authoring and SyncShow tablet teaching. Normal audience colors are preserved. Browser and package checks passed; reMarkable/BOOX hardware remains untested.
-- **Bible imports:** Community and SyncShow validate, preview and privately install authorized portable editions. Immutable source identity, exact passages and credits survive offline package reopening. See [import format and LSB guidance](https://github.com/edydex/heritage_study_bible/blob/main/docs/BIBLE-IMPORTS.md). An LSB publisher software agreement/file is still needed; no purchase or email was made.
+- **Bible sources:** Community can fetch selected LSB and NASB95 passages from public readers without an API key, retaining exact text and attribution in the service. See [lookup verification](docs/verification/2026-09-22-online-bibles.md). The separate Community/SyncShow full-edition import workflow validates authorized portable files; that route still requires an authorized source. No purchase or email was made.
 - **Library cleanup:** the requested unused/unpublished-song cleanup is complete. Source-deck inventories, exact changes and restoration details remain in the private operational handoff.
 - **Audio:** Play/Pause beside the chapter name; Audio Settings holds speed, default-on Bible/book following, chapters and whole-BSB downloads. Persistent resume, download recovery and Internal Storage are implemented. Native background/headset/notification controls and Android Auto browsing are implemented; thirteen emulator tests passed. A physical phone and car/head unit remain separate acceptance.
 - **BSB audio:** all 66 books / 1,189 Barry Hays recordings. All 1,189 chapters were rebuilt against complete text; accepted automatic timings cover 29,630 of 31,102 verse entries (95.27% coverage, not accuracy). The reading marker advances to the next nonempty verse during timing gaps; exact seeking still requires an accepted timestamp. SYNO/UKRK recordings require permission and exact-edition confirmation. [Audio sources and limits](https://github.com/edydex/heritage_study_bible/blob/main/docs/BIBLE-AUDIO.md).
@@ -39,8 +41,8 @@ Earlier delivered calendar, song sharing/publication, search shortcuts, first-cl
 
 | Component | Selected revision |
 | --- | --- |
-| Heritage / Community | `ecb0394cf3f310eb0af4677035ae3a6b9c1aea03` |
-| SyncShow | `933bd709e812cb9858e2bfaad795d7279a06a8a3` |
+| Heritage / Community | `1f3a7e7517feb8140232497ab9fe6d1ac77b4bb4` |
+| SyncShow | `9a8d41a05e53d0b6edc3202bdad6cd99d405e6c1` |
 | Multilinguum | `674c013930eaa3549cf337626db0d6cef7d36672` |
 
 Installed server revisions, private storage inventories and provider-configuration checks belong in the private operational handoff. Inspect the trusted server with the supported status command before maintenance; desired source pins and actual deployment are distinct.
@@ -50,7 +52,7 @@ Installed server revisions, private storage inventories and provider-configurati
 1. **Audio timing:** review the completed audiobook links by listening. The complete-text BSB alignment is shipped; listen across boundaries in multiple books and report discrepancies. Untimed entries cannot be used for exact seeking; the next nonempty verse stays marked until a verified interval resumes. Do not claim word-perfect synchronization.
 2. **Russian/English service quality:** review actual sermon meaning, source capture, optional speech, stop/reconnect and a full-length service. The English provider rehearsal does not close this gate.
 3. **Physical devices:** real Android update/sign-in/automatic sync, downloads/background playback/Android Auto, e-ink stylus patterns, projector/stage screens and loaded-service offline continuation.
-4. **Authorized external content:** obtain a publisher-approved LSB software source and permitted exact-edition Russian/Ukrainian recordings. Do not infer recording rights from a text's public-domain status.
+4. **External content:** keep LSB/NASB quotation use within publisher terms and maintain the public-reader adapters when their markup changes. Full editions and broader uses need appropriate permission. Obtain permitted exact-edition Russian/Ukrainian recordings; do not infer recording rights from a text's public-domain status.
 5. **Distribution:** finish public native dependency source/relinking notices and official SyncShow Drive configuration. Private owner previews do not bypass these public release requirements. Standalone Multilinguum desktop delivery is separate from the integrated server/console.
 6. **Other product work:** direct recording-to-sermon attachment/publication remains unfinished. Later lesson replay, musician views, fully offline translation and wider prophecy research are tracked separately.
 
@@ -71,3 +73,5 @@ The service-flow update adds numbered reading parents, sibling songs, automatic/
 Community books now use the standard reader and audio library with resumable downloads and native playback. [September 22 evidence and limits](docs/verification/2026-09-22-unified-books.md).
 
 The passage-editing update preserves canonical Bible text while allowing slide excerpts, supports selections such as `John 8:31-32,44`, and matches quotation layout across Community and SyncShow Preview 34. [Walkthrough and verification](docs/verification/2026-09-22-passage-editing.md).
+
+The September 22 slide authoring update is described in the [current operator walkthrough](docs/verification/2026-09-22-slide-authoring.md). Bible reader and Multilinguum versions are unchanged by this update.
