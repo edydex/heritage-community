@@ -67,3 +67,5 @@ The September 21 service-layout update adds forgiving verse/chorus/part headings
 The latest slide changes permit editable Scripture excerpts and separated verse selections, keep title input available with the overlay hidden, add quotation attribution and fix freeform drag/font editing. Use SyncShow Preview 35. [Passage walkthrough and checks](verification/2026-09-22-passage-editing.md). The shared audiobook reader now follows spoken sentence order and scrolls at the bottom-quarter threshold to the 15% position. [Reader verification](verification/2026-09-22-audiobook-follow.md).
 
 Current Community/SyncShow typography and main-panel authoring changes: [September 22 walkthrough](verification/2026-09-22-slide-authoring.md). Development pins are in `components.lock.json`; the Android package remains unchanged.
+
+Workspace invitations now distinguish Heritage reader membership from leader/administrator password setup. See [invitation verification and operator steps](verification/2026-09-23-workspace-invitations.md). Creating an Accounts record alone does not send an invitation. No desktop or Android package changes accompany this server update.
