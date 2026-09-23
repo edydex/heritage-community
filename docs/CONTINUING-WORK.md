@@ -69,3 +69,5 @@ The latest slide changes permit editable Scripture excerpts and separated verse 
 Current Community/SyncShow typography and main-panel authoring changes: [September 22 walkthrough](verification/2026-09-22-slide-authoring.md). Development pins are in `components.lock.json`; the Android package remains unchanged.
 
 Workspace invitations now distinguish Heritage reader membership from leader/administrator password setup. See [invitation verification and operator steps](verification/2026-09-23-workspace-invitations.md). Creating an Accounts record alone does not send an invitation. No desktop or Android package changes accompany this server update.
+
+Member book discovery now exposes reader sign-in directly in Books and saved communities, including resend for a pending email link. Workspace administrator sign-in and reader sign-in remain separate; use the invited email in the reader on each device. Churches can share `https://heritage.faith/#/community?server=https%3A%2F%2Fchurch.example` as a new-device entry point. See [member-book verification](verification/2026-09-23-member-books.md). This web-only update does not need a server restart or new installers.
