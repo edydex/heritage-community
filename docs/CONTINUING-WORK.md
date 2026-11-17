@@ -1,73 +1,73 @@
-# Continue on another computer
+# LibreChurch: product intent and next-computer handoff
 
-Start from the public integration repository. Application source is maintained in its original repositories; there is no fifth application to migrate or a need to combine their Git histories.
+Snapshot: 2026-11-16. This file describes the intended stack, records the starting revisions, and defines the proposed repository cleanup. Recheck the dated release and server facts before changing them. The [previous handoff](https://github.com/edydex/heritage-community/blob/410b794c23b0d641445135ea594823a59f241ee2/docs/CONTINUING-WORK.md) preserves the earlier reader, audio, and preview work. Start here for current work across the stack.
+
+## The product
+
+**LibreChurch is the church workflow. Libre.Show is the presentation app in that workflow.** A church should prepare a service once, run it with volunteers, let people follow along in their language, and publish the resources it chooses to share. One coherent workflow can be delivered by several independently maintained components.
+
+- **Before the service:** A preparer in Community or SyncShow builds the service from songs and their exact language versions, Bible readings, sermon material, media, and translation cues. Native slides stay editable; existing PowerPoint decks stay usable, with PowerPoint preferred for conversion when available.
+- **During the service:** Keep **Prepare → Load → Show**. Load verifies the saved revision and prepares an offline package. A volunteer switches slides, checks screen routing and audio, and runs the show. Audience outputs and the singer view may differ. Use straightforward single-screen and bilingual presets; place routing and provider settings in Admin Settings.
+- **For people following along:** Heritage Bible is useful on its own for reading and study. A reader can also find church songs, follow a service, read or listen to translation, find sermons by passage, and sync personal notes and progress. Personal sync, church membership, and public access are distinct.
+- **After the service:** A manager decides what to publish. A manuscript, projected notes, passage references, a recording, and a machine transcript are different resources. A live translation or recording does not become public by being captured.
+
+The initial translation pair is **English ↔ Russian**. A manager can use Community, or the operator can use SyncShow, to control the same live session. The church's approved connection authorizes translation; provider credentials stay on the server. The mixer is selected on the capture computer, and manual Translate and saved cues use that default input. Captions should work without speech generation. Hiding screen text can leave the phone feed running; stopping translation stops provider work. Keep caption layout scoped to its selected screen and cue region so ordinary slides keep their full area. A loaded show can continue offline; cloud translation still needs connectivity and a working capture input.
+
+## Repositories and ownership
+
+| Repository | Owns | Start here |
+| --- | --- | --- |
+| [`edydex/heritage-community`](https://github.com/edydex/heritage-community) | Stack entry point, component pins, workspace bootstrap, server orchestration, and cross-product acceptance | `README.md`, `components.lock.json`, `docs/product-brief.md`, `docs/CONTINUING-WORK.md` |
+| [`edydex/heritage_study_bible`](https://github.com/edydex/heritage_study_bible) | Heritage Bible web/Android reader and the Community Server, including its browser planner | Root `README.md` for the reader; `community-server/` for the server, resources, permissions, shared documents, and publication |
+| [`edydex/SyncShow`](https://github.com/edydex/SyncShow) | Desktop preparation, local editing, offline show packages, projection and stage displays, translation cue control, and desktop installers | `README.md`, `docs/TRANSLATION-CUES.md`, `packages/service-core/`, `assets/planner-editor/` |
+| [`edydex/multilinguum`](https://github.com/edydex/multilinguum) | Captured-audio processing, transcription, translated text, optional speech, and listener/operator runtime | `README.md`, `docs/ARCHITECTURE.md`, `apps/processor/`, `packages/protocol/` |
+
+Community is the authority for shared, saved church content. `ServiceProject` and its format carry authored intent between the browser and desktop. SyncShow's offline `ShowPackage` pins a source revision; later edits do not silently change a running show. Reconcile offline edits explicitly. Multilinguum owns the active processing session; Community owns controller authorization. Two controls must not create two sessions for the same service.
+
+The server and desktop carry copies of shared service code, and SyncShow bundles the Community planner for local editing. A change to shared slide behavior may therefore need coordinated source changes, a rebuilt desktop planner bundle, and both a server deployment and a desktop preview. A browser-only change, or a reader-only update, does not automatically require another desktop release.
+
+## Pick the right baseline
+
+| What you need | Verified starting point on 2026-11-16 |
+| --- | --- |
+| Church desktop install | [SyncShow v2.1.1](https://github.com/edydex/SyncShow/releases/tag/v2.1.1), stable Latest, source `ec849b78e9b6dfdef98e55c45a2f92cda7638573` |
+| Verse spacing and song-font development/test | [v2.1.2-preview.1](https://github.com/edydex/SyncShow/releases/tag/v2.1.2-preview.1), source `09fc6f31824fc99cf3d848d8270041c2fe0e5d72`; [desktop PR #30](https://github.com/edydex/SyncShow/pull/30) is open |
+| WOTBC server source | `heritage_study_bible`, branch `codex/syncshow-screen-compat-20261019`, deployed at `15577373f835ebf9e024dd1c3bca783da30215db` ([Community PR #54](https://github.com/edydex/heritage_study_bible/pull/54)). This is distinct from reader `main`. |
+| WOTBC translation source | Running image `heritage-translation:syncshow-d6d1dd0`, source `d6d1dd01496a5f4438d0fd74056dd9a51714ada0`; Multilinguum `main` is `639820aedd7b8637bf487fc33e92f2700fa06c11`. Both Community and translation containers were healthy when checked. |
+| Reader release | [Heritage Android v1.1.59-preview.1](https://github.com/edydex/heritage_study_bible/releases/tag/v1.1.59-preview.1) is currently served by the reader's GitHub Latest feed. Its independent release history does not select the WOTBC server revision. |
+| Historical integrated dev workspace | The current [`components.lock.json`](../components.lock.json) still pins Heritage `6447035b07d3692b4586bc843b5281698c9d55f4`, SyncShow `9a8d41a05e53d0b6edc3202bdad6cd99d405e6c1`, and Multilinguum `674c013930eaa3549cf337626db0d6cef7d36672`. Use this set to reproduce that integration snapshot only. |
+
+Both October desktop releases shipped Windows x64, macOS Apple silicon and Intel, and Linux x64. Their public installers and package receipts were checked. The church reported the Windows translation preview working. The typography preview passed the automated display rehearsal and is still awaiting projector acceptance. On the server, the typography and SyncShow integration checks passed and deployed health was checked; a broader Community CI check named `production-stack` remained red in its account/SMTP verification sequence. See [the CI run](https://github.com/edydex/heritage_study_bible/actions/runs/40412521239) before treating the full test suite as green.
+
+## Start on a new computer
+
+Use Git and Node.js 24. Open this file from GitHub on the new computer, or attach it to a new coding session. Clone into a new folder if you already have a workspace there.
 
 ```sh
 git clone https://github.com/edydex/heritage-community.git
 cd heritage-community
-node bin/heritage.mjs bootstrap
-node bin/heritage.mjs status
+node bin/heritage.mjs doctor https://wotbc.heritage.faith
 ```
 
-Use Node.js 24+, Git, and the platform tools described in each component README. Open the generated `.heritage/heritage.code-workspace`. The bootstrap creates clean exact-revision checkouts; create a `codex/` branch inside the component you intend to change. It refuses to replace dirty work. Read [STATUS](../STATUS.md), the [expansion scope](EXPANSION-2026-09-20.md), and [the hands-on walkthrough](deep-testing.html) before choosing work.
-
-## Current focus and release cadence
-
-The owner is iterating on the **Community browser Service Planner**. Make and verify those changes on the server. **Do not create new SyncShow releases unless the owner asks for one.** Existing Preview 35 remains available, but desktop delivery is deferred while the planner settles. Keep compatible presentation data and shared behavior ready for later SyncShow work; a browser-only update does not justify another installer release. The immediate priority is working LSB and NASB passage selection.
-
-## Source, packages and private material
-
-- `components.lock.json` selects development source. It is not proof that the server or every installed app runs that revision. Check the live server receipt and package metadata separately.
-- [SyncShow Preview 35](https://github.com/edydex/heritage-preview-builds/releases/tag/syncshow-v1.4.0-preview.35) is in a **private** owner-testing repository. All seven installers and their receipts were verified; all 17 uploaded asset hashes match, and the Windows installer was downloaded again and compared byte-for-byte. Sign in to GitHub with access to that repository.
-- [Heritage Android releases](https://github.com/edydex/heritage_study_bible/releases/latest) use the normal Latest feed so older installed update checkers work. Verify `android-build.json` and `SHA256SUMS`; an Actions artifact alone is not a published update.
-- The integrated Multilinguum processor is built and deployed through the server tools. Its 0.1.1 standalone Mac installers passed native Apple-silicon/Intel builds, independent mounted-bundle checks and an Apple-silicon launch. The [permanent private release](https://github.com/edydex/heritage-preview-builds/releases/tag/multilinguum-v0.1.1-preview.1) contains both installers and seven verification files, all downloaded and compared byte-for-byte.
-- Original dirty workspaces are preserved separately from maintained source. Obtain the private restoration instructions from the owner if archival local work is needed; do not overwrite the maintained checkout.
-- Credentials, private audits, raw provider transcripts and deployment receipts stay outside public source. Obtain the owner's private handoff separately when operational work requires it.
-
-SyncShow preview pushes and manual **Build and Release** runs now create checked installers through the four-platform packaging workflow. Each successful platform summary links its seven-day artifact ZIP. Permanent private releases remain a separate verified publication; use Preview 35 above for installation. The [repair receipt](verification/2026-09-21-syncshow-release-routing.json) distinguishes workflow source from the unchanged published installer source.
-
-## Server access
-
-Configure the new computer's trusted SSH access to WOTBC through the owner's normal SSH setup. Do not copy a private SSH key into a repository, accept an unverified host key, or guess nearby machines. Then inspect before updating:
+Run `node bin/heritage.mjs bootstrap` when you want the historical pinned workspace above, then `node bin/heritage.mjs status` to verify it. Bootstrap fetches the lockfile revisions into isolated directories and writes `.heritage/heritage.code-workspace`. It is a development setup step, separate from updating the live server. For current typography work, clone the corresponding source alongside the integration repo instead:
 
 ```sh
-node bin/heritage.mjs server plan --host wotbc-community
-node bin/heritage.mjs server status --host wotbc-community
+cd ..
+git clone --branch v2.1.2-preview.1 --single-branch https://github.com/edydex/SyncShow.git SyncShow-typography
+git -C SyncShow-typography switch -c codex/typography-followup
+
+git clone --branch codex/syncshow-screen-compat-20261019 --single-branch https://github.com/edydex/heritage_study_bible.git Community-typography
+git -C Community-typography switch -c codex/community-typography-followup 15577373f835ebf9e024dd1c3bca783da30215db
 ```
 
-The version set may be newer than the live receipt. Use the supported `server update` command deliberately; it takes backups, refuses a prepared/live service, preserves private provider settings, checks health, and records the applied source set after success. Provider credentials belong in the server’s private settings, not the development checkout. Ordinary cloud translation does not depend on the old GPU server; cloned-voice workloads are separate.
+Older local work may exist only in dirty checkouts. On the source computer, inspect `git status`, remotes, and branch history before moving it. If it must travel, make a private, reviewed snapshot of tracked edits and relevant untracked source. Do not use this handoff as a backup or overwrite those checkouts with clean clones. Do not commit credentials, local app data, database/media backups, private recordings, or provider transcripts. Arrange trusted SSH and other access separately. See [server setup and recovery](server-setup.md) before doing any server work.
 
-## Latest reader updates
+## What “normalize the repos” should mean
 
-The current Heritage source is `ecb0394cf3f310eb0af4677035ae3a6b9c1aea03`. It unifies Community books with the ordinary reader and audio library, adds account-scoped text/audio downloads and Android service playback, and follows sentences with minimal auto-scroll. It also includes the prior server fix for saving metadata after a large book upload. The preceding word-study update adds BSB wording and checked phrase highlights to original-language occurrence results. Greek/BSB mappings now cover matching verses in all 27 NT books, loaded by book; Hebrew/Aramaic results show verse context without claimed word alignment. See Heritage `docs/ORIGINAL-LANGUAGES.md` for source hashes and regeneration. The current service-flow set also changes Community and Multilinguum; apply the coordinated server update before using translation cues. See [service-flow delivery and limits](verification/2026-09-21-service-flow.md). Android 1.1.53-preview.1 (code 56) is published in the normal Latest feed; its [independent receipt](verification/2026-09-22-android-1.1.53.json) verifies all three assets, signer, 696 web files and thirteen native tests. The actual checker detects it from earlier versions.
+1. **Normalize the map.** Make `heritage-community` the single cross-repo starting point. Refresh its README and delivery status around this handoff. Give each component README a short statement of ownership, a link back to the stack, setup/test commands, and its release or deployment path. Keep earlier experiments and verification records as history.
+2. **Normalize the version records.** Keep three explicit records: development pins, the last accepted integrated set, and what's actually deployed or published. Preserve the existing pins until a replacement set passes the cross-component checks. Publish release tags and assets immutably. Record the exact source SHA, platform, download/checksum evidence, and any remaining on-site checks.
+3. **Normalize shared code changes.** Identify the upstream source and duplication direction for the shared planner/core files, document how to regenerate them, and add a parity or compatibility check. Use the same saved-service fixture in both repos: prepare/save/reopen, load the matching revision, rehearse offline, and check a dense bilingual song, Scripture formatting, stage hints, and Start/Stop translation. Preserve format compatibility for older saved services.
+4. **Normalize Git without losing work.** Use clean branches and scoped PRs. Compare the live Community compatibility branch against reader `main` before proposing a convergence PR; do not deploy reader `main` merely because it's the default. Keep a fast-forward/rollback path and preserve the original dirty source. Leave separate repo histories and release cadence in place.
+5. **Do the product move in 2.2.** LibreChurch is the proposed stack label; Libre.Show is the planned SyncShow product move. Decide names for the other components separately. Before changing URLs or updater identity, inventory the current domains, download/update links, installer IDs, app data locations, church connection grants, and saved project/package formats. Rehearse upgrade from 2.1.1, old service load, existing church connection, and rollback. Keep old links working through the transition. A GitHub repository or package rename can be decided separately from the visible product name.
 
-The current reader update also adds the optional Day 250 Egypt comparison, with source links, exact Scripture jumps and explicit unknown dates. Its implementation receipt is [here](verification/2026-09-21-prophecy-context.json). This reader-only change does not require restarting Community.
-
-Maximus’s external scan has been replaced by a matching internal reading edition: Hefele/Clark (1896), section 303. The same recording ID now supports nearby-text navigation and following; source corrections and local large-v3-turbo model provenance are recorded. See [verification](verification/2026-09-21-maximus-audio-text.json).
-
-## Work still requiring acceptance or external input
-
-1. Install the current Android and SyncShow previews on the actual phone, Windows presentation computer and e-ink tablet. Test background audio, offline downloads, Android Auto, patterns, pen input, all three presentation outputs and service continuation after network loss.
-2. Rehearse English and Russian through WOTBC's real capture controls, with notes and optional speech. The bounded English Muse/translation check passed; Russian sermon meaning and a complete venue service remain unaccepted. Obtain an explicit provider-test budget and consult the owner's private ledger before spending.
-3. Audiobook paragraph navigation and sentence alignment are generated locally, with no API charge. All ten internally readable books/384 recordings are shipped in Android 1.1.50 and the web reader. Matching historical editions are separate resources so old bookmarks remain intact. The GPU audiobook job is finished. The separate BSB full-text GPU job is also complete: all 1,189 chapters were checked and 29,630 verse entries are timed. Source tools, complete-text audit and independent recognition samples are committed in Heritage scripts/bible-audio. No alignment worker remains active; raw recordings and intermediate candidates stay outside Git. See Heritage `docs/AUDIOBOOK-TEXT.md` for reproducible commands. Unmatched spans remain unlinked.
-4. LSB and NASB95 now have browser-planner adapters for selected passages from the official LSB reader and full Biblia reader, without an API key. Exact verse text is pinned in the saved presentation; publisher notices are in the planner. See [lookup verification](verification/2026-09-22-online-bibles.md) and Heritage `community-server/docs/BIBLE_PASSAGE_SOURCES.md`. These HTML adapters require maintenance if upstream markup changes. Full-edition imports and use beyond quotation allowances require an authorized source or publisher permission. SYNO/UKRK recording permissions and edition identity remain unresolved.
-5. Public SyncShow distribution still needs native dependency source/relinking materials and official Drive configuration. Private owner previews are not a declaration that these gates passed.
-6. The first prophecy-fulfillment comparison is implemented in the chronological plan’s Day 250 note. Review its Egypt sources and proposed connections with a historically informed reader before expanding coverage; specialist review is not claimed. The musician screen remains future work. Do not invent historical fulfillment identifications or word correspondences.
-
-When handing work onward, record source SHA, deployed receipt, package version/hash, tests actually run and remaining physical/provider checks. Preserve unrelated dirty work; avoid blanket staging, resets, deletion or moving published tags.
-
-Version 1.1.47 removes blank Bible reading highlights between verses. The marker advances as the previous interval ends, while tap-to-seek still requires a verified timestamp. See [continuous-follow verification](verification/2026-09-21-continuous-audio-highlight.json).
-
-Version 1.1.48 fixes Android Bible marker delay by scheduling from the native playback service clock at verse boundaries. Ezekiel 42 exposed the old one-second update interval; pause, seek and 0.75×/1×/2× playback now pass measured native checks. The timestamp dataset is unchanged. [Verification](verification/2026-09-21-android-boundary-clock.json). Physical-phone listening remains the next acceptance step.
-
-Version 1.1.50 groups Bible recordings by translation, fixes Android audio-page system-bar spacing and icon contrast, simplifies reader settings, and adds hold-to-open player controls with a timeline and ten-second jumps. All ten audiobooks now have 55,016 automatic sentence segments across 384 recordings. Existing text, bookmarks, listening positions and downloads are preserved. [Release verification](verification/2026-09-22-android-1.1.53.json). Physical-device and listening acceptance remain open.
-
-The September 21 service-layout update adds forgiving verse/chorus/part headings, per-song default language, a reading title slide and prior sermon-point context over Scripture. English/Russian sermon title images are independent. Existing service song snapshots stay unchanged; re-add a song to adopt updated library formatting. [Verification and acceptance limits](verification/2026-09-21-service-layout.md).
-
-The latest slide changes permit editable Scripture excerpts and separated verse selections, keep title input available with the overlay hidden, add quotation attribution and fix freeform drag/font editing. Use SyncShow Preview 35. [Passage walkthrough and checks](verification/2026-09-22-passage-editing.md). The shared audiobook reader now follows spoken sentence order and scrolls at the bottom-quarter threshold to the 15% position. [Reader verification](verification/2026-09-22-audiobook-follow.md).
-
-Current Community/SyncShow typography and main-panel authoring changes: [September 22 walkthrough](verification/2026-09-22-slide-authoring.md). Development pins are in `components.lock.json`; the Android package remains unchanged.
-
-Workspace invitations now distinguish Heritage reader membership from leader/administrator password setup. See [invitation verification and operator steps](verification/2026-09-23-workspace-invitations.md). Creating an Accounts record alone does not send an invitation. No desktop or Android package changes accompany this server update.
-
-Member book discovery now exposes reader sign-in directly in Books and saved communities, including resend for a pending email link. Workspace administrator sign-in and reader sign-in remain separate; use the invited email in the reader on each device. Churches can share `https://heritage.faith/#/community?server=https%3A%2F%2Fchurch.example` as a new-device entry point. See [member-book verification](verification/2026-09-23-member-books.md). This web-only update does not need a server restart or new installers.
+For the first venue check, use the existing 2.1.2 preview on the church computer: reopen the service in Prepare, save, go to Load to rebuild, and compare a short and dense verse of the same song plus a Scripture slide on audience and singer outputs. Include slides inside and outside a translated cue region. Use the result to choose what to promote and which exact revisions to pin. Use the published preview for this check. Publish a new build or update the live server only when the owner asks for it.
